@@ -7,15 +7,17 @@
 本文件做两件事。
 
 1. 工具栏「快速入门 | LeetCode」今天对每一个侧栏分区都出现。下面列出全部分区，规定哪些留下、哪些拿掉，以及要改的代码和测试。
-2. DeepLearning 这一本按开源书 *Dive into Deep Learning*（《动手学深度学习》，Aston Zhang、Zachary C. Lipton、Mu Li、Alexander J. Smola）重排。运行时仍是已经落地的 Pyodide + NumPy + 自写 `minitorch.py`，不换框架，不接 CDN。
+2. 把 [d2l-ai/d2l-zh](https://github.com/d2l-ai/d2l-zh)（`config.ini` 的 release 2.0.0）的正文和 PyTorch 代码迁进 DeepLearning 这一本，并在**已经落地**的 Pyodide + NumPy + `minitorch.py` Worker 里能跑多少跑多少。不换框架，不接 CDN。
+
+2026-11-13 按评审意见改过课程范围。第 1–3 节的 LeetCode 取舍没有改。
 
 ## 和现有计划的关系
 
-[plan/DEEP_LEARNING.md](DEEP_LEARNING.md) 第 0–10 节仍是运行时选型的依据：Pyodide 314 + NumPy 2.4.6、Worker、同源文件、不要 PyTorch / TF.js / ONNX。那些结论不变。
+[plan/DEEP_LEARNING.md](DEEP_LEARNING.md) 第 0–10 节说明为什么运行时是 Pyodide 314 + NumPy 2.4.6、放在 Worker 里、文件全部同源。本文件沿用这个运行时，不重开 TF.js、ONNX、官方 PyTorch 的选型。
 
-第 11 节是已经落地的短课：侧栏 id `numpy`、两本书 `dl` 与 `numpy`、`src/pyodide/minitorch.py`、Fashion-MNIST 子集、中英各 16 个文件。运行时、打包和测试路径继续沿用第 11.1、11.2、11.4、11.5 节。
+第 11 节是已经落地的短课：侧栏 id `numpy`、两本书 `dl` 与 `numpy`、`src/pyodide/minitorch.py`、Fashion-MNIST 的 5000/1000 子集、中英各 16 个文件。打包、Worker、Cache API 和 `vendor --pyodide` 的退路继续沿用第 11.1、11.2、11.4、11.5 节。
 
-本文件接替第 11.3 节的**课程范围**和第 11.6 节里「写完这 16 章即结束」的含义。短课里的线性回归、softmax、Fashion 子集、丢弃、卷积一眼、注意力一眼，会按 d2l 的章序拆开或并进新目录，不另起一个侧栏，也不再引入第 7 节否掉的 JS 轨道、scikit-learn 和 Transformers.js。
+本文件接替第 11.3 节的课程范围。短课的 16 章会被 d2l-zh 的目录换掉，而不是在后面再叠一套。NumPy 书 `docs/numpy/` 保持不动，仍是数组那一本。
 
 [plan/LEETCODE.md](LEETCODE.md) §7 已经规定选择器里哪些语言能跑题。那个集合不改。本文件补上的是工具栏按钮：今天按钮不看这个集合。
 
@@ -26,13 +28,13 @@
 1. LeetCode 入口今天出现在哪
 2. 哪些分区留下，哪些拿掉
 3. LeetCode 要改的代码和测试
-4. d2l 仓库、许可证、署名义务
-5. 浏览器里能跑什么
-6. 正文怎么写、章节怎么对照
-7. 分阶段
-8. 体积
-9. 风险
-10. 验收
+4. d2l-zh 每一节能不能在浏览器里跑
+5. 运行时：扩展 minitorch，不换框架
+6. 数据与体积
+7. 许可证：正文以 CC BY-SA 迁入为主方案
+8. 文件怎么放、代码怎么移植
+9. 分阶段
+10. 风险与验收
 
 ---
 
@@ -133,312 +135,430 @@ LeetCode 只有一个入口：`EditorToolbar.vue` 始终挂 `StudyModeSwitch.vue
 
 ---
 
-## 4. d2l 仓库、许可证、署名义务
+## 4. d2l-zh 每一节能不能在浏览器里跑
 
-核对日期 2026-11-13，默认分支都是 `master`。
+单位是 `d2l-zh` `master` 上的一个 `.md` 文件。不含 `*_origin.md`，不含 `chapter_references/`。引言里的 1.1–1.9 是同一个 `index.md` 里的标题，不拆成九行。这样数下来是 **139** 节。
 
-### 4.1 三份上游
+三档的意思：
 
-| 上游 | 位置 | 版本 | 许可证文件实际写了什么 |
+| 档 | 含义 |
+|---|---|
+| **完整** | 算法、模型宽度和书上的 PyTorch 页一致。数据用书上的那一份（或书自己已经裁过的 tiny 包）。训练若有，默认轮数够看出损失下降，不是几十步的演示。图改成把将要画的数打印出来 |
+| **缩减** | 同一套算法迁到 minitorch 上能跑，但数据张数、句长、分辨率或轮数低于书。原因写在表里。默认 Run 仍然是一段真训练或真前向，不是空壳 |
+| **只读** | 正文迁入，代码标 `norun`。这一节的要点是 CUDA、多机、外部服务，或一份超过预算的预训练权重。只打印 `cpu` 不算把该节跑起来 |
+
+读者点 Run 的默认块可以超过文档冒烟的 60 秒，上限按 **3 分钟** 来设计。超过的，默认块标 `smoke=skip`，同一函数再给一个步数更少的块给 `docs-smoke`。两块都是真计算。
+
+依据：本仓库已测过 Pyodide 里 5000 张、784-128-10、10 个 epoch 的 MLP 约 8.6 秒（[plan/DEEP_LEARNING.md](DEEP_LEARNING.md) §3.3）。卷积和字符级 RNN 还没有同样的测量。表里写「外推」的行，实现时若一次 Run 超过 3 分钟，把该行从完整改成缩减，不把超时调高。
+
+合计：**完整 59，缩减 39，只读 41**。能在浏览器里执行的是 98 节（71%）。只读里约一半是章首、前言、安装、符号和附录，没有训练代码。
+
+### 4.1 前言、安装、符号、引言
+
+| 节 | 上游文件 | 档 | 要什么 | 原因 |
+|---|---|---|---|---|
+| 前言 | `chapter_preface/index.md` | 只读 | 无 | 没有可执行程序 |
+| 安装 | `chapter_installation/index.md` | 只读 | 无 | conda、CUDA、`pip install torch`。这一行的运行时已经在页面里 |
+| 符号 | `chapter_notation/index.md` | 只读 | 无 | 符号表 |
+| 引言（含 1.1–1.9） | `chapter_introduction/index.md` | 只读 | 无 | 概念和讨论题 |
+
+### 4.2 预备知识
+
+| 节 | 上游文件 | 档 | 要什么 | 原因 |
+|---|---|---|---|---|
+| 章首 | `chapter_preliminaries/index.md` | 只读 | 无 | 目录 |
+| 数据操作 | `ndarray.md` | 完整 | `minitorch.Tensor`、NumPy | 创建、索引、运算。缺的归约和广播补进 minitorch |
+| 数据预处理 | `pandas.md` | 缩减 | `csv` + NumPy | 不装 pandas。同一张缺失值表用标准库做完，正文保留 |
+| 线性代数 | `linear-algebra.md` | 完整 | NumPy | 矩阵乘和范数，无训练 |
+| 微积分 | `calculus.md` | 完整 | NumPy | 差商。曲线改成打印采样点 |
+| 自动微分 | `autograd.md` | 完整 | `Tensor.backward` | 标量反传已有。补上本节的 `sum`、`reshape`。不记录梯度的拷贝充当 detach |
+| 概率 | `probability.md` | 完整 | NumPy | 抽样写在块内的 `Generator` 上，不碰会跨 Run 留下的全局随机流 |
+| 查阅文档 | `lookup-api.md` | 缩减 | minitorch | `help()` 只能看到 Worker 里已有的对象。查 `torch.nn` 文档的段落标 `norun` |
+
+### 4.3 线性神经网络
+
+| 节 | 上游文件 | 档 | 要什么 | 原因 |
+|---|---|---|---|---|
+| 章首 | `chapter_linear-networks/index.md` | 只读 | 无 | 目录 |
+| 线性回归 | `linear-regression.md` | 完整 | NumPy | 合成数据，书就是这个规模 |
+| 线性回归从零开始 | `linear-regression-scratch.md` | 完整 | SGD | 合成直线，步数按书 |
+| 线性回归的简洁实现 | `linear-regression-concise.md` | 完整 | `nn.Linear`、`optim.SGD` | 这两个已经有 |
+| softmax 回归 | `softmax-regression.md` | 完整 | `softmax` | 公式和小批量数值 |
+| 图像分类数据集 | `image-classification-dataset.md` | 完整 | 全量 Fashion-MNIST | 训练 6 万、测试 1 万。gzip 的图像约 30.8 MB，加标签后约 31 MB。打印形状和各类张数 |
+| softmax 从零开始 | `softmax-regression-scratch.md` | 完整 | 全量 Fashion + 反传 | 线性模型。按 8.6 秒那次测量外推，全量上多个 epoch 仍在 3 分钟内。实测若超时，改为缩减轮数 |
+| softmax 的简洁实现 | `softmax-regression-concise.md` | 完整 | `nn.Linear` | 同上 |
+
+### 4.4 多层感知机
+
+| 节 | 上游文件 | 档 | 要什么 | 原因 |
+|---|---|---|---|---|
+| 章首 | `chapter_multilayer-perceptrons/index.md` | 只读 | 无 | 目录 |
+| 多层感知机 | `mlp.md` | 完整 | ReLU | 激活的数值例子 |
+| 从零开始实现 | `mlp-scratch.md` | 缩减 | 全量 Fashion | 模型和书相同。6 万张约是已测 5000 张的 12 倍数据，10 个 epoch 会超过 3 分钟。默认 2–3 个 epoch，跑到损失明显下降 |
+| 简洁实现 | `mlp-concise.md` | 缩减 | `Sequential` | 同上 |
+| 欠拟合和过拟合 | `underfit-overfit.md` | 完整 | 合成多项式 | 书就是合成数据 |
+| 权重衰减 | `weight-decay.md` | 完整 | SGD + L2 | 合成 |
+| 暂退法 | `dropout.md` | 完整 | Dropout | 掩码由调用方传入，或用块内 Generator，`expect` 才稳定 |
+| 前向传播、反向传播和计算图 | `backprop.md` | 完整 | 小计算图 | 书的例子不大 |
+| 数值稳定性和初始化 | `numerical-stability-and-init.md` | 完整 | softmax、初始化 | 大指数先减最大值 |
+| 环境和分布偏移 | `environment.md` | 完整 | 合成偏移 | 书用合成数据 |
+| 预测房价 | `kaggle-house-price.md` | 完整 | 两份 csv，共 0.91 MB | 线性模型，数据小 |
+
+### 4.5 深度学习计算
+
+| 节 | 上游文件 | 档 | 要什么 | 原因 |
+|---|---|---|---|---|
+| 章首 | `chapter_deep-learning-computation/index.md` | 只读 | 无 | 目录 |
+| 层和块 | `model-construction.md` | 完整 | `Module`、`Sequential` | 嵌套前向 |
+| 参数管理 | `parameters.md` | 完整 | `parameters()` | 已有遍历。补共享和访问 |
+| 延后初始化 | `deferred-init.md` | 缩减 | 构造时定形状 | 书的要点是第一次 forward 才建参数。这里做不到惰性建参数。可运行块改成「构造完成后参数已经在」，修改说明里写明 |
+| 自定义层 | `custom-layer.md` | 完整 | 子类 `Module` | |
+| 读写文件 | `read-write.md` | 完整 | 同一次 Run 里的 npz | 例子是保存再加载。Worker 的 MEMFS 会跨 Run 留下，不把这当成节与节之间的契约 |
+| GPU | `use-gpu.md` | 只读 | 无 | 没有 CUDA |
+
+### 4.6 卷积神经网络
+
+| 节 | 上游文件 | 档 | 要什么 | 原因 |
+|---|---|---|---|---|
+| 章首 | `chapter_convolutional-neural-networks/index.md` | 只读 | 无 | 目录 |
+| 从全连接层到卷积 | `why-conv.md` | 完整 | 小矩阵 | |
+| 图像卷积 | `conv-layer.md` | 完整 | 互相关 | 小核小图，数值和书上的手算一致。实现用 im2col，不逐元素用 Python 循环扫整张图 |
+| 填充和步幅 | `padding-and-strides.md` | 完整 | 同上 | |
+| 多输入多输出通道 | `channels.md` | 完整 | 同上 | |
+| 汇聚层 | `pooling.md` | 完整 | MaxPool、AvgPool | |
+| LeNet | `lenet.md` | 缩减 | 全量文件在磁盘上，默认 2000 张、1 epoch | 纯 NumPy 卷积还没有计时。结构与书相同。若 6 万张按书的轮数能在 3 分钟内结束，实现时改成完整 |
+
+### 4.7 现代卷积神经网络
+
+| 节 | 上游文件 | 档 | 要什么 | 原因 |
+|---|---|---|---|---|
+| 章首 | `chapter_convolutional-modern/index.md` | 只读 | 无 | 目录 |
+| AlexNet | `alexnet.md` | 缩减 | 小分辨率上的前向加一步反传 | 书把 Fashion 放到 224。这个分辨率在纯 NumPy 上训不动。层类型和通道思路保留，输入改 28 或 64 |
+| 使用块的网络（VGG） | `vgg.md` | 缩减 | VGG 块 | 小分辨率，一步 |
+| 网络中的网络（NiN） | `nin.md` | 缩减 | 1×1 卷积 | 同上 |
+| 含并行连结的网络（GoogLeNet） | `googlenet.md` | 缩减 | 并行分支的前向 | 小分辨率 |
+| 批量规范化 | `batch-norm.md` | 缩减 | BatchNorm | 公式用小张量按书跑完。接到网上的训练用 LeNet 那一档的张数 |
+| 残差网络（ResNet） | `resnet.md` | 缩减 | 残差块 | 形状和一步反传按书。完整训练不做 |
+| 稠密连接网络（DenseNet） | `densenet.md` | 缩减 | 稠密块前向 | 小通道 |
+
+### 4.8 循环神经网络
+
+| 节 | 上游文件 | 档 | 要什么 | 原因 |
+|---|---|---|---|---|
+| 章首 | `chapter_recurrent-neural-networks/index.md` | 只读 | 无 | 目录 |
+| 序列模型 | `sequence.md` | 完整 | 合成序列 | |
+| 文本预处理 | `text-preprocessing.md` | 完整 | `timemachine.txt` 全文，0.18 MB | |
+| 语言模型和数据集 | `language-models-and-dataset.md` | 完整 | 全文词表和采样 | |
+| 循环神经网络 | `rnn.md` | 完整 | 一个时间步 | 公式 |
+| 从零开始实现 | `rnn-scratch.md` | 缩减 | 全文，少数 epoch | 书上常是数百 epoch 的字符模型。纯 Python 循环做不到那个轮数。默认训到能接上若干字符 |
+| 简洁实现 | `rnn-concise.md` | 缩减 | `nn.RNN` | 同上 |
+| 通过时间反向传播 | `bptt.md` | 完整 | 长度 3 的序列 | 书就是这个规模 |
+
+### 4.9 现代循环神经网络
+
+| 节 | 上游文件 | 档 | 要什么 | 原因 |
+|---|---|---|---|---|
+| 章首 | `chapter_recurrent-modern/index.md` | 只读 | 无 | 目录 |
+| 门控循环单元（GRU） | `gru.md` | 缩减 | 时间机器全文，少数 epoch | |
+| 长短期记忆网络（LSTM） | `lstm.md` | 缩减 | 同上 | |
+| 深度循环神经网络 | `deep-rnn.md` | 缩减 | 两层，少数 epoch | |
+| 双向循环神经网络 | `bi-rnn.md` | 缩减 | 同上 | |
+| 机器翻译与数据集 | `machine-translation-and-dataset.md` | 完整 | `fra-eng.zip` 整包，3.42 MB | 读取、词元、词表用全部句对 |
+| 编码器-解码器架构 | `encoder-decoder.md` | 完整 | 小张量上的接口 | |
+| 序列到序列学习 | `seq2seq.md` | 缩减 | 全量压缩包在磁盘上 | 训练只用较短的句子（长度不超过 10 的一部分）和少数 epoch |
+| 束搜索 | `beam-search.md` | 完整 | 写死的分数或上一节的小模型 | 算法本身不依赖 GPU |
+
+### 4.10 注意力机制
+
+| 节 | 上游文件 | 档 | 要什么 | 原因 |
+|---|---|---|---|---|
+| 章首 | `chapter_attention-mechanisms/index.md` | 只读 | 无 | 目录 |
+| 注意力提示 | `attention-cues.md` | 只读 | 无 | 概念。书上的图不迁，链回 zh.d2l.ai |
+| 注意力汇聚：Nadaraya-Watson | `nadaraya-waston.md` | 完整 | 合成一维数据 | 书就是这个规模。上游文件名是 `waston` |
+| 注意力评分函数 | `attention-scoring-functions.md` | 完整 | 小矩阵 | |
+| Bahdanau 注意力 | `bahdanau-attention.md` | 缩减 | 缩减后的 seq2seq | |
+| 多头注意力 | `multihead-attention.md` | 完整 | 小矩阵 | 书的例子不大 |
+| 自注意力和位置编码 | `self-attention-and-positional-encoding.md` | 完整 | 短序列 | |
+| Transformer | `transformer.md` | 缩减 | 时间机器上的小训练 | 结构按书。一个 epoch 若超过 3 分钟，再降宽度，并写进修改说明 |
+
+### 4.11 优化算法
+
+| 节 | 上游文件 | 档 | 要什么 | 原因 |
+|---|---|---|---|---|
+| 章首 | `chapter_optimization/index.md` | 只读 | 无 | 目录 |
+| 优化和深度学习 | `optimization-intro.md` | 只读 | 无 | 概念 |
+| 凸性 | `convexity.md` | 完整 | 小函数 | |
+| 梯度下降 | `gd.md` | 完整 | 同上 | |
+| 随机梯度下降 | `sgd.md` | 完整 | 同上 | |
+| 小批量随机梯度下降 | `minibatch-sgd.md` | 完整 | `airfoil_self_noise.dat`，0.06 MB | 书用前 1500 行 |
+| 动量法 | `momentum.md` | 完整 | Momentum | |
+| AdaGrad | `adagrad.md` | 完整 | AdaGrad | |
+| RMSProp | `rmsprop.md` | 完整 | RMSProp | |
+| Adadelta | `adadelta.md` | 完整 | Adadelta | |
+| Adam | `adam.md` | 完整 | 已有 Adam | 补上书里的偏差修正 |
+| 学习率调度器 | `lr-scheduler.md` | 完整 | 包一层现有优化器 | |
+
+### 4.12 计算性能
+
+这 8 节都是只读。Worker 里没有 MXNet 的 hybridize、CUDA 流、多 GPU 和参数服务器。
+
+| 节 | 上游文件 | 档 | 要什么 | 原因 |
+|---|---|---|---|---|
+| 章首 | `chapter_computational-performance/index.md` | 只读 | 无 | 目录 |
+| 编译器和解释器 | `hybridize.md` | 只读 | 无 | 针对 MXNet 的混合编程 |
+| 异步计算 | `async-computation.md` | 只读 | 无 | CUDA 流 |
+| 自动并行 | `auto-parallelism.md` | 只读 | 无 | 多设备 |
+| 硬件 | `hardware.md` | 只读 | 无 | GPU 硬件叙述 |
+| 多 GPU 训练 | `multiple-gpus.md` | 只读 | 无 | |
+| 多 GPU 的简洁实现 | `multiple-gpus-concise.md` | 只读 | 无 | |
+| 参数服务器 | `parameterserver.md` | 只读 | 无 | 多机 |
+
+### 4.13 计算机视觉
+
+| 节 | 上游文件 | 档 | 要什么 | 原因 |
+|---|---|---|---|---|
+| 章首 | `chapter_computer-vision/index.md` | 只读 | 无 | 目录 |
+| 图像增广 | `image-augmentation.md` | 完整 | Fashion 的 uint8 | 翻转和裁剪用 NumPy。不装 torchvision |
+| 微调 | `fine-tuning.md` | 只读 | 无 | ImageNet 预训练 ResNet，再加 261 MB 的 `hotdog.zip`。两样都不进预算 |
+| 目标检测和边界框 | `bounding-box.md` | 完整 | 几何 | |
+| 锚框 | `anchor.md` | 完整 | IoU | |
+| 多尺度目标检测 | `multiscale-object-detection.md` | 完整 | 特征图尺寸 | |
+| 目标检测数据集 | `object-detection-dataset.md` | 缩减 | 香蕉图的抽样 | `banana-detection.zip` 是 139 MB，不整包。抽 64 张训练和 16 张验证，存成原始字节。读取接口仍是图像张量加框 |
+| 单发多框检测（SSD） | `ssd.md` | 缩减 | 上面的 80 张 | 1 个 epoch 的损失。输入边长可从 256 降到 64，层的类型保留 |
+| 区域卷积神经网络（R-CNN） | `rcnn.md` | 只读 | 无 | 依赖预训练骨干和区域提议 |
+| 语义分割和数据集 | `semantic-segmentation-and-dataset.md` | 只读 | 无 | `VOCtrainval_11-May-2012.tar` 是 2000 MB |
+| 转置卷积 | `transposed-conv.md` | 完整 | 小张量 | 数值按书 |
+| 全卷积网络 | `fcn.md` | 缩减 | 一张小标签图的前向 | 不训 VOC |
+| 风格迁移 | `neural-style.md` | 只读 | 无 | 要 VGG 的预训练特征 |
+| 实战 Kaggle：CIFAR-10 | `kaggle-cifar10.md` | 缩减 | `kaggle_cifar10_tiny.zip` 整包，2.47 MB | 这就是书用的小子集，数据不另砍。轮数减少 |
+| 实战 Kaggle：狗的品种 | `kaggle-dog.md` | 缩减 | 再抽一次的子集，上限 8 MB | `kaggle_dog_tiny.zip` 是 35.8 MB，单份就超预算。目录整理的代码按书跑 |
+
+### 4.14 自然语言处理：预训练
+
+| 节 | 上游文件 | 档 | 要什么 | 原因 |
+|---|---|---|---|---|
+| 章首 | `chapter_natural-language-processing-pretraining/index.md` | 只读 | 无 | 目录 |
+| 词嵌入（word2vec） | `word2vec.md` | 完整 | 一个窗口的数值 | |
+| 近似训练 | `approx-training.md` | 完整 | 负采样的小例子 | |
+| 用于预训练词嵌入的数据集 | `word-embedding-dataset.md` | 完整 | `ptb.zip` 整包，1.98 MB | |
+| 预训练 word2vec | `word2vec-pretraining.md` | 缩减 | PTB 全文 | 负样本数和 epoch 减少 |
+| 全局向量的词嵌入（GloVe） | `glove.md` | 缩减 | PTB 的共现 | 不下载 69 MB 的 50 维或 134 MB 的 100 维向量。加权回归走若干步 |
+| 子词嵌入 | `subword-embedding.md` | 缩减 | 时间机器上的 BPE | 不加载预训练 fastText |
+| 词的相似性和类比 | `similarity-analogy.md` | 缩减 | 自己训出的小向量 | 不用 GloVe 6B |
+| BERT | `bert.md` | 缩减 | 窄一些的编码器，一次前向 | 结构按书，宽度和句长减小 |
+| 用于预训练 BERT 的数据集 | `bert-dataset.md` | 缩减 | WikiText-2 或抽段 | 不用 2468 MB 的 `wiki.en.zip`。WikiText-2 打包时再量，不超过 15 MB 就整包，否则抽段落。MLM 和 NSP 的张量要能造出来 |
+| 预训练 BERT | `bert-pretraining.md` | 缩减 | 2 句、1 步、窄隐藏层 | 证明 MLM+NSP 的损失能反传。不复现书里的预训练模型 |
+
+### 4.15 自然语言处理：应用
+
+| 节 | 上游文件 | 档 | 要什么 | 原因 |
+|---|---|---|---|---|
+| 章首 | `chapter_natural-language-processing-applications/index.md` | 只读 | 无 | 目录 |
+| 情感分析及数据集 | `sentiment-analysis-and-dataset.md` | 缩减 | 每类 200 条，上限 2 MB | aclImdb 整包大约 80 MB。本次 HEAD 得到 502，打包时再量。读取和截断按书 |
+| 情感分析：循环神经网络 | `sentiment-analysis-rnn.md` | 缩减 | 这份抽样 | 少数 epoch |
+| 情感分析：卷积神经网络 | `sentiment-analysis-cnn.md` | 缩减 | 同上 | |
+| 自然语言推断与数据集 | `natural-language-inference-and-dataset.md` | 缩减 | 几千对，上限 3 MB | SNLI 整包大约 90 MB。本次没有量到体积。解析按书 |
+| 自然语言推断：注意力 | `natural-language-inference-attention.md` | 缩减 | 这份抽样 | 少数 epoch |
+| 微调 BERT | `finetuning-bert.md` | 只读 | 无 | 要预训练 BERT 权重 |
+| 自然语言推断：微调 BERT | `natural-language-inference-bert.md` | 只读 | 无 | 同上 |
+
+### 4.16 附录
+
+这 7 节都是只读：没有可以在这个 Worker 里执行的程序。`d2l.md` 迁入后，页首加一张「书上的名字 → minitorch」对照。对照是我们写的。
+
+| 节 | 上游文件 | 档 |
+|---|---|---|
+| 章首 | `chapter_appendix-tools-for-deep-learning/index.md` | 只读 |
+| 使用 Jupyter | `jupyter.md` | 只读 |
+| 使用 Amazon SageMaker | `sagemaker.md` | 只读 |
+| 使用 Amazon EC2 | `aws.md` | 只读 |
+| 选择服务器和 GPU | `selecting-servers-gpus.md` | 只读 |
+| 为本书做贡献 | `contributing.md` | 只读 |
+| `d2l` API 文档 | `d2l.md` | 只读 |
+
+---
+
+## 5. 运行时：扩展 minitorch，不换框架
+
+推荐就一条：**继续用现在的 Pyodide Worker、NumPy 2.4.6 和 `src/pyodide/minitorch.py`。把 d2l-zh 里 PyTorch 那一栏的代码改写成对 minitorch 的调用。** 侧栏 id 仍是 `numpy`。不新增第二种深度学习运行时。
+
+`minitorch.py` 今天大约 360 行，已有 `Tensor`、标量 `backward`、`nn.Linear` / `ReLU` / `Sequential`、`softmax`、`cross_entropy`、`optim.SGD` / `Adam`、Fashion 子集读取。为了盖住上表里的 98 节，按这个顺序往同一文件里加，每加一个就在 `tests/minitorch.test.mjs` 里对数值梯度：
+
+1. 预备知识和线性模型还缺的运算：`sum`、`mean`、`reshape`、索引、`exp`、`log`。
+2. `Module.train` / `eval`，以及由调用方提供掩码的 `Dropout`。
+3. `Conv2d`（im2col）、`MaxPool2d`、`AvgPool2d`、`Flatten`、`BatchNorm`。
+4. `Embedding`、单层 `RNN` / `GRU` / `LSTM`（batch 在外）。
+5. 多头注意力和书上那个 Transformer 块用到的线性层、残差和层规范化。
+6. `Momentum`、`AdaGrad`、`RMSProp`、`Adadelta`，以及一个学习率倍率。
+7. 参数存成 npz 再读回。词表、按批量切片、准确率、计时。这些小工具若从 `d2l/torch.py` 搬来，文件头按第 7 节的 MIT-0 写；优先对着 minitorch 重写，让库本身仍是一份 MIT 代码。
+
+书里的 `matplotlib` 调用改成打印那组将要画的数。不把 matplotlib 的 wheel 打进侧栏。`torchvision` 不装。Fashion-MNIST 用 idx 字节自己读。香蕉、CIFAR、狗的抽样在打包时写成和现有 `fashion-mnist.bin` 一样的原始字节，避免再钉一个图像解码 wheel。
+
+`d2l-zh` 的笔记本有 MXNet、PyTorch、TensorFlow、Paddle 四栏。只移植 PyTorch 那一栏。另外三栏不复制。
+
+下面这些都能让更多 API 原样出现，但都不采用。它们要么换掉已经进页面的运行时，要么不能训练，要么必须在运行时访问网络。
+
+| 方案 | 一句话 |
+|---|---|
+| [mmtftr/pyodide-pytorch](https://github.com/mmtftr/pyodide-pytorch) 的 torch 2.13 wasm wheel（MIT，非官方，绑某一次 Pyodide ABI） | 自动求导和 `torch.nn` 是真的，但要换 Pyodide 构建、再加 sympy 等依赖，wheel 比现在整份运行时大一个数量级，WebGPU 路径还是试验性的 |
+| PyPI 上的 `d2l` 1.0.3 | `setup.py` 写 MIT-0，却钉 numpy 1.23.5、matplotlib、pandas、requests、jupyter，并 `import torch`。和现有 NumPy 2.4.6 冲突，而且 `requests` 会去拉 S3 |
+| celsowm/torch-pyodide、pyborch、tinygrad、ONNX Runtime Web、TF.js | 前两个是另一套 PyTorch 外形或必须有 WebGPU；ONNX 和 TF.js 做不了书里从零反传的那些节。第 0–10 节已经把后两样排除 |
+
+---
+
+## 6. 数据与体积
+
+构建期可以下载，浏览器运行时不行。`src/pyodide/worker.ts` 只 `writeFile` 启动时交进来的字节。新数据走和 `fashion-mnist.bin` 相同的锁：`scripts/sources.lock.json` 钉 sha256，`./build.sh vendor --pyodide` 放进同源目录。不要把 d2l 的 `download()` 留在可运行块里，那个函数访问 `http://d2l-data.s3-accelerate.amazonaws.com/`。
+
+体积是 2026-11-13 对上游 URL 做的 HEAD。`Content-Length` 如下。
+
+| 文件 | 字节 | 决定 |
+|---|---|---|
+| Fashion-MNIST 训练图像 gz | 26.42 MB | 要。加测试图像 4.42 MB 和两份标签（几十 KB），整套约 **31 MB**。换成全量，换掉现在的 5000/1000 子集 |
+| `timemachine.txt` | 0.18 MB | 要，全文 |
+| `kaggle_house_pred_{train,test}.csv` | 0.46 + 0.45 MB | 要 |
+| `airfoil_self_noise.dat` | 0.06 MB | 要 |
+| `fra-eng.zip` | 3.42 MB | 要，整包 |
+| `ptb.zip` | 1.98 MB | 要，整包 |
+| `kaggle_cifar10_tiny.zip` | 2.47 MB | 要，这就是书用的子集 |
+| 香蕉抽样 | 上游整包 **139.44 MB** | 不要整包。抽 64+16 张，存成原始字节，**上限 8 MB** |
+| 狗的品种抽样 | 上游 tiny 包 **35.79 MB** | 不要整包。再抽，**上限 8 MB** |
+| IMDb 抽样 | 整包大约 80 MB（HEAD 得到 502） | **上限 2 MB** |
+| SNLI 抽样 | 整包大约 90 MB（这次没量到） | **上限 3 MB** |
+| WikiText-2 | 打包时再 HEAD | 不超过 15 MB 就整包，否则抽段，**上限 2 MB** |
+| `hotdog.zip` | 261.29 MB | 不要 |
+| `VOCtrainval_11-May-2012.tar` | 1999.64 MB | 不要 |
+| `wiki.en.zip` | 2468.01 MB | 不要 |
+| `glove.6B.50d.zip` / `100d` | 69.18 / 134.30 MB | 不要 |
+| `glove.42B.300d.zip` | 未再请求，公开副本是数 GB | 不要 |
+
+现有 Pyodide 七个文件是 **21,201,739** 字节，侧栏显示 **20.2 MB**。上表「要」的整包加上四个抽样上限，大约 **31 + 0.2 + 0.9 + 0.1 + 3.4 + 2.0 + 2.5 + 8 + 8 + 2 + 3 + 2 ≈ 63 MB**。
+
+**数据预算上限：压缩或原始字节合计 64 MB。加上现有运行时，这一行不超过约 85 MB。** 64 MB 装不下狗的 36 MB tiny 包，也装不下 69 MB 的 GloVe，所以那两份用抽样或自训的小向量代替，而不是把预算放到 100 MB 以上。
+
+全量 Fashion 不要一次性变成 float64。60,000×784 的 float64 大约 376 MB。磁盘上保持 uint8，每个批量再转成 float32。现有 `datasets.fashion_mnist` 会把子集整表转成 float64，全量读入时改掉这个行为。
+
+抽样文件在 `NOTICE` 里写明原文件名、原张数、留下的张数和 sha256。许可证跟原数据走：Fashion-MNIST 是 MIT；房价 csv、PTB、Tatoeba 的 fra-eng、UCI 机翼、CIFAR tiny、狗的子集在钉文件时把上游许可证抄进 `NOTICE`，对不上再分发条件的就不钉，该节改成只读。这一条在打包脚本里检查，不在计划里猜每一份的 SPDX。
+
+---
+
+## 7. 许可证：正文以 CC BY-SA 迁入为主方案
+
+核对日期 2026-11-13，两个仓库的默认分支都是 `master`。
+
+| 上游 | 实际写了什么 |
+|---|---|
+| `d2l-zh` 的 `config.ini` | `copyright = 2022, All authors. Licensed under CC-BY-SA-4.0 and MIT-0.` `release = 2.0.0`，`origin_repo = d2l-ai/d2l-en` |
+| `d2l-zh` 根目录 `LICENSE` | Apache-2.0 全文。没有 `LICENSE-SAMPLECODE`。README 不再声明许可证 |
+| `d2l-en` 的 README | 书的正文是 CC BY-SA 4.0（根目录 `LICENSE`）。笔记本里的示例代码是 Amazon 2019 的一份修改版 MIT（`LICENSE-SAMPLECODE`） |
+| 两边的 `setup.py` | 包 `d2l` 的 `license='MIT-0'` |
+
+中文是英文的译本。英文正文是 CC BY-SA 4.0，译本不能靠根目录那份 Apache-2.0 甩掉相同方式共享。本仓库今天的 `docs/sources.yaml` 把 `d2l-zh` 登记成 Apache-2.0、`adapt: true`，这个登记是错的。`docs/dl` 与 `docs/en/dl` 里 `11-dropout.md`、`12-batchnorm.md`、`13-rnn.md`、`14-attn.md`、`15-train.md` 引用了它。抽查过丢弃那一章，正文是自写短节，不是粘贴。登记本身仍然要改。
+
+代码和正文分开：
+
+- **正文**按 `config.ini` 和英文上游，是 **CC BY-SA 4.0**。
+- **`d2l/` 里的 Python，以及 `config.ini` 点名的代码**，按 **MIT-0**。从英文笔记本而不是从 `d2l-zh` 抄来的函数，改用 `LICENSE-SAMPLECODE` 那份 Amazon 版权。主来源是中文仓库，所以默认走 MIT-0。
+- 根目录 Apache-2.0 文件不作为正文许可证。
+
+### 7.1 主方案：把正文迁进来
+
+这是默认要做的。中文进 `docs/dl/`，英文进 `docs/en/dl/`。英文句子取 `d2l-en` 里对应的节，不把中文再译一遍。文件名跟 `d2l-zh` 走，这样中英路径相同。英文仓库把线性网络拆成了两章、后面还多了强化学习等章；那些多出来的章不迁，因为主本是 `d2l-zh` 2.0.0。
+
+两套目录都放：
+
+- `LICENSE`：CC BY-SA 4.0 的法律文本，或指向 https://creativecommons.org/licenses/by-sa/4.0/ 的全文副本。
+- `NOTICE.md`：作者 Aston Zhang、Zachary C. Lipton、Mu Li、Alexander J. Smola；`config.ini` 的 “2022, All authors”；钉住的上游 commit；https://zh.d2l.ai 和 https://d2l.ai ；CC BY-SA 4.0 的 URI；一份修改清单。
+
+修改清单至少包括：只保留 PyTorch 那一栏；调用从 `torch` 改成 `minitorch`；图改成打印；部分数据是抽样；没有 CUDA 的节标了 `norun`；书上的图没有搬进来。
+
+义务，按许可证原文的条件说：
+
+1. **署名。** 保留作者、版权声明、许可证名称和 URI、免责声明的指向、原书链接。标出我们改过。
+2. **相同方式共享。** `docs/dl/` 和 `docs/en/dl/` 里的正文以 CC BY-SA 4.0 再分发。改写这些段落的人必须用 CC BY-SA 4.0（或兼容许可证）发布改编物，不能加额外限制。仓库其余部分不因此变成 CC BY-SA：根 README 用一段话写明只有这两个目录是。`minitorch.py` 若是对着 API 重写的，保持项目自己的 MIT；从 `d2l/torch.py` 搬来的函数在文件头写 MIT-0 和上游路径。
+3. **代码块双重许可。** 整篇 Markdown 的正文是 CC BY-SA。代码块同时按 MIT-0 提供，和 `config.ini` 对代码的声明一致。只把代码块拿去用，不触发相同方式共享。改正文则触发。
+4. **不得暗示背书。** 页面写「改编自《动手学深度学习》」，不写官方译本，不把 Cambridge University Press、Amazon 或 NVIDIA 写成本站的背书。书名可以出现在署名里。CC 不授予商标。
+5. **技术性修改**（为了能跑而改调用）本身不构成改编；改写句子构成。两种都在 `NOTICE` 里分开列。
+
+`sources.yaml` 换成：
+
+| id | license | adapt | 用途 |
 |---|---|---|---|
-| 英文书 | [d2l-ai/d2l-en](https://github.com/d2l-ai/d2l-en) | GitHub Release **v1.0.3**（2023-08-18）。`master` 在此之后还有提交，最近一次推送 2024-08-18 | README「License Summary」：书的正文是 **CC BY-SA 4.0**，全文在根目录 `LICENSE`。笔记本里的示例和参考代码是一份**改写过的 MIT**，全文在 `LICENSE-SAMPLECODE`。GitHub 把仓库标成 Other（NOASSERTION），因为不是单一许可证 |
-| 中文书 | [d2l-ai/d2l-zh](https://github.com/d2l-ai/d2l-zh) | `config.ini` 的 `release = 2.0.0`。`origin_repo = d2l-ai/d2l-en`，翻译者标记为 aws | 根目录 `LICENSE` 是 **Apache-2.0** 全文，没有 `LICENSE-SAMPLECODE`。同一仓库的 `config.ini` 写着 `copyright = 2022, All authors. Licensed under CC-BY-SA-4.0 and MIT-0.` README 不再声明许可证 |
-| Python 包 `d2l` | 两仓库的 `d2l/` 与 `setup.py`；PyPI [d2l 1.0.3](https://pypi.org/project/d2l/) | 包版本 **1.0.3**（`d2l/__init__.py`） | `setup.py` 和 PyPI 元数据都写 **MIT-0**。依赖钉死为 `jupyter==1.0.0`、`numpy==1.23.5`、`matplotlib==3.7.2`、`matplotlib-inline==0.1.6`、`requests==2.31.0`、`pandas==2.0.3`，英文仓库的 `setup.py` 另加 `scipy==1.10.1`。导入方式是 `from d2l import torch` / `mxnet` / `tensorflow` / `jax`。中文仓库另有 Paddle 标签 |
+| `d2l-zh-text` | CC-BY-SA-4.0 | true | 中文正文，目录 `docs/dl/` |
+| `d2l-en-text` | CC-BY-SA-4.0 | true | 英文正文，目录 `docs/en/dl/` |
+| `d2l-code` | MIT-0 | true | `d2l-zh` 的 `d2l/*.py` 和 PyTorch 栏 |
+| `d2l-en-sample-code` | MIT（Amazon 2019，见 `LICENSE-SAMPLECODE`） | true | 只有从英文笔记本抄函数时才引用 |
 
-`LICENSE-SAMPLECODE` 的原文以 `Copyright 2019 Amazon.com, Inc. or its affiliates.` 开头，允许使用、复制、修改、合并、出版、分发、再许可和销售，并带通常的免责声明。它**没有**标准 MIT 那句「再分发时必须保留版权声明和许可声明」。文件头上的版权行仍然是这份代码的一部分。从笔记本里搬来的函数，文件头保留这行版权，并注明来自 `d2l-en` 的 `LICENSE-SAMPLECODE`、版本 v1.0.3。
+删掉现在的 `d2l-zh`（Apache-2.0、`adapt: true`）。`LICENSES/THIRD_PARTY.md` 增加一节，链到上述 `LICENSE` 和 `NOTICE`。
 
-### 4.2 为什么不能按 Apache-2.0 搬中文正文
+这一本不再受 [plan/LEARN.md](LEARN.md) 的节长上限（中文每节 400 字、英文 280 词）和「连续 60 个汉字不跨书重复」。那些规则是为了自写短课不要粘贴别处的原文。这里正文就是上游的。`tests/docs-length.test.ts` 和跨书去重对 `dl` 跳过。代码仍只用 ASCII，中文注释按现有测试剥掉后再查。图不放进 `docs/`，渲染器会把 `docs/` 下不认识的目录当成新书。
 
-中文仓库同时出现两份说法：根上的 Apache-2.0，和 `config.ini` 里的 CC BY-SA 4.0 + MIT-0。英文正文是 CC BY-SA 4.0。译本是该许可证下的改编物，ShareAlike 跟着译本走。根目录那份 Apache-2.0 不能当成「中文段落可以不按相同方式共享」的许可。
+### 7.2 备选：正文自己写
 
-本仓库今天的登记是错的，要在改书之前改掉：
+若不想在仓库里放一个 CC BY-SA 的目录，就不要搬句子。章序仍按第 4 节，句子和示例字符串自己写。`d2l-zh-text` 与 `d2l-en-text` 改成 `adapt: false`，只出现在延伸阅读的链接里。代码仍可以按 MIT-0 移植。节长和跨书去重恢复生效，139 个上游文件不能原样落地，能写进抽屉的是短课规模的子集。这和「把内容迁进来」不是同一件事。没有选定这个备选之前，按第 7.1 节做。
 
-```yaml
-d2l-zh:
-  title: Dive into Deep Learning
-  url: https://github.com/d2l-ai/d2l-zh
-  license: Apache-2.0
-  adapt: true
+---
+
+## 8. 文件怎么放、代码怎么移植
+
+`scripts/docs/render.ts` 今天只读 `docs/dl/*.md` 这一层。迁入后目录是：
+
+```
+docs/dl/LICENSE
+docs/dl/NOTICE.md
+docs/dl/chapter_preface/index.md
+docs/dl/chapter_linear-networks/linear-regression-scratch.md
+…
+docs/en/dl/LICENSE
+docs/en/dl/NOTICE.md
+docs/en/dl/chapter_linear-networks/linear-regression-scratch.md
 ```
 
-`docs/dl/` 与 `docs/en/dl/` 里引用这个 id 的是 `11-dropout.md`、`12-batchnorm.md`、`13-rnn.md`、`14-attn.md`、`15-train.md`（中英各一份）。抽查 `11-dropout.md`：正文是自写的短节和写死的掩码，不是粘贴的 d2l 段落。登记仍然把整本书标成可改编的 Apache 文本，这个标记本身要删。
+渲染器要走进 `chapter_*`，跳过 `LICENSE` 和 `NOTICE.md`。章节顺序跟 `d2l-zh` 的 `index.md` 目录，不按文件名排序。`chapter` 编号在整本书里连续，第 0 章仍可以是前言。现有扁平的 16 个 `docs/dl/*.md` 在第一批正文落地时删掉，避免两套目录并存。
 
-### 4.3 正文与代码分开登记
+每个可运行节至少两个 `numpy` 围栏：一个是第 4 节写的默认规模，长了就 `smoke=skip`；一个是同一函数、更少步，给 60 秒的 `docs-smoke`。只读节的围栏标 `norun`，旁边用一句话写原因（中文「仅供阅读」由渲染器产生，原因写在正文里）。
 
-按 [plan/LEARN.md](LEARN.md) §6.4：`adapt: false` 只出现在延伸阅读的链接里，不搬原文。
-
-| id | 标题 | URL | license | adapt | 用途 |
-|---|---|---|---|---|---|
-| `d2l-en-text` | Dive into Deep Learning | https://github.com/d2l-ai/d2l-en | CC-BY-SA-4.0 | **false** | 英文正文。只在章末延伸阅读里链接，链到对应的 `https://d2l.ai/` 小节 |
-| `d2l-zh-text` | 动手学深度学习 | https://github.com/d2l-ai/d2l-zh | CC-BY-SA-4.0 | **false** | 中文正文。同样只链接 `https://zh.d2l.ai/`。备注里写明根目录 Apache-2.0 文件不覆盖正文 |
-| `d2l-sample-code` | Dive into Deep Learning sample code | https://github.com/d2l-ai/d2l-en/blob/v1.0.3/LICENSE-SAMPLECODE | MIT（Amazon 2019 的修改版，见该文件） | **true** | 只有真的搬了笔记本里的函数才引用，并保留版权行 |
-| `d2l-package` | d2l Python package | https://github.com/d2l-ai/d2l-en/blob/v1.0.3/setup.py | MIT-0 | **true** | 只有从 `d2l/*.py` 搬了帮助函数才引用。默认不搬，见 §5 |
-
-删掉现在的 `d2l-zh`（Apache-2.0、`adapt: true`）。上述五章的 `sources` 改成 `d2l-zh-text`，并确认正文里没有整段与上游相同的句子。渲染器今天只解析 `adapt`，并不扫描雷同。验收时用人工对照这五章，而不是假装 CI 已经会报警。
-
-不采用「整章改成 CC BY-SA 4.0 然后粘贴原文」。那样做要同时满足署名和相同方式共享：
-
-- 署名：作者 Zhang、Lipton、Li、Smola；版权声明；CC BY-SA 4.0 的 URI；指向原书的链接；标明改过。
-- ShareAlike：改编后的段落本身必须以 CC BY-SA 4.0（或兼容许可证）再分发。写进 `docs/dl/` 的一章会变成改编物。本仓库其余十四本书是自写的，不能因为这一本被卷进相同方式共享。
-- CC 不授予商标。书名可以在延伸阅读里出现，页面不写成官方译本，也不暗示 Cambridge University Press、Amazon 或 NVIDIA 为本站背书。
-- 为了在技术上能跑而做的修改，CC 第 2(a)(4) 条本身不构成改编。改写讲解则构成。
-
-自写短节沿用现在的标准：中文引言不超过 180 个汉字，每节去掉代码后 1 到 400 个汉字；英文引言不超过 140 个词，每节 1 到 280 个词；每章至少三个 `###`、两个带 `expect` 的可运行块。想法和章序可以跟 d2l 对齐，句子和示例字符串自己写。示例代码只用 ASCII。中英注释分开写。跨书连续 60 个汉字不重复的检查继续覆盖这一本。
-
-图不入库。书里的 SVG/PNG 属于 CC BY-SA 作品。界面也没有彩色插图的位置。需要图的地方改成打印出来的数。
-
-`LICENSES/THIRD_PARTY.md` 在真正搬入样本代码或 `d2l/*.py` 片段时才加一节，写上 Amazon 版权行或 MIT-0，以及 v1.0.3 的链接。只放延伸阅读链接时，`sources.yaml` 就够，不必把整份 CC 法律文本再复制进仓库。
+围栏语言继续是 `numpy`，不要写成 `python`，否则会走到 WASI CPython。
 
 ---
 
-## 5. 浏览器里能跑什么
+## 9. 分阶段
 
-### 5.1 现有栈，不换
+每一阶段单独的 PR。中文正文和英文正文分提交。运行时扩展和对应的章节可以在同一阶段，但卷积不要和半本 NLP 混在一个 PR 里。
 
-| 组件 | 现状 | 本计划 |
-|---|---|---|
-| 运行时 | Pyodide，Worker，`src/pyodide/worker.ts` | 不换。`fetch` 已按文件名返回已下载字节，`loadPackage("numpy")` 不访问网络 |
-| NumPy | 2.4.6，同源 wheel | 保持。d2l 包钉的 numpy 1.23.5 与此冲突，所以不能把 PyPI 上的 `d2l` 装进 Worker |
-| 教学库 | `src/pyodide/minitorch.py`，Worker 启动时写到 `/opt/simplecode/minitorch.py` | 继续扩这一份。已有 `Tensor`、`nn.Linear` / `ReLU` / `Sequential`、`softmax`、`cross_entropy`、`optim.SGD` / `Adam`、`datasets.fashion_mnist` |
-| 数据 | `/data/fashion-mnist.bin`，训练 5000、测试 1000，魔数 `0x314E4D46`，归因 `/data/FASHION.txt` | 继续用子集。不换成 6 万张全量 |
-| 标准输入 | `SharedArrayBuffer` + `Atomics.wait` | 不变 |
-| 文件系统 | 同一个 Worker 的 MEMFS 会跨多次 Run 留下来，直到 `cancelPyodide()`（换语言或停掉） | 可运行块必须自洽。不写「先跑上一节把文件存下来」 |
-| 下载 | `./build.sh vendor --pyodide`，七个文件合计 **21,201,739** 字节，侧栏显示 **20.2 MB**，Cache API `simplecode-wasm-v1` | 默认不再加 wheel |
+| 阶段 | 内容 | 体积 | 这一阶段结束时 |
+|---|---|---|---|
+| 0 | 本计划 | 无 | PR 里只有计划 |
+| 1 | 第 1–3 节的 LeetCode 按钮。与课程无关，可以先做 | 无 wasm | 五个分区看不到 LeetCode |
+| 2 | 第 7.1 节的 `LICENSE`、`NOTICE`、`sources.yaml`、`THIRD_PARTY.md`。渲染器认识 `chapter_*`。节长和跨书去重对 `dl` 跳过。迁入前言、引言、安装、符号（4 节只读） | 无 | 抽屉里能打开署名和第一章，许可证文件在目录里 |
+| 3 | minitorch 补到线性模型和优化器。钉上 Fashion 全量、房价 csv、机翼数据。迁入预备知识、线性神经网络、多层感知机、优化算法 | 数据大约 32 MB。侧栏从 20.2 MB 升到约 52 MB | 完整 7+5+8+10 节里属于这四章的可运行节落地（线性 7 完整、预备 5 完整 + 2 缩减、MLP 8 完整 + 2 缩减、优化 10 完整）。softmax 在全量上训练 |
+| 4 | `Conv2d`、汇聚、`BatchNorm`。迁入深度学习计算、两章卷积。LeNet 用 2000 张 | 无新的大文件 | 现代网络至少能做小分辨率的前向和一步反传 |
+| 5 | RNN、GRU、LSTM、注意力、Transformer 块。钉上时间机器和 fra-eng | +3.6 MB | 机器翻译的数据节读全量句对；seq2seq 用短句训练 |
+| 6 | 第 4.13 节里能跑的视觉节。香蕉和狗的抽样、CIFAR tiny。只读的微调、R-CNN、VOC、风格迁移同时把正文迁入 | 抽样和 tiny 包大约 21 MB，仍在 64 MB 数据预算内 | 锚框和转置卷积按书跑；检测在 80 张图上出损失 |
+| 7 | PTB、WikiText 抽样、IMDb 抽样、SNLI 抽样。迁入第 14、15 章。BERT 微调两节只迁正文 | 大约 9 MB | word2vec 在 PTB 上训若干步；BERT 预训练是 1 步反传 |
+| 8 | 计算性能 8 节和附录 7 节，全部只读正文 | 无 | 139 节都在抽屉里 |
 
-书里的「简洁实现」在上游是 `torch.nn` / MXNet / TensorFlow / Paddle。这里的简洁实现就是 `minitorch.nn`。每一章用一句话说明它不是 PyTorch，然后给出能跑的子集。不在围栏里写 `import torch`。
+阶段 3 结束时侧栏大约 52 MB，阶段 6 之后接近 85 MB 的上限。某一份抽样超过自己的上限，就减少张数，不提高 64 MB。
 
-不引入的依赖：
+---
 
-| 依赖 | 原因 |
+## 10. 风险与验收
+
+| 风险 | 处理 |
 |---|---|
-| PyTorch、MXNet、TensorFlow、JAX、Paddle | 没有能交给当前 Worker 的浏览器构建。第 0–10 节已经排除 |
-| PyPI 上的 `d2l` 整包 | 依赖 jupyter、matplotlib、pandas、requests、scipy，并导入上述框架。`requests` 会去拉 S3 上的数据，页面没有外网下载这条路 |
-| matplotlib | 教学图改成打印标量。Pyodide 上的 matplotlib 及其数据文件是额外的数 MB 到十几 MB，不进默认包 |
-| pandas | 预处理用 NumPy 或标准库 `csv`。不把 pandas wheel 打进侧栏 |
-| GPU / CUDA / WebGPU | Worker 里的 NumPy 是 CPU。`torch.cuda`、多 GPU、参数服务器不模拟 |
+| 把 Apache-2.0 的根文件当成正文许可证 | 只认第 7 节。`sources.yaml` 里那条旧登记删掉 |
+| 相同方式共享被读成整个仓库都是 CC BY-SA | 根 README 写明只有 `docs/dl/` 和 `docs/en/dl/`。代码块另以 MIT-0 提供 |
+| 全量 Fashion 转成 float64 把内存吃满 | 磁盘 uint8，批量再转 float32 |
+| 卷积或字符 RNN 一次 Run 超过 3 分钟 | 该节从完整改成缩减，不提高冒烟超时 |
+| Worker 的 MEMFS 和 NumPy 全局随机流跨 Run 留下 | 可运行块自洽。随机数用块内 Generator |
+| 英文目录和中文 2.0.0 不一致 | 文件名跟中文仓库。英文多出来的章不迁 |
+| 节长测试挡住长文 | 阶段 2 就对 `dl` 跳过。不把书删成 400 字一节 |
+| 数据许可证在 HEAD 时还没逐份核对 | 钉文件之前写入 `NOTICE`。条件不允许再分发的，该节改只读 |
 
-`d2l` 包里值得留下的是与框架无关的小工具：合成数据、累加器、准确率、按批量切片。这些在 `minitorch.py` 里用自己的句子重写。只有当数值例子必须和书上某一函数逐行对应时，才按 §4.3 从 v1.0.3 复制并保留版权行。默认路径是重写，不是 vendoring `d2l/torch.py`。
+阶段 1 的验收就是第 3.3 节的测试。
 
-### 5.2 数据
+阶段 2 之后：`docs/dl/LICENSE` 和 `docs/en/dl/LICENSE` 存在；`NOTICE.md` 有作者、上游 commit、修改清单和 CC BY-SA 4.0 的链接；`sources.yaml` 不再出现 Apache-2.0 的 `d2l-zh`。
 
-d2l 的 `download` 指向他们的数据桶。浏览器运行时不发这个请求。要进可运行块的文件，走和 `fashion-mnist.bin` 相同的路径：锁里钉 sha256，`vendor --pyodide` 放进 `wasm/pyodide/`，Worker 在启动时 `writeFile`。
+阶段 3 到 8：第 4 节的 139 行都有对应文件。档是完整或缩减的节，默认块能在浏览器里跑完并打印出 `expect` 里的子串；只读节的围栏是 `norun`。`tests/minitorch.test.mjs` 覆盖新算子。`tests/pyodide-no-remote.test.ts` 仍然禁止运行时出现 `cdn.jsdelivr.net`、`cdn.pyodide.org` 和 `d2l-data.s3-accelerate.amazonaws.com`。数据字节合计不超过 64 MB，侧栏这一行不超过约 85 MB。
 
-| 数据 | 上游大约体积 | 决定 |
-|---|---|---|
-| Fashion-MNIST 子集（已有） | 含在 21.2 MB 里 | 留下。softmax / MLP / LeNet 都用它，张数在围栏里再截到几百 |
-| Fashion-MNIST 全量（60k + 10k） | 压缩后约 30 MB | 不引入。全量训练在纯 NumPy 上也超过文档冒烟的 60 秒 |
-| *The Time Machine* 文本 | 约 200 KB，原书公有领域 | 第 5 阶段若写语言模型，再钉一份短摘录或全文本。摘录我们自己从公有领域文本切，不把 d2l 数据桶里的派生文件当成无许可证 |
-| 房价 CSV | 约 100 KB 量级 | 不默认引入。Kaggle 比赛数据的再分发要单独核对；核对通过之前这一节只做合成回归 |
-| CIFAR-10 | 约 170 MB | 不引入 |
-| ImageNet / Stanford Dogs | GB 级 | 不引入 |
-| GloVe、BERT 权重 | 数百 MB | 不引入 |
-| 目标检测、VOC、风格迁移图片 | 数 MB 到更大 | 不引入 |
-
-可运行训练块沿用现在 `07-fashion.md` 的尺度：固定初值（不要依赖会跨 Run 留下来的 `np.random` 全局状态），几百张图，至多几个 epoch，`expect` 只要求出现 `loss` 或 `acc` 这类稳定子串。`tests/docs-smoke.mjs` 对单块的上限是 **60 秒**。超过这个上限的训练改成 `norun`，旁边写明原因是浏览器里的步数太长。
-
-### 5.3 章的可行性
-
-英文以 `d2l-en` 的 `master` 目录为准（v1.0.3 之后又加了强化学习等章）。中文以 `d2l-zh` 的 `master`（`config.ini` release 2.0.0）为准。两边前半不一致：英文把线性网络拆成 linear-regression 与 linear-classification，中文仍是一章「线性神经网络」。英文 `master` 多出来的章，中文仓库没有对应目录。
-
-「可跑」指可以用 NumPy 或扩展开的 `minitorch` 在 60 秒内跑完一个块。「只读」指 `norun`，用一小节说明浏览器里缺什么，并链接原书。「不做」指不写进 `docs/dl/`，只在概览的延伸阅读里点到书名。
-
-| 阶段 | d2l-en | d2l-zh 2.0.0 | 可行性 |
-|---|---|---|---|
-| 3 | 前言、符号 | 前言、符号 | 可跑的只有「这一册用 minitorch，不是 PyTorch」。安装 Jupyter、SageMaker 不做 |
-| 3 | 1 引言 | 1 引言 | 只读短章：问题类型用我们自己的两句话，不搬案例名单 |
-| 3 | 2 预备知识：数据操作、线性代数、微积分、自动微分、概率 | 2.1、2.3–2.6 | 可跑。数据操作与现有 NumPy 书重叠的部分写成几节并指向 NumPy 书，不把 `docs/numpy/` 再抄一遍 |
-| 3 | 2.2 数据预处理（pandas） | 2.2 | 可跑的改写成 NumPy。不讲 `pandas.read_csv` 去下载文件 |
-| 3 | 2.7 查阅文档 | 2.7 | 只读：说明没有 `torch` 文档可查，`help()` 只能看到已装进 Pyodide 的对象 |
-| 3 | 3 线性回归从零开始 / 简洁实现 | 3.1–3.3 | 可跑。简洁实现 = `nn.Linear` + `optim.SGD` |
-| 3 | 3 线性分类、softmax、Fashion-MNIST | 3.4–3.7 | 可跑，数据用现有子集，围栏里再截小 |
-| 3 | 4 多层感知机、欠拟合与过拟合、权重衰减、暂退法、数值稳定与初始化 | 4.1–4.8 | 可跑。现有 XOR、螺旋两章并进「欠拟合」或删掉独立文件，避免和 d2l 顺序平行两套 |
-| 3 | 4.9 分布偏移、4.10 Kaggle 房价 | 4.9–4.10 | 分布偏移只读。房价在数据许可证核对之前不做 |
-| 4 | 5 层和块、参数管理、自定义层 | 5.1、5.2、5.4（英文书叫 builders guide） | 可跑，要先有 `Module` 的 `train` / `eval` 约定（已有 `parameters`） |
-| 4 | 5.3 延后初始化、5.5 读写文件、5.6 GPU | 同左 | 延后初始化只读（我们构造时就定形状）。读写文件：同一个程序里写完再读可以跑，跨 Run 的存盘不作为可运行块。GPU 只读 |
-| 4 | 6 卷积、填充、通道、汇聚、LeNet | 6 | 可跑，但要先实现 `Conv2d`、`MaxPool2d`。LeNet 只用几十步、很小的通道数 |
-| 4 | 7.5 批量规范化、7.6 残差块的前向形状 | 7.5–7.6 | 可跑前向和一两步反传。ResNet 在子集上训练多个 epoch 不做 |
-| — | 7.1–7.4、7.7 AlexNet、VGG、NiN、GoogLeNet、DenseNet 的完整训练 | 同左 | 不做。形状演示若超过 60 秒也改为不做 |
-| 5 | 8 序列模型、文本预处理、RNN 从零开始的一步 | 8.1–8.5 | 可跑，语料用短摘录。完整语料上的多 epoch 训练只读 |
-| 5 | 8.6 简洁实现、8.7 通过时间反传 | 同左 | 简洁实现等 `minitorch` 有单层 RNN 再写成一步数值。BPTT 的公式用一个长度为 3 的例子跑 |
-| 5 | 9.1–9.4 GRU、LSTM、深度 RNN、双向 RNN 的一步 | 同左 | 可跑单步。不训练翻译模型 |
-| — | 9.5–9.8 机器翻译数据集、编码器-解码器训练、束搜索在真实句子上 | 同左 | 不做。束搜索可以用三行写死的分数跑一个玩具例子，放在第 5 阶段末尾，不拉平行语料 |
-| 5 | 10 注意力汇聚、评分函数、多头注意力的小矩阵、Transformer 块的一次前向 | 10.1–10.7（英文目录名是 attention and transformers） | 可跑，序列长度 ≤ 4，头数 2。不训练 |
-| — | 10.4 Bahdanau 注意力配翻译训练 | 10.4 | 不做训练。公式用固定张量做一次打分则可以，并入评分函数那一章 |
-| 5 | 11 梯度下降、小批量 SGD、动量、AdaGrad、RMSProp、Adam、学习率调度 | 11.3–11.11 | 可跑，目标函数用二次函数或现有的小线性回归。Adam 已经有 |
-| 5 | 11.1–11.2 优化与凸性 | 同左 | 只读短节，外加一个二次函数的下降块 |
-| — | 12 计算性能（编译器、异步、自动并行、硬件、多 GPU、参数服务器） | 12 | 只读一章，说明 Worker 里没有这些开关。不拆成七个文件 |
-| — | 13 计算机视觉（增广、微调、检测、SSD、R-CNN、分割、风格迁移、CIFAR-10、Dogs） | 13 | 不做。微调依赖预训练权重 |
-| — | 14 词嵌入、GloVe、BERT 预训练 | 14 | 不做。权重和语料都超出体积和时限 |
-| — | 15 情感分析的完整训练、微调 BERT、自然语言推断 | 15 | 不做。若第 5 阶段的 RNN 已经能跑，情感分析也不另开数据集 |
-| — | 16 附录：Jupyter、SageMaker、EC2、选 GPU、贡献、d2l API 文档 | 16 | 不做 |
-| — | 英文 `master` 才有：强化学习、高斯过程、超参优化、GAN、推荐系统、数学附录 | 中文 `master` 无这些目录 | 不做 |
-
-现有 16 个文件（`index` 加 `01-linear` … `15-train`）在第 3 阶段被这张表换掉，而不是在后面再叠一套。NumPy 书 `docs/numpy/` 保持数组、广播、线性代数那 17 章，不并进 `dl`。
-
----
-
-## 6. 正文怎么写、章节怎么对照
-
-中英文件名相同。中文在 `docs/dl/<slug>.md`，英文在 `docs/en/dl/<slug>.md`。`chapter` 从 0 连续编号。第 0 章文件名仍是 `index.md`。
-
-围栏语言继续用 `numpy`，映射到运行时 `numpy`。不要把这些块写成 `python`，否则会走到 WASI CPython，`import numpy` 失败。
-
-第 3 阶段的文件（替换现有短课）：
-
-| 文件 | 中文标题 | 对应 d2l-en | 对应 d2l-zh 2.0.0 | 可运行块在测什么 |
-|---|---|---|---|---|
-| `index.md` | 深度学习入门 | 前言 | 前言 | 点积与一次 `backward`，点明库是 minitorch |
-| `01-ndarray.md` | 数据操作 | 2.1 | 2.1 | 形状、按元素加、归约。细节指向 NumPy 书 |
-| `02-algebra.md` | 线性代数 | 2.3 | 2.3 | 矩阵乘、范数的一个数 |
-| `03-calculus.md` | 导数 | 2.4 | 2.4 | 用差商核对一个多项式在单点的导数 |
-| `04-autograd.md` | 自动微分 | 2.5 | 2.5 | 标量 `backward` 的梯度，沿用现有例子的尺度 |
-| `05-probability.md` | 概率 | 2.6 | 2.6 | 用写死的样本算均值，不调用未固定的全局随机流 |
-| `06-linear-scratch.md` | 线性回归从零开始 | 线性回归 | 3.2 | 合成直线，几步 SGD，`expect` 含 `loss` |
-| `07-linear.md` | 线性回归的简洁实现 | 线性回归 | 3.3 | `nn.Linear` + `optim.SGD` |
-| `08-softmax.md` | softmax 回归 | 线性分类 | 3.4–3.6 | 三分类的交叉熵下降 |
-| `09-fashion.md` | 图像分类数据 | Fashion-MNIST | 3.5 | 保留现有「label 9」和截断后的小训练 |
-| `10-mlp.md` | 多层感知机 | 4.1–4.3 | 4.1–4.3 | 一层隐藏层拟合一个写死的小表 |
-| `11-capacity.md` | 欠拟合与过拟合 | 4.4 | 4.4 | 多项式次数不同，打印两种 loss。XOR / 螺旋的内容并进这一章或删除 |
-| `12-decay.md` | 权重衰减 | 4.5 | 4.5 | L2 项改变一步更新 |
-| `13-dropout.md` | 暂退法 | 4.6 | 4.6 | 保留现有写死掩码。随机掩码继续不进 `expect` |
-| `14-init.md` | 数值稳定与初始化 | 4.8 | 4.8 | 大指数 softmax 先减最大值 |
-
-第 4 阶段追加，编号接在后面：
-
-| 文件 | 中文标题 | 对应 | 前置 |
-|---|---|---|---|
-| `15-block.md` | 层和块 | 5.1 | 无新算子 |
-| `16-params.md` | 参数 | 5.2 | `Module.parameters` 已有 |
-| `17-custom.md` | 自定义层 | 5.4 | 无 |
-| `18-conv.md` | 卷积 | 6.2 | `Conv2d` |
-| `19-padding.md` | 填充和步幅 | 6.3 | 同上 |
-| `20-channels.md` | 多通道 | 6.4 | 同上 |
-| `21-pool.md` | 汇聚 | 6.5 | `MaxPool2d` |
-| `22-lenet.md` | LeNet 的一小步 | 6.6 | 上述算子；步数少到 60 秒内 |
-| `23-batchnorm.md` | 批量规范化 | 7.5 | `BatchNorm` |
-| `24-residual.md` | 残差块的形状 | 7.6 | 只做前向，打印形状 |
-
-第 5 阶段再追加：
-
-| 文件 | 中文标题 | 对应 | 前置 |
-|---|---|---|---|
-| `25-sequence.md` | 序列模型 | 8.1 | 合成序列 |
-| `26-tokens.md` | 词元 | 8.2 | 短字符串，不下载语料也成立 |
-| `27-rnn.md` | 循环神经网络的一步 | 8.4–8.5 | RNN 单元 |
-| `28-gru.md` | 门控循环单元的一步 | 9.1 | GRU 单元 |
-| `29-lstm.md` | 长短期记忆的一步 | 9.2 | LSTM 单元 |
-| `30-attn-pool.md` | 注意力汇聚 | 10.2 | 合成一维核回归 |
-| `31-score.md` | 注意力评分 | 10.3 | 点积分数 |
-| `32-mha.md` | 多头注意力 | 10.5 | 长度 ≤ 4 |
-| `33-transformer.md` | Transformer 块的一次前向 | 10.7 | 不训练 |
-| `34-sgd.md` | 小批量梯度下降 | 11.5 | 现有 SGD |
-| `35-momentum.md` | 动量 | 11.6 | 扩 `optim` |
-| `36-adam.md` | Adam | 11.10 | 已有 |
-| `37-schedule.md` | 学习率调度 | 11.11 | 手写一个阶梯倍率 |
-
-第 6 阶段只加一章只读：
-
-| 文件 | 中文标题 | 内容 |
-|---|---|---|
-| `38-not-here.md` | 浏览器里不做的部分 | GPU、多卡、检测、BERT、强化学习。每项一行，链到 d2l，围栏标 `norun` |
-
-这一章若凑不满三个 `###` 加两个可运行块，就把「只读说明」拆成三个 `###`，并另给两个与主题相邻、仍然可跑的小块（例如打印 `numpy` 没有 CUDA、一次 CPU 矩阵乘的形状）。不为了凑结构去训练一个空模型。
-
-`minitorch.py` 在第 4、5 阶段要补的符号，按这个顺序，每补一个就在 `tests/minitorch.test.mjs` 里对数值梯度：
-
-1. `nn.Dropout`（训练时用调用方传入的掩码，库内不调用 `np.random`，以便期望值稳定）
-2. `nn.Conv2d`、`nn.MaxPool2d`、`nn.Flatten`
-3. `nn.BatchNorm1d`（先做一维，够 MLP；卷积用的 2d 规范化若 LeNet 需要再加）
-4. `nn.Embedding`、`nn.RNN`、`nn.GRU`、`nn.LSTM`（单层、batch 在外）
-5. `optim.Momentum`、`optim.AdaGrad`、`optim.RMSprop`（Adam 已有）
-6. 准确率与按索引取批量的两个函数
-
-不实现 `torch.save`、设备参数、`DataLoader` 多进程。
-
-章末延伸阅读的句子固定成两行链接，中文指向 `https://zh.d2l.ai/` 的对应路径，英文指向 `https://d2l.ai/` 的对应路径，并写上 CC BY-SA 4.0。链接是延伸阅读，不是把原文嵌进来。
-
-本地进度存在 `localStorage`，键按章节 slug。删除 `04-xor.md`、`05-spiral.md` 这类文件后，旧 slug 打开时回到目录。这是预期结果，不写迁移。
-
----
-
-## 7. 分阶段
-
-阶段按依赖排，不按日历。每一阶段单独的 PR，文档按语言（这里是 `dl` 的中文一次、英文一次）分提交。
-
-| 阶段 | 做什么 | 体积变化 | 依赖 | 完成时能看到什么 |
-|---|---|---|---|---|
-| 0 | 本文件 | 无 | 无 | 计划进 `main` |
-| 1 | §3 的按钮范围 | 无 wasm | 无 | DeepLearning、NumPy、SQLite、PHP、Shell、Linux 的工具栏没有 LeetCode；其余九门还有 |
-| 2 | 改 `docs/sources.yaml`：删 `d2l-zh` 的 Apache-2.0 / `adapt: true`，改成 §4.3 的四条。五章 frontmatter 改指向 `d2l-zh-text`。人工核对这五章没有整段原文 | 无 | 阶段 0 的许可结论 | 登记和正文义务一致。书的目录还是旧的 16 章 |
-| 3 | 用 §6 的 `index` 到 `14-init` 替换 `docs/dl` 与 `docs/en/dl`。不改 `minitorch.py` 的算子集合，除非某一块缺一个已有 API 的薄封装 | 文档几十字节到一两百 KB | 阶段 2 | 快速入门顺序与 d2l 前四章对齐，`docs-smoke` 仍全部在 60 秒内 |
-| 4 | 按 §6 的清单实现卷积、汇聚、批量规范化，并写 `15-block` 到 `24-residual` | `minitorch.py` 从大约 360 行增到大约 900 行，仍是文本，不进侧栏 MB | 阶段 3 | LeNet 一小步能在冒烟里打出 `acc` |
-| 5 | RNN / GRU / LSTM / 注意力 / 优化器其余算法，以及 `25-sequence` 到 `37-schedule`。语料先用围栏里的短字符串 | 库再增加大约 600 行。若改钉《时间机器》摘录，锁文件里一份小于 300 KB 的文本，侧栏从 20.2 MB 变成约 20.4 MB | 阶段 4 | 单步循环和长度为 4 的注意力能跑；不出现翻译或 BERT |
-| 6 | 只读的 `38-not-here.md`。不下载新 wheel | 无 | 阶段 3 即可，不必等 4、5 | 读者能看到哪些章故意没有 |
-
-阶段 4 若 LeNet 的一小步在 headless Chromium 上超过 45 秒（给 60 秒上限留余量），把通道和步数再减，而不是把超时调高。减到无法演示前向时，这一章改成只打印输出形状，训练块标 `norun`。
-
-阶段 5 的优化器可以和阶段 4 并行写库，但书的 PR 仍按阶段合并，避免一篇 PR 里既改卷积又改半本书。
-
-不做的工作，写在这里以免后面的 PR 把它们加回来：matplotlib、pandas、scipy、scikit-learn、PyPI `d2l`、PyTorch、全量 Fashion-MNIST、CIFAR、ImageNet、BERT、GPU 章的可运行块、把题库接进 Pyodide。
-
----
-
-## 8. 体积
-
-| 项 | 字节 | 决定 |
-|---|---|---|
-| 现有 Pyodide 七文件 | 21,201,739（界面 20.2 MB） | 保持，是这一行的预算 |
-| Fashion 子集 | 已含在上面 | 不换成约 30 MB 的全量 |
-| matplotlib + 数据文件 | 数 MB 起，未在本仓库复测 | 不加入 |
-| pandas、scipy | 旧调研里 scipy 与 sklearn 一轮约 17 MB 量级 | 不加入 |
-| `d2l` 包与 jupyter | 不是 wasm，但 jupyter 在页面里没有用，且会拉网络 | 不加入 |
-| 第 5 阶段可选文本 | < 300 KB | 唯一允许的新增数据，且要进清单和锁 |
-| `minitorch.py` | 文本，最终大约 1.5–2 千行 | 随 JS 包走，不进 `wasm/manifest.json` 的语言资产 |
-| 新章节 Markdown | 每章数 KB，中英合计几十章时大约几百 KB | 可接受。不把 d2l 的 100 多节原样生成进来 |
-
-侧栏百分比的分母是这一行的资产总和。除了可选的小文本，分母保持 21.2 MB。新增文件若走 `kind: "bin"`，`write-manifest.mjs` 会写进不提交的 `wasm/manifest.json`，并要打进 `vendor/prebuilt`。小文本若不到必须进预构建包的程度，优先放在仓库里由 Worker 以 `?raw` 写入，和 `FASHION.txt` 一样，避免为 200 KB 重打 linux 预构建包。
-
----
-
-## 9. 风险
-
-| 风险 | 后果 | 处理 |
-|---|---|---|
-| 把中文仓库根上的 Apache-2.0 当成正文许可证 | 改编段落没有按 CC BY-SA 4.0 共享，和英文原书的 ShareAlike 冲突 | 正文 `adapt: false`，只链接。阶段 2 删掉错误登记 |
-| `d2l` 包的 `setup.py` 写 MIT-0，笔记本代码却是 Amazon 的修改版 MIT | 搬错文件头 | 搬笔记本片段用 `LICENSE-SAMPLECODE`；搬 `d2l/*.py` 才用 MIT-0。默认不搬 |
-| 纯 NumPy 卷积比书上的 GPU 章节慢两个数量级以上 | 冒烟超时，或读者以为页面卡死 | 步数和通道写死在能于 45 秒内结束的规模；超时就改形状演示 |
-| Worker 的 MEMFS 和 NumPy 随机状态跨 Run 保留 | 后一块读到前一块的文件或随机流，冒烟顺序一变就失败 | 块内自洽；初值写死；不在可运行块里调用 `np.random.seed` 作为跨块契约 |
-| 英文 `master` 与中文 2.0.0 目录不一致 | 中英章节对不上，或读者按中文网站的旧节号找不到 | 文件名以 §6 为准，延伸阅读同时给出两边 URL。英文站多出来的强化学习等章明确不做 |
-| 现有五章引用了错误的 `d2l-zh` id | 看起来像已经获得 Apache 改编权 | 阶段 2 改 id，并读一遍正文 |
-| 本地阅读进度按 slug 保存 | 删掉 `04-xor.md` 等文件后旧进度回到目录 | 接受，不迁移 |
-| QuickJS 按钮留下但没有题解 | 和「拿掉不能跑的语言」看起来不一致 | JS/TS 能写能跑用户自己的程序；缺的是已导入的题解文件，不是入口。探测仍按 LEETCODE.md §7.3 |
-| 在 DeepLearning 上点 LeetCode 会 `select` 走 | 阶段 1 之前的现状 | 阶段 1 禁止这条 `align` |
-
----
-
-## 10. 验收
-
-阶段 1：
-
-- 上表 14 行里，九个留下的运行时看得到 `study-mode-leetcode`，五个拿掉的看不到。
-- `localStorage` 里模式为 `leetcode` 时选中 `numpy`：运行时 id 仍是 `numpy`，抽屉是快速入门。
-- `tests/learn.spec.mjs` 的题库流程在 Python 上仍通过。
-- `./build.sh build` 与 `./build.sh test` 通过。
-
-阶段 2：
-
-- `docs/sources.yaml` 不再出现 `license: Apache-2.0` 的 `d2l-zh`。
-- 四条新 id 的 `adapt` 与 §4.3 一致。
-- 引用旧 id 的十个 frontmatter（中英各五）已改，且正文没有粘贴的上游段落。
-
-阶段 3 到 6：
-
-- 中英文件名一一对应，`chapter` 连续，第 0 章仍叫 `index.md`。
-- 每章至少三个 `###`、两个带 `expect` 的 `numpy` 围栏，除非该块标了 `norun` 并在旁边写了原因。`smoke=skip` 不用于逃避 60 秒训练，训练块直接缩小。
-- `tests/docs-ascii.test.ts`、`tests/docs-length.test.ts`、`tests/docs-smoke.mjs` 覆盖新章节。冒烟默认跑 `dl`（Pyodide），单块 60 秒内结束。
-- `tests/minitorch.test.mjs` 给每个新算子一个数值梯度。
-- `tests/pyodide-no-remote.test.ts` 仍然禁止 `cdn.jsdelivr.net` 和 `cdn.pyodide.org`。新代码不增加运行时 URL。
-- 侧栏这一行在不加入可选文本时仍显示 20.2 MB。
-- 概览写明：这不是 PyTorch，也不是 d2l 的官方译本；延伸阅读指向原书，许可证是 CC BY-SA 4.0。
-
-任一阶段若要新增二进制，先改 `scripts/sources.lock.json` 的 sha256，再跑 `./build.sh vendor --pyodide`。失败时的预构建包退路与 [plan/DEEP_LEARNING.md](DEEP_LEARNING.md) §11.4 相同。Rust 和 Java 的文档冒烟开关与本计划无关。
+`./build.sh build` 和 `./build.sh test` 在每个阶段合并前都要通过。
