@@ -10,6 +10,8 @@ const FILE_ASSETS = [
   ["pyodide-lock", "pyodide-lock.json"],
   ["pyodide-numpy", "numpy-2.4.6-cp314-cp314-pyemscripten_2026_0_wasm32.whl"],
   ["pyodide-fashion", "fashion-mnist.bin"],
+  ["pyodide-house", "house-tiny.csv"],
+  ["pyodide-airfoil", "airfoil-tiny.csv"],
 ] as const;
 
 interface DoneMessage {

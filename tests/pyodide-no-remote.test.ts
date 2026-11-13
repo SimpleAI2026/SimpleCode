@@ -3,7 +3,7 @@ import { existsSync, readdirSync, readFileSync, statSync } from "node:fs";
 import { join } from "node:path";
 import { describe, it } from "node:test";
 
-const BANNED = ["cdn.jsdelivr.net", "cdn.pyodide.org"];
+const BANNED = ["cdn.jsdelivr.net", "cdn.pyodide.org", "d2l-data.s3-accelerate.amazonaws.com"];
 
 function walk(dir: string, out: string[] = []): string[] {
   if (!existsSync(dir)) return out;

@@ -135,8 +135,11 @@ Digests are also in `scripts/sources.lock.json` and `wasm/rust/SOURCES.md`. The 
 
 - [Pyodide](https://pyodide.org/) 314.0.7 — Mozilla Public License 2.0. CPython 3.14.2 and the Pyodide runtime (`pyodide.asm.wasm`, `pyodide.asm.mjs`, `pyodide.mjs`, `python_stdlib.zip`). Vendored under `wasm/pyodide/` by `./build.sh vendor --pyodide`. The page loads those same-origin files only. The upstream `pyodide.mjs` default `packageBaseUrl` points at jsDelivr; the vendored copy removes that default.
 - [NumPy](https://numpy.org/) 2.4.6 — BSD-3-Clause. Wheel `numpy-2.4.6-cp314-cp314-pyemscripten_2026_0_wasm32.whl`, loaded with `loadPackage("numpy")` from the same directory.
-- [Fashion-MNIST](https://github.com/zalandoresearch/fashion-mnist) — MIT, Copyright (c) 2017 Zalando SE. `wasm/pyodide/fashion-mnist.bin` is the first 5,000 training images and the first 1,000 test images (28×28 uint8) plus labels. Attribution is also written to `/data/FASHION.txt` in the Pyodide filesystem.
-- `src/pyodide/minitorch.py` is original teaching code in this repository (MIT). It is not an upstream package. No function body from `d2l` has been copied into it.
+- [Fashion-MNIST](https://github.com/zalandoresearch/fashion-mnist) — MIT, Copyright (c) 2017 Zalando SE. `wasm/pyodide/fashion-mnist.bin` is the first 32 training images and the first 8 test images (28×28 uint8) plus labels, 31,412 bytes, sha256 `c21131fd07df97e38bf030fd0310b3d71e52fa13f3c436f1a7af0c3822d70d70`. The upstream collection has 60,000 training images and 10,000 test images. Attribution is also written to `/data/FASHION.txt` in the Pyodide filesystem. Pixels stay uint8 until a batch is scaled.
+- `wasm/pyodide/house-tiny.csv` is 8,598 bytes, sha256 `88501bf242aad53f6e7eee7b03e432807624a28ffea41c6448693f73629f7683`. It is 16 training rows and 8 validation rows of synthetic numeric features plus a price column. It is not the Kaggle house-prices CSV and not the Ames housing table. Those files were not downloaded. The note is `/data/HOUSE.txt`.
+- `wasm/pyodide/airfoil-tiny.csv` is 1,956 bytes, sha256 `0edccb72f6f1bf601077c041c0b3e57d8bd9b1f0dcd3cc34f5cadb829fb892f8`. It is 32 synthetic rows with five inputs and one sound column. It is not the UCI airfoil self-noise file. That file was not downloaded. The note is `/data/AIRFOIL.txt`.
+- The three sample files together are 41,966 bytes, inside the 256 KiB cap.
+- `src/pyodide/minitorch.py` is original teaching code in this repository (MIT). It is not an upstream package. No function body from `d2l` has been copied into it. Phase 3 adds indexing, `exp`, `log`, `train` / `eval`, caller-supplied `Dropout`, SGD weight decay, Momentum, AdaGrad, RMSProp, Adadelta, a step learning-rate schedule, per-batch image scaling, and loaders for the two synthetic tables. The formulas are the usual ones, written against this file. They are not labeled as d2l code.
 
 ## Dive into Deep Learning (text and code, separate)
 
@@ -153,7 +156,7 @@ The book text is not vendored. `docs/dl/` and `docs/en/dl/` are original writing
 
 `d2l-zh` `config.ini` says the book is "Licensed under CC-BY-SA-4.0 and MIT-0." The root `LICENSE` in that repository is Apache-2.0, and `setup.py` declares `license='MIT-0'`. The English book's root `LICENSE` is CC BY-SA 4.0; notebook sample code is `LICENSE-SAMPLECODE` (Copyright 2019 Amazon.com, Inc. or its affiliates). The Apache-2.0 file is not the license for prose or for adapted functions. The old source id `d2l-zh` (Apache-2.0, `adapt: true`) was removed for that reason.
 
-The short-course chapters that cited `d2l-zh` (`11-dropout.md`, `12-batchnorm.md`, `13-rnn.md`, `14-attn.md`, `15-train.md`, Chinese and English) were audited before deletion. Stripping code fences, no 20-character Han run from those files appeared in the 139 chapter markdown files at the commit above. The prose was original. `11-dropout.md` still said the upstream code was Apache-2.0, which is the mistake this registration replaces. The flat 16-chapter course was removed so the drawer follows the d2l section paths. Phase 2 writes only the four read-only openers (preface, installation, notation, introduction).
+The short-course chapters that cited `d2l-zh` (`11-dropout.md`, `12-batchnorm.md`, `13-rnn.md`, `14-attn.md`, `15-train.md`, Chinese and English) were audited before deletion. Stripping code fences, no 20-character Han run from those files appeared in the 139 chapter markdown files at the commit above. The prose was original. `11-dropout.md` still said the upstream code was Apache-2.0, which is the mistake this registration replaces. The flat 16-chapter course was removed so the drawer follows the d2l section paths. Phase 2 wrote the four read-only openers. Phase 3 adds original chapters for preliminaries, linear networks, multilayer perceptrons, and optimization. Runnable fences call minitorch. They do not paste notebook prose.
 
 Code may be adapted later, with attribution, and only under its own license:
 
@@ -161,7 +164,7 @@ Code may be adapted later, with attribution, and only under its own license:
 - A function taken from a `d2l-en` notebook, and not from `d2l-zh`, keeps the Amazon notice in `LICENSES/d2l-en-LICENSE-SAMPLECODE.txt` (Copyright 2019 Amazon.com, Inc. or its affiliates) and commit `23d7a5aecceee57d1292c56e90cce307f183bb0a`. Cite source id `d2l-en-sample-code` only in that case.
 - A rewrite that does not copy an upstream function body stays under this repository's MIT license and is not labeled as d2l code.
 
-No adapted function is in the tree yet, so no source file carries those headers. Sample data stays on the tiny slices in `plan/D2L_AND_LEETCODE_SCOPE.md` section 6. Together they must stay within 256 KiB. This phase does not add or replace sample files. The Fashion-MNIST subset described above is unchanged until that later replacement.
+No adapted function is in the tree yet, so no source file carries those headers. The optimizers added in phase 3 were written for minitorch and stay under this repository's MIT license. Sample data is the 32+8 Fashion-MNIST slice plus the two synthetic tables above. Together they stay within 256 KiB. Later phases may add the other tiny slices from `plan/D2L_AND_LEETCODE_SCOPE.md` section 6, still inside that cap.
 
 ## Java (TeaVM)
 

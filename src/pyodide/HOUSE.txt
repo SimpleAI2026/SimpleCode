@@ -1,0 +1,6 @@
+Synthetic house-price rows for SimpleCode.
+
+These 24 rows are not copied from the Kaggle house-prices CSV and not copied from the Ames housing table.
+That competition file is not redistributed here.
+The table keeps the chapter's shape: 16 training rows, 8 validation rows, numeric features, and a final price column.
+Values come from a fixed generator in scripts/vendor-pyodide.mjs.

@@ -6,14 +6,15 @@
 // Chapter numbers are indexes in DL_TOC, including chapter 0.
 // DL_LANDED_PHASE is the last phase whose markdown must exist.
 // Later phases add files; they do not renumber earlier chapters.
-// Sample bytes, once phase 3 replaces the Fashion-MNIST subset, stay
-// within DL_SAMPLE_BUDGET_BYTES. This phase vendors no new samples.
+// Phase 3 replaces Fashion-MNIST with 32 train and 8 test images and adds
+// synthetic house and airfoil tables. Together they stay within
+// DL_SAMPLE_BUDGET_BYTES. Later phases add their own tiny samples.
 
 export const DL_ZH_COMMIT = "e6b18ccea71451a55fcd861d7b96fddf2587b09a";
 export const DL_EN_COMMIT = "23d7a5aecceee57d1292c56e90cce307f183bb0a";
 
 /** Last curriculum phase whose chapters are required on disk. */
-export const DL_LANDED_PHASE = 2;
+export const DL_LANDED_PHASE = 3;
 
 /** Combined cap for tiny DeepLearning samples. Not a download of upstream archives. */
 export const DL_SAMPLE_BUDGET_BYTES = 256 * 1024;

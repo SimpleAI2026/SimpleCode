@@ -3,6 +3,7 @@ import { readdirSync, readFileSync, statSync } from "node:fs";
 import { join } from "node:path";
 import { describe, it } from "node:test";
 import { listBookMarkdown } from "../scripts/docs/book-files.mjs";
+import { createHash } from "node:crypto";
 import { DL_EN_COMMIT, DL_LANDED_PHASE, DL_SAMPLE_BUDGET_BYTES, DL_TOC, DL_ZH_COMMIT, dlChapterNumber } from "../scripts/docs/dl-toc.ts";
 import { chapterSlug } from "../src/docs/edition.ts";
 
@@ -75,18 +76,24 @@ describe("d2l table of contents", () => {
     assert.equal(dlChapterNumber("chapter_preface/index.md"), 0);
     assert.equal(dlChapterNumber("chapter_introduction/index.md"), 3);
     assert.equal(dlChapterNumber("chapter_appendix-tools-for-deep-learning/d2l.md"), 138);
-    assert.equal(DL_LANDED_PHASE, 2);
+    assert.equal(DL_LANDED_PHASE, 3);
     assert.equal(DL_SAMPLE_BUDGET_BYTES, 256 * 1024);
+    const phase3 = DL_TOC.filter((section) => section.phase === 3);
+    assert.equal(phase3.length, 39);
+    assert.equal(phase3.filter((section) => section.path.startsWith("chapter_optimization/")).length, 12);
+    assert.equal(phase3.filter((section) => section.path.startsWith("chapter_linear-networks/")).length, 8);
     assert.equal(chapterSlug("en/dl/chapter_notation/index"), "chapter_notation/index");
   });
 
+  const landed = DL_TOC.filter((section) => section.phase <= DL_LANDED_PHASE).map((section) => section.path);
+
   for (const edition of ["docs/dl", "docs/en/dl"]) {
-    it(`${edition} has the phase 2 chapters and no share-alike notice`, () => {
-      assert.deepEqual(listBookMarkdown(edition), [...PHASE2].sort());
+    it(`${edition} has the landed chapters and no share-alike notice`, () => {
+      assert.deepEqual(listBookMarkdown(edition), [...landed].sort());
       for (const name of walkNames(edition)) {
         assert.equal(/^(license|notice)(\.|$)/i.test(name), false, name);
       }
-      for (const path of PHASE2) {
+      for (const path of landed) {
         const text = readFileSync(join(edition, path), "utf8");
         const chapter = Number(text.match(/^chapter:\s*(\d+)/m)?.[1]);
         assert.equal(chapter, dlChapterNumber(path));
@@ -96,7 +103,61 @@ describe("d2l table of contents", () => {
         assert.match(text, /sources:\n(?:  - .+\n)*  - d2l-zh-text\n/);
         assert.match(text, /  - d2l-en-text\n/);
         assert.equal(text.includes("d2l-zh\n"), false);
+        const tier = DL_TOC.find((section) => section.path === path)?.tier;
+        if (tier === "readonly") {
+          assert.equal(text.includes("```numpy run"), false, path);
+          assert.ok((text.match(/```numpy norun/g) ?? []).length >= 2, path);
+        } else {
+          assert.ok((text.match(/```numpy run /g) ?? []).length >= 2, path);
+        }
       }
     });
   }
+
+  it("keeps phase 3 samples inside the 256 KiB budget", () => {
+    const lock = JSON.parse(readFileSync("scripts/sources.lock.json", "utf8")).pyodide.files;
+    const names = ["fashion-mnist.bin", "house-tiny.csv", "airfoil-tiny.csv"] as const;
+    let total = 0;
+    for (const name of names) {
+      const pin = lock[name];
+      const buf = readFileSync(join("wasm/pyodide", name));
+      assert.equal(buf.length, pin.bytes, name);
+      assert.equal(createHash("sha256").update(buf).digest("hex"), pin.sha256, name);
+      total += buf.length;
+    }
+    assert.equal(lock["fashion-mnist.bin"].fashion.train, 32);
+    assert.equal(lock["fashion-mnist.bin"].fashion.test, 8);
+    assert.ok(total <= DL_SAMPLE_BUDGET_BYTES, String(total));
+    assert.ok(total < 64 * 1024, String(total));
+  });
+
+  it("keeps phase 3 training loops at four steps", () => {
+    const train = new Set([
+      "chapter_linear-networks/linear-regression-scratch.md",
+      "chapter_linear-networks/linear-regression-concise.md",
+      "chapter_linear-networks/softmax-regression-scratch.md",
+      "chapter_linear-networks/softmax-regression-concise.md",
+      "chapter_multilayer-perceptrons/mlp-scratch.md",
+      "chapter_multilayer-perceptrons/mlp-concise.md",
+      "chapter_multilayer-perceptrons/underfit-overfit.md",
+      "chapter_multilayer-perceptrons/weight-decay.md",
+      "chapter_multilayer-perceptrons/environment.md",
+      "chapter_multilayer-perceptrons/kaggle-house-price.md",
+      "chapter_optimization/gd.md",
+      "chapter_optimization/sgd.md",
+      "chapter_optimization/minibatch-sgd.md",
+      "chapter_optimization/momentum.md",
+      "chapter_optimization/adagrad.md",
+      "chapter_optimization/rmsprop.md",
+      "chapter_optimization/adadelta.md",
+      "chapter_optimization/adam.md",
+      "chapter_optimization/lr-scheduler.md",
+    ]);
+    for (const path of DL_TOC.filter((section) => section.phase === 3).map((section) => section.path)) {
+      const text = readFileSync(join("docs/dl", path), "utf8");
+      const widths = [...text.matchAll(/\brange\((\d+)\)/g)].map((match) => Number(match[1]));
+      assert.ok(widths.every((width) => width <= 4), `${path} ${widths.join(",")}`);
+      if (train.has(path)) assert.ok(widths.includes(4), path);
+    }
+  });
 });
