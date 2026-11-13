@@ -233,17 +233,18 @@ async function assertLeetCode(page) {
   await page.waitForFunction(() => document.querySelector('[data-testid="docs-title"]')?.textContent?.includes("Python 快速入门"));
 }
 
-async function assertToolbarClear(page) {
-  const boxes = await page.evaluate(() => {
+async function assertToolbarClear(page, ids = ["run", "study-mode-learn", "study-mode-leetcode"]) {
+  const boxes = await page.evaluate((ids) => {
     const drawer = document.querySelector('[data-testid="docs-drawer"]').getBoundingClientRect();
-    return ["run", "study-mode-learn", "study-mode-leetcode"].map((id) => {
+    return ids.map((id) => {
       const el = document.querySelector(`[data-testid="${id}"]`);
+      if (!el) return { id, intersects: true, covered: true, visible: false };
       const r = el.getBoundingClientRect();
       const hit = document.elementFromPoint(r.x + r.width / 2, r.y + r.height / 2);
       const intersects = !(r.right <= drawer.left || r.left >= drawer.right || r.bottom <= drawer.top || r.top >= drawer.bottom);
       return { id, intersects, covered: !!hit?.closest("[data-testid='docs-drawer']"), visible: r.width > 0 && r.height > 0 };
     });
-  });
+  }, ids);
   check(
     boxes.every((b) => b.visible && !b.intersects && !b.covered),
     `toolbar stays clear of the drawer (${boxes.map((b) => `${b.id}:${b.intersects ? "overlap" : "ok"}`).join(" ")})`,
@@ -446,7 +447,8 @@ try {
   await openLearn(page);
   const linuxTitle = await page.textContent('[data-testid="docs-title"]');
   check(linuxTitle?.includes("Linux 快速入门") && !(await page.$('[data-testid="docs-soon"]')), `linux book opens ${linuxTitle}`);
-  await assertToolbarClear(page);
+  check((await page.locator('[data-testid="study-mode-leetcode"]').count()) === 0, "linux hides the LeetCode button");
+  await assertToolbarClear(page, ["run", "study-mode-learn"]);
   const linuxDrawer = "/tmp/learn-linux-drawer.png";
   await page.locator('[data-testid="docs-drawer"]').screenshot({ path: linuxDrawer });
   check(monoRatio(linuxDrawer) >= 0.99, "linux drawer grayscale");

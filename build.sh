@@ -146,6 +146,7 @@ cmd_test() {
   node tests/learn.spec.mjs
   node tests/ui-chrome.spec.mjs
   node tests/numpy-ui.spec.mjs
+  node tests/leetcode-scope.spec.mjs
   node tests/terminal-switch.spec.mjs
 }
 

@@ -39,6 +39,9 @@ export const useLeetCodeStore = defineStore("leetcode", () => {
   });
 
   function align() {
+    // Study mode calls this only while LeetCode is open on a runtime in LEETCODE_RUNTIMES.
+    // A hidden section must stay selected; do not jump to the first cached language.
+    if (!runnable.has(langs.selectedId)) return;
     if (candidates.value.some((lang) => lang.id === langs.selectedId)) return;
     if (downloading.value) return;
     const first = candidates.value[0];

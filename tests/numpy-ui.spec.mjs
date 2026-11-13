@@ -68,6 +68,9 @@ try {
   });
   await page.goto(BASE);
   await page.getByTestId("lang-numpy").click();
+  check((await page.getByTestId("study-mode-leetcode").count()) === 0, "DeepLearning hides the LeetCode button");
+  check((await page.getByTestId("study-mode").count()) === 1, "study mode group stays");
+  check((await page.getByTestId("study-mode-learn").count()) === 1, "DeepLearning keeps Quick Start");
   const button = page.getByTestId("lang-numpy");
   await button.waitFor();
   const label = await button.innerText();
@@ -117,6 +120,7 @@ try {
   check(true, "switching away from DeepLearning clears the terminal");
 
   await page2.getByTestId("lang-numpy").click();
+  check((await page2.getByTestId("study-mode-leetcode").count()) === 0, "DeepLearning hides LeetCode while the book switcher is used");
   await page2.getByTestId("study-mode-learn").click();
   await page2.getByTestId("docs-books").waitFor();
   const books = await page2.getByTestId("docs-books").innerText();
@@ -125,12 +129,18 @@ try {
   await page2.getByTestId("docs-drawer").waitFor();
   const toc = await page2.getByTestId("docs-drawer").innerText();
   check(toc.includes("NumPy"), "NumPy quick start opens from the switcher");
+  await page2.getByTestId("docs-book-dl").click();
+  await page2.waitForFunction(() => document.querySelector('[data-testid="docs-book-dl"]')?.getAttribute("aria-pressed") === "true");
+  check((await page2.getByTestId("study-mode-leetcode").count()) === 0, "switching DeepLearning books keeps LeetCode hidden");
 
   await page2.getByTestId("locale-en").click();
   const enLabel = await page2.getByTestId("lang-numpy").innerText();
   check(enLabel.includes("DeepLearning") && enLabel.includes("Python (NumPy)"), `English label ${JSON.stringify(enLabel)}`);
   const enBooks = await page2.getByTestId("docs-books").innerText();
   check(enBooks.includes("DeepLearning") && enBooks.includes("NumPy"), `English books ${JSON.stringify(enBooks)}`);
+  await page2.getByTestId("lang-ruby").click();
+  await page2.waitForFunction(() => document.querySelector('[data-testid="lang-ruby"]')?.getAttribute("aria-current") === "true");
+  check((await page2.getByTestId("study-mode-leetcode").count()) === 1, "LeetCode button returns on Ruby");
   await page2.close();
 } finally {
   await browser.close().catch(() => {});
