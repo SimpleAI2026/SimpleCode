@@ -1,6 +1,6 @@
 # SimpleCode 深度学习（Deep Learning）入口调研（v2，含实测）
 
-> 状态：第 0–10 节是运行时调研，原文保留。第 11 节是已经落地的短课（Pyodide、`minitorch.py`、现有 16 章）。课程改由 [D2L_AND_LEETCODE_SCOPE.md](D2L_AND_LEETCODE_SCOPE.md) 接替：仍用这一套 Pyodide + NumPy + minitorch，把 [d2l-zh](https://github.com/d2l-ai/d2l-zh) 的正文和 PyTorch 代码迁进来，能跑的节在浏览器里跑。正文的主方案是 CC BY-SA 4.0。v1：2026-10-20 09:0x；v2：2026-10-20 09:1x–09:4x（UTC+8）。
+> 状态：第 0–10 节是运行时调研，原文保留。第 11 节是已经落地的短课（Pyodide、`minitorch.py`、现有 16 章）。课程改由 [D2L_AND_LEETCODE_SCOPE.md](D2L_AND_LEETCODE_SCOPE.md) 接替：仍用这一套 Pyodide + NumPy + minitorch，按 [d2l-zh](https://github.com/d2l-ai/d2l-zh) 的目录和例子重排，正文自己写并链回原书，能跑的节在浏览器里跑。代码可按 MIT-0 或英文笔记本的修改版 MIT 改编并署名。不把 CC BY-SA 正文搬进仓库。v1：2026-10-20 09:0x；v2：2026-10-20 09:1x–09:4x（UTC+8）。
 > v2 的版本号、Star 和日期取自 GitHub API、npm registry、PyPI 和 Pyodide lock 文件；体积是**实际下载后**测得；耗时是本机实测。
 > 原始日志：`measurements/`（同目录）。没测到的标 **未知/未测**。
 

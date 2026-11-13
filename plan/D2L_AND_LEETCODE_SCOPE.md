@@ -7,9 +7,9 @@
 本文件做两件事。
 
 1. 工具栏「快速入门 | LeetCode」今天对每一个侧栏分区都出现。下面列出全部分区，规定哪些留下、哪些拿掉，以及要改的代码和测试。
-2. 把 [d2l-ai/d2l-zh](https://github.com/d2l-ai/d2l-zh)（`config.ini` 的 release 2.0.0）的正文和 PyTorch 代码迁进 DeepLearning 这一本，并在**已经落地**的 Pyodide + NumPy + `minitorch.py` Worker 里能跑多少跑多少。不换框架，不接 CDN。
+2. 按 [d2l-ai/d2l-zh](https://github.com/d2l-ai/d2l-zh)（`config.ini` 的 release 2.0.0）的目录和例子重排 DeepLearning，正文中英都自己写，并在**已经落地**的 Pyodide + NumPy + `minitorch.py` Worker 里能跑多少跑多少。不抄原书句子，不换框架，不接 CDN。
 
-2026-11-13 按评审意见改过课程范围，同日又改成：所有外部数据都只用小样本，包括 Fashion-MNIST，训练只验证链路，不追求准确率。第 1–3 节的 LeetCode 取舍没有改。
+2026-11-13 按评审意见改过课程范围，同日又改成：所有外部数据都只用小样本，包括 Fashion-MNIST，训练只验证链路，不追求准确率。正文许可证选定自写，不采用把 CC BY-SA 正文搬进仓库。第 1–3 节的 LeetCode 取舍没有改。
 
 ## 和现有计划的关系
 
@@ -31,7 +31,7 @@
 4. d2l-zh 每一节能不能在浏览器里跑
 5. 运行时：扩展 minitorch，不换框架
 6. 数据与体积
-7. 许可证：正文以 CC BY-SA 迁入为主方案
+7. 许可证：正文自写；代码按 MIT-0 改编
 8. 文件怎么放、代码怎么移植
 9. 分阶段
 10. 风险与验收
@@ -145,7 +145,7 @@ LeetCode 只有一个入口：`EditorToolbar.vue` 始终挂 `StudyModeSwitch.vue
 |---|---|
 | **完整** | 这一节没有外部数据集。例子是公式、小矩阵或块内生成的合成数，和书上的演示同一量级。若有循环，也只走下面的 4 步 |
 | **缩减** | 书用了外部数据或很多轮训练。数据一律换成第 6 节的小样本，训练只验证链路：读入、前向、反向、4 步更新、在留出的几条上评估。不追求准确率 |
-| **只读** | 正文迁入，代码标 `norun`。这一节的要点是 CUDA、多机或云服务，小样本也变不出这些设备。只打印 `cpu` 不算把该节跑起来 |
+| **只读** | 自写正文进抽屉，代码标 `norun`。这一节的要点是 CUDA、多机或云服务，小样本也变不出这些设备。只打印 `cpu` 不算把该节跑起来 |
 
 步数对所有带训练的节相同，包括标成完整的合成例子：
 
@@ -368,7 +368,7 @@ LeetCode 只有一个入口：`EditorToolbar.vue` 始终挂 `StudyModeSwitch.vue
 
 ### 4.16 附录
 
-这 7 节都是只读：没有可以在这个 Worker 里执行的程序。`d2l.md` 迁入后，页首加一张「书上的名字 → minitorch」对照。对照是我们写的。
+这 7 节都是只读：没有可以在这个 Worker 里执行的程序。`d2l.md` 写成后，页首加一张「书上的名字 → minitorch」对照。对照是我们写的。原 API 文档只放延伸阅读链接。
 
 | 节 | 上游文件 | 档 |
 |---|---|---|
@@ -467,13 +467,15 @@ LeetCode 只有一个入口：`EditorToolbar.vue` 始终挂 `StudyModeSwitch.vue
 
 磁盘上的图像保持 uint8，每个批量再转成 float32。现有 `datasets.fashion_mnist` 会把读到的表整份转成 float64，换小样本时改成按批转换，避免以后有人把文件换大时一次铺开。
 
-`NOTICE` 里写明每份小样本的原文件名、原张数、留下的张数和 sha256。许可证跟原数据走。Fashion-MNIST 是 MIT。房价、PTB、Tatoeba、UCI 机翼、CIFAR、狗、IMDb、SNLI 在钉文件时把上游许可证抄进 `NOTICE`。条件不允许再分发的，改成代码块里同形状的合成数组，该节仍算缩减。不在计划里猜每一份的 SPDX。
+`LICENSES/THIRD_PARTY.md` 里写明每份小样本的原文件名、原张数、留下的张数和 sha256。许可证跟原数据走。Fashion-MNIST 是 MIT。房价、PTB、Tatoeba、UCI 机翼、CIFAR、狗、IMDb、SNLI 在钉文件时把上游许可证抄进同一节。条件不允许再分发的，改成代码块里同形状的合成数组，该节仍算缩减。不在计划里猜每一份的 SPDX。
 
 ---
 
-## 7. 许可证：正文以 CC BY-SA 迁入为主方案
+## 7. 许可证：正文自写；代码按 MIT-0 改编
 
-核对日期 2026-11-13，两个仓库的默认分支都是 `master`。
+**已选定：正文自己写。** 不把 d2l-zh 或 d2l-en 的句子抄进 `docs/dl/` 或 `docs/en/dl/`。目录和例子跟第 4 节的 139 个上游文件走，中英各写一套自己的句子。每章末尾用一句话链回原书对应节，当作延伸阅读。代码可以按它自己的许可证改编，并署名。
+
+核对日期 2026-11-13，两个仓库的默认分支都是 `master`。下面这张表只记录上游写了什么，不表示我们采用哪一份来分发正文。
 
 | 上游 | 实际写了什么 |
 |---|---|
@@ -482,68 +484,59 @@ LeetCode 只有一个入口：`EditorToolbar.vue` 始终挂 `StudyModeSwitch.vue
 | `d2l-en` 的 README | 书的正文是 CC BY-SA 4.0（根目录 `LICENSE`）。笔记本里的示例代码是 Amazon 2019 的一份修改版 MIT（`LICENSE-SAMPLECODE`） |
 | 两边的 `setup.py` | 包 `d2l` 的 `license='MIT-0'` |
 
-中文是英文的译本。英文正文是 CC BY-SA 4.0，译本不能靠根目录那份 Apache-2.0 甩掉相同方式共享。本仓库今天的 `docs/sources.yaml` 把 `d2l-zh` 登记成 Apache-2.0、`adapt: true`，这个登记是错的。`docs/dl` 与 `docs/en/dl` 里 `11-dropout.md`、`12-batchnorm.md`、`13-rnn.md`、`14-attn.md`、`15-train.md` 引用了它。抽查过丢弃那一章，正文是自写短节，不是粘贴。登记本身仍然要改。
+中文是英文的译本。英文正文是 CC BY-SA 4.0，译本不能靠根目录那份 Apache-2.0 再分发。本仓库今天的 `docs/sources.yaml` 把 `d2l-zh` 登记成 Apache-2.0、`adapt: true`，这个登记是错的。`docs/dl` 与 `docs/en/dl` 里 `11-dropout.md`、`12-batchnorm.md`、`13-rnn.md`、`14-attn.md`、`15-train.md` 引用了它。抽查过丢弃那一章，正文是自写短节，不是粘贴。登记本身仍然要改，改成下面的 `adapt: false`。
 
-代码和正文分开：
+### 7.1 选定：正文自己写
 
-- **正文**按 `config.ini` 和英文上游，是 **CC BY-SA 4.0**。
-- **`d2l/` 里的 Python，以及 `config.ini` 点名的代码**，按 **MIT-0**。从英文笔记本而不是从 `d2l-zh` 抄来的函数，改用 `LICENSE-SAMPLECODE` 那份 Amazon 版权。主来源是中文仓库，所以默认走 MIT-0。
-- 根目录 Apache-2.0 文件不作为正文许可证。
+中文进 `docs/dl/`，英文进 `docs/en/dl/`，文件名跟 `d2l-zh` 走，中英路径相同。英文仓库多出来的章（强化学习等）不写，主本仍是 `d2l-zh` 2.0.0。第 4 节的 139 行都要有对应文件，不退回现在的 16 章短课。
 
-### 7.1 主方案：把正文迁进来
+写作约束：
 
-这是默认要做的。中文进 `docs/dl/`，英文进 `docs/en/dl/`。英文句子取 `d2l-en` 里对应的节，不把中文再译一遍。文件名跟 `d2l-zh` 走，这样中英路径相同。英文仓库把线性网络拆成了两章、后面还多了强化学习等章；那些多出来的章不迁，因为主本是 `d2l-zh` 2.0.0。
-
-两套目录都放：
-
-- `LICENSE`：CC BY-SA 4.0 的法律文本，或指向 https://creativecommons.org/licenses/by-sa/4.0/ 的全文副本。
-- `NOTICE.md`：作者 Aston Zhang、Zachary C. Lipton、Mu Li、Alexander J. Smola；`config.ini` 的 “2022, All authors”；钉住的上游 commit；https://zh.d2l.ai 和 https://d2l.ai ；CC BY-SA 4.0 的 URI；一份修改清单。
-
-修改清单至少包括：只保留 PyTorch 那一栏；调用从 `torch` 改成 `minitorch`；图改成打印；所有外部数据都换成第 6 节的小样本，训练只有 4 步；没有 CUDA 的节标了 `norun`；书上的图没有搬进来。
-
-义务，按许可证原文的条件说：
-
-1. **署名。** 保留作者、版权声明、许可证名称和 URI、免责声明的指向、原书链接。标出我们改过。
-2. **相同方式共享。** `docs/dl/` 和 `docs/en/dl/` 里的正文以 CC BY-SA 4.0 再分发。改写这些段落的人必须用 CC BY-SA 4.0（或兼容许可证）发布改编物，不能加额外限制。仓库其余部分不因此变成 CC BY-SA：根 README 用一段话写明只有这两个目录是。`minitorch.py` 若是对着 API 重写的，保持项目自己的 MIT；从 `d2l/torch.py` 搬来的函数在文件头写 MIT-0 和上游路径。
-3. **代码块双重许可。** 整篇 Markdown 的正文是 CC BY-SA。代码块同时按 MIT-0 提供，和 `config.ini` 对代码的声明一致。只把代码块拿去用，不触发相同方式共享。改正文则触发。
-4. **不得暗示背书。** 页面写「改编自《动手学深度学习》」，不写官方译本，不把 Cambridge University Press、Amazon 或 NVIDIA 写成本站的背书。书名可以出现在署名里。CC 不授予商标。
-5. **技术性修改**（为了能跑而改调用）本身不构成改编；改写句子构成。两种都在 `NOTICE` 里分开列。
+- 句子、示例字符串、注释都自己写。中文注释对中文，英文注释对英文。不粘贴、不逐句改写原书段落。
+- 例子的算法、张量形状和打印的量跟原书那一节对应，数据规模和步数按第 4、6 节（小样本，4 步）。
+- 每章末尾一行延伸阅读，链到该节的 https://zh.d2l.ai 和 https://d2l.ai 。链接不是把正文搬进来。
+- 不写「改编自」，不写官方译本，不把 Cambridge University Press、Amazon 或 NVIDIA 写成本站的背书。书名只出现在延伸阅读里。
+- 不在 `docs/dl/` 或 `docs/en/dl/` 放 CC BY-SA 的 `LICENSE` 或 `NOTICE.md`。相同方式共享因此不作用到这两个目录。
+- 节长和跨书去重按 [plan/LEARN.md](LEARN.md) 生效：中文每节去掉代码后 1 到 400 个汉字，章前引言不超过 180 个汉字；英文每节 1 到 280 个词，引言不超过 140 个词；连续 60 个汉字不跨书重复。`tests/docs-length.test.ts` 不跳过 `dl`。代码仍只用 ASCII，中文注释按现有测试剥掉后再查。图不放进 `docs/`。
 
 `sources.yaml` 换成：
 
 | id | license | adapt | 用途 |
 |---|---|---|---|
-| `d2l-zh-text` | CC-BY-SA-4.0 | true | 中文正文，目录 `docs/dl/` |
-| `d2l-en-text` | CC-BY-SA-4.0 | true | 英文正文，目录 `docs/en/dl/` |
-| `d2l-code` | MIT-0 | true | `d2l-zh` 的 `d2l/*.py` 和 PyTorch 栏 |
-| `d2l-en-sample-code` | MIT（Amazon 2019，见 `LICENSE-SAMPLECODE`） | true | 只有从英文笔记本抄函数时才引用 |
+| `d2l-zh-text` | CC-BY-SA-4.0 | false | 只作延伸阅读链接，不复制句子 |
+| `d2l-en-text` | CC-BY-SA-4.0 | false | 同上，英文原书 |
+| `d2l-code` | MIT-0 | true | 从 `d2l-zh` 的 `d2l/*.py` 或 PyTorch 栏改编的函数 |
+| `d2l-en-sample-code` | MIT（Amazon 2019，见 `LICENSE-SAMPLECODE`） | true | 只有从英文笔记本改编函数时才引用 |
 
-删掉现在的 `d2l-zh`（Apache-2.0、`adapt: true`）。`LICENSES/THIRD_PARTY.md` 增加一节，链到上述 `LICENSE` 和 `NOTICE`。
+删掉现在的 `d2l-zh`（Apache-2.0、`adapt: true`）。
 
-这一本不再受 [plan/LEARN.md](LEARN.md) 的节长上限（中文每节 400 字、英文 280 词）和「连续 60 个汉字不跨书重复」。那些规则是为了自写短课不要粘贴别处的原文。这里正文就是上游的。`tests/docs-length.test.ts` 和跨书去重对 `dl` 跳过。代码仍只用 ASCII，中文注释按现有测试剥掉后再查。图不放进 `docs/`，渲染器会把 `docs/` 下不认识的目录当成新书。
+### 7.2 代码可以改编，并署名
 
-### 7.2 备选：正文自己写
+正文不搬，代码可以。来源分开记：
 
-若不想在仓库里放一个 CC BY-SA 的目录，就不要搬句子。章序仍按第 4 节，句子和示例字符串自己写。`d2l-zh-text` 与 `d2l-en-text` 改成 `adapt: false`，只出现在延伸阅读的链接里。代码仍可以按 MIT-0 移植。节长和跨书去重恢复生效，139 个上游文件不能原样落地，能写进抽屉的是短课规模的子集。这和「把内容迁进来」不是同一件事。没有选定这个备选之前，按第 7.1 节做。
+- 从 `d2l-zh` 的 `d2l/*.py` 或 PyTorch 栏改编的函数，按 **MIT-0**。文件头写 MIT-0、上游路径和钉住的 commit。`LICENSES/THIRD_PARTY.md` 加同样一行。
+- 从 `d2l-en` 笔记本而不是从 `d2l-zh` 改编的函数，改用 **`LICENSE-SAMPLECODE`** 那份修改版 MIT，版权行是 Amazon.com, Inc. or its affiliates，2019。文件头保留这份声明。
+- 对着 API 自己重写、没有搬上游函数体的，保持项目自己的 MIT，不标成 d2l 的代码。
+- 根目录那份 Apache-2.0 不作为任何正文或代码的许可证。
+
+### 7.3 未采用：把 CC BY-SA 正文搬进仓库
+
+曾考虑把原书句子放进 `docs/dl/` 和 `docs/en/dl/`，附 CC BY-SA 4.0 的 `LICENSE` 和署名、相同方式共享。不采用。原因是选定了自写。上游正文仍然是 CC BY-SA 4.0；若以后改回搬句子，必须先改本文件，再补署名和相同方式共享，不能靠 Apache-2.0 的根文件代替。
 
 ---
 
 ## 8. 文件怎么放、代码怎么移植
 
-`scripts/docs/render.ts` 今天只读 `docs/dl/*.md` 这一层。迁入后目录是：
+`scripts/docs/render.ts` 今天只读 `docs/dl/*.md` 这一层。自写之后目录是：
 
 ```
-docs/dl/LICENSE
-docs/dl/NOTICE.md
 docs/dl/chapter_preface/index.md
 docs/dl/chapter_linear-networks/linear-regression-scratch.md
 …
-docs/en/dl/LICENSE
-docs/en/dl/NOTICE.md
 docs/en/dl/chapter_linear-networks/linear-regression-scratch.md
 ```
 
-渲染器要走进 `chapter_*`，跳过 `LICENSE` 和 `NOTICE.md`。章节顺序跟 `d2l-zh` 的 `index.md` 目录，不按文件名排序。`chapter` 编号在整本书里连续，第 0 章仍可以是前言。现有扁平的 16 个 `docs/dl/*.md` 在第一批正文落地时删掉，避免两套目录并存。
+这两个目录里不放 `LICENSE` 或 `NOTICE.md`。渲染器要走进 `chapter_*`。章节顺序跟 `d2l-zh` 的 `index.md` 目录，不按文件名排序。`chapter` 编号在整本书里连续，第 0 章仍可以是前言。现有扁平的 16 个 `docs/dl/*.md` 在第一批正文落地时删掉，避免两套目录并存。每章末尾的延伸阅读链到原书同一节。
 
 每个可运行节一个 `numpy` 围栏，规模就是第 4 节的 4 步或那个小矩阵，`docs-smoke` 直接跑它。只读节的围栏标 `norun`，旁边用一句话写原因（中文「仅供阅读」由渲染器产生，原因写在正文里）。
 
@@ -559,12 +552,12 @@ docs/en/dl/chapter_linear-networks/linear-regression-scratch.md
 |---|---|---|---|
 | 0 | 本计划 | 无 | PR 里只有计划 |
 | 1 | 第 1–3 节的 LeetCode 按钮。与课程无关，可以先做 | 无 wasm | 五个分区看不到 LeetCode |
-| 2 | 第 7.1 节的 `LICENSE`、`NOTICE`、`sources.yaml`、`THIRD_PARTY.md`。渲染器认识 `chapter_*`。节长和跨书去重对 `dl` 跳过。迁入前言、引言、安装、符号（4 节只读） | 无 | 抽屉里能打开署名和第一章，许可证文件在目录里 |
-| 3 | minitorch 补到线性模型和优化器。用 32+8 的 Fashion 换掉现有 4.7 MB 子集，加上 8 KB 房价和 2 KB 机翼。迁入预备知识、线性神经网络、多层感知机、优化算法 | 侧栏从 20.2 MB 降到约 16 MB | softmax 和 MLP 在 32 张上走 4 步并打印 loss |
-| 4 | `Conv2d`、汇聚、`BatchNorm`。迁入深度学习计算、两章卷积。LeNet 和现代网络都用这 32 张、4 步 | 无新的大文件 | 每节打印 loss 或输出形状 |
+| 2 | 第 7.1 节的 `sources.yaml`（正文 `adapt: false`）和第 7.2 节的代码署名写进 `THIRD_PARTY.md`。渲染器认识 `chapter_*`。节长和跨书去重对 `dl` 照常生效。自写前言、引言、安装、符号（4 节只读），每章链回原书 | 无 | 抽屉里能打开第一章。目录里没有 CC BY-SA 的 `LICENSE` |
+| 3 | minitorch 补到线性模型和优化器。用 32+8 的 Fashion 换掉现有 4.7 MB 子集，加上 8 KB 房价和 2 KB 机翼。自写预备知识、线性神经网络、多层感知机、优化算法 | 侧栏从 20.2 MB 降到约 16 MB | softmax 和 MLP 在 32 张上走 4 步并打印 loss |
+| 4 | `Conv2d`、汇聚、`BatchNorm`。自写深度学习计算、两章卷积。LeNet 和现代网络都用这 32 张、4 步 | 无新的大文件 | 每节打印 loss 或输出形状 |
 | 5 | RNN、GRU、LSTM、注意力、Transformer。钉上 2 KB 摘录和 16 对句子 | 几 KB | 翻译数据节读这 16 对；seq2seq 走 4 步 |
 | 6 | 视觉节，含微调、R-CNN、分割数据和风格迁移。CIFAR、香蕉、狗、热狗都是几十 KB 的原始字节 | 大约 150 KB，仍在 256 KB 里 | 这些节都打印 loss 或框的形状，不再整节 `norun` |
-| 7 | PTB 32 行、4 个短段、8 条短评、8 对推断。迁入第 14、15 章。BERT 微调和推断也走 4 步，不下载权重 | 大约 20 KB | 预训练和微调都只证明损失能反传 |
+| 7 | PTB 32 行、4 个短段、8 条短评、8 对推断。自写第 14、15 章。BERT 微调和推断也走 4 步，不下载权重 | 大约 20 KB | 预训练和微调都只证明损失能反传 |
 | 8 | 计算性能 8 节和附录 7 节，全部只读正文。GPU 仍只读 | 无 | 139 节都在抽屉里 |
 
 阶段 3 换掉大的 Fashion 子集之后，侧栏停在约 16.0 MB。后面各阶段加起来不超过 256 KB 数据，不再把这一行推回 20 MB 以上。
@@ -575,18 +568,19 @@ docs/en/dl/chapter_linear-networks/linear-regression-scratch.md
 
 | 风险 | 处理 |
 |---|---|
-| 把 Apache-2.0 的根文件当成正文许可证 | 只认第 7 节。`sources.yaml` 里那条旧登记删掉 |
-| 相同方式共享被读成整个仓库都是 CC BY-SA | 根 README 写明只有 `docs/dl/` 和 `docs/en/dl/`。代码块另以 MIT-0 提供 |
+| 把原书句子贴进 `docs/dl/` | 正文是自写。`sources.yaml` 里两本书都是 `adapt: false`。审稿时对照原书，句子对上就改掉 |
+| 把 Apache-2.0 的根文件当成 d2l 正文或代码的许可证 | 只认第 7 节。`sources.yaml` 里那条旧登记删掉 |
 | 小样本被加回成整包或现有的 5000 张 | 数据上限 256 KB。Fashion 就是 32+8 |
 | 4 步被改成要看到准确率的长训练 | `expect` 不设准确率门槛 |
 | Worker 的 MEMFS 和 NumPy 全局随机流跨 Run 留下 | 可运行块自洽。随机数用块内 Generator |
 | 英文目录和中文 2.0.0 不一致 | 文件名跟中文仓库。英文多出来的章不迁 |
-| 节长测试挡住长文 | 阶段 2 就对 `dl` 跳过。不把书删成 400 字一节 |
-| 数据许可证在 HEAD 时还没逐份核对 | 钉文件之前写入 `NOTICE`。条件不允许再分发的，改成同形状的合成数组，该节仍算缩减 |
+| 为了塞进原书长文而跳过节长测试 | 不跳过。写到 [plan/LEARN.md](LEARN.md) 的字数里，例子仍按第 4 节能跑 |
+| 改编的函数没写上游许可证 | 第 7.2 节：MIT-0 或 `LICENSE-SAMPLECODE` 写在文件头和 `THIRD_PARTY.md` |
+| 数据许可证在 HEAD 时还没逐份核对 | 钉文件之前写入 `THIRD_PARTY.md`。条件不允许再分发的，改成同形状的合成数组，该节仍算缩减 |
 
 阶段 1 的验收就是第 3.3 节的测试。
 
-阶段 2 之后：`docs/dl/LICENSE` 和 `docs/en/dl/LICENSE` 存在；`NOTICE.md` 有作者、上游 commit、修改清单和 CC BY-SA 4.0 的链接；`sources.yaml` 不再出现 Apache-2.0 的 `d2l-zh`。
+阶段 2 之后：`docs/dl/` 和 `docs/en/dl/` 里没有 CC BY-SA 的 `LICENSE` 或 `NOTICE.md`；已落地的章有延伸阅读链接，正文不是原书句子；`sources.yaml` 里 `d2l-zh-text` 与 `d2l-en-text` 是 `adapt: false`，不再出现 Apache-2.0 的 `d2l-zh`。
 
 阶段 3 到 8：第 4 节的 139 行都有对应文件。档是完整或缩减的节，围栏能在浏览器里跑完并打印出 `expect` 里的子串；只读节的围栏是 `norun`。带训练的节只有 4 步。`tests/minitorch.test.mjs` 覆盖新算子。`tests/pyodide-no-remote.test.ts` 仍然禁止运行时出现 `cdn.jsdelivr.net`、`cdn.pyodide.org` 和 `d2l-data.s3-accelerate.amazonaws.com`。数据字节合计不超过 256 KB，侧栏这一行大约 16.0 MB。
 
