@@ -1,0 +1,7 @@
+{
+  "id": 1157,
+  "summary": "Prepare a lookup from one integer list. The list length is from 1 to 20000, and every stored integer is also from 1 to 20000. After that, at most 10000 questions arrive. A question names a closed index span and a count floor. The left index is not past the right index, both indexes lie inside the list, and the floor is always strictly more than half the span length. Write the integer that occurs at least that many times inside the span. If no integer reaches the floor, write -1.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

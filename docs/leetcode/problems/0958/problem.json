@@ -1,0 +1,26 @@
+{
+  "id": 958,
+  "slug": "check-completeness-of-a-binary-tree",
+  "summary": "读入一棵二叉树，结点个数从 1 到 100，每个结点的数值从 1 到 1000。判断它是不是一棵形状完整、底层靠左的二叉树。除了最深的那一层，上面每一层的结点数都必须达到该层所能容纳的最大个数。最深一层的结点必须从左向右紧挨着排，中间不能出现空位，但这一层不必排满。符合这个形状就写出真，否则写出假。",
+  "samples": [
+    {
+      "stdin": "root = [1,2,3,4,5,6]\n",
+      "stdout": "true\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "root = [1,2,3,4,5,null,7]\n",
+      "stdout": "false\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/check-completeness-of-a-binary-tree/",
+    "en": "https://leetcode.com/problems/check-completeness-of-a-binary-tree/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

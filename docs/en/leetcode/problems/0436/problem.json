@@ -1,0 +1,8 @@
+{
+  "id": 436,
+  "summary": "Read a list of ranges. Every range has a right endpoint strictly larger than its left endpoint, and no two ranges share a left endpoint. For each range, search for another range whose left endpoint is at least as large as the first range's right endpoint. When several candidates qualify, keep the one whose left endpoint is smallest. Write that candidate's index in the original list, or write -1 when nothing qualifies. Produce one index for every input range, in the same order as the input.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

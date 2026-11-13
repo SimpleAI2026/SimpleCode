@@ -1,0 +1,26 @@
+{
+  "id": 205,
+  "slug": "isomorphic-strings",
+  "summary": "读入两条长度相等的字符串。判断第一条里的字符能否按规则替换成第二条。每一种字符在整条字符串里必须换成同一种字符，两种不同的字符不能换成同一个字符，但某个字符可以换成它自己。替换不改变各个位置的先后。若存在这样的替换方式就写真，否则写假。两条字符串的长度相同是已知条件。字符按出现位置一一对应，不能打乱顺序再匹配。",
+  "samples": [
+    {
+      "stdin": "s = \"egg\", t = \"add\"\n",
+      "stdout": "true\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "s = \"foo\", t = \"bar\"\n",
+      "stdout": "false\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/isomorphic-strings/",
+    "en": "https://leetcode.com/problems/isomorphic-strings/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

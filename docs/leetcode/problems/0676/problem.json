@@ -1,0 +1,21 @@
+{
+  "id": 676,
+  "slug": "implement-magic-dictionary",
+  "summary": "先读入若干互不重复的单词并保存下来，这些单词只含英文小写字母。随后每次读入一个查询词，判断能否只改动其中恰好一个字符，把它改成别的字符，使改后的拼写与已保存的某个单词完全相同。改零个或两个及以上字符都不算成功。对每个查询词写出是或否。查询词同样只含小写字母。",
+  "samples": [
+    {
+      "stdin": "buildDict([\"hello\", \"leetcode\"]),\n",
+      "stdout": "Null\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/implement-magic-dictionary/",
+    "en": "https://leetcode.com/problems/implement-magic-dictionary/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

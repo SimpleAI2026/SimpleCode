@@ -1,0 +1,26 @@
+{
+  "id": 2182,
+  "slug": "construct-string-with-repeat-limit",
+  "summary": "读入一串只含小写英文字母的文本，以及一个正整数上限。文本长度与上限都介于1和100000之间，且上限不会大于文本长度。用文本里出现过的字母重新排成一条新文本，同一种字母可以少用或不用。新文本里，同一种字母挨在一起的次数不得超过该上限。在所有满足这条限制的新文本中，找出字典序最大的一条并写出来。比较时，从左往右看第一个不同的字母，靠后的字母更大；若较短的一条是较长一条的前缀，则较长的那条更大。",
+  "samples": [
+    {
+      "stdin": "s = \"cczazcc\", repeatLimit = 3\n",
+      "stdout": "\"zzcccac\"\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "s = \"aababab\", repeatLimit = 2\n",
+      "stdout": "\"bbabaa\"\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/construct-string-with-repeat-limit/",
+    "en": "https://leetcode.com/problems/construct-string-with-repeat-limit/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

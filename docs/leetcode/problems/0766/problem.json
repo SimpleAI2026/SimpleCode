@@ -1,0 +1,26 @@
+{
+  "id": 766,
+  "slug": "toeplitz-matrix",
+  "summary": "读入一个由整数构成的矩阵。它的行数和列数各自落在1到20这个闭区间内，矩阵里的每个数都落在0到99。如果每一条从左上角走向右下角的斜线上，出现的数字全都相同，就把这个矩阵叫作托普利茨矩阵。判断读入的矩阵是否具备这一性质。具备就写出true，不具备就写出false。",
+  "samples": [
+    {
+      "stdin": "matrix = [\n[1,2,3,4],\n[5,1,2,3],\n[9,5,1,2]\n]\n",
+      "stdout": "True\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "matrix = [\n[1,2],\n[2,2]\n]\n",
+      "stdout": "False\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/toeplitz-matrix/",
+    "en": "https://leetcode.com/problems/toeplitz-matrix/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

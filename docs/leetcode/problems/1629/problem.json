@@ -1,0 +1,26 @@
+{
+  "id": 1629,
+  "slug": "slowest-key",
+  "summary": "读入一串被按下的小写字母，以及同样长度的松开时刻表。长度 n 介于 2 与 1000，每个松开时刻是不超过 109 的正整数，并且严格变大。第 0 个字母在时刻 0 落下，其后每个字母都在前一个字母松开的瞬间落下。第 0 次的按住时长等于它的松开时刻，其后每一次的时长等于本次松开时刻减去上一次松开时刻。同一个字母可以反复出现。把按住最久的字母写出来；若有几个并列，写字母表中更靠后的那个。",
+  "samples": [
+    {
+      "stdin": "releaseTimes = [9,29,49,50], keysPressed = \"cbcd\"\n",
+      "stdout": "\"c\"\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "releaseTimes = [12,23,36,46,62], keysPressed = \"spuda\"\n",
+      "stdout": "\"a\"\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/slowest-key/",
+    "en": "https://leetcode.com/problems/slowest-key/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

@@ -1,6 +1,6 @@
 {
   "id": 211,
-  "summary": "The public title of this exercise is Design Add And Search Words Data Structure. Read one command per line from standard input and compute the result named by that title, using only those values. Print the result as one result line for each command. The sample below is a short input written for this playground so the printed line can be checked locally. It is not a copy of an example from the problem site. The input stays under one hundred elements so it finishes quickly in the browser.",
+  "summary": "Keep a word list that stores only lowercase English words, and support two calls. The first call records one new word. The second call brings a query in which every character is either a lowercase letter or a dot. A dot may stand in for any one lowercase letter and for exactly one position. Decide whether the list holds a word of the same length that agrees at every position. Write true when it does and false when it does not.",
   "notes": [
     "Compare after trimming trailing newlines. The input is one command per line."
   ]

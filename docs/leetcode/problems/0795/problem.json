@@ -1,0 +1,21 @@
+{
+  "id": 795,
+  "slug": "number-of-subarrays-with-bounded-maximum",
+  "summary": "读入一串整数，长度介于1和50000之间。再读入左右两个界限，界限与串中每个整数都落在0到109之间，而且左界限不大于右界限。考察每一段连续且至少含有一个元素的片段。若片段中的最大元素不小于左界限，同时也不大于右界限，该片段就算合格。统计合格片段的个数并写出来。",
+  "samples": [
+    {
+      "stdin": "nums = [2, 1, 4, 3]\nleft = 2\nright = 3\n",
+      "stdout": "3\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/number-of-subarrays-with-bounded-maximum/",
+    "en": "https://leetcode.com/problems/number-of-subarrays-with-bounded-maximum/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

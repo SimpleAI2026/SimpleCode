@@ -1,0 +1,8 @@
+{
+  "id": 349,
+  "summary": "Read two arrays of integers. Find every integer that appears at least once in each of the two arrays. No matter how many times a value repeats on either side, write it only a single time. The order of the written values is unrestricted. Write that collection of distinct shared integers.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

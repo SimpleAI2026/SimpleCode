@@ -1,6 +1,6 @@
 {
   "id": 216,
-  "summary": "The public title of this exercise is Combination Sum III. Read tokens in the same order as the method parameters from standard input and compute the result named by that title, using only those values. Print the result as a row count and then one line of integers per row. The sample below is a short input written for this playground so the printed line can be checked locally. It is not a copy of an example from the problem site. The input stays under one hundred elements so it finishes quickly in the browser.",
+  "summary": "Read two positive integers k and n. Pick exactly k different integers from 1 through 9 so that they add up to n. Write every such pick. When two picks contain the same set of integers, keep only one, even if the written order differs. When no pick works, write an empty result. Inside one pick, each integer may appear at most once.",
   "notes": [
     "Compare after trimming trailing newlines. The input is tokens in the same order as the method parameters."
   ]

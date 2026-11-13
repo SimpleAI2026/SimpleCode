@@ -1,0 +1,26 @@
+{
+  "id": 462,
+  "slug": "minimum-moves-to-equal-array-elements-ii",
+  "summary": "读入一个整数数组，长度在 1 到 100000 之间，每个元素都在负的 10^9 到 10^9 之间。一次操作只能把某一个元素加上 1，或者从某一个元素减去 1。找出让全部元素变成同一个值所需的最少操作次数，并把这个次数写出来。",
+  "samples": [
+    {
+      "stdin": "nums = [1,2,3]\n",
+      "stdout": "2\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "nums = [1,10,2,9]\n",
+      "stdout": "16\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/minimum-moves-to-equal-array-elements-ii/",
+    "en": "https://leetcode.com/problems/minimum-moves-to-equal-array-elements-ii/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

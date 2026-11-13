@@ -1,0 +1,26 @@
+{
+  "id": 820,
+  "slug": "short-encoding-of-words",
+  "summary": "读入1到2000个只含小写字母的单词，每个单词的长度介于1和7之间。一份编码包含一条以井号结束的参考串，以及与单词条数相同的一组下标。对每个单词，从它对应的下标开始，一直读到下一个井号之前（不含井号），得到的片段必须与该单词完全相同。找出能够覆盖全部单词的最短参考串，把它的长度写出来。",
+  "samples": [
+    {
+      "stdin": "words = [\"time\", \"me\", \"bell\"]\n",
+      "stdout": "10\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "words = [\"t\"]\n",
+      "stdout": "2\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/short-encoding-of-words/",
+    "en": "https://leetcode.com/problems/short-encoding-of-words/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

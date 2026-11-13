@@ -1,0 +1,26 @@
+{
+  "id": 876,
+  "slug": "middle-of-the-linked-list",
+  "summary": "读入一条非空的单向链表，结点个数从 1 到 100。找出它的中点。个数为奇数时，正中间那个结点就是答案；个数为偶数时，正中间有两个结点，取更靠后的一个。从选中的结点出发，一直到链表末尾，把这一段写出来。链表头部是第一个结点，不要改动结点之间的连接顺序。",
+  "samples": [
+    {
+      "stdin": "[1,2,3,4,5]\n",
+      "stdout": "Node 3 from this list (Serialization: [3,4,5])\nThe returned node has value 3. (The judge's serialization of this node is [3,4,5]).\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "[1,2,3,4,5,6]\n",
+      "stdout": "Node 4 from this list (Serialization: [4,5,6])\nSince the list has two middle nodes with values 3 and 4, we return the second one.\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/middle-of-the-linked-list/",
+    "en": "https://leetcode.com/problems/middle-of-the-linked-list/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

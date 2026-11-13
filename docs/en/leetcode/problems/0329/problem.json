@@ -1,6 +1,6 @@
 {
   "id": 329,
-  "summary": "The public title of this exercise is Longest Increasing Path In a Matrix. Read tokens in the same order as the method parameters from standard input and compute the result named by that title, using only those values. Print the result as one integer. The sample below is a short input written for this playground so the printed line can be checked locally. It is not a copy of an example from the problem site. The input stays under one hundred elements so it finishes quickly in the browser.",
+  "summary": "Read a rectangular grid filled with integers. From any cell, a step may enter only a neighbor that shares a full side, and the integer in the new cell must be strictly larger. Diagonal moves are forbidden, leaving the grid is forbidden, and jumping across to the far side is forbidden. Find the greatest number of cells a single route can visit, and write that length.",
   "notes": [
     "Compare after trimming trailing newlines. The input is tokens in the same order as the method parameters."
   ]

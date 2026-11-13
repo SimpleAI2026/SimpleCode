@@ -1,0 +1,26 @@
+{
+  "id": 898,
+  "slug": "bitwise-ors-of-subarrays",
+  "summary": "读入非负整数序列 A。长度至多 50000，每个整数至多 10^9。对每一对左端不大于右端的下标，把这一段连续位置上的整数做按位或。很多段可能得到同一个数。统计一共出现过多少种不同的按位或结果，把种数写出来。",
+  "samples": [
+    {
+      "stdin": "[0]\n",
+      "stdout": "1\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "[1,1,2]\n",
+      "stdout": "3\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/bitwise-ors-of-subarrays/",
+    "en": "https://leetcode.com/problems/bitwise-ors-of-subarrays/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

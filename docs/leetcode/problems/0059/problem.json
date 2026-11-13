@@ -1,0 +1,21 @@
+{
+  "id": 59,
+  "slug": "spiral-matrix-ii",
+  "summary": "读入一个正整数，用它作为正方形的边长。做出一张边长相同的方表，把从 1 起的连续整数填进格子，一直填到边长的平方为止。填写从左上角开始，沿顺时针绕圈并逐步向内收，每个格子恰好填入一个整数。把填好的方表按行从上到下写出来。边长为 1 时，表里只有整数 1。",
+  "samples": [
+    {
+      "stdin": "3\n",
+      "stdout": "[\n[ 1, 2, 3 ],\n[ 8, 9, 4 ],\n[ 7, 6, 5 ]\n]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/spiral-matrix-ii/",
+    "en": "https://leetcode.com/problems/spiral-matrix-ii/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

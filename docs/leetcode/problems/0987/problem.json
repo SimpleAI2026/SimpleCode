@@ -1,0 +1,26 @@
+{
+  "id": 987,
+  "slug": "vertical-order-traversal-of-a-binary-tree",
+  "summary": "读入一棵二叉树。把根放在第零行、第零列。左孩子的行号比父亲大一、列号比父亲小一；右孩子的行号比父亲大一、列号比父亲大一。先按列号从小到大分成若干组。同一列中，行号小的排在前面；行号也相同的，按结点保存的整数从小到大排。每一列输出一组整数，列与列之间保持从左到右的次序。结点个数介于 1 和 1000 之间，结点保存的整数也介于 0 和 1000 之间。",
+  "samples": [
+    {
+      "stdin": "root = [3,9,20,null,null,15,7]\n",
+      "stdout": "[[9],[3,15],[20],[7]]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "root = [1,2,3,4,5,6,7]\n",
+      "stdout": "[[4],[2],[1,5,6],[3],[7]]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/vertical-order-traversal-of-a-binary-tree/",
+    "en": "https://leetcode.com/problems/vertical-order-traversal-of-a-binary-tree/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

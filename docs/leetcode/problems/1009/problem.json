@@ -1,0 +1,26 @@
+{
+  "id": 1009,
+  "slug": "complement-of-base-10-integer",
+  "summary": "读入非负整数 n，满足 0 小于等于 n 且 n 小于 109。把 n 写成二进制时不保留前导零；若 n 本身是零，二进制就写成一个零。然后把每个零换成一、每个一换成零，宽度保持不变。再把这串二进制按原样解释成十进制整数并写出来。不要额外补位，也不要删掉末尾的位。",
+  "samples": [
+    {
+      "stdin": "n = 5\n",
+      "stdout": "2\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "n = 7\n",
+      "stdout": "0\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/complement-of-base-10-integer/",
+    "en": "https://leetcode.com/problems/complement-of-base-10-integer/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

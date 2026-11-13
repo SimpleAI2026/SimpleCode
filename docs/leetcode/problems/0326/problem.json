@@ -1,0 +1,26 @@
+{
+  "id": 326,
+  "slug": "power-of-three",
+  "summary": "读入一个整数，判断这个数能不能写成 3 的非负整数次方。1 等于 3 的 0 次方，应当判为成立。0、所有负数，以及无法用整数指数凑出的正数，都判为不成立。只需要回答是否成立，把真或假写出来。",
+  "samples": [
+    {
+      "stdin": "27\n",
+      "stdout": "true\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "0\n",
+      "stdout": "false\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/power-of-three/",
+    "en": "https://leetcode.com/problems/power-of-three/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

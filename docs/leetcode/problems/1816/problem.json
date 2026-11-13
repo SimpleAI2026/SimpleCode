@@ -1,0 +1,26 @@
+{
+  "id": 1816,
+  "slug": "truncate-sentence",
+  "summary": "读入一句英文，长度至多 500。词与词之间只用一个空格分开，句首和句尾都没有空格，每个词里的字符仅限拉丁字母，大写与小写都允许。再读入正整数 k，它不会大于词的个数。只保留从左边数起的前 k 个词，其余丢掉，保留下来的词仍用单个空格串起来。把截短后的句子写出来。",
+  "samples": [
+    {
+      "stdin": "s = \"Hello how are you Contestant\", k = 4\n",
+      "stdout": "\"Hello how are you\"\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "s = \"What is the solution to this problem\", k = 4\n",
+      "stdout": "\"What is the solution\"\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/truncate-sentence/",
+    "en": "https://leetcode.com/problems/truncate-sentence/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

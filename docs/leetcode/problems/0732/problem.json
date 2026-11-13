@@ -1,0 +1,21 @@
+{
+  "id": 732,
+  "slug": "my-calendar-iii",
+  "summary": "实现一个总会接受新日程的日历。每次book读入整数start和end，两者都在0到10^9 之间，并加入一段包含左端、不含右端的时间。某个时刻被k段已加入的时间同时覆盖，就形成k重叠加。每次加入之后，写出日历上出现过的最大叠加重数。同一组测试最多调用400次book。",
+  "samples": [
+    {
+      "stdin": "MyCalendarThree.book(start, end)\nMyCalendarThree.book(10, 20)\nMyCalendarThree.book(50, 60)\nMyCalendarThree.book(10, 40)\nMyCalendarThree.book(5, 15)\nMyCalendarThree.book(5, 10)\nMyCalendarThree.book(25, 55)\n",
+      "stdout": "1\n1\n2\n3\n3\n3\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/my-calendar-iii/",
+    "en": "https://leetcode.com/problems/my-calendar-iii/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

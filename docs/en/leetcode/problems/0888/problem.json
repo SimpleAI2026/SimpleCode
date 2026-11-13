@@ -1,0 +1,8 @@
+{
+  "id": 888,
+  "summary": "Read two columns of candy bar sizes, one held by person A and one held by person B. A person's total adds every size stored in that person's column, and the two totals start out unequal. They trade exactly one bar each so the totals become equal. Write the size given away by A and the size given away by B. When several trades work, any one pair is fine, and at least one pair exists. Each column has length at most 10000, and each bar size is at most 100000.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

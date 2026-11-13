@@ -1,0 +1,26 @@
+{
+  "id": 978,
+  "slug": "longest-turbulent-subarray",
+  "summary": "读入一条整数序列，长度从 1 到 40000，每个整数从 0 到 1000000000。一段连续片段称为湍流，是指相邻两项的大小关系在大于和小于之间来回交替。可以从偶数下标处要求先大后小，也可以从偶数下标处要求先小后大，两种交替都算。相等的相邻项会打断这种交替。只含一个元素的片段也算湍流，长度为 1。找出最长的湍流片段，把它的长度写出来。",
+  "samples": [
+    {
+      "stdin": "[9,4,2,10,7,8,8,1,9]\n",
+      "stdout": "5\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "[4,8,12,16]\n",
+      "stdout": "2\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/longest-turbulent-subarray/",
+    "en": "https://leetcode.com/problems/longest-turbulent-subarray/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

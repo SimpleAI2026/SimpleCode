@@ -1,0 +1,8 @@
+{
+  "id": 771,
+  "summary": "Read two strings J and S. Both contain only letters, and each string has length at most 50. Every character in J is unique and names one jewel type. Every character in S stands for one stone that you hold. Treat uppercase and lowercase as different types, so the letter a does not match the letter A. Count how many stones have a type that is also named in J, and write that count.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

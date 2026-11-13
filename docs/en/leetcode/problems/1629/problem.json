@@ -1,0 +1,8 @@
+{
+  "id": 1629,
+  "summary": "Read a lowercase string of keys that were pressed and a release-time list of the same length. That length n runs from 2 to 1000. Each release time is a positive integer no larger than 109, and the times strictly increase. The first key goes down at time 0, and every later key goes down at the instant the previous key comes up. The first hold lasts exactly its own release time. Each later hold lasts the gap between its release time and the previous release time. A letter may show up more than once. Write the letter that was held the longest. If several letters share that longest hold, write the letter that comes later in the alphabet.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

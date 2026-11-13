@@ -1,0 +1,7 @@
+{
+  "id": 1329,
+  "summary": "Read an integer matrix with m rows and n columns. Starting at a cell, the cells reached by increasing both the row and the column by one until the matrix ends form one diagonal. Rearrange the integers on every such diagonal into increasing order and place them back on that same diagonal. Do not move an integer from one diagonal onto another. Write the whole matrix after every diagonal has been ordered. Both m and n are at most 100, and every matrix entry is an integer from 1 to 100.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

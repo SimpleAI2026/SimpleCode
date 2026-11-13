@@ -1,0 +1,26 @@
+{
+  "id": 135,
+  "slug": "candy",
+  "summary": "读入站成一排的 n 名孩子的评分。n 至少为 1，并且 n 与每名评分都不超过 2 乘 10^4，评分可以是 0。每人至少分到 1 颗糖。只要某名孩子的评分严格高于紧挨着的左邻或右邻，他的糖就必须严格多于该邻居。两侧都更高时两边都要满足。写出满足全部要求时糖的最少总颗数。",
+  "samples": [
+    {
+      "stdin": "ratings = [1,0,2]\n",
+      "stdout": "5\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "ratings = [1,2,2]\n",
+      "stdout": "4\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/candy/",
+    "en": "https://leetcode.com/problems/candy/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

@@ -1,0 +1,8 @@
+{
+  "id": 337,
+  "summary": "Read a binary tree in which every node carries an amount of money. Select any collection of nodes and add their amounts. A selection is invalid if it includes both some node and that node's direct parent. A node may be selected together with an ancestor that is farther away. Among valid selections, find the greatest total and write it.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "id": 307,
+  "summary": "Read an integer list and support two operations. The first replaces the integer at index i with a new integer. The second asks for the sum of the closed index span from i to j, where i is less than or equal to j. The list changes only because of the first operation. Calls of the two operations arrive in roughly equal numbers. Write the sum for every span question. Every index lies inside the existing list.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

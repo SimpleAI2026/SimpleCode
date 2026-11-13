@@ -1,0 +1,26 @@
+{
+  "id": 1738,
+  "slug": "find-kth-largest-xor-coordinate-value",
+  "summary": "读入一张非负整数矩阵，行数与列数都介于 1 和 1000 之间，每个格子的数值不超过 1000000。再读入一个从 1 起算的正整数 k，k 不超过格子总数。对任意格子，把它与左上角围成的闭矩形里全部格子做按位异或，得到该格子的坐标值。在所有坐标值中找出从大到小的第 k 个，并把它写出来。",
+  "samples": [
+    {
+      "stdin": "matrix = [[5,2],[1,6]], k = 1\n",
+      "stdout": "7\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "matrix = [[5,2],[1,6]], k = 2\n",
+      "stdout": "5\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/find-kth-largest-xor-coordinate-value/",
+    "en": "https://leetcode.com/problems/find-kth-largest-xor-coordinate-value/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

@@ -1,0 +1,8 @@
+{
+  "id": 89,
+  "summary": "Read an integer n that is zero or positive. It is the number of bits in each code word. Write a list of integers whose length is 2 raised to the power n. Every integer lies from 0 through one less than that power of two, and both ends are included. The opening term of the list must be written as 0. Any two terms that stand next to each other differ in exactly one bit after both are padded to n bits. The final term does not have to differ from the opening term by one bit. Write these integers from front to back.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

@@ -1,6 +1,6 @@
 {
   "id": 62,
-  "summary": "The public title of this exercise is Unique Paths. Read tokens in the same order as the method parameters from standard input and compute the result named by that title, using only those values. Print the result as one integer. The sample below is a short input written for this playground so the printed line can be checked locally. It is not a copy of an example from the problem site. The input stays under one hundred elements so it finishes quickly in the browser.",
+  "summary": "Read two positive integers, the row count m and the column count n of a grid. A piece begins on the northwest cell and must stop on the southeast cell. A step may enter only the cell directly south or the cell directly east. Northward steps, westward steps, diagonal steps, and staying still are all forbidden. Count the distinct routes and write that count. No cell is blocked, and each route is a sequence of those steps. Both m and n are at least 1.",
   "notes": [
     "Compare after trimming trailing newlines. The input is tokens in the same order as the method parameters."
   ]

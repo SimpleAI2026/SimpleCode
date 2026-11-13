@@ -1,0 +1,7 @@
+{
+  "id": 637,
+  "summary": "Read a binary tree that is not empty. Every node holds a signed integer inside the 32-bit range. Starting at the root and moving downward one depth at a time, compute the mean of all values stored on that depth. Write those means from the top depth to the bottom depth. If a depth contains only one node, the mean is that node's own value.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

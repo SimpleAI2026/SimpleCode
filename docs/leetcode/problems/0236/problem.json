@@ -1,0 +1,26 @@
+{
+  "id": 236,
+  "slug": "lowest-common-ancestor-of-a-binary-tree",
+  "summary": "读入一棵普通二叉树，以及树上两个不同的结点 p 和 q。所有结点的数值互不相同，p 和 q 都一定出现。这棵树没有左小右大的次序。找出结点 x，从 x 出发沿着孩子方向可以分别走到 p 和 q，并且在所有这样的结点里 x 的深度最大。从结点走到它自己算作可达。把 x 写出来。",
+  "samples": [
+    {
+      "stdin": "root = [3,5,1,6,2,0,8,null,null,7,4], p = 5, q = 1\n",
+      "stdout": "3\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "root = [3,5,1,6,2,0,8,null,null,7,4], p = 5, q = 4\n",
+      "stdout": "5\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-tree/",
+    "en": "https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

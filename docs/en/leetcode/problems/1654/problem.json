@@ -1,0 +1,8 @@
+{
+  "id": 1654,
+  "summary": "Read a list of blocked spots, a rightward step a, a leftward step b, and a home coordinate x. The blocked list holds from 1 to 1000 spots. a, b, and every blocked coordinate are integers from 1 to 2000, while x is from 0 to 2000. Blocked spots are unique, and home is not blocked. Start at coordinate 0. One rightward move travels exactly a, and one leftward move travels exactly b. Two leftward moves may not happen back to back. Landing on a blocked spot or on a negative coordinate is not allowed. Passing home and coming back later is allowed. Write the fewest moves that land exactly on x, or write -1 when no such trip exists.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "id": 509,
+  "slug": "fibonacci-number",
+  "summary": "读入一个整数 N，范围从 0 到 30。把一列数记作 F。规定 F(0) 等于 0，F(1) 等于 1。当 N 大于 1 时，F(N) 等于前面相邻两项之和，也就是 F(N 减 1) 加上 F(N 减 2)。按照这个规定算出下标 N 对应的那一项，并把这一项写出来。不要把从 0 到 N 的整列都打出来。N 等于 0 或 1 时，直接写出上面规定的初值。下标从 0 开始，不是从 1 开始。",
+  "samples": [
+    {
+      "stdin": "2\n",
+      "stdout": "1\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "3\n",
+      "stdout": "2\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/fibonacci-number/",
+    "en": "https://leetcode.com/problems/fibonacci-number/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

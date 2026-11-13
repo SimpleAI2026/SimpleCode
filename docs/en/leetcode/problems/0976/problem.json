@@ -1,0 +1,8 @@
+{
+  "id": 976,
+  "summary": "Read a list of positive integer lengths. The list holds between 3 and 10000 numbers, and each number is between 1 and 1000000. Pick three of them to serve as the sides of a triangle. The triangle must have area strictly above 0, so a flat line does not count. Among every valid triple, find the one whose perimeter is greatest and write that perimeter. If no triple forms a triangle with positive area, write 0.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

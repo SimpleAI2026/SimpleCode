@@ -1,0 +1,8 @@
+{
+  "id": 532,
+  "summary": "Read a series of integers together with another integer named k. Pick two values that sit at different positions and whose absolute gap equals k. Swapping the order of the same two values still counts as one pair. Count how many distinct pairs of values arise and write that count. The series holds at most 10000 integers, and every integer lies between -10000000 and 10000000. The integer k may be 0, in which case the two values are equal but still come from two different positions.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

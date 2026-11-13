@@ -1,0 +1,8 @@
+{
+  "id": 137,
+  "summary": "Read integers stored in an array that contains at least one entry. Exactly one value occurs a single time, and every remaining value occurs three times. Find that unique value and write it. The steps you take must stay proportional to how many entries were read, and extra memory must be only a few variables whose count does not depend on that length. The three copies may sit in separate places, and entries may be negative or zero.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

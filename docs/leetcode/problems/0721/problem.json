@@ -1,0 +1,21 @@
+{
+  "id": 721,
+  "slug": "accounts-merge",
+  "summary": "读入账户列表accounts。列表长度在1到1000之间，每条含1到10个字符串，每个字符串长度在1到30之间。每条的第一项是姓名，后面是邮箱。两条记录只要共享任意一个邮箱就属于同一个人；仅仅姓名一样并不能合并。同一个人的记录使用同一个姓名。合并后每条以姓名开头，其余邮箱按词典顺序排列，各条之间的先后不限。写出合并结果。",
+  "samples": [
+    {
+      "stdin": "accounts = [[\"John\", \"johnsmith@mail.com\", \"john00@mail.com\"], [\"John\", \"johnnybravo@mail.com\"], [\"John\", \"johnsmith@mail.com\", \"john_newyork@mail.com\"], [\"Mary\", \"mary@mail.com\"]]\n",
+      "stdout": "[[\"John\", 'john00@mail.com', 'john_newyork@mail.com', 'johnsmith@mail.com'], [\"John\", \"johnnybravo@mail.com\"], [\"Mary\", \"mary@mail.com\"]]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/accounts-merge/",
+    "en": "https://leetcode.com/problems/accounts-merge/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

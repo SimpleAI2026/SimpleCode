@@ -1,0 +1,21 @@
+{
+  "id": 1145,
+  "slug": "binary-tree-coloring-game",
+  "summary": "读入一棵有 n 个节点的二叉树和先手选中的值 x。n 是奇数，节点值是 1 到 n 的不同整数，并且满足 1 <= x <= n <= 100。先手已经把值为 x 的节点涂红。后手必须另选一个不同的值涂成蓝色。之后双方轮流，每次只能从自己已经涂过的节点出发，给尚未涂色的父亲或左孩子或右孩子涂色，无路可走就空过。双方都无法再涂时，涂得更多的一方获胜。判断后手是否存在必胜的选点，能则写 true，不能则写 false。",
+  "samples": [
+    {
+      "stdin": "root = [1,2,3,4,5,6,7,8,9,10,11], n = 11, x = 3\n",
+      "stdout": "true\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/binary-tree-coloring-game/",
+    "en": "https://leetcode.com/problems/binary-tree-coloring-game/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

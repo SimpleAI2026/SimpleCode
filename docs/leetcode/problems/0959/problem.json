@@ -1,0 +1,26 @@
+{
+  "id": 959,
+  "slug": "regions-cut-by-slashes",
+  "summary": "读入一张正方形的字符网格，边长最少是 1、最多是 30。每一格只写三种符号之一：正斜杠、反斜杠，或一个空格。正斜杠和反斜杠会把本格切成更小的块，空格则让本格保持完整。两块之间只要共享一段正长度的边界，就视为同一片。统计整张网格最终被分成多少片互不相连的区域，并把片数写出来。",
+  "samples": [
+    {
+      "stdin": "[\n\" /\",\n\"/ \"\n]\n",
+      "stdout": "2\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "[\n\" /\",\n\" \"\n]\n",
+      "stdout": "1\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/regions-cut-by-slashes/",
+    "en": "https://leetcode.com/problems/regions-cut-by-slashes/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

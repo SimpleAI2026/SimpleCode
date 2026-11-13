@@ -1,0 +1,26 @@
+{
+  "id": 278,
+  "slug": "first-bad-version",
+  "summary": "版本号从 1 排到 n，后一个版本总是在前一个版本上继续完成。某个版本一旦不合格，它之后的全部版本也不合格。可以询问任一版本号是否不合格。找出最早的不合格版本并写出来。不合格版本与 n 都至少为 1，并且都不超过 231 减 1。询问次数越少越好，但答案必须是那一个最早的编号。",
+  "samples": [
+    {
+      "stdin": "n = 5, bad = 4\n",
+      "stdout": "4\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "n = 1, bad = 1\n",
+      "stdout": "1\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/first-bad-version/",
+    "en": "https://leetcode.com/problems/first-bad-version/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

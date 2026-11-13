@@ -1,0 +1,26 @@
+{
+  "id": 1383,
+  "slug": "maximum-performance-of-a-team",
+  "summary": "读入工程师人数 n、可选人数上限 k，以及两串等长的速度和效率。工程师按 1 到 n 编号，两串分别给出对应的速度和效率。从中选出至多 k 名不同的工程师。团队表现等于所选速度之和，再乘以这些人所带效率里的最小值。找出最大表现，再对 109 加 7 取余，把余数写出来。n 不超过 105，每名工程师的速度不超过 105，效率不超过 108。",
+  "samples": [
+    {
+      "stdin": "n = 6, speed = [2,10,3,1,5,8], efficiency = [5,4,3,9,7,2], k = 2\n",
+      "stdout": "60\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "n = 6, speed = [2,10,3,1,5,8], efficiency = [5,4,3,9,7,2], k = 3\n",
+      "stdout": "68\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/maximum-performance-of-a-team/",
+    "en": "https://leetcode.com/problems/maximum-performance-of-a-team/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

@@ -1,0 +1,8 @@
+{
+  "id": 1305,
+  "summary": "Read two binary search trees. Either tree may be empty. Collect every integer stored on a node of either tree, arrange those integers from smallest to largest, and write the list. Each tree has at most 5000 nodes, and each node value lies between -10^5 and 10^5. If the same integer occurs more than once, repeat it in the list once for every occurrence instead of collapsing the copies. An empty tree contributes no integers.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

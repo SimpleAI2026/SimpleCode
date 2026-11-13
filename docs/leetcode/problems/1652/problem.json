@@ -1,0 +1,26 @@
+{
+  "id": 1652,
+  "slug": "defuse-the-bomb",
+  "summary": "读入一条环状整数表 code，表的项数记作 n，另外还有整数 k。n 介于 1 与 100，每一项也介于 1 与 100，k 介于 1 减 n 与 n 减 1。所有位置要一起改写。k 为正时，位置 i 改成它后方连续 k 项之和。k 为负时，改成它前方连续绝对值为 k 那么多项之和。k 为 0 时，每一项都改成 0。最后一项的后方是第一项，第一项的前方是最后一项。把改写后的整条表写出来。",
+  "samples": [
+    {
+      "stdin": "code = [5,7,1,4], k = 3\n",
+      "stdout": "[12,10,16,13]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "code = [1,2,3,4], k = 0\n",
+      "stdout": "[0,0,0,0]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/defuse-the-bomb/",
+    "en": "https://leetcode.com/problems/defuse-the-bomb/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

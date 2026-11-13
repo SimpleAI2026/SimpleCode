@@ -1,0 +1,8 @@
+{
+  "id": 326,
+  "summary": "Read one integer and decide whether it equals three raised to a nonnegative whole exponent. The value one counts as three to the power zero and should be accepted. Reject zero, every negative value, and every positive value that cannot be formed that way. Write true or false.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

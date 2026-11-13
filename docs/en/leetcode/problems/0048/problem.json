@@ -1,6 +1,6 @@
 {
   "id": 48,
-  "summary": "The public title of this exercise is Rotate Image. Read tokens in the same order as the method parameters from standard input and compute the result named by that title, using only those values. Print the result as the input value after the method updates it. The sample below is a short input written for this playground so the printed line can be checked locally. It is not a copy of an example from the problem site. The input stays under one hundred elements so it finishes quickly in the browser.",
+  "summary": "Read a square table of integers, with as many rows as columns, standing for a picture. Turn the whole picture ninety degrees clockwise and store the result back in the original cells. After the turn, the old first row becomes the rightmost column, and each later row moves in the same fashion. Do not request a second table of equal size to hold the result. The amount of temporary extra cells should stay fixed.",
   "notes": [
     "Compare after trimming trailing newlines. The input is tokens in the same order as the method parameters."
   ]

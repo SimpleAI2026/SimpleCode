@@ -1,0 +1,8 @@
+{
+  "id": 1674,
+  "summary": "Read an even-length integer list and an upper bound called limit. The length n is from 2 to 105, and every entry as well as limit lies between 1 and 105. One change replaces any single entry with a different integer chosen from 1 through limit. The list counts as paired when, for every index i, the entry at i plus the entry at n - 1 - i equals one common total. Find how few changes are required to reach that state and write the count.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

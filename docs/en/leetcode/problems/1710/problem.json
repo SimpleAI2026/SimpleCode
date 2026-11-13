@@ -1,0 +1,8 @@
+{
+  "id": 1710,
+  "summary": "Read several box types and a capacity called truckSize. There are between 1 and 1000 types. Each type gives a box count and a per-box unit count, and both of those numbers lie between 1 and 1000. truckSize is the most boxes the truck may carry, from 1 through 10^6. Any types may be chosen provided the box count never passes truckSize. Find the largest total of units that can ride on the truck and write it.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "id": 264,
+  "summary": "Read a positive integer n and find the nth ugly number when ugly numbers are listed from small to large, then write that number. An ugly number is a positive integer whose prime factors all come from 2, 3, and 5, and any of those three may be unused. The integer 1 is first in the list. n is at least 1 and at most 1690. Write the single nth value, not a list of the first n values.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

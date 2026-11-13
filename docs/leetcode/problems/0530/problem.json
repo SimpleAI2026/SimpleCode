@@ -1,0 +1,21 @@
+{
+  "id": 530,
+  "slug": "minimum-absolute-difference-in-bst",
+  "summary": "读入一棵二叉搜索树，每个结点上的值都是非负整数，而且整棵树至少有两个结点。左子树中的值都比父结点小，右子树中的值都比父结点大。在任意两个不同结点之间取数值之差的绝对值，找出其中最小的那个结果并写出来。这道题与编号 783 考查的是同一计算。",
+  "samples": [
+    {
+      "stdin": "1\n\\\n3\n/\n2\n",
+      "stdout": "1\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/minimum-absolute-difference-in-bst/",
+    "en": "https://leetcode.com/problems/minimum-absolute-difference-in-bst/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

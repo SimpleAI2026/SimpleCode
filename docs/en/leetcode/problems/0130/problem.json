@@ -1,6 +1,6 @@
 {
   "id": 130,
-  "summary": "The public title of this exercise is Surrounded Regions. Read tokens in the same order as the method parameters from standard input and compute the result named by that title, using only those values. Print the result as the input value after the method updates it. The sample below is a short input written for this playground so the printed line can be checked locally. It is not a copy of an example from the problem site. The input stays under one hundred elements so it finishes quickly in the browser.",
+  "summary": "Read a rectangular grid whose cells contain only the letter X or the letter O. When an O is not on any of the four outer edges, and it also cannot reach an O that sits on an edge by moving up, down, left, or right, replace that whole group of O cells with X. O cells on an edge, together with O cells joined to them by those four moves, stay unchanged. Touching at a corner does not count as a join. Write the grid after the replacements.",
   "notes": [
     "Compare after trimming trailing newlines. The input is tokens in the same order as the method parameters."
   ]

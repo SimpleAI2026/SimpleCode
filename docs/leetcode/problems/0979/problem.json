@@ -1,0 +1,26 @@
+{
+  "id": 979,
+  "slug": "distribute-coins-in-binary-tree",
+  "summary": "读入一棵二叉树，结点总数 N 从 1 到 100。每个结点上放着若干枚硬币，数量可以是 0，但不会超过 N，并且整棵树上的硬币总数正好等于 N。一次移动是选择一条连着父结点与子结点的边，把一枚硬币从一端挪到另一端，方向不限。求让每个结点最终都恰好持有一枚硬币所需要的移动次数，并把该次数写出来。",
+  "samples": [
+    {
+      "stdin": "[3,0,0]\n",
+      "stdout": "2\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "[0,3,0]\n",
+      "stdout": "3\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/distribute-coins-in-binary-tree/",
+    "en": "https://leetcode.com/problems/distribute-coins-in-binary-tree/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

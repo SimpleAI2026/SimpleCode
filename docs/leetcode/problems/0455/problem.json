@@ -1,0 +1,26 @@
+{
+  "id": 455,
+  "slug": "assign-cookies",
+  "summary": "读入每个孩子的胃口和每块饼干的尺寸，胃口都是正数。每个孩子最多拿一块饼干，每块饼干最多分给一个孩子。只有饼干尺寸不小于这个孩子的胃口时，孩子才算被满足。找出最多能同时满足多少个孩子，并把这个人数写出来。",
+  "samples": [
+    {
+      "stdin": "[1,2,3], [1,1]\n",
+      "stdout": "1\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "[1,2], [1,2,3]\n",
+      "stdout": "2\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/assign-cookies/",
+    "en": "https://leetcode.com/problems/assign-cookies/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

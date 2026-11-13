@@ -1,0 +1,8 @@
+{
+  "id": 995,
+  "summary": "Read a bit row that contains only the values 0 and 1, plus a positive integer K. One action selects a block whose length is exactly K and flips every bit in that block at the same time, so each 0 turns into 1 and each 1 turns into 0. Find the fewest actions that make the entire row contain only ones. When no series of actions can do so, write -1. The row length is at most 30000, and K is an integer from 1 through that length. The same block of positions may be chosen again in a later action.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

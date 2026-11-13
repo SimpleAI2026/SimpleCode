@@ -1,0 +1,26 @@
+{
+  "id": 342,
+  "slug": "power-of-four",
+  "summary": "读入一个 32 位有符号整数。判断它是否等于 4 的某个非负整数次方。4 的 0 次方是 1，应当判为真。0 和所有负数都判为假。其它正数只有在不断整除 4 最终得到 1 时才判为真。把真或假写出来。",
+  "samples": [
+    {
+      "stdin": "16\n",
+      "stdout": "true\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "5\n",
+      "stdout": "false\n\nFollow up: Could you solve it without loops/recursion?\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/power-of-four/",
+    "en": "https://leetcode.com/problems/power-of-four/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

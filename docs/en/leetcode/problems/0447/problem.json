@@ -1,0 +1,7 @@
+{
+  "id": 447,
+  "summary": "Read n distinct points on a plane. The count n is no greater than 500, and every coordinate lies from -10000 through 10000, including both ends. An ordered triple of indexes (i, j, k) counts when the distance from point i to point j matches the distance from point i to point k. Different orders count separately. Count every such triple and write that total.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

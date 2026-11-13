@@ -1,0 +1,8 @@
+{
+  "id": 1025,
+  "summary": "A board starts with an integer N, and N lies between 1 and 1000. Alice and Bob take alternate turns changing that integer, with Alice going first. A turn chooses a positive integer x that is smaller than the current integer and leaves a zero remainder when the current integer is divided by x. The chosen x is then subtracted from the current integer. Whoever has no legal x loses. Both sides choose the move that helps them most. Decide if Alice has a win. Write true when she does and write false when she does not.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

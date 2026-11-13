@@ -1,0 +1,21 @@
+{
+  "id": 1110,
+  "slug": "delete-nodes-and-return-forest",
+  "summary": "读入一棵二叉树，以及一份要删掉的数值名单。结点个数不超过 1000，每个结点的数值在 1 到 1000 之间并且互不相同。名单长度也不超过 1000，其中的数值同样互不相同，而且都落在 1 到 1000。把名单里出现过的结点全部摘掉。某个结点被摘掉后，它还留着的每个孩子都变成一棵独立树的根。剩下的几棵互不连接的树形成一片林子。按任意先后写出这些树的根。",
+  "samples": [
+    {
+      "stdin": "root = [1,2,3,4,5,6,7], to_delete = [3,5]\n",
+      "stdout": "[[1,2,null,4],[6],[7]]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/delete-nodes-and-return-forest/",
+    "en": "https://leetcode.com/problems/delete-nodes-and-return-forest/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

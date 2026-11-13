@@ -1,0 +1,26 @@
+{
+  "id": 402,
+  "slug": "remove-k-digits",
+  "summary": "读入非负整数的十进制字符串 num，以及要删除的位数 k。字符串长度小于 10002，且不小于 k，开头也没有多余的零。删掉恰好 k 个数字，保留其余数字的相对次序，使得到的整数尽量小。写出这个结果时去掉前导零；若一个数字都不剩，写出 0。",
+  "samples": [
+    {
+      "stdin": "num = \"1432219\", k = 3\n",
+      "stdout": "\"1219\"\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "num = \"10200\", k = 1\n",
+      "stdout": "\"200\"\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/remove-k-digits/",
+    "en": "https://leetcode.com/problems/remove-k-digits/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

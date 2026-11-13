@@ -1,0 +1,21 @@
+{
+  "id": 891,
+  "slug": "sum-of-subsequence-widths",
+  "summary": "读入正整数序列 A。序列长度以及其中每个数都不超过 20000。考虑所有保持原来相对次序、可以不挨在一起、但不能为空的挑选。一次挑选的宽度等于其中最大的数减去最小的数。把每一次挑选的宽度全部累加，再对 10^9+7 取余，把余数写出来。",
+  "samples": [
+    {
+      "stdin": "[2,1,3]\n",
+      "stdout": "6\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/sum-of-subsequence-widths/",
+    "en": "https://leetcode.com/problems/sum-of-subsequence-widths/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

@@ -1,0 +1,8 @@
+{
+  "id": 537,
+  "summary": "Read two strings that each name a complex number in the compact writing a+bi, with no blank characters inside. The integers standing for a and for b both lie between -100 and 100. Multiply the two numbers under the rule that the square of the imaginary unit equals negative one. Write the product as another string in the same a+bi writing, using integer real and imaginary parts, with the plus sign and any minus signs placed in that compact pattern.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "id": 187,
+  "summary": "Read one string that uses only the letters A, C, G, and T, and treat it as a genetic strand. Find every slice of length exactly 10 that shows up at least twice anywhere in the strand. Write each such slice a single time. The order of the written slices does not matter. If nothing of that length repeats, write an empty result. A slice must be ten characters in a row, not a scattered sample of letters. Overlapping windows count whenever the same ten characters occur more than one time.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

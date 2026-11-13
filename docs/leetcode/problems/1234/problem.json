@@ -1,0 +1,26 @@
+{
+  "id": 1234,
+  "slug": "replace-the-substring-for-balanced-string",
+  "summary": "读入长度为 n 的字符串。n 是 4 的倍数，并且 1 <= n <= 100000。字符串中只会出现 Q、W、E、R 这四个字母。当四个字母各自恰好出现 n 除以 4 次时，这串文字算作平衡。可以把其中一段连续片段替换成同样长度的任意文字。写出能够让整串变平衡的最短片段长度。若原串已经平衡，写 0。长度上界是 100000。",
+  "samples": [
+    {
+      "stdin": "s = \"QWER\"\n",
+      "stdout": "0\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "s = \"QQWE\"\n",
+      "stdout": "1\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/replace-the-substring-for-balanced-string/",
+    "en": "https://leetcode.com/problems/replace-the-substring-for-balanced-string/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

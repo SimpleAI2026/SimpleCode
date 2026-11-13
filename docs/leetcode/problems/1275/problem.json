@@ -1,0 +1,26 @@
+{
+  "id": 1275,
+  "slug": "find-winner-on-a-tic-tac-toe-game",
+  "summary": "读入若干落子坐标，每条坐标是三行三列棋盘上的行号和列号。棋盘开始全空。先手记为 A，棋子是 X；后手记为 B，棋子是 O。记录按落子先后排列，两人轮流，A 先下，格子不会重复，并且都符合规则。若某一方先用三个相同棋子连成一行、一列或一条斜线，写出获胜者 A 或 B。若格子已经占满且无人连成三子，写出 Draw。若仍有空格且还没有人获胜，写出 Pending。落子条数在 1 到 9 之间，行列下标只取 0、1、2。",
+  "samples": [
+    {
+      "stdin": "moves = [[0,0],[2,0],[1,1],[2,1],[2,2]]\n",
+      "stdout": "\"A\"\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "moves = [[0,0],[1,1],[0,1],[0,2],[1,0],[2,0]]\n",
+      "stdout": "\"B\"\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/find-winner-on-a-tic-tac-toe-game/",
+    "en": "https://leetcode.com/problems/find-winner-on-a-tic-tac-toe-game/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

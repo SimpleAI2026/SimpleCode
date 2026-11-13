@@ -1,0 +1,8 @@
+{
+  "id": 916,
+  "summary": "Read two word lists, A and B. Every word uses only lowercase letters. Each list holds at most 10000 words, each word has length at most 10, and the words in A are all different from one another. Word a covers word b when every letter of b occurs in a at least as often as it occurs in b. Call a word from A universal when it covers every word in B. Find all universal words in A and write them in any order.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

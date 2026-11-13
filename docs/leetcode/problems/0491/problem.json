@@ -1,0 +1,21 @@
+{
+  "id": 491,
+  "slug": "non-decreasing-subsequences",
+  "summary": "读入一列整数。列长最多 15，每个整数都在 -100 到 100 之间，允许重复。从中按原来的相对次序挑选若干个数，中间可以跳过，组成一条子序列。子序列长度至少为 2，并且从左到右不许下降，相邻两数相等也算符合。找出所有数值序列互不相同的这种子序列，并把它们全部写出来。几种不同挑法如果得到同一条数值序列，只保留一份。顺序必须来自原列，不能重排。",
+  "samples": [
+    {
+      "stdin": "[4, 6, 7, 7]\n",
+      "stdout": "[[4, 6], [4, 7], [4, 6, 7], [4, 6, 7, 7], [6, 7], [6, 7, 7], [7,7], [4,7,7]]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/non-decreasing-subsequences/",
+    "en": "https://leetcode.com/problems/non-decreasing-subsequences/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

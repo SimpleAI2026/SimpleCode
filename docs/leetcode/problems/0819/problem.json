@@ -1,0 +1,21 @@
+{
+  "id": 819,
+  "slug": "most-common-word",
+  "summary": "读入一段长度介于1和1000之间的文字，以及至多100个被禁单词。文字只含字母、空格和感叹号、问号、单引号、逗号、分号，不含连字符。每个被禁单词长度介于1和10之间，已经是小写且不带标点。统计时忽略大小写。挑出出现得最频繁、同时没有被列入禁词表的那个词。题目保证这样的词存在而且只有一个。把该词全部用小写写出来。",
+  "samples": [
+    {
+      "stdin": "paragraph = \"Bob hit a ball, the hit BALL flew far after it was hit.\"\nbanned = [\"hit\"]\n",
+      "stdout": "\"ball\"\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/most-common-word/",
+    "en": "https://leetcode.com/problems/most-common-word/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

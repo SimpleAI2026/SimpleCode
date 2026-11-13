@@ -1,0 +1,26 @@
+{
+  "id": 1624,
+  "slug": "largest-substring-between-two-equal-characters",
+  "summary": "读入一条仅由小写英文字母组成的串，长度介于 1 与 300。在串里寻找两个一样的字母，只统计夹在它们中间、不含两端字母的那段有多长。在所有这样的配对里保留最长的一段。若某个字母从未重复出现，写出 -1，否则写出那段中间部分的长度。被统计的部分必须在原串里挨在一起。",
+  "samples": [
+    {
+      "stdin": "s = \"aa\"\n",
+      "stdout": "0\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "s = \"abca\"\n",
+      "stdout": "2\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/largest-substring-between-two-equal-characters/",
+    "en": "https://leetcode.com/problems/largest-substring-between-two-equal-characters/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

@@ -1,0 +1,8 @@
+{
+  "id": 1011,
+  "summary": "Read weights kept in conveyor order and a day limit D. On one day the ship takes a nonempty contiguous block from the front of whatever packages remain. Packages may not be skipped or reordered. The weight taken on that day must not exceed capacity. All packages must depart within D days. Find the smallest capacity that allows this schedule and write it. The bounds are 1 <= D <= weights.length <= 50000. Each weight is an integer from 1 through 500.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

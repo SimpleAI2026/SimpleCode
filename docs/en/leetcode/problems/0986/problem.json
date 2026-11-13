@@ -1,0 +1,7 @@
+{
+  "id": 986,
+  "summary": "Read two groups of closed intervals. Within each group the pieces are ordered by increasing left endpoint and no two pieces share a real number. One closed piece covers every real from its left endpoint through its right endpoint, counting both ends. Find every nonempty set of reals that lies inside some piece of the first group and also inside some piece of the second group. Write each such set as a closed interval, ordered by the left endpoint. Each group holds fewer than 1000 pieces. Every endpoint is an integer greater than or equal to zero and strictly less than 10^9.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

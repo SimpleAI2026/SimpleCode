@@ -1,0 +1,26 @@
+{
+  "id": 989,
+  "slug": "add-to-array-form-of-integer",
+  "summary": "读入一串十进制数位和另一个非负加数。数位左边是高位、右边是低位。先按这个位权还原成一个整数，再与加数做十进制加法。把和重新拆成同样方向的数位并写出来。若和比原来多一位，新的最高位放在最左边。样本中 1200 加上 34 得到 1234。另一份说明里 1231 对应数位序列一、二、三、一。每一位都是 0 到 9 的整数。",
+  "samples": [
+    {
+      "stdin": "A = [1,2,0,0], K = 34\n",
+      "stdout": "[1,2,3,4]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "A = [2,7,4], K = 181\n",
+      "stdout": "[4,5,5]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/add-to-array-form-of-integer/",
+    "en": "https://leetcode.com/problems/add-to-array-form-of-integer/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

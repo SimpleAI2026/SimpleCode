@@ -1,0 +1,26 @@
+{
+  "id": 1694,
+  "slug": "reformat-phone-number",
+  "summary": "读入一条电话号码字符串，长度在 2 到 100 之间，里面至少有两个数字，其余只可能是空格或短横线。先删掉所有空格和短横线。再从左往右每三个数字划成一块，直到剩下四个或更少。剩下两个就单独成一块，剩下三个也单独成一块，剩下四个则拆成两块、每块两个数字。块与块之间用短横线连接。不允许出现只含一个数字的块，含两个数字的块最多两块。把整理后的号码写出来。",
+  "samples": [
+    {
+      "stdin": "number = \"1-23-45 6\"\n",
+      "stdout": "\"123-456\"\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "number = \"123 4-567\"\n",
+      "stdout": "\"123-45-67\"\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/reformat-phone-number/",
+    "en": "https://leetcode.com/problems/reformat-phone-number/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

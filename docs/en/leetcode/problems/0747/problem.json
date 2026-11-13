@@ -1,0 +1,8 @@
+{
+  "id": 747,
+  "summary": "Read an integer array nums whose length is between 1 and 50. Every entry is an integer from 0 through 100, and the largest value occurs exactly once in the array. Check whether that unique maximum is at least twice as large as every remaining entry. If the check succeeds, write the index where the maximum sits. If some other entry is larger than half of the maximum, write -1.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

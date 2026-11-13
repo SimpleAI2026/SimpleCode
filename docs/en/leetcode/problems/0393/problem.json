@@ -1,0 +1,7 @@
+{
+  "id": 393,
+  "summary": "Read a list of integers. Only the lowest 8 bits of each integer form one byte. Decide whether those bytes are a valid encoding. A one-byte symbol starts with 0, and the other 7 bits hold the code point. A longer symbol uses 2, 3, or 4 bytes: its first byte starts with that many 1 bits, then a 0, and every later byte starts with 10. All leftover bits belong to the code point. Write true only when the whole sequence matches these rules, otherwise write false.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

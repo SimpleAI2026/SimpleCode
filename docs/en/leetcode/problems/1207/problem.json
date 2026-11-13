@@ -1,0 +1,8 @@
+{
+  "id": 1207,
+  "summary": "Read a sequence of integers. Its length is between 1 and 1000, and each integer also lies between -1000 and 1000. Count the appearances of every distinct value. Decide whether those appearance totals are pairwise different. Write true when no two values share one total. Write false as soon as two values occur the same number of times. Both the length bound and the value bound are 1000.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

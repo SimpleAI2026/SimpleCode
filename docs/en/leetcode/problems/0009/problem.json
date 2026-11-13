@@ -1,0 +1,8 @@
+{
+  "id": 9,
+  "summary": "Read one integer and decide whether its decimal writing is symmetric, meaning the digit sequence from the high place down to the low place matches the sequence taken in the opposite direction. A negative integer fails this test because of the sign. Write a boolean, true when the digits match and false otherwise. The integer 121 has matching digits from either end, so the written result for it is true.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

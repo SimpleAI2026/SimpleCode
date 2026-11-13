@@ -1,0 +1,8 @@
+{
+  "id": 1054,
+  "summary": "Read one sequence of barcode integers. The sequence length runs from 1 to 10000, and every value also runs from 1 to 10000. Produce a new order of the same multiset of values. In that order, neighboring positions must hold different numbers. Any order that meets this neighbor rule is acceptable. The input always admits at least one such order. Write the values in the order you chose.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

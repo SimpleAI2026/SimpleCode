@@ -1,0 +1,26 @@
+{
+  "id": 1818,
+  "slug": "minimum-absolute-sum-difference",
+  "summary": "读入两条长度同为 n 的正整数序列。n 介于 1 和 100000 之间，每个数也不超过 100000。绝对差值和等于同一下标上两数之差的绝对值全部相加。允许把第一条里至多一个位置，换成第一条里已经出现过的某个数，用来压低这个和。写出替换之后能达到的最小和，再对 1000000007 取余。",
+  "samples": [
+    {
+      "stdin": "nums1 = [1,7,5], nums2 = [2,3,5]\n",
+      "stdout": "3\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "nums1 = [2,4,6,8,10], nums2 = [2,4,6,8,10]\n",
+      "stdout": "0\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/minimum-absolute-sum-difference/",
+    "en": "https://leetcode.com/problems/minimum-absolute-sum-difference/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

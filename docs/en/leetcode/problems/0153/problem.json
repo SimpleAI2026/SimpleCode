@@ -1,6 +1,6 @@
 {
   "id": 153,
-  "summary": "The public title of this exercise is Find Minimum In Rotated Sorted Array. Read tokens in the same order as the method parameters from standard input and compute the result named by that title, using only those values. Print the result as one integer. The sample below is a short input written for this playground so the printed line can be checked locally. It is not a copy of an example from the problem site. The input stays under one hundred elements so it finishes quickly in the browser.",
+  "summary": "Read a row of integers. They began in increasing order, then an unknown index split the row and the right portion was moved in front of the left portion. After that move the row may no longer increase all the way. No integer appears more than once. Find the smallest integer and write it. If the row still increases from left to right, the smallest integer is the leftmost one. The row length is at least one.",
   "notes": [
     "Compare after trimming trailing newlines. The input is tokens in the same order as the method parameters."
   ]

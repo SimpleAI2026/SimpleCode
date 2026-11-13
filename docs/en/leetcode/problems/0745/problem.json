@@ -1,0 +1,7 @@
+{
+  "id": 745,
+  "summary": "Read an array words of lowercase strings. Its length is from 1 to 15000, and each word has length from 1 to 10. The word at index i has weight i. Then answer at most one query per word. Each query supplies a prefix and a suffix, both of length from 0 to 10, using lowercase letters only. Find the word of greatest weight that begins with the prefix and ends with the suffix, and write that weight. Write -1 when no word fits both ends.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

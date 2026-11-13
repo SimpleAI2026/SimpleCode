@@ -1,0 +1,7 @@
+{
+  "id": 530,
+  "summary": "Read a binary search tree in which every node stores a non-negative integer and the tree has at least two nodes. Values in a left subtree are smaller than the parent, and values in a right subtree are larger than the parent. Take the absolute gap between the stored numbers of every pair of distinct nodes, find the smallest gap, and write it. This task asks for the same quantity as problem 783.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

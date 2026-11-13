@@ -1,0 +1,7 @@
+{
+  "id": 421,
+  "summary": "Read a nonempty list of integers. Every value is at least zero and stays strictly below two raised to the thirty-first power. Choose any pair of indexes, including the case where both choices point at one index. Combine the two chosen values with bitwise exclusive or. Among all pairs, find the largest combined result and write that integer.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

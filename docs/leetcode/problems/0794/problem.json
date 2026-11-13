@@ -1,0 +1,26 @@
+{
+  "id": 794,
+  "slug": "valid-tic-tac-toe-state",
+  "summary": "读入三行三列的井字棋局面，每格只能是空格、字母X或字母O。两名玩家轮流把符号放进空格，先手永远放置X，后手永远放置O，已经有符号的格子不能再填。某一行、某一列或某一条对角线被三个相同的非空符号占满时，对局立刻结束；格子全部非空时也对局结束。结束后不允许再放置。判断这个局面是否可能在一盘遵守规则的对局里出现，可能就写出真，否则写出假。",
+  "samples": [
+    {
+      "stdin": "board = [\"O \",\" \",\" \"]\n",
+      "stdout": "false\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "board = [\"XOX\",\" X \",\" \"]\n",
+      "stdout": "false\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/valid-tic-tac-toe-state/",
+    "en": "https://leetcode.com/problems/valid-tic-tac-toe-state/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

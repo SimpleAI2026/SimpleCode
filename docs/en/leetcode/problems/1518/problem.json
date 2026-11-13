@@ -1,0 +1,8 @@
+{
+  "id": 1518,
+  "summary": "Start holding numBottles full drinks. Finishing one drink produces one empty bottle. Whenever the empty bottles on hand reach numExchange, trade that many for one new full drink, which may later be finished and traded again. Write the largest number of drinks that can be finished under this rule. The starting count is from 1 to 100, and the number of empty bottles required for a trade is from 2 to 100.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

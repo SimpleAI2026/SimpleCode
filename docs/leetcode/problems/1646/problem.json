@@ -1,0 +1,26 @@
+{
+  "id": 1646,
+  "slug": "get-maximum-in-generated-array",
+  "summary": "读入整数 n，范围是 0 到 100。造一条长度为 n 加 1 的数列：位置 0 填 0，位置 1 填 1。若某个 i 使 2 倍的 i 落在 2 与 n 之间，则偶数位置 2i 抄录位置 i 的数。若 2i 加 1 也落在 2 与 n 之间，则该奇数位置填上位置 i 与位置 i 加 1 两处之和。把造好的数列中最大的整数写出来。",
+  "samples": [
+    {
+      "stdin": "n = 7\n",
+      "stdout": "3\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "n = 2\n",
+      "stdout": "1\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/get-maximum-in-generated-array/",
+    "en": "https://leetcode.com/problems/get-maximum-in-generated-array/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

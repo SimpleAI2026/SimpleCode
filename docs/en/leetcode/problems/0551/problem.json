@@ -1,0 +1,8 @@
+{
+  "id": 551,
+  "summary": "Read an attendance string whose length runs from 1 to 1000. Each character is one of A, L, or P. A means absent, L means late, and P means the student came to class. Decide whether the student qualifies for an attendance prize. Absent days must be strictly fewer than two, and there must be no streak of three or more late days. Write true when both conditions hold, and write false otherwise.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

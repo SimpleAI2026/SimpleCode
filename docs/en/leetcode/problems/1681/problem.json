@@ -1,0 +1,8 @@
+{
+  "id": 1681,
+  "summary": "Read a list of integers and a positive integer k. The list length is at most 16 and is divisible by k, while k is at least 1. Every entry lies between 1 and the list length. Split the list into k groups of equal size so that no group contains two equal values. A group's incompatibility is its largest value minus its smallest value. Find the smallest possible total of those incompatibilities, or write -1 when no such split exists. Order inside a group does not matter.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

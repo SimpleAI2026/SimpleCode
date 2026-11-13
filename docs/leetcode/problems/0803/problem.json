@@ -1,0 +1,26 @@
+{
+  "id": 803,
+  "slug": "bricks-falling-when-hit",
+  "summary": "读入由0和1构成的网格，行数与列数都介于1和200之间，其中1表示砖块。一块砖不会落下，仅当它直接挨着网格顶边，或者上下左右至少一个邻居是本身不会落下的砖。再按顺序读入若干次消除，次数不超过格子总数，每次位置互不相同且都在网格内部。处理一次消除时，若该格有砖就先去掉，然后统计因此新落下的砖块数目；该格本来没有砖则落下数目为零。按处理顺序把每次的落下数目写成一个数组。",
+  "samples": [
+    {
+      "stdin": "grid = [[1,0,0,0],[1,1,1,0]]\nhits = [[1,0]]\n",
+      "stdout": "[2]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "grid = [[1,0,0,0],[1,1,0,0]]\nhits = [[1,1],[1,0]]\n",
+      "stdout": "[0,0]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/bricks-falling-when-hit/",
+    "en": "https://leetcode.com/problems/bricks-falling-when-hit/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

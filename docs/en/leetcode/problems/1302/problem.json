@@ -1,0 +1,7 @@
+{
+  "id": 1302,
+  "summary": "Read a binary tree. A leaf is a node that has neither a left child nor a right child. Measure depth downward from the root and collect every leaf that sits at the greatest depth. Add the values stored on those leaves and write the sum. The tree contains between 1 and 10^4 nodes, and each node value is between 1 and 100. If the tree consists of only a root, that root is the deepest leaf, so write its value. Leaves closer to the root do not enter the sum.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

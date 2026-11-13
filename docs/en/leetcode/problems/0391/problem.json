@@ -1,0 +1,8 @@
+{
+  "id": 391,
+  "summary": "Read up to 2 times 10000 rectangles whose sides line up with the axes. Each rectangle is given by the coordinates of its southwest corner and its northeast corner, and every coordinate lies between -100000 and 100000. Decide whether these rectangles together cover one larger rectangle completely, with no overlap and no hole. Write true when they do, and write false when they do not.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

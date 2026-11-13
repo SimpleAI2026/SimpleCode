@@ -1,0 +1,8 @@
+{
+  "id": 1002,
+  "summary": "Read at most 100 words, each of length at most 100, using only lowercase English letters. When a letter occurs inside every word, place that letter into the result as many times as its smallest count among the words. If any word lacks the letter, leave it out. Write the collected letters. Their order may be chosen freely. The kept count is the lower bound across words, not a sum of the counts.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

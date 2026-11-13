@@ -1,0 +1,21 @@
+{
+  "id": 47,
+  "slug": "permutations-ii",
+  "summary": "读入一串允许数值相同的整数。列出这些整数能够形成的每一种看起来不一样的次序。若两种次序从左到右完全一致，只保留一份。把两个相等的数值对调之后样子没有变化，这种情况不要重复写出。每种保留下来的次序里，各个数值出现的次数必须和读入时一致。把这些次序全部写出来。",
+  "samples": [
+    {
+      "stdin": "[1,1,2]\n",
+      "stdout": "[\n[1,1,2],\n[1,2,1],\n[2,1,1]\n]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/permutations-ii/",
+    "en": "https://leetcode.com/problems/permutations-ii/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

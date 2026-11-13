@@ -1,0 +1,8 @@
+{
+  "id": 748,
+  "summary": "Read a license plate string and an array of words. The plate length is from 1 to 7 and may include digits, spaces, and letters of either case. The array length is from 10 to 1000, and every word is lowercase with length from 1 to 15. Ignore digits, spaces, and letter case on the plate. Each remaining letter must occur in the chosen word at least as often as it occurs on the plate. Find the shortest word that meets those counts. If several words share that shortest length, choose the earlier one in the array. Some answer is guaranteed. Write the chosen word.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

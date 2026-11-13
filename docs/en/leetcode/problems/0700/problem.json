@@ -1,0 +1,8 @@
+{
+  "id": 700,
+  "summary": "Read the root pointer of a search tree that keeps its keys in order, and read an integer named val. Search the tree for the node that stores a number equal to val. When the node is found, write the branch whose top is that node. When no node stores that number, write null. The tree has between 1 and 5000 nodes. Every stored number, and val too, lies between 1 and 10000000. The input is guaranteed to be an ordered search tree.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

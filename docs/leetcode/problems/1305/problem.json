@@ -1,0 +1,26 @@
+{
+  "id": 1305,
+  "slug": "all-elements-in-two-binary-search-trees",
+  "summary": "读入两棵二叉搜索树，其中任意一棵都允许是空的。收集两棵树里每一个结点保存的整数，按从小到大排成一个列表并写出来。每棵树至多有 5000 个结点，每个结点的值介于负的 10^5 和 10^5 之间。同一个整数若出现多次，就要在列表里按次数重复写出，不能合并成一项。空树不提供任何整数。",
+  "samples": [
+    {
+      "stdin": "root1 = [2,1,4], root2 = [1,0,3]\n",
+      "stdout": "[0,1,1,2,3,4]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "root1 = [0,-10,10], root2 = [5,1,7,0,2]\n",
+      "stdout": "[-10,0,0,1,2,5,7,10]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/all-elements-in-two-binary-search-trees/",
+    "en": "https://leetcode.com/problems/all-elements-in-two-binary-search-trees/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

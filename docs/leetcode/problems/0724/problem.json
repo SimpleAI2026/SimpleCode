@@ -1,0 +1,26 @@
+{
+  "id": 724,
+  "slug": "find-pivot-index",
+  "summary": "读入整数数组nums。长度可以是0，至多到10000，每个元素在-1000到1000之间。某个下标称为平衡位置，是指它左边全部数值之和等于它右边全部数值之和，该下标上的数本身两边都不计入。某一侧没有数时，那一侧之和当作0。找出最靠左的平衡位置并写出下标；若不存在，写出-1。",
+  "samples": [
+    {
+      "stdin": "nums = [1,7,3,6,5,6]\n",
+      "stdout": "3\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "nums = [1,2,3]\n",
+      "stdout": "-1\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/find-pivot-index/",
+    "en": "https://leetcode.com/problems/find-pivot-index/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

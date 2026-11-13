@@ -1,0 +1,8 @@
+{
+  "id": 377,
+  "summary": "Read several positive integers that are pairwise distinct. There are between 1 and 200 of them, each between 1 and 1000, and there is also a target in that same 1 to 1000 range. Form sequences from these integers so the entries add to exactly the target. Reuse of an integer is allowed, and a changed order counts as another sequence. The count is guaranteed to fit inside a 32-bit integer. Write how many sequences exist.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

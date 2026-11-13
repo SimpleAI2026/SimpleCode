@@ -1,0 +1,8 @@
+{
+  "id": 429,
+  "summary": "Read an n-ary tree whose height is at most 1000 and whose node count lies between 0 and 104. Begin at the layer that holds the root, then move down one layer at a time. Inside a layer, record the integers stored in the nodes from the left side toward the right side. Write those layers from top to bottom. When the tree has no nodes, write an empty result.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

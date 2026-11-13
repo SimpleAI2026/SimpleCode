@@ -1,0 +1,26 @@
+{
+  "id": 1732,
+  "slug": "find-the-highest-altitude",
+  "summary": "读入名叫 gain 的一串整数，它含有 n 项，n 介于 1 和 100，每个差值介于 -100 和 100。骑行从海拔 0 出发，一共经过 n 加 1 个点。gain 的第 i 项是从点 i 到点 i 加 1 的海拔变化，可正可负。把每个点的海拔求出来，找出其中的最高海拔并写出来。起点也要参与比较。",
+  "samples": [
+    {
+      "stdin": "gain = [-5,1,5,0,-7]\n",
+      "stdout": "1\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "gain = [-4,-3,-2,-1,4,3,2]\n",
+      "stdout": "0\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/find-the-highest-altitude/",
+    "en": "https://leetcode.com/problems/find-the-highest-altitude/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

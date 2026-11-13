@@ -1,0 +1,26 @@
+{
+  "id": 1104,
+  "slug": "path-in-zigzag-labelled-binary-tree",
+  "summary": "想象一棵没有尽头的二叉树，每个结点都有左右两个孩子，下一行的结点数正好是上一行的两倍。用从 1 开始的正整数逐行填写，根单独占第一行。奇数行自左向右变大，偶数行自右向左变大，行与行的数字首尾相接、没有空缺。读入一个目标标号，它在 1 到 1000000 之间。找出从最上面走到这个标号时经过的每一个标号，按自上而下的次序写出这条标号序列。",
+  "samples": [
+    {
+      "stdin": "label = 14\n",
+      "stdout": "[1,3,4,14]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "label = 26\n",
+      "stdout": "[1,2,6,10,26]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/path-in-zigzag-labelled-binary-tree/",
+    "en": "https://leetcode.com/problems/path-in-zigzag-labelled-binary-tree/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

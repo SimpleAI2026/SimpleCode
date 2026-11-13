@@ -1,0 +1,26 @@
+{
+  "id": 1654,
+  "slug": "minimum-jumps-to-reach-home",
+  "summary": "读入禁区列表、向右步长 a、向左步长 b，以及家的坐标 x。禁区个数介于 1 与 1000。a、b 以及每个禁区坐标都介于 1 与 2000，x 介于 0 与 2000。禁区互不重复，家也不落在禁区。从坐标 0 出发。向右一次正好移动 a，向左一次正好移动 b。不能接连两次向左，不能落在禁区，也不能落到负坐标。允许先越过家再折返。写出正好落到 x 的最少步数；做不到就写出 -1。",
+  "samples": [
+    {
+      "stdin": "forbidden = [14,4,18,1,15], a = 3, b = 15, x = 9\n",
+      "stdout": "3\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "forbidden = [8,3,16,6,12,20], a = 15, b = 13, x = 11\n",
+      "stdout": "-1\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/minimum-jumps-to-reach-home/",
+    "en": "https://leetcode.com/problems/minimum-jumps-to-reach-home/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

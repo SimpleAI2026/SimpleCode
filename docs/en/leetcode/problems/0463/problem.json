@@ -1,0 +1,7 @@
+{
+  "id": 463,
+  "summary": "Read a rectangular grid of zeros and ones. Its width and its height are each at most 100. A one stands for land and a zero stands for water. Cells join only along a full edge, so a diagonal touch does not connect them. Water borders the whole grid, exactly one land mass is present, and no pool of water sits fully inside that land. Each cell is a square whose side has length 1. Find the perimeter of that land mass and write it.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

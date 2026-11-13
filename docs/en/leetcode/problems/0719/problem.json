@@ -1,0 +1,7 @@
+{
+  "id": 719,
+  "summary": "Read an integer array nums and a positive integer k. The array length runs from 2 through 10000, and each entry is an integer in the half-open span from 0 to 1000000. Every unordered pair of distinct indexes has a distance equal to the absolute gap between its two values. The integer k is at least 1 and at most the count of those pairs. Order the distances from smaller to larger and write the distance that occupies position k.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

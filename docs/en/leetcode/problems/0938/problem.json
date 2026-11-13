@@ -1,0 +1,8 @@
+{
+  "id": 938,
+  "summary": "Read the root of a binary search tree together with a closed numeric window given by a low end and a high end. The tree holds between 1 and 20000 nodes. Every stored integer is unique and lies between 1 and 100000. The two ends of the window also lie in that same span, and the low end never exceeds the high end. Add every node value that falls inside the window, counting both ends. Write the resulting total.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

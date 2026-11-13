@@ -1,0 +1,26 @@
+{
+  "id": 1877,
+  "slug": "minimize-maximum-pair-sum-in-array",
+  "summary": "读入偶数个正整数。个数 n 介于 2 和 105 之间，而且每个数都不超过 105。把它们分成 n 除以 2 组，每个数恰好属于一组，一组由两个数相加得到组内和。各组的和里会有一个最大者。选择一种分组，使这个最大者尽量小，并把该数值写出来。",
+  "samples": [
+    {
+      "stdin": "an array nums of even length n, pair up the elements of nums into n / 2 pairs such that:\n\n- Each element of nums is in exactly one pair, and\n- The maximum pair sum is minimized.\n",
+      "stdout": "*the minimized maximum pair sum after optimally pairing up the elements*.\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "nums = [3,5,2,3]\n",
+      "stdout": "7\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/minimize-maximum-pair-sum-in-array/",
+    "en": "https://leetcode.com/problems/minimize-maximum-pair-sum-in-array/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

@@ -1,0 +1,26 @@
+{
+  "id": 1551,
+  "slug": "minimum-operations-to-make-array-equal",
+  "summary": "有一条长度为 n 的数列，下标 i 从 0 起，第 i 项等于 2 乘以 i 再加 1。一次改动选出两个下标，让其中一个数减少 1，另一个数增加 1。目标是让整条数列里的每个数都变成同一个值。测试数据保证这一定办得到。写出最少需要的改动次数。n 介于 1 与 10000。",
+  "samples": [
+    {
+      "stdin": "n = 3\n",
+      "stdout": "2\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "n = 6\n",
+      "stdout": "9\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/minimum-operations-to-make-array-equal/",
+    "en": "https://leetcode.com/problems/minimum-operations-to-make-array-equal/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

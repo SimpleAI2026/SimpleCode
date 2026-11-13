@@ -1,0 +1,8 @@
+{
+  "id": 1664,
+  "summary": "Read an integer list nums. Its length is from 1 to 105, and each value is from 1 to 104. Delete exactly one element. After the deletion, every element that stood to the right shifts one place toward the front. Call the remaining list fair when the numbers on odd positions add up to the same total as the numbers on even positions. Count how many choices of the deleted element leave a fair list, and write that count. Positions are numbered from 0.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

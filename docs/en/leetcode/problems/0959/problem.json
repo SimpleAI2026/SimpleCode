@@ -1,0 +1,8 @@
+{
+  "id": 959,
+  "summary": "Read a square character grid whose side length is between 1 and 30. Each cell holds one of three symbols: a forward slash, a backslash, or a space. A slash splits its cell into smaller pieces, while a space leaves that cell whole. Two pieces belong to the same region whenever they share a border of positive length. Count how many separate regions the lines carve across the whole grid, and write that count.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

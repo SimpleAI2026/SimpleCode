@@ -1,0 +1,26 @@
+{
+  "id": 162,
+  "slug": "find-peak-element",
+  "summary": "读入一列相邻两项都不相等的数。把下标越界的两侧都当成负无穷。某个位置上的数如果严格大于紧挨着的左邻和右邻，这个位置就是一个峰。整列里可以同时存在好几个峰。找出任意一个峰，把它从零起算的下标写出来。比较次数要随着列长按对数增长，不能从左到右把每一项都看一遍。端点只要大于它仅有的那个邻居，也算峰。",
+  "samples": [
+    {
+      "stdin": "nums = [1,2,3,1]\n",
+      "stdout": "2\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "nums = [1,2,1,3,5,6,4]\n",
+      "stdout": "1 or 5\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/find-peak-element/",
+    "en": "https://leetcode.com/problems/find-peak-element/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

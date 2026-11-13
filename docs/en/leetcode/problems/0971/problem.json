@@ -1,0 +1,8 @@
+{
+  "id": 971,
+  "summary": "Read a binary tree of n nodes and a desired preorder list of length n. The integer n is between 1 and 100. Every node value is unique and lies between 1 and n, and the desired list also contains each of those values once. Flipping a node means swapping its left subtree with its right subtree. Find a set of nodes to flip so the tree preorder matches the desired list, using as few flips as possible. Write the values of the flipped nodes in any order. If no choice of flips can make the preorder match, write a list that contains only -1.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

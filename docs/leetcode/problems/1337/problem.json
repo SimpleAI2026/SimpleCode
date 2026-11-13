@@ -1,0 +1,26 @@
+{
+  "id": 1337,
+  "slug": "the-k-weakest-rows-in-a-matrix",
+  "summary": "读入一张 m 行 n 列的矩阵和一个整数 k。每行只含 1 和 0，1 代表军人，0 代表平民，而且每行的 1 都站在 0 的前面。军人更少的一行更弱；军人人数相同时，行号更小的一行更弱。找出最弱的 k 行，按从弱到强的顺序把它们的行号写出来。m 和 n 都在 2 到 100 之间，k 介于 1 和行数 m 之间。",
+  "samples": [
+    {
+      "stdin": "mat =\n[[1,1,0,0,0],\n[1,1,1,1,0],\n[1,0,0,0,0],\n[1,1,0,0,0],\n[1,1,1,1,1]],\nk = 3\n",
+      "stdout": "[2,0,3]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "mat =\n[[1,0,0,0],\n[1,1,1,1],\n[1,0,0,0],\n[1,0,0,0]],\nk = 2\n",
+      "stdout": "[0,2]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/the-k-weakest-rows-in-a-matrix/",
+    "en": "https://leetcode.com/problems/the-k-weakest-rows-in-a-matrix/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

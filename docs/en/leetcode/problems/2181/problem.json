@@ -1,0 +1,8 @@
+{
+  "id": 2181,
+  "summary": "Read a singly linked chain whose length is between 3 and 2 times 100000. Each stored integer is between 0 and 1000. The first cell and the last cell both hold 0, and no two neighboring cells are both 0. Those zeros split the nonzero values into segments. Replace every segment by one cell holding the total of its values, keep the segment order, and drop every zero. Write the first cell of the resulting chain.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

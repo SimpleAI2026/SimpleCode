@@ -1,0 +1,8 @@
+{
+  "id": 1239,
+  "summary": "Read an array of strings. The array length is between 1 and 16, every string has length between 1 and 26, and the letters are lowercase English letters. Choose some of the strings while keeping their original relative order, skipping any you do not want, and join the chosen strings end to end. In the joined result each character occurs at most once. Among all joins that obey this limit, write the greatest length. If every choice repeats a letter, that length is 0. The per-string bound is 26.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

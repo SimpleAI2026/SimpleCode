@@ -1,0 +1,21 @@
+{
+  "id": 404,
+  "slug": "sum-of-left-leaves",
+  "summary": "读入一棵二叉树。若某个结点是其父结点的左孩子，并且它自己没有任何孩子，就把它算作一枚左叶。把全部左叶上保存的数值加总，写出这个和。一枚左叶都没有时，写出 0。空树同样写出 0。",
+  "samples": [
+    {
+      "stdin": "binary tree.\n\nExample:\n\n3\n/ \\\n9 20\n/ \\\n15 7\n\nThere are two left leaves in the binary tree, with values 9 and 15 respectively.\n",
+      "stdout": "24.\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/sum-of-left-leaves/",
+    "en": "https://leetcode.com/problems/sum-of-left-leaves/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

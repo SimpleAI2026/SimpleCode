@@ -1,0 +1,8 @@
+{
+  "id": 405,
+  "summary": "Read an integer guaranteed to fit inside a signed 32-bit integer. Write the number as a hexadecimal string. For a negative number, interpret the bits with two's complement. Letters from a to f must be lowercase. Drop extra leading zeros, and if the number is exactly zero, write one character 0. Do not call a library function that converts or formats the number into hex directly.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

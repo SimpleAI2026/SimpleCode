@@ -106,6 +106,21 @@
     ]
   },
   {
+    "id": 6,
+    "slug": "zigzag-conversion",
+    "title": "ZigZag Conversion",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
     "id": 7,
     "slug": "reverse-integer",
     "title": "Reverse Integer",
@@ -124,6 +139,36 @@
     "langs": [
       "python"
     ]
+  },
+  {
+    "id": 8,
+    "slug": "string-to-integer-atoi",
+    "title": "String to Integer (atoi)",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 9,
+    "slug": "palindrome-number",
+    "title": "Palindrome Number",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
   },
   {
     "id": 10,
@@ -183,6 +228,21 @@
     "langs": [
       "python"
     ]
+  },
+  {
+    "id": 13,
+    "slug": "roman-to-integer",
+    "title": "Roman to Integer",
+    "difficulty": "easy",
+    "tags": [
+      "math"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
   },
   {
     "id": 14,
@@ -264,6 +324,21 @@
     "langs": [
       "python"
     ]
+  },
+  {
+    "id": 18,
+    "slug": "4sum",
+    "title": "4Sum",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
   },
   {
     "id": 19,
@@ -412,6 +487,52 @@
     ]
   },
   {
+    "id": 26,
+    "slug": "remove-duplicates-from-sorted-array",
+    "title": "Remove Duplicates from Sorted Array",
+    "difficulty": "easy",
+    "tags": [
+      "hash",
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 27,
+    "slug": "remove-element",
+    "title": "Remove Element",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 28,
+    "slug": "find-the-index-of-the-first-occurrence-in-a-string",
+    "title": "Find the Index of the First Occurrence in a String",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
     "id": 29,
     "slug": "divide-two-integers",
     "title": "Divide Two Integers",
@@ -428,6 +549,52 @@
     "langs": [
       "python"
     ]
+  },
+  {
+    "id": 30,
+    "slug": "substring-with-concatenation-of-all-words",
+    "title": "Substring with Concatenation of All Words",
+    "difficulty": "hard",
+    "tags": [
+      "tree",
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 31,
+    "slug": "next-permutation",
+    "title": "Next Permutation",
+    "difficulty": "medium",
+    "tags": [
+      "backtracking"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 32,
+    "slug": "longest-valid-parentheses",
+    "title": "Longest Valid Parentheses",
+    "difficulty": "hard",
+    "tags": [
+      "stack"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
   },
   {
     "id": 33,
@@ -672,6 +839,21 @@
     ]
   },
   {
+    "id": 47,
+    "slug": "permutations-ii",
+    "title": "Permutations II",
+    "difficulty": "medium",
+    "tags": [
+      "backtracking"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
     "id": 48,
     "slug": "rotate-image",
     "title": "Rotate Image",
@@ -753,6 +935,21 @@
     "langs": [
       "python"
     ]
+  },
+  {
+    "id": 52,
+    "slug": "n-queens-ii",
+    "title": "N-Queens II",
+    "difficulty": "hard",
+    "tags": [
+      "backtracking"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
   },
   {
     "id": 53,
@@ -860,6 +1057,66 @@
     ]
   },
   {
+    "id": 58,
+    "slug": "length-of-last-word",
+    "title": "Length of Last Word",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 59,
+    "slug": "spiral-matrix-ii",
+    "title": "Spiral Matrix II",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 60,
+    "slug": "permutation-sequence",
+    "title": "Permutation Sequence",
+    "difficulty": "hard",
+    "tags": [
+      "backtracking"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 61,
+    "slug": "rotate-list",
+    "title": "Rotate List",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
     "id": 62,
     "slug": "unique-paths",
     "title": "Unique Paths",
@@ -882,6 +1139,21 @@
     ]
   },
   {
+    "id": 63,
+    "slug": "unique-paths-ii",
+    "title": "Unique Paths II",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
     "id": 64,
     "slug": "minimum-path-sum",
     "title": "Minimum Path Sum",
@@ -902,6 +1174,21 @@
     ]
   },
   {
+    "id": 65,
+    "slug": "valid-number",
+    "title": "Valid Number",
+    "difficulty": "hard",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
     "id": 66,
     "slug": "plus-one",
     "title": "Plus One",
@@ -917,6 +1204,36 @@
     "langs": [
       "python"
     ]
+  },
+  {
+    "id": 67,
+    "slug": "add-binary",
+    "title": "Add Binary",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 69,
+    "slug": "sqrtx",
+    "title": "Sqrt(x)",
+    "difficulty": "easy",
+    "tags": [
+      "math"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
   },
   {
     "id": 70,
@@ -938,6 +1255,21 @@
     "langs": [
       "python"
     ]
+  },
+  {
+    "id": 71,
+    "slug": "simplify-path",
+    "title": "Simplify Path",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
   },
   {
     "id": 72,
@@ -1102,6 +1434,68 @@
     ]
   },
   {
+    "id": 80,
+    "slug": "remove-duplicates-from-sorted-array-ii",
+    "title": "Remove Duplicates from Sorted Array II",
+    "difficulty": "medium",
+    "tags": [
+      "hash",
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 81,
+    "slug": "search-in-rotated-sorted-array-ii",
+    "title": "Search in Rotated Sorted Array II",
+    "difficulty": "medium",
+    "tags": [
+      "binary-search",
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 82,
+    "slug": "remove-duplicates-from-sorted-list-ii",
+    "title": "Remove Duplicates from Sorted List II",
+    "difficulty": "medium",
+    "tags": [
+      "hash"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 83,
+    "slug": "remove-duplicates-from-sorted-list",
+    "title": "Remove Duplicates from Sorted List",
+    "difficulty": "easy",
+    "tags": [
+      "hash"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
     "id": 84,
     "slug": "largest-rectangle-in-histogram",
     "title": "Largest Rectangle In Histogram",
@@ -1138,6 +1532,36 @@
     "langs": [
       "python"
     ]
+  },
+  {
+    "id": 88,
+    "slug": "merge-sorted-array",
+    "title": "Merge Sorted Array",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 89,
+    "slug": "gray-code",
+    "title": "Gray Code",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
   },
   {
     "id": 90,
@@ -1197,6 +1621,21 @@
     ]
   },
   {
+    "id": 93,
+    "slug": "restore-ip-addresses",
+    "title": "Restore IP Addresses",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
     "id": 94,
     "slug": "binary-tree-inorder-traversal",
     "title": "Binary Tree Inorder Traversal",
@@ -1215,6 +1654,36 @@
     "langs": [
       "python"
     ]
+  },
+  {
+    "id": 95,
+    "slug": "unique-binary-search-trees-ii",
+    "title": "Unique Binary Search Trees II",
+    "difficulty": "medium",
+    "tags": [
+      "binary-search"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 96,
+    "slug": "unique-binary-search-trees",
+    "title": "Unique Binary Search Trees",
+    "difficulty": "medium",
+    "tags": [
+      "binary-search"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
   },
   {
     "id": 97,
@@ -1255,6 +1724,21 @@
     "langs": [
       "python"
     ]
+  },
+  {
+    "id": 99,
+    "slug": "recover-binary-search-tree",
+    "title": "Recover Binary Search Tree",
+    "difficulty": "medium",
+    "tags": [
+      "binary-search"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
   },
   {
     "id": 100,
@@ -1319,6 +1803,21 @@
     ]
   },
   {
+    "id": 103,
+    "slug": "binary-tree-zigzag-level-order-traversal",
+    "title": "Binary Tree Zigzag Level Order Traversal",
+    "difficulty": "medium",
+    "tags": [
+      "tree"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
     "id": 104,
     "slug": "maximum-depth-of-binary-tree",
     "title": "Maximum Depth of Binary Tree",
@@ -1361,6 +1860,36 @@
     ]
   },
   {
+    "id": 106,
+    "slug": "construct-binary-tree-from-inorder-and-postorder-traversal",
+    "title": "Construct Binary Tree from Inorder and Postorder Traversal",
+    "difficulty": "medium",
+    "tags": [
+      "tree"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 107,
+    "slug": "binary-tree-level-order-traversal-ii",
+    "title": "Binary Tree Level Order Traversal II",
+    "difficulty": "medium",
+    "tags": [
+      "tree"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
     "id": 108,
     "slug": "convert-sorted-array-to-binary-search-tree",
     "title": "Convert Sorted Array to Binary Search Tree",
@@ -1380,6 +1909,21 @@
     ]
   },
   {
+    "id": 109,
+    "slug": "convert-sorted-list-to-binary-search-tree",
+    "title": "Convert Sorted List to Binary Search Tree",
+    "difficulty": "medium",
+    "tags": [
+      "binary-search"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
     "id": 110,
     "slug": "balanced-binary-tree",
     "title": "Balanced Binary Tree",
@@ -1397,6 +1941,67 @@
     "langs": [
       "python"
     ]
+  },
+  {
+    "id": 111,
+    "slug": "minimum-depth-of-binary-tree",
+    "title": "Minimum Depth of Binary Tree",
+    "difficulty": "easy",
+    "tags": [
+      "tree"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 112,
+    "slug": "path-sum",
+    "title": "Path Sum",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 113,
+    "slug": "path-sum-ii",
+    "title": "Path Sum II",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 114,
+    "slug": "flatten-binary-tree-to-linked-list",
+    "title": "Flatten Binary Tree to Linked List",
+    "difficulty": "medium",
+    "tags": [
+      "linked-list",
+      "tree"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
   },
   {
     "id": 115,
@@ -1419,6 +2024,21 @@
     ]
   },
   {
+    "id": 116,
+    "slug": "populating-next-right-pointers-in-each-node",
+    "title": "Populating Next Right Pointers in Each Node",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
     "id": 118,
     "slug": "pascals-triangle",
     "title": "Pascals Triangle",
@@ -1436,6 +2056,36 @@
     "langs": [
       "python"
     ]
+  },
+  {
+    "id": 119,
+    "slug": "pascals-triangle-ii",
+    "title": "Pascal's Triangle II",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 120,
+    "slug": "triangle",
+    "title": "Triangle",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
   },
   {
     "id": 121,
@@ -1518,6 +2168,21 @@
     "langs": [
       "python"
     ]
+  },
+  {
+    "id": 126,
+    "slug": "word-ladder-ii",
+    "title": "Word Ladder II",
+    "difficulty": "hard",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
   },
   {
     "id": 127,
@@ -1659,6 +2324,21 @@
     ]
   },
   {
+    "id": 135,
+    "slug": "candy",
+    "title": "Candy",
+    "difficulty": "hard",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
     "id": 136,
     "slug": "single-number",
     "title": "Single Number",
@@ -1677,6 +2357,21 @@
     "langs": [
       "python"
     ]
+  },
+  {
+    "id": 137,
+    "slug": "single-number-ii",
+    "title": "Single Number II",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
   },
   {
     "id": 138,
@@ -1741,6 +2436,21 @@
     ]
   },
   {
+    "id": 142,
+    "slug": "linked-list-cycle-ii",
+    "title": "Linked List Cycle II",
+    "difficulty": "medium",
+    "tags": [
+      "linked-list"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
     "id": 143,
     "slug": "reorder-list",
     "title": "Reorder List",
@@ -1779,6 +2489,21 @@
     ]
   },
   {
+    "id": 145,
+    "slug": "binary-tree-postorder-traversal",
+    "title": "Binary Tree Postorder Traversal",
+    "difficulty": "easy",
+    "tags": [
+      "tree"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
     "id": 146,
     "slug": "lru-cache",
     "title": "LRU Cache",
@@ -1797,6 +2522,21 @@
     "langs": [
       "python"
     ]
+  },
+  {
+    "id": 147,
+    "slug": "insertion-sort-list",
+    "title": "Insertion Sort List",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
   },
   {
     "id": 148,
@@ -1836,6 +2576,21 @@
     "langs": [
       "python"
     ]
+  },
+  {
+    "id": 151,
+    "slug": "reverse-words-in-a-string",
+    "title": "Reverse Words in a String",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
   },
   {
     "id": 152,
@@ -1881,6 +2636,22 @@
     ]
   },
   {
+    "id": 154,
+    "slug": "find-minimum-in-rotated-sorted-array-ii",
+    "title": "Find Minimum in Rotated Sorted Array II",
+    "difficulty": "hard",
+    "tags": [
+      "binary-search",
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
     "id": 155,
     "slug": "min-stack",
     "title": "Min Stack",
@@ -1920,6 +2691,36 @@
     ]
   },
   {
+    "id": 162,
+    "slug": "find-peak-element",
+    "title": "Find Peak Element",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 164,
+    "slug": "maximum-gap",
+    "title": "Maximum Gap",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
     "id": 167,
     "slug": "two-sum-ii-input-array-is-sorted",
     "title": "Two Sum II Input Array Is Sorted",
@@ -1937,6 +2738,21 @@
     "langs": [
       "python"
     ]
+  },
+  {
+    "id": 168,
+    "slug": "excel-sheet-column-title",
+    "title": "Excel Sheet Column Title",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
   },
   {
     "id": 169,
@@ -1957,6 +2773,97 @@
     "langs": [
       "python"
     ]
+  },
+  {
+    "id": 171,
+    "slug": "excel-sheet-column-number",
+    "title": "Excel Sheet Column Number",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 172,
+    "slug": "factorial-trailing-zeroes",
+    "title": "Factorial Trailing Zeroes",
+    "difficulty": "medium",
+    "tags": [
+      "math"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 173,
+    "slug": "binary-search-tree-iterator",
+    "title": "Binary Search Tree Iterator",
+    "difficulty": "medium",
+    "tags": [
+      "binary-search",
+      "design"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 174,
+    "slug": "dungeon-game",
+    "title": "Dungeon Game",
+    "difficulty": "hard",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 179,
+    "slug": "largest-number",
+    "title": "Largest Number",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 187,
+    "slug": "repeated-dna-sequences",
+    "title": "Repeated DNA Sequences",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
   },
   {
     "id": 189,
@@ -2081,6 +2988,21 @@
     ]
   },
   {
+    "id": 201,
+    "slug": "bitwise-and-of-numbers-range",
+    "title": "Bitwise AND of Numbers Range",
+    "difficulty": "medium",
+    "tags": [
+      "bit"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
     "id": 202,
     "slug": "happy-number",
     "title": "Happy Number",
@@ -2097,6 +3019,52 @@
     "langs": [
       "python"
     ]
+  },
+  {
+    "id": 203,
+    "slug": "remove-linked-list-elements",
+    "title": "Remove Linked List Elements",
+    "difficulty": "easy",
+    "tags": [
+      "linked-list"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 204,
+    "slug": "count-primes",
+    "title": "Count Primes",
+    "difficulty": "medium",
+    "tags": [
+      "math"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 205,
+    "slug": "isomorphic-strings",
+    "title": "Isomorphic Strings",
+    "difficulty": "easy",
+    "tags": [
+      "hash",
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
   },
   {
     "id": 206,
@@ -2339,6 +3307,51 @@
     ]
   },
   {
+    "id": 219,
+    "slug": "contains-duplicate-ii",
+    "title": "Contains Duplicate II",
+    "difficulty": "easy",
+    "tags": [
+      "hash"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 220,
+    "slug": "contains-duplicate-iii",
+    "title": "Contains Duplicate III",
+    "difficulty": "hard",
+    "tags": [
+      "hash"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 222,
+    "slug": "count-complete-tree-nodes",
+    "title": "Count Complete Tree Nodes",
+    "difficulty": "medium",
+    "tags": [
+      "tree"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
     "id": 223,
     "slug": "rectangle-area",
     "title": "Rectangle Area",
@@ -2354,6 +3367,36 @@
     "langs": [
       "python"
     ]
+  },
+  {
+    "id": 224,
+    "slug": "basic-calculator",
+    "title": "Basic Calculator",
+    "difficulty": "hard",
+    "tags": [
+      "stack"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 225,
+    "slug": "implement-stack-using-queues",
+    "title": "Implement Stack using Queues",
+    "difficulty": "easy",
+    "tags": [
+      "stack"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
   },
   {
     "id": 226,
@@ -2377,6 +3420,51 @@
     ]
   },
   {
+    "id": 227,
+    "slug": "basic-calculator-ii",
+    "title": "Basic Calculator II",
+    "difficulty": "medium",
+    "tags": [
+      "stack"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 228,
+    "slug": "summary-ranges",
+    "title": "Summary Ranges",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 229,
+    "slug": "majority-element-ii",
+    "title": "Majority Element II",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
     "id": 230,
     "slug": "kth-smallest-element-in-a-bst",
     "title": "Kth Smallest Element In a Bst",
@@ -2397,6 +3485,36 @@
     "langs": [
       "python"
     ]
+  },
+  {
+    "id": 231,
+    "slug": "power-of-two",
+    "title": "Power of Two",
+    "difficulty": "easy",
+    "tags": [
+      "math"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 232,
+    "slug": "implement-queue-using-stacks",
+    "title": "Implement Queue using Stacks",
+    "difficulty": "easy",
+    "tags": [
+      "stack"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
   },
   {
     "id": 234,
@@ -2439,6 +3557,36 @@
     ]
   },
   {
+    "id": 236,
+    "slug": "lowest-common-ancestor-of-a-binary-tree",
+    "title": "Lowest Common Ancestor of a Binary Tree",
+    "difficulty": "medium",
+    "tags": [
+      "tree"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 237,
+    "slug": "delete-node-in-a-linked-list",
+    "title": "Delete Node in a Linked List",
+    "difficulty": "medium",
+    "tags": [
+      "linked-list"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
     "id": 238,
     "slug": "product-of-array-except-self",
     "title": "Product of Array Except Self",
@@ -2479,6 +3627,21 @@
     "langs": [
       "python"
     ]
+  },
+  {
+    "id": 240,
+    "slug": "search-a-2d-matrix-ii",
+    "title": "Search a 2D Matrix II",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
   },
   {
     "id": 242,
@@ -2542,6 +3705,51 @@
     ]
   },
   {
+    "id": 257,
+    "slug": "binary-tree-paths",
+    "title": "Binary Tree Paths",
+    "difficulty": "easy",
+    "tags": [
+      "tree"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 258,
+    "slug": "add-digits",
+    "title": "Add Digits",
+    "difficulty": "easy",
+    "tags": [
+      "math"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 260,
+    "slug": "single-number-iii",
+    "title": "Single Number III",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
     "id": 261,
     "slug": "graph-valid-tree",
     "title": "Graph Valid Tree",
@@ -2559,6 +3767,36 @@
     "langs": [
       "python"
     ]
+  },
+  {
+    "id": 263,
+    "slug": "ugly-number",
+    "title": "Ugly Number",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 264,
+    "slug": "ugly-number-ii",
+    "title": "Ugly Number II",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
   },
   {
     "id": 268,
@@ -2619,6 +3857,51 @@
     ]
   },
   {
+    "id": 274,
+    "slug": "h-index",
+    "title": "H-Index",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 275,
+    "slug": "h-index-ii",
+    "title": "H-Index II",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 278,
+    "slug": "first-bad-version",
+    "title": "First Bad Version",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
     "id": 279,
     "slug": "perfect-squares",
     "title": "Perfect Squares",
@@ -2659,6 +3942,21 @@
     ]
   },
   {
+    "id": 284,
+    "slug": "peeking-iterator",
+    "title": "Peeking Iterator",
+    "difficulty": "medium",
+    "tags": [
+      "design"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
     "id": 286,
     "slug": "walls-and-gates",
     "title": "Walls And Gates",
@@ -2696,6 +3994,21 @@
     "langs": [
       "python"
     ]
+  },
+  {
+    "id": 290,
+    "slug": "word-pattern",
+    "title": "Word Pattern",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
   },
   {
     "id": 295,
@@ -2739,6 +4052,21 @@
     ]
   },
   {
+    "id": 299,
+    "slug": "bulls-and-cows",
+    "title": "Bulls and Cows",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
     "id": 300,
     "slug": "longest-increasing-subsequence",
     "title": "Longest Increasing Subsequence",
@@ -2758,6 +4086,81 @@
     "langs": [
       "python"
     ]
+  },
+  {
+    "id": 301,
+    "slug": "remove-invalid-parentheses",
+    "title": "Remove Invalid Parentheses",
+    "difficulty": "hard",
+    "tags": [
+      "stack"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 303,
+    "slug": "range-sum-query-immutable",
+    "title": "Range Sum Query - Immutable",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 304,
+    "slug": "range-sum-query-2d-immutable",
+    "title": "Range Sum Query 2D - Immutable",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 306,
+    "slug": "additive-number",
+    "title": "Additive Number",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 307,
+    "slug": "range-sum-query-mutable",
+    "title": "Range Sum Query - Mutable",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
   },
   {
     "id": 309,
@@ -2795,6 +4198,51 @@
     "langs": [
       "python"
     ]
+  },
+  {
+    "id": 315,
+    "slug": "count-of-smaller-numbers-after-self",
+    "title": "Count of Smaller Numbers After Self",
+    "difficulty": "hard",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 318,
+    "slug": "maximum-product-of-word-lengths",
+    "title": "Maximum Product of Word Lengths",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 319,
+    "slug": "bulb-switcher",
+    "title": "Bulb Switcher",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
   },
   {
     "id": 322,
@@ -2837,6 +4285,66 @@
     "langs": [
       "python"
     ]
+  },
+  {
+    "id": 324,
+    "slug": "wiggle-sort-ii",
+    "title": "Wiggle Sort II",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 326,
+    "slug": "power-of-three",
+    "title": "Power of Three",
+    "difficulty": "easy",
+    "tags": [
+      "math"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 327,
+    "slug": "count-of-range-sum",
+    "title": "Count of Range Sum",
+    "difficulty": "hard",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 328,
+    "slug": "odd-even-linked-list",
+    "title": "Odd Even Linked List",
+    "difficulty": "medium",
+    "tags": [
+      "linked-list"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
   },
   {
     "id": 329,
@@ -2894,6 +4402,21 @@
     ]
   },
   {
+    "id": 337,
+    "slug": "house-robber-iii",
+    "title": "House Robber III",
+    "difficulty": "medium",
+    "tags": [
+      "dp"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
     "id": 338,
     "slug": "counting-bits",
     "title": "Counting Bits",
@@ -2913,6 +4436,36 @@
     ]
   },
   {
+    "id": 341,
+    "slug": "flatten-nested-list-iterator",
+    "title": "Flatten Nested List Iterator",
+    "difficulty": "medium",
+    "tags": [
+      "design"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 342,
+    "slug": "power-of-four",
+    "title": "Power of Four",
+    "difficulty": "easy",
+    "tags": [
+      "math"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
     "id": 343,
     "slug": "integer-break",
     "title": "Integer Break",
@@ -2929,6 +4482,36 @@
     "langs": [
       "python"
     ]
+  },
+  {
+    "id": 344,
+    "slug": "reverse-string",
+    "title": "Reverse String",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 345,
+    "slug": "reverse-vowels-of-a-string",
+    "title": "Reverse Vowels of a String",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
   },
   {
     "id": 347,
@@ -2953,6 +4536,21 @@
     ]
   },
   {
+    "id": 349,
+    "slug": "intersection-of-two-arrays",
+    "title": "Intersection of Two Arrays",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
     "id": 350,
     "slug": "intersection-of-two-arrays-ii",
     "title": "Intersection of Two Arrays II",
@@ -2969,6 +4567,36 @@
     "langs": [
       "python"
     ]
+  },
+  {
+    "id": 352,
+    "slug": "data-stream-as-disjoint-intervals",
+    "title": "Data Stream as Disjoint Intervals",
+    "difficulty": "hard",
+    "tags": [
+      "interval"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 354,
+    "slug": "russian-doll-envelopes",
+    "title": "Russian Doll Envelopes",
+    "difficulty": "hard",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
   },
   {
     "id": 355,
@@ -2991,6 +4619,21 @@
     ]
   },
   {
+    "id": 357,
+    "slug": "count-numbers-with-unique-digits",
+    "title": "Count Numbers with Unique Digits",
+    "difficulty": "medium",
+    "tags": [
+      "math"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
     "id": 366,
     "slug": "find-leaves-of-binary-tree",
     "title": "Find Leaves of Binary Tree",
@@ -3009,6 +4652,36 @@
     ]
   },
   {
+    "id": 367,
+    "slug": "valid-perfect-square",
+    "title": "Valid Perfect Square",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 368,
+    "slug": "largest-divisible-subset",
+    "title": "Largest Divisible Subset",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
     "id": 371,
     "slug": "sum-of-two-integers",
     "title": "Sum of Two Integers",
@@ -3025,6 +4698,81 @@
     "langs": [
       "python"
     ]
+  },
+  {
+    "id": 372,
+    "slug": "super-pow",
+    "title": "Super Pow",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 373,
+    "slug": "find-k-pairs-with-smallest-sums",
+    "title": "Find K Pairs with Smallest Sums",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 374,
+    "slug": "guess-number-higher-or-lower",
+    "title": "Guess Number Higher or Lower",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 376,
+    "slug": "wiggle-subsequence",
+    "title": "Wiggle Subsequence",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 377,
+    "slug": "combination-sum-iv",
+    "title": "Combination Sum IV",
+    "difficulty": "medium",
+    "tags": [
+      "backtracking"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
   },
   {
     "id": 378,
@@ -3046,6 +4794,141 @@
     ]
   },
   {
+    "id": 382,
+    "slug": "linked-list-random-node",
+    "title": "Linked List Random Node",
+    "difficulty": "medium",
+    "tags": [
+      "linked-list"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 383,
+    "slug": "ransom-note",
+    "title": "Ransom Note",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 384,
+    "slug": "shuffle-an-array",
+    "title": "Shuffle an Array",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 385,
+    "slug": "mini-parser",
+    "title": "Mini Parser",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 386,
+    "slug": "lexicographical-numbers",
+    "title": "Lexicographical Numbers",
+    "difficulty": "medium",
+    "tags": [
+      "graph"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 387,
+    "slug": "first-unique-character-in-a-string",
+    "title": "First Unique Character in a String",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 389,
+    "slug": "find-the-difference",
+    "title": "Find the Difference",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 390,
+    "slug": "elimination-game",
+    "title": "Elimination Game",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 391,
+    "slug": "perfect-rectangle",
+    "title": "Perfect Rectangle",
+    "difficulty": "hard",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
     "id": 392,
     "slug": "is-subsequence",
     "title": "Is Subsequence",
@@ -3063,6 +4946,21 @@
     "langs": [
       "python"
     ]
+  },
+  {
+    "id": 393,
+    "slug": "utf-8-validation",
+    "title": "UTF-8 Validation",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
   },
   {
     "id": 394,
@@ -3084,6 +4982,52 @@
     ]
   },
   {
+    "id": 395,
+    "slug": "longest-substring-with-at-least-k-repeating-characters",
+    "title": "Longest Substring with At Least K Repeating Characters",
+    "difficulty": "medium",
+    "tags": [
+      "tree",
+      "sliding-window"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 396,
+    "slug": "rotate-function",
+    "title": "Rotate Function",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 397,
+    "slug": "integer-replacement",
+    "title": "Integer Replacement",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
     "id": 399,
     "slug": "evaluate-division",
     "title": "Evaluate Division",
@@ -3100,6 +5044,81 @@
     "langs": [
       "python"
     ]
+  },
+  {
+    "id": 400,
+    "slug": "nth-digit",
+    "title": "Nth Digit",
+    "difficulty": "medium",
+    "tags": [
+      "math"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 401,
+    "slug": "binary-watch",
+    "title": "Binary Watch",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 402,
+    "slug": "remove-k-digits",
+    "title": "Remove K Digits",
+    "difficulty": "medium",
+    "tags": [
+      "math"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 404,
+    "slug": "sum-of-left-leaves",
+    "title": "Sum of Left Leaves",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 405,
+    "slug": "convert-a-number-to-hexadecimal",
+    "title": "Convert a Number to Hexadecimal",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
   },
   {
     "id": 406,
@@ -3120,6 +5139,51 @@
     ]
   },
   {
+    "id": 409,
+    "slug": "longest-palindrome",
+    "title": "Longest Palindrome",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 410,
+    "slug": "split-array-largest-sum",
+    "title": "Split Array Largest Sum",
+    "difficulty": "hard",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 412,
+    "slug": "fizz-buzz",
+    "title": "Fizz Buzz",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
     "id": 413,
     "slug": "arithmetic-slices",
     "title": "Arithmetic Slices",
@@ -3135,6 +5199,21 @@
     "langs": [
       "python"
     ]
+  },
+  {
+    "id": 414,
+    "slug": "third-maximum-number",
+    "title": "Third Maximum Number",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
   },
   {
     "id": 416,
@@ -3177,6 +5256,52 @@
     ]
   },
   {
+    "id": 419,
+    "slug": "battleships-in-a-board",
+    "title": "Battleships in a Board",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 421,
+    "slug": "maximum-xor-of-two-numbers-in-an-array",
+    "title": "Maximum XOR of Two Numbers in an Array",
+    "difficulty": "medium",
+    "tags": [
+      "bit",
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 423,
+    "slug": "reconstruct-original-digits-from-english",
+    "title": "Reconstruct Original Digits from English",
+    "difficulty": "medium",
+    "tags": [
+      "math"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
     "id": 424,
     "slug": "longest-repeating-character-replacement",
     "title": "Longest Repeating Character Replacement",
@@ -3197,6 +5322,21 @@
     ]
   },
   {
+    "id": 429,
+    "slug": "n-ary-tree-level-order-traversal",
+    "title": "N-ary Tree Level Order Traversal",
+    "difficulty": "medium",
+    "tags": [
+      "tree"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
     "id": 430,
     "slug": "flatten-a-multilevel-doubly-linked-list",
     "title": "Flatten a Multilevel Doubly Linked List",
@@ -3212,6 +5352,36 @@
     "langs": [
       "python"
     ]
+  },
+  {
+    "id": 433,
+    "slug": "minimum-genetic-mutation",
+    "title": "Minimum Genetic Mutation",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 434,
+    "slug": "number-of-segments-in-a-string",
+    "title": "Number of Segments in a String",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
   },
   {
     "id": 435,
@@ -3234,6 +5404,36 @@
     ]
   },
   {
+    "id": 436,
+    "slug": "find-right-interval",
+    "title": "Find Right Interval",
+    "difficulty": "medium",
+    "tags": [
+      "interval"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 437,
+    "slug": "path-sum-iii",
+    "title": "Path Sum III",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
     "id": 438,
     "slug": "find-all-anagrams-in-a-string",
     "title": "Find All Anagrams in a String",
@@ -3254,6 +5454,21 @@
     ]
   },
   {
+    "id": 441,
+    "slug": "arranging-coins",
+    "title": "Arranging Coins",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
     "id": 445,
     "slug": "add-two-numbers-ii",
     "title": "Add Two Numbers II",
@@ -3270,6 +5485,36 @@
     "langs": [
       "python"
     ]
+  },
+  {
+    "id": 447,
+    "slug": "number-of-boomerangs",
+    "title": "Number of Boomerangs",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 448,
+    "slug": "find-all-numbers-disappeared-in-an-array",
+    "title": "Find All Numbers Disappeared in an Array",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
   },
   {
     "id": 449,
@@ -3291,6 +5536,381 @@
     ]
   },
   {
+    "id": 451,
+    "slug": "sort-characters-by-frequency",
+    "title": "Sort Characters By Frequency",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 453,
+    "slug": "minimum-moves-to-equal-array-elements",
+    "title": "Minimum Moves to Equal Array Elements",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 454,
+    "slug": "4sum-ii",
+    "title": "4Sum II",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 455,
+    "slug": "assign-cookies",
+    "title": "Assign Cookies",
+    "difficulty": "easy",
+    "tags": [
+      "greedy"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 456,
+    "slug": "132-pattern",
+    "title": "132 Pattern",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 457,
+    "slug": "circular-array-loop",
+    "title": "Circular Array Loop",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 458,
+    "slug": "poor-pigs",
+    "title": "Poor Pigs",
+    "difficulty": "hard",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 460,
+    "slug": "lfu-cache",
+    "title": "LFU Cache",
+    "difficulty": "hard",
+    "tags": [
+      "design"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 461,
+    "slug": "hamming-distance",
+    "title": "Hamming Distance",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 462,
+    "slug": "minimum-moves-to-equal-array-elements-ii",
+    "title": "Minimum Moves to Equal Array Elements II",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 463,
+    "slug": "island-perimeter",
+    "title": "Island Perimeter",
+    "difficulty": "easy",
+    "tags": [
+      "graph"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 470,
+    "slug": "implement-rand10-using-rand7",
+    "title": "Implement Rand10() Using Rand7()",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 473,
+    "slug": "matchsticks-to-square",
+    "title": "Matchsticks to Square",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 474,
+    "slug": "ones-and-zeroes",
+    "title": "Ones and Zeroes",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 475,
+    "slug": "heaters",
+    "title": "Heaters",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 476,
+    "slug": "number-complement",
+    "title": "Number Complement",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 477,
+    "slug": "total-hamming-distance",
+    "title": "Total Hamming Distance",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 478,
+    "slug": "generate-random-point-in-a-circle",
+    "title": "Generate Random Point in a Circle",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 480,
+    "slug": "sliding-window-median",
+    "title": "Sliding Window Median",
+    "difficulty": "hard",
+    "tags": [
+      "sliding-window"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 483,
+    "slug": "smallest-good-base",
+    "title": "Smallest Good Base",
+    "difficulty": "hard",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 485,
+    "slug": "max-consecutive-ones",
+    "title": "Max Consecutive Ones",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 488,
+    "slug": "zuma-game",
+    "title": "Zuma Game",
+    "difficulty": "hard",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 491,
+    "slug": "non-decreasing-subsequences",
+    "title": "Non-decreasing Subsequences",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 492,
+    "slug": "construct-the-rectangle",
+    "title": "Construct the Rectangle",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 493,
+    "slug": "reverse-pairs",
+    "title": "Reverse Pairs",
+    "difficulty": "hard",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
     "id": 494,
     "slug": "target-sum",
     "title": "Target Sum",
@@ -3308,6 +5928,81 @@
     "langs": [
       "python"
     ]
+  },
+  {
+    "id": 495,
+    "slug": "teemo-attacking",
+    "title": "Teemo Attacking",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 496,
+    "slug": "next-greater-element-i",
+    "title": "Next Greater Element I",
+    "difficulty": "easy",
+    "tags": [
+      "stack"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 497,
+    "slug": "random-point-in-non-overlapping-rectangles",
+    "title": "Random Point in Non-overlapping Rectangles",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 498,
+    "slug": "diagonal-traverse",
+    "title": "Diagonal Traverse",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 500,
+    "slug": "keyboard-row",
+    "title": "Keyboard Row",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
   },
   {
     "id": 503,
@@ -3329,6 +6024,21 @@
     ]
   },
   {
+    "id": 504,
+    "slug": "base-7",
+    "title": "Base 7",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
     "id": 505,
     "slug": "the-maze-ii",
     "title": "The Maze II",
@@ -3345,6 +6055,66 @@
     "langs": [
       "python"
     ]
+  },
+  {
+    "id": 506,
+    "slug": "relative-ranks",
+    "title": "Relative Ranks",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 507,
+    "slug": "perfect-number",
+    "title": "Perfect Number",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 508,
+    "slug": "most-frequent-subtree-sum",
+    "title": "Most Frequent Subtree Sum",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 509,
+    "slug": "fibonacci-number",
+    "title": "Fibonacci Number",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
   },
   {
     "id": 513,
@@ -3365,6 +6135,21 @@
     ]
   },
   {
+    "id": 515,
+    "slug": "find-largest-value-in-each-tree-row",
+    "title": "Find Largest Value in Each Tree Row",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
     "id": 518,
     "slug": "coin-change-ii",
     "title": "Coin Change II",
@@ -3382,6 +6167,246 @@
     "langs": [
       "python"
     ]
+  },
+  {
+    "id": 519,
+    "slug": "random-flip-matrix",
+    "title": "Random Flip Matrix",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 520,
+    "slug": "detect-capital",
+    "title": "Detect Capital",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 523,
+    "slug": "continuous-subarray-sum",
+    "title": "Continuous Subarray Sum",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 524,
+    "slug": "longest-word-in-dictionary-through-deleting",
+    "title": "Longest Word in Dictionary through Deleting",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 525,
+    "slug": "contiguous-array",
+    "title": "Contiguous Array",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 526,
+    "slug": "beautiful-arrangement",
+    "title": "Beautiful Arrangement",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 528,
+    "slug": "random-pick-with-weight",
+    "title": "Random Pick with Weight",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 529,
+    "slug": "minesweeper",
+    "title": "Minesweeper",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 530,
+    "slug": "minimum-absolute-difference-in-bst",
+    "title": "Minimum Absolute Difference in BST",
+    "difficulty": "easy",
+    "tags": [
+      "tree"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 532,
+    "slug": "k-diff-pairs-in-an-array",
+    "title": "K-diff Pairs in an Array",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 535,
+    "slug": "encode-and-decode-tinyurl",
+    "title": "Encode and Decode TinyURL",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 537,
+    "slug": "complex-number-multiplication",
+    "title": "Complex Number Multiplication",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 538,
+    "slug": "convert-bst-to-greater-tree",
+    "title": "Convert BST to Greater Tree",
+    "difficulty": "medium",
+    "tags": [
+      "tree"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 540,
+    "slug": "single-element-in-a-sorted-array",
+    "title": "Single Element in a Sorted Array",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 541,
+    "slug": "reverse-string-ii",
+    "title": "Reverse String II",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 542,
+    "slug": "01-matrix",
+    "title": "01 Matrix",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
   },
   {
     "id": 543,
@@ -3405,6 +6430,81 @@
     ]
   },
   {
+    "id": 547,
+    "slug": "number-of-provinces",
+    "title": "Number of Provinces",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 551,
+    "slug": "student-attendance-record-i",
+    "title": "Student Attendance Record I",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 554,
+    "slug": "brick-wall",
+    "title": "Brick Wall",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 557,
+    "slug": "reverse-words-in-a-string-iii",
+    "title": "Reverse Words in a String III",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 559,
+    "slug": "maximum-depth-of-n-ary-tree",
+    "title": "Maximum Depth of N-ary Tree",
+    "difficulty": "easy",
+    "tags": [
+      "tree"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
     "id": 560,
     "slug": "subarray-sum-equals-k",
     "title": "Subarray Sum Equals K",
@@ -3424,6 +6524,51 @@
     "langs": [
       "python"
     ]
+  },
+  {
+    "id": 561,
+    "slug": "array-partition",
+    "title": "Array Partition",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 563,
+    "slug": "binary-tree-tilt",
+    "title": "Binary Tree Tilt",
+    "difficulty": "easy",
+    "tags": [
+      "tree"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 566,
+    "slug": "reshape-the-matrix",
+    "title": "Reshape the Matrix",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
   },
   {
     "id": 567,
@@ -3465,6 +6610,186 @@
     ]
   },
   {
+    "id": 575,
+    "slug": "distribute-candies",
+    "title": "Distribute Candies",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 576,
+    "slug": "out-of-boundary-paths",
+    "title": "Out of Boundary Paths",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 581,
+    "slug": "shortest-unsorted-continuous-subarray",
+    "title": "Shortest Unsorted Continuous Subarray",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 583,
+    "slug": "delete-operation-for-two-strings",
+    "title": "Delete Operation for Two Strings",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 589,
+    "slug": "n-ary-tree-preorder-traversal",
+    "title": "N-ary Tree Preorder Traversal",
+    "difficulty": "easy",
+    "tags": [
+      "tree"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 594,
+    "slug": "longest-harmonious-subsequence",
+    "title": "Longest Harmonious Subsequence",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 598,
+    "slug": "range-addition-ii",
+    "title": "Range Addition II",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 599,
+    "slug": "minimum-index-sum-of-two-lists",
+    "title": "Minimum Index Sum of Two Lists",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 605,
+    "slug": "can-place-flowers",
+    "title": "Can Place Flowers",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 609,
+    "slug": "find-duplicate-file-in-system",
+    "title": "Find Duplicate File in System",
+    "difficulty": "medium",
+    "tags": [
+      "hash"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 611,
+    "slug": "valid-triangle-number",
+    "title": "Valid Triangle Number",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 617,
+    "slug": "merge-two-binary-trees",
+    "title": "Merge Two Binary Trees",
+    "difficulty": "easy",
+    "tags": [
+      "tree"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
     "id": 621,
     "slug": "task-scheduler",
     "title": "Task Scheduler",
@@ -3481,6 +6806,171 @@
     "langs": [
       "python"
     ]
+  },
+  {
+    "id": 622,
+    "slug": "design-circular-queue",
+    "title": "Design Circular Queue",
+    "difficulty": "medium",
+    "tags": [
+      "design"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 623,
+    "slug": "add-one-row-to-tree",
+    "title": "Add One Row to Tree",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 628,
+    "slug": "maximum-product-of-three-numbers",
+    "title": "Maximum Product of Three Numbers",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 630,
+    "slug": "course-schedule-iii",
+    "title": "Course Schedule III",
+    "difficulty": "hard",
+    "tags": [
+      "graph"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 632,
+    "slug": "smallest-range-covering-elements-from-k-lists",
+    "title": "Smallest Range Covering Elements from K Lists",
+    "difficulty": "hard",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 633,
+    "slug": "sum-of-square-numbers",
+    "title": "Sum of Square Numbers",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 636,
+    "slug": "exclusive-time-of-functions",
+    "title": "Exclusive Time of Functions",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 637,
+    "slug": "average-of-levels-in-binary-tree",
+    "title": "Average of Levels in Binary Tree",
+    "difficulty": "easy",
+    "tags": [
+      "tree"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 638,
+    "slug": "shopping-offers",
+    "title": "Shopping Offers",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 643,
+    "slug": "maximum-average-subarray-i",
+    "title": "Maximum Average Subarray I",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 645,
+    "slug": "set-mismatch",
+    "title": "Set Mismatch",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
   },
   {
     "id": 647,
@@ -3503,6 +6993,187 @@
     ]
   },
   {
+    "id": 648,
+    "slug": "replace-words",
+    "title": "Replace Words",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 653,
+    "slug": "two-sum-iv-input-is-a-bst",
+    "title": "Two Sum IV - Input is a BST",
+    "difficulty": "easy",
+    "tags": [
+      "tree",
+      "two-pointers"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 658,
+    "slug": "find-k-closest-elements",
+    "title": "Find K Closest Elements",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 661,
+    "slug": "image-smoother",
+    "title": "Image Smoother",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 662,
+    "slug": "maximum-width-of-binary-tree",
+    "title": "Maximum Width of Binary Tree",
+    "difficulty": "medium",
+    "tags": [
+      "tree"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 665,
+    "slug": "non-decreasing-array",
+    "title": "Non-decreasing Array",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 667,
+    "slug": "beautiful-arrangement-ii",
+    "title": "Beautiful Arrangement II",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 668,
+    "slug": "kth-smallest-number-in-multiplication-table",
+    "title": "Kth Smallest Number in Multiplication Table",
+    "difficulty": "hard",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 669,
+    "slug": "trim-a-binary-search-tree",
+    "title": "Trim a Binary Search Tree",
+    "difficulty": "medium",
+    "tags": [
+      "binary-search"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 674,
+    "slug": "longest-continuous-increasing-subsequence",
+    "title": "Longest Continuous Increasing Subsequence",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 676,
+    "slug": "implement-magic-dictionary",
+    "title": "Implement Magic Dictionary",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 677,
+    "slug": "map-sum-pairs",
+    "title": "Map Sum Pairs",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
     "id": 678,
     "slug": "valid-parenthesis-string",
     "title": "Valid Parenthesis String",
@@ -3519,6 +7190,21 @@
     "langs": [
       "python"
     ]
+  },
+  {
+    "id": 682,
+    "slug": "baseball-game",
+    "title": "Baseball Game",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
   },
   {
     "id": 684,
@@ -3539,6 +7225,66 @@
     ]
   },
   {
+    "id": 685,
+    "slug": "redundant-connection-ii",
+    "title": "Redundant Connection II",
+    "difficulty": "hard",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 690,
+    "slug": "employee-importance",
+    "title": "Employee Importance",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 692,
+    "slug": "top-k-frequent-words",
+    "title": "Top K Frequent Words",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 693,
+    "slug": "binary-number-with-alternating-bits",
+    "title": "Binary Number with Alternating Bits",
+    "difficulty": "easy",
+    "tags": [
+      "bit"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
     "id": 695,
     "slug": "max-area-of-island",
     "title": "Max Area of Island",
@@ -3557,6 +7303,82 @@
     "langs": [
       "python"
     ]
+  },
+  {
+    "id": 696,
+    "slug": "count-binary-substrings",
+    "title": "Count Binary Substrings",
+    "difficulty": "easy",
+    "tags": [
+      "tree",
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 697,
+    "slug": "degree-of-an-array",
+    "title": "Degree of an Array",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 699,
+    "slug": "falling-squares",
+    "title": "Falling Squares",
+    "difficulty": "hard",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 700,
+    "slug": "search-in-a-binary-search-tree",
+    "title": "Search in a Binary Search Tree",
+    "difficulty": "easy",
+    "tags": [
+      "binary-search"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 701,
+    "slug": "insert-into-a-binary-search-tree",
+    "title": "Insert into a Binary Search Tree",
+    "difficulty": "medium",
+    "tags": [
+      "binary-search"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
   },
   {
     "id": 703,
@@ -3594,6 +7416,324 @@
     "langs": [
       "python"
     ]
+  },
+  {
+    "id": 705,
+    "slug": "design-hashset",
+    "title": "Design HashSet",
+    "difficulty": "easy",
+    "tags": [
+      "design",
+      "hash"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 706,
+    "slug": "design-hashmap",
+    "title": "Design HashMap",
+    "difficulty": "easy",
+    "tags": [
+      "design",
+      "hash"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 707,
+    "slug": "design-linked-list",
+    "title": "Design Linked List",
+    "difficulty": "medium",
+    "tags": [
+      "linked-list",
+      "design"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 709,
+    "slug": "to-lower-case",
+    "title": "To Lower Case",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 710,
+    "slug": "random-pick-with-blacklist",
+    "title": "Random Pick with Blacklist",
+    "difficulty": "hard",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 713,
+    "slug": "subarray-product-less-than-k",
+    "title": "Subarray Product Less Than K",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 714,
+    "slug": "best-time-to-buy-and-sell-stock-with-transaction-fee",
+    "title": "Best Time to Buy and Sell Stock with Transaction Fee",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 715,
+    "slug": "range-module",
+    "title": "Range Module",
+    "difficulty": "hard",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 717,
+    "slug": "1-bit-and-2-bit-characters",
+    "title": "1-bit and 2-bit Characters",
+    "difficulty": "easy",
+    "tags": [
+      "bit"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 718,
+    "slug": "maximum-length-of-repeated-subarray",
+    "title": "Maximum Length of Repeated Subarray",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 719,
+    "slug": "find-k-th-smallest-pair-distance",
+    "title": "Find K-th Smallest Pair Distance",
+    "difficulty": "hard",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 720,
+    "slug": "longest-word-in-dictionary",
+    "title": "Longest Word in Dictionary",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 721,
+    "slug": "accounts-merge",
+    "title": "Accounts Merge",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 724,
+    "slug": "find-pivot-index",
+    "title": "Find Pivot Index",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 725,
+    "slug": "split-linked-list-in-parts",
+    "title": "Split Linked List in Parts",
+    "difficulty": "medium",
+    "tags": [
+      "linked-list"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 726,
+    "slug": "number-of-atoms",
+    "title": "Number of Atoms",
+    "difficulty": "hard",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 728,
+    "slug": "self-dividing-numbers",
+    "title": "Self Dividing Numbers",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 729,
+    "slug": "my-calendar-i",
+    "title": "My Calendar I",
+    "difficulty": "medium",
+    "tags": [
+      "interval"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 732,
+    "slug": "my-calendar-iii",
+    "title": "My Calendar III",
+    "difficulty": "hard",
+    "tags": [
+      "interval"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 733,
+    "slug": "flood-fill",
+    "title": "Flood Fill",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 735,
+    "slug": "asteroid-collision",
+    "title": "Asteroid Collision",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
   },
   {
     "id": 739,
@@ -3636,6 +7776,36 @@
     ]
   },
   {
+    "id": 744,
+    "slug": "find-smallest-letter-greater-than-target",
+    "title": "Find Smallest Letter Greater Than Target",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 745,
+    "slug": "prefix-and-suffix-search",
+    "title": "Prefix and Suffix Search",
+    "difficulty": "hard",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
     "id": 746,
     "slug": "min-cost-climbing-stairs",
     "title": "Min Cost Climbing Stairs",
@@ -3652,6 +7822,97 @@
     "langs": [
       "python"
     ]
+  },
+  {
+    "id": 747,
+    "slug": "largest-number-at-least-twice-of-others",
+    "title": "Largest Number At Least Twice of Others",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 748,
+    "slug": "shortest-completing-word",
+    "title": "Shortest Completing Word",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 752,
+    "slug": "open-the-lock",
+    "title": "Open the Lock",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 753,
+    "slug": "cracking-the-safe",
+    "title": "Cracking the Safe",
+    "difficulty": "hard",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 756,
+    "slug": "pyramid-transition-matrix",
+    "title": "Pyramid Transition Matrix",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 762,
+    "slug": "prime-number-of-set-bits-in-binary-representation",
+    "title": "Prime Number of Set Bits in Binary Representation",
+    "difficulty": "easy",
+    "tags": [
+      "bit",
+      "math"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
   },
   {
     "id": 763,
@@ -3675,6 +7936,81 @@
     ]
   },
   {
+    "id": 765,
+    "slug": "couples-holding-hands",
+    "title": "Couples Holding Hands",
+    "difficulty": "hard",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 766,
+    "slug": "toeplitz-matrix",
+    "title": "Toeplitz Matrix",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 767,
+    "slug": "reorganize-string",
+    "title": "Reorganize String",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 771,
+    "slug": "jewels-and-stones",
+    "title": "Jewels and Stones",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 775,
+    "slug": "global-and-local-inversions",
+    "title": "Global and Local Inversions",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
     "id": 778,
     "slug": "swim-in-rising-water",
     "title": "Swim In Rising Water",
@@ -3692,6 +8028,81 @@
     "langs": [
       "python"
     ]
+  },
+  {
+    "id": 781,
+    "slug": "rabbits-in-forest",
+    "title": "Rabbits in Forest",
+    "difficulty": "medium",
+    "tags": [
+      "bit"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 783,
+    "slug": "minimum-distance-between-bst-nodes",
+    "title": "Minimum Distance Between BST Nodes",
+    "difficulty": "easy",
+    "tags": [
+      "tree"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 784,
+    "slug": "letter-case-permutation",
+    "title": "Letter Case Permutation",
+    "difficulty": "medium",
+    "tags": [
+      "backtracking"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 785,
+    "slug": "is-graph-bipartite",
+    "title": "Is Graph Bipartite?",
+    "difficulty": "medium",
+    "tags": [
+      "graph"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 786,
+    "slug": "k-th-smallest-prime-fraction",
+    "title": "K-th Smallest Prime Fraction",
+    "difficulty": "medium",
+    "tags": [
+      "math"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
   },
   {
     "id": 787,
@@ -3713,6 +8124,472 @@
     ]
   },
   {
+    "id": 791,
+    "slug": "custom-sort-string",
+    "title": "Custom Sort String",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 792,
+    "slug": "number-of-matching-subsequences",
+    "title": "Number of Matching Subsequences",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 793,
+    "slug": "preimage-size-of-factorial-zeroes-function",
+    "title": "Preimage Size of Factorial Zeroes Function",
+    "difficulty": "hard",
+    "tags": [
+      "math"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 794,
+    "slug": "valid-tic-tac-toe-state",
+    "title": "Valid Tic-Tac-Toe State",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 795,
+    "slug": "number-of-subarrays-with-bounded-maximum",
+    "title": "Number of Subarrays with Bounded Maximum",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 802,
+    "slug": "find-eventual-safe-states",
+    "title": "Find Eventual Safe States",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 803,
+    "slug": "bricks-falling-when-hit",
+    "title": "Bricks Falling When Hit",
+    "difficulty": "hard",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 807,
+    "slug": "max-increase-to-keep-city-skyline",
+    "title": "Max Increase to Keep City Skyline",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 810,
+    "slug": "chalkboard-xor-game",
+    "title": "Chalkboard XOR Game",
+    "difficulty": "hard",
+    "tags": [
+      "bit"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 811,
+    "slug": "subdomain-visit-count",
+    "title": "Subdomain Visit Count",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 812,
+    "slug": "largest-triangle-area",
+    "title": "Largest Triangle Area",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 815,
+    "slug": "bus-routes",
+    "title": "Bus Routes",
+    "difficulty": "hard",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 816,
+    "slug": "ambiguous-coordinates",
+    "title": "Ambiguous Coordinates",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 817,
+    "slug": "linked-list-components",
+    "title": "Linked List Components",
+    "difficulty": "medium",
+    "tags": [
+      "linked-list"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 819,
+    "slug": "most-common-word",
+    "title": "Most Common Word",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 820,
+    "slug": "short-encoding-of-words",
+    "title": "Short Encoding of Words",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 821,
+    "slug": "shortest-distance-to-a-character",
+    "title": "Shortest Distance to a Character",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 823,
+    "slug": "binary-trees-with-factors",
+    "title": "Binary Trees With Factors",
+    "difficulty": "medium",
+    "tags": [
+      "tree"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 825,
+    "slug": "friends-of-appropriate-ages",
+    "title": "Friends Of Appropriate Ages",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 826,
+    "slug": "most-profit-assigning-work",
+    "title": "Most Profit Assigning Work",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 828,
+    "slug": "count-unique-characters-of-all-substrings-of-a-given-string",
+    "title": "Count Unique Characters of All Substrings of a Given String",
+    "difficulty": "hard",
+    "tags": [
+      "tree",
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 830,
+    "slug": "positions-of-large-groups",
+    "title": "Positions of Large Groups",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 832,
+    "slug": "flipping-an-image",
+    "title": "Flipping an Image",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 834,
+    "slug": "sum-of-distances-in-tree",
+    "title": "Sum of Distances in Tree",
+    "difficulty": "hard",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 836,
+    "slug": "rectangle-overlap",
+    "title": "Rectangle Overlap",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 838,
+    "slug": "push-dominoes",
+    "title": "Push Dominoes",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 839,
+    "slug": "similar-string-groups",
+    "title": "Similar String Groups",
+    "difficulty": "hard",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 841,
+    "slug": "keys-and-rooms",
+    "title": "Keys and Rooms",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 842,
+    "slug": "split-array-into-fibonacci-sequence",
+    "title": "Split Array into Fibonacci Sequence",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 844,
+    "slug": "backspace-string-compare",
+    "title": "Backspace String Compare",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 845,
+    "slug": "longest-mountain-in-array",
+    "title": "Longest Mountain in Array",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
     "id": 846,
     "slug": "hand-of-straights",
     "title": "Hand of Straights",
@@ -3730,6 +8607,51 @@
     ]
   },
   {
+    "id": 850,
+    "slug": "rectangle-area-ii",
+    "title": "Rectangle Area II",
+    "difficulty": "hard",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 851,
+    "slug": "loud-and-rich",
+    "title": "Loud and Rich",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 852,
+    "slug": "peak-index-in-a-mountain-array",
+    "title": "Peak Index in a Mountain Array",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
     "id": 853,
     "slug": "car-fleet",
     "title": "Car Fleet",
@@ -3745,6 +8667,156 @@
     "langs": [
       "python"
     ]
+  },
+  {
+    "id": 856,
+    "slug": "score-of-parentheses",
+    "title": "Score of Parentheses",
+    "difficulty": "medium",
+    "tags": [
+      "stack"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 859,
+    "slug": "buddy-strings",
+    "title": "Buddy Strings",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 862,
+    "slug": "shortest-subarray-with-sum-at-least-k",
+    "title": "Shortest Subarray with Sum at Least K",
+    "difficulty": "hard",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 863,
+    "slug": "all-nodes-distance-k-in-binary-tree",
+    "title": "All Nodes Distance K in Binary Tree",
+    "difficulty": "medium",
+    "tags": [
+      "tree"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 864,
+    "slug": "shortest-path-to-get-all-keys",
+    "title": "Shortest Path to Get All Keys",
+    "difficulty": "hard",
+    "tags": [
+      "graph"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 867,
+    "slug": "transpose-matrix",
+    "title": "Transpose Matrix",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 869,
+    "slug": "reordered-power-of-2",
+    "title": "Reordered Power of 2",
+    "difficulty": "medium",
+    "tags": [
+      "math"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 870,
+    "slug": "advantage-shuffle",
+    "title": "Advantage Shuffle",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 872,
+    "slug": "leaf-similar-trees",
+    "title": "Leaf-Similar Trees",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 874,
+    "slug": "walking-robot-simulation",
+    "title": "Walking Robot Simulation",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
   },
   {
     "id": 875,
@@ -3767,6 +8839,757 @@
     ]
   },
   {
+    "id": 876,
+    "slug": "middle-of-the-linked-list",
+    "title": "Middle of the Linked List",
+    "difficulty": "easy",
+    "tags": [
+      "linked-list"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 877,
+    "slug": "stone-game",
+    "title": "Stone Game",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 878,
+    "slug": "nth-magical-number",
+    "title": "Nth Magical Number",
+    "difficulty": "hard",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 880,
+    "slug": "decoded-string-at-index",
+    "title": "Decoded String at Index",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 881,
+    "slug": "boats-to-save-people",
+    "title": "Boats to Save People",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 884,
+    "slug": "uncommon-words-from-two-sentences",
+    "title": "Uncommon Words from Two Sentences",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 885,
+    "slug": "spiral-matrix-iii",
+    "title": "Spiral Matrix III",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 887,
+    "slug": "super-egg-drop",
+    "title": "Super Egg Drop",
+    "difficulty": "hard",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 888,
+    "slug": "fair-candy-swap",
+    "title": "Fair Candy Swap",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 890,
+    "slug": "find-and-replace-pattern",
+    "title": "Find and Replace Pattern",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 891,
+    "slug": "sum-of-subsequence-widths",
+    "title": "Sum of Subsequence Widths",
+    "difficulty": "hard",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 892,
+    "slug": "surface-area-of-3d-shapes",
+    "title": "Surface Area of 3D Shapes",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 895,
+    "slug": "maximum-frequency-stack",
+    "title": "Maximum Frequency Stack",
+    "difficulty": "hard",
+    "tags": [
+      "stack"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 896,
+    "slug": "monotonic-array",
+    "title": "Monotonic Array",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 897,
+    "slug": "increasing-order-search-tree",
+    "title": "Increasing Order Search Tree",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 898,
+    "slug": "bitwise-ors-of-subarrays",
+    "title": "Bitwise ORs of Subarrays",
+    "difficulty": "medium",
+    "tags": [
+      "bit",
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 901,
+    "slug": "online-stock-span",
+    "title": "Online Stock Span",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 904,
+    "slug": "fruit-into-baskets",
+    "title": "Fruit Into Baskets",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 907,
+    "slug": "sum-of-subarray-minimums",
+    "title": "Sum of Subarray Minimums",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 909,
+    "slug": "snakes-and-ladders",
+    "title": "Snakes and Ladders",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 910,
+    "slug": "smallest-range-ii",
+    "title": "Smallest Range II",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 911,
+    "slug": "online-election",
+    "title": "Online Election",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 914,
+    "slug": "x-of-a-kind-in-a-deck-of-cards",
+    "title": "X of a Kind in a Deck of Cards",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 916,
+    "slug": "word-subsets",
+    "title": "Word Subsets",
+    "difficulty": "medium",
+    "tags": [
+      "backtracking"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 918,
+    "slug": "maximum-sum-circular-subarray",
+    "title": "Maximum Sum Circular Subarray",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 920,
+    "slug": "number-of-music-playlists",
+    "title": "Number of Music Playlists",
+    "difficulty": "hard",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 921,
+    "slug": "minimum-add-to-make-parentheses-valid",
+    "title": "Minimum Add to Make Parentheses Valid",
+    "difficulty": "medium",
+    "tags": [
+      "stack"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 922,
+    "slug": "sort-array-by-parity-ii",
+    "title": "Sort Array By Parity II",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 923,
+    "slug": "3sum-with-multiplicity",
+    "title": "3Sum With Multiplicity",
+    "difficulty": "medium",
+    "tags": [
+      "two-pointers"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 924,
+    "slug": "minimize-malware-spread",
+    "title": "Minimize Malware Spread",
+    "difficulty": "hard",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 925,
+    "slug": "long-pressed-name",
+    "title": "Long Pressed Name",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 927,
+    "slug": "three-equal-parts",
+    "title": "Three Equal Parts",
+    "difficulty": "hard",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 928,
+    "slug": "minimize-malware-spread-ii",
+    "title": "Minimize Malware Spread II",
+    "difficulty": "hard",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 930,
+    "slug": "binary-subarrays-with-sum",
+    "title": "Binary Subarrays With Sum",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 933,
+    "slug": "number-of-recent-calls",
+    "title": "Number of Recent Calls",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 938,
+    "slug": "range-sum-of-bst",
+    "title": "Range Sum of BST",
+    "difficulty": "easy",
+    "tags": [
+      "tree"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 942,
+    "slug": "di-string-match",
+    "title": "DI String Match",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 946,
+    "slug": "validate-stack-sequences",
+    "title": "Validate Stack Sequences",
+    "difficulty": "medium",
+    "tags": [
+      "stack"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 947,
+    "slug": "most-stones-removed-with-same-row-or-column",
+    "title": "Most Stones Removed with Same Row or Column",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 949,
+    "slug": "largest-time-for-given-digits",
+    "title": "Largest Time for Given Digits",
+    "difficulty": "medium",
+    "tags": [
+      "math"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 952,
+    "slug": "largest-component-size-by-common-factor",
+    "title": "Largest Component Size by Common Factor",
+    "difficulty": "hard",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 953,
+    "slug": "verifying-an-alien-dictionary",
+    "title": "Verifying an Alien Dictionary",
+    "difficulty": "easy",
+    "tags": [
+      "graph"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 958,
+    "slug": "check-completeness-of-a-binary-tree",
+    "title": "Check Completeness of a Binary Tree",
+    "difficulty": "medium",
+    "tags": [
+      "tree"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 959,
+    "slug": "regions-cut-by-slashes",
+    "title": "Regions Cut By Slashes",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 961,
+    "slug": "n-repeated-element-in-size-2n-array",
+    "title": "N-Repeated Element in Size 2N Array",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 966,
+    "slug": "vowel-spellchecker",
+    "title": "Vowel Spellchecker",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 968,
+    "slug": "binary-tree-cameras",
+    "title": "Binary Tree Cameras",
+    "difficulty": "hard",
+    "tags": [
+      "tree"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 969,
+    "slug": "pancake-sorting",
+    "title": "Pancake Sorting",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 970,
+    "slug": "powerful-integers",
+    "title": "Powerful Integers",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 971,
+    "slug": "flip-binary-tree-to-match-preorder-traversal",
+    "title": "Flip Binary Tree To Match Preorder Traversal",
+    "difficulty": "medium",
+    "tags": [
+      "tree"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
     "id": 973,
     "slug": "k-closest-points-to-origin",
     "title": "K Closest Points to Origin",
@@ -3787,6 +9610,81 @@
     ]
   },
   {
+    "id": 976,
+    "slug": "largest-perimeter-triangle",
+    "title": "Largest Perimeter Triangle",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 977,
+    "slug": "squares-of-a-sorted-array",
+    "title": "Squares of a Sorted Array",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 978,
+    "slug": "longest-turbulent-subarray",
+    "title": "Longest Turbulent Subarray",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 979,
+    "slug": "distribute-coins-in-binary-tree",
+    "title": "Distribute Coins in Binary Tree",
+    "difficulty": "medium",
+    "tags": [
+      "tree"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 980,
+    "slug": "unique-paths-iii",
+    "title": "Unique Paths III",
+    "difficulty": "hard",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
     "id": 981,
     "slug": "time-based-key-value-store",
     "title": "Time Based Key Value Store",
@@ -3803,6 +9701,141 @@
     "langs": [
       "python"
     ]
+  },
+  {
+    "id": 984,
+    "slug": "string-without-aaa-or-bbb",
+    "title": "String Without AAA or BBB",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 985,
+    "slug": "sum-of-even-numbers-after-queries",
+    "title": "Sum of Even Numbers After Queries",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 986,
+    "slug": "interval-list-intersections",
+    "title": "Interval List Intersections",
+    "difficulty": "medium",
+    "tags": [
+      "interval"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 987,
+    "slug": "vertical-order-traversal-of-a-binary-tree",
+    "title": "Vertical Order Traversal of a Binary Tree",
+    "difficulty": "hard",
+    "tags": [
+      "tree"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 989,
+    "slug": "add-to-array-form-of-integer",
+    "title": "Add to Array-Form of Integer",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 990,
+    "slug": "satisfiability-of-equality-equations",
+    "title": "Satisfiability of Equality Equations",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 991,
+    "slug": "broken-calculator",
+    "title": "Broken Calculator",
+    "difficulty": "medium",
+    "tags": [
+      "stack"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 992,
+    "slug": "subarrays-with-k-different-integers",
+    "title": "Subarrays with K Different Integers",
+    "difficulty": "hard",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 993,
+    "slug": "cousins-in-binary-tree",
+    "title": "Cousins in Binary Tree",
+    "difficulty": "easy",
+    "tags": [
+      "tree"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
   },
   {
     "id": 994,
@@ -3825,6 +9858,397 @@
     ]
   },
   {
+    "id": 995,
+    "slug": "minimum-number-of-k-consecutive-bit-flips",
+    "title": "Minimum Number of K Consecutive Bit Flips",
+    "difficulty": "hard",
+    "tags": [
+      "bit"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 996,
+    "slug": "number-of-squareful-arrays",
+    "title": "Number of Squareful Arrays",
+    "difficulty": "hard",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 997,
+    "slug": "find-the-town-judge",
+    "title": "Find the Town Judge",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 999,
+    "slug": "available-captures-for-rook",
+    "title": "Available Captures for Rook",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1002,
+    "slug": "find-common-characters",
+    "title": "Find Common Characters",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1003,
+    "slug": "check-if-word-is-valid-after-substitutions",
+    "title": "Check If Word Is Valid After Substitutions",
+    "difficulty": "medium",
+    "tags": [
+      "tree"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1004,
+    "slug": "max-consecutive-ones-iii",
+    "title": "Max Consecutive Ones III",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1005,
+    "slug": "maximize-sum-of-array-after-k-negations",
+    "title": "Maximize Sum Of Array After K Negations",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1006,
+    "slug": "clumsy-factorial",
+    "title": "Clumsy Factorial",
+    "difficulty": "medium",
+    "tags": [
+      "math"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1009,
+    "slug": "complement-of-base-10-integer",
+    "title": "Complement of Base 10 Integer",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1010,
+    "slug": "pairs-of-songs-with-total-durations-divisible-by-60",
+    "title": "Pairs of Songs With Total Durations Divisible by 60",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1011,
+    "slug": "capacity-to-ship-packages-within-d-days",
+    "title": "Capacity To Ship Packages Within D Days",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1017,
+    "slug": "convert-to-base-2",
+    "title": "Convert to Base -2",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1018,
+    "slug": "binary-prefix-divisible-by-5",
+    "title": "Binary Prefix Divisible By 5",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1019,
+    "slug": "next-greater-node-in-linked-list",
+    "title": "Next Greater Node In Linked List",
+    "difficulty": "medium",
+    "tags": [
+      "linked-list",
+      "stack"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1020,
+    "slug": "number-of-enclaves",
+    "title": "Number of Enclaves",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1021,
+    "slug": "remove-outermost-parentheses",
+    "title": "Remove Outermost Parentheses",
+    "difficulty": "easy",
+    "tags": [
+      "stack"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1022,
+    "slug": "sum-of-root-to-leaf-binary-numbers",
+    "title": "Sum of Root To Leaf Binary Numbers",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1025,
+    "slug": "divisor-game",
+    "title": "Divisor Game",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1026,
+    "slug": "maximum-difference-between-node-and-ancestor",
+    "title": "Maximum Difference Between Node and Ancestor",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1028,
+    "slug": "recover-a-tree-from-preorder-traversal",
+    "title": "Recover a Tree From Preorder Traversal",
+    "difficulty": "hard",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1030,
+    "slug": "matrix-cells-in-distance-order",
+    "title": "Matrix Cells in Distance Order",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1034,
+    "slug": "coloring-a-border",
+    "title": "Coloring A Border",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1037,
+    "slug": "valid-boomerang",
+    "title": "Valid Boomerang",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1038,
+    "slug": "binary-search-tree-to-greater-sum-tree",
+    "title": "Binary Search Tree to Greater Sum Tree",
+    "difficulty": "medium",
+    "tags": [
+      "binary-search"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1040,
+    "slug": "moving-stones-until-consecutive-ii",
+    "title": "Moving Stones Until Consecutive II",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
     "id": 1046,
     "slug": "last-stone-weight",
     "title": "Last Stone Weight",
@@ -3840,6 +10264,339 @@
     "langs": [
       "python"
     ]
+  },
+  {
+    "id": 1047,
+    "slug": "remove-all-adjacent-duplicates-in-string",
+    "title": "Remove All Adjacent Duplicates In String",
+    "difficulty": "easy",
+    "tags": [
+      "hash",
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1048,
+    "slug": "longest-string-chain",
+    "title": "Longest String Chain",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1049,
+    "slug": "last-stone-weight-ii",
+    "title": "Last Stone Weight II",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1051,
+    "slug": "height-checker",
+    "title": "Height Checker",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1052,
+    "slug": "grumpy-bookstore-owner",
+    "title": "Grumpy Bookstore Owner",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1054,
+    "slug": "distant-barcodes",
+    "title": "Distant Barcodes",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1073,
+    "slug": "adding-two-negabinary-numbers",
+    "title": "Adding Two Negabinary Numbers",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1074,
+    "slug": "number-of-submatrices-that-sum-to-target",
+    "title": "Number of Submatrices That Sum to Target",
+    "difficulty": "hard",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1078,
+    "slug": "occurrences-after-bigram",
+    "title": "Occurrences After Bigram",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1079,
+    "slug": "letter-tile-possibilities",
+    "title": "Letter Tile Possibilities",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1089,
+    "slug": "duplicate-zeros",
+    "title": "Duplicate Zeros",
+    "difficulty": "easy",
+    "tags": [
+      "hash"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1091,
+    "slug": "shortest-path-in-binary-matrix",
+    "title": "Shortest Path in Binary Matrix",
+    "difficulty": "medium",
+    "tags": [
+      "graph",
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1093,
+    "slug": "statistics-from-a-large-sample",
+    "title": "Statistics from a Large Sample",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1104,
+    "slug": "path-in-zigzag-labelled-binary-tree",
+    "title": "Path In Zigzag Labelled Binary Tree",
+    "difficulty": "medium",
+    "tags": [
+      "tree"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1105,
+    "slug": "filling-bookcase-shelves",
+    "title": "Filling Bookcase Shelves",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1108,
+    "slug": "defanging-an-ip-address",
+    "title": "Defanging an IP Address",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1110,
+    "slug": "delete-nodes-and-return-forest",
+    "title": "Delete Nodes And Return Forest",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1111,
+    "slug": "maximum-nesting-depth-of-two-valid-parentheses-strings",
+    "title": "Maximum Nesting Depth of Two Valid Parentheses Strings",
+    "difficulty": "medium",
+    "tags": [
+      "stack",
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1122,
+    "slug": "relative-sort-array",
+    "title": "Relative Sort Array",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1123,
+    "slug": "lowest-common-ancestor-of-deepest-leaves",
+    "title": "Lowest Common Ancestor of Deepest Leaves",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1128,
+    "slug": "number-of-equivalent-domino-pairs",
+    "title": "Number of Equivalent Domino Pairs",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1137,
+    "slug": "n-th-tribonacci-number",
+    "title": "N-th Tribonacci Number",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
   },
   {
     "id": 1143,
@@ -3864,6 +10621,973 @@
     ]
   },
   {
+    "id": 1145,
+    "slug": "binary-tree-coloring-game",
+    "title": "Binary Tree Coloring Game",
+    "difficulty": "medium",
+    "tags": [
+      "tree"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1154,
+    "slug": "day-of-the-year",
+    "title": "Day of the Year",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1157,
+    "slug": "online-majority-element-in-subarray",
+    "title": "Online Majority Element In Subarray",
+    "difficulty": "hard",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1160,
+    "slug": "find-words-that-can-be-formed-by-characters",
+    "title": "Find Words That Can Be Formed by Characters",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1170,
+    "slug": "compare-strings-by-frequency-of-the-smallest-character",
+    "title": "Compare Strings by Frequency of the Smallest Character",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1171,
+    "slug": "remove-zero-sum-consecutive-nodes-from-linked-list",
+    "title": "Remove Zero Sum Consecutive Nodes from Linked List",
+    "difficulty": "medium",
+    "tags": [
+      "linked-list"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1175,
+    "slug": "prime-arrangements",
+    "title": "Prime Arrangements",
+    "difficulty": "easy",
+    "tags": [
+      "math"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1178,
+    "slug": "number-of-valid-words-for-each-puzzle",
+    "title": "Number of Valid Words for Each Puzzle",
+    "difficulty": "hard",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1184,
+    "slug": "distance-between-bus-stops",
+    "title": "Distance Between Bus Stops",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1185,
+    "slug": "day-of-the-week",
+    "title": "Day of the Week",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1189,
+    "slug": "maximum-number-of-balloons",
+    "title": "Maximum Number of Balloons",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1190,
+    "slug": "reverse-substrings-between-each-pair-of-parentheses",
+    "title": "Reverse Substrings Between Each Pair of Parentheses",
+    "difficulty": "medium",
+    "tags": [
+      "tree",
+      "stack"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1200,
+    "slug": "minimum-absolute-difference",
+    "title": "Minimum Absolute Difference",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1201,
+    "slug": "ugly-number-iii",
+    "title": "Ugly Number III",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1202,
+    "slug": "smallest-string-with-swaps",
+    "title": "Smallest String With Swaps",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1203,
+    "slug": "sort-items-by-groups-respecting-dependencies",
+    "title": "Sort Items by Groups Respecting Dependencies",
+    "difficulty": "hard",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1207,
+    "slug": "unique-number-of-occurrences",
+    "title": "Unique Number of Occurrences",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1208,
+    "slug": "get-equal-substrings-within-budget",
+    "title": "Get Equal Substrings Within Budget",
+    "difficulty": "medium",
+    "tags": [
+      "tree",
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1209,
+    "slug": "remove-all-adjacent-duplicates-in-string-ii",
+    "title": "Remove All Adjacent Duplicates in String II",
+    "difficulty": "medium",
+    "tags": [
+      "hash",
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1217,
+    "slug": "minimum-cost-to-move-chips-to-the-same-position",
+    "title": "Minimum Cost to Move Chips to The Same Position",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1221,
+    "slug": "split-a-string-in-balanced-strings",
+    "title": "Split a String in Balanced Strings",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1232,
+    "slug": "check-if-it-is-a-straight-line",
+    "title": "Check If It Is a Straight Line",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1234,
+    "slug": "replace-the-substring-for-balanced-string",
+    "title": "Replace the Substring for Balanced String",
+    "difficulty": "medium",
+    "tags": [
+      "tree",
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1235,
+    "slug": "maximum-profit-in-job-scheduling",
+    "title": "Maximum Profit in Job Scheduling",
+    "difficulty": "hard",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1239,
+    "slug": "maximum-length-of-a-concatenated-string-with-unique-characters",
+    "title": "Maximum Length of a Concatenated String with Unique Characters",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1249,
+    "slug": "minimum-remove-to-make-valid-parentheses",
+    "title": "Minimum Remove to Make Valid Parentheses",
+    "difficulty": "medium",
+    "tags": [
+      "stack"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1252,
+    "slug": "cells-with-odd-values-in-a-matrix",
+    "title": "Cells with Odd Values in a Matrix",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1254,
+    "slug": "number-of-closed-islands",
+    "title": "Number of Closed Islands",
+    "difficulty": "medium",
+    "tags": [
+      "graph"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1260,
+    "slug": "shift-2d-grid",
+    "title": "Shift 2D Grid",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1266,
+    "slug": "minimum-time-visiting-all-points",
+    "title": "Minimum Time Visiting All Points",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1268,
+    "slug": "search-suggestions-system",
+    "title": "Search Suggestions System",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1275,
+    "slug": "find-winner-on-a-tic-tac-toe-game",
+    "title": "Find Winner on a Tic Tac Toe Game",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1281,
+    "slug": "subtract-the-product-and-sum-of-digits-of-an-integer",
+    "title": "Subtract the Product and Sum of Digits of an Integer",
+    "difficulty": "easy",
+    "tags": [
+      "math"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1283,
+    "slug": "find-the-smallest-divisor-given-a-threshold",
+    "title": "Find the Smallest Divisor Given a Threshold",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1287,
+    "slug": "element-appearing-more-than-25-in-sorted-array",
+    "title": "Element Appearing More Than 25% In Sorted Array",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1290,
+    "slug": "convert-binary-number-in-a-linked-list-to-integer",
+    "title": "Convert Binary Number in a Linked List to Integer",
+    "difficulty": "easy",
+    "tags": [
+      "linked-list"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1293,
+    "slug": "shortest-path-in-a-grid-with-obstacles-elimination",
+    "title": "Shortest Path in a Grid with Obstacles Elimination",
+    "difficulty": "hard",
+    "tags": [
+      "tree",
+      "graph"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1295,
+    "slug": "find-numbers-with-even-number-of-digits",
+    "title": "Find Numbers with Even Number of Digits",
+    "difficulty": "easy",
+    "tags": [
+      "math"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1296,
+    "slug": "divide-array-in-sets-of-k-consecutive-numbers",
+    "title": "Divide Array in Sets of K Consecutive Numbers",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1299,
+    "slug": "replace-elements-with-greatest-element-on-right-side",
+    "title": "Replace Elements with Greatest Element on Right Side",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1300,
+    "slug": "sum-of-mutated-array-closest-to-target",
+    "title": "Sum of Mutated Array Closest to Target",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1302,
+    "slug": "deepest-leaves-sum",
+    "title": "Deepest Leaves Sum",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1304,
+    "slug": "find-n-unique-integers-sum-up-to-zero",
+    "title": "Find N Unique Integers Sum up to Zero",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1305,
+    "slug": "all-elements-in-two-binary-search-trees",
+    "title": "All Elements in Two Binary Search Trees",
+    "difficulty": "medium",
+    "tags": [
+      "binary-search"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1306,
+    "slug": "jump-game-iii",
+    "title": "Jump Game III",
+    "difficulty": "medium",
+    "tags": [
+      "greedy"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1310,
+    "slug": "xor-queries-of-a-subarray",
+    "title": "XOR Queries of a Subarray",
+    "difficulty": "medium",
+    "tags": [
+      "bit",
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1313,
+    "slug": "decompress-run-length-encoded-list",
+    "title": "Decompress Run-Length Encoded List",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1317,
+    "slug": "convert-integer-to-the-sum-of-two-no-zero-integers",
+    "title": "Convert Integer to the Sum of Two No-Zero Integers",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1319,
+    "slug": "number-of-operations-to-make-network-connected",
+    "title": "Number of Operations to Make Network Connected",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1329,
+    "slug": "sort-the-matrix-diagonally",
+    "title": "Sort the Matrix Diagonally",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1332,
+    "slug": "remove-palindromic-subsequences",
+    "title": "Remove Palindromic Subsequences",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1337,
+    "slug": "the-k-weakest-rows-in-a-matrix",
+    "title": "The K Weakest Rows in a Matrix",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1353,
+    "slug": "maximum-number-of-events-that-can-be-attended",
+    "title": "Maximum Number of Events That Can Be Attended",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1380,
+    "slug": "lucky-numbers-in-a-matrix",
+    "title": "Lucky Numbers in a Matrix",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1383,
+    "slug": "maximum-performance-of-a-team",
+    "title": "Maximum Performance of a Team",
+    "difficulty": "hard",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1385,
+    "slug": "find-the-distance-value-between-two-arrays",
+    "title": "Find the Distance Value Between Two Arrays",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1389,
+    "slug": "create-target-array-in-the-given-order",
+    "title": "Create Target Array in the Given Order",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1396,
+    "slug": "design-underground-system",
+    "title": "Design Underground System",
+    "difficulty": "medium",
+    "tags": [
+      "design"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1423,
+    "slug": "maximum-points-you-can-obtain-from-cards",
+    "title": "Maximum Points You Can Obtain from Cards",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1437,
+    "slug": "check-if-all-1s-are-at-least-length-k-places-away",
+    "title": "Check If All 1's Are at Least Length K Places Away",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1438,
+    "slug": "longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit",
+    "title": "Longest Continuous Subarray With Absolute Diff Less Than or Equal to Limit",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1439,
+    "slug": "find-the-kth-smallest-sum-of-a-matrix-with-sorted-rows",
+    "title": "Find the Kth Smallest Sum of a Matrix With Sorted Rows",
+    "difficulty": "hard",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1442,
+    "slug": "count-triplets-that-can-form-two-arrays-of-equal-xor",
+    "title": "Count Triplets That Can Form Two Arrays of Equal XOR",
+    "difficulty": "medium",
+    "tags": [
+      "bit",
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1446,
+    "slug": "consecutive-characters",
+    "title": "Consecutive Characters",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
     "id": 1448,
     "slug": "count-good-nodes-in-binary-tree",
     "title": "Count Good Nodes In Binary Tree",
@@ -3880,6 +11604,262 @@
     "langs": [
       "python"
     ]
+  },
+  {
+    "id": 1455,
+    "slug": "check-if-a-word-occurs-as-a-prefix-of-any-word-in-a-sentence",
+    "title": "Check If a Word Occurs As a Prefix of Any Word in a Sentence",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1461,
+    "slug": "check-if-a-string-contains-all-binary-codes-of-size-k",
+    "title": "Check If a String Contains All Binary Codes of Size K",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1463,
+    "slug": "cherry-pickup-ii",
+    "title": "Cherry Pickup II",
+    "difficulty": "hard",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1464,
+    "slug": "maximum-product-of-two-elements-in-an-array",
+    "title": "Maximum Product of Two Elements in an Array",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1465,
+    "slug": "maximum-area-of-a-piece-of-cake-after-horizontal-and-vertical-cuts",
+    "title": "Maximum Area of a Piece of Cake After Horizontal and Vertical Cuts",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1470,
+    "slug": "shuffle-the-array",
+    "title": "Shuffle the Array",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1480,
+    "slug": "running-sum-of-1d-array",
+    "title": "Running Sum of 1d Array",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1482,
+    "slug": "minimum-number-of-days-to-make-m-bouquets",
+    "title": "Minimum Number of Days to Make m Bouquets",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1486,
+    "slug": "xor-operation-in-an-array",
+    "title": "XOR Operation in an Array",
+    "difficulty": "easy",
+    "tags": [
+      "bit",
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1512,
+    "slug": "number-of-good-pairs",
+    "title": "Number of Good Pairs",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1518,
+    "slug": "water-bottles",
+    "title": "Water Bottles",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1539,
+    "slug": "kth-missing-positive-number",
+    "title": "Kth Missing Positive Number",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1551,
+    "slug": "minimum-operations-to-make-array-equal",
+    "title": "Minimum Operations to Make Array Equal",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1572,
+    "slug": "matrix-diagonal-sum",
+    "title": "Matrix Diagonal Sum",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1573,
+    "slug": "number-of-ways-to-split-a-string",
+    "title": "Number of Ways to Split a String",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1576,
+    "slug": "replace-all-s-to-avoid-consecutive-repeating-characters",
+    "title": "Replace All ?'s to Avoid Consecutive Repeating Characters",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1579,
+    "slug": "remove-max-number-of-edges-to-keep-graph-fully-traversable",
+    "title": "Remove Max Number of Edges to Keep Graph Fully Traversable",
+    "difficulty": "hard",
+    "tags": [
+      "graph"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
   },
   {
     "id": 1584,
@@ -3900,6 +11880,1077 @@
     ]
   },
   {
+    "id": 1600,
+    "slug": "throne-inheritance",
+    "title": "Throne Inheritance",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1603,
+    "slug": "design-parking-system",
+    "title": "Design Parking System",
+    "difficulty": "easy",
+    "tags": [
+      "design"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1608,
+    "slug": "special-array-with-x-elements-greater-than-or-equal-x",
+    "title": "Special Array With X Elements Greater Than or Equal X",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1609,
+    "slug": "even-odd-tree",
+    "title": "Even Odd Tree",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1614,
+    "slug": "maximum-nesting-depth-of-the-parentheses",
+    "title": "Maximum Nesting Depth of the Parentheses",
+    "difficulty": "easy",
+    "tags": [
+      "stack"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1619,
+    "slug": "mean-of-array-after-removing-some-elements",
+    "title": "Mean of Array After Removing Some Elements",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1624,
+    "slug": "largest-substring-between-two-equal-characters",
+    "title": "Largest Substring Between Two Equal Characters",
+    "difficulty": "easy",
+    "tags": [
+      "tree",
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1629,
+    "slug": "slowest-key",
+    "title": "Slowest Key",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1631,
+    "slug": "path-with-minimum-effort",
+    "title": "Path With Minimum Effort",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1636,
+    "slug": "sort-array-by-increasing-frequency",
+    "title": "Sort Array by Increasing Frequency",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1640,
+    "slug": "check-array-formation-through-concatenation",
+    "title": "Check Array Formation Through Concatenation",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1641,
+    "slug": "count-sorted-vowel-strings",
+    "title": "Count Sorted Vowel Strings",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1642,
+    "slug": "furthest-building-you-can-reach",
+    "title": "Furthest Building You Can Reach",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1646,
+    "slug": "get-maximum-in-generated-array",
+    "title": "Get Maximum in Generated Array",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1647,
+    "slug": "minimum-deletions-to-make-character-frequencies-unique",
+    "title": "Minimum Deletions to Make Character Frequencies Unique",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1648,
+    "slug": "sell-diminishing-valued-colored-balls",
+    "title": "Sell Diminishing-Valued Colored Balls",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1649,
+    "slug": "create-sorted-array-through-instructions",
+    "title": "Create Sorted Array through Instructions",
+    "difficulty": "hard",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1652,
+    "slug": "defuse-the-bomb",
+    "title": "Defuse the Bomb",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1653,
+    "slug": "minimum-deletions-to-make-string-balanced",
+    "title": "Minimum Deletions to Make String Balanced",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1654,
+    "slug": "minimum-jumps-to-reach-home",
+    "title": "Minimum Jumps to Reach Home",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1655,
+    "slug": "distribute-repeating-integers",
+    "title": "Distribute Repeating Integers",
+    "difficulty": "hard",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1656,
+    "slug": "design-an-ordered-stream",
+    "title": "Design an Ordered Stream",
+    "difficulty": "easy",
+    "tags": [
+      "design"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1657,
+    "slug": "determine-if-two-strings-are-close",
+    "title": "Determine if Two Strings Are Close",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1658,
+    "slug": "minimum-operations-to-reduce-x-to-zero",
+    "title": "Minimum Operations to Reduce X to Zero",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1659,
+    "slug": "maximize-grid-happiness",
+    "title": "Maximize Grid Happiness",
+    "difficulty": "hard",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1662,
+    "slug": "check-if-two-string-arrays-are-equivalent",
+    "title": "Check If Two String Arrays are Equivalent",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1663,
+    "slug": "smallest-string-with-a-given-numeric-value",
+    "title": "Smallest String With A Given Numeric Value",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1664,
+    "slug": "ways-to-make-a-fair-array",
+    "title": "Ways to Make a Fair Array",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1665,
+    "slug": "minimum-initial-energy-to-finish-tasks",
+    "title": "Minimum Initial Energy to Finish Tasks",
+    "difficulty": "hard",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1668,
+    "slug": "maximum-repeating-substring",
+    "title": "Maximum Repeating Substring",
+    "difficulty": "easy",
+    "tags": [
+      "tree",
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1669,
+    "slug": "merge-in-between-linked-lists",
+    "title": "Merge In Between Linked Lists",
+    "difficulty": "medium",
+    "tags": [
+      "linked-list"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1670,
+    "slug": "design-front-middle-back-queue",
+    "title": "Design Front Middle Back Queue",
+    "difficulty": "medium",
+    "tags": [
+      "design"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1672,
+    "slug": "richest-customer-wealth",
+    "title": "Richest Customer Wealth",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1673,
+    "slug": "find-the-most-competitive-subsequence",
+    "title": "Find the Most Competitive Subsequence",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1674,
+    "slug": "minimum-moves-to-make-array-complementary",
+    "title": "Minimum Moves to Make Array Complementary",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1675,
+    "slug": "minimize-deviation-in-array",
+    "title": "Minimize Deviation in Array",
+    "difficulty": "hard",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1678,
+    "slug": "goal-parser-interpretation",
+    "title": "Goal Parser Interpretation",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1679,
+    "slug": "max-number-of-k-sum-pairs",
+    "title": "Max Number of K-Sum Pairs",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1680,
+    "slug": "concatenation-of-consecutive-binary-numbers",
+    "title": "Concatenation of Consecutive Binary Numbers",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1681,
+    "slug": "minimum-incompatibility",
+    "title": "Minimum Incompatibility",
+    "difficulty": "hard",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1684,
+    "slug": "count-the-number-of-consistent-strings",
+    "title": "Count the Number of Consistent Strings",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1685,
+    "slug": "sum-of-absolute-differences-in-a-sorted-array",
+    "title": "Sum of Absolute Differences in a Sorted Array",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1688,
+    "slug": "count-of-matches-in-tournament",
+    "title": "Count of Matches in Tournament",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1689,
+    "slug": "partitioning-into-minimum-number-of-deci-binary-numbers",
+    "title": "Partitioning Into Minimum Number Of Deci-Binary Numbers",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1690,
+    "slug": "stone-game-vii",
+    "title": "Stone Game VII",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1691,
+    "slug": "maximum-height-by-stacking-cuboids",
+    "title": "Maximum Height by Stacking Cuboids",
+    "difficulty": "hard",
+    "tags": [
+      "stack"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1694,
+    "slug": "reformat-phone-number",
+    "title": "Reformat Phone Number",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1695,
+    "slug": "maximum-erasure-value",
+    "title": "Maximum Erasure Value",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1696,
+    "slug": "jump-game-vi",
+    "title": "Jump Game VI",
+    "difficulty": "medium",
+    "tags": [
+      "greedy"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1700,
+    "slug": "number-of-students-unable-to-eat-lunch",
+    "title": "Number of Students Unable to Eat Lunch",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1704,
+    "slug": "determine-if-string-halves-are-alike",
+    "title": "Determine if String Halves Are Alike",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1705,
+    "slug": "maximum-number-of-eaten-apples",
+    "title": "Maximum Number of Eaten Apples",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1710,
+    "slug": "maximum-units-on-a-truck",
+    "title": "Maximum Units on a Truck",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1716,
+    "slug": "calculate-money-in-leetcode-bank",
+    "title": "Calculate Money in Leetcode Bank",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1720,
+    "slug": "decode-xored-array",
+    "title": "Decode XORed Array",
+    "difficulty": "easy",
+    "tags": [
+      "bit",
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1721,
+    "slug": "swapping-nodes-in-a-linked-list",
+    "title": "Swapping Nodes in a Linked List",
+    "difficulty": "medium",
+    "tags": [
+      "linked-list"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1725,
+    "slug": "number-of-rectangles-that-can-form-the-largest-square",
+    "title": "Number Of Rectangles That Can Form The Largest Square",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1732,
+    "slug": "find-the-highest-altitude",
+    "title": "Find the Highest Altitude",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1734,
+    "slug": "decode-xored-permutation",
+    "title": "Decode XORed Permutation",
+    "difficulty": "medium",
+    "tags": [
+      "backtracking",
+      "bit"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1736,
+    "slug": "latest-time-by-replacing-hidden-digits",
+    "title": "Latest Time by Replacing Hidden Digits",
+    "difficulty": "easy",
+    "tags": [
+      "math"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1738,
+    "slug": "find-kth-largest-xor-coordinate-value",
+    "title": "Find Kth Largest XOR Coordinate Value",
+    "difficulty": "medium",
+    "tags": [
+      "heap",
+      "bit"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1742,
+    "slug": "maximum-number-of-balls-in-a-box",
+    "title": "Maximum Number of Balls in a Box",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1744,
+    "slug": "can-you-eat-your-favorite-candy-on-your-favorite-day",
+    "title": "Can You Eat Your Favorite Candy on Your Favorite Day?",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1748,
+    "slug": "sum-of-unique-elements",
+    "title": "Sum of Unique Elements",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1752,
+    "slug": "check-if-array-is-sorted-and-rotated",
+    "title": "Check if Array Is Sorted and Rotated",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1758,
+    "slug": "minimum-changes-to-make-alternating-binary-string",
+    "title": "Minimum Changes To Make Alternating Binary String",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1763,
+    "slug": "longest-nice-substring",
+    "title": "Longest Nice Substring",
+    "difficulty": "easy",
+    "tags": [
+      "tree",
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1791,
+    "slug": "find-center-of-star-graph",
+    "title": "Find Center of Star Graph",
+    "difficulty": "easy",
+    "tags": [
+      "graph"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1816,
+    "slug": "truncate-sentence",
+    "title": "Truncate Sentence",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1818,
+    "slug": "minimum-absolute-sum-difference",
+    "title": "Minimum Absolute Sum Difference",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 1846,
+    "slug": "maximum-element-after-decreasing-and-rearranging",
+    "title": "Maximum Element After Decreasing and Rearranging",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
     "id": 1851,
     "slug": "minimum-interval-to-include-each-query",
     "title": "Minimum Interval to Include Each Query",
@@ -3916,6 +12967,21 @@
     "langs": [
       "python"
     ]
+  },
+  {
+    "id": 1877,
+    "slug": "minimize-maximum-pair-sum-in-array",
+    "title": "Minimize Maximum Pair Sum in Array",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
   },
   {
     "id": 1899,
@@ -3936,6 +13002,21 @@
     ]
   },
   {
+    "id": 1984,
+    "slug": "minimum-difference-between-highest-and-lowest-of-k-scores",
+    "title": "Minimum Difference Between Highest and Lowest of K Scores",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
     "id": 2013,
     "slug": "detect-squares",
     "title": "Detect Squares",
@@ -3952,5 +13033,261 @@
     "langs": [
       "python"
     ]
+  },
+  {
+    "id": 2021,
+    "slug": "brightest-position-on-street",
+    "title": "Brightest Position on Street",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": true,
+    "langs": []
+  },
+  {
+    "id": 2022,
+    "slug": "convert-1d-array-into-2d-array",
+    "title": "Convert 1D Array Into 2D Array",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 2037,
+    "slug": "minimum-number-of-moves-to-seat-everyone",
+    "title": "Minimum Number of Moves to Seat Everyone",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 2038,
+    "slug": "remove-colored-pieces-if-both-neighbors-are-the-same-color",
+    "title": "Remove Colored Pieces if Both Neighbors are the Same Color",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 2043,
+    "slug": "simple-bank-system",
+    "title": "Simple Bank System",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 2096,
+    "slug": "step-by-step-directions-from-a-binary-tree-node-to-another",
+    "title": "Step-By-Step Directions From a Binary Tree Node to Another",
+    "difficulty": "medium",
+    "tags": [
+      "tree"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 2164,
+    "slug": "sort-even-and-odd-indices-independently",
+    "title": "Sort Even and Odd Indices Independently",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 2165,
+    "slug": "smallest-value-of-the-rearranged-number",
+    "title": "Smallest Value of the Rearranged Number",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 2166,
+    "slug": "design-bitset",
+    "title": "Design Bitset",
+    "difficulty": "medium",
+    "tags": [
+      "bit",
+      "design"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 2167,
+    "slug": "minimum-time-to-remove-all-cars-containing-illegal-goods",
+    "title": "Minimum Time to Remove All Cars Containing Illegal Goods",
+    "difficulty": "hard",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 2169,
+    "slug": "count-operations-to-obtain-zero",
+    "title": "Count Operations to Obtain Zero",
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 2170,
+    "slug": "minimum-operations-to-make-the-array-alternating",
+    "title": "Minimum Operations to Make the Array Alternating",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 2171,
+    "slug": "removing-minimum-number-of-magic-beans",
+    "title": "Removing Minimum Number of Magic Beans",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 2180,
+    "slug": "count-integers-with-even-digit-sum",
+    "title": "Count Integers With Even Digit Sum",
+    "difficulty": "easy",
+    "tags": [
+      "math"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 2181,
+    "slug": "merge-nodes-in-between-zeros",
+    "title": "Merge Nodes in Between Zeros",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 2182,
+    "slug": "construct-string-with-repeat-limit",
+    "title": "Construct String With Repeat Limit",
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
+  },
+  {
+    "id": 2183,
+    "slug": "count-array-pairs-divisible-by-k",
+    "title": "Count Array Pairs Divisible by K",
+    "difficulty": "hard",
+    "tags": [
+      "array"
+    ],
+    "lists": [
+      "leetcode-go"
+    ],
+    "tier": "core",
+    "premium": false,
+    "langs": []
   }
 ]

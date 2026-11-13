@@ -1,0 +1,26 @@
+{
+  "id": 495,
+  "slug": "teemo-attacking",
+  "summary": "读入一串攻击时刻 timeSeries，以及中毒持续秒数 duration。时刻从左到右不会变早，允许相等。时刻个数从 1 到 10000。每个时刻和 duration 都在 0 到 10000000 之间。时刻 t 的攻击让闭区间从 t 到 t 加 duration 再减 1 的每一秒都中毒。如果新的攻击到来时旧区间还没结束，就从新时刻重新计算同样长度的区间。把所有中毒秒合并后，写出不同秒数的总和。重叠的秒只算一次。",
+  "samples": [
+    {
+      "stdin": "timeSeries = [1,4], duration = 2\n",
+      "stdout": "4\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "timeSeries = [1,2], duration = 2\n",
+      "stdout": "3\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/teemo-attacking/",
+    "en": "https://leetcode.com/problems/teemo-attacking/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

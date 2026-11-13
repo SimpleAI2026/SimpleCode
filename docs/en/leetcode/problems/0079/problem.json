@@ -1,6 +1,6 @@
 {
   "id": 79,
-  "summary": "The public title of this exercise is Word Search. Read tokens in the same order as the method parameters from standard input and compute the result named by that title, using only those values. Print the result as the word true or false. The sample below is a short input written for this playground so the printed line can be checked locally. It is not a copy of an example from the problem site. The input stays under one hundred elements so it finishes quickly in the browser.",
+  "summary": "Read a two-dimensional grid filled with letters, then read one word. Decide whether the word can be traced cell by cell across the grid. Write true when a trace exists and false when it does not. A trace must follow the letters of the word from its first letter to its last letter. Each step enters a touching cell above, below, left, or right, and never moves on a diagonal. During one trace, one cell may contribute at most one time. A step may not leave the grid. Uppercase and lowercase count as different letters.",
   "notes": [
     "Compare after trimming trailing newlines. The input is tokens in the same order as the method parameters."
   ]

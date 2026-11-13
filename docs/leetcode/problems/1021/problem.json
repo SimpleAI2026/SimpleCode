@@ -1,0 +1,26 @@
+{
+  "id": 1021,
+  "slug": "remove-outermost-parentheses",
+  "summary": "读入长度不超过 10000 的合法括号串，字符只有左括号和右括号。先把它切成若干不可再切开的最小合法段，这些段按顺序拼回去必须等于原串。对每一段删掉最外层的那一对括号，也就是段首的左括号和段尾的右括号。把各段剩下的字符按原来的先后接成一条新串并写出来。",
+  "samples": [
+    {
+      "stdin": "a valid parentheses string S, consider its primitive decomposition: S = P\\_1 + P\\_2 + ... + P\\_k, where P\\_i are primitive valid parentheses strings.\n",
+      "stdout": "S after removing the outermost parentheses of every primitive string in the primitive decomposition of S.\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "\"(()())(())\"\n",
+      "stdout": "\"()()()\"\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/remove-outermost-parentheses/",
+    "en": "https://leetcode.com/problems/remove-outermost-parentheses/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

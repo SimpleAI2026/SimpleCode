@@ -1,0 +1,8 @@
+{
+  "id": 1021,
+  "summary": "Read a valid bracket string whose length is at most 10000. Each character is either an opening bracket or a closing bracket. Cut the string into primitive chunks that are nonempty, valid, and impossible to divide into two shorter nonempty valid chunks. Joining those chunks in order restores the original string. On every chunk, delete the outer pair, meaning the opening bracket at its start and the closing bracket at its end. Join the leftover characters in their original order and write the new string.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

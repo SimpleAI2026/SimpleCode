@@ -1,0 +1,8 @@
+{
+  "id": 1572,
+  "summary": "Read a square matrix of integers. One slanted line runs from the upper left toward the lower right, and the other slanted line runs from the upper right toward the lower left. Add every value on the first line, then add values that lie on the second line and were not already included. Write that sum. The side length is from 1 to 100, and every cell is also from 1 to 100.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

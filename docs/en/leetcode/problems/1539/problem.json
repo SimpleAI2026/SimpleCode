@@ -1,0 +1,8 @@
+{
+  "id": 1539,
+  "summary": "Read a strictly increasing list of positive integers called arr, together with a positive integer k. Some positive integers, starting from 1, never occur in the list. Order those missing values from small to large and write the value standing at place k. The list length, every listed value, and k are each from 1 to 1000.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

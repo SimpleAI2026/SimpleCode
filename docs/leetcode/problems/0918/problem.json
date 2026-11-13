@@ -1,0 +1,26 @@
+{
+  "id": 918,
+  "slug": "maximum-sum-circular-subarray",
+  "summary": "读入整数序列 A。长度至多 30000，每个数都在负 30000 到 30000 之间。把序列的首尾相接，看成一个圈。从圈上取一段连续的数，这段不能是空的，而且同一个位置最多出现一次，不能绕完一圈之后自己叠在一起。写出这种段里各数相加所能达到的最大值。",
+  "samples": [
+    {
+      "stdin": "[1,-2,3,-2]\n",
+      "stdout": "3\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "[5,-3,5]\n",
+      "stdout": "10\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/maximum-sum-circular-subarray/",
+    "en": "https://leetcode.com/problems/maximum-sum-circular-subarray/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

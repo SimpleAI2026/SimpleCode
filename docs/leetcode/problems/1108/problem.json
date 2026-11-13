@@ -1,0 +1,26 @@
+{
+  "id": 1108,
+  "slug": "defanging-an-ip-address",
+  "summary": "读入一条有效的网际协议第四版地址。它包含四段十进制数字，相邻两段之间是一个点号，输入保证这段文本确实合法。把每一个点号单独换成左方括号、点号、右方括号这三个字符，各段里的数字都保持不变，也不要增加、删除或重排这四段。写出替换结束后的整段字符串。",
+  "samples": [
+    {
+      "stdin": "address = \"1.1.1.1\"\n",
+      "stdout": "\"1[.]1[.]1[.]1\"\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "address = \"255.100.50.0\"\n",
+      "stdout": "\"255[.]100[.]50[.]0\"\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/defanging-an-ip-address/",
+    "en": "https://leetcode.com/problems/defanging-an-ip-address/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

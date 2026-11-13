@@ -1,0 +1,26 @@
+{
+  "id": 506,
+  "slug": "relative-ranks",
+  "summary": "读入 n 名运动员的得分。n 从 1 到 10000。每个得分都是 0 到 1000000 之间的整数，而且彼此都不相同。得分最高者是第 1 名，次高者是第 2 名，后面依次类推。第 1 名写成 Gold Medal，第 2 名写成 Silver Medal，第 3 名写成 Bronze Medal。第 4 名直到第 n 名，写成名次的十进制数字字符串。答案长度是 n，第 i 项对应第 i 名运动员。不要用中文奖牌名替换这三串英文。",
+  "samples": [
+    {
+      "stdin": "score = [5,4,3,2,1]\n",
+      "stdout": "[\"Gold Medal\",\"Silver Medal\",\"Bronze Medal\",\"4\",\"5\"]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "score = [10,3,8,9,4]\n",
+      "stdout": "[\"Gold Medal\",\"5\",\"Bronze Medal\",\"Silver Medal\",\"4\"]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/relative-ranks/",
+    "en": "https://leetcode.com/problems/relative-ranks/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

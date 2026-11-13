@@ -1,0 +1,26 @@
+{
+  "id": 1290,
+  "slug": "convert-binary-number-in-a-linked-list-to-integer",
+  "summary": "读入一条非空的单链表，结点按从前到后的顺序相连。每个结点只保存 0 或 1。链头是高位，链尾是低位，整条链就是某个整数的二进制写法。把这条链表示的数换成十进制整数，并把那个整数写出来。结点总数不超过 30，链上不会出现 0 和 1 以外的数字。",
+  "samples": [
+    {
+      "stdin": "head = [1,0,1]\n",
+      "stdout": "5\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "head = [0]\n",
+      "stdout": "0\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/convert-binary-number-in-a-linked-list-to-integer/",
+    "en": "https://leetcode.com/problems/convert-binary-number-in-a-linked-list-to-integer/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

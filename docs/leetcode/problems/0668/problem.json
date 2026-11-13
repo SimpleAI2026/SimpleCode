@@ -1,0 +1,21 @@
+{
+  "id": 668,
+  "slug": "kth-smallest-number-in-multiplication-table",
+  "summary": "读入三个正整数 m、n 和 k。设想一张 m 行 n 列的表，第 i 行第 j 列写着 i 与 j 的乘积，行列都从 1 编号。把全部格子里的乘积从小到大排列，相同乘积按格子个数重复占位。写出排在第 k 个位置上的乘积。m 和 n 都在 1 到 30000 之间，k 在 1 到 m 与 n 的乘积之间。",
+  "samples": [
+    {
+      "stdin": "m = 3, n = 3, k = 5\n",
+      "stdout": "3\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/kth-smallest-number-in-multiplication-table/",
+    "en": "https://leetcode.com/problems/kth-smallest-number-in-multiplication-table/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

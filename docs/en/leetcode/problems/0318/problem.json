@@ -1,0 +1,8 @@
+{
+  "id": 318,
+  "summary": "Read several words, each made only of lowercase letters. Find two words that share no letter at all and whose lengths multiply to the largest product among every such pair. Write that largest product. If every pair of words shares at least one letter, write 0. Do not pair a word with itself.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

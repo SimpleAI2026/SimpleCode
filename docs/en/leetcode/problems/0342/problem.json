@@ -1,0 +1,8 @@
+{
+  "id": 342,
+  "summary": "Read one signed integer that fits in 32 bits. Decide whether it equals four raised to a nonnegative whole exponent. Four to the power zero is one, so one must be accepted. Reject zero and every negative value. Accept another positive value only when repeated exact division by four lands on one. Write true or false.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

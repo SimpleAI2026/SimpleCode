@@ -1,0 +1,26 @@
+{
+  "id": 811,
+  "slug": "subdomain-visit-count",
+  "summary": "读入至多100条访问记录。每条记录是一个不超过10000的次数、一个空格，然后是一个域名。域名长度至多100，并且恰好包含一个或两个英文句点。访问某个域名时，把它左侧逐级去掉得到的每一个父域名，都要加上同样的次数。把所有出现过的域名连同各自累计次数都找出来，按次数、空格、域名的格式输出，排列顺序不限。",
+  "samples": [
+    {
+      "stdin": "[\"9001 discuss.leetcode.com\"]\n",
+      "stdout": "[\"9001 discuss.leetcode.com\", \"9001 leetcode.com\", \"9001 com\"]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "[\"900 google.mail.com\", \"50 yahoo.com\", \"1 intel.mail.com\", \"5 wiki.org\"]\n",
+      "stdout": "[\"901 mail.com\",\"50 yahoo.com\",\"900 google.mail.com\",\"5 wiki.org\",\"5 org\",\"1 intel.mail.com\",\"951 com\"]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/subdomain-visit-count/",
+    "en": "https://leetcode.com/problems/subdomain-visit-count/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

@@ -1,0 +1,8 @@
+{
+  "id": 927,
+  "summary": "Read a list of bits, each entry being 0 or 1. The list length is at least 3 and at most 30000. Split the whole list into three pieces and leave none of them empty. Interpret each piece as one binary integer, where zeros sitting at the front do not change the number. All three pieces must stand for the same integer. When such a split exists, write two indexes i and j with i plus 1 smaller than j. The first piece stops at i, the middle piece starts just after i and stops just before j, and the last piece starts at j. When no split works, write -1 and -1.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

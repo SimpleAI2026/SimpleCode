@@ -1,0 +1,26 @@
+{
+  "id": 1614,
+  "slug": "maximum-nesting-depth-of-the-parentheses",
+  "summary": "读入一条长度介于 1 与 100 的表达式，字符只含数字、加减乘除和圆括号，并且括号已经配平。按下面的口径度量嵌套：什么都没有时深度是 0；单独一个既不是左括号也不是右括号的符号深度也是 0；两段各自合法的片段首尾相接，深度取两段中较大者；用一对圆括号包住一段合法片段，深度比内部多 1。写出整段表达式的嵌套深度。",
+  "samples": [
+    {
+      "stdin": "s = \"(1+(2*3)+((8)/4))+1\"\n",
+      "stdout": "3\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "s = \"(1)+((2))+(((3)))\"\n",
+      "stdout": "3\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/maximum-nesting-depth-of-the-parentheses/",
+    "en": "https://leetcode.com/problems/maximum-nesting-depth-of-the-parentheses/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

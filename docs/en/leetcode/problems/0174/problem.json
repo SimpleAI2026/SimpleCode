@@ -1,0 +1,7 @@
+{
+  "id": 174,
+  "summary": "Read a rectangular grid of integers. A knight begins in the upper-left cell and must reach a princess in the lower-right cell. Each step moves one cell right or one cell down. On entry, add that cell's integer to health: a negative value removes health, zero changes nothing, and a positive value restores health. Health that falls to 0 or below fails at once. Write the smallest positive starting health that still leaves some path alive to the princess. There is no cap on health. The starting cell and the final cell may also remove or restore health.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

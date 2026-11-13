@@ -1,0 +1,21 @@
+{
+  "id": 477,
+  "slug": "total-hamming-distance",
+  "summary": "读入一列整数。每个整数都在 0 与 10^9 之间，列长最多 10000。把两个整数写成对齐的二进制后，数一数有多少个位置上的数字彼此不一样，这个个数就是它们的位差。对所有下标不同的配对，各算一次位差，再把这些位差全部相加，写出总和。同一对不要算两次，一个整数也不要和自己配对。列里如果不足两个整数，总和就是 0。",
+  "samples": [
+    {
+      "stdin": "4, 14, 2\n",
+      "stdout": "6\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/total-hamming-distance/",
+    "en": "https://leetcode.com/problems/total-hamming-distance/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

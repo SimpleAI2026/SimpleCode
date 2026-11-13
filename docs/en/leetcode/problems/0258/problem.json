@@ -1,0 +1,7 @@
+{
+  "id": 258,
+  "summary": "Read one integer that is zero or larger. Add its decimal digits to produce a new integer. As long as that new integer still has two or more digits, add those digits again. Stop when only one digit remains, and write that digit. Zero is already a single digit, so write zero at once.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "id": 752,
+  "slug": "open-the-lock",
+  "summary": "有一把四位数字转盘锁，每一位都是0到9。从9再向前一格回到0，从0再向后一格回到9。初始显示为0000，每次只能转动其中一位一格。读入死亡组合列表deadends，长度在1到500之间，每项都是四位数字；再读入四位目标target，并且target不在死亡列表中。一旦显示变成死亡组合，锁就永久卡住。找出从初始显示到达target的最少转动次数；无法到达时写出-1。",
+  "samples": [
+    {
+      "stdin": "deadends = [\"0201\",\"0101\",\"0102\",\"1212\",\"2002\"], target = \"0202\"\n",
+      "stdout": "6\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "deadends = [\"8888\"], target = \"0009\"\n",
+      "stdout": "1\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/open-the-lock/",
+    "en": "https://leetcode.com/problems/open-the-lock/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

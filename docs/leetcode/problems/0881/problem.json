@@ -1,0 +1,26 @@
+{
+  "id": 881,
+  "slug": "boats-to-save-people",
+  "summary": "读入每个人的体重，以及一艘小船的载重上限 limit。同一艘船一次最多坐两人，船上体重相加也不能超过 limit。单独一人的体重绝不会超过这条上限。找出把所有人都运走最少要几艘船，并把艘数写出来。人数最多 50000，每个人的体重以及 limit 都不超过 30000。",
+  "samples": [
+    {
+      "stdin": "people = [1,2], limit = 3\n",
+      "stdout": "1\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "people = [3,2,2,1], limit = 3\n",
+      "stdout": "3\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/boats-to-save-people/",
+    "en": "https://leetcode.com/problems/boats-to-save-people/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

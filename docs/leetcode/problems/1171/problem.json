@@ -1,0 +1,26 @@
+{
+  "id": 1171,
+  "slug": "remove-zero-sum-consecutive-nodes-from-linked-list",
+  "summary": "读入一条链表。节点个数在 1 到 1000 之间，每个节点保存的整数绝对值不超过 1000。只要还找得到一段连续节点，它们的数值相加正好等于 0，就把这一整段摘除，并让断开的两侧重新连上。不断重复，直到再也没有和为 0 的连续段。写出最终链表的头。若多种摘除顺序都能清完，写出其中任意一种结果即可。",
+  "samples": [
+    {
+      "stdin": "head = [1,2,-3,3,1]\n",
+      "stdout": "[3,1]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "head = [1,2,3,-3,4]\n",
+      "stdout": "[1,2,4]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/remove-zero-sum-consecutive-nodes-from-linked-list/",
+    "en": "https://leetcode.com/problems/remove-zero-sum-consecutive-nodes-from-linked-list/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

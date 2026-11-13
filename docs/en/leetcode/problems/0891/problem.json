@@ -1,0 +1,7 @@
+{
+  "id": 891,
+  "summary": "Read a sequence of positive integers named A. Both the length of A and every value in it are at most 20000. Consider every selection that keeps the original relative order, may skip values, and is not empty. The width of one selection is its largest value minus its smallest value. Add the width of every such selection and write that total modulo 10^9 + 7.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

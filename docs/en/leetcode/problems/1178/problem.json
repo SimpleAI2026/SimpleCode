@@ -1,0 +1,7 @@
+{
+  "id": 1178,
+  "summary": "Read a bank of lowercase words and a list of puzzle strings. The bank holds between 1 and 100000 words, and each word has length 4 through 50. There are between 1 and 10000 puzzles, each made of exactly 7 different lowercase letters. A word answers a puzzle only if it includes that puzzle's opening letter and every letter used by the word also occurs in the puzzle. For each puzzle, count the answering words. Write those counts in the original puzzle order. The bank cap is 100000.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

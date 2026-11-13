@@ -1,0 +1,7 @@
+{
+  "id": 1656,
+  "summary": "Implement a stream that sends strings out in id order. Each id is an integer from 1 to n, and n is from 1 to 1000. Every string has length exactly 5 and uses only lowercase letters. Exactly n inserts happen, and each insert uses a different id. On construction, set the cursor to 1. After one id and its string are stored, if the id under the cursor is already present, take the longest block of present ids that starts at the cursor and has no holes, write their strings from smaller id to larger id, and set the cursor to one past the last id of that block. If the id under the cursor is still absent, write an empty list.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

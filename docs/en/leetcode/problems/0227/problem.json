@@ -1,0 +1,8 @@
+{
+  "id": 227,
+  "summary": "Read a formula made of non-negative integers and the operators for addition, subtraction, multiplication, and division. Spaces may appear between numbers and operators. The length is at least 1 and at most 3 * 10^5. Every integer lies between 0 and 2^31 minus 1. The formula is valid, and the final result fits in a 32 bit integer. Multiplication and division are done before addition and subtraction, and operators of one rank run from left to right. Division keeps only the integer quotient and drops the remainder. Write that integer.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

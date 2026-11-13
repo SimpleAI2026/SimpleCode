@@ -1,0 +1,26 @@
+{
+  "id": 1480,
+  "slug": "running-sum-of-1d-array",
+  "summary": "读入整数列 nums。另写一条等长的新列，下标从 0 起，第 i 项等于 nums 从第一项一直累加到第 i 项的总和。把这条新列完整写出来。原列长度介于 1 与 1000，每个数介于负 1000000 与 1000000。新列与原列等长，下标一一对应。",
+  "samples": [
+    {
+      "stdin": "nums = [1,2,3,4]\n",
+      "stdout": "[1,3,6,10]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "nums = [1,1,1,1,1]\n",
+      "stdout": "[1,2,3,4,5]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/running-sum-of-1d-array/",
+    "en": "https://leetcode.com/problems/running-sum-of-1d-array/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

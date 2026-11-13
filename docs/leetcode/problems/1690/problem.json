@@ -1,0 +1,26 @@
+{
+  "id": 1690,
+  "slug": "stone-game-vii",
+  "summary": "一排石子共 n 块，n 介于 2 和 1000，每块的价值介于 1 和 1000。两人轮流取石，先手先取。每回合只能拿走最左或最右那一块，得分等于拿走之后剩下所有石子的价值之和。石子取完后，分高者赢。双方都按让自己得分优势最大的方式行动。写出先手得分减去后手得分的差。",
+  "samples": [
+    {
+      "stdin": "stones = [5,3,1,4,2]\n",
+      "stdout": "6\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "stones = [7,90,5,1,100,10,10,2]\n",
+      "stdout": "122\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/stone-game-vii/",
+    "en": "https://leetcode.com/problems/stone-game-vii/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

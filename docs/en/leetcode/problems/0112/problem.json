@@ -1,0 +1,7 @@
+{
+  "id": 112,
+  "summary": "Read an integer binary tree and one target total. The target may be 22 or another integer. Decide whether there is a walk that runs from the root all the way to a leaf and whose node integers add up to exactly the target. A leaf is a node that has no left child and no right child. If a walk matches the target halfway but has not reached a leaf, it does not succeed. Write the decision as yes or no.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

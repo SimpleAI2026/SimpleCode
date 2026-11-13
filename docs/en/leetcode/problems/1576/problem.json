@@ -1,0 +1,8 @@
+{
+  "id": 1576,
+  "summary": "Read a string whose characters are lowercase letters and question marks. Replace each question mark by some lowercase letter, and do not alter any other character. After the replacements, no two equal letters may stand in neighboring positions. Aside from the question marks, the original text already has no neighboring repeats. Any string that meets the rule is acceptable, and one such string is guaranteed to exist under these limits. Write the finished string. Its length is from 1 to 100.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "id": 1137,
+  "summary": "A numeric sequence is indexed from 0. Index 0 holds 0, index 1 holds 1, and index 2 holds 1. For every index k that is at least 0, the term at index k plus 3 equals the sum of the terms at indexes k, k plus 1, and k plus 2. Read an integer n in the closed range from 0 to 37. Find the term at index n and write it. The result always fits in a signed 32 bit integer, so it is at most two to the power 31, minus one.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

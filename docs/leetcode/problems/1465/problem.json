@@ -1,0 +1,26 @@
+{
+  "id": 1465,
+  "slug": "maximum-area-of-a-piece-of-cake-after-horizontal-and-vertical-cuts",
+  "summary": "一块高为 h、宽为 w 的矩形蛋糕，再读入若干水平切割距离和竖直切割距离。水平距离从顶边往下量，竖直距离从左边往里量。沿全部这些距离切完以后，找出面积最大的一块，把该面积对 10^9 加 7 取余后写出来。h 与 w 都介于 2 与 10^9。每一组切割至少有一条，条数小于对应边长与 100000 里较小的那个，切割位置互不相同，并且严格落在蛋糕内部。",
+  "samples": [
+    {
+      "stdin": "h = 5, w = 4, horizontalCuts = [1,2,4], verticalCuts = [1,3]\n",
+      "stdout": "4\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "h = 5, w = 4, horizontalCuts = [3,1], verticalCuts = [1]\n",
+      "stdout": "6\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/maximum-area-of-a-piece-of-cake-after-horizontal-and-vertical-cuts/",
+    "en": "https://leetcode.com/problems/maximum-area-of-a-piece-of-cake-after-horizontal-and-vertical-cuts/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

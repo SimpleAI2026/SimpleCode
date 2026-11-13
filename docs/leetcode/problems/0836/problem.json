@@ -1,0 +1,26 @@
+{
+  "id": 836,
+  "slug": "rectangle-overlap",
+  "summary": "读入两个边与坐标轴平行的矩形。每个矩形用四个整数写出左下角和右上角，所有坐标都落在负 1000000000 到正 1000000000 这一段里。若公共部分的面积严格大于零，判定二者重叠并写出真。仅仅边贴着边，或者只碰到一个角时，公共面积是零，这时写出假。",
+  "samples": [
+    {
+      "stdin": "rec1 = [0,0,2,2], rec2 = [1,1,3,3]\n",
+      "stdout": "true\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "rec1 = [0,0,1,1], rec2 = [1,0,2,1]\n",
+      "stdout": "false\n\nNotes:\n\n1. Both rectangles rec1 and rec2 are lists of 4 integers.\n2. All coordinates in rectangles will be between -10^9 and 10^9.\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/rectangle-overlap/",
+    "en": "https://leetcode.com/problems/rectangle-overlap/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

@@ -1,0 +1,21 @@
+{
+  "id": 611,
+  "slug": "valid-triangle-number",
+  "summary": "读入一列非负整数。按下标选出三个不同的位置，把这三个数值当成三条边长。若任意两条边的长度之和都严格大于剩下的那一条，这三个数就能构成三角形。统计有多少组下标满足该条件，并把组数写出来。数值重复时仍按下标区分，不同下标算不同的组。",
+  "samples": [
+    {
+      "stdin": "4\n2 2 3 4\n",
+      "stdout": "3\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/valid-triangle-number/",
+    "en": "https://leetcode.com/problems/valid-triangle-number/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

@@ -1,0 +1,26 @@
+{
+  "id": 946,
+  "slug": "validate-stack-sequences",
+  "summary": "读入两条长度相同的整数序列，分别表示压入次序和弹出次序。长度可以是 0，也可以大到 1000。两条序列里的数字互不相同，而且它们含有的数字集合完全一样，每个数字都落在 0 到 999。从空栈开始，只能把压入序列中的下一个数放进栈，或者把栈顶弹到输出。判断按这两种动作能否正好得到那条弹出次序，并且最后栈被清空。能做到就写出真，否则写出假。",
+  "samples": [
+    {
+      "stdin": "pushed = [1,2,3,4,5], popped = [4,5,3,2,1]\n",
+      "stdout": "true\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "pushed = [1,2,3,4,5], popped = [4,3,5,1,2]\n",
+      "stdout": "false\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/validate-stack-sequences/",
+    "en": "https://leetcode.com/problems/validate-stack-sequences/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

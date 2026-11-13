@@ -1,0 +1,21 @@
+{
+  "id": 232,
+  "slug": "implement-queue-using-stacks",
+  "summary": "对外提供一个先进先出的整数容器，手里只能使用栈。需要完成四项动作。push 把一个整数放到容器末尾。pop 去掉并给出最早放入且还留在容器里的整数。peek 只查看这个最早的整数，不把它去掉。empty 在容器已空时写出 true，否则写出 false。不会在容器为空时调用 pop 或 peek。栈只允许在顶端放入、查看或去掉，以及询问个数和是否为空。",
+  "samples": [
+    {
+      "stdin": "queue.push(1)\nqueue.push(2)\nqueue.peek()\nqueue.pop()\nqueue.empty()\n",
+      "stdout": "1\n1\nfalse\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/implement-queue-using-stacks/",
+    "en": "https://leetcode.com/problems/implement-queue-using-stacks/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

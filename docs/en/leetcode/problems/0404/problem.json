@@ -1,0 +1,7 @@
+{
+  "id": 404,
+  "summary": "Read a binary tree. Treat a node as a left leaf when it is the left child of its parent and it has no child of its own. Add the numbers stored on all left leaves and write that total. When there is not even one left leaf, write 0.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

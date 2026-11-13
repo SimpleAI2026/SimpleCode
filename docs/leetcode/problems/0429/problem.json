@@ -1,0 +1,26 @@
+{
+  "id": 429,
+  "slug": "n-ary-tree-level-order-traversal",
+  "summary": "读入一棵多叉树。树的高度不超过 1000，结点总数落在 0 到 104 之间。从包含根的那一层开始，一层一层向下走，每一层都从左往右记下结点里保存的整数。按从上到下的顺序把每一层的整数序列写出来。树里没有任何结点时，写出空的结果。",
+  "samples": [
+    {
+      "stdin": "root = [1,null,3,2,4,null,5,6]\n",
+      "stdout": "[[1],[3,2,4],[5,6]]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "root = [1,null,2,3,4,5,null,null,6,7,null,8,null,9,10,null,null,11,null,12,null,13,null,null,14]\n",
+      "stdout": "[[1],[2,3,4,5],[6,7,8,9,10],[11,12,13],[14]]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/n-ary-tree-level-order-traversal/",
+    "en": "https://leetcode.com/problems/n-ary-tree-level-order-traversal/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

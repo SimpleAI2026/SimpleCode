@@ -1,0 +1,7 @@
+{
+  "id": 715,
+  "summary": "Build a module that follows intervals of real numbers and offers three operations. addRange takes a left end and a right end and begins following every real in that half-open interval which was not followed yet. queryRange writes true only when every real in the half-open interval is followed right now, and writes false in every other case. removeRange makes every real in the interval that is followed right now stop being followed. The half-open interval includes its left end and omits its right end, meaning every real x with left less than or equal to x and x less than right. Every call has 0 less than left, left less than right, and right less than 10^9. Within one test, addRange and removeRange each occur at most 1000 times, and queryRange occurs at most 5000 times.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

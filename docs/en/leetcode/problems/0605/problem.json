@@ -1,0 +1,8 @@
+{
+  "id": 605,
+  "summary": "A flowerbed is a row whose length runs from 1 to 2 times 104. Each plot is 0 or 1: a zero marks a vacant plot and a one marks an occupied plot, and no occupied plots currently touch. Also read an integer n from 0 through the row length. A new plant may not sit beside another plant. Decide whether exactly n extra plants can be placed under that rule. Write true when they can, and write false when they cannot.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

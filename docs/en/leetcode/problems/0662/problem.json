@@ -1,0 +1,8 @@
+{
+  "id": 662,
+  "summary": "Read a binary tree whose child slots may be empty. Its layout matches a completely filled binary shape, except some slots are vacant. The width of one depth is the distance from the leftmost occupied node on that depth to the rightmost occupied node, and vacant slots between those ends still add to the distance. The width of the tree is the greatest of those depth widths. Write that greatest width. The answer fits inside a 32-bit signed integer.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "id": 1438,
+  "summary": "Read an integer list nums and a bound named limit. Find one contiguous nonempty segment in which every pair of entries differs by at most limit, and write how many entries sit in the longest such segment. Write 0 when no segment qualifies. The list length runs from 1 to 100000, each entry runs from 1 to 1000000000, and limit runs from 0 to 1000000000.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

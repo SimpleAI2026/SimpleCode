@@ -1,0 +1,7 @@
+{
+  "id": 690,
+  "summary": "Every worker has a unique number, one importance score, and zero or more numbers of people who report directly. Read those records for the whole company, then read one worker number. Add that worker's own score to the scores of everyone who can be reached by walking down the direct-report links, and write the sum. People more than one step down still count. Each worker has at most one direct boss and may lead several people. The company has at most 2000 workers.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

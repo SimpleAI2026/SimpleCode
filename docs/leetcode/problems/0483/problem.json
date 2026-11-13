@@ -1,0 +1,26 @@
+{
+  "id": 483,
+  "slug": "smallest-good-base",
+  "summary": "读入一个用十进制字符串表示的整数 n。n 至少是 3，至多是 10^18，字符串本身合法，而且没有前导零。如果某个整数进制 k 不小于 2，并且 n 写成该进制之后每一位都是 1，就把 k 称作 n 的好进制。找出最小的那个好进制，再把它写成没有前导零的十进制字符串。写出来的是进制 k，不是那一串 1。相同条件下只保留最小的 k。",
+  "samples": [
+    {
+      "stdin": "\"13\"\n",
+      "stdout": "\"3\"\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "\"4681\"\n",
+      "stdout": "\"8\"\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/smallest-good-base/",
+    "en": "https://leetcode.com/problems/smallest-good-base/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

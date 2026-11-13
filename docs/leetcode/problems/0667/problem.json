@@ -1,0 +1,26 @@
+{
+  "id": 667,
+  "slug": "beautiful-arrangement-ii",
+  "summary": "读入两个正整数 n 与 k。写出长度为 n 的一列整数，其中 1 到 n 每个数恰好出现一次。再看相邻两项差的绝对值，这些绝对值里互不相同的个数必须正好等于 k。有多种列法时写出任意一种。约束是 1 小于等于 k，k 小于 n，并且 n 不超过 10^4。",
+  "samples": [
+    {
+      "stdin": "n = 3, k = 1\n",
+      "stdout": "[1, 2, 3]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "n = 3, k = 2\n",
+      "stdout": "[1, 3, 2]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/beautiful-arrangement-ii/",
+    "en": "https://leetcode.com/problems/beautiful-arrangement-ii/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

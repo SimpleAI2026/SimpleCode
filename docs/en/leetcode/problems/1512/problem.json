@@ -1,0 +1,8 @@
+{
+  "id": 1512,
+  "summary": "Read an integer list nums. Count ordered index pairs in which the earlier index is strictly smaller than the later index and the two stored integers are equal. Write that count. The list length is from 1 to 1000, and each integer is from 1 to 100.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

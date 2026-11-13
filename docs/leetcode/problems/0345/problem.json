@@ -1,0 +1,26 @@
+{
+  "id": 345,
+  "slug": "reverse-vowels-of-a-string",
+  "summary": "读入一行字符串。只把其中的元音字母按出现顺序倒过来，辅音、数字和其它符号都留在原地。元音包括 a、e、i、o、u 以及对应的大写字母。字母移动时保持自己原来的大小写。把处理之后的整行写出来。",
+  "samples": [
+    {
+      "stdin": "\"hello\"\n",
+      "stdout": "\"holle\"\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "\"leetcode\"\n",
+      "stdout": "\"leotcede\"\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/reverse-vowels-of-a-string/",
+    "en": "https://leetcode.com/problems/reverse-vowels-of-a-string/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

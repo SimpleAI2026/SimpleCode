@@ -1,0 +1,8 @@
+{
+  "id": 1184,
+  "summary": "Stops numbered 0 through n - 1 form a loop, and n is an integer from 1 to 10000. Read a travel table of length n. Entry i is the distance from stop i to stop (i + 1) modulo n, and every distance is an integer from 0 to 10000. A vehicle may run clockwise or the opposite way. Also read a departure stop and an arrival stop, both legal indexes. Write the shorter travel distance a rider needs between those two stops. The distance cap is 10000.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

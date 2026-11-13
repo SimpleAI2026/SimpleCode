@@ -1,0 +1,8 @@
+{
+  "id": 2169,
+  "summary": "Read two non-negative integers, and neither integer exceeds 100000. While both values are still nonzero, subtract the smaller value from the larger value. If the two values are equal, that subtraction turns one of them into zero. Keep going until at least one value becomes zero. Count how many subtractions occur, and write that count.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

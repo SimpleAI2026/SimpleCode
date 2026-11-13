@@ -1,0 +1,7 @@
+{
+  "id": 594,
+  "summary": "Call a selection harmonious when its largest entry and its smallest entry differ by exactly one. Read a list of integers of length at most 20000. Keeping the original relative order, pick at least two entries that form a harmonious selection, and make the pick as long as possible. Write that greatest length. Picked entries need not be neighbors in the list. If no pair qualifies, write 0.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": 2166,
+  "slug": "design-bitset",
+  "summary": "实现一个位集合，长度 size 介于 1 和 100000 之间，一开始每一位都是 0，下标从 0 排到 size 减 1。需要支持：把某一位改成 1，把某一位改成 0，把所有位同时翻转，询问是不是每一位都为 1，询问是不是至少有一位为 1，统计当前等于 1 的位数，以及把各位从左到右拼成只含字符 0 和 1 的字符串。全部调用加起来至多 100000 次，其中拼字符串至多 5 次。按调用顺序写出每次询问和每次拼串的结果。",
+  "samples": [
+    {
+      "stdin": "[\"Bitset\", \"fix\", \"fix\", \"flip\", \"all\", \"unfix\", \"flip\", \"one\", \"unfix\", \"count\", \"toString\"]\n[[5], [3], [1], [], [], [0], [], [], [0], [], []]\n",
+      "stdout": "[null, null, null, null, false, null, null, true, null, 2, \"01010\"]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/design-bitset/",
+    "en": "https://leetcode.com/problems/design-bitset/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

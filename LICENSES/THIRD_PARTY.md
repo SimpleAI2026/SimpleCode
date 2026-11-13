@@ -148,9 +148,11 @@ Not part of the default `./build.sh vendor`. `./build.sh vendor --java` download
 - The TeaVM class library includes portions of Apache Harmony (Apache-2.0), Joda-Time (Apache-2.0), and jzlib (BSD-style).
 - `src/teavm/bridge/` is source written for this repository: a replacement `TConsoleInputStream`, a small `TScanner`, and a `TInputStreamReader` that does not touch `java.nio`. The `Scanner` stub appended to the SDK archive in memory is the same small class, compiled with `--patch-module java.base`. `org.teavm.interop.Import` is used only when rebuilding that bridge with a host `javac`. It is not a separate download.
 
-## LeetCode solutions
+## LeetCode statements and solutions
 
-Problem numbers in `docs/leetcode/` come from public lists. Statements are not copied. Solution source files are copied from four repositories pinned in `docs/leetcode/sources.lock.json` (retrieved 2026-10-18). Each file records the upstream URL, commit, and modifications. The same-origin license texts are `docs/leetcode/LICENSES/MIT.txt` and `docs/leetcode/LICENSES/CC-BY-SA-4.0.txt`.
+Problem statements in `docs/leetcode/` are original writing. Facts (number, public title, difficulty, examples, and limits) were read from [halfrost/LeetCode-Go](https://github.com/halfrost/LeetCode-Go) at `1dde49c8ab37a08f21a4fb249d7bd90af4a9c58e`. That repository is MIT, Copyright (c) 2017 halfrost. The checkout is gitignored under `thirdparty/LeetCode-Go/` and is not read at runtime. Upstream sentences are not stored. See `docs/leetcode/leetcode-go.lock.json`.
+
+Solution source files are copied from four repositories pinned in `docs/leetcode/sources.lock.json` (retrieved 2026-10-18). Each file records the upstream URL, commit, and modifications. The same-origin license texts are `docs/leetcode/LICENSES/MIT.txt` and `docs/leetcode/LICENSES/CC-BY-SA-4.0.txt`.
 
 | Repository | Commit | License |
 |---|---|---|

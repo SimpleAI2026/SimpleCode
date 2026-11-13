@@ -1,6 +1,6 @@
 {
   "id": 118,
-  "summary": "The public title of this exercise is Pascals Triangle. Read tokens in the same order as the method parameters from standard input and compute the result named by that title, using only those values. Print the result as a row count and then one line of integers per row. The sample below is a short input written for this playground so the printed line can be checked locally. It is not a copy of an example from the problem site. The input stays under one hundred elements so it finishes quickly in the browser.",
+  "summary": "Read a non-negative integer that states how many rows are required. Produce that many opening rows under the rule of Pascal's triangle. The topmost row holds only the digit one. Every later row has the digit one at both ends, and each inner digit equals the sum of the two neighboring digits sitting directly above it. Print all of these rows from the top toward the bottom. If the required count of rows is zero, write an empty result and do not invent an extra row.",
   "notes": [
     "Compare after trimming trailing newlines. The input is tokens in the same order as the method parameters."
   ]

@@ -1,0 +1,8 @@
+{
+  "id": 1675,
+  "summary": "Read n positive integers, with n from 2 to 105 and each value from 1 through 10^9. Any value may be edited repeatedly under two rules: an even value may be divided by 2, and an odd value may be multiplied by 2. The deviation is the gap between the largest and the smallest value present after those edits. Find the smallest deviation that can be reached and write it.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

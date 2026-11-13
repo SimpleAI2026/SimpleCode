@@ -1,0 +1,26 @@
+{
+  "id": 523,
+  "slug": "continuous-subarray-sum",
+  "summary": "读入一列非负整数，再读入一个正整数作为除数。要判断这列数里有没有一段连续片段，片段至少盖住两个位置，而且片段里的数相加之后能被该除数整除。找到就写出 true，找不到就写出 false。数值零也算任意除数的倍数。列的长度在 1 到 105 之间，每一项在 0 到 109 之间，各项之和不超过 231 减 1，除数本身在 1 到 231 减 1 之间。",
+  "samples": [
+    {
+      "stdin": "nums = [23,2,4,6,7], k = 6\n",
+      "stdout": "true\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "nums = [23,2,6,4,7], k = 6\n",
+      "stdout": "true\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/continuous-subarray-sum/",
+    "en": "https://leetcode.com/problems/continuous-subarray-sum/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

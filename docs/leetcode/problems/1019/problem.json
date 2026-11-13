@@ -1,0 +1,26 @@
+{
+  "id": 1019,
+  "slug": "next-greater-node-in-linked-list",
+  "summary": "读入一条链表。结点个数在 0 到 10000 之间，每个结点保存的整数在 1 到 10^9 之间。顺着指针往后看，为每个结点找出离它最近且数值严格更大的那个结点；若后面不存在更大的数值，该位置记为 0。按从头到尾的顺序把这些数值写成一列并输出。相等的数值不算更大，必须严格超过当前结点。",
+  "samples": [
+    {
+      "stdin": "[2,1,5]\n",
+      "stdout": "[5,5,0]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "[2,7,4,3,5]\n",
+      "stdout": "[7,0,5,5,0]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/next-greater-node-in-linked-list/",
+    "en": "https://leetcode.com/problems/next-greater-node-in-linked-list/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

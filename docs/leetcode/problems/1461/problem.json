@@ -1,0 +1,26 @@
+{
+  "id": 1461,
+  "slug": "check-if-a-string-contains-all-binary-codes-of-size-k",
+  "summary": "读入一条只含字符 0 和 1 的字符串 s，以及整数 k。判断长度恰好为 k 的每一种 0 与 1 的排列，是否都在 s 里作为连续片段出现过。全部出现就写出 true，缺任何一种就写出 false。s 的长度介于 1 与 5 乘 10^5，k 介于 1 与 20。",
+  "samples": [
+    {
+      "stdin": "s = \"00110110\", k = 2\n",
+      "stdout": "true\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "s = \"00110\", k = 2\n",
+      "stdout": "true\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/check-if-a-string-contains-all-binary-codes-of-size-k/",
+    "en": "https://leetcode.com/problems/check-if-a-string-contains-all-binary-codes-of-size-k/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

@@ -1,0 +1,26 @@
+{
+  "id": 927,
+  "slug": "three-equal-parts",
+  "summary": "读入一条只含数字 0 和 1 的序列，长度至少为 3，至多 30000。要把整条序列切成三段，每段至少含一个数字。把每一段从头到尾看成一个二进制整数，开头多余的 0 不改变数值。三段所表示的数值必须彼此相等。若存在这样的切法，写出两个下标 i 与 j，满足 i 加 1 小于 j：第一段覆盖到下标 i，第二段从 i 的下一个位置开始并停在 j 之前，第三段从 j 一直到末尾。若怎么切都不行，就写出负一和负一。",
+  "samples": [
+    {
+      "stdin": "[1,0,1,0,1]\n",
+      "stdout": "[0,3]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "[1,1,0,1,1]\n",
+      "stdout": "[-1,-1]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/three-equal-parts/",
+    "en": "https://leetcode.com/problems/three-equal-parts/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

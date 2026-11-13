@@ -1,0 +1,26 @@
+{
+  "id": 8,
+  "slug": "string-to-integer-atoi",
+  "summary": "读入一条文本并写出它对应的 32 位有符号整数。开头若有空格，只跳过这些空格，这里的空白仅指空格字符。紧接着可以有一个正号或负号，用来决定符号；两者都没有时按正数处理。然后连续收下数字字符，一旦遇到非数字或者文本结束就停，后面剩余内容全部丢掉。一个数字都没有时，数值记为 0。小于负的二的三十一次方的结果抬到这个下界，大于二的三十一次方减一的结果压到这个上界。数字尚未开始时若出现其他字符，也要立刻停止。",
+  "samples": [
+    {
+      "stdin": "s = \"42\"\n",
+      "stdout": "42\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "s = \" -42\"\n",
+      "stdout": "-42\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/string-to-integer-atoi/",
+    "en": "https://leetcode.com/problems/string-to-integer-atoi/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

@@ -1,0 +1,8 @@
+{
+  "id": 236,
+  "summary": "Read an ordinary binary tree together with two different nodes p and q. Every node value is unique, and both p and q occur in the tree. This tree has no rule that left values are smaller than right values. Find a node x from which a walk toward the children can reach p and can also reach q, choosing the deepest such node when several qualify. A walk from a node to itself counts as reaching it. Write that node x.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

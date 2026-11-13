@@ -1,0 +1,21 @@
+{
+  "id": 103,
+  "slug": "binary-tree-zigzag-level-order-traversal",
+  "summary": "读入一棵存放整数的二叉树。仍然一层一组地收集结点，但相邻层的方向相反。第一层从左走向右，紧接着的一层从右走向左，以后各层继续轮换。组与组之间仍按从根走向更低层的次序排列。写出全部分组。树为空时写出空列表。某个结点的整数可以等于 20，方向规则对其他整数同样适用。",
+  "samples": [
+    {
+      "stdin": "binary tree [3,9,20,null,null,15,7],\n\n\n3\n/ \\\n9 20\n/ \\\n15 7\n",
+      "stdout": "its zigzag level order traversal as:\n\n\n[\n[3],\n[20,9],\n[15,7]\n]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/binary-tree-zigzag-level-order-traversal/",
+    "en": "https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

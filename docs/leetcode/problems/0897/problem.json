@@ -1,0 +1,21 @@
+{
+  "id": 897,
+  "slug": "increasing-order-search-tree",
+  "summary": "读入一棵二叉搜索树。结点总数落在 1 至 100 这一档。各个结点上的键互不相同，最小可以是 0，最大可以是 1000。按照中序的先后，把结点改接成一条只向右延伸的链：中序里最先的结点成为新的根，之后的结点只挂在前一个结点的右侧，谁也不再保留左侧孩子。把改接之后的树写出来。",
+  "samples": [
+    {
+      "stdin": "[5,3,6,2,4,null,8,1,null,null,null,7,9]\n\n5\n/ \\\n3 6\n/ \\ \\\n2 4 8\n/ / \\\n1 7 9\n",
+      "stdout": "[1,null,2,null,3,null,4,null,5,null,6,null,7,null,8,null,9]\n\n1\n\\\n2\n\\\n3\n\\\n4\n\\\n5\n\\\n6\n\\\n7\n\\\n8\n\\\n9\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/increasing-order-search-tree/",
+    "en": "https://leetcode.com/problems/increasing-order-search-tree/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

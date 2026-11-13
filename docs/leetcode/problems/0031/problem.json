@@ -1,0 +1,26 @@
+{
+  "id": 31,
+  "slug": "next-permutation",
+  "summary": "读入一列整数，列长介于 1 与 100 之间，每个整数介于 0 与 100 之间。把这一列就地改成字典序中刚好紧挨着的更大排法，并仍写在原来的位置上。若已经不存在更大的排法，就改成从小到大的最小排法。除这一列本身以外，额外占用的辅助位置数量必须保持固定，不能随列长增长。",
+  "samples": [
+    {
+      "stdin": "nums = [1,2,3]\n",
+      "stdout": "[1,3,2]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "nums = [3,2,1]\n",
+      "stdout": "[1,2,3]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/next-permutation/",
+    "en": "https://leetcode.com/problems/next-permutation/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

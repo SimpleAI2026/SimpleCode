@@ -1,0 +1,26 @@
+{
+  "id": 1281,
+  "slug": "subtract-the-product-and-sum-of-digits-of-an-integer",
+  "summary": "读入一个正整数 n，它的取值范围是 1 到 10^5。把 n 按十进制逐位拆开。先把这些数字全部相乘，再把这些数字全部相加，然后用乘积减去和，把得到的差写出来。只有一位时，乘积与和都等于这一位本身，因此差是 0。计算时只使用十进制数字，不要把正负号或其他符号算进去。",
+  "samples": [
+    {
+      "stdin": "n = 234\n",
+      "stdout": "15\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "n = 4421\n",
+      "stdout": "21\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/subtract-the-product-and-sum-of-digits-of-an-integer/",
+    "en": "https://leetcode.com/problems/subtract-the-product-and-sum-of-digits-of-an-integer/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

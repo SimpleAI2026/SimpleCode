@@ -1,0 +1,21 @@
+{
+  "id": 498,
+  "slug": "diagonal-traverse",
+  "summary": "读入一个 M 行 N 列的矩阵，元素总数不超过 10000。请按对角线次序把每个元素写出来，每个元素只写一次。同一条对角线上的格子，行号与列号之和相同。和为偶数时，从该对角线上行号最大的格子开始，朝着行号变小的方向收集；和为奇数时，从行号最小的格子开始，朝着行号变大的方向收集。从和为 0 开始，和每次加 1，直到所有格子都写完。行号和列号都从 0 起算。",
+  "samples": [
+    {
+      "stdin": "[\n[ 1, 2, 3 ],\n[ 4, 5, 6 ],\n[ 7, 8, 9 ]\n]\n",
+      "stdout": "[1,2,4,7,5,3,6,8,9]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/diagonal-traverse/",
+    "en": "https://leetcode.com/problems/diagonal-traverse/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

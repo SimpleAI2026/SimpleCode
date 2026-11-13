@@ -1,0 +1,8 @@
+{
+  "id": 1202,
+  "summary": "Read a string of lowercase English letters whose length is between 1 and 100000, plus a collection of index pairs that may be exchanged. The collection holds between 0 and 100000 pairs. Indexes start at 0 and always lie inside the string. Letters at any listed pair of indexes may be exchanged any number of times, and repeated exchanges can move letters among positions connected through these pairs. Write the alphabetically earliest string reachable by such exchanges. The size bound is 100000.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

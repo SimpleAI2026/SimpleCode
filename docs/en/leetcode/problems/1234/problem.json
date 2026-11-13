@@ -1,0 +1,8 @@
+{
+  "id": 1234,
+  "summary": "Read a string of length n. The length is a multiple of 4, and 1 <= n <= 100000. The only letters present are Q, W, E, and R. The text counts as balanced when each of those four letters occurs exactly n divided by 4 times. One contiguous fragment may be replaced by any text of equal length. Write the shortest fragment length that can make the whole text balanced. If the original text is already balanced, write 0. The length bound is 100000.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

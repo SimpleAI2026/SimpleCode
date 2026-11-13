@@ -1,0 +1,8 @@
+{
+  "id": 1160,
+  "summary": "Read a word list and one stock of letters. Every character is a lowercase English letter. The list contains between 1 and 1000 words, and each word as well as the stock has length between 1 and 100. A word can be spelled exactly when every letter it needs is available at least as many times in the stock. Sum the lengths of all words that can be spelled, and write that sum. Counts in the stock cannot be overdrawn inside a single word. The list cap is 1000.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

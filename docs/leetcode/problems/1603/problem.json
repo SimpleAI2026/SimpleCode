@@ -1,0 +1,21 @@
+{
+  "id": 1603,
+  "slug": "design-parking-system",
+  "summary": "实现一个停车场。车位分成大、中、小三种，构造时分别给出三种还空着的数量。addCar 收到 1、2 或 3，依次表示大车、中车和小车。一辆车只能进入与自身种类相同的车位。若该种类仍有空位，就占用一个并写出 true，否则写出 false。三种数量都介于 0 与 1000，addCar 至多被调用 1000 次。",
+  "samples": [
+    {
+      "stdin": "[\"ParkingSystem\", \"addCar\", \"addCar\", \"addCar\", \"addCar\"]\n[[1, 1, 0], [1], [2], [3], [1]]\n",
+      "stdout": "[null, true, true, false, false]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/design-parking-system/",
+    "en": "https://leetcode.com/problems/design-parking-system/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

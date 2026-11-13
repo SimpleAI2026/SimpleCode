@@ -1,0 +1,7 @@
+{
+  "id": 409,
+  "summary": "Read a string of English letters that may mix capitals and small letters. Its length is at most 1010. Capitals and small letters count as different symbols, so Aa is not a palindrome. You may drop some letters and you may reorder the rest in order to form the longest palindrome possible. Write that maximum length.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

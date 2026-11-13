@@ -1,0 +1,7 @@
+{
+  "id": 1299,
+  "summary": "Read an integer array. Change every entry except the final one into the largest original value that sits strictly to its right. Change the final entry into -1. Write the full array after those replacements, keeping the original positions. The length is between 1 and 10^4, and each entry is between 1 and 10^5. When the array holds a single entry, the written result is just -1. Each comparison uses the original values that follow that position.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

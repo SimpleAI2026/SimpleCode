@@ -1,0 +1,26 @@
+{
+  "id": 1678,
+  "slug": "goal-parser-interpretation",
+  "summary": "读入一条命令字符串，它的长度在 1 到 100 之间，并且只由三种片段按任意次序拼接而成。单独的字母 G 保持不变，成对的空括号换成字母 o，带字母的片段 (al) 换成 al。顺着从左到右的原次序，把每一段替换后的字符接成一条新字符串，然后把这条字符串写出来。",
+  "samples": [
+    {
+      "stdin": "command = \"G()(al)\"\n",
+      "stdout": "\"Goal\"\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "command = \"G()()()()(al)\"\n",
+      "stdout": "\"Gooooal\"\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/goal-parser-interpretation/",
+    "en": "https://leetcode.com/problems/goal-parser-interpretation/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

@@ -1,0 +1,8 @@
+{
+  "id": 794,
+  "summary": "Read a three by three tic-tac-toe position. Each cell is a space, the letter X, or the letter O. Players alternate filling empty cells, the opener always places X, the follower always places O, and an occupied cell stays untouched. Play ends at once when one row, one column, or one diagonal is filled by three matching non-space marks, and it also ends when no cell remains empty. After the end, no further placement is allowed. Decide whether this position can arise in a rule-following game. Write true if it can and false if it cannot.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

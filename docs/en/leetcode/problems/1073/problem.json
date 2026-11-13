@@ -1,0 +1,7 @@
+{
+  "id": 1073,
+  "summary": "Read two integers written in base negative two. Each integer arrives as an array of bits 0 and 1, with the highest place on the left and the lowest place on the right. Each array length is from 1 to 1000, and every bit is 0 or 1. A 1 in a place stands for the matching power of negative two. Neither array has a leading zero, except that zero itself is the single entry 0. Add the two integers. Write the sum in the same bit array form, again without a leading zero.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

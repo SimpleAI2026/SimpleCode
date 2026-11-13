@@ -1,0 +1,8 @@
+{
+  "id": 841,
+  "summary": "Read the key lists for N rooms numbered from 0 up to N minus 1. N is at least 1 and at most 1000. You begin inside room 0, and every other room begins locked. A key is a room number. Room i may hold up to 1000 keys, and all rooms together hold at most 3000 keys. Holding the key for a room lets you open it. Travel between opened rooms may go either way. Write true when every room can be opened, and write false when some room stays shut.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

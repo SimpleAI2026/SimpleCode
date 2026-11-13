@@ -1,6 +1,6 @@
 {
   "id": 77,
-  "summary": "The public title of this exercise is Combinations. Read tokens in the same order as the method parameters from standard input and compute the result named by that title, using only those values. Print the result as a row count and then one line of integers per row. The sample below is a short input written for this playground so the printed line can be checked locally. It is not a copy of an example from the problem site. The input stays under one hundred elements so it finishes quickly in the browser.",
+  "summary": "Read two positive integers n and k. From the integers 1 through n, pick exactly k values. The order of picking does not matter; only the final set of values matters. Write every set that can be formed this way. Inside one set, write the values from smaller to larger. Arrange the sets themselves in dictionary order. Do not leave a set out, and do not write the same set twice. When k is larger than n, no set exists. Every picked value must come from 1 through n.",
   "notes": [
     "Compare after trimming trailing newlines. The input is tokens in the same order as the method parameters."
   ]

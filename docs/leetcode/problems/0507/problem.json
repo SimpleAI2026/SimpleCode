@@ -1,0 +1,21 @@
+{
+  "id": 507,
+  "slug": "perfect-number",
+  "summary": "读入一个整数 n，判断它是不是完美数，并写出 true 或 false。完美数必须是正整数，而且恰好等于把自己除掉之后所有正因子相加的和。以 28 为例，它的正因子有 1、2、4、7、14 和 28，去掉 28 之后剩下的和仍是 28，所以 28 符合。1 的正因子只有自己，去掉以后和是 0，因此 1 不符合。零和负数也都不符合。因子必须整除，不能把不能整除的数算进去。",
+  "samples": [
+    {
+      "stdin": "28\n",
+      "stdout": "True\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/perfect-number/",
+    "en": "https://leetcode.com/problems/perfect-number/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

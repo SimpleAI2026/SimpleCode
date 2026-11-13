@@ -1,0 +1,8 @@
+{
+  "id": 1463,
+  "summary": "Read a rows by cols orchard grid. Each cell holds a nonnegative count of cherries. Two machines pick together: the first starts at the upper-left cell and the second starts at the upper-right cell. On every step both drop exactly one row, and each may change its column by minus one, zero, or plus one, while staying inside the grid. Cherries in a cell are taken only once, even if both machines land there together, and that cell then holds zero. Both machines must finish on the bottom row. Write the largest total they can gather. Both dimensions are from 2 to 70, and each cell is from 0 to 100.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

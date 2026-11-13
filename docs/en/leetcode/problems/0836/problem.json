@@ -1,0 +1,8 @@
+{
+  "id": 836,
+  "summary": "Read two axis-aligned rectangles. Each one is four integers naming the lower left corner and then the upper right corner. Every coordinate is an integer from -1000000000 through 1000000000. They conflict when the area they share is strictly positive. Touching only along a side or only at a corner shares area zero, so that case is not a conflict. Write true when they conflict and write false otherwise. Edges stay parallel to the axes.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

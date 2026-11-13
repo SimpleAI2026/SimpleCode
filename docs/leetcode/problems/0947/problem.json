@@ -1,0 +1,26 @@
+{
+  "id": 947,
+  "slug": "most-stones-removed-with-same-row-or-column",
+  "summary": "平面上有若干石头，每块石头占一个整数坐标，同一个坐标最多一块。石头个数从 1 到 1000，每个坐标分量都是小于 10000 的非负整数。一次操作可以拿走一块石头，但前提是网格上还留着另一块与它同一行或同一列的石头。求最多能进行多少次这样的操作，并把这个次数写出来。已经被拿走的石头不能再作为同行或同列的依据。",
+  "samples": [
+    {
+      "stdin": "stones = [[0,0],[0,1],[1,0],[1,2],[2,1],[2,2]]\n",
+      "stdout": "5\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "stones = [[0,0],[0,2],[1,1],[2,0],[2,2]]\n",
+      "stdout": "3\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/most-stones-removed-with-same-row-or-column/",
+    "en": "https://leetcode.com/problems/most-stones-removed-with-same-row-or-column/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

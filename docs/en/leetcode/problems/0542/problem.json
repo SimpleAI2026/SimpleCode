@@ -1,0 +1,8 @@
+{
+  "id": 542,
+  "summary": "Read a matrix whose cells contain only 0 and 1. For every cell, compute how many steps are needed to reach the closest 0. A step may move only to a neighbor above, below, left, or right, each step adds 1, and a diagonal neighbor does not count. Write those step counts in a matrix of the same shape, keeping each count in its original row and column. The matrix holds at most 10000 cells, and it contains at least one 0.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

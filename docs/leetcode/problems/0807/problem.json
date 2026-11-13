@@ -1,0 +1,26 @@
+{
+  "id": 807,
+  "slug": "max-increase-to-keep-city-skyline",
+  "summary": "读入一座边长介于2和50之间的方形城区，每格一栋楼，高度是0到100的整数，高度为零也算楼。从北、东、南、西看过去，天际线由该方向每条视线上最高的楼构成。允许把任意几栋楼各自加高任意的非负高度，但四个方向看到的天际线都必须与原来完全一致。找出全部加高量之和能够达到的最大值，并把这个和写出来。",
+  "samples": [
+    {
+      "stdin": "grid = [[3,0,8,4],[2,4,5,7],[9,2,6,3],[0,3,1,0]]\n",
+      "stdout": "35\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "grid = [[0,0,0],[0,0,0],[0,0,0]]\n",
+      "stdout": "0\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/max-increase-to-keep-city-skyline/",
+    "en": "https://leetcode.com/problems/max-increase-to-keep-city-skyline/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

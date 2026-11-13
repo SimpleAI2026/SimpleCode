@@ -1,0 +1,26 @@
+{
+  "id": 599,
+  "slug": "minimum-index-sum-of-two-lists",
+  "summary": "两个人各自保存一份喜爱的餐馆名字，两份的长度都在 1 到 1000，每个名字的字符个数在 1 到 30。同一份里面没有重名，下标从 0 开始。找出同时出现在两份里的名字，并让该名字在两份中的下标之和最小。若有几个名字的和相同，就把它们全部写出来，次序随意。可以认为至少存在一个共同名字。",
+  "samples": [
+    {
+      "stdin": "[\"Shogun\", \"Tapioca Express\", \"Burger King\", \"KFC\"]\n[\"Piatti\", \"The Grill at Torrey Pines\", \"Hungry Hunter Steakhouse\", \"Shogun\"]\n",
+      "stdout": "[\"Shogun\"]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "[\"Shogun\", \"Tapioca Express\", \"Burger King\", \"KFC\"]\n[\"KFC\", \"Shogun\", \"Burger King\"]\n",
+      "stdout": "[\"Shogun\"]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/minimum-index-sum-of-two-lists/",
+    "en": "https://leetcode.com/problems/minimum-index-sum-of-two-lists/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

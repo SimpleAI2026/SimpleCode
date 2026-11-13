@@ -1,0 +1,26 @@
+{
+  "id": 1673,
+  "slug": "find-the-most-competitive-subsequence",
+  "summary": "读入一串整数和一个正整数 k。数组长度在 1 到 105 之间，每个元素在 0 到 109 之间，k 不超过数组长度。从中保留恰好 k 个数，并保持它们原来从左到右的相对次序。在所有长度同为 k 的保留结果里，找出字典序最小的那一条：从左往右第一次出现差别时，较小的数字更优。把这条结果写出来。",
+  "samples": [
+    {
+      "stdin": "nums = [3,5,2,6], k = 2\n",
+      "stdout": "[2,6]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "nums = [2,4,3,3,5,4,9,6], k = 4\n",
+      "stdout": "[2,3,3,4]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/find-the-most-competitive-subsequence/",
+    "en": "https://leetcode.com/problems/find-the-most-competitive-subsequence/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

@@ -1,0 +1,8 @@
+{
+  "id": 529,
+  "summary": "Read a character board plus one click given by a row index and a column index. Both height and width lie between 1 and 50. M marks a hidden mine, E marks a hidden empty cell, B marks an opened cell with no mine in any of the eight surrounding directions, a digit from 1 to 8 counts mines around an opened cell, and X marks a mine that was hit. The click is on M or E, and no mine is exposed at the start. Hitting a mine changes only that cell to X. Hitting an empty cell with no surrounding mine changes it to B and continues opening neighboring hidden cells by the same rule. Hitting an empty cell with at least one surrounding mine changes it to the matching digit and does not spread. Write the whole board after the click. When play stops, leave every remaining mine hidden.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

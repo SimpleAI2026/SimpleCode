@@ -1,0 +1,26 @@
+{
+  "id": 1572,
+  "slug": "matrix-diagonal-sum",
+  "summary": "读入一个正方形的整数矩阵。从左上通向右下的那一条叫做主斜线，从右上通向左下的那一条叫做另一条斜线。先把主斜线上的数全部相加，再把仅仅落在另一条斜线上、还没有被主斜线加过的数也加进去。把这个和写出来。边长介于 1 与 100，每个格子里的数也介于 1 与 100。",
+  "samples": [
+    {
+      "stdin": "mat = [[1,2,3],\n[4,5,6],\n[7,8,9]]\n",
+      "stdout": "25\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "mat = [[1,1,1,1],\n[1,1,1,1],\n[1,1,1,1],\n[1,1,1,1]]\n",
+      "stdout": "8\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/matrix-diagonal-sum/",
+    "en": "https://leetcode.com/problems/matrix-diagonal-sum/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

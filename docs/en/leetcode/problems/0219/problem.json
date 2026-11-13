@@ -1,0 +1,8 @@
+{
+  "id": 219,
+  "summary": "Read a list of integers and a non-negative integer k. Decide whether two different positions store the same value and the absolute gap of their position numbers is at most k. Write true when such a pair exists, and write false otherwise. Equal values farther apart than k do not qualify. When k is 0, no pair of different positions can satisfy the gap, so the answer is false.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

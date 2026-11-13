@@ -1,0 +1,7 @@
+{
+  "id": 661,
+  "summary": "An integer grid stores the gray level of a picture. Entries run from 0 through 255, and both the number of rows and the number of columns run from 1 through 150. Replace every cell by the floor of the mean of that cell together with up to eight neighbors around it. Cells on the border, which have fewer than eight neighbors, use whatever neighbors exist. Write the full grid after this replacement.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

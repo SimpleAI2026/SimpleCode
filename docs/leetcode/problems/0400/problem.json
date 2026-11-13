@@ -1,0 +1,26 @@
+{
+  "id": 400,
+  "slug": "nth-digit",
+  "summary": "把全体正整数按从小到大的顺序写成十进制，再把这些写法首尾连成一条没有尽头的数字流。读入位置 n，它至少是 1，至多是 2 的 31 次方减去 1。在这条数字流里从开头数到第 n 位，把那一位上的数字写出来。",
+  "samples": [
+    {
+      "stdin": "n = 3\n",
+      "stdout": "3\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "n = 11\n",
+      "stdout": "0\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/nth-digit/",
+    "en": "https://leetcode.com/problems/nth-digit/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

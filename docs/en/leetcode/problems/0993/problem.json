@@ -1,0 +1,8 @@
+{
+  "id": 993,
+  "summary": "Read a binary tree in which every stored integer is unique, plus two different targets x and y. The root has depth zero, and each child has depth one greater than its parent. Two nodes are cousins when their depths match and their parents differ. The tree holds between 2 and 100 nodes, and each stored integer is chosen from 1 to 100. Decide whether the node storing x and the node storing y are cousins. Write true when they are cousins and write false in every other case.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

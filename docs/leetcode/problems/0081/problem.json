@@ -1,0 +1,26 @@
+{
+  "id": 81,
+  "slug": "search-in-rotated-sorted-array-ii",
+  "summary": "读入一列整数和一个目标数。这列整数起先按非递减次序排好，后来在一个没有事先说明的位置被切开，右面那一段被整段搬到左面那段的前面。列中允许出现相同的数。判断目标数是否还在这列里面，在就写出 true，不在就写出 false。切开的位置可以落在任何地方，也包括实际上没有搬动的情形。相同的数可以分布在切开处的两侧。",
+  "samples": [
+    {
+      "stdin": "nums = [2,5,6,0,0,1,2], target = 0\n",
+      "stdout": "true\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "nums = [2,5,6,0,0,1,2], target = 3\n",
+      "stdout": "false\n\nFollow up:\n\n- This is a follow up problem to [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/description/), where nums may contain duplicates.\n- Would this affect the run-time complexity? How and why?\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/search-in-rotated-sorted-array-ii/",
+    "en": "https://leetcode.com/problems/search-in-rotated-sorted-array-ii/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

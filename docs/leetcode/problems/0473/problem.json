@@ -1,0 +1,26 @@
+{
+  "id": 473,
+  "slug": "matchsticks-to-square",
+  "summary": "读入若干根火柴的长度。火柴根数在 1 到 15 之间，每根长度在 0 到 109 之间。任何一根都不许折断，但可以把多根首尾相接，而且每一根都要恰好使用一次。判断这些火柴能不能拼成一个正方形。能拼成就写出真，不能就写出假。",
+  "samples": [
+    {
+      "stdin": "matchsticks = [1,1,2,2,2]\n",
+      "stdout": "true\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "matchsticks = [3,3,3,3,4]\n",
+      "stdout": "false\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/matchsticks-to-square/",
+    "en": "https://leetcode.com/problems/matchsticks-to-square/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

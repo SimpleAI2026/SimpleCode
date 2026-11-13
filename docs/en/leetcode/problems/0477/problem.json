@@ -1,0 +1,7 @@
+{
+  "id": 477,
+  "summary": "Read a list of integers. Every integer is between 0 and 10^9 inclusive, and the list holds at most 10000 values. After two integers are written as aligned binary, count the slots whose digits disagree. That count is their bit difference. For every pair of distinct indexes, add the bit difference once, then write the total. Do not add the same pair twice, and do not pair an integer with itself. If fewer than two integers are present, the total is 0.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

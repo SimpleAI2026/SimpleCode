@@ -1,0 +1,8 @@
+{
+  "id": 367,
+  "summary": "Read one positive integer. Decide whether some integer multiplies by itself to produce it. Write true if such an integer exists, and write false otherwise. Do not call a square-root function supplied by the language, and do not use a floating-point library to take a root. Use only integer multiplication, division, or comparison to decide.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

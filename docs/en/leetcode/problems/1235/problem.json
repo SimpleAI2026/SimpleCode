@@ -1,0 +1,8 @@
+{
+  "id": 1235,
+  "summary": "There are n part-time jobs, and n lies between 1 and 5 times 10000. Job i occupies the half-open schedule from startTime[i] until endTime[i] and pays profit[i]. Each start is strictly earlier than its end, every end is at most 10^9, and every pay is an integer from 1 to 10000. Two jobs whose time ranges overlap cannot both be accepted. A job ending at time X may be followed immediately by another job opening at time X. Choose a conflict-free set and write the largest total pay. The time bound is 10^9.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

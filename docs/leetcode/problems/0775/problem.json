@@ -1,0 +1,26 @@
+{
+  "id": 775,
+  "slug": "global-and-local-inversions",
+  "summary": "读入一条排列，长度至多5000，里面的整数恰好是从零排到长度减一的全体。若两个下标左小右大，而左边存放的数反而更大，这一对就算远距逆序。只比较紧邻的两个位置时，则叫做邻位逆序。统计这两种逆序各自出现了多少次。判断两个总数是否相同，相同就写出真，不同就写出假。",
+  "samples": [
+    {
+      "stdin": "A = [1,0,2]\n",
+      "stdout": "true\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "A = [1,2,0]\n",
+      "stdout": "false\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/global-and-local-inversions/",
+    "en": "https://leetcode.com/problems/global-and-local-inversions/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

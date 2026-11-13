@@ -1,0 +1,8 @@
+{
+  "id": 1691,
+  "summary": "Read n boxes, where n is from 1 to 100 and every edge length is from 1 to 100. Each box is described by three edge lengths. Select any subset and stack the chosen boxes. A box may sit on another only when each of the lower box's three edges is at least as long as the matching edge of the upper box. Before stacking, the three edges of a box may be reassigned in any order. Find the greatest total height of a valid stack and write it. Height is the sum of the vertical edges.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

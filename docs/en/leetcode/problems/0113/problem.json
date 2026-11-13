@@ -1,0 +1,7 @@
+{
+  "id": 113,
+  "summary": "Read an integer binary tree and a target total that may equal 22. Find every complete walk that begins at the root, finishes on a leaf, and has integers along the walk adding to exactly the target. A leaf means a node with no children at all. Keep the nodes of each walk in order from the root to the leaf. Write all such walks. When there are none, write an empty collection. Do not write a fragment that stops on an inner node even if its running total already matches.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

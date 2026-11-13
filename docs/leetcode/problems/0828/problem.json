@@ -1,0 +1,26 @@
+{
+  "id": 828,
+  "slug": "count-unique-characters-of-all-substrings-of-a-given-string",
+  "summary": "读入一条只含大写英文字母的字符串，长度介于0和10000之间。在某一段连续子串里，若某个字母恰好出现一次，它就算这段的独特字母。把每一段非空子串所含独特字母的个数全部加起来。内容相同但起止位置不同的子串要分别计算。总和可能非常大，先对10^9加7取模，再把余数写出来。",
+  "samples": [
+    {
+      "stdin": "s = \"ABC\"\n",
+      "stdout": "10\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "s = \"ABA\"\n",
+      "stdout": "8\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/count-unique-characters-of-all-substrings-of-a-given-string/",
+    "en": "https://leetcode.com/problems/count-unique-characters-of-all-substrings-of-a-given-string/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

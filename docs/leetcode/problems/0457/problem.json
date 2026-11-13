@@ -1,0 +1,26 @@
+{
+  "id": 457,
+  "slug": "circular-array-loop",
+  "summary": "读入一个环形整数数组，长度在 1 到 5000 之间。每个元素都在 -1000 到 1000 之间，而且都不为 0。正数表示顺着下标增大的方向前进相应步数，负数表示反向后退同样的步数。越过末尾就回到开头，越过开头就落到末尾。判断是否存在循环：从某个下标出发又回到该下标，步数大于 1，并且全程只朝一个方向移动。存在写出真，否则写出假。",
+  "samples": [
+    {
+      "stdin": "[2,-1,1,2,2]\n",
+      "stdout": "true\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "[-1,2]\n",
+      "stdout": "false\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/circular-array-loop/",
+    "en": "https://leetcode.com/problems/circular-array-loop/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

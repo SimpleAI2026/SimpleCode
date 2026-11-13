@@ -1,0 +1,8 @@
+{
+  "id": 1668,
+  "summary": "Read a string sequence and a word. Both contain only lowercase English letters, and each has length from 1 to 100. A repeat count k is allowed when word copied back to back exactly k times shows up as one contiguous stretch inside sequence. Write the largest k that word can achieve inside sequence. If word never shows up as a contiguous stretch, that largest k is 0, and write 0.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

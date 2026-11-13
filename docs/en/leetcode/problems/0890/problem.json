@@ -1,0 +1,8 @@
+{
+  "id": 890,
+  "summary": "Read several words and one pattern. The pattern and every word use only lowercase English letters, they all have the same length, the pattern is at most 20 characters, and there are at most 50 words. A word matches when some one-to-one mapping of letters turns the pattern into that word: each letter goes to one letter, and two different letters never land on one shared letter. Find every matching word and write them in any order.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": 632,
+  "slug": "smallest-range-covering-elements-from-k-lists",
+  "summary": "读入 k 份已经从小到大排好的整数列表。k 在 1 到 3500，列表里允许出现重复的数，每个数都在 -100000 到 100000。找出一个闭区间，使每一份列表都至少有一个数落在区间里面，并且区间按下列规则最小：先比较长度，更短的更小；长度相等时，左端点更小的更小。把这个区间的左端点和右端点写出来。",
+  "samples": [
+    {
+      "stdin": "[[4,10,15,24,26], [0,9,12,20], [5,18,22,30]]\n",
+      "stdout": "[20,24]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/smallest-range-covering-elements-from-k-lists/",
+    "en": "https://leetcode.com/problems/smallest-range-covering-elements-from-k-lists/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

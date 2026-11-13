@@ -1,6 +1,6 @@
 {
   "id": 39,
-  "summary": "The public title of this exercise is Combination Sum. Read a count, that many integers, and one target integer from standard input and compute the result named by that title, using only those values. Print the result as a row count and then one line of integers per row. The sample below is a short input written for this playground so the printed line can be checked locally. It is not a copy of an example from the problem site. The input stays under one hundred elements so it finishes quickly in the browser.",
+  "summary": "Read a list of positive integers with no repeated values, then read one target total. Find every selection of values from that list whose sum equals the target, and write the values in each selection. Inside one selection the same value may be picked again and again. Two selections that hold the same values the same number of times count as one, even when their written order differs, so write that selection only once. Every picked value must come from the list.",
   "notes": [
     "Compare after trimming trailing newlines. The input is a count, that many integers, and one target integer."
   ]

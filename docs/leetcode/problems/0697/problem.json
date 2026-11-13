@@ -1,0 +1,26 @@
+{
+  "id": 697,
+  "slug": "degree-of-an-array",
+  "summary": "读入一列非空的非负整数。把某个数值出现次数的最大值称作这一列的度。找出一段连续下标，使这段自己的度与整列的度相同，并且这段的长度在所有满足条件的段里最短。写出该最短长度。整列长度在 1 到 50000 之间，每个整数在 0 到 49999 之间。",
+  "samples": [
+    {
+      "stdin": "[1, 2, 2, 3, 1]\n",
+      "stdout": "2\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "[1,2,2,3,1,4,2]\n",
+      "stdout": "6\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/degree-of-an-array/",
+    "en": "https://leetcode.com/problems/degree-of-an-array/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

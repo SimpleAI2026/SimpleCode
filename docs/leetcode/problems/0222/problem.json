@@ -1,0 +1,21 @@
+{
+  "id": 222,
+  "slug": "count-complete-tree-nodes",
+  "summary": "读入一棵二叉树。除了最深的那一层以外，上面每一层的位置都排满；最深那一层的结点从左向右连续摆放，中间不留空洞。统计这棵树上实际存在的结点有多少，并把这个整数写出来。空树写出 0。缺失的孩子位置不要计入。不要把层号误当成结点数。",
+  "samples": [
+    {
+      "stdin": "1\n/ \\\n2 3\n/ \\ /\n4 5 6\n",
+      "stdout": "6\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/count-complete-tree-nodes/",
+    "en": "https://leetcode.com/problems/count-complete-tree-nodes/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

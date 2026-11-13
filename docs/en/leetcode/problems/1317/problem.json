@@ -1,0 +1,8 @@
+{
+  "id": 1317,
+  "summary": "Read an integer n between 2 and 10^4. A no-zero positive integer is a positive integer whose decimal digits include no zero at all. Find two such positive integers that add up to exactly n, and write the pair in either order. At least one valid pair is guaranteed. When several pairs work, any one of them may be written. Both numbers must stay positive, and neither number may contain a zero digit.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

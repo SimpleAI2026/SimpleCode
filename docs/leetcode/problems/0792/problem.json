@@ -1,0 +1,26 @@
+{
+  "id": 792,
+  "slug": "number-of-matching-subsequences",
+  "summary": "读入一条只含小写字母的主串，再读入至多5000条同样只含小写字母的单词，每条单词的长度至多50。若能从主串里删掉若干字符（也可以一个都不删），使剩下的字符按原相对次序拼成该单词，这个单词就算匹配。统计匹配成功的单词有多少条，并把这个条数写出来。",
+  "samples": [
+    {
+      "stdin": "s = \"abcde\", words = [\"a\",\"bb\",\"acd\",\"ace\"]\n",
+      "stdout": "3\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "s = \"dsahjpjauf\", words = [\"ahjpjau\",\"ja\",\"ahbwzgqnuk\",\"tnmlanowax\"]\n",
+      "stdout": "2\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/number-of-matching-subsequences/",
+    "en": "https://leetcode.com/problems/number-of-matching-subsequences/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

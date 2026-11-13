@@ -1,0 +1,8 @@
+{
+  "id": 497,
+  "summary": "Read rectangles that do not overlap and whose edges stay parallel to the axes. Rectangle i is [x1, y1, x2, y2], with the lower left corner at x1, y1 and the upper right corner at x2, y2. The rectangle count runs from 1 to 100, and each edge is at most 2000 long. Integer points on a border count as covered. Write a function pick. Each call draws one covered integer point so that every such point is equally likely, and returns it as [p_x, p_y]. pick is called at most 10000 times. Make the draw fair across points, not fair across rectangles.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

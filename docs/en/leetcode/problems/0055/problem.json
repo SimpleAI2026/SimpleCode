@@ -1,6 +1,6 @@
 {
   "id": 55,
-  "summary": "The public title of this exercise is Jump Game. Read tokens in the same order as the method parameters from standard input and compute the result named by that title, using only those values. Print the result as the word true or false. The sample below is a short input written for this playground so the printed line can be checked locally. It is not a copy of an example from the problem site. The input stays under one hundred elements so it finishes quickly in the browser.",
+  "summary": "Read a list of non-negative integers. A person stands on the leftmost cell. The number written in a cell is the largest forward distance that person may step from there, and any shorter step is also allowed. Decide whether the rightmost cell can be reached under those limits. Write yes when it can be reached, and write no when it cannot. Only that decision is required, not a count of steps.",
   "notes": [
     "Compare after trimming trailing newlines. The input is tokens in the same order as the method parameters."
   ]

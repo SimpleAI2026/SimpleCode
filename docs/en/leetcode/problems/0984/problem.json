@@ -1,0 +1,8 @@
+{
+  "id": 984,
+  "summary": "Read two integers A and B. Each of them is between 0 and 100 inclusive. Write a string that uses only the letters a and b. Its length must equal A plus B, the letter a must appear exactly A times, and the letter b must appear exactly B times. The string must not contain three a characters in a row, and it must not contain three b characters in a row. A string meeting these rules is guaranteed to exist for the supplied A and B. Any such string is acceptable.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

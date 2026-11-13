@@ -1,0 +1,8 @@
+{
+  "id": 767,
+  "summary": "Read a string S made of lowercase letters, with length from 1 to 500. Rearrange those same letters into a new string so that no two positions that touch each other hold equal letters. If one or more valid rearrangements exist, write any one of them. If every rearrangement still places two equal letters side by side somewhere, write an empty string.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

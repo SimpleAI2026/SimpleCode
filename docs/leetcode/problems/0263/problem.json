@@ -1,0 +1,26 @@
+{
+  "id": 263,
+  "slug": "ugly-number",
+  "summary": "读入一个整数，判断它是不是丑数，并把是或否写出来。丑数必须为正，而且全部质因数只能来自二、三、五。数字一算作丑数。零与任何负数都不是丑数。输入是三十二位有符号整数，范围用 32 位来理解，下界为负的二的三十一次方，上界为二的三十一次方再减去一。",
+  "samples": [
+    {
+      "stdin": "6\n",
+      "stdout": "true\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "8\n",
+      "stdout": "true\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/ugly-number/",
+    "en": "https://leetcode.com/problems/ugly-number/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

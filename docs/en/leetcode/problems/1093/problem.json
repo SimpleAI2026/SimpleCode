@@ -1,0 +1,8 @@
+{
+  "id": 1093,
+  "summary": "Read a histogram of length 256 for the integers 0 through 255, where slot k tells how many times the value k was drawn. The total number of draws is from 1 to 1000000000. Exactly one value occurs most often. Write five floating point numbers in this order: smallest value, largest value, average, median, and the most frequent value. When the draw count is odd, the median is the central value after the draws are sorted. When the draw count is even, the median is the arithmetic mean of the two central values. A result within an absolute error of 1e-5 is acceptable.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

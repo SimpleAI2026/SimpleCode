@@ -1,0 +1,26 @@
+{
+  "id": 1641,
+  "slug": "count-sorted-vowel-strings",
+  "summary": "读入整数 n，范围是 1 到 50。只准使用 a、e、i、o、u 五个元音，统计长度为 n 的串有多少条在字典次序上不下降。不下降是指：除了末尾字母，每个字母要么与右侧相邻字母相同，要么在字母表里位于右侧相邻字母的前方。把满足条件的串的条数写出来。",
+  "samples": [
+    {
+      "stdin": "n = 1\n",
+      "stdout": "5\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "n = 2\n",
+      "stdout": "15\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/count-sorted-vowel-strings/",
+    "en": "https://leetcode.com/problems/count-sorted-vowel-strings/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

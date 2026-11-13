@@ -1,0 +1,8 @@
+{
+  "id": 1034,
+  "summary": "Read a grid of colors with several rows and columns, the row and column of a start square, and a new paint value. Each stored integer is the color already there. Both dimensions run from 1 to 50, every color including the paint value runs from 1 to 1000, and the start square lies inside the grid. Squares that share a color and touch along a side belong to one region. A square of that region lies on its edge when one side touches a square outside the region, or when the square sits on the outer rim of the whole grid. Paint every edge square of the region that contains the start, using the new paint value, and leave every other square as it was. Write the finished grid.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "id": 803,
+  "summary": "Read a grid of zeros and ones with both dimensions from 1 to 200, where a one marks a brick. A brick stays put only if it touches the top border, or if at least one neighbor sharing a side is a brick that itself stays put. Then read a sequence of erasures, no longer than the cell count, each at a distinct cell inside the grid. On an erasure, remove the brick if one is present and count how many other bricks newly fall; an empty cell causes a count of zero. Write those counts in the same sequence.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

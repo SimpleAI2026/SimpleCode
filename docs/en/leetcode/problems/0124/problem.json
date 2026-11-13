@@ -1,6 +1,6 @@
 {
   "id": 124,
-  "summary": "The public title of this exercise is Binary Tree Maximum Path Sum. Read a level-order node count, using a dot for a missing child from standard input and compute the result named by that title, using only those values. Print the result as one integer. The sample below is a short input written for this playground so the printed line can be checked locally. It is not a copy of an example from the problem site. The input stays under one hundred elements so it finishes quickly in the browser.",
+  "summary": "Read a non-empty binary tree in which every node stores an integer, and negative integers are allowed. A path is a sequence of nodes joined by edges between a parent and a child. Either end may be any node, and the path need not pass through the root. The path includes at least one node. Add the integers along the path, find the path whose sum is largest, and write that sum.",
   "notes": [
     "Compare after trimming trailing newlines. The input is a level-order node count, using a dot for a missing child."
   ]

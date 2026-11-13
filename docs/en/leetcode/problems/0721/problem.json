@@ -1,0 +1,7 @@
+{
+  "id": 721,
+  "summary": "Read a list of accounts. The list holds between 1 and 1000 records. Each record contains 1 to 10 strings, and each string has length 1 to 30. The opening string is a name and every later string is an email address. Join two records into one person whenever they share at least one address. Equal names by themselves do not force a join. After joining, keep a single name for that person. Write each result with the name first and the addresses in dictionary order. The results may be listed in any sequence.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

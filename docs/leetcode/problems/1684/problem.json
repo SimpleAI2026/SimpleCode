@@ -1,0 +1,26 @@
+{
+  "id": 1684,
+  "slug": "count-the-number-of-consistent-strings",
+  "summary": "读入一条由互不相同的小写字母组成的允许串，以及若干待查单词。允许串长度在 1 到 26 之间，单词条数在 1 到 104 之间，每个单词长度在 1 到 10 之间，字母都是小写英文。若某个单词里出现的每个字符都能在允许串里找到，就把它算作合格。统计合格单词的个数并写出来。",
+  "samples": [
+    {
+      "stdin": "allowed = \"ab\", words = [\"ad\",\"bd\",\"aaab\",\"baa\",\"badab\"]\n",
+      "stdout": "2\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "allowed = \"abc\", words = [\"a\",\"b\",\"c\",\"ab\",\"ac\",\"bc\",\"abc\"]\n",
+      "stdout": "7\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/count-the-number-of-consistent-strings/",
+    "en": "https://leetcode.com/problems/count-the-number-of-consistent-strings/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

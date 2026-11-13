@@ -1,6 +1,6 @@
 {
   "id": 322,
-  "summary": "The public title of this exercise is Coin Change. Read a count, that many integers, and one target integer from standard input and compute the result named by that title, using only those values. Print the result as one integer. The sample below is a short input written for this playground so the printed line can be checked locally. It is not a copy of an example from the problem site. The input stays under one hundred elements so it finishes quickly in the browser.",
+  "summary": "Read several coin denominations and one target amount. Each denomination may be selected any number of times, including zero times. Find the smallest number of coins that add up exactly to the target, and write that number of coins. If no selection adds up exactly to the target, write -1. Every denomination is a positive integer. There is no upper bound on how often a denomination is selected.",
   "notes": [
     "Compare after trimming trailing newlines. The input is a count, that many integers, and one target integer."
   ]

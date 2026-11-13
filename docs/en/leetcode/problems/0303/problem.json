@@ -1,0 +1,7 @@
+{
+  "id": 303,
+  "summary": "Read an integer list that stays unmodified for the whole process. Many range questions follow. Each question gives two indexes i and j, with i less than or equal to j. Add every element whose index runs from i through j, including both ends, and write that sum. Between questions, every element keeps the value it had at the start.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

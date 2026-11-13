@@ -1,0 +1,26 @@
+{
+  "id": 1518,
+  "slug": "water-bottles",
+  "summary": "起初手里有 numBottles 瓶装满的饮料。每喝完一瓶就多出一个空瓶。每当空瓶个数凑够 numExchange，就可以换回一瓶新的满瓶，换来的同样可以喝完再继续换。写出按这个规则最多能喝完多少瓶。初始满瓶数介于 1 与 100，每次兑换所需的空瓶数介于 2 与 100。",
+  "samples": [
+    {
+      "stdin": "numBottles = 9, numExchange = 3\n",
+      "stdout": "13\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "numBottles = 15, numExchange = 4\n",
+      "stdout": "19\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/water-bottles/",
+    "en": "https://leetcode.com/problems/water-bottles/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

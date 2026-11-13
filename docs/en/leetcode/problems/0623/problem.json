@@ -1,0 +1,7 @@
+{
+  "id": 623,
+  "summary": "Read a binary tree with at least one node, an integer v, and a depth d. The root has depth 1, and d runs from 1 through one past the current greatest depth. Insert a whole level of new nodes, each holding v, at depth d. For every occupied node at depth d minus 1, create one new left child and one new right child, both holding v. Attach the node's old left branch under the new left child, and attach the old right branch under the new right child. If d is 1, create a new root holding v and attach the old tree as its left branch. Write the tree after the edit.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

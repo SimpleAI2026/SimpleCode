@@ -1,0 +1,8 @@
+{
+  "id": 324,
+  "summary": "Read an unsorted list of integers and rearrange it into a wiggle shape. Starting at index 0, the value at each even index is smaller than the value just after it, and the value at each odd index is larger than the value just after it, so the shape alternates small, large, small, large. The input is guaranteed to have at least one arrangement of this shape. Write the list after rearranging. If several valid arrangements exist, write any one of them.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

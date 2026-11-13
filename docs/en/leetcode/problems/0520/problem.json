@@ -1,0 +1,8 @@
+{
+  "id": 520,
+  "summary": "Read a word that contains only English letters. Its length runs from 1 to 100. Decide whether its capital letters match one of three patterns, and write true or false. In the first pattern, every letter is uppercase. In the second pattern, every letter is lowercase. In the third pattern, only the first letter is uppercase and every later letter is lowercase. A word of one letter that is uppercase also matches the third pattern. Any other mixture fails. Do not ignore the case of a letter in the middle. Judge the characters themselves, not the meaning of the word.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

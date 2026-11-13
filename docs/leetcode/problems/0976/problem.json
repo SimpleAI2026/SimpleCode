@@ -1,0 +1,26 @@
+{
+  "id": 976,
+  "slug": "largest-perimeter-triangle",
+  "summary": "读入若干条正数长度，条数从 3 到 10000，每条长度是 1 到 1000000 的整数。从中挑出三条，当作三角形的三条边。三角形的面积必须大于 0，不能退化成一条线段。在所有满足条件的三条边里，找出周长最大的那一组，并把该周长写出来。如果任意三条都拼不出面积为正的三角形，就写出 0。",
+  "samples": [
+    {
+      "stdin": "[2,1,2]\n",
+      "stdout": "5\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "[1,2,1]\n",
+      "stdout": "0\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/largest-perimeter-triangle/",
+    "en": "https://leetcode.com/problems/largest-perimeter-triangle/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

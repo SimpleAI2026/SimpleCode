@@ -1,0 +1,8 @@
+{
+  "id": 1018,
+  "summary": "Read a sequence of 0s and 1s whose length is at most 30000. For every prefix that begins at the leftmost entry and stops at index i, treat the prefix as a binary integer whose first bit is the high bit. Write true for that index when the integer can be divided by 5 with no remainder, and write false otherwise. Emit the booleans in increasing index order, one per prefix. Each entry of the sequence is either 0 or 1, and indexes begin at zero.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

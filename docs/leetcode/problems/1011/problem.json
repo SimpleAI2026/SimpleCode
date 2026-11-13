@@ -1,0 +1,26 @@
+{
+  "id": 1011,
+  "slug": "capacity-to-ship-packages-within-d-days",
+  "summary": "包裹已经按传送顺序排好，第 i 件的重量记为 weights 的第 i 项。每天只能从尚未运走的最前面连续取若干件，不能跳过或重排，当天重量之和不得超过船的运力。全部包裹要在 D 天内运完。找出可行的最小运力并写出来。约束是 1 小于等于 D，D 小于等于包裹件数，件数小于等于 50000。单件重量是 1 到 500 的整数。",
+  "samples": [
+    {
+      "stdin": "weights = [1,2,3,4,5,6,7,8,9,10], D = 5\n",
+      "stdout": "15\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "weights = [3,2,2,4,1,4], D = 3\n",
+      "stdout": "6\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/capacity-to-ship-packages-within-d-days/",
+    "en": "https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

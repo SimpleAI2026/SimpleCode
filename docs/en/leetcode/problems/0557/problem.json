@@ -1,0 +1,7 @@
+{
+  "id": 557,
+  "summary": "Read one sentence made of words and spaces. Letters sit inside each word, exactly one space stands between neighboring words, and no extra space sits at the start or at the end. Rearrange the letters inside every word from back to front. Keep the sequence of the words unchanged, and keep each space between them in its current place. Write the full sentence produced by that rearrangement.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

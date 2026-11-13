@@ -1,0 +1,8 @@
+{
+  "id": 977,
+  "summary": "Read a list of integers that is already arranged in nondecreasing order. The length is between 1 and 10000, and the absolute value of each integer is at most 10000. Square every entry, producing one new number per entry. Arrange those squares into nondecreasing order and write the arranged list. Because a negative entry becomes positive after squaring, the new order need not follow the original indexes.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

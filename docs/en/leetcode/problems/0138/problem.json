@@ -1,6 +1,6 @@
 {
   "id": 138,
-  "summary": "The public title of this exercise is Copy List With Random Pointer. Read tokens in the same order as the method parameters from standard input and compute the result named by that title, using only those values. Print the result as one line of output. The sample below is a short input written for this playground so the printed line can be checked locally. It is not a copy of an example from the problem site. The input stays under one hundred elements so it finishes quickly in the browser.",
+  "summary": "Read a linked list of n nodes, where n is at most 1000. Every node stores an integer val between -10000 and 10000, plus a random pointer that is either null or aimed at any node of this list. Write a deep copy. Each new node copies val, and its random pointer aims at the corresponding node in the new list rather than at the original node. The new list and the old list must not share nodes.",
   "notes": [
     "Compare after trimming trailing newlines. The input is tokens in the same order as the method parameters."
   ]

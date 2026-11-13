@@ -1,0 +1,26 @@
+{
+  "id": 669,
+  "slug": "trim-a-binary-search-tree",
+  "summary": "读入一棵搜索树的根，以及整数下界 low 和上界 high。删去值不在闭区间内的结点，使留下的每个值都落在 low 与 high 之间。留下的结点必须维持原先的祖先与后代关系。这样处理之后的树是唯一的。写出新的根，它可能不再是原来的根。结点个数在 1 到 10^4 之间，结点值互不相同，每个值以及两个边界都在 0 到 10^4 之间，且下界不超过上界。输入本身已是合法的搜索树。",
+  "samples": [
+    {
+      "stdin": "root = [1,0,2], low = 1, high = 2\n",
+      "stdout": "[1,null,2]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "root = [3,0,4,null,2,null,null,1], low = 1, high = 3\n",
+      "stdout": "[3,2,null,1]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/trim-a-binary-search-tree/",
+    "en": "https://leetcode.com/problems/trim-a-binary-search-tree/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

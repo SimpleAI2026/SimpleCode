@@ -1,0 +1,7 @@
+{
+  "id": 526,
+  "summary": "Read a positive integer N whose maximum value is 15. Place each integer from 1 through N exactly once into a row whose slots are also numbered from 1 through N. A row is a beautiful layout when, for every slot, at least one fact holds: the integer sitting there can be divided evenly by the slot number, or the slot number can be divided evenly by the integer sitting there. Count how many different beautiful layouts exist and write that count.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

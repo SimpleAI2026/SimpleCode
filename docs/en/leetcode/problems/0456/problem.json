@@ -1,0 +1,8 @@
+{
+  "id": 456,
+  "summary": "Read a sequence of n integers where n is less than 15000. A 132 shape means three indexes i, j, and k, with i earlier than j and j earlier than k, while the value at i is smaller than the value at k and the value at k is smaller than the value at j. Decide whether any such triple of indexes exists. Write true when it does and false when it does not.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

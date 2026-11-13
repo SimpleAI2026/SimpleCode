@@ -1,6 +1,6 @@
 {
   "id": 287,
-  "summary": "The public title of this exercise is Find The Duplicate Number. Read tokens in the same order as the method parameters from standard input and compute the result named by that title, using only those values. Print the result as one integer. The sample below is a short input written for this playground so the printed line can be checked locally. It is not a copy of an example from the problem site. The input stays under one hundred elements so it finishes quickly in the browser.",
+  "summary": "Read n plus 1 integers. Each integer lies between 1 and n, with both ends included. Exactly one value occurs more than once, and that value may occur three or more times, while every other value occurs at most once. The list may be read but must not be modified at any position. Find the repeated value and write it. Leave the original list contents unchanged.",
   "notes": [
     "Compare after trimming trailing newlines. The input is tokens in the same order as the method parameters."
   ]

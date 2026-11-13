@@ -1,0 +1,7 @@
+{
+  "id": 815,
+  "summary": "Read from 1 to 500 bus routes. Each route lists from 1 to 500 stops, and every stop number is a nonnegative integer below 10^6. The vehicle on a route cycles through that list without end. A traveler begins at stop S while aboard nothing and may move toward stop T only by boarding. Each boarding of a route counts once. Write the smallest number of boardings that reaches T, or write -1 if T is unreachable.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

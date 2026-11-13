@@ -1,0 +1,8 @@
+{
+  "id": 525,
+  "summary": "Read a sequence made only of the digits 0 and 1. Choose a contiguous stretch in which the digit 0 occurs just as often as the digit 1, and choose the stretch with the greatest length among every balanced stretch. Write how many entries that stretch contains. If the whole sequence has no balanced stretch, write 0. The sequence length runs from 1 to 105, and every entry is either 0 or 1.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

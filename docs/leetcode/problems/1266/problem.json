@@ -1,0 +1,26 @@
+{
+  "id": 1266,
+  "slug": "minimum-time-visiting-all-points",
+  "summary": "读入平面上按先后顺序给出的若干个整点，每个点带有横坐标和纵坐标。必须依照给出的先后顺序走完这些点。每一秒只能做一种移动：单独沿横轴走一格，单独沿纵轴走一格，或者横轴和纵轴同时各走一格。找出从第一个点走到最后一个点所需的最少秒数，并把这个秒数写出来。点数在 1 到 100 之间，每个坐标的绝对值不超过 1000。",
+  "samples": [
+    {
+      "stdin": "points = [[1,1],[3,4],[-1,0]]\n",
+      "stdout": "7\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "points = [[3,2],[-2,2]]\n",
+      "stdout": "5\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/minimum-time-visiting-all-points/",
+    "en": "https://leetcode.com/problems/minimum-time-visiting-all-points/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

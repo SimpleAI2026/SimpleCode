@@ -1,0 +1,8 @@
+{
+  "id": 566,
+  "summary": "Read a matrix along with a pair of positive integers called r and c. Those two integers name the wanted row count and column count. The height and the width of the starting matrix each lie between 1 and 100. Take every cell in row-then-column order and fill a fresh matrix of r rows and c columns in that same order. The reshape is legal only when the starting cell count equals r multiplied by c. Write the fresh matrix when the reshape is legal, and write the starting matrix when it is not.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

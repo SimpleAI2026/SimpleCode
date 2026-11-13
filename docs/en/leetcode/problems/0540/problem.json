@@ -1,0 +1,8 @@
+{
+  "id": 540,
+  "summary": "Read an array of integers that is already arranged in ascending order. Every value appears exactly two times, aside from one value that appears a single time. Find that lone value and write it. The array length runs from 1 to 100000, and each element runs from 0 to 100000. The search must stay within time logarithmic in the length, and the extra memory it uses must stay constant.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

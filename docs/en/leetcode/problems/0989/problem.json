@@ -1,0 +1,8 @@
+{
+  "id": 989,
+  "summary": "Read a row of decimal digits, highest place on the left, together with a second non-negative addend. Rebuild one integer from those digits, add the addend using ordinary base-ten arithmetic, and write the sum as digits with the same place order. If the sum needs one extra high digit, put that digit at the far left. One listed sample adds 34 to 1200 and gets 1234. Another note shows 1231 as the digit row one, two, three, one. Every digit in the written row is an integer from 0 through 9.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

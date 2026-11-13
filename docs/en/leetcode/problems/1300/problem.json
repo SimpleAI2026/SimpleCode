@@ -1,0 +1,8 @@
+{
+  "id": 1300,
+  "summary": "Read an integer array and a target. Choose an integer cap. Every array value larger than the cap is replaced by the cap, while values that do not exceed the cap stay unchanged, and the values are then added. Find the cap whose resulting sum is as close as possible to the target when closeness is measured by absolute difference. If several caps tie, write the smallest cap. The cap does not have to be a number already stored in the array. The length is at most 10^4, and every array value and the target lie between 1 and 10^5.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

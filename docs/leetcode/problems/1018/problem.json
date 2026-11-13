@@ -1,0 +1,26 @@
+{
+  "id": 1018,
+  "slug": "binary-prefix-divisible-by-5",
+  "summary": "读入长度至多 30000 的一条 0、1 序列。对每个从最左端起、到下标 i 为止的前缀，把前缀里的 0 和 1 当成二进制，左边是高位。若该二进制数可以被 5 整除，这一项答案写 true，否则写 false。按 i 从小到大把全部答案依次写出来。序列中的每一项不是 0 就是 1，下标从零开始。",
+  "samples": [
+    {
+      "stdin": "[0,1,1]\n",
+      "stdout": "[true,false,false]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "[1,1,1]\n",
+      "stdout": "[false,false,false]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/binary-prefix-divisible-by-5/",
+    "en": "https://leetcode.com/problems/binary-prefix-divisible-by-5/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

@@ -1,0 +1,26 @@
+{
+  "id": 928,
+  "slug": "minimize-malware-spread-ii",
+  "summary": "读入一张无向图的邻接方阵，边长大于 1 且不超过 300，对角线上全是 1，对称位置的数字相同，每格只取 0 或 1。另外读入一份最初染病的结点名单，名单长度至少为 1 且小于图的边长。只要两个结点之间有边，并且其中至少一个已经染病，另一个也会染病，这个过程一直持续到无法再扩散。现在允许从最初名单里彻底拿掉一个结点，连同它的全部连线一起删除，然后让疾病在剩下的图上扩散。选出删除之后最终染病结点数最少的那个结点。若有多个选择，写出编号最小的一个。",
+  "samples": [
+    {
+      "stdin": "graph = [[1,1,0],[1,1,0],[0,0,1]], initial = [0,1]\n",
+      "stdout": "0\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "graph = [[1,1,0],[1,1,1],[0,1,1]], initial = [0,1]\n",
+      "stdout": "1\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/minimize-malware-spread-ii/",
+    "en": "https://leetcode.com/problems/minimize-malware-spread-ii/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

@@ -1,0 +1,8 @@
+{
+  "id": 1609,
+  "summary": "Read a binary tree that contains from 1 to 100000 nodes, with every stored integer from 1 to 1000000. Treat the root as level 0 and add one to the level number for each younger generation. Every even level must hold only odd integers and must climb as the scan moves from the left side toward the right side, with no ties. Every odd level must hold only even integers and must drop along that same scan, again with no ties. Write true when the whole tree obeys these level rules, and write false when it does not.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

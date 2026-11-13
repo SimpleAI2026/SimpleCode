@@ -1,0 +1,21 @@
+{
+  "id": 526,
+  "slug": "beautiful-arrangement",
+  "summary": "读入一个正整数 N，它最大是 15。把从 1 到 N 的每个整数各用一次，排成一列，位置同样从 1 数到 N。若对每个位置而言，放在那里的数可以被位置编号整除，或者位置编号可以被放在那里的数整除，二者至少成立一个，这列就称为优美排法。统计一共有多少种不同的优美排法，并把这个数目写出来。",
+  "samples": [
+    {
+      "stdin": "2\n",
+      "stdout": "2\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/beautiful-arrangement/",
+    "en": "https://leetcode.com/problems/beautiful-arrangement/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

@@ -1,0 +1,8 @@
+{
+  "id": 1744,
+  "summary": "Read how many candies of each type are in stock. There are at most 105 types, and each stock is at most 105. Types are numbered from zero. A higher type stays locked until every lower type is finished. The calendar starts at day zero, and at least one candy is eaten on every day until the stock is gone. Once a type is finished, a later type may be eaten on that same day. Also read at most 105 queries. Each query names a wished type, a wished day, and a daily cap. The wished day is at most 109. Decide whether that type can be eaten on that day without ever passing the cap. Write true or false for each query in order.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

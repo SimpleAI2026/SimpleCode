@@ -1,0 +1,8 @@
+{
+  "id": 99,
+  "summary": "Read a binary tree that should have followed search order, but exactly two stored integers were exchanged with each other. Keep every parent and child link exactly as it stands. Put those two integers back into the places that restore the order, so each node again has only smaller values on its left and only larger values on its right. Do not insert a node and do not delete a node. When the repair is finished, write the whole tree in the required form.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

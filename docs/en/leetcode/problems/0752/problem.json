@@ -1,0 +1,8 @@
+{
+  "id": 752,
+  "summary": "A lock shows four digits, and each digit runs from 0 through 9. Moving forward from 9 wraps to 0, and moving backward from 0 wraps to 9. The display starts at 0000, and one move changes a single digit by one step. Read a list deadends containing 1 to 500 forbidden codes, each code using four digits, and read a four-digit target that is absent from that list. Reaching a forbidden code freezes the lock permanently. Find the fewest moves that change the start display into the target. Write -1 when every route is blocked.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

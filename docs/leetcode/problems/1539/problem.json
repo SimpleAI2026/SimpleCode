@@ -1,0 +1,26 @@
+{
+  "id": 1539,
+  "slug": "kth-missing-positive-number",
+  "summary": "读入一条严格递增的正整数列 arr，以及正整数 k。从 1 开始的正整数里，有些数从未出现在这条列中。把这些缺失的数按从小到大排好，写出排在第 k 位的那个。列的长度、列里的每个数以及 k 本身，都介于 1 与 1000。",
+  "samples": [
+    {
+      "stdin": "arr = [2,3,4,7,11], k = 5\n",
+      "stdout": "9\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "arr = [1,2,3,4], k = 2\n",
+      "stdout": "6\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/kth-missing-positive-number/",
+    "en": "https://leetcode.com/problems/kth-missing-positive-number/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

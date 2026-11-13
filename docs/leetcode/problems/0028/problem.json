@@ -1,0 +1,26 @@
+{
+  "id": 28,
+  "slug": "find-the-index-of-the-first-occurrence-in-a-string",
+  "summary": "读入两段文本，前一段叫干草堆，后一段叫针。找出针作为连续片段第一次出现在干草堆中的起始位置，位置从 0 开始计数。针若从未出现，写出 -1。针若是空文本，写出 0。逐字符比较，英文字母区分大小写。",
+  "samples": [
+    {
+      "stdin": "haystack = \"hello\", needle = \"ll\"\n",
+      "stdout": "2\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "haystack = \"aaaaa\", needle = \"bba\"\n",
+      "stdout": "-1\n\n\nClarification:\n\nWhat should we return when needle is an empty string? This is a great question to ask during an interview.\n\nFor the purpose of this problem, we will return 0 when needle is an empty string. This is consistent to C's strstr() and Java's indexOf().\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/find-the-index-of-the-first-occurrence-in-a-string/",
+    "en": "https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

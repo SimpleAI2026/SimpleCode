@@ -1,0 +1,26 @@
+{
+  "id": 1137,
+  "slug": "n-th-tribonacci-number",
+  "summary": "有一条下标从 0 开始的数列。第 0 项是 0，第 1 项是 1，第 2 项是 1。当下标 k 不小于 0 时，下标 k 加 3 的那一项等于下标 k、k 加 1 与 k 加 2 这三项相加。读入一个整数 n，范围从 0 到 37。找出第 n 项并把它写出来。这个结果一定能放进 32 位有符号整数，上界是 2 的 31 次方减去 1。",
+  "samples": [
+    {
+      "stdin": "n = 4\n",
+      "stdout": "4\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "n = 25\n",
+      "stdout": "1389537\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/n-th-tribonacci-number/",
+    "en": "https://leetcode.com/problems/n-th-tribonacci-number/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

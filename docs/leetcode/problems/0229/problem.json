@@ -1,0 +1,26 @@
+{
+  "id": 229,
+  "slug": "majority-element-ii",
+  "summary": "读入长度为 n 的一串整数。找出所有出现次数严格多于 n 除以 3 之后向下取整所得之数的数值。每个这样的数值在答案里只写一次。若没有数值达到该次数，就写出空列表。阈值用向下取整，不要改成四舍五入。n 为这些整数的个数。",
+  "samples": [
+    {
+      "stdin": "[3,2,3]\n",
+      "stdout": "[3]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "[1,1,1,3,3,2,2,2]\n",
+      "stdout": "[1,2]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/majority-element-ii/",
+    "en": "https://leetcode.com/problems/majority-element-ii/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

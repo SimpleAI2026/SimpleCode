@@ -1,0 +1,8 @@
+{
+  "id": 1332,
+  "summary": "Read a string built only from the letters a and b. Its length is between 0 and 1000. One operation deletes a single subsequence that reads the same forward and backward. The chosen characters must keep the relative order they had in the original string. Find the fewest operations that remove every character and leave the string empty, and write that count. When the input is already empty, the count is 0.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

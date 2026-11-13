@@ -1,0 +1,21 @@
+{
+  "id": 661,
+  "slug": "image-smoother",
+  "summary": "一张整数格子表表示一幅图的灰度。表中的整数在 0 到 255，行数和列数都在 1 到 150。对每一个格子，用它自己以及周围最多八个邻居的平均值替换原灰度，平均值要向下取整。位于边缘、邻居不到八个的格子，就用实际存在的那些邻居。写出处理之后的整张表。",
+  "samples": [
+    {
+      "stdin": "[[1,1,1],\n[1,0,1],\n[1,1,1]]\n",
+      "stdout": "[[0, 0, 0],\n[0, 0, 0],\n[0, 0, 0]]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/image-smoother/",
+    "en": "https://leetcode.com/problems/image-smoother/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

@@ -1,0 +1,8 @@
+{
+  "id": 457,
+  "summary": "Read a circular array whose length runs from 1 through 5000. Every entry is a nonzero integer from -1000 through 1000. A positive entry moves that many steps toward larger indexes, and a negative entry moves backward by its absolute value. Passing the last index wraps to the first, and passing the first wraps to the last. Decide whether some cycle begins and finishes on one index, contains more than one step, and never mixes the two directions. Write true when such a cycle exists and false otherwise.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

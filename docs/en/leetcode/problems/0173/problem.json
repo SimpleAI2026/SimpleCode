@@ -1,0 +1,7 @@
+{
+  "id": 173,
+  "summary": "Read the root of a binary search tree. Each node stores an integer. Every integer in a left subtree is smaller, and every integer in a right subtree is larger. Build a cursor that reports those integers from small to large. Each next call writes the smallest integer that has not been reported yet. Each hasNext call tells whether any unreported integer remains. Assume next is called only when a remaining integer exists. On average both calls do a fixed amount of work, and extra memory stays proportional to the height. An empty tree is not used to start the cursor.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

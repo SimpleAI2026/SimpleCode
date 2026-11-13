@@ -1,0 +1,8 @@
+{
+  "id": 1208,
+  "summary": "Read two lowercase strings s and t that share one length from 1 to 100000, plus a budget maxCost from 0 to 1000000. Turning the character at one index of s into the character at the same index of t costs the absolute gap between their character codes. Search s for a contiguous span that can be rewritten into the aligned span of t while the summed cost stays within the budget, and make that span as long as possible. Write its length. If no span fits the budget, write 0. The budget bound is 1000000.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

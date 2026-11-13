@@ -1,0 +1,8 @@
+{
+  "id": 1170,
+  "summary": "Score a non-empty lowercase string by finding its alphabetically earliest letter and counting how often that letter occurs. Read two groups of strings: a question group and a comparison bank. Each group holds between 1 and 2000 strings, and every string has length between 1 and 10. For each question, count how many bank entries have a strictly higher score. Write those counts as one integer per question, preserving the question order. Both groups are capped at 2000 strings.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "id": 864,
+  "slug": "shortest-path-to-get-all-keys",
+  "summary": "读入一张网格，行数与列数都至少为 1、至多为 30。圆点表示空地，井号表示墙，艾特符号表示出发点。小写字母是钥匙，大写字母是锁。钥匙的种类在 1 到 6 之间，每种恰好对应一把锁，所用字母按字母表从前往后成对出现。每一步只能朝上下左右走一格，不能走出边界，也不能踩进墙。踩到钥匙就收起来。没有对应钥匙时，锁会挡住去路。写出收齐每一把钥匙的最少步数；办不到就写出 -1。",
+  "samples": [
+    {
+      "stdin": "[\"@.a.#\",\"###.#\",\"b.A.B\"]\n",
+      "stdout": "8\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "[\"@..aA\",\"..B#.\",\"....b\"]\n",
+      "stdout": "6\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/shortest-path-to-get-all-keys/",
+    "en": "https://leetcode.com/problems/shortest-path-to-get-all-keys/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

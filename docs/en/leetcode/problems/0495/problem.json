@@ -1,0 +1,8 @@
+{
+  "id": 495,
+  "summary": "Read attack times in timeSeries and a poison duration in seconds. From left to right the times never get earlier, and equal times are allowed. The count of times runs from 1 to 10000. Each time and the duration lie between 0 and 10000000 inclusive. An attack at second t poisons every second of the closed span from t through t plus duration minus 1. If a new attack arrives before the old span has ended, restart a span of the same length at the new time. Merge every poisoned second and write how many distinct seconds that union covers. Count an overlapping second once.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

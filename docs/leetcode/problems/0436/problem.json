@@ -1,0 +1,26 @@
+{
+  "id": 436,
+  "slug": "find-right-interval",
+  "summary": "读入一组区间。每个区间的右端点都严格大于左端点，而且各区间的左端点互不相同。对每一个区间，寻找另一个区间，使后者的左端点不小于前者的右端点；若有多个候选，保留左端点最小的那个。把该候选在原列表中的下标写出来，找不到时写下 -1。按输入顺序给出每个区间对应的下标。",
+  "samples": [
+    {
+      "stdin": "[ [1,2] ]\n",
+      "stdout": "[-1]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "[ [3,4], [2,3], [1,2] ]\n",
+      "stdout": "[-1, 0, 1]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/find-right-interval/",
+    "en": "https://leetcode.com/problems/find-right-interval/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

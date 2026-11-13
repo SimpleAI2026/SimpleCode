@@ -1,0 +1,26 @@
+{
+  "id": 349,
+  "slug": "intersection-of-two-arrays",
+  "summary": "读入两个整数数组。找出那些至少在两个数组里都出现过的整数。同一个整数无论在某一侧重复多少次，答案里都只写一次。答案的排列顺序没有限制。把这些互不相同的公共整数写出来。",
+  "samples": [
+    {
+      "stdin": "nums1 = [1,2,2,1], nums2 = [2,2]\n",
+      "stdout": "[2]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "nums1 = [4,9,5], nums2 = [9,4,9,8,4]\n",
+      "stdout": "[9,4]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/intersection-of-two-arrays/",
+    "en": "https://leetcode.com/problems/intersection-of-two-arrays/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

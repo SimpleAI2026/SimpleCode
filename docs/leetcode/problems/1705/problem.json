@@ -1,0 +1,26 @@
+{
+  "id": 1705,
+  "slug": "maximum-number-of-eaten-apples",
+  "summary": "读入一对等长的整数序列，名字分别是 apples 与 days，共同长度记为 n。n 介于 1 和 2 乘 10000，两个数组里的数都介于 0 和 2 乘 10000。第 i 天新长出 apples 里第 i 个那么多果子，这些果子再过 days 里对应的天数就腐烂，不能再吃；只有两边同时为 0 时这一天才没有新果子。每天最多吃一个，而且可以在 n 天结束后继续吃还没坏的。找出最多能吃掉多少个，并写出来。",
+  "samples": [
+    {
+      "stdin": "apples = [1,2,3,5,2], days = [3,2,1,4,2]\n",
+      "stdout": "7\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "apples = [3,0,0,0,0,2], days = [3,0,0,0,0,2]\n",
+      "stdout": "5\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/maximum-number-of-eaten-apples/",
+    "en": "https://leetcode.com/problems/maximum-number-of-eaten-apples/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

@@ -1,0 +1,8 @@
+{
+  "id": 1446,
+  "summary": "Read a string made only of lowercase English letters. Define its power as the length of a nonempty stretch that repeats one letter from start to end of that stretch. Among all such stretches, take the longest length and write it. The string length is from 1 to 500 inclusive, and uppercase letters, digits, and spaces do not occur.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "id": 376,
+  "summary": "Read a list of integers. Its length is from 1 to 1000 inclusive, and every integer is from 0 to 1000 inclusive. Call the list a wiggle when successive differences strictly switch sign, while the sign of the opening difference may be either one. A list with fewer than two numbers is still a wiggle. Dropping some numbers is allowed, but whatever remains must keep its prior relative order. Write how many numbers sit in the longest wiggle you can obtain.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

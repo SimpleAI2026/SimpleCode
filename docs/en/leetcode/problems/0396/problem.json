@@ -1,0 +1,8 @@
+{
+  "id": 396,
+  "summary": "Read an integer sequence of length n, with n from 1 to 105 and each element from -100 to 100. Shifting the sequence clockwise by k places changes which value sits at each index. The score adds index times the shifted value for every index. k may be any integer from 0 through n minus 1. Write the largest score. The answer always fits in a signed 32-bit integer.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

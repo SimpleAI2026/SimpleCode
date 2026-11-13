@@ -1,0 +1,8 @@
+{
+  "id": 1295,
+  "summary": "Read a list of positive integers. For each integer, count how many decimal digits its written form uses. Keep the integer when that digit count is even, and skip it when the count is odd. Write how many integers in the list have an even digit count. The list length is between 1 and 500, and each integer is between 1 and 10^5. A one-digit value uses a single digit, so it is skipped. Two-digit values and every longer even length are kept.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

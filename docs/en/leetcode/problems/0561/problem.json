@@ -1,0 +1,7 @@
+{
+  "id": 561,
+  "summary": "Read 2n integers. The positive integer n lies between 1 and 10000, and every integer lies between -10000 and 10000. Match the integers into n groups of two. From each group keep only the smaller integer, then add the kept integers. Find a matching that makes this sum as large as it can be, and write that greatest sum.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

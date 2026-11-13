@@ -1,0 +1,8 @@
+{
+  "id": 1004,
+  "summary": "Read a row that stores only 0 and 1, together with an integer K. At most K entries that are 0 may be rewritten as 1, and every remaining entry must stay as it is. After the rewrites, find a contiguous span filled entirely with ones whose length is as large as possible, and write that length. The row length is at most 20000. K is an integer from 0 through the row length. A span that is already filled with ones without any rewrite still counts at its real length.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": 561,
+  "slug": "array-partition",
+  "summary": "读入 2n 个整数。n 是 1 到 10000 之间的正整数，每个整数落在负 10000 到正 10000。把这些整数配成 n 组，每组两个。每一组只保留较小的那个数，再把各组留下的数相加。找出一种分组方式，使这个和最大，并把这个最大和写出来。",
+  "samples": [
+    {
+      "stdin": "[1,4,3,2]\n",
+      "stdout": "4\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/array-partition/",
+    "en": "https://leetcode.com/problems/array-partition/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

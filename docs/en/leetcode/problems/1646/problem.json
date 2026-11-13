@@ -1,0 +1,8 @@
+{
+  "id": 1646,
+  "summary": "Read an integer n from 0 to 100. Build a list whose length is n plus 1. Slot 0 stores 0 and slot 1 stores 1. Whenever an index i makes twice i fall between 2 and n inclusive, the even slot at twice i copies the number stored at i. Whenever twice i plus 1 also falls between 2 and n inclusive, that odd slot stores the sum of the numbers at i and at i plus 1. Write the largest integer stored anywhere in the finished list.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

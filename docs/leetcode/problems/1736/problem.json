@@ -1,0 +1,26 @@
+{
+  "id": 1736,
+  "slug": "latest-time-by-replacing-hidden-digits",
+  "summary": "读入四个钟面数字，中间夹着一个冒号，其中若干位写成问号。每个问号都要换成一位十进制数字，使结果表示当天真实存在的时刻。最早的合法时刻是零点整，最迟的合法时刻是二十三点五十九分，两端都算合法。在所有能通过校验的填法里，找出钟面上最晚的一个，并按两位、冒号、两位的样子写出来。输入保证至少有一种填法合法。",
+  "samples": [
+    {
+      "stdin": "time = \"2?:?0\"\n",
+      "stdout": "\"23:50\"\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "time = \"0?:3?\"\n",
+      "stdout": "\"09:39\"\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/latest-time-by-replacing-hidden-digits/",
+    "en": "https://leetcode.com/problems/latest-time-by-replacing-hidden-digits/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

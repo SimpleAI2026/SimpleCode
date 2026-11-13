@@ -1,0 +1,7 @@
+{
+  "id": 781,
+  "summary": "Read at most 1000 answers, each an integer from 0 through 999. A rabbit that speaks states how many companions share its color, not counting itself. Every speaker of one color must state the same companion count, while silent rabbits leave no record. Find a color assignment that agrees with every answer and uses as few rabbits as possible, then write that smallest total.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

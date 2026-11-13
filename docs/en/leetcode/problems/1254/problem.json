@@ -1,0 +1,8 @@
+{
+  "id": 1254,
+  "summary": "Read a rectangular grid whose cells hold only 0 or 1. A 0 is land and a 1 is water. Land cells that touch through the four straight directions belong to one island. Count an island as enclosed when it does not touch the outer border and every cell immediately outside its land is water. Find how many enclosed islands the grid contains and write that count. Both the number of rows and the number of columns are between 1 and 100.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

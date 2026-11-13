@@ -1,0 +1,21 @@
+{
+  "id": 106,
+  "slug": "construct-binary-tree-from-inorder-and-postorder-traversal",
+  "summary": "读入两条长度相同的整数序列。前面一条是某棵二叉树的中序访问次序，后面一条是它的后序访问次序。结点上的整数没有重复。后序末尾那个值是根，再到中序中定位这个根，它左方的一段是左侧，右方的一段是右侧，然后对两侧重复同样的划分。写出还原得到的树。两条序列若为空，结果就是一棵空树。",
+  "samples": [
+    {
+      "stdin": "inorder = [9,3,15,20,7]\npostorder = [9,15,7,20,3]\n",
+      "stdout": "the following binary tree:\n\n3\n/ \\\n9 20\n/ \\\n15 7\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/construct-binary-tree-from-inorder-and-postorder-traversal/",
+    "en": "https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

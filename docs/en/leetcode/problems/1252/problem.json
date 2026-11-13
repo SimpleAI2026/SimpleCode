@@ -1,0 +1,8 @@
+{
+  "id": 1252,
+  "summary": "Prepare an n-by-m table whose cells all start at 0. Both n and m are integers from 1 to 50. Then read between 1 and 100 operations. Each operation names one row and one column. Indexes start at 0 and stay inside the table. The operation adds 1 to every cell of that row and every cell of that column, so the cell where they cross is increased twice. After all operations finish, count the cells whose current value is odd and write the count. The operation bound is 100.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

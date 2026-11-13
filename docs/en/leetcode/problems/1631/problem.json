@@ -1,0 +1,8 @@
+{
+  "id": 1631,
+  "summary": "Read a grid of heights with from 1 to 100 rows and from 1 to 100 columns. Every cell stores an integer from 1 to 1000000. Begin in the upper-left cell. Each step may enter only the neighboring cell directly above, below, left, or right. The walk must finish in the lower-right cell. The toll of a walk is the biggest absolute height gap between two cells that the walk enters one after another. Among walks that reach the finish cell, write the smallest toll.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

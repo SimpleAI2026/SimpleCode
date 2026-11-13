@@ -1,0 +1,8 @@
+{
+  "id": 1337,
+  "summary": "Read an m by n matrix and an integer k. Each row contains only 1 and 0. A 1 marks a soldier and a 0 marks a civilian, and every 1 in a row stands before every 0. A row is weaker when it contains fewer soldiers. When two rows contain the same soldier count, the row with the smaller index is weaker. Find the k weakest rows and write their indexes from weakest toward strongest. Both m and n are between 2 and 100, and k is between 1 and the row count m.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

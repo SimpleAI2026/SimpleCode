@@ -1,0 +1,8 @@
+{
+  "id": 547,
+  "summary": "Read an integer N and an N by N square table, with N from 1 to 200. A 1 at row i and column j means two classmates know one another directly, while 0 means that direct link is missing. Every diagonal cell is 1, and the table is symmetric, so a link from i to j also appears from j to i. Acquaintance chains together, and classmates joined directly or through such a chain belong to one group. Write how many groups there are in total.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

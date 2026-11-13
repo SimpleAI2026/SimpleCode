@@ -1,0 +1,26 @@
+{
+  "id": 825,
+  "slug": "friends-of-appropriate-ages",
+  "summary": "读入若干人的年龄，人数等于数组长度，介于1和2乘10000之间，每个年龄是1到120的整数。记两名不同用户为x与y。只要下面任一情况成立，x就不会向y发出好友请求：y的年龄不超过x的年龄的一半再加7，y的年龄大于x，或者y超过100而x小于100。其余情况下x会发出请求。请求不必被回送，也不能发给自己。统计产生的请求总数并写出来。",
+  "samples": [
+    {
+      "stdin": "ages = [16,16]\n",
+      "stdout": "2\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "ages = [16,17,18]\n",
+      "stdout": "2\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/friends-of-appropriate-ages/",
+    "en": "https://leetcode.com/problems/friends-of-appropriate-ages/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

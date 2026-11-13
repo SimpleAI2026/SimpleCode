@@ -1,0 +1,26 @@
+{
+  "id": 290,
+  "slug": "word-pattern",
+  "summary": "读入一个模式串和一串单词。单词之间只用一个空格分隔。模式串只包含小写字母，每个单词也只包含小写字母。判断单词串是否与模式完全对应：每个字母只对应一个非空单词，不同字母对应不同单词，并且从左到右逐个对齐。把是否对应写出来。单词不能为空，空格也不能连在一起。",
+  "samples": [
+    {
+      "stdin": "pattern = \"abba\", str = \"dog cat cat dog\"\n",
+      "stdout": "true\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "pattern = \"abba\", str = \"dog cat cat fish\"\n",
+      "stdout": "false\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/word-pattern/",
+    "en": "https://leetcode.com/problems/word-pattern/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

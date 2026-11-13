@@ -1,0 +1,26 @@
+{
+  "id": 845,
+  "slug": "longest-mountain-in-array",
+  "summary": "读入一列整数，长度可以是 0，最多到 10000，每个整数也在 0 到 10000 之间。若一段连续位置先严格变大，到达一个顶点后再严格变小，而且顶点左右都至少还有一个数，这段就称为一座山，因此长度至少为 3。找出跨越位置最多的那座山，把它的长度写出来。如果整列里一座山都没有，写出 0。",
+  "samples": [
+    {
+      "stdin": "[2,1,4,7,3,2,5]\n",
+      "stdout": "5\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "[2,2,2]\n",
+      "stdout": "0\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/longest-mountain-in-array/",
+    "en": "https://leetcode.com/problems/longest-mountain-in-array/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

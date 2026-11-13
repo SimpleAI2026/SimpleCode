@@ -1,0 +1,8 @@
+{
+  "id": 344,
+  "summary": "Read a row of characters, each of which is printable ASCII. Reverse that row where it already lives, so the leftmost character moves to the rightmost slot and every other character moves to its mirrored slot. Do not request a second row to store the outcome, and keep extra memory constant. After the swaps, write the same row.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

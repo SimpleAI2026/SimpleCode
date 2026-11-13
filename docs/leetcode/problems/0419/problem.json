@@ -1,0 +1,26 @@
+{
+  "id": 419,
+  "slug": "battleships-in-a-board",
+  "summary": "读入 m 行 n 列的棋盘，行数和列数都在 1 到 200 之间。字符 X 代表舰体，字符点代表空海。一艘船由同一行或同一列上连续的若干个 X 组成，因此船身是横条或竖条。两艘船至少隔着一格空海，彼此不会贴在一起，斜角也不算相连。写出船的数量。",
+  "samples": [
+    {
+      "stdin": "board = [[\"X\",\".\",\".\",\"X\"],[\".\",\".\",\".\",\"X\"],[\".\",\".\",\".\",\"X\"]]\n",
+      "stdout": "2\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "board = [[\".\"]]\n",
+      "stdout": "0\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/battleships-in-a-board/",
+    "en": "https://leetcode.com/problems/battleships-in-a-board/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

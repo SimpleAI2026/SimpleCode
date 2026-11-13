@@ -1,0 +1,21 @@
+{
+  "id": 623,
+  "slug": "add-one-row-to-tree",
+  "summary": "读入一棵至少含有一个结点的二叉树、整数 v，以及深度 d。根所在深度记为 1，d 从 1 取到原树最大深度再加 1。要在深度 d 插入一整层，新结点的值都是 v。对深度正好等于 d 减 1 的每个非空结点，新建一左一右两个孩子，值都为 v，并把该结点原有的左侧结构挂到新的左孩子下面，原有的右侧结构挂到新的右孩子下面。若 d 为 1，就新建值为 v 的根，旧树整体成为它的左侧结构。写出修改后的树。",
+  "samples": [
+    {
+      "stdin": "4 2 6 3 1 5\n1\n2\n",
+      "stdout": "4 1 1 2 null null 6 3 1 5\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/add-one-row-to-tree/",
+    "en": "https://leetcode.com/problems/add-one-row-to-tree/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

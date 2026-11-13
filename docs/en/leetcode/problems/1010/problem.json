@@ -1,0 +1,8 @@
+{
+  "id": 1010,
+  "summary": "Read the length of each song in seconds. Count index pairs whose earlier index is smaller than the later index and whose lengths add to a multiple of 60. Write how many such pairs exist. The song count is at most 6 times 104, and each length is an integer from 1 through 500. A song is never paired with itself, and two orders of the same indexes count once because only the increasing index order is kept.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

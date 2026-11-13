@@ -1,0 +1,26 @@
+{
+  "id": 2021,
+  "slug": "brightest-position-on-street",
+  "summary": "用数轴表示一条笔直街道。读入至多 105 盏路灯，每盏灯给出中心与半径。中心落在负 108 到正 108 之间，半径介于 0 和 108。一盏灯覆盖从中心减去半径到中心加上半径的每个整数点，两端都算。某个整数点的亮度等于覆盖它的灯数。找出亮度最高的整数点；若有多个，写出坐标最小的那个。",
+  "samples": [
+    {
+      "stdin": "lights = [[-3,2],[1,2],[3,3]]\n",
+      "stdout": "-1\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "lights = [[1,0],[0,1]]\n",
+      "stdout": "1\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/brightest-position-on-street/",
+    "en": "https://leetcode.com/problems/brightest-position-on-street/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

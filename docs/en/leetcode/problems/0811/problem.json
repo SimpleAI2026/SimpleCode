@@ -1,0 +1,8 @@
+{
+  "id": 811,
+  "summary": "Read at most 100 visit records. Each record holds a count of at most 10000, one space, and then a domain. A domain has length at most 100 and contains exactly one or two periods. Visiting a domain also adds the same count to every parent obtained by dropping labels from the left, one label at a time. Find every domain that shows up, together with its summed count, and write lines of count, space, and domain in any order.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

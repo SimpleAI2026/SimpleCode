@@ -1,0 +1,26 @@
+{
+  "id": 299,
+  "slug": "bulls-and-cows",
+  "summary": "读入两串长度相等的数字，第一串是秘密数字，第二串是一次猜测。某一位的数字和位置都相同，算一头公牛。数字在秘密数字中出现、但这一位对不上，算一头奶牛。同一位不能同时计入公牛和奶牛。重复数字按各自出现的次数来配对。把提示写成 xAyB。这里 x 记公牛有几头，y 记奶牛有几头。两串长度从 1 到 1000。",
+  "samples": [
+    {
+      "stdin": "secret = \"1807\", guess = \"7810\"\n",
+      "stdout": "\"1A3B\"\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "secret = \"1123\", guess = \"0111\"\n",
+      "stdout": "\"1A1B\"\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/bulls-and-cows/",
+    "en": "https://leetcode.com/problems/bulls-and-cows/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

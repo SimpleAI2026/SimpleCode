@@ -1,0 +1,26 @@
+{
+  "id": 164,
+  "slug": "maximum-gap",
+  "summary": "读入若干非负整数，每个整数都能放进 32 位有符号整数的范围。按从小到大的次序理解这些数，再看排好之后彼此紧挨的两项，把它们差值里最大的那个写出来。若个数不足两个，直接写 0。运算步数和额外占用都要与个数成正比。相等的数挨在一起时，它们的差是 0，真正要找的是所有相邻差里的最大值。",
+  "samples": [
+    {
+      "stdin": "[3,6,9,1]\n",
+      "stdout": "3\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "[10]\n",
+      "stdout": "0\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/maximum-gap/",
+    "en": "https://leetcode.com/problems/maximum-gap/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

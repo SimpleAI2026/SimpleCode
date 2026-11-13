@@ -1,0 +1,26 @@
+{
+  "id": 589,
+  "slug": "n-ary-tree-preorder-traversal",
+  "summary": "读入一棵可以有多个孩子的树，结点个数在 0 到 104 之间，每个结点保存的整数在 0 到 10000 之间，树的高度不超过 1000。按先根次序写出结点上的数：先写当前结点，再从左到右处理各棵子树。空树就写出空序列。输入按层排列，同一父结点的孩子组之间用空标记隔开。",
+  "samples": [
+    {
+      "stdin": "root = [1,null,3,2,4,null,5,6]\n",
+      "stdout": "[1,3,5,6,2,4]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "root = [1,null,2,3,4,5,null,null,6,7,null,8,null,9,10,null,null,11,null,12,null,13,null,null,14]\n",
+      "stdout": "[1,2,3,6,7,11,14,4,8,12,5,9,13,10]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/n-ary-tree-preorder-traversal/",
+    "en": "https://leetcode.com/problems/n-ary-tree-preorder-traversal/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

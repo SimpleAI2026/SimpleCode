@@ -1,0 +1,8 @@
+{
+  "id": 493,
+  "summary": "Read a list of integers whose length is at most 50000. Every integer fits in a 32 bit integer. When index i is strictly smaller than index j, and the value at i is strictly larger than twice the value at j, record that index pair as one flip pair. Count how many flip pairs exist and write the count. Count each index pair only once. Equal values fail the twice test, and one index cannot form a pair with itself. When no pair exists, write 0.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": 707,
+  "slug": "design-linked-list",
+  "summary": "实现一条下标从 0 计起的链表，单向或双向都可以。按下标取值，下标非法时写出 -1。在链的最前插入一个值，使新结点成为第一个。在链的最后接上一个值。在指定下标之前插入一个值；下标刚好等于当前长度时接到最后，下标更大时不做任何事。按下标删掉结点，下标非法时链表保持不动。所有的值都在 1 到 1000 之间，操作次数也在 1 到 1000 之间。不要使用语言自带的链表类型。",
+  "samples": [
+    {
+      "stdin": "linkedList.addAtHead(1)\nlinkedList.addAtTail(3)\nlinkedList.addAtIndex(1, 2)\nlinkedList.get(1)\nlinkedList.deleteAtIndex(1)\nlinkedList.get(1)\n",
+      "stdout": "2->3\n2\n3\n3\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/design-linked-list/",
+    "en": "https://leetcode.com/problems/design-linked-list/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

@@ -1,0 +1,8 @@
+{
+  "id": 1461,
+  "summary": "Read a string s that contains only the characters 0 and 1, plus an integer k. Decide whether every pattern of length exactly k built from those two characters appears somewhere inside s as a contiguous piece. Write true when every pattern appears and false when any pattern is missing. The length of s is from 1 to 5 times 10^5, and k is from 1 to 20.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

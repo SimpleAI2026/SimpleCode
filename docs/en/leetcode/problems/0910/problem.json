@@ -1,0 +1,8 @@
+{
+  "id": 910,
+  "summary": "Read a sequence A of nonnegative integers together with a nonnegative integer K. The length of A, every value in A, and K are all at most 10000. For each value, either add K or subtract K, and make that change only once. Call the finished sequence B. Write the smallest gap that can occur between the largest value in B and the smallest value in B.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

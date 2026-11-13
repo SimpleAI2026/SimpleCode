@@ -1,0 +1,21 @@
+{
+  "id": 519,
+  "slug": "random-flip-matrix",
+  "summary": "准备一个 m 行 n 列的矩阵，一开始每个格子都是 0。m 和 n 都从 1 到 10000。请实现三个操作。构造时读入 m 和 n。flip 在仍然等于 0 的格子中均匀随机选一个，把它改成 1，并返回这个格子的行下标和列下标，下标从 0 计。每次调用 flip 时，至少还剩一个 0。reset 把所有格子重新改回 0。flip 与 reset 加在一起最多调用 1000 次。每个当前为 0 的格子被选中的概率必须相同。",
+  "samples": [
+    {
+      "stdin": "[\"Solution\", \"flip\", \"flip\", \"flip\", \"reset\", \"flip\"]\n[[3, 1], [], [], [], [], []]\n",
+      "stdout": "[null, [1, 0], [2, 0], [0, 0], null, [2, 0]]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/random-flip-matrix/",
+    "en": "https://leetcode.com/problems/random-flip-matrix/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

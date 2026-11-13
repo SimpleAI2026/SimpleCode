@@ -1,0 +1,8 @@
+{
+  "id": 692,
+  "summary": "Read a word list that is not empty and a positive integer k. Each word is spelled with lowercase English letters only. Count the occurrences of every word and pick the k words whose counts are the highest. Write them so that a larger count comes before a smaller count. When two counts match, the word that comes earlier in dictionary order is written first. k is never larger than the number of distinct words. Compare entire spellings. There is no uppercase, so letter case never changes the order.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

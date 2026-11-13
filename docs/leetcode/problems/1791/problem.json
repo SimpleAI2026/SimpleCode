@@ -1,0 +1,26 @@
+{
+  "id": 1791,
+  "slug": "find-center-of-star-graph",
+  "summary": "读入一组无向边。节点用 1 到 n 编号，n 介于 3 和 100000 之间，边数恰好等于 n 减 1。这些边组成一颗星：有且仅有一个枢纽，它与其余每个节点各连一条边，此外不存在任何额外连线。找出这个枢纽的编号并写出来。输入保证这些边确实是一颗合法的星。",
+  "samples": [
+    {
+      "stdin": "edges = [[1,2],[2,3],[4,2]]\n",
+      "stdout": "2\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "edges = [[1,2],[5,1],[1,3],[1,4]]\n",
+      "stdout": "1\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/find-center-of-star-graph/",
+    "en": "https://leetcode.com/problems/find-center-of-star-graph/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

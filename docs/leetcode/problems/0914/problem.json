@@ -1,0 +1,26 @@
+{
+  "id": 914,
+  "slug": "x-of-a-kind-in-a-deck-of-cards",
+  "summary": "读入一副纸牌，每张牌面写着一个整数。牌的张数至多 10000，牌面整数满足不小于 0 且小于 10000。判断是否存在不小于 2 的整数 X，能够把全部纸牌分成一组或多组，每组恰好有 X 张，而且同一组里的牌面整数彼此相同。存在这样的 X 就写 true，否则写 false。",
+  "samples": [
+    {
+      "stdin": "deck = [1,2,3,4,4,3,2,1]\n",
+      "stdout": "true\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "deck = [1]\n",
+      "stdout": "false\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/x-of-a-kind-in-a-deck-of-cards/",
+    "en": "https://leetcode.com/problems/x-of-a-kind-in-a-deck-of-cards/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

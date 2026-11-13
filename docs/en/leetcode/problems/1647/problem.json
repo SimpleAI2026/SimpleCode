@@ -1,0 +1,8 @@
+{
+  "id": 1647,
+  "summary": "Read a string that contains only lowercase English letters and whose length is from 1 to 105. The frequency of a letter is the number of times that letter shows up. The string qualifies when every pair of different letters has two different frequencies. One deletion removes a single character. Write the smallest count of deletions that makes the string qualify.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

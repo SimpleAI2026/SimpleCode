@@ -1,0 +1,8 @@
+{
+  "id": 383,
+  "summary": "Read two texts made only of lowercase English letters. The first text is a note and the second is a pool of letters cut from a magazine. Each length is between 1 and 100000. Every letter in the pool may be used at most once. Write true when the note can be assembled from that pool, and write false when some letter runs short.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

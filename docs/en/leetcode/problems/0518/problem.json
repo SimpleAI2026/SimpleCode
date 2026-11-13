@@ -1,6 +1,6 @@
 {
   "id": 518,
-  "summary": "The public title of this exercise is Coin Change II. Read tokens in the same order as the method parameters from standard input and compute the result named by that title, using only those values. Print the result as one integer. The sample below is a short input written for this playground so the printed line can be checked locally. It is not a copy of an example from the problem site. The input stays under one hundred elements so it finishes quickly in the browser.",
+  "summary": "Read distinct coin denominations and a target amount. The denomination count runs from 1 to 300, each denomination runs from 1 to 5000, and amount runs from 0 to 5000. You may take as many coins as you want of each denomination. Count the combinations whose chosen denominations add up to exactly amount, and write that count. A combination records only how many coins of each denomination are used, not the sequence of picking them. Write 0 when no combination reaches the amount. The count fits in a signed 32 bit integer. When amount is 0, using no coins counts as one combination.",
   "notes": [
     "Compare after trimming trailing newlines. The input is tokens in the same order as the method parameters."
   ]

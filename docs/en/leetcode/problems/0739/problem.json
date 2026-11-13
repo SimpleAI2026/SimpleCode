@@ -1,6 +1,6 @@
 {
   "id": 739,
-  "summary": "The public title of this exercise is Daily Temperatures. Read tokens in the same order as the method parameters from standard input and compute the result named by that title, using only those values. Print the result as integers on one line, separated by spaces. The sample below is a short input written for this playground so the printed line can be checked locally. It is not a copy of an example from the problem site. The input stays under one hundred elements so it finishes quickly in the browser.",
+  "summary": "Read a sequence of daily temperatures stored in chronological order. For each day, look only at later days and find the soonest one whose temperature is strictly higher than the temperature on the current day. Write how many days separate those two dates. When no later day is warmer, write 0 at the current position. Print one integer for every input day and keep the same order as the temperatures you read.",
   "notes": [
     "Compare after trimming trailing newlines. The input is tokens in the same order as the method parameters."
   ]

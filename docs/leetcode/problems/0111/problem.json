@@ -1,0 +1,21 @@
+{
+  "id": 111,
+  "slug": "minimum-depth-of-binary-tree",
+  "summary": "读入一棵二叉树。找出从根走到最近叶子所经过的结点个数，该个数称为最小深度。叶子是指左右孩子都不存在的结点。如果根只有一边连着孩子，必须继续往下走到真正的叶子，不能把根当成终点。仅有根时答案是一，空树的答案是零。把答案写成整数。存储的整数里可以包含 20，深度与这些整数无关。",
+  "samples": [
+    {
+      "stdin": "binary tree [3,9,20,null,null,15,7],\n\n3\n/ \\\n9 20\n/ \\\n15 7\n",
+      "stdout": "its minimum depth = 2.\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/minimum-depth-of-binary-tree/",
+    "en": "https://leetcode.com/problems/minimum-depth-of-binary-tree/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

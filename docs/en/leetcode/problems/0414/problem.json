@@ -1,0 +1,8 @@
+{
+  "id": 414,
+  "summary": "Read an integer array that is not empty. Ignore values that appear more than once, then find the third biggest distinct value and write it. If there are fewer than three distinct values, write the biggest value instead. The running time should stay proportional to the length of the array.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

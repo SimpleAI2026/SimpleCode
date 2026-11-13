@@ -1,0 +1,8 @@
+{
+  "id": 83,
+  "summary": "Read a singly linked list whose stored numbers are already arranged in non-decreasing order. Drop repeated nodes so that each number keeps only the first node that stores it. Later nodes that store that same number are removed. Distinct numbers keep the order they already had relative to each other. Write the list after this cleanup. Under this rule a number that appears is still kept once, rather than being wiped out as a whole group. An empty list stays empty after cleanup.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

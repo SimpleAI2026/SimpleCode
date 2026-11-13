@@ -1,6 +1,6 @@
 {
   "id": 49,
-  "summary": "The public title of this exercise is Group Anagrams. Read a count followed by that many strings from standard input and compute the result named by that title, using only those values. Print the result as one line of output. The sample below is a short input written for this playground so the printed line can be checked locally. It is not a copy of an example from the problem site. The input stays under one hundred elements so it finishes quickly in the browser.",
+  "summary": "Read several words that contain only lowercase English letters. When two words use the same letters and the same count of each letter, and differ only by order, place them in one family. Split the full list into such families and write the words of each family together. Families may be written in any order, and words inside a family may be written in any order. Every word belongs to exactly one family.",
   "notes": [
     "Compare after trimming trailing newlines. The input is a count followed by that many strings."
   ]

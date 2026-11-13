@@ -1,0 +1,8 @@
+{
+  "id": 1678,
+  "summary": "Read one command string whose length sits between 1 and 100. The text is formed only by the tokens G, (), and (al), arranged in any order. Keep every lone G as the letter G. Replace every empty pair of parentheses with the single letter o. Replace every (al) token with the two letters al. After each token has been replaced, join the pieces from left to right without inserting extra characters, and write that final string.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": 107,
+  "slug": "binary-tree-level-order-traversal-ii",
+  "summary": "读入一棵结点存放整数的二叉树。先按从顶向下、每层由左到右的方式把结点分成若干层，再把这些层的先后整个倒过来，使最接近叶子的一层排到最前面，根所在的一层排到最后面。每一层仍然单独成组。写出倒转之后的各组。空树写成空列表。结点值允许等于 20，也允许是任何其他整数。",
+  "samples": [
+    {
+      "stdin": "binary tree [3,9,20,null,null,15,7],\n\n\n3\n/ \\\n9 20\n/ \\\n15 7\n",
+      "stdout": "its bottom-up level order traversal as:\n\n\n\n[\n[15,7],\n[9,20],\n[3]\n]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/binary-tree-level-order-traversal-ii/",
+    "en": "https://leetcode.com/problems/binary-tree-level-order-traversal-ii/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

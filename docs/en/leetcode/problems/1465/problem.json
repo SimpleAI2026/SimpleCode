@@ -1,0 +1,8 @@
+{
+  "id": 1465,
+  "summary": "Read the height h and the width w of a rectangular cake, plus a list of horizontal cut distances and a list of vertical cut distances. A horizontal distance is measured down from the top edge, and a vertical distance is measured in from the left edge. After every listed cut is applied, find the piece with the greatest area and write that area modulo 10^9 plus 7. Both h and w lie between 2 and 10^9. Each cut list has at least one entry and is shorter than the smaller of the matching side and 100000. Cut positions are distinct and fall strictly inside the cake.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "id": 497,
+  "slug": "random-point-in-non-overlapping-rectangles",
+  "summary": "读入若干互不重叠的矩形，每条边都与坐标轴平行。第 i 个矩形记为 [x1, y1, x2, y2]，左下角是 x1、y1，右上角是 x2、y2。矩形个数从 1 到 100，每条边的长度都不超过 2000。边上的整数坐标点也算被覆盖。请写出函数 pick。每次调用都在全部被覆盖的整数点里均匀抽取一个，每个整数点机会相同，并以 [p_x, p_y] 返回。pick 最多调用 10000 次。不要按矩形个数平均，而要按点来平均。",
+  "samples": [
+    {
+      "stdin": "[\"Solution\",\"pick\",\"pick\",\"pick\"]\n[[[[1,1,5,5]]],[],[],[]]\n",
+      "stdout": "[null,[4,1],[4,1],[3,3]]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "[\"Solution\",\"pick\",\"pick\",\"pick\",\"pick\",\"pick\"]\n[[[[-2,-2,-1,-1],[1,0,3,0]]],[],[],[],[],[]]\n",
+      "stdout": "[null,[-1,-2],[2,0],[-2,-1],[3,0],[-2,-2]]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/random-point-in-non-overlapping-rectangles/",
+    "en": "https://leetcode.com/problems/random-point-in-non-overlapping-rectangles/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

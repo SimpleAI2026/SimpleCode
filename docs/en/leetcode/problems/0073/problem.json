@@ -1,6 +1,6 @@
 {
   "id": 73,
-  "summary": "The public title of this exercise is Set Matrix Zeroes. Read tokens in the same order as the method parameters from standard input and compute the result named by that title, using only those values. Print the result as the input value after the method updates it. The sample below is a short input written for this playground so the printed line can be checked locally. It is not a copy of an example from the problem site. The input stays under one hundred elements so it finishes quickly in the browser.",
+  "summary": "Read an integer matrix whose row count m and column count n are both from 1 through 200, ends included. Whenever a cell of the original matrix holds 0, change every cell of that same horizontal line to 0, and change every cell of that same vertical line to 0. Effects from several zeros combine. Choose the lines to clear only from cells that were already 0 before any edit, so a 0 written during the edit must not spread. Edit this matrix directly and write every finished row.",
   "notes": [
     "Compare after trimming trailing newlines. The input is tokens in the same order as the method parameters."
   ]

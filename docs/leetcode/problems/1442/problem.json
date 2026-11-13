@@ -1,0 +1,26 @@
+{
+  "id": 1442,
+  "slug": "count-triplets-that-can-form-two-arrays-of-equal-xor",
+  "summary": "读入整数列 arr。要数出三下标 i、j、k 的组数。下标从 0 起，i 必须小于 j，j 必须小于等于 k，k 必须小于列长。把从 i 一直到 j 前一格的所有数做按位异或，再把从 j 一直到 k 的所有数做按位异或，只有两段结果相同才算一组。把组数写出来。列长介于 1 与 300，每个数介于 1 与 100000000。",
+  "samples": [
+    {
+      "stdin": "arr = [2,3,1,6,7]\n",
+      "stdout": "4\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "arr = [1,1,1,1,1]\n",
+      "stdout": "10\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/count-triplets-that-can-form-two-arrays-of-equal-xor/",
+    "en": "https://leetcode.com/problems/count-triplets-that-can-form-two-arrays-of-equal-xor/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

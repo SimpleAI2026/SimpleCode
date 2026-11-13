@@ -1,0 +1,21 @@
+{
+  "id": 204,
+  "slug": "count-primes",
+  "summary": "读入一个非负整数 n。统计严格小于 n 的质数一共有多少个，把这个个数写出来。质数是大于 1、且除了 1 与它自身之外没有别的正因数的整数。若 n 小于 2，个数就是 0。1 不是质数，不要把它算进去。2 是最小的质数。这里只计数，不要求把每个质数本身都列出来。n 等于某个质数时，该质数本身不计入，因为它并不小于 n。",
+  "samples": [
+    {
+      "stdin": "10\n",
+      "stdout": "4\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/count-primes/",
+    "en": "https://leetcode.com/problems/count-primes/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

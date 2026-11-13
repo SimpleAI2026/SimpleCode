@@ -1,0 +1,26 @@
+{
+  "id": 2183,
+  "slug": "count-array-pairs-divisible-by-k",
+  "summary": "读入长度不超过10^5的一列正整数，以及另一个正整数除数。除数和每个元素都不超过10^5，长度和除数至少是1。从这列里任取两个不同位置，左边的位置必须更靠前。把这两个位置上的数相乘，若乘积能被除数整除，这对位置就算一次。统计一共有多少对，并把这个数目写出来。位置从0起算，靠后的下标必须严格大于靠前的下标。",
+  "samples": [
+    {
+      "stdin": "nums = [1,2,3,4,5], k = 2\n",
+      "stdout": "7\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "nums = [1,2,3,4], k = 5\n",
+      "stdout": "0\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/count-array-pairs-divisible-by-k/",
+    "en": "https://leetcode.com/problems/count-array-pairs-divisible-by-k/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

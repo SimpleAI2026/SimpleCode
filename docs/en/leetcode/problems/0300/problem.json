@@ -1,6 +1,6 @@
 {
   "id": 300,
-  "summary": "The public title of this exercise is Longest Increasing Subsequence. Read tokens in the same order as the method parameters from standard input and compute the result named by that title, using only those values. Print the result as one integer. The sample below is a short input written for this playground so the printed line can be checked locally. It is not a copy of an example from the problem site. The input stays under one hundred elements so it finishes quickly in the browser.",
+  "summary": "Read a list of integers that may not be sorted. Choose some of them so that they keep their original left to right order and each later choice is strictly larger than the choice before it. Skipping values is allowed. Such a choice is a strictly increasing subsequence. Find the length of a longest one and write that length. When several choices share that length, write only the length and do not list the choices.",
   "notes": [
     "Compare after trimming trailing newlines. The input is tokens in the same order as the method parameters."
   ]

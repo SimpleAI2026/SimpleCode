@@ -1,0 +1,8 @@
+{
+  "id": 1695,
+  "summary": "Read a list of positive integers. The length is from 1 to 105, and each value is from 1 to 104. Choose one contiguous index span whose values are all different from each other. The score of a span is the total of every value inside it. Only one span may be chosen. Find the highest score among all legal spans and write that score.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

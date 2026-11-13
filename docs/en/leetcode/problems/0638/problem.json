@@ -1,0 +1,8 @@
+{
+  "id": 638,
+  "summary": "There are at most 6 kinds of goods, each with its own unit price, and at most 100 bundles. A bundle lists how many pieces of each kind it includes, and its last number is the selling price. A bundle may be bought more than once. You are also told how many pieces of each kind are required, at most 6 per kind. Do not obtain more pieces of any kind than required, even if the bill would become smaller. Find the lowest total cost that obtains exactly the required counts, and write that cost. Paying the unit price for single pieces is allowed.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

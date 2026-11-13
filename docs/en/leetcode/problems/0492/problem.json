@@ -1,0 +1,8 @@
+{
+  "id": 492,
+  "summary": "Read a target area for a rectangle. The area is an integer from 1 through 10000000. Find an integer length L and an integer width W whose product equals that area. L must be at least W, and L minus W must be as small as possible. If several pairs share that smallest gap, still keep a pair where L is at least W. Write L and then W, length before width. Do not write the area itself, and do not swap the two sides. Both sides must be positive integers.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "id": 1696,
+  "summary": "Read an integer list and a positive integer k. Both the length and k lie between 1 and 10^5, and each integer lies between -10^4 and 10^4. Start at index 0 and aim for index n - 1. From index i a jump may land on any index from i + 1 through the smaller of n - 1 and i + k, without leaving the list. The score is the sum of the values at every index that is landed on, including the start and the end. Find the largest reachable score and write it.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

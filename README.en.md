@@ -18,7 +18,7 @@ SimpleCode is a playground. It is a static page that executes code, not a hosted
 - **No account.** Drafts, the selected language, and the UI language sit in `localStorage`.
 - **Runtimes download on demand.** The sidebar shows size, percent, and a cached check. WASI and Linux use the Cache API name `simplecode-wasm-v1`, Rust uses `simplecode-rustc-v1`, Java uses `simplecode-teavm-v1`.
 - **Stdin is real.** Keystrokes cross a `SharedArrayBuffer` into the program, so the page has to be cross-origin isolated.
-- **Practice is built in.** Fifteen Quick Start books, in Chinese and English, including NumPy and DeepLearning, plus 200 LeetCode-style problems. Solutions stay hidden until you open them.
+- **Practice is built in.** Fifteen Quick Start books, in Chinese and English, including NumPy and DeepLearning, plus 820 LeetCode-style problems. Solutions stay hidden until you open them.
 
 Once a runtime is cached, the open tab can run that language with no further download. The site is not an offline app: `coi-serviceworker.js` only injects isolation headers. A reload still needs the static files.
 
@@ -28,7 +28,7 @@ Once a runtime is cached, the open tab can run that language with no further dow
 | Account | None | Built around accounts and cloud workspaces | Open it and compile; the compiler is remote | Submitting usually requires a login |
 | Compilers | clang, rustc, and javac in the browser | Full toolchains in the cloud | Many compilers in the cloud, aimed at assembly | Whatever the judge runs |
 | Running again | Cached runtimes are not downloaded again; code stays local | Needs the cloud | Needs the cloud | Needs the cloud |
-| Built-in material | Quick Starts + 200 problems (Python solutions today) | Cloud projects | Assembly diffs | Official statements and judging |
+| Built-in material | Quick Starts + 820 problems (200 with Python solutions) | Cloud projects | Assembly diffs | Official statements and judging |
 | Limits | One file; Java is not OpenJDK; the guest has no network | Multi-file projects and collaboration | Compile output | Server-side judging |
 
 ## Screenshots
@@ -37,9 +37,15 @@ Once a runtime is cached, the open tab can run that language with no further dow
 
 ![The Python Quick Start drawer, listing chapters](assets/screenshots/quickstart.png)
 
-![LeetCode mode, problems grouped into Easy, Medium, and Hard](assets/screenshots/leetcode-list.png)
+![LeetCode mode in Chinese, 820 problems grouped into Easy, Medium, and Hard](assets/screenshots/leetcode-list.png)
 
-![Problem 1 with 查看题解 expanded, showing the Python solution and its source](assets/screenshots/leetcode-solution.png)
+![Problem 1 in Chinese, with the rewritten statement and sample](assets/screenshots/leetcode-problem-zh.png)
+
+![LeetCode mode in English](assets/screenshots/leetcode-list-en.png)
+
+![Problem 1 in English](assets/screenshots/leetcode-problem-en.png)
+
+![Problem 1 with Show solution expanded, showing the Python solution and its source](assets/screenshots/leetcode-solution.png)
 
 ![English UI: Quick Start in the toolbar, English comments in the sample](assets/screenshots/english.png)
 
@@ -49,7 +55,7 @@ Once a runtime is cached, the open tab can run that language with no further dow
 - Monaco. Body text is 14px; comments are 13px. An untouched sample switches only its comments when you toggle 中 / EN.
 - An xterm terminal. The toolbar and the documentation code blocks share one Run button.
 - Quick Starts: Chinese in `docs/<book>/`, English in `docs/en/<book>/`, same filenames. This build reports 1,042 chapters (521 each) and 3,218 runnable blocks (1,609 each). NumPy has 17 chapters and DeepLearning has 16. Their fences use the `numpy` language so they run on Pyodide.
-- LeetCode mode shares the drawer with Quick Start and does not cover Run. 200 problems: 41 Easy, 135 Medium, 24 Hard. Titles and summaries exist in both languages. Official statements are not stored. The drawer shows a short summary written for this repo, a small sample, and links to the official pages.
+- LeetCode mode shares the drawer with Quick Start and does not cover Run. 820 problems: 270 Easy, 444 Medium, 106 Hard. Titles and statements exist in both languages. Each statement is rewritten from the public problem's title, difficulty, examples, and limits. Upstream wording is not stored. Problems without a solution still show the statement, and the sample can be run.
 - Solutions stay collapsed until 查看题解. The checked-in solutions are Python. Another downloaded language that can run problems shows “No solution for this language yet.” You can run the sample, or load a solution into the editor and run it.
 - JS and TS share one wasmedge-quickjs module. Sucrase loads only when TypeScript runs, strips types, and does not type-check.
 - The chrome is grayscale. Syntax color is Monaco’s. UI copy is in `src/i18n`, Chinese by default.
@@ -81,7 +87,7 @@ The Rust pair is `rustc.wasm` at 87,871,387 bytes and `sysroot-wasip1.bundle` at
 
 - **Learning.** Each Quick Start is short sections. A code block can run in place.
 - **Teaching.** Students open a static page. Programs run in their browsers, so the room does not need an execution server.
-- **Interviews and LeetCode practice.** 200 problems grouped by difficulty, solutions hidden first. Samples can run. Solutions today are Python.
+- **Interviews and LeetCode practice.** 820 problems grouped by difficulty, solutions hidden first. Samples can run. Python solutions exist for 200 problems. The others show that no solution is available yet.
 - **A quick snippet.** One file, no account. Switching languages stops the previous runtime and clears the terminal.
 
 ## Quick start
@@ -144,7 +150,7 @@ src/teavm/           TeaVM javac
 src/i18n/            UI copy, zh / en
 docs/<book>/         Chinese Quick Starts
 docs/en/<book>/      English Quick Starts
-docs/leetcode/       200 problems, solutions, licenses
+docs/leetcode/       820 problems, solutions, licenses
 assets/screenshots/  README images, rendered by GitHub
 wasm/rust/           committed rustc and sysroot
 vendor/prebuilt/     wasm tarballs used when vendor cannot build

@@ -1,0 +1,8 @@
+{
+  "id": 71,
+  "summary": "Read an absolute path that starts with a slash and is written in the same style as Unix. Rewrite it into a cleaned form and print that form. A lone dot means the directory you are already in and must be removed. A pair of dots means go back one directory level. Repeated slashes collapse into a single slash. The cleaned form always opens with one slash, puts one slash between names, and adds no extra slash at the end, except that the root itself is a single slash. If parent steps outnumber existing levels, stay at the root. Any name other than a lone dot or a pair of dots is kept unchanged.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

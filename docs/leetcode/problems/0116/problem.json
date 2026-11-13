@@ -1,0 +1,21 @@
+{
+  "id": 116,
+  "slug": "populating-next-right-pointers-in-each-node",
+  "summary": "读入一棵完美二叉树：除叶子以外每个结点都有左孩子和右孩子，全部叶子处于同一深度。每个结点另有一个指向右邻的指针，初始时全是空。把该指针改到同一层中紧靠其右侧的结点；这一层最右端的结点没有右邻，指针继续为空。整棵树的结点个数少于 4096，每个结点值的绝对值不超过 1000。改完指针后把树写出来。",
+  "samples": [
+    {
+      "stdin": "root = [1,2,3,4,5,6,7]\n",
+      "stdout": "[1,#,2,3,#,4,5,6,7,#]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/populating-next-right-pointers-in-each-node/",
+    "en": "https://leetcode.com/problems/populating-next-right-pointers-in-each-node/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

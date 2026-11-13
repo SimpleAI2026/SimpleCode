@@ -1,0 +1,26 @@
+{
+  "id": 532,
+  "slug": "k-diff-pairs-in-an-array",
+  "summary": "读入一串整数以及另一个整数 k。从这串数里取出两个来自不同位置的数值，使它们差的绝对值恰好等于 k。把同一对数值颠倒次序仍视为同一对。统计这样互不相同的数值对一共有多少，并把数目写出来。这串数的长度不超过 10000，每个整数都在负 10000000 到正 10000000 之间。k 允许为 0，那时两个数值相等，但仍必须来自两个不同位置。",
+  "samples": [
+    {
+      "stdin": "[3, 1, 4, 1, 5], k = 2\n",
+      "stdout": "2\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "[1, 2, 3, 4, 5], k = 1\n",
+      "stdout": "4\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/k-diff-pairs-in-an-array/",
+    "en": "https://leetcode.com/problems/k-diff-pairs-in-an-array/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

@@ -1,0 +1,8 @@
+{
+  "id": 470,
+  "summary": "A function named rand7 is already supplied. Each call returns one integer chosen with equal chance from 1 through 7. Write another function named rand10 that returns one integer chosen with equal chance from 1 through 10. Do not call the system routine Math.random. Each test supplies a positive integer n, which is how many times rand10 will be invoked.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

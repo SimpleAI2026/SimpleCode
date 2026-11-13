@@ -1,0 +1,8 @@
+{
+  "id": 1249,
+  "summary": "Read a string of length between 1 and 100000. Every character is a left parenthesis, a right parenthesis, or a lowercase English letter. Delete as few parentheses as possible, at any indexes, so the remaining text is a valid parenthesis string. Empty text, text made only of letters, two valid texts placed one after another, and one valid text wrapped by a matching pair all count as valid. Write any string that is valid after such a deletion. The length bound is 100000.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

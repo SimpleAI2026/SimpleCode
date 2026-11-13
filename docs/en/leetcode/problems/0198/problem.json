@@ -1,6 +1,6 @@
 {
   "id": 198,
-  "summary": "The public title of this exercise is House Robber. Read tokens in the same order as the method parameters from standard input and compute the result named by that title, using only those values. Print the result as one integer. The sample below is a short input written for this playground so the printed line can be checked locally. It is not a copy of an example from the problem site. The input stays under one hundred elements so it finishes quickly in the browser.",
+  "summary": "Read a line of houses as non-negative integers, each integer the cash stored in one house. If two houses that stand next to each other are both entered on the same night, an alarm sounds. Chosen houses therefore cannot be neighbors. Skipping any number of houses is allowed, and choosing no house is allowed. Write the largest sum of cash that can be taken on that single night. House order is the order you read. With only one house, the result is the cash in that house.",
   "notes": [
     "Compare after trimming trailing newlines. The input is tokens in the same order as the method parameters."
   ]

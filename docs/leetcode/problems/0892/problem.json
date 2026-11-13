@@ -1,0 +1,26 @@
+{
+  "id": 892,
+  "slug": "surface-area-of-3d-shapes",
+  "summary": "读入边长 N 不超过 50 的正方形格子表。表里每一格的数字表示该格向上堆了多少个棱长为 1 的小方块，数字本身也在 0 与 50 之间。两块小方块若有一面贴在一起，贴住的那两面不再暴露在外。把堆叠完成之后仍然露在外面的全部面积写出来。",
+  "samples": [
+    {
+      "stdin": "[[2]]\n",
+      "stdout": "10\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "[[1,2],[3,4]]\n",
+      "stdout": "34\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/surface-area-of-3d-shapes/",
+    "en": "https://leetcode.com/problems/surface-area-of-3d-shapes/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

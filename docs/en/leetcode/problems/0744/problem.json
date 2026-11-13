@@ -1,0 +1,7 @@
+{
+  "id": 744,
+  "summary": "Read a sorted array letters made of lowercase letters, plus one lowercase target letter. The array length is from 2 to 10000, and the array contains at least two letters that differ from each other. Find the smallest letter in the array that is strictly greater than the target. Treat the alphabet as circular: when no letter is greater than the target, select the smallest letter stored in the array instead. Write the letter you selected.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

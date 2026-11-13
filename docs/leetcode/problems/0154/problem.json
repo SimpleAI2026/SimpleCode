@@ -1,0 +1,26 @@
+{
+  "id": 154,
+  "slug": "find-minimum-in-rotated-sorted-array-ii",
+  "summary": "读入一列整数。它们原先从小到大排列，随后在一个未知的下标处被截断，右段被整体搬到左段之前。这一问允许相同整数反复出现，因此搬完后可能看到连续的相等值。找出最小的整数并写出来。若有多个位置上的值同为最小，写出该值一次即可。列的长度至少是一。",
+  "samples": [
+    {
+      "stdin": "[1,3,5]\n",
+      "stdout": "1\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "[2,2,2,0,1]\n",
+      "stdout": "0\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/find-minimum-in-rotated-sorted-array-ii/",
+    "en": "https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

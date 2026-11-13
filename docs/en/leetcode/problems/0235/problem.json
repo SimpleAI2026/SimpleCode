@@ -1,6 +1,6 @@
 {
   "id": 235,
-  "summary": "The public title of this exercise is Lowest Common Ancestor of a Binary Search Tree. Read tokens in the same order as the method parameters from standard input and compute the result named by that title, using only those values. Print the result as one level-order line, with a dot for a missing child. The sample below is a short input written for this playground so the printed line can be checked locally. It is not a copy of an example from the problem site. The input stays under one hundred elements so it finishes quickly in the browser.",
+  "summary": "Read a binary search tree together with two different nodes p and q. Every node value is unique, and both p and q are present. Values in a left subtree are smaller than the parent, and values in a right subtree are larger. Find a node x that is a forebear of p and also a forebear of q, choosing the forebear farthest from the root when several qualify. A node may serve as a forebear of itself. Write that node x.",
   "notes": [
     "Compare after trimming trailing newlines. The input is tokens in the same order as the method parameters."
   ]

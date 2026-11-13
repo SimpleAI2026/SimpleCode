@@ -1,0 +1,8 @@
+{
+  "id": 997,
+  "summary": "Read an integer n and a list of trust records. Labels run from 1 through n. Each record holds two different labels and means the first label trusts the second. A label is the judge when it trusts nobody else, every remaining label trusts it, and it is the only label meeting both tests. Write that label. Write -1 when no label meets the tests. n is at most 1000, the record count is at most 10000, and the records do not repeat. Every label stays inside 1 through n.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

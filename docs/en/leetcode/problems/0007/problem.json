@@ -1,6 +1,6 @@
 {
   "id": 7,
-  "summary": "The public title of this exercise is Reverse Integer. Read tokens in the same order as the method parameters from standard input and compute the result named by that title, using only those values. Print the result as one integer. The sample below is a short input written for this playground so the printed line can be checked locally. It is not a copy of an example from the problem site. The input stays under one hundred elements so it finishes quickly in the browser.",
+  "summary": "Read one signed integer that fits in 32 bits. Swap the decimal digits end for end, and keep a minus sign at the front when the input is negative. Values that can be stored lie on the closed span from negative two raised to the thirty-first power through two raised to the thirty-first power minus one. If the swapped result falls outside that span, write 0. If it stays inside, write the swapped integer. Drop zeros that would sit at the high end after the swap.",
   "notes": [
     "Compare after trimming trailing newlines. The input is tokens in the same order as the method parameters."
   ]

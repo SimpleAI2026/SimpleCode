@@ -1,0 +1,8 @@
+{
+  "id": 1614,
+  "summary": "Read one expression whose length is from 1 to 100. Its symbols are digits, plus, minus, times, divide, and round parentheses, and the parentheses are already balanced. Measure nesting by these rules. Nothing at all has depth 0. One symbol that is neither an opening parenthesis nor a closing parenthesis also has depth 0. Placing two balanced pieces end to end keeps the larger depth. Surrounding one balanced piece with a single parenthesis pair adds one. Write the depth of the entire expression.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

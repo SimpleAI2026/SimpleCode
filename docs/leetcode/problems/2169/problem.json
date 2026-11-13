@@ -1,0 +1,26 @@
+{
+  "id": 2169,
+  "slug": "count-operations-to-obtain-zero",
+  "summary": "读入两个非负整数，每一个都不超过 100000。当两个数都还不是零时，从较大的那个减去较小的那个；如果两者相等，这次相减会让其中一个变成零。一直减到至少有一个数变成零为止。统计一共做了多少次减法，并把次数写出来。",
+  "samples": [
+    {
+      "stdin": "num1 = 2, num2 = 3\n",
+      "stdout": "3\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "num1 = 10, num2 = 10\n",
+      "stdout": "1\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/count-operations-to-obtain-zero/",
+    "en": "https://leetcode.com/problems/count-operations-to-obtain-zero/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

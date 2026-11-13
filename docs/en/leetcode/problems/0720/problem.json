@@ -1,0 +1,8 @@
+{
+  "id": 720,
+  "summary": "Read an array words of lowercase strings. The array holds between 1 and 1000 entries, and each entry has length between 1 and 30. A word qualifies when every shorter prefix obtained by deleting letters only from its end is also present in the array. Among qualifying words, choose the one with the greatest length. If several still tie, choose the one that comes first in dictionary order. Write that word, or write an empty string when nothing qualifies.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

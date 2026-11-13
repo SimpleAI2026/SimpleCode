@@ -1,0 +1,7 @@
+{
+  "id": 826,
+  "summary": "Read difficulties and profits for several jobs, two lists of equal length from 1 to 10000. Also read abilities for several workers, with a worker count likewise from 1 to 10000. Each difficulty, profit, and ability is an integer from 1 through 10^5. Every worker takes at most one job whose difficulty does not exceed that worker's ability, and one job may be completed once by each of many workers. A worker who can take nothing earns zero. Find the largest sum of earnings and write that sum.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

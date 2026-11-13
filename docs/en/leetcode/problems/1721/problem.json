@@ -1,0 +1,8 @@
+{
+  "id": 1721,
+  "summary": "Read a singly linked chain's head together with the integer k. Let n be the node count. The bounds are 1 <= k <= n <= 10^5, and each node stores an integer from 0 through 100. Positions are counted from 1. Exchange the stored value of the k-th node from the front with the stored value of the k-th node from the rear, then write the head of the list.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

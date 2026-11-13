@@ -1,0 +1,21 @@
+{
+  "id": 1049,
+  "slug": "last-stone-weight-ii",
+  "summary": "读入若干块石头的正整数重量。块数从 1 到 30，每块重量从 1 到 100。每一轮任选两块来碰撞。两块一样重时，两块都消失。不一样重时，较轻的消失，较重的变成二者重量的正差值。一直进行到最多只留一块。在所有选择次序里，找出最后这块石头可能出现的最小重量。什么都不剩时，这个重量记为 0。把该最小重量写出来。",
+  "samples": [
+    {
+      "stdin": "[2,7,4,1,8,1]\n",
+      "stdout": "1\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/last-stone-weight-ii/",
+    "en": "https://leetcode.com/problems/last-stone-weight-ii/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

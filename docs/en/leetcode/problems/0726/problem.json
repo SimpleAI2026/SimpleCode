@@ -1,0 +1,8 @@
+{
+  "id": 726,
+  "summary": "Read a chemical formula whose length is from 1 to 1000. It uses only letters, digits, and round parentheses, and it is valid under these rules. An atom name begins with one uppercase letter and may continue with lowercase letters. A decimal multiplicity is attached to a name or a parenthesized group only when it is greater than one; a multiplicity of one is left unwritten. Joining two formulas makes another formula, and a multiplier may follow a parenthesized formula. Count each atom, then write one string with names in dictionary order. Append a count only when it exceeds one, and insert no spaces.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

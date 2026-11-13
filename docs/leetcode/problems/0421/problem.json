@@ -1,0 +1,21 @@
+{
+  "id": 421,
+  "slug": "maximum-xor-of-two-numbers-in-an-array",
+  "summary": "读入一列非空整数。每个数都大于等于零，并且严格小于二的三十一次方。可以两次都选同一个下标。对任意一对下标，取出对应的两个整数做按位异或。在全部选法里找出结果最大的那一个，并把这个整数写出来。",
+  "samples": [
+    {
+      "stdin": "[3, 10, 5, 25, 2, 8]\n",
+      "stdout": "28\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/maximum-xor-of-two-numbers-in-an-array/",
+    "en": "https://leetcode.com/problems/maximum-xor-of-two-numbers-in-an-array/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

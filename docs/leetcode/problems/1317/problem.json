@@ -1,0 +1,26 @@
+{
+  "id": 1317,
+  "slug": "convert-integer-to-the-sum-of-two-no-zero-integers",
+  "summary": "读入一个整数 n，它介于 2 和 10^4 之间。无零正整数是指十进制写法中一位 0 都不出现的正整数。找出两个这样的正整数，使它们相加正好等于 n，并把这两个数按任意顺序写成一对。已知至少存在一种合法拆法。若有多种拆法，写出其中任意一种即可。两个数都必须是正的，也不能含有数字 0。",
+  "samples": [
+    {
+      "stdin": "n = 2\n",
+      "stdout": "[1,1]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "n = 11\n",
+      "stdout": "[2,9]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/convert-integer-to-the-sum-of-two-no-zero-integers/",
+    "en": "https://leetcode.com/problems/convert-integer-to-the-sum-of-two-no-zero-integers/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

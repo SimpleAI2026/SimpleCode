@@ -1,6 +1,6 @@
 {
   "id": 378,
-  "summary": "The public title of this exercise is Kth Smallest Element in a Sorted Matrix. Read tokens in the same order as the method parameters from standard input and compute the result named by that title, using only those values. Print the result as one integer. The sample below is a short input written for this playground so the printed line can be checked locally. It is not a copy of an example from the problem site. The input stays under one hundred elements so it finishes quickly in the browser.",
+  "summary": "Read an n-by-n matrix of integers together with an integer k. Each row grows from left to right, and each column grows from top to bottom. Sort every integer in the matrix from small to large and take the one that lands in rank k, where k starts at 1. The rank k is always legal and stays between 1 and n squared. It is not the cell reached by scanning row after row. Write that integer.",
   "notes": [
     "Compare after trimming trailing newlines. The input is tokens in the same order as the method parameters."
   ]

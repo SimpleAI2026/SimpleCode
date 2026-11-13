@@ -1,0 +1,8 @@
+{
+  "id": 830,
+  "summary": "Read a string that uses only lowercase English letters. The length is at least 1 and at most 1000. Split it into runs of identical letters that sit side by side. Describe each run with a closed index pair covering its first character and its last character. Keep a run only when it holds three or more letters. Order the kept pairs by rising start index and write that list. Drop every shorter run.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

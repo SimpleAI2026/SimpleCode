@@ -1,0 +1,26 @@
+{
+  "id": 396,
+  "slug": "rotate-function",
+  "summary": "读入长度为 n 的整数序列，n 在 1 到 105 之间，每个元素在负 100 到 100 之间。把序列顺时针挪动 k 格。得分等于每个下标乘以挪动后该位置上的数，再求和。k 可以是 0 到 n 减 1 的任意整数。写出其中最大的得分。答案保证能放进 32 位带符号整数。",
+  "samples": [
+    {
+      "stdin": "nums = [4,3,2,6]\n",
+      "stdout": "26\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "nums = [100]\n",
+      "stdout": "0\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/rotate-function/",
+    "en": "https://leetcode.com/problems/rotate-function/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

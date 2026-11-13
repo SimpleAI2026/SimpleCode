@@ -1,0 +1,8 @@
+{
+  "id": 996,
+  "summary": "Read a row of non-negative integers whose length is from 1 to 12. Each entry is at most one billion. Rearrange the entries. A rearrangement qualifies when every two neighbors add up to the square of some integer. Count the qualifying rearrangements and write that count. Two rearrangements are distinct whenever at least one position holds unequal entries. When one value occurs several times, the arrangements are told apart by where those copies sit rather than collapsed into one.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

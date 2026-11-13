@@ -1,6 +1,6 @@
 {
   "id": 5,
-  "summary": "The public title of this exercise is Longest Palindromic Substring. Read one token of text without spaces from standard input and compute the result named by that title, using only those values. Print the result as one line of text. The sample below is a short input written for this playground so the printed line can be checked locally. It is not a copy of an example from the problem site. The input stays under one hundred elements so it finishes quickly in the browser.",
+  "summary": "Read one text whose length is at least 1 and at most 1000. Every character is a digit or an English letter, and both letter cases are allowed. Find a contiguous fragment that is identical when scanned front to back and back to front, and whose length is the greatest among all such fragments. Write that fragment itself. If several fragments tie for the greatest length, write any one of them.",
   "notes": [
     "Compare after trimming trailing newlines. The input is one token of text without spaces."
   ]

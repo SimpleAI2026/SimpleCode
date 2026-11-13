@@ -1,0 +1,7 @@
+{
+  "id": 810,
+  "summary": "Read nonnegative integers on a chalkboard. Their count is from 1 to 1000, and each integer is at most two to the power 16. Alice acts first, and the players alternate erasing exactly one integer. A player loses upon making an erasure that leaves a bitwise exclusive-or of zero. With one integer left, that exclusive-or is the integer itself; with none left, it is treated as zero. A player who begins a turn while the exclusive-or is already zero wins immediately. Assume each side always chooses the move most favorable to itself. Write true when Alice has a forced win and false otherwise.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

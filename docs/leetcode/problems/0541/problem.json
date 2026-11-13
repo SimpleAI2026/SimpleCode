@@ -1,0 +1,21 @@
+{
+  "id": 541,
+  "slug": "reverse-string-ii",
+  "summary": "读入一条只含小写英文字母的文本，以及一个整数 k。文本有多长，k 取多大，两者都在 1 到 10000 之间。从左端起，每凑满 2k 个字母就处理一块：把这块靠前的 k 个字母前后对调，靠后的那些字母留在原地。若末尾剩下的字母不够 k 个，就把剩下的全部前后对调。若末尾至少有 k 个却不够 2k 个，只对调靠前的 k 个，再往后仍留在原地。把处理之后的整条文本写出来。",
+  "samples": [
+    {
+      "stdin": "s = \"abcdefg\", k = 2\n",
+      "stdout": "\"bacdfeg\"\n\nRestrictions:\n\n1. The string consists of lower English letters only.\n2. Length of the given string and k will in the range [1, 10000]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/reverse-string-ii/",
+    "en": "https://leetcode.com/problems/reverse-string-ii/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

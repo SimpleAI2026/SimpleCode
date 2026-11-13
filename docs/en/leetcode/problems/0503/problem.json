@@ -1,6 +1,6 @@
 {
   "id": 503,
-  "summary": "The public title of this exercise is Next Greater Element II. Read tokens in the same order as the method parameters from standard input and compute the result named by that title, using only those values. Print the result as integers on one line, separated by spaces. The sample below is a short input written for this playground so the printed line can be checked locally. It is not a copy of an example from the problem site. The input stays under one hundred elements so it finishes quickly in the browser.",
+  "summary": "Read a circular list of integers. After the final entry, the walk continues at the opening entry. For every element, start one seat ahead of it and walk forward around the circle until you meet the first strictly larger value. Write that value when it exists. Write -1 when a walk that returns to the start finds nothing larger. The answer has the same length as the input, and answer i belongs to element i. An element is not larger than itself, and an equal value is not larger. Walk only forward around the circle, never backward.",
   "notes": [
     "Compare after trimming trailing newlines. The input is tokens in the same order as the method parameters."
   ]

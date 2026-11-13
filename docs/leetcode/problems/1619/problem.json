@@ -1,0 +1,26 @@
+{
+  "id": 1619,
+  "slug": "mean-of-array-after-removing-some-elements",
+  "summary": "读入一列整数。列长是 20 的倍数，并且落在 20 到 1000 之间，每一项落在 0 到 100000 之间。先丢掉最小的那百分之五，再丢掉最大的那百分之五，对余下的整数求算术平均。把这个平均数写出来。与精确值的差距不超过 10 的负五次方，仍然算作正确。",
+  "samples": [
+    {
+      "stdin": "arr = [1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,3]\n",
+      "stdout": "2.00000\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "arr = [6,2,7,5,1,2,0,3,10,2,5,0,5,5,0,8,7,6,8,0]\n",
+      "stdout": "4.00000\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/mean-of-array-after-removing-some-elements/",
+    "en": "https://leetcode.com/problems/mean-of-array-after-removing-some-elements/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

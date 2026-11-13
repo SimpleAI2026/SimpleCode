@@ -1,0 +1,8 @@
+{
+  "id": 488,
+  "summary": "Read two strings of colored balls. board is the row on the table, and hand is what you hold. The only colors are R, Y, B, G, and W. The length of board runs from 1 to 16, and the length of hand runs from 1 to 5. At the start, the row has no stretch of three or more balls that share one color. Each turn, take one ball from hand and insert it between two balls or at either end. Whenever three or more adjacent balls share a color, erase that whole stretch. If the erasure creates another such stretch, keep erasing until no such stretch remains. Write the fewest hand balls needed to empty the table. If that cannot be done, write -1.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

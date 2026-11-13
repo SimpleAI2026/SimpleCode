@@ -1,0 +1,7 @@
+{
+  "id": 1670,
+  "summary": "Implement an integer sequence that supports inserts and removals at the front, at the center, and at the rear. A fresh object starts with nothing inside. The three insert calls place a value at the front, the center, or the rear. The three removal calls take the value at that spot and write it, or write -1 when the sequence was already empty. If the length is even and two center spots exist, always touch the earlier spot. Placing 6 at the center of a five-item sequence puts it between the second item and the third. Removing the center of a six-item sequence takes the third item. Each stored value is from 1 through 109, and the six calls together happen at most 1000 times. Write every removal result in call order.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

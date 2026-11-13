@@ -1,0 +1,7 @@
+{
+  "id": 327,
+  "summary": "Read a list of integers together with a lower bound and an upper bound. Choose any contiguous block of positions, keeping those positions in increasing order, and add the values stored there. Count how many blocks produce a total that is greater than or equal to the lower bound and less than or equal to the upper bound. An empty block does not count. Write that count.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

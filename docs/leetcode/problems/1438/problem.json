@@ -1,0 +1,26 @@
+{
+  "id": 1438,
+  "slug": "longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit",
+  "summary": "读入整数列 nums 和上限 limit。要找一段连续而且非空的区间，使区间内部任意两数之差的绝对值都不超过 limit，并写出最长的那种区间含有多少个数。若整列里一段都合规的都找不到，写出 0。列长介于 1 与 100000，每个数介于 1 与 1000000000，limit 介于 0 与 1000000000。",
+  "samples": [
+    {
+      "stdin": "nums = [8,2,4,7], limit = 4\n",
+      "stdout": "2\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "nums = [10,1,2,4,7,2], limit = 5\n",
+      "stdout": "4\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/",
+    "en": "https://leetcode.com/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

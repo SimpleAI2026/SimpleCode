@@ -1,0 +1,8 @@
+{
+  "id": 402,
+  "summary": "Read a decimal string num for a non-negative integer, together with a count k of digits to delete. The string length is below 10002 and is at least k, and the string itself has no leading zero. Delete exactly k digits while keeping the order of the digits that stay, so the integer you form is as small as possible. Write that result with leading zeros removed. If no digit stays, write 0.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

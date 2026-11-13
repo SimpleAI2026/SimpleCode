@@ -1,0 +1,21 @@
+{
+  "id": 275,
+  "slug": "h-index-ii",
+  "summary": "读入一位研究者每篇论文的引用次数。这些次数已经按从小到大排好，而且全是非负整数，总篇数记为 N。找出最大的 h，使得不少于 h 篇的引用量各自达到 h 或更多，余下每篇都不高于 h。把该 h 写出来。候选不止一个时，仍然只保留最大的候选。",
+  "samples": [
+    {
+      "stdin": "citations = [0,1,3,5,6]\n",
+      "stdout": "3\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/h-index-ii/",
+    "en": "https://leetcode.com/problems/h-index-ii/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

@@ -1,0 +1,8 @@
+{
+  "id": 859,
+  "summary": "Read two strings called s and goal. Both use only lowercase letters. Each length is at least 1 and at most 2 times 10000. Decide whether one exchange inside s can make s identical to goal. The exchange picks two indexes that are not equal, both counted from 0, and trades the characters there. Exactly one such exchange must be performed, even when s and goal already look alike. Write true when that exchange exists and write false when it does not. Different lengths mean false.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

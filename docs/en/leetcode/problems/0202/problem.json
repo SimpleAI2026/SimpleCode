@@ -1,6 +1,6 @@
 {
   "id": 202,
-  "summary": "The public title of this exercise is Happy Number. Read tokens in the same order as the method parameters from standard input and compute the result named by that title, using only those values. Print the result as the word true or false. The sample below is a short input written for this playground so the printed line can be checked locally. It is not a copy of an example from the problem site. The input stays under one hundred elements so it finishes quickly in the browser.",
+  "summary": "Read one positive integer. Form the next value by adding the square of each decimal digit, and keep doing that. If a value becomes 1, judge the starting integer happy and write true. If the values enter a loop that never contains 1, write false. The integer 1 is happy because it stays at 1. Split digits in base 10 only. The chain may wander for a long time before it hits 1, and it still counts as happy whenever 1 appears.",
   "notes": [
     "Compare after trimming trailing newlines. The input is tokens in the same order as the method parameters."
   ]

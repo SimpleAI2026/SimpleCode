@@ -1,0 +1,7 @@
+{
+  "id": 966,
+  "summary": "Read a dictionary and a list of queries. Each side holds between 1 and 5000 strings, every string has length between 1 and 7, and every string uses English letters only. For each query, search the dictionary with this priority. First accept a string that matches every character including case. If none exists, ignore case and take the earliest dictionary entry that matches. If that also fails, treat letters a, e, i, o, and u as one interchangeable family, ignore case again, and take the earliest hit. If nothing hits, the result for that query is an empty string. Write the results in the same order as the queries.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

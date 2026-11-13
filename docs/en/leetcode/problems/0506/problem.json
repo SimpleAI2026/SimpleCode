@@ -1,0 +1,8 @@
+{
+  "id": 506,
+  "summary": "Read the scores of n athletes. n runs from 1 to 10000. Each score is an integer from 0 to 1000000, and all scores differ. The highest score is place 1, the next highest is place 2, and later places follow in that order. Write Gold Medal for place 1, Silver Medal for place 2, and Bronze Medal for place 3. From place 4 through place n, write the place number as a decimal string. The answer has length n, and entry i belongs to athlete i. Keep those three English labels, and do not replace them with translated medal names.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

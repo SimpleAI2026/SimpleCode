@@ -1,0 +1,7 @@
+{
+  "id": 304,
+  "summary": "Read a two dimensional integer matrix that stays unmodified for the whole process. Many rectangle questions follow. Each question marks a closed rectangle by the row and column of the upper left corner and the row and column of the lower right corner. Add every integer inside that rectangle, including integers on the boundary, and write the sum. Every question uses the same original matrix.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "id": 839,
+  "summary": "Read a list of distinct lowercase words. Every word has the same length and is an anagram of the others. The list holds at most 2000 words, each word has length at most 1000, and the product of those two bounds is at most 20000. Call two words close when exchanging the letters at two different indexes of the first word makes it identical to the second. Closeness joins words into clusters: a word belongs to a cluster when a chain of close pairs links it to the others. Write how many such clusters the list contains. A word alone is its own cluster.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

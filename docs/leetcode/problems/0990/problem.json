@@ -1,0 +1,26 @@
+{
+  "id": 990,
+  "slug": "satisfiability-of-equality-equations",
+  "summary": "读入一到 500 条长度为四的字符串。每条由两个英文小写字母和中间的关系符组成，关系符要么是连续两个等号，要么是一个感叹号再加一个等号。两个字母代表变量，允许相同。判断是否存在一种给字母填整数的方案，使每条相等关系与每条不等关系同时成立。存在就写 true，不存在就写 false。",
+  "samples": [
+    {
+      "stdin": "[\"a==b\",\"b!=a\"]\n",
+      "stdout": "false\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "[\"b==a\",\"a==b\"]\n",
+      "stdout": "true\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/satisfiability-of-equality-equations/",
+    "en": "https://leetcode.com/problems/satisfiability-of-equality-equations/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

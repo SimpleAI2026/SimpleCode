@@ -1,0 +1,8 @@
+{
+  "id": 61,
+  "summary": "Read one singly linked list and one integer k that is zero or positive. Cycle the chain rightward by k steps. Count k nodes from the tail, move that block to the front, and leave the relative order of every other node unchanged. When k exceeds the node count, replace k by its remainder modulo that count before moving anything. Write the node values from the new head through the new tail. An empty chain stays empty. Keep the values in the order of the new chain.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

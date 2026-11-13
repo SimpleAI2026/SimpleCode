@@ -1,0 +1,7 @@
+{
+  "id": 563,
+  "summary": "Read a binary tree. For any node, add every number stored on its left branch and every number stored on its right branch, treating a missing branch as 0, then take the positive gap between those two sums. That gap is the node's tilt. Sum the per-node gaps into one tree-wide total and write it. The sum on any branch, and every tilt, stays inside the range of a 32-bit integer.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

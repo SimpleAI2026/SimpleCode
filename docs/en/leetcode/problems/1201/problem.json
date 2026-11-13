@@ -1,0 +1,8 @@
+{
+  "id": 1201,
+  "summary": "Treat a positive integer as ugly in this task when at least one of a, b, and c divides it. Read four positive integers n, a, b, and c. Each of them lies between 1 and 10^9, and the product of a, b, and c lies between 1 and 10^18. Write the n-th ugly integer when the ugly integers are listed from smallest to largest. The result is guaranteed to lie between 1 and 2 times 10^9. The product bound is 10^18.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "id": 1689,
+  "summary": "Read a digit string n whose length is from 1 to 105. It has no leading zero and stands for a positive integer. Call a positive integer special when every digit is 0 or 1 and the integer itself has no leading zero. Find how few special positive integers are needed so that they add up to n, and write that minimum count.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

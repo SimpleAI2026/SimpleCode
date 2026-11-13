@@ -1,0 +1,26 @@
+{
+  "id": 1696,
+  "slug": "jump-game-vi",
+  "summary": "读入一串整数和一个正整数 k。数组长度与 k 都介于 1 和 10^5，每个整数介于 -10^4 和 10^4。人从下标 0 出发，目标是下标 n 减 1。每一步可以从 i 跳到 i 加 1 直到 n 减 1 与 i 加 k 中较小者的任意下标，不能越出数组。得分是沿途落到的每个位置上的数值之和，起点和终点都算。找出可达的最高分数并写出来。",
+  "samples": [
+    {
+      "stdin": "nums = [1,-1,-2,4,-7,3], k = 2\n",
+      "stdout": "7\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "nums = [10,-5,-2,4,0,3], k = 3\n",
+      "stdout": "17\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/jump-game-vi/",
+    "en": "https://leetcode.com/problems/jump-game-vi/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

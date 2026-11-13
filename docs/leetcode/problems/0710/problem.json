@@ -1,0 +1,26 @@
+{
+  "id": 710,
+  "slug": "random-pick-with-blacklist",
+  "summary": "读入正整数 N，以及若干互不相同的黑名单整数，它们都来自半开区间，从 0 开始并且不到 N。每次需要等可能地写出该区间里一个不在黑名单上的整数。区间不包含 N 本身。N 在 1 到 1000000000 之间。黑名单的长度严格小于 100000 与 N 中的较小者，长度也可以是 0。重复抽取时，每个允许的整数应当拥有相同的机会。",
+  "samples": [
+    {
+      "stdin": "[\"Solution\",\"pick\",\"pick\",\"pick\"]\n[[1,[]],[],[],[]]\n",
+      "stdout": "[null,0,0,0]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "[\"Solution\",\"pick\",\"pick\",\"pick\"]\n[[2,[]],[],[],[]]\n",
+      "stdout": "[null,1,1,1]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/random-pick-with-blacklist/",
+    "en": "https://leetcode.com/problems/random-pick-with-blacklist/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

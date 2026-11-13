@@ -1,0 +1,8 @@
+{
+  "id": 667,
+  "summary": "Read two positive integers n and k. Write a sequence of length n in which each integer from 1 through n appears once. The absolute differences between neighboring entries must contain exactly k different numbers. When several sequences qualify, write any one of them. The bounds require 1 <= k < n and n at most 10^4.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

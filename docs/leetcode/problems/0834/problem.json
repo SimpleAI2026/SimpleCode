@@ -1,0 +1,21 @@
+{
+  "id": 834,
+  "slug": "sum-of-distances-in-tree",
+  "summary": "读入一棵没有方向、而且整棵连在一起的树。结点用 0 到 N 减 1 编号，边的条数正好是 N 减 1，N 的范围是 1 到 10000。每条边给出它连接的两个编号。两点之间的距离等于路径上经过的边数。对每个结点，把到其余结点的距离全部相加。按编号从小到大，写出这 N 个和。",
+  "samples": [
+    {
+      "stdin": "N = 6, edges = [[0,1],[0,2],[2,3],[2,4],[2,5]]\n",
+      "stdout": "[8,12,6,10,10,10]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/sum-of-distances-in-tree/",
+    "en": "https://leetcode.com/problems/sum-of-distances-in-tree/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

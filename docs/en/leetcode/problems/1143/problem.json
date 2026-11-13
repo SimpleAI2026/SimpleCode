@@ -1,6 +1,6 @@
 {
   "id": 1143,
-  "summary": "The public title of this exercise is Longest Common Subsequence. Read tokens in the same order as the method parameters from standard input and compute the result named by that title, using only those values. Print the result as one integer. The sample below is a short input written for this playground so the printed line can be checked locally. It is not a copy of an example from the problem site. The input stays under one hundred elements so it finishes quickly in the browser.",
+  "summary": "Read two strings made only of lowercase English letters. Each string has length at least 1 and at most 1000. Characters may be dropped from either string, but whatever stays must keep its original relative order. The two remaining pieces must be identical, and they should be as long as any legal choice allows. Write that shared length. If the strings have no matching non-empty piece, write 0.",
   "notes": [
     "Compare after trimming trailing newlines. The input is tokens in the same order as the method parameters."
   ]

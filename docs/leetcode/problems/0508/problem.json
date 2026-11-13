@@ -1,0 +1,21 @@
+{
+  "id": 508,
+  "slug": "most-frequent-subtree-sum",
+  "summary": "读入一棵二叉树的根。某个结点的子树和，等于以它为根的那一部分里全部分点的值相加，包括它自己。缺失的孩子加进去的是 0。先统计每一种子树和出现过几次，再把出现次数最高的那些和找出来写掉。如果有多个和并列第一，就全部写出来，次序不限。不要只写其中的一个。题目保证每个子树和都能放进 32 位有符号整数。空孩子不单独成为一项。",
+  "samples": [
+    {
+      "stdin": "the root of a tree, you are asked to find the most frequent subtree sum. The subtree sum of a node is defined as the sum of all the node values formed by the subtree rooted at that node (including the node itself). So what is the most frequent subtree sum value? If there is a tie,\n",
+      "stdout": "all the values with the highest frequency in any order.\n\nExamples 1Input:\n\n5\n/ \\\n2 -3\n\nreturn [2, -3, 4], since all the values happen only once, return all of them in any order.\n\nExamples 2Input:\n\n5\n/ \\\n2 -5\n\nreturn [2], since 2 happens twice, however -5 only occur once.\n\nNote: You may assume the sum of values in any subtree is in the range of 32-bit signed integer.\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/most-frequent-subtree-sum/",
+    "en": "https://leetcode.com/problems/most-frequent-subtree-sum/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

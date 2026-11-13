@@ -1,0 +1,8 @@
+{
+  "id": 793,
+  "summary": "Let the score of a nonnegative integer x be how many zeros sit at the end of x factorial written in base ten, and treat the factorial of zero as one. Read an integer K from the closed interval that runs from 0 through 10^9. Count how many nonnegative integers x have a score exactly equal to K, and write that count.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": 901,
+  "slug": "online-stock-span",
+  "summary": "做出 StockSpanner，用来记录一只股票逐日的价格。每次 next 读入当天价格，价格是 1 到 100000 之间的整数。当天的跨度等于从当天起连续向前看、价格都不高于当天价格的天数，当天自己也算一天。每次 next 都要把这个跨度写出来。一份测试最多调用 10000 次，全部测试加起来最多 150000 次。",
+  "samples": [
+    {
+      "stdin": "[\"StockSpanner\",\"next\",\"next\",\"next\",\"next\",\"next\",\"next\",\"next\"], [[],[100],[80],[60],[70],[60],[75],[85]]\n",
+      "stdout": "[null,1,1,1,2,1,4,6]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/online-stock-span/",
+    "en": "https://leetcode.com/problems/online-stock-span/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

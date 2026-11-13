@@ -1,0 +1,7 @@
+{
+  "id": 930,
+  "summary": "Read a list that contains only the digits 0 and 1, plus a target sum. The list holds at most 30000 entries, and the target lies between 0 and the list length. Choose a contiguous block that includes at least one entry and add the entries inside it. Count how many different blocks produce a total exactly equal to the target. Two blocks count separately whenever their starting index or ending index differs. Write that count.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "id": 470,
+  "slug": "implement-rand10-using-rand7",
+  "summary": "系统里已经有一个函数 rand7，每次调用都在 1 到 7 之间以相同机会取出一个整数。请写出另一个函数 rand10，让它在 1 到 10 之间以相同机会取出一个整数。实现时不要使用系统自带的 Math.random。每一组测试都会给出一个正整数 n，表示接下来会调用 rand10 一共 n 次。",
+  "samples": [
+    {
+      "stdin": "1\n",
+      "stdout": "[7]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "2\n",
+      "stdout": "[8,4]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/implement-rand10-using-rand7/",
+    "en": "https://leetcode.com/problems/implement-rand10-using-rand7/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

@@ -1,0 +1,8 @@
+{
+  "id": 8,
+  "summary": "Read a text and write the signed integer it encodes, held in 32 bits. Skip spaces that sit at the very front, and treat only the ordinary space as that kind of gap. A following plus or minus may set the sign, and if neither mark appears the value stays positive. Then take digit characters in a row and stop at the first non-digit or at the end, throwing away whatever is left. When no digit appears, the value is 0. Lift any result below negative two to the thirty-first power up to that floor, and press any result above two to the thirty-first power minus one down to that ceiling. Stop at once if some other character shows up before the first digit.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

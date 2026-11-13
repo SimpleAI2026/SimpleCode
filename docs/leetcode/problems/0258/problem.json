@@ -1,0 +1,21 @@
+{
+  "id": 258,
+  "slug": "add-digits",
+  "summary": "读入一个大于或等于零的整数。把它的十进制各位数字相加，得到一个新的整数。只要这个新整数仍然不少于两位，就再次把各位数字相加。一直做到只剩一位数字为止，并把这个一位数字写出来。零本身已经是一位，直接写出零即可。",
+  "samples": [
+    {
+      "stdin": "38\n",
+      "stdout": "2\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/add-digits/",
+    "en": "https://leetcode.com/problems/add-digits/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

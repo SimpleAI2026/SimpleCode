@@ -1,0 +1,21 @@
+{
+  "id": 225,
+  "slug": "implement-stack-using-queues",
+  "summary": "对外提供一个后进先出的整数容器，手里只能使用队列。需要完成四项动作。push 把一个整数放进容器。pop 去掉并给出最近放进去且还在容器里的整数。top 只查看这个整数，不把它去掉。empty 在容器已经没有任何整数时写出 true，否则写出 false。不会在容器为空时调用 pop 或 top。队列只允许在尾端放入、在首端查看或去掉，以及询问个数和是否为空。",
+  "samples": [
+    {
+      "stdin": "stack.push(1)\nstack.push(2)\nstack.top()\nstack.pop()\nstack.empty()\n",
+      "stdout": "2\n2\nfalse\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/implement-stack-using-queues/",
+    "en": "https://leetcode.com/problems/implement-stack-using-queues/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

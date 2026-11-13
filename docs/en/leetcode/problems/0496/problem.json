@@ -1,0 +1,8 @@
+{
+  "id": 496,
+  "summary": "Read two arrays of integers with no repeats, nums1 and nums2. Every integer in nums1 also appears in nums2. Each array has length at most 1000. For each integer in nums1, find where it sits in nums2, then look strictly to the right of that seat for the first integer that is strictly larger. Write that larger integer when one exists. Write -1 when nothing to the right is larger. Keep the answers in the same order as nums1. Integers to the left do not qualify, and an equal integer is not larger.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

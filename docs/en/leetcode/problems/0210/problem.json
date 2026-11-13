@@ -1,6 +1,6 @@
 {
   "id": 210,
-  "summary": "The public title of this exercise is Course Schedule II. Read tokens in the same order as the method parameters from standard input and compute the result named by that title, using only those values. Print the result as integers on one line, separated by spaces. The sample below is a short input written for this playground so the printed line can be checked locally. It is not a copy of an example from the problem site. The input stays under one hundred elements so it finishes quickly in the browser.",
+  "summary": "Read the course count n. Identifiers run from 0 up to n minus 1. Also read ordering rules, each given as a pair of identifiers: the first cannot begin until the second is finished. Write one sequence that includes every course. When several sequences work, any one of them is enough. If the rules form a loop so that at least one course can never begin, write an empty list of identifiers.",
   "notes": [
     "Compare after trimming trailing newlines. The input is tokens in the same order as the method parameters."
   ]

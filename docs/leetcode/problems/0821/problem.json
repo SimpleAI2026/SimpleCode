@@ -1,0 +1,26 @@
+{
+  "id": 821,
+  "slug": "shortest-distance-to-a-character",
+  "summary": "读入一条长度介于1和104之间、只含小写字母的字符串，再读入一个小写字母c，c在串中至少出现一次。对字符串的每一个位置，找出它离最近的c有多远：位置本身就是c时距离记为0，否则距离是下标之差的绝对值。按从左到右的顺序，把每个位置的最短距离写成一个整数数组。",
+  "samples": [
+    {
+      "stdin": "s = \"loveleetcode\", c = \"e\"\n",
+      "stdout": "[3,2,1,0,1,0,0,1,2,2,1,0]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "s = \"aaab\", c = \"b\"\n",
+      "stdout": "[3,2,1,0]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/shortest-distance-to-a-character/",
+    "en": "https://leetcode.com/problems/shortest-distance-to-a-character/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

@@ -1,0 +1,8 @@
+{
+  "id": 523,
+  "summary": "Read a row of non-negative integers and one positive divisor. Decide whether the row contains a contiguous block that covers at least two positions and whose values add up to a multiple of that divisor. Write true when such a block exists, and write false when none exists. The number zero counts as a multiple of every divisor. The row length runs from 1 to 105, each item runs from 0 to 109, the sum of every item is at most 231 minus 1, and the divisor runs from 1 to 231 minus 1.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

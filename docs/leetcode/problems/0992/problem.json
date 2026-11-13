@@ -1,0 +1,26 @@
+{
+  "id": 992,
+  "slug": "subarrays-with-k-different-integers",
+  "summary": "读入一串正整数以及整数 K。从这串数里取一段连续位置，若这段里不同整数的种类恰好等于 K，就把这段计为合格。同一种整数重复出现只算一种。统计合格段的总数并写出来。整串长度至多 20000。每个元素以及 K 都是介于 1 和整串长度之间的整数。空段不算，至少要含有一个位置。",
+  "samples": [
+    {
+      "stdin": "A = [1,2,1,2,3], K = 2\n",
+      "stdout": "7\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "A = [1,2,1,3,4], K = 3\n",
+      "stdout": "3\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/subarrays-with-k-different-integers/",
+    "en": "https://leetcode.com/problems/subarrays-with-k-different-integers/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

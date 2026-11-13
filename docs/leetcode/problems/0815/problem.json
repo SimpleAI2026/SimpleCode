@@ -1,0 +1,21 @@
+{
+  "id": 815,
+  "slug": "bus-routes",
+  "summary": "读入1到500条公交线路，每条线路列出1到500个车站，车站编号是小于1000000的非负整数。每条线路上的车按列表顺序循环不停。人从车站S出发，开始时没有乘坐任何车，只能通过上车前往车站T。每登上一条线路的车计一次。找出到达T所需的最少上车次数并写出来；如果无法到达，就写出负一。",
+  "samples": [
+    {
+      "stdin": "routes = [[1, 2, 7], [3, 6, 7]]\nS = 1\nT = 6\n",
+      "stdout": "2\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/bus-routes/",
+    "en": "https://leetcode.com/problems/bus-routes/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

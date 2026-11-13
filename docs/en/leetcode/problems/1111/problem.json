@@ -1,0 +1,8 @@
+{
+  "id": 1111,
+  "summary": "Read a parentheses string that is already valid and has length from 1 to 10000. It contains only round opening and closing brackets. Assign every character to group A or group B so that each group is itself a valid parentheses string, every character is used once, and each group keeps the original relative order. The depth of an empty piece is 0. Joining two valid pieces yields the larger of their depths. Wrapping a valid piece in one matching pair increases its depth by one. Make the larger of the two group depths as small as possible. Write an array of the same length as the input, using 0 for group A and 1 for group B. If several assignments work, write any one of them.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

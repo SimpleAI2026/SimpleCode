@@ -1,0 +1,8 @@
+{
+  "id": 1579,
+  "summary": "An undirected graph has n nodes and three kinds of links. Kind 1 may be walked only by Alice, kind 2 only by Bob, and kind 3 by either person. Each link is given as a kind plus two endpoints and may be crossed in either direction. Remove as many links as possible while both people can still reach every node starting from any node. Write that largest count, or write -1 when no set of remaining links lets both of them do so. Both n and the link count are at most 100000. Endpoints lie from 1 to n, kinds are 1, 2, or 3, and each kind with the same two endpoints appears only once.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

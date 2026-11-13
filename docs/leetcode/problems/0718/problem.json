@@ -1,0 +1,21 @@
+{
+  "id": 718,
+  "slug": "maximum-length-of-repeated-subarray",
+  "summary": "读入两个整数数组A和B。两个数组的长度都在1到1000之间，每个元素都是大于等于0且小于100的整数。找出A里一段连续片段和B里一段连续片段，使两段的数字与顺序完全一致。写出这样的片段能够达到的最大长度。",
+  "samples": [
+    {
+      "stdin": "A: [1,2,3,2,1]\nB: [3,2,1,4,7]\n",
+      "stdout": "3\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/maximum-length-of-repeated-subarray/",
+    "en": "https://leetcode.com/problems/maximum-length-of-repeated-subarray/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

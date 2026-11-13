@@ -1,0 +1,8 @@
+{
+  "id": 633,
+  "summary": "Read one integer c that is zero or positive. Ask whether some integers a and b exist so that a multiplied by itself, added to b multiplied by itself, equals c. Write true when they exist and write false when they do not. Zero may be chosen, and negative integers may be chosen, because multiplying a number by itself drops the sign. Only the yes or no result is required.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

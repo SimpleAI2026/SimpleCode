@@ -1,0 +1,21 @@
+{
+  "id": 1052,
+  "slug": "grumpy-bookstore-owner",
+  "summary": "书店按分钟营业，分钟数等于顾客数组的长度，这个长度从 1 到 20000。每一分钟进来的人数在 0 到 1000 之间，他们在该分钟结束时全部离开。生气标记只取 0 或 1。标记为 1 时，这一分钟进来的人都不满意。标记为 0 时，这些人都满意。老板可以选定连续的若干分钟保持平静，这段长度记为 X，X 从 1 到分钟数，而且这种平静只能用一次。没被这段盖住的生气分钟仍然让顾客不满意。找出全天最多能让多少名顾客满意，并把这个人数写出来。",
+  "samples": [
+    {
+      "stdin": "customers = [1,0,1,2,1,1,7,5], grumpy = [0,1,0,1,0,1,0,1], X = 3\n",
+      "stdout": "16\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/grumpy-bookstore-owner/",
+    "en": "https://leetcode.com/problems/grumpy-bookstore-owner/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

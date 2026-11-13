@@ -1,0 +1,8 @@
+{
+  "id": 69,
+  "summary": "Read an integer x that is zero or positive. Find the largest integer r whose product with itself is still no greater than x, and write r. When the true root has a fractional part, drop that fraction rather than rounding up to a larger integer. When x equals 0, the written result is 0 as well. Write that single integer, with no unit and no explanation beside it. The integer r itself must also be zero or positive.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "id": 792,
+  "summary": "Read one main string of lowercase letters, then read at most 5000 words that are also lowercase, each of length at most 50. A word matches when deleting some characters from the main string, possibly deleting none, leaves exactly that word with the surviving characters still in their original relative order. Count the matching words and write the count.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

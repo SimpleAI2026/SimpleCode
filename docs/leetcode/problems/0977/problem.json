@@ -1,0 +1,26 @@
+{
+  "id": 977,
+  "slug": "squares-of-a-sorted-array",
+  "summary": "读入一条已经按非递减顺序排好的整数序列，长度从 1 到 10000。每个整数的绝对值不超过 10000。把序列里的每个数各自平方，得到同样个数的新数，再把这些平方按非递减顺序排好并写出来。原序列里的负数平方后会变成正数，所以新序列的顺序不一定还能沿用原来的下标次序。",
+  "samples": [
+    {
+      "stdin": "[-4,-1,0,3,10]\n",
+      "stdout": "[0,1,9,16,100]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "[-7,-3,2,3,11]\n",
+      "stdout": "[4,9,9,49,121]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/squares-of-a-sorted-array/",
+    "en": "https://leetcode.com/problems/squares-of-a-sorted-array/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

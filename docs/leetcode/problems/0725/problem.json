@@ -1,0 +1,26 @@
+{
+  "id": 725,
+  "slug": "split-linked-list-in-parts",
+  "summary": "读入一条单向链表和正整数k。链表长度在0到1000之间，结点中的整数在0到999之间，k在1到50之间。按结点原有先后，把链表切成恰好k段连续片段。各段结点数尽量接近，任意两段相差至多1，而且更靠前的段不能短于更靠后的段。链表较短时允许空段。按从前到后的顺序写出这k段。",
+  "samples": [
+    {
+      "stdin": "root = [1, 2, 3], k = 5\n",
+      "stdout": "[[1],[2],[3],[],[]]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "root has root.val = 1, root.next.val = 2, \\root.next.next.val = 3, and root.next.next.next = null.\nThe first element\n",
+      "stdout": "[0] has output[0].val = 1, output[0].next = null.\nThe last element output[4] is NULL, but it's string representation as a ListNode is [].\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/split-linked-list-in-parts/",
+    "en": "https://leetcode.com/problems/split-linked-list-in-parts/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

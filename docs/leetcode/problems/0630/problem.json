@@ -1,0 +1,26 @@
+{
+  "id": 630,
+  "slug": "course-schedule-iii",
+  "summary": "有若干门网课，门数在 1 到 104。每门课给出持续天数和最晚完成日，这两个正整数也都不超过 104。学习从第 1 天开始，同一时间只能学一门，而且一门课必须天天连续学完，并在它的最晚完成日当天或更早结束。找出最多可以完成的门数，并把这个门数写出来。可以放弃一些课。",
+  "samples": [
+    {
+      "stdin": "courses = [[100,200],[200,1300],[1000,1250],[2000,3200]]\n",
+      "stdout": "3\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "courses = [[1,2]]\n",
+      "stdout": "1\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/course-schedule-iii/",
+    "en": "https://leetcode.com/problems/course-schedule-iii/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

@@ -1,0 +1,8 @@
+{
+  "id": 682,
+  "summary": "Read a row of tokens. A token may be an integer, a plus sign, the letter D, or the letter C. An integer is the score of that turn. A plus sign means the score of this turn equals the sum of the two latest scores that are still in force. D means this turn scores twice the latest score still in force. C creates no score; it cancels the latest score still in force. Outcomes stay recorded and can affect later tokens. Add every score that is still in force and write the total. The row holds between 1 and 1000 tokens, and each integer lies between -30000 and 30000.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "id": 707,
+  "summary": "Implement a chain of nodes whose indexes start at 0. Either a one-direction chain or a two-direction chain is allowed. Read the value at an index, and write -1 when the index is illegal. Insert a value at the front so the new node becomes the first. Attach a value at the end. Insert a value just before a stated index; attach it at the end when the index equals the current length, and do nothing when the index is greater. Erase the node at an index, and leave the chain untouched when the index is illegal. Every value is between 1 and 1000, and the number of operations is also between 1 and 1000. Do not use a linked-list type supplied by the language.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

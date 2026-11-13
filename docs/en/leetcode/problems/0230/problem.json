@@ -1,6 +1,6 @@
 {
   "id": 230,
-  "summary": "The public title of this exercise is Kth Smallest Element In a Bst. Read tokens in the same order as the method parameters from standard input and compute the result named by that title, using only those values. Print the result as one integer. The sample below is a short input written for this playground so the printed line can be checked locally. It is not a copy of an example from the problem site. The input stays under one hundred elements so it finishes quickly in the browser.",
+  "summary": "Read a binary search tree and a positive integer k. In the left subtree of any node, every value is smaller than that node; in the right subtree, every value is larger; all values are different. k is always some integer from 1 through the node count. If the values were lined up from smallest to largest, write the value in place k. Do not write an index, and do not write the whole ordered list.",
   "notes": [
     "Compare after trimming trailing newlines. The input is tokens in the same order as the method parameters."
   ]

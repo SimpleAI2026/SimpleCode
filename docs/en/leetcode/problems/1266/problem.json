@@ -1,0 +1,8 @@
+{
+  "id": 1266,
+  "summary": "Read an ordered list of points on a plane. Each point stores an integer x coordinate and an integer y coordinate. Travel must follow the listed order from the first point through the last. During one second a traveler may step one unit along the horizontal axis only, one unit along the vertical axis only, or one unit on both axes at the same time. Find the smallest number of seconds needed to pass through every point and write that number. The list contains between 1 and 100 points, and each coordinate lies between -1000 and 1000.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

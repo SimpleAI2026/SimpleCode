@@ -1,0 +1,8 @@
+{
+  "id": 728,
+  "summary": "Read two integers left and right such that 1 is less than or equal to left, left is less than or equal to right, and right is less than or equal to 10000. Inside that closed interval, find every positive integer whose decimal writing contains no digit 0 and which can be divided evenly by each of its own digits. Write those integers from smallest to largest.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

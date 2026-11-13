@@ -1,0 +1,8 @@
+{
+  "id": 845,
+  "summary": "Read a list of integers. The list length is from 0 to 10000, and each value is from 0 to 10000. A mountain is a contiguous segment that rises strictly, hits one crest, then falls strictly. Both the rising side and the falling side must contain at least one step, so the segment spans at least three positions. Find the mountain that covers the most positions and write that length. Write 0 when the list contains no mountain at all.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

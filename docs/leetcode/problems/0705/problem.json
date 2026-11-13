@@ -1,0 +1,21 @@
+{
+  "id": 705,
+  "slug": "design-hashset",
+  "summary": "自己做一个整数集合，禁止调用语言内置的哈希集合。要能完成三件事：把一个整数放进集合，同一个整数再次放入时仍只保留一份；询问某个整数此刻是否在集合中，在则写真，不在则写假；把某个整数移出集合，若集合里本来没有它就保持原样。涉及的整数都在 0 到 1000000 之间，操作次数合计在 1 到 10000 之间。",
+  "samples": [
+    {
+      "stdin": "hashSet.add(1)\nhashSet.add(2)\nhashSet.contains(1)\nhashSet.contains(3)\nhashSet.add(2)\nhashSet.contains(2)\nhashSet.remove(2)\nhashSet.contains(2)\n",
+      "stdout": "true\nfalse\ntrue\nfalse\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/design-hashset/",
+    "en": "https://leetcode.com/problems/design-hashset/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

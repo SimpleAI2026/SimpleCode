@@ -1,6 +1,6 @@
 {
   "id": 66,
-  "summary": "The public title of this exercise is Plus One. Read tokens in the same order as the method parameters from standard input and compute the result named by that title, using only those values. Print the result as integers on one line, separated by spaces. The sample below is a short input written for this playground so the printed line can be checked locally. It is not a copy of an example from the problem site. The input stays under one hundred elements so it finishes quickly in the browser.",
+  "summary": "Read a non-empty list of digits that records a zero-or-positive integer, with the high digit at the left. Each entry is one digit from 0 through 9. The high digit is 0 only when the whole value is 0. Add 1 to that integer and write every digit of the sum, still with the high digit at the left. When the tail is a stretch of nines, keep carrying toward the high end. When the high end also carries, the written result gains one extra digit. Write only the digits of the increased value.",
   "notes": [
     "Compare after trimming trailing newlines. The input is tokens in the same order as the method parameters."
   ]

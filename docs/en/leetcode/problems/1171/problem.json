@@ -1,0 +1,8 @@
+{
+  "id": 1171,
+  "summary": "Read one linked list. It contains between 1 and 1000 nodes, and every stored integer has absolute value at most 1000. Whenever a contiguous run of nodes adds up to zero, remove that entire run and reconnect the two sides. Continue until no zero-sum run is left. Write the head of the list that remains. If more than one removal order can finish the cleanup, any finished list is acceptable. The node cap is 1000.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

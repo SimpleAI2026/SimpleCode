@@ -1,0 +1,21 @@
+{
+  "id": 52,
+  "slug": "n-queens-ii",
+  "summary": "读入一个正整数。它同时表示正方形棋盘的边长和要摆放的皇后枚数。统计有多少种摆法可以让这些皇后互不攻击，也就是任意两枚都不在同一横行、同一竖列或同一条斜线上。只把这个种数写出来，不要展开每一张棋盘。边长至少是 1。所占格子集合不同才算不同摆法。",
+  "samples": [
+    {
+      "stdin": "4\n",
+      "stdout": "2\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/n-queens-ii/",
+    "en": "https://leetcode.com/problems/n-queens-ii/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

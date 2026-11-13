@@ -1,0 +1,8 @@
+{
+  "id": 979,
+  "summary": "Read an N-node binary tree, where N is an integer from 1 through 100. Every node holds some number of coins. That number may be 0 and never exceeds N, and all coins in the tree sum to exactly N. One move picks an edge between a parent and a child, then shifts one coin across that edge. Shifting toward the parent or toward the child are both allowed. Compute how many such shifts are needed so each node ends with exactly one coin, and write the count.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

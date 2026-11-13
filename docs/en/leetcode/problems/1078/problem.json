@@ -1,0 +1,8 @@
+{
+  "id": 1078,
+  "summary": "Read a passage and two words called the lead word and the follow word. Spaces separate the words of the passage. The passage length is from 1 to 1000 characters, each of those two words has length from 1 to 10, and every word uses lowercase English letters only. Scan consecutive triples of words from left to right. Whenever the opening pair of a triple matches the lead word and then the follow word, record the remaining word of that triple. Several matches may occur. Write the recorded words in left to right order.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

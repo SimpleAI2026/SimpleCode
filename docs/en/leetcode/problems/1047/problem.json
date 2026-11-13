@@ -1,0 +1,7 @@
+{
+  "id": 1047,
+  "summary": "Read one string made only of lowercase English letters. Its length is an integer from 1 through 20000. Whenever two copies of the same letter stand side by side, erase that pair. Letters that were farther apart may become neighbors after an erasure, so keep scanning. Stop when no neighboring pair shares a letter. The remaining characters do not depend on which eligible pair is erased first. Write the remaining string.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

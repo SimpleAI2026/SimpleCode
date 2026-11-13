@@ -1,0 +1,21 @@
+{
+  "id": 433,
+  "slug": "minimum-genetic-mutation",
+  "summary": "读入起始基因、目标基因和一份基因库。每条基因都是长度为 8 的字符串，字符只从 A、C、G、T 中选取。一步只改动一个字符。起点本身视为合法，即使库里没有它；起点之后经过的每一条基因都必须出现在库中。起点和终点不相同。找出从起点走到终点所需的最少步数，做不到时写出 -1。",
+  "samples": [
+    {
+      "stdin": "gene \"bank\", which records all the valid gene mutations. A gene must be in the bank to make it a valid gene string.\n\nNow, given 3 things - start, end, bank, your task is to determine what is the minimum number of mutations needed to mutate from \"start\" to \"end\". If there is no such a mutation,\n",
+      "stdout": "-1.\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/minimum-genetic-mutation/",
+    "en": "https://leetcode.com/problems/minimum-genetic-mutation/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

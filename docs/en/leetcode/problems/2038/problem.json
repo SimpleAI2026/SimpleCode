@@ -1,0 +1,8 @@
+{
+  "id": 2038,
+  "summary": "Read a string of length at most 100000 that contains only the letters A and B. Two players take turns deleting one letter, and player A starts. Player A may delete a letter only when it is A and both letters beside it are also A at that moment. Player B may delete a letter only when it is B and both letters beside it are also B at that moment. A letter at the far left end or the far right end cannot be deleted. A player with no legal deletion on their turn loses. Both sides act in the strongest way. Decide whether player A wins, and write true or false.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

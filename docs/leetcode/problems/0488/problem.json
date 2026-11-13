@@ -1,0 +1,26 @@
+{
+  "id": 488,
+  "slug": "zuma-game",
+  "summary": "读入两串彩球。board 是桌面上的那一排，hand 是手里的彩球。颜色只有 R、Y、B、G、W。board 的长度从 1 到 16，hand 的长度从 1 到 5。开局时这一排里没有连续三颗或更多同色球。每一回合从手里取一颗，插进任意两颗之间，或者接到某一端。一旦出现连续至少三颗同色，就把这一段整段消掉；如果因此又形成新的同色段，就继续消，直到不能再消。求出清空桌面最少要用掉几颗手球并写出来；做不到就写 -1。",
+  "samples": [
+    {
+      "stdin": "board = \"WRRBBW\", hand = \"RB\"\n",
+      "stdout": "-1\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "board = \"WWRRBBWW\", hand = \"WRBRW\"\n",
+      "stdout": "2\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/zuma-game/",
+    "en": "https://leetcode.com/problems/zuma-game/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

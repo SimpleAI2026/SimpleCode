@@ -1,0 +1,8 @@
+{
+  "id": 1310,
+  "summary": "Read an array of positive integers and a list of queries. Each query names a closed span with a left index and a right index. For every query, combine the array values from the left index through the right index by bitwise exclusive or, producing one result. Write those results as an array that follows the original query order. Both the array length and the query count are at most 3 times 10^4, and each array value is at most 10^9. Every right index is at least the matching left index, and both indexes stay inside the array.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

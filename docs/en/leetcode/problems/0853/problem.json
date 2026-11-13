@@ -1,6 +1,6 @@
 {
   "id": 853,
-  "summary": "The public title of this exercise is Car Fleet. Read tokens in the same order as the method parameters from standard input and compute the result named by that title, using only those values. Print the result as one integer. The sample below is a short input written for this playground so the printed line can be checked locally. It is not a copy of an example from the problem site. The input stays under one hundred elements so it finishes quickly in the browser.",
+  "summary": "Read a destination distance and the data for N cars sharing one lane. N runs from 0 to 10000. The destination and every speed are positive and stop at 1000000. Every starting spot is distinct and lies strictly before the destination. Spots and speeds are measured in miles and miles each hour. A car holds one speed until traffic ahead forces a change. A quicker car coming from behind is not allowed to pass. Once it draws level, both continue at the slower pace and the gap counts as zero. Joining exactly at the finish still forms a single pack. One car by itself is a pack. Write the number of packs that reach the finish.",
   "notes": [
     "Compare after trimming trailing newlines. The input is tokens in the same order as the method parameters."
   ]

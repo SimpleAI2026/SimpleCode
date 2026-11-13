@@ -1,0 +1,8 @@
+{
+  "id": 885,
+  "summary": "Read a row count R, a column count C, and a start cell given by row r0 and column c0. Indexes begin at zero, so the upper left cell is row 0 and column 0. Start there facing right, then move outward in a clockwise loop whose headings cycle through right, down, left, and up. Each time a heading comes around again, its straight run is one step longer. Steps that leave the rectangle still occur, and later steps may step back inside. Write every cell that lies inside, in the order it is entered the first time. R and C are each at most 100, the start cell is inside, and every cell is entered once.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

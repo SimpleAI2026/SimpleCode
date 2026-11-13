@@ -1,0 +1,26 @@
+{
+  "id": 1295,
+  "slug": "find-numbers-with-even-number-of-digits",
+  "summary": "读入一串正整数。对其中每一个整数，数一数它的十进制写法一共有几位。位数是偶数的整数才计入，位数是奇数的忽略。把符合条件的整数一共有多少个写出来。数组长度介于 1 和 500 之间，每个整数介于 1 和 10^5 之间。一位数只有一位，不能计入；两位、四位以及更长的偶数位都要计入。",
+  "samples": [
+    {
+      "stdin": "nums = [12,345,2,6,7896]\n",
+      "stdout": "2\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "nums = [555,901,482,1771]\n",
+      "stdout": "1\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/find-numbers-with-even-number-of-digits/",
+    "en": "https://leetcode.com/problems/find-numbers-with-even-number-of-digits/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

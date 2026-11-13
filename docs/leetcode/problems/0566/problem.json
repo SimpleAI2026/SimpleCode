@@ -1,0 +1,26 @@
+{
+  "id": 566,
+  "slug": "reshape-the-matrix",
+  "summary": "读入一个矩阵，再读入两个正整数 r 和 c，表示希望得到的行数和列数。原矩阵的高和宽都在 1 到 100 之间。按先行后列的次序取出原矩阵的全部元素，再按同样的次序填进 r 行 c 列的新矩阵。只有元素总数恰好等于 r 乘以 c 时，这次重排才算合法。合法就写出新矩阵，不合法就写出原来的矩阵。",
+  "samples": [
+    {
+      "stdin": "nums =\n[[1,2],\n[3,4]]\nr = 1, c = 4\n",
+      "stdout": "[[1,2,3,4]]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "nums =\n[[1,2],\n[3,4]]\nr = 2, c = 4\n",
+      "stdout": "[[1,2],\n[3,4]]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/reshape-the-matrix/",
+    "en": "https://leetcode.com/problems/reshape-the-matrix/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

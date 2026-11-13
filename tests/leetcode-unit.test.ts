@@ -68,6 +68,14 @@ const zh = readJson<IndexRow[]>(join(ROOT, "index.json"));
 const en = readJson<IndexRow[]>(join(EN, "index.json"));
 const zhTags = readJson<Record<string, string>>(join(ROOT, "tags.json"));
 const enTags = readJson<Record<string, string>>(join(EN, "tags.json"));
+const lock = readJson<{
+  readmeCount: number;
+  catalogCount: number;
+  withSolution: number;
+  difficulty: { easy: number; medium: number; hard: number };
+  keptWithoutReadme: number[];
+  skipped: { dir: string }[];
+}>(join(ROOT, "leetcode-go.lock.json"));
 
 function problem(id: number) {
   return readJson<ProblemFile>(join(ROOT, "problems", pad(id), "problem.json"));
@@ -82,15 +90,25 @@ describe("leetcode catalog", () => {
     const ids = zh.map((row) => row.id);
     assert.equal(new Set(ids).size, ids.length);
     assert.deepEqual(en.map((row) => row.id), ids);
-    assert.ok(ids.length >= 180 && ids.length <= 220, String(ids.length));
+    assert.equal(ids.length, lock.catalogCount);
+    assert.equal(lock.readmeCount, 788);
+    assert.equal(lock.catalogCount, 820);
+    assert.equal(lock.withSolution, 200);
+    assert.equal(zh.filter((row) => row.langs.includes("python")).length, 200);
+    assert.equal(zh.filter((row) => row.langs.length === 0).length, lock.catalogCount - lock.withSolution);
+    assert.equal(zh.filter((row) => row.difficulty === "easy").length, lock.difficulty.easy);
+    assert.equal(zh.filter((row) => row.difficulty === "medium").length, lock.difficulty.medium);
+    assert.equal(zh.filter((row) => row.difficulty === "hard").length, lock.difficulty.hard);
+    assert.equal(lock.keptWithoutReadme.length, 32);
+    assert.equal(lock.skipped.length, 10);
     assert.equal(zh.filter((row) => row.lists.includes("blind75")).length, 75);
     const tiers = new Set(zh.map((row) => row.tier));
     for (const tier of tiers) assert.ok(tier === "core" || tier === "extended");
-    assert.ok(zh.filter((row) => row.tier === "extended").length <= 500);
+    assert.ok(zh.filter((row) => row.tier === "extended").length <= 820);
     assert.deepEqual(Object.keys(enTags).sort(), Object.keys(zhTags).sort());
   });
 
-  it("gives every problem titles, a difficulty, a sample, and an attributed solution", () => {
+  it("gives every problem titles, a difficulty, and a sample", () => {
     for (const row of zh) {
       const twin = en.find((item) => item.id === row.id)!;
       assert.ok(row.title.trim(), String(row.id));
@@ -114,8 +132,9 @@ describe("leetcode catalog", () => {
       assert.equal(copy.id, row.id);
       const han = body.summary.match(HAN)?.length ?? 0;
       const words = copy.summary.trim().split(/\s+/).length;
-      assert.ok(han >= 40 && han <= 180, `${row.id} han=${han}`);
-      assert.ok(words >= 30 && words <= 120, `${row.id} words=${words}`);
+      assert.ok(han >= 40 && han <= 480, `${row.id} han=${han}`);
+      assert.ok(words >= 30 && words <= 170, `${row.id} words=${words}`);
+      assert.equal(NON_ASCII.test(copy.summary), false, String(row.id));
       assert.ok(body.samples.length >= 1 && body.samples.length <= 3);
       assert.equal(copy.notes.length, body.samples.length);
       for (const sample of body.samples) {
@@ -129,11 +148,11 @@ describe("leetcode catalog", () => {
       assert.ok(body.links.en.includes(row.slug));
 
       const langs = Object.keys(body.solutions);
-      assert.ok(langs.length >= 1, String(row.id));
       assert.deepEqual(row.langs, langs);
       const dir = join(ROOT, "problems", pad(row.id));
       const files = readdirSync(dir).filter((name) => name !== "problem.json");
       assert.deepEqual(files.sort(), langs.map((lang) => body.solutions[lang].file).sort());
+      if (langs.length === 0) continue;
       for (const lang of langs) {
         const ref = body.solutions[lang];
         assert.ok(ref.attribution.trim());

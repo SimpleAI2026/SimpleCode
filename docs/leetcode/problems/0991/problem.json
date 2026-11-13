@@ -1,0 +1,26 @@
+{
+  "id": 991,
+  "slug": "broken-calculator",
+  "summary": "屏幕开始时显示正整数 X。可用的按键只有两个：把屏幕上的数乘以二，或者把屏幕上的数减一。目标显示是正整数 Y。找出从 X 变到 Y 所需的最少按键次数并写出来。X 与 Y 都落在 1 到 10^9 的闭区间里。两种按键使用次数不限，先后次序也不限。乘二之后数字仍是整数，减一之后同样保持整数。",
+  "samples": [
+    {
+      "stdin": "X = 2, Y = 3\n",
+      "stdout": "2\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "X = 5, Y = 8\n",
+      "stdout": "2\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/broken-calculator/",
+    "en": "https://leetcode.com/problems/broken-calculator/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

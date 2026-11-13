@@ -1,0 +1,26 @@
+{
+  "id": 709,
+  "slug": "to-lower-case",
+  "summary": "读入一条字符串，长度在 1 到 100 之间，每个字符都是可打印的 ASCII。逐个查看字符：遇到大写英文字母时，换成该字母对应的小写；数字、空白、标点以及已经是小写的字母都原封不动。按原先顺序拼出新字符串并写出。不要增加或删除字符，也不要挪动任何字符的位置。",
+  "samples": [
+    {
+      "stdin": "s = \"Hello\"\n",
+      "stdout": "\"hello\"\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "s = \"here\"\n",
+      "stdout": "\"here\"\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/to-lower-case/",
+    "en": "https://leetcode.com/problems/to-lower-case/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

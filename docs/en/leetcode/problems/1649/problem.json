@@ -1,0 +1,8 @@
+{
+  "id": 1649,
+  "summary": "Read an instruction list whose length is from 1 to 105, where each instruction value is also from 1 to 105. Start with an empty sequence and insert the values in their original order. The cost of one insertion is the smaller of two counts already in the sequence: values strictly below the newcomer, and values strictly above it. Values equal to the newcomer belong to neither count. Add every insertion cost, reduce the total modulo 10 to the 9th power plus 7, and write the remainder.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

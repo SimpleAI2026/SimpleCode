@@ -1,0 +1,21 @@
+{
+  "id": 713,
+  "slug": "subarray-product-less-than-k",
+  "summary": "读入一串正整数以及一个整数 k。数出有多少段连续的下标，使得这段里所有整数的乘积严格小于 k。不包含任何整数的空段不要计入。把数出的段数写出来。数组长度大于 0 并且不超过 50000。每个元素大于 0 并且小于 1000。k 满足大于等于 0 并且小于 10^6。",
+  "samples": [
+    {
+      "stdin": "nums = [10, 5, 2, 6], k = 100\n",
+      "stdout": "8\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/subarray-product-less-than-k/",
+    "en": "https://leetcode.com/problems/subarray-product-less-than-k/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

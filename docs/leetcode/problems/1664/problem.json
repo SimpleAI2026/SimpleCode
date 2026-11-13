@@ -1,0 +1,26 @@
+{
+  "id": 1664,
+  "slug": "ways-to-make-a-fair-array",
+  "summary": "读入整数列 nums。列长介于 1 与 105，每个元素介于 1 与 104。必须正好删掉一个元素，删掉之后右侧元素的位置会整体前移。若剩下的列中，奇数位置上的数相加等于偶数位置上的数相加，这列就算公平。统计有多少种删法能让剩下的列公平，并把这个数目写出来。位置从 0 起算。",
+  "samples": [
+    {
+      "stdin": "nums = [2,1,6,4]\n",
+      "stdout": "1\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "nums = [1,1,1]\n",
+      "stdout": "3\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/ways-to-make-a-fair-array/",
+    "en": "https://leetcode.com/problems/ways-to-make-a-fair-array/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

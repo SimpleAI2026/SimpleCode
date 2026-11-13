@@ -1,6 +1,6 @@
 {
   "id": 703,
-  "summary": "The public title of this exercise is Kth Largest Element In a Stream. Read one command per line from standard input and compute the result named by that title, using only those values. Print the result as one result line for each command. The sample below is a short input written for this playground so the printed line can be checked locally. It is not a copy of an example from the problem site. The input stays under one hundred elements so it finishes quickly in the browser.",
+  "summary": "Make an object that reports the k-th biggest integer in a stream after sorting, where repeated values occupy separate places and the result is not the k-th distinct value. Construction reads k and the starting stream. Each later add reads one integer, places it into the stream, and writes the k-th biggest integer in the stream at that moment. k runs from 1 to 104, the starting length runs from 0 to 104, every stream integer and every newly placed value runs from -104 to 104, and add is called at most 104 times. Each query happens only when the stream already holds at least k integers.",
   "notes": [
     "Compare after trimming trailing newlines. The input is one command per line."
   ]

@@ -1,0 +1,8 @@
+{
+  "id": 1019,
+  "summary": "Read one linked list. The node count is an integer from 0 through 10000, and every node stores an integer from 1 through 10^9. Walking forward from each node, find the closest later node whose stored integer is strictly greater. If no later node is greater, record 0 for that position. Write the recorded integers from the head node through the tail node. An equal stored integer does not count as greater, so the later value must be strictly above the current node.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

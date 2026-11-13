@@ -1,0 +1,8 @@
+{
+  "id": 81,
+  "summary": "Read a list of integers and one target number. The list was first arranged in non-decreasing order. It was later cut at a position that was not announced in advance, and the piece on the right was moved in front of the piece on the left. Equal numbers may appear. Decide whether the target number is still present. Write true when it is present and false when it is absent. The cut may fall at any position, including the case in which nothing actually moved. Equal numbers may sit on both sides of the cut.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

@@ -1,6 +1,6 @@
 {
   "id": 494,
-  "summary": "The public title of this exercise is Target Sum. Read a count, that many integers, and one target integer from standard input and compute the result named by that title, using only those values. Print the result as one integer. The sample below is a short input written for this playground so the printed line can be checked locally. It is not a copy of an example from the problem site. The input stays under one hundred elements so it finishes quickly in the browser.",
+  "summary": "Read a non-empty list of non-negative integers and a target sum S. The list length is at most 20, and the integers add up to at most 1000. In front of each integer, place either a plus or a minus. Both choices must be considered. Add the signed integers and count how many placements make the result equal S, then write that count. The count fits in a 32 bit integer. Placements that use only plus signs, or only minus signs, still count. The integers stay in place, and only the signs may change.",
   "notes": [
     "Compare after trimming trailing newlines. The input is a count, that many integers, and one target integer."
   ]

@@ -1,0 +1,8 @@
+{
+  "id": 1694,
+  "summary": "Read a phone-number string whose length is from 2 to 100. It contains at least two digits, and every other character is a space or a dash. First drop every space and every dash. Then, moving from left to right, cut the digits into groups of three until four or fewer digits remain. Two leftover digits form one group, three leftover digits form one group, and four leftover digits form two groups of two. Join the groups with dashes. A group of a single digit is forbidden, and at most two groups of length two may appear. Write the formatted number.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

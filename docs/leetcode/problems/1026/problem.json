@@ -1,0 +1,21 @@
+{
+  "id": 1026,
+  "slug": "maximum-difference-between-node-and-ancestor",
+  "summary": "读入一棵二叉树，结点个数介于 2 和 5000，每个结点里的整数介于 0 和 100000。当一个结点位于另一个结点通往根的链上，而且两者不是同一结点时，计算它们所存整数之差的绝对值。在所有这种配对中找出最大的绝对值并写出来。根上面没有更靠上的结点。差值只在这条链上的配对里比较。",
+  "samples": [
+    {
+      "stdin": "[8,3,10,1,6,null,14,null,null,4,7,13]\n",
+      "stdout": "7\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/maximum-difference-between-node-and-ancestor/",
+    "en": "https://leetcode.com/problems/maximum-difference-between-node-and-ancestor/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

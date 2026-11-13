@@ -1,0 +1,8 @@
+{
+  "id": 653,
+  "summary": "Read one search tree of the binary kind, then read an integer to use as the target sum. Check whether two distinct nodes store numbers that add up to exactly this target. Write true when they do and write false when they do not. Walking the tree inorder yields an increasing sequence, but only the yes or no conclusion is required, not which nodes were used.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

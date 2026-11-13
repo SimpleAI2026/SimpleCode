@@ -1,0 +1,21 @@
+{
+  "id": 1670,
+  "slug": "design-front-middle-back-queue",
+  "summary": "实现一种整数序列，能在最前、正中、最后三处放入和取出。刚建好时里面没有任何元素。三种放入分别把一个值放到最前、正中或最后；三种取出把对应位置的值拿掉并写出来，若拿之前已经空了就写 -1。元素个数为偶数、正中出现两个候选时，总是动靠前的那个。把 6 放进一条五项序列的正中时，它落在第二项和第三项之间。从一条六项序列的正中取出时，拿掉的是第三项。每个值在 1 到 109 之间，六种调用合计不超过 1000 次。按调用次序写出每次取出的结果。",
+  "samples": [
+    {
+      "stdin": "[\"FrontMiddleBackQueue\", \"pushFront\", \"pushBack\", \"pushMiddle\", \"pushMiddle\", \"popFront\", \"popMiddle\", \"popMiddle\", \"popBack\", \"popFront\"]\n[[], [1], [2], [3], [4], [], [], [], [], []]\n",
+      "stdout": "[null, null, null, null, null, 1, 3, 4, 2, -1]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/design-front-middle-back-queue/",
+    "en": "https://leetcode.com/problems/design-front-middle-back-queue/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

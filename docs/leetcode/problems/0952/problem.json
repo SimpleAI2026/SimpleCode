@@ -1,0 +1,26 @@
+{
+  "id": 952,
+  "slug": "largest-component-size-by-common-factor",
+  "summary": "读入一组彼此不同的正整数，个数最少 1 个、最多 20000 个，其中每个整数至少为 1、至多为 100000。把每个整数看成图里的一个点。若两个整数拥有大于 1 的公约数，就在对应的两点之间连一条无向边。边只取决于这个条件，不要求两个数本身相等。在得到的图中找出点数最多的连通块，把这个点数写出来。没有任何边相连的孤立点，也单独算作一块。",
+  "samples": [
+    {
+      "stdin": "[4,6,15,35]\n",
+      "stdout": "4\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "[20,50,9,63]\n",
+      "stdout": "2\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/largest-component-size-by-common-factor/",
+    "en": "https://leetcode.com/problems/largest-component-size-by-common-factor/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

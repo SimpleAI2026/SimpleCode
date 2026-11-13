@@ -1,0 +1,26 @@
+{
+  "id": 337,
+  "slug": "house-robber-iii",
+  "summary": "读入一棵二叉树，每个结点上标着一笔金额。选出若干结点并把金额相加。一旦某个结点和它的直接父结点同时入选，这次选择就无效。结点和更远的祖先可以同时入选。在所有有效选择里找出金额合计的最大值，把这个最大值写出来。",
+  "samples": [
+    {
+      "stdin": "[3,2,3,null,3,null,1]\n\n3\n/ \\\n2 3\n\\ \\\n3 1\n",
+      "stdout": "7\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "[3,4,5,1,3,null,1]\n\n3\n/ \\\n4 5\n/ \\ \\\n1 3 1\n",
+      "stdout": "9\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/house-robber-iii/",
+    "en": "https://leetcode.com/problems/house-robber-iii/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

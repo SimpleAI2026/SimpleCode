@@ -1,0 +1,21 @@
+{
+  "id": 557,
+  "slug": "reverse-words-in-a-string-iii",
+  "summary": "读入一句由单词和空格组成的话。每个单词内部都是字母，相邻单词之间恰好隔着一个空格，句首和句尾都不再多出空格。把每个单词内部的字母从后往前重新排，单词与单词的先后保持不变，中间那些空格也留在原来的地方。把重排之后得到的整句话写出来。",
+  "samples": [
+    {
+      "stdin": "\"Let's take LeetCode contest\"\n",
+      "stdout": "\"s'teL ekat edoCteeL tsetnoc\"\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/reverse-words-in-a-string-iii/",
+    "en": "https://leetcode.com/problems/reverse-words-in-a-string-iii/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

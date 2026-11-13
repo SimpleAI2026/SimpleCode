@@ -1,0 +1,7 @@
+{
+  "id": 120,
+  "summary": "Read a triangle laid out with integers. A row of index k holds k integers, so each row farther down is exactly one entry longer than the row above it. Start from the single number at the very top. Each step may land only on a position adjacent to the current number in the next lower row, and the walk must continue until the bottom row. Among all such walks, find the smallest sum of the integers collected along the way, and write that sum. The triangle contains at least one row.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

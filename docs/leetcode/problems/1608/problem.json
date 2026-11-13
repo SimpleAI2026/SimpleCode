@@ -1,0 +1,26 @@
+{
+  "id": 1608,
+  "slug": "special-array-with-x-elements-greater-than-or-equal-x",
+  "summary": "读入一列非负整数，项数介于 1 与 100，每一项介于 0 与 1000。找出一个整数 x，让不小于 x 的项的个数正好是 x。x 可以从未在原列中露过面。存在时把这个 x 写出来，不存在时写出 -1。这样的 x 至多只有一个。",
+  "samples": [
+    {
+      "stdin": "nums = [3,5]\n",
+      "stdout": "2\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "nums = [0,0]\n",
+      "stdout": "-1\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/special-array-with-x-elements-greater-than-or-equal-x/",
+    "en": "https://leetcode.com/problems/special-array-with-x-elements-greater-than-or-equal-x/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

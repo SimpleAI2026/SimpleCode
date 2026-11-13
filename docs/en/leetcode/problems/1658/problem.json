@@ -1,0 +1,8 @@
+{
+  "id": 1658,
+  "summary": "Read an integer list nums and an integer x. The list length is from 1 to 105, each entry is from 1 to 104, and x is from 1 to 109. One operation removes either the current leftmost entry or the current rightmost entry and subtracts that entry from x. The list grows shorter after each removal, so later operations see the shorter list. Write the fewest operations that bring x down to exactly 0. If exact zero cannot be reached, write -1.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

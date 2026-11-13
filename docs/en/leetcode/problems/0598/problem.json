@@ -1,0 +1,7 @@
+{
+  "id": 598,
+  "summary": "Start with a table of m rows and n columns, every cell set to zero. Both m and n lie in 1 through 40000. Then apply updates, at most 10000 of them. Each update gives positive integers a and b and adds one to every cell whose row index is below a and whose column index is below b, with indexes starting at zero. a is from 1 through m and b is from 1 through n. After the updates finish, find the biggest number in the table and write how many cells equal it.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

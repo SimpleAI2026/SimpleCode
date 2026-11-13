@@ -1,5 +1,7 @@
 #!/usr/bin/env node
-// Regenerate docs/leetcode from the pinned upstream checkouts.
+// Older 200-problem solution importer.
+// The catalog is now built by scripts/leetcode/from_leetcode_go.py.
+// Running this importer rewrites index.json back to that older 200-problem set.
 // Caches belong in thirdparty/cache/leetcode (gitignored) or $LEETCODE_SRC.
 // This does not download at test time. See docs/leetcode/SOURCES.md.
 import { spawnSync } from "node:child_process";

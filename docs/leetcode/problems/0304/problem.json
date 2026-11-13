@@ -1,0 +1,21 @@
+{
+  "id": 304,
+  "slug": "range-sum-query-2d-immutable",
+  "summary": "读入一个二维整数矩阵，这个矩阵在整个过程中都不会被修改。随后会有很多次矩形询问。每次用左上角的行号与列号，以及右下角的行号与列号，标出一个闭矩形。把该矩形内部的全部整数相加，边界上的整数也要算进去，然后把和写出来。各次询问都面对同一份最初的矩阵。",
+  "samples": [
+    {
+      "stdin": "sumRegion(2, 1, 4, 3)\nsumRegion(1, 1, 2, 2)\nsumRegion(1, 2, 2, 4)\n",
+      "stdout": "8\n11\n12\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/range-sum-query-2d-immutable/",
+    "en": "https://leetcode.com/problems/range-sum-query-2d-immutable/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

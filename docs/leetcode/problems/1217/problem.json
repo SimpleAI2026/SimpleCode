@@ -1,0 +1,26 @@
+{
+  "id": 1217,
+  "slug": "minimum-cost-to-move-chips-to-the-same-position",
+  "summary": "若干筹码放在数轴上，它们的位置由一个列表给出。列表长度在 1 到 100 之间，每个位置是 1 到 10^9 的整数，开始时同一处可以有多枚筹码。任意一枚都可以移动任意次：每次移动 2 个单位的花费是 0，每次移动 1 个单位的花费是 1。把所有筹码集中到同一个位置，目标位置可以自由选择。写出完成集中所需的最小总花费。位置上界是 10^9。",
+  "samples": [
+    {
+      "stdin": "chips = [1,2,3]\n",
+      "stdout": "1\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "chips = [2,2,2,3,3]\n",
+      "stdout": "2\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/minimum-cost-to-move-chips-to-the-same-position/",
+    "en": "https://leetcode.com/problems/minimum-cost-to-move-chips-to-the-same-position/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

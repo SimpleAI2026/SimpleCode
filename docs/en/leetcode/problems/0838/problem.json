@@ -1,0 +1,8 @@
+{
+  "id": 838,
+  "summary": "Read a line of upright tiles encoded as a string whose length N runs from 0 to 100000. The only characters are L, R, and a dot. L means that piece was shoved left, R means it was shoved right, and a dot means it is still vertical. Each second, a piece tipping left knocks the vertical neighbor on its left, and a piece tipping right knocks the vertical neighbor on its right. A vertical piece pushed from both sides at once stays upright. A piece already tipping adds no further shove onto another tipping piece. Write the string once every piece has stopped moving.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

@@ -1,6 +1,6 @@
 {
   "id": 167,
-  "summary": "The public title of this exercise is Two Sum II Input Array Is Sorted. Read a count, that many integers, and one target integer from standard input and compute the result named by that title, using only those values. Print the result as indexes on one line, separated by a space. The sample below is a short input written for this playground so the printed line can be checked locally. It is not a copy of an example from the problem site. The input stays under one hundred elements so it finishes quickly in the browser.",
+  "summary": "Read integers already ordered from small to large, together with one target total. Find two different positions whose values add up to that total. The same position cannot be used twice. Number the positions starting at one rather than at zero. Write the smaller position number first and the larger position number second. Exactly one pair meets the total, so do not write a second pair. If the total is formed by the first value and the last value, still write those position numbers under the same rule.",
   "notes": [
     "Compare after trimming trailing newlines. The input is a count, that many integers, and one target integer."
   ]

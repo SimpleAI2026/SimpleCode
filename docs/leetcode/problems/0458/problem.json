@@ -1,0 +1,26 @@
+{
+  "id": 458,
+  "slug": "poor-pigs",
+  "summary": "读入桶数、死亡等待分钟和总测试分钟。桶数在 1 到 1000 之间，两段时间都在 1 到 100 之间，而且死亡等待不超过总测试时间。这些桶里恰好有一桶是毒药，其余都是水，外观完全一样。可以让一只猪同时喝任意多桶，喝本身不花时间；喝完必须空等死亡分钟，这段时间不能再喂。等到点后，喝过毒药的猪会死，其余的猪还活着。在总时间用完之前，找出确认哪一桶有毒所需的最少猪数，并把这个猪数写出来。",
+  "samples": [
+    {
+      "stdin": "buckets = 1000, minutesToDie = 15, minutesToTest = 60\n",
+      "stdout": "5\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "buckets = 4, minutesToDie = 15, minutesToTest = 15\n",
+      "stdout": "2\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/poor-pigs/",
+    "en": "https://leetcode.com/problems/poor-pigs/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

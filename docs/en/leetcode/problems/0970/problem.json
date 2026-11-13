@@ -1,0 +1,8 @@
+{
+  "id": 970,
+  "summary": "Read bases x and y along with a ceiling. Both bases lie between 1 and 100, and the ceiling lies between 0 and 1000000. An integer counts as powerful when it equals x raised to a nonnegative power added to y raised to a nonnegative power. A power of 0 contributes 1. Collect every powerful integer that stays within the ceiling. Duplicate numbers are dropped, and order is irrelevant. Write the collected numbers.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

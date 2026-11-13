@@ -1,6 +1,6 @@
 {
   "id": 86,
-  "summary": "The public title of this exercise is Partition List. Read tokens in the same order as the method parameters from standard input and compute the result named by that title, using only those values. Print the result as node values on one line, separated by spaces. The sample below is a short input written for this playground so the printed line can be checked locally. It is not a copy of an example from the problem site. The input stays under one hundred elements so it finishes quickly in the browser.",
+  "summary": "Read a singly linked list and an integer x. Divide the nodes into a front block and a back block, then place the front block ahead of the back block. A node enters the front block when the number it stores is smaller than x. Every remaining node enters the back block. Inside the front block, do not change how the nodes stood relative to one another. Inside the back block, do the same. Write the full list after the blocks are joined. Compare only the number stored in a node. A number equal to x belongs in the back block.",
   "notes": [
     "Compare after trimming trailing newlines. The input is tokens in the same order as the method parameters."
   ]

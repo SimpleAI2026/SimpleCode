@@ -1,0 +1,26 @@
+{
+  "id": 1005,
+  "slug": "maximize-sum-of-array-after-k-negations",
+  "summary": "读入一串整数和正整数 K。每一步任选一个下标，把该下标上的数换成相反数，同一下标可以反复被选。正好执行 K 步之后，把串中全部整数相加。找出能够达到的最大和并写出来。串的长度与 K 都至多 10000，每个整数介于 -100 和 100 之间。步数必须刚好用完，不能少做。",
+  "samples": [
+    {
+      "stdin": "A = [4,2,3], K = 1\n",
+      "stdout": "5\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "A = [3,-1,0,2], K = 3\n",
+      "stdout": "6\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/maximize-sum-of-array-after-k-negations/",
+    "en": "https://leetcode.com/problems/maximize-sum-of-array-after-k-negations/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

@@ -1,0 +1,26 @@
+{
+  "id": 884,
+  "slug": "uncommon-words-from-two-sentences",
+  "summary": "读入两段话 A 和 B。一段话由空格切开的词组成，每个词只用小写字母，字符总数各自不超过 200，也可以一段都是空的。某个词如果只在其中一段里出现恰好一回，另一段里完全找不到，就把它记成罕用词。把全部罕用词收集起来，排列次序随意，写成一份清单交出来。",
+  "samples": [
+    {
+      "stdin": "A = \"this apple is sweet\", B = \"this apple is sour\"\n",
+      "stdout": "[\"sweet\",\"sour\"]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "A = \"apple apple\", B = \"banana\"\n",
+      "stdout": "[\"banana\"]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/uncommon-words-from-two-sentences/",
+    "en": "https://leetcode.com/problems/uncommon-words-from-two-sentences/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

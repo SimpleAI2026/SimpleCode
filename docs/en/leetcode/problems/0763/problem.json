@@ -1,6 +1,6 @@
 {
   "id": 763,
-  "summary": "The public title of this exercise is Partition Labels. Read one token of text without spaces from standard input and compute the result named by that title, using only those values. Print the result as integers on one line, separated by spaces. The sample below is a short input written for this playground so the printed line can be checked locally. It is not a copy of an example from the problem site. The input stays under one hundred elements so it finishes quickly in the browser.",
+  "summary": "Read a string S that contains only lowercase letters and whose length is from 1 to 500. Divide S into contiguous pieces and use as many pieces as the following rule allows. Each letter of the alphabet may occur in at most one piece, even when that letter is repeated inside its own piece. Keep the original left-to-right order of the text. Write the number of characters in each piece.",
   "notes": [
     "Compare after trimming trailing newlines. The input is one token of text without spaces."
   ]

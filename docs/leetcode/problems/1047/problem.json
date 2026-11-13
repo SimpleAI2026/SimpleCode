@@ -1,0 +1,21 @@
+{
+  "id": 1047,
+  "slug": "remove-all-adjacent-duplicates-in-string",
+  "summary": "读入一条只含小写英文字母的字符串，长度从 1 到 20000。只要还有两个相同字母紧挨在一起，就把这一对抹掉。抹掉之后两边可能重新贴住，于是继续寻找下一对。一直做到再也找不到相邻而又相同的字母为止。最终剩下的内容不会因抹掉次序不同而改变。写出这条剩下的字符串。",
+  "samples": [
+    {
+      "stdin": "\"abbaca\"\n",
+      "stdout": "\"ca\"\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/remove-all-adjacent-duplicates-in-string/",
+    "en": "https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

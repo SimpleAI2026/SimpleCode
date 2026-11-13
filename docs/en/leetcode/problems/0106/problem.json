@@ -1,0 +1,7 @@
+{
+  "id": 106,
+  "summary": "Read two integer sequences that share one length. The earlier sequence is an inorder visit of a binary tree, and the later sequence is a postorder visit of that tree. Integers stored on the nodes do not repeat. The final value of the postorder sequence is the root. Locate that root in the inorder sequence: the segment to its left is the left side, and the segment to its right is the right side. Repeat the same division on both sides. Write the restored tree. If the sequences are empty, the result is an empty tree.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "id": 775,
+  "summary": "Read a permutation of length at most 5000 whose entries are exactly the integers from zero up to one less than that length. A distant inversion is any index pair with the left index smaller while the stored value on the left is larger. A neighbor inversion uses the same comparison but only on positions that sit side by side. Count both kinds. Write true when the two counts are equal and write false when they differ.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

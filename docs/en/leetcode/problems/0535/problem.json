@@ -1,0 +1,7 @@
+{
+  "id": 535,
+  "summary": "Read one full web address. Design two steps, an encoding step and a decoding step. Encoding turns that address into a shorter token, and decoding uses the token to rebuild the address that was read. The shape of the token may be chosen freely and need not match a short link published by any public site. The required guarantee is that encoding an address and then decoding the token yields text identical to the address that was read. Write each encoding result and each decoding result in the order the steps are called.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

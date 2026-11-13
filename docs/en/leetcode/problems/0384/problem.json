@@ -1,0 +1,7 @@
+{
+  "id": 384,
+  "summary": "Create an object from a list of distinct integers. The list contains at most 200 entries, and each entry lies between -1000000 and 1000000. Calling reset restores the saved order from construction time and writes that full list. Calling shuffle writes one random reordering in which every permutation is equally likely. Those two calls together happen at most 5 times 10000.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

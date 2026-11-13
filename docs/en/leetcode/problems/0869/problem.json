@@ -1,0 +1,8 @@
+{
+  "id": 869,
+  "summary": "Read one positive integer N. N is at least 1 and at most 1000000000. You may rearrange its decimal digits in any order, and leaving them as they are is allowed. The first digit of the result must not be 0. Decide whether some rearrangement equals a power of two, meaning 2 raised to a nonnegative integer. Write true when such an arrangement exists and write false when none exists. Every original digit must be kept, with none added or dropped.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

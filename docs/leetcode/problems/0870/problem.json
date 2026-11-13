@@ -1,0 +1,26 @@
+{
+  "id": 870,
+  "slug": "advantage-shuffle",
+  "summary": "读入两个长度相等的整数数组，长度从 1 到 10000，两边的每个数都在 0 到 1000000000 之间。优势指的是：有多少个下标满足前一个数组在该位置上的数严格大于后一个数组。只允许重排前一个数组，后一个数组的次序不许改动。把优势尽量做大，写出任意一种能达到这个最大优势的重排结果。",
+  "samples": [
+    {
+      "stdin": "A = [2,7,11,15], B = [1,10,4,11]\n",
+      "stdout": "[2,11,7,15]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "A = [12,24,8,32], B = [13,25,32,11]\n",
+      "stdout": "[24,32,8,12]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/advantage-shuffle/",
+    "en": "https://leetcode.com/problems/advantage-shuffle/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

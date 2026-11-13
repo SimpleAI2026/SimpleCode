@@ -1,0 +1,8 @@
+{
+  "id": 142,
+  "summary": "Read a linked list together with an integer pos. When pos equals -1, the tail has no successor and the list forms no cycle. Otherwise the tail links to the node at index pos, with indexes starting at 0. If a cycle is present, write the node at which the cycle begins. If it is absent, write null. The beginning is the first node that the successor walk enters for a second time. Use only a fixed count of pointers.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

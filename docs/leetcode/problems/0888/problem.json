@@ -1,0 +1,26 @@
+{
+  "id": 888,
+  "slug": "fair-candy-swap",
+  "summary": "读入两列糖果条的大小，一列属于甲，一列属于乙。某人的总量等于自己那一列全部大小相加，开局时两边总量一定不相等。双方各自拿出一条互换，互换之后两边总量必须变得一样。写出甲交出的那条大小，以及乙交出的那条大小。有多组可行互换时任意一组都可以，而且至少存在一组。每一列的条数不超过 10000，单条大小不超过 100000。",
+  "samples": [
+    {
+      "stdin": "A = [1,1], B = [2,2]\n",
+      "stdout": "[1,2]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "A = [1,2], B = [2,3]\n",
+      "stdout": "[1,2]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/fair-candy-swap/",
+    "en": "https://leetcode.com/problems/fair-candy-swap/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

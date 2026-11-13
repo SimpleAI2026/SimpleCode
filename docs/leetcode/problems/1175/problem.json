@@ -1,0 +1,26 @@
+{
+  "id": 1175,
+  "slug": "prime-arrangements",
+  "summary": "把整数 1 到 n 各用一次排成一列，位置从 1 开始编号，并且 1 <= n <= 100。每个质数都必须放在质数位置上。质数是大于 1、又不能写成两个更小正整数相乘的整数。统计满足这条限制的排列有多少种。总数可能非常大，写出它对 10^9+7 取余后的结果。",
+  "samples": [
+    {
+      "stdin": "n = 5\n",
+      "stdout": "12\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "n = 100\n",
+      "stdout": "682289015\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/prime-arrangements/",
+    "en": "https://leetcode.com/problems/prime-arrangements/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

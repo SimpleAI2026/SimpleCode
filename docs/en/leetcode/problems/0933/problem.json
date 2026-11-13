@@ -1,0 +1,7 @@
+{
+  "id": 933,
+  "summary": "Build a counter that accepts one call at a time. Each call brings a time t measured in milliseconds, and every later call uses a strictly larger t than the one before it. Each t is an integer from 1 through 1000000000, and one test issues at most 10000 calls. For a call at time t, count every earlier call whose time lies inside the closed window from t minus 3000 through t, including the call happening now. Write that count for each call.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

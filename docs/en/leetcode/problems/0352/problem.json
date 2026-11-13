@@ -1,0 +1,7 @@
+{
+  "id": 352,
+  "summary": "Maintain a stream of nonnegative integers that begins with nothing in it. Each insertion adds one integer whose value is from 0 through 10000, both ends included. Whenever asked, report every integer observed up to now as closed intervals that do not overlap, and integers that form an unbroken run must share one interval. Each interval is reported by its left end and its right end. Insertions and reports together happen at most 3 times 10000. Write the current list of intervals.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

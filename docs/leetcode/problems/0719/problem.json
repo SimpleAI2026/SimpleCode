@@ -1,0 +1,21 @@
+{
+  "id": 719,
+  "slug": "find-k-th-smallest-pair-distance",
+  "summary": "读入整数数组nums以及正整数k。数组长度在2到10000之间，每个元素满足大于等于0且小于1000000。任意两个不同下标组成一对，距离取两数之差的绝对值。k至少为1，并且不超过全部无序对的个数。把所有距离按从小到大排列，写出排在第k位的距离。",
+  "samples": [
+    {
+      "stdin": "nums = [1,3,1]\nk = 1\n",
+      "stdout": "0\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/find-k-th-smallest-pair-distance/",
+    "en": "https://leetcode.com/problems/find-k-th-smallest-pair-distance/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

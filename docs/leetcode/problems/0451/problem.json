@@ -1,0 +1,26 @@
+{
+  "id": 451,
+  "slug": "sort-characters-by-frequency",
+  "summary": "读入一个字符串。先统计每一种字符各自出现了多少次，再按照出现次数从多到少把这些字符排成一条新的字符串。次数一样的字符，谁排在前面都可以。最后把这条新字符串写出来。若输入本身是空的，结果仍然是空字符串。",
+  "samples": [
+    {
+      "stdin": "\"tree\"\n",
+      "stdout": "\"eert\"\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "\"cccaaa\"\n",
+      "stdout": "\"cccaaa\"\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/sort-characters-by-frequency/",
+    "en": "https://leetcode.com/problems/sort-characters-by-frequency/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

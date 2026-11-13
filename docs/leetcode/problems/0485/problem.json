@@ -1,0 +1,21 @@
+{
+  "id": 485,
+  "slug": "max-consecutive-ones",
+  "summary": "读入一个数组，里面只会出现数字 0 和数字 1。数组长度是正整数，并且不超过 10000。从左到右看，把紧挨着、全是 1、中间不夹 0 的一段叫做一段连续。找出最长那一段里 1 的个数，并把这个个数写出来。如果整个数组都没有 1，答案写成 0。单独出现的一个 1 也算长度是 1 的一段。被 0 隔开的两段不能拼在一起比较。",
+  "samples": [
+    {
+      "stdin": "[1,1,0,1,1,1]\n",
+      "stdout": "3\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/max-consecutive-ones/",
+    "en": "https://leetcode.com/problems/max-consecutive-ones/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

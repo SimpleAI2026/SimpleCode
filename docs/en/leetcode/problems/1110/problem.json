@@ -1,0 +1,7 @@
+{
+  "id": 1110,
+  "summary": "Read a binary tree and a list of values that must be removed. The tree contains at most 1000 nodes. Every node stores a distinct integer from 1 to 1000. The removal list has length at most 1000, its entries are distinct, and each entry also lies between 1 and 1000. Erase every node whose value appears on that list. When a node is erased, each child that remains becomes the top of its own tree. The surviving pieces form a collection of separate trees. Write the tops of those trees in any order you like.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

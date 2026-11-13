@@ -1,0 +1,8 @@
+{
+  "id": 1304,
+  "summary": "Read an integer n whose value is between 1 and 1000. Write any n integers that are all different from one another and add up to exactly 0. Their order may be chosen freely. When n equals 1, the only value that works is 0. For a larger n, a positive integer and a negative partner can cancel, and a leftover slot can hold 0. The same integer must not appear twice in the written list.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

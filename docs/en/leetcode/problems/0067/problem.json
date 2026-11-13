@@ -1,0 +1,8 @@
+{
+  "id": 67,
+  "summary": "Read two non-empty texts. Each text uses only the character 0 and the character 1. Add the two values as binary integers and write the sum as a binary text. The right end is the low bit. When a column adds up to 2 or more, carry 1 toward the left. The texts may have different lengths; treat the shorter one as if zeros were placed on its high side. Do not insert spaces into the result. One public sample has a binary sum of 10101, and the written form must keep every significant bit of that sum.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

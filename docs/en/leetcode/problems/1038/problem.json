@@ -1,0 +1,8 @@
+{
+  "id": 1038,
+  "summary": "Read one search tree through the pointer to its top node. The node count lies between 1 and 100. Every stored integer also lies between 0 and 100, and the values never repeat. Any key in a left branch is smaller than the parent key, and any key in a right branch is larger. Both branches obey the same ordering. Replace each key by the sum of every original key that is at least as large as that key. Write the top node after this replacement.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

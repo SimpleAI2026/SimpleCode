@@ -1,6 +1,6 @@
 {
   "id": 51,
-  "summary": "The public title of this exercise is N Queens. Read tokens in the same order as the method parameters from standard input and compute the result named by that title, using only those values. Print the result as one line of output. The sample below is a short input written for this playground so the printed line can be checked locally. It is not a copy of an example from the problem site. The input stays under one hundred elements so it finishes quickly in the browser.",
+  "summary": "Read one positive integer. It is both the side of a square board and the number of queens to place. Place the queens so that no pair shares a row, a column, or a diagonal, and therefore no pair can capture another. Find every different placement. Mark a queen with the capital letter Q and mark an empty cell with a dot. Write each placement from the top row downward.",
   "notes": [
     "Compare after trimming trailing newlines. The input is tokens in the same order as the method parameters."
   ]

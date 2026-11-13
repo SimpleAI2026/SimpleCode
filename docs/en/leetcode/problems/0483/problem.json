@@ -1,0 +1,8 @@
+{
+  "id": 483,
+  "summary": "Read an integer n written as a decimal string. n is at least 3 and at most 10^18. The string is valid and contains no leading zero. An integer base k of 2 or more is called good for n when every digit of n in that base is 1. Find the smallest good base and write it as a decimal string with no leading zero. The written text is the base k, not the row of ones. When several bases qualify, keep only the smallest k.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

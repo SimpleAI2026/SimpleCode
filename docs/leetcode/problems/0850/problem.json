@@ -1,0 +1,26 @@
+{
+  "id": 850,
+  "slug": "rectangle-area-ii",
+  "summary": "读入至少 1 个、至多 200 个边与坐标轴平行的矩形。第 i 个给出左下与右上两个角的四个整数坐标，每个坐标在 0 与 1000000000 之间。求这些矩形盖住区域的并面积，同一块地方被盖住多次也只算一遍。并面积不超过 2 的 63 次方减 1，装得进 64 位带符号整数。结果可能非常大，写出该面积对 10 的 9 次方加 7 取余后的数。",
+  "samples": [
+    {
+      "stdin": "[[0,0,2,2],[1,0,2,3],[1,0,3,1]]\n",
+      "stdout": "6\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "[[0,0,1000000000,1000000000]]\n",
+      "stdout": "49\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/rectangle-area-ii/",
+    "en": "https://leetcode.com/problems/rectangle-area-ii/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

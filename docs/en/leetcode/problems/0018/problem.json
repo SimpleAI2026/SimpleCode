@@ -1,0 +1,7 @@
+{
+  "id": 18,
+  "summary": "Read a collection of integers and one goal sum. Pick one number from each of four different positions so the four numbers add up to the goal. Find every pick, yet when two picks contain the same values the same number of times, write that pick only once. Write each remaining group of four numbers. Neither the order of groups nor the order inside a group is fixed.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

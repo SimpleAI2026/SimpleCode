@@ -1,0 +1,7 @@
+{
+  "id": 834,
+  "summary": "Read one undirected tree that is connected. Nodes carry labels 0, 1, and so on up to N minus 1. There are exactly N minus 1 edges, and N is at least 1 and at most 10000. Each edge joins the two node labels stored in that pair. For a node, distance means how many edges lie on the unique path to another node. Add those distances over every other node. Write N sums, one per label, from the smallest label to the largest.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

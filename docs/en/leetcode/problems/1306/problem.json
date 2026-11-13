@@ -1,0 +1,8 @@
+{
+  "id": 1306,
+  "summary": "Read an array of nonnegative integers and a starting index. A walker begins on that index. From index i the next landing place must be i plus the value stored there, or i minus that value, and the landing index must remain inside the array. Decide whether some sequence of jumps can reach any index whose stored value is 0. Write true when such an index can be reached and false when it cannot. The array length is at most 5 times 10^4, every stored value is smaller than the length, and the start index is inside the array.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

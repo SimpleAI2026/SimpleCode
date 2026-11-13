@@ -1,0 +1,26 @@
+{
+  "id": 1631,
+  "slug": "path-with-minimum-effort",
+  "summary": "读入一张高度网格。行数与列数各自介于 1 与 100，每个格子的高度介于 1 与 1000000。从左上角的格子出发，每次只能走向正上、正下、正左或正右的邻格，终点是右下角。一条路线的开销定义成路线上前后相邻两格高度之差的绝对值里的最大者。在所有能走到终点的路线中找出开销最小的一条，并把这个开销写出来。",
+  "samples": [
+    {
+      "stdin": "heights = [[1,2,2],[3,8,2],[5,3,5]]\n",
+      "stdout": "2\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "heights = [[1,2,3],[3,8,4],[5,3,5]]\n",
+      "stdout": "1\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/path-with-minimum-effort/",
+    "en": "https://leetcode.com/problems/path-with-minimum-effort/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

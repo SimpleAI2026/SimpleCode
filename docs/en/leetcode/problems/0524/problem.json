@@ -1,0 +1,8 @@
+{
+  "id": 524,
+  "summary": "Read one source text and a list of candidate words. Every character is a lowercase English letter. A candidate counts as reachable when deleting zero or more letters from the source, without changing the relative order of what remains, produces that candidate. Among reachable candidates, find the longest one and write it. If several share that length, write the one that comes first in dictionary order. If none is reachable, write an empty result. The list holds at most 1000 candidates, and neither the source nor any candidate is longer than 1000 letters.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

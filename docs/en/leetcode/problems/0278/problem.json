@@ -1,0 +1,8 @@
+{
+  "id": 278,
+  "summary": "Versions are numbered from 1 through n, and each later version is built on the version before it. When one version is bad, every version after it is bad as well. You may ask whether any chosen version number is bad. Find the earliest bad version and write it. The bad version and n are both at least 1 and both at most 231 minus 1. Fewer questions are better, yet the written answer must be that earliest number.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

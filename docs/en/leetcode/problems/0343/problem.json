@@ -1,6 +1,6 @@
 {
   "id": 343,
-  "summary": "The public title of this exercise is Integer Break. Read tokens in the same order as the method parameters from standard input and compute the result named by that title, using only those values. Print the result as one integer. The sample below is a short input written for this playground so the printed line can be checked locally. It is not a copy of an example from the problem site. The input stays under one hundred elements so it finishes quickly in the browser.",
+  "summary": "Read a positive integer n. Partition it into two or more positive whole numbers that add up to exactly n, with every part at least one. More than two parts are allowed. Multiply the parts of a partition. Search every partition and find the greatest product any of them yields. Write that product.",
   "notes": [
     "Compare after trimming trailing newlines. The input is tokens in the same order as the method parameters."
   ]

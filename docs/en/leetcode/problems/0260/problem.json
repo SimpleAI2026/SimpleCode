@@ -1,0 +1,7 @@
+{
+  "id": 260,
+  "summary": "Read a list of integers. Exactly two different values occur once each, and every remaining value occurs twice. Find those two once only values and write them. Either order is correct. Do not write a value that occurs twice, and do not omit either of the values that occur once.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

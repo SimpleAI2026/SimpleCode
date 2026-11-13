@@ -1,0 +1,8 @@
+{
+  "id": 978,
+  "summary": "Read a list of integers whose length is between 1 and 40000. Each integer is between 0 and 1000000000. A contiguous block is turbulent when every neighboring pair inside it is unequal and the direction of the inequality flips at each step. One pattern starts with a descent on even indexes and the other starts with an ascent on even indexes; either pattern qualifies. A block of a single entry counts as turbulent and has length 1. Find the longest turbulent block and write its length.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

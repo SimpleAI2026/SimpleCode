@@ -1,0 +1,26 @@
+{
+  "id": 2038,
+  "slug": "remove-colored-pieces-if-both-neighbors-are-the-same-color",
+  "summary": "读入一条只含字母 A 与字母 B 的字符串，长度至多 100000。两人轮流删除一个字母，先手是甲。甲删除的字母必须是 A，而且它左右两侧当时也都是 A。乙删除的字母必须是 B，而且它左右两侧当时也都是 B。位于字符串最左端或最右端的字母不能删除。轮到某人时如果没有任何可删字母，这个人判负。双方都以最佳方式行动。判断甲是否获胜，获胜写出真，否则写出假。",
+  "samples": [
+    {
+      "stdin": "colors = \"AAABABB\"\n",
+      "stdout": "true\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "colors = \"AA\"\n",
+      "stdout": "false\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/remove-colored-pieces-if-both-neighbors-are-the-same-color/",
+    "en": "https://leetcode.com/problems/remove-colored-pieces-if-both-neighbors-are-the-same-color/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

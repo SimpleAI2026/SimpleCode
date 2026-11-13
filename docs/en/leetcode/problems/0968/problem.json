@@ -1,0 +1,8 @@
+{
+  "id": 968,
+  "summary": "Read a binary tree whose node count is between 1 and 1000. Every node stores the value 0. Cameras may be placed on chosen nodes. A camera sitting on a node watches that node's parent, the node itself, and the node's direct children. Choose a set of placements so that every node is watched by at least one camera, and so that the number of cameras is as small as possible. Write that smallest number.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "repo": "halfrost/LeetCode-Go",
+  "url": "https://github.com/halfrost/LeetCode-Go",
+  "commit": "1dde49c8ab37a08f21a4fb249d7bd90af4a9c58e",
+  "license": "MIT",
+  "copyright": "Copyright (c) 2017 halfrost",
+  "readmeCount": 788,
+  "catalogCount": 820,
+  "withSolution": 200,
+  "difficulty": {
+    "easy": 270,
+    "medium": 444,
+    "hard": 106
+  },
+  "keptWithoutReadme": [
+    10,
+    72,
+    133,
+    139,
+    238,
+    252,
+    253,
+    261,
+    269,
+    271,
+    286,
+    295,
+    312,
+    323,
+    332,
+    355,
+    366,
+    406,
+    430,
+    449,
+    505,
+    621,
+    678,
+    743,
+    787,
+    994,
+    1046,
+    1448,
+    1584,
+    1851,
+    1899,
+    2013
+  ],
+  "skipped": [
+    {
+      "dir": "0238.Product-of-Array-Except-Self",
+      "reason": "no README.md; directory has Go sources only, so there is no statement to rewrite"
+    },
+    {
+      "dir": "0351.Android-Unlock-Patterns",
+      "reason": "no README.md; directory has Go sources only, so there is no statement to rewrite"
+    },
+    {
+      "dir": "9990085.Maximal-Rectangle",
+      "reason": "no README.md; 999-prefixed folder is a solution-only duplicate, not a separate problem statement"
+    },
+    {
+      "dir": "9990132.Palindrome-Partitioning-II",
+      "reason": "no README.md; 999-prefixed folder is a solution-only duplicate, not a separate problem statement"
+    },
+    {
+      "dir": "9990316.Remove-Duplicate-Letters",
+      "reason": "no README.md; 999-prefixed folder is a solution-only duplicate, not a separate problem statement"
+    },
+    {
+      "dir": "9990352.Data-Stream-as-Disjoint-Intervals",
+      "reason": "no README.md; 999-prefixed folder is a solution-only duplicate, not a separate problem statement"
+    },
+    {
+      "dir": "9990363.Max-Sum-of-Rectangle-No-Larger-Than-K",
+      "reason": "no README.md; 999-prefixed folder is a solution-only duplicate, not a separate problem statement"
+    },
+    {
+      "dir": "9990975.Odd-Even-Jump",
+      "reason": "no README.md; 999-prefixed folder is a solution-only duplicate, not a separate problem statement"
+    },
+    {
+      "dir": "9991044.Longest-Duplicate-Substring",
+      "reason": "no README.md; 999-prefixed folder is a solution-only duplicate, not a separate problem statement"
+    },
+    {
+      "dir": "9991292.Maximum-Side-Length-of-a-Square-with-Sum-Less-than-or-Equal-to-Threshold",
+      "reason": "no README.md; 999-prefixed folder is a solution-only duplicate, not a separate problem statement"
+    }
+  ],
+  "note": "Statements in docs/leetcode are original writing. The pinned tree is source material for facts only and is not shipped."
+}

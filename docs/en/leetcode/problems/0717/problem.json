@@ -1,0 +1,8 @@
+{
+  "id": 717,
+  "summary": "Read a sequence of bits whose length is from 1 to 1000. Every bit is either 0 or 1, and the sequence always ends with 0. One symbol is a lone 0. The other symbol is the pair 10 or the pair 11. Decide whether every split that uses only those symbols leaves the final symbol as a lone 0. Write true when that outcome is forced, and write false when some legal split ends with a two-bit symbol.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

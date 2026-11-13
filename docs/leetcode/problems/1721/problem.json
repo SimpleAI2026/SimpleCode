@@ -1,0 +1,26 @@
+{
+  "id": 1721,
+  "slug": "swapping-nodes-in-a-linked-list",
+  "summary": "读入一条单向链表的头节点，以及一个整数 k。节点总数记为 n，它满足 1 小于等于 k、k 小于等于 n、n 小于等于 10^5。每个节点保存的整数介于 0 和 100。下标从 1 开始数。将从头开始的第 k 个节点里的数值，与从末尾开始的第 k 个节点里的数值对调，最后把链表头写出来。",
+  "samples": [
+    {
+      "stdin": "head = [1,2,3,4,5], k = 2\n",
+      "stdout": "[1,4,3,2,5]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "head = [7,9,6,6,7,8,3,0,9,5], k = 5\n",
+      "stdout": "[7,9,6,6,8,7,3,0,9,5]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/swapping-nodes-in-a-linked-list/",
+    "en": "https://leetcode.com/problems/swapping-nodes-in-a-linked-list/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

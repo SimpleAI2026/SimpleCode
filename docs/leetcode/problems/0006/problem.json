@@ -1,0 +1,26 @@
+{
+  "id": 6,
+  "slug": "zigzag-conversion",
+  "summary": "读入一条文本以及一个正整数作为行数。文本长度从 1 到 1000，行数从 1 到 1000，字符只含英文字母、逗号和句点。把字符依次填进行列：先沿一列向下，碰到底边后改为斜向上，碰到顶边后再向下，如此往复直到字符用完。然后从最上面一行开始，每行由左至右读出，拼成一条新的文本并写出。",
+  "samples": [
+    {
+      "stdin": "s = \"PAYPALISHIRING\", numRows = 3\n",
+      "stdout": "\"PAHNAPLSIIGYIR\"\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "s = \"PAYPALISHIRING\", numRows = 4\n",
+      "stdout": "\"PINALSIGYAHRPI\"\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/zigzag-conversion/",
+    "en": "https://leetcode.com/problems/zigzag-conversion/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

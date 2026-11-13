@@ -1,0 +1,7 @@
+{
+  "id": 114,
+  "summary": "Read a binary tree. Do not allocate a fresh chain. Using the existing nodes, stretch the tree into one chain that extends only through right-child links. Order the nodes by preorder: the current node first, then its former entire left side, then its former entire right side. Nodes that used to hang on the left must be reattached along that right chain, and every left-child link ends empty. Write the tree after this reshape. An empty tree stays empty, and the integers inside nodes stay unchanged.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

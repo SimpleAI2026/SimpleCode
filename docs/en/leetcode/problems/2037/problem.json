@@ -1,0 +1,8 @@
+{
+  "id": 2037,
+  "summary": "A number line holds n seats and n students. The count n is between 1 and 100, and every seat coordinate and every student coordinate is between 1 and 100. Several seats or students may begin on the same point. One move raises or lowers one student coordinate by 1. At the end, every student must occupy a seat, and one seat cannot be given to two people. Find the fewest moves that finish such an assignment, and write that number.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": 393,
+  "slug": "utf-8-validation",
+  "summary": "读入一串整数，每个整数只用最低的 8 位表示一个字节。判断这些字节是否构成合法的编码。单字节以 0 开头，后面 7 位是码点。多字节字符总长 2 到 4 个字节：首字节先连续放若干个 1，个数等于总字节数，紧接着一个 0，其余字节都以 10 开头。没有用到的位全部属于码点。整段都必须符合上述格式才写出 true，否则写出 false。",
+  "samples": [
+    {
+      "stdin": "Given an array of integers representing the data, return whether it is a valid utf-8 encoding.\n",
+      "stdout": "true\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/utf-8-validation/",
+    "en": "https://leetcode.com/problems/utf-8-validation/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

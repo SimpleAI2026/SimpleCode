@@ -1,0 +1,26 @@
+{
+  "id": 1201,
+  "slug": "ugly-number-iii",
+  "summary": "若一个正整数能被 a、b、c 当中至少一个数整除，就把它算作本题里的丑数。读入四个正整数 n、a、b、c。它们各自介于 1 和 10^9 之间，而且 a、b、c 三者的乘积介于 1 和 10^18 之间。把从小到大数起的第 n 个丑数写出来。结果保证落在 1 到 2 乘 10^9 这个区间里。乘积上界是 10^18。",
+  "samples": [
+    {
+      "stdin": "n = 3, a = 2, b = 3, c = 5\n",
+      "stdout": "4\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "n = 4, a = 2, b = 3, c = 4\n",
+      "stdout": "6\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/ugly-number-iii/",
+    "en": "https://leetcode.com/problems/ugly-number-iii/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

@@ -1,6 +1,6 @@
 {
   "id": 2,
-  "summary": "The public title of this exercise is Add Two Numbers. Read tokens in the same order as the method parameters from standard input and compute the result named by that title, using only those values. Print the result as node values on one line, separated by spaces. The sample below is a short input written for this playground so the printed line can be checked locally. It is not a copy of an example from the problem site. The input stays under one hundred elements so it finishes quickly in the browser.",
+  "summary": "Read two singly linked chains that are both non-empty. Each chain stores a non-negative integer with the ones digit at the front and higher places farther along, and every node holds exactly one digit. Sum both integers and represent that total with a chain in the same low-place-first layout. Neither input carries an extra high-place zero unless the value itself is zero. Write the head of the chain that stands for the total.",
   "notes": [
     "Compare after trimming trailing newlines. The input is tokens in the same order as the method parameters."
   ]

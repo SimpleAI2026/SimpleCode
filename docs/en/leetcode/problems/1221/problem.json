@@ -1,0 +1,8 @@
+{
+  "id": 1221,
+  "summary": "A string built only from the letters L and R counts as balanced when the two letters occur the same number of times. The input string s is already balanced. Its length is between 1 and 1000, and every character is L or R. Split s into pieces that stay in their original order and together rebuild s, while each piece is balanced by itself. Write the largest number of pieces this split can have. The length bound is 1000.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

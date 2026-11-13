@@ -1,0 +1,26 @@
+{
+  "id": 551,
+  "slug": "student-attendance-record-i",
+  "summary": "读入一条出勤字符串，长度在 1 到 1000 之间，每个字符只可能是 A、L 或 P。A 表示缺席，L 表示迟到，P 表示到课。判断这名学生能否得到出勤奖：缺席天数必须严格少于两天，并且不能出现连续三天或更长的迟到。两个条件同时成立就写出 true，否则写出 false。",
+  "samples": [
+    {
+      "stdin": "s = \"PPALLP\"\n",
+      "stdout": "true\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "s = \"PPALLL\"\n",
+      "stdout": "false\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/student-attendance-record-i/",
+    "en": "https://leetcode.com/problems/student-attendance-record-i/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

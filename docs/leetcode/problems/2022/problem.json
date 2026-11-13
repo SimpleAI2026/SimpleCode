@@ -1,0 +1,26 @@
+{
+  "id": 2022,
+  "slug": "convert-1d-array-into-2d-array",
+  "summary": "读入一条整数序列，长度至多 5 乘以 104，每个整数至多 105。再读入目标行数和目标列数，二者都是正整数且各自至多 4 乘以 104。当序列长度正好等于行数乘以列数时，按先行后列的顺序把序列填进这张表，每行从左向右填满后再换下一行，然后把整张表写出来。长度对不上时，写出一张空表。",
+  "samples": [
+    {
+      "stdin": "original = [1,2,3,4], m = 2, n = 2\n",
+      "stdout": "[[1,2],[3,4]]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "original = [1,2,3], m = 1, n = 3\n",
+      "stdout": "[[1,2,3]]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/convert-1d-array-into-2d-array/",
+    "en": "https://leetcode.com/problems/convert-1d-array-into-2d-array/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

@@ -1,0 +1,7 @@
+{
+  "id": 541,
+  "summary": "Read a text made only of lowercase English letters, together with an integer k. Both how long the text is and how large k is lie between 1 and 10000. Starting at the left, handle the letters in chunks of 2k. Inside a full chunk, swap the order of the opening k letters and leave the later letters where they are. If the final chunk holds fewer than k letters, swap all of those leftover letters. If it holds at least k letters but fewer than 2k, swap only the opening k letters and leave the later ones where they are. Write the text after this pass.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

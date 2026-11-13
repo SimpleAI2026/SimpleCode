@@ -1,0 +1,8 @@
+{
+  "id": 923,
+  "summary": "Read an integer sequence A and an integer target. The length of A lies between 3 and 3000, each value lies between 0 and 100, and the target lies between 0 and 300. Count triples of indexes that are strictly increasing and whose three stored values add up to the target. Different index triples count separately even when the stored numbers are identical. The count may be large, so write it modulo 10^9 + 7.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "id": 1185,
+  "slug": "day-of-the-week",
+  "summary": "读入三个整数，按顺序表示日、月和年。这三个数必然对应 1971 到 2100 年之间某一个真实的公历日子。判断这一天是星期几。写出的结果必须是 Sunday、Monday、Tuesday、Wednesday、Thursday、Friday、Saturday 这七个英文名字中的一个。计算时按公历处理闰年，二月可能有 29 天。允许的最晚年份是 2100。",
+  "samples": [
+    {
+      "stdin": "day = 31, month = 8, year = 2019\n",
+      "stdout": "\"Saturday\"\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "day = 18, month = 7, year = 1999\n",
+      "stdout": "\"Sunday\"\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/day-of-the-week/",
+    "en": "https://leetcode.com/problems/day-of-the-week/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

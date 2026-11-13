@@ -1,0 +1,26 @@
+{
+  "id": 662,
+  "slug": "maximum-width-of-binary-tree",
+  "summary": "读入一棵二叉树，孩子位置允许为空，整棵树的格局与一棵铺满的二叉树一样，只是有些位置空着。某一层的宽度等于该层最左边的实结点和最右边的实结点之间的跨度，两端中间的空位也算进跨度。树的宽度取各层宽度中的最大值。把这个最大宽度写出来。答案保证能放进 32 位有符号整数。",
+  "samples": [
+    {
+      "stdin": "1\n/ \\\n3 2\n/ \\ \\\n5 3 9\n",
+      "stdout": "4\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "1\n/\n3\n/ \\\n5 3\n",
+      "stdout": "2\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/maximum-width-of-binary-tree/",
+    "en": "https://leetcode.com/problems/maximum-width-of-binary-tree/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

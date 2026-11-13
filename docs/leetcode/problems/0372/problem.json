@@ -1,0 +1,26 @@
+{
+  "id": 372,
+  "slug": "super-pow",
+  "summary": "读入一个正整数 a，再读入另一个位数极多的正整数 b。b 的十进制数位从高位到低位存放在数组中，因位数太多而不能先合并成一个普通整数。计算 a 的 b 次幂，再除以 1337，把得到的余数写出来。",
+  "samples": [
+    {
+      "stdin": "a = 2, b = [3]\n",
+      "stdout": "8\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "a = 2, b = [1,0]\n",
+      "stdout": "1024\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/super-pow/",
+    "en": "https://leetcode.com/problems/super-pow/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

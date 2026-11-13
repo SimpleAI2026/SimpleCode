@@ -1,0 +1,26 @@
+{
+  "id": 168,
+  "slug": "excel-sheet-column-title",
+  "summary": "读入一个正整数，把它换成表格软件里的列标。列标只由大写英文字母组成。数字 1 写成 A，26 写成 Z，27 写成 AA，28 写成 AB。更大的数字沿用同一套二十六进的字母计数，把对应的字母串写出来。至少要能处理到 701，这个数对应 ZY。只写字母本身，不要附加别的符号或解释。输入保证是正整数，不会出现 0 或负数。",
+  "samples": [
+    {
+      "stdin": "1\n",
+      "stdout": "\"A\"\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "28\n",
+      "stdout": "\"AB\"\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/excel-sheet-column-title/",
+    "en": "https://leetcode.com/problems/excel-sheet-column-title/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

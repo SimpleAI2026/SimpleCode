@@ -1,0 +1,8 @@
+{
+  "id": 60,
+  "summary": "Read two positive integers n and k. Take the values 1, 2, and so on through n, each once, and form every distinct ordering. Rank those orderings by dictionary order, smallest first, and number them from 1. Find the ordering whose rank equals k. Write its digits packed into one text with nothing between them. The integer n lies from 1 through 9, and k lies from 1 through the factorial of n, so the requested ordering always exists.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

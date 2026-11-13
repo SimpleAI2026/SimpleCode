@@ -1,0 +1,7 @@
+{
+  "id": 461,
+  "summary": "Read two integers x and y. Both are at least 0 and strictly below two to the thirty-first power. Compare their binary writings one bit at a time. Count the bit positions where the two writings differ, and write that count. This count is the Hamming distance between the pair.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

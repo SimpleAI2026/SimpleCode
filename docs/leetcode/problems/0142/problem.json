@@ -1,0 +1,26 @@
+{
+  "id": 142,
+  "slug": "linked-list-cycle-ii",
+  "summary": "读入一条链表以及整数 pos。pos 等于 -1 时，尾部没有后继，整条链表不构成环。否则尾部后继指向下标 pos 的结点，下标从 0 开始。若有环，写出环开始的那个结点。若无环，写出空。环的开始处是后继路线上第一次被第二次走到的结点。只允许使用固定个数的指针。",
+  "samples": [
+    {
+      "stdin": "head = [3,2,0,-4], pos = 1\n",
+      "stdout": "tail connects to node index 1\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "head = [1,2], pos = 0\n",
+      "stdout": "tail connects to node index 0\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/linked-list-cycle-ii/",
+    "en": "https://leetcode.com/problems/linked-list-cycle-ii/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

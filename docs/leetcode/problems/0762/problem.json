@@ -1,0 +1,26 @@
+{
+  "id": 762,
+  "slug": "prime-number-of-set-bits-in-binary-representation",
+  "summary": "读入两个整数L和R，满足1小于等于L、L小于等于R，并且两者都不超过10^6，同时R减L最多为10000。对闭区间中的每个整数，统计它的二进制写法里数字1的个数。若这个个数本身是质数，就把该整数算进去。注意1不是质数。写出被算进去的整数一共有多少个。",
+  "samples": [
+    {
+      "stdin": "L = 6, R = 10\n",
+      "stdout": "4\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "L = 10, R = 15\n",
+      "stdout": "5\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/prime-number-of-set-bits-in-binary-representation/",
+    "en": "https://leetcode.com/problems/prime-number-of-set-bits-in-binary-representation/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

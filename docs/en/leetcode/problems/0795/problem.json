@@ -1,0 +1,7 @@
+{
+  "id": 795,
+  "summary": "Read a list of integers whose length is from 1 to 50000, plus two bounds called left and right. Both bounds and every list entry lie in 0 through 109, and left is no greater than right. Look at every contiguous fragment that contains at least one entry. A fragment qualifies when its biggest entry is no smaller than left while also staying no larger than right. Count the qualifying fragments and write the count.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "id": 116,
+  "summary": "Read a perfect binary tree: every node except the leaves has both a left child and a right child, and all leaves sit at one common depth. Each node also has a pointer toward its right-hand neighbor, and every such pointer starts empty. Retarget that pointer to the node immediately on its right in the same level. The rightmost node of a level has no right-hand neighbor, so its pointer stays empty. The tree contains fewer than 4096 nodes, and the absolute value of each node value is at most 1000. After the pointers change, write the tree.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

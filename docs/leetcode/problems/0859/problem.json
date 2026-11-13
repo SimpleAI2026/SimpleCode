@@ -1,0 +1,26 @@
+{
+  "id": 859,
+  "slug": "buddy-strings",
+  "summary": "读入两个只含小写字母的字符串，分别叫作 s 与 goal。两者长度各自至少为 1，至多为 2 乘以 10000。判断能否在 s 里挑选两个不相等的下标，把这两个位置上的字符互换恰好一次，使 s 变得和 goal 完全相同。下标从 0 起算。即使两串看起来已经相同，也必须真正交换一次。做得到写出真，做不到写出假。长度不同则直接写出假。",
+  "samples": [
+    {
+      "stdin": "s = \"ab\", goal = \"ba\"\n",
+      "stdout": "true\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "s = \"ab\", goal = \"ab\"\n",
+      "stdout": "false\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/buddy-strings/",
+    "en": "https://leetcode.com/problems/buddy-strings/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

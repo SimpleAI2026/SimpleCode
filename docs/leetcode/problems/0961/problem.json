@@ -1,0 +1,26 @@
+{
+  "id": 961,
+  "slug": "n-repeated-element-in-size-2n-array",
+  "summary": "读入一条偶数长度的整数序列，长度从 4 到 10000，每个元素是小于 10000 的非负整数。若长度记为二倍的 N，则序列里恰好出现 N 加 1 种不同的数值，而且其中恰好有一种数值出现了 N 次，其余每种只出现一次。找出那个出现了 N 次的数值并写出来。",
+  "samples": [
+    {
+      "stdin": "[1,2,3,3]\n",
+      "stdout": "3\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "[2,1,2,5,3,2]\n",
+      "stdout": "2\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/n-repeated-element-in-size-2n-array/",
+    "en": "https://leetcode.com/problems/n-repeated-element-in-size-2n-array/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

@@ -1,0 +1,21 @@
+{
+  "id": 786,
+  "slug": "k-th-smallest-prime-fraction",
+  "summary": "读入一张已经从小到大排好的整数表，长度介于2和2000之间，每个整数介于1和30000之间，表里含有1以及若干质数。凡是左值严格小于右值的两数，都组成一个分数。把全部分数按从小到大的次序排好，再读入名次K，K至少为1，至多等于配对数。找出排在第K位的分数，把分子和分母作为两个整数写出来。",
+  "samples": [
+    {
+      "stdin": "A = [1, 2, 3, 5], K = 3\n",
+      "stdout": "[2, 5]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/k-th-smallest-prime-fraction/",
+    "en": "https://leetcode.com/problems/k-th-smallest-prime-fraction/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

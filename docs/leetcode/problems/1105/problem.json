@@ -1,0 +1,21 @@
+{
+  "id": 1105,
+  "slug": "filling-bookcase-shelves",
+  "summary": "读入已经排好先后的若干本书，以及每一层书架允许的总宽度。每本书用两个正整数描述，先写厚度，再写高度。本数从 1 到 1000。厚度、高度和层宽都落在 1 到 1000，而且单本厚度不会超过层宽。摆的时候不能打乱原有先后。同一层里厚度相加不得超过层宽，这一层的高度取该层各书高度里的最大值。书架的总高度等于每一层高度相加。找出能够达到的最小总高度，并把这个高度写出来。",
+  "samples": [
+    {
+      "stdin": "books = [[1,1],[2,3],[2,3],[1,1],[1,1],[1,1],[1,2]], shelf_width = 4\n",
+      "stdout": "6\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/filling-bookcase-shelves/",
+    "en": "https://leetcode.com/problems/filling-bookcase-shelves/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

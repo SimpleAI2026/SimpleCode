@@ -1,0 +1,8 @@
+{
+  "id": 2022,
+  "summary": "Read one integer sequence whose length is at most 5 times 104, with each integer at most 105. Also read a desired row count and a desired column count. Both counts are positive and each is at most 4 times 104. When the sequence length equals rows times columns, fill a table in row-major order, completing a row from left to right before starting the next row, and write the whole table. When the length does not match, write an empty table.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

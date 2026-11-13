@@ -1,0 +1,21 @@
+{
+  "id": 733,
+  "slug": "flood-fill",
+  "summary": "读入一张整数网格表示的图像、起点行号sr、起点列号sc，以及新颜色newColor。行数和列数都在1到50之间，起点位于网格内部。每个像素以及newColor都是0到65535之间的整数。从起点开始，把原颜色与起点相同、并且只经过上下左右相邻格子就能到达的整片区域改成newColor。斜向相邻不算连通。写出改色之后的整张网格。",
+  "samples": [
+    {
+      "stdin": "image = [[1,1,1],[1,1,0],[1,0,1]]\nsr = 1, sc = 1, newColor = 2\n",
+      "stdout": "[[2,2,2],[2,2,0],[2,0,1]]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/flood-fill/",
+    "en": "https://leetcode.com/problems/flood-fill/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

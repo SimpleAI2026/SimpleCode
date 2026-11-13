@@ -1,0 +1,8 @@
+{
+  "id": 825,
+  "summary": "Read ages for several people. The count equals the array length and lies between 1 and 2 times 10^4, and each age is an integer from 1 to 120. Let x and y be two different users. User x sends y no friend request when any of the following holds: the age of y is at most half the age of x plus 7, the age of y exceeds the age of x, or y is above 100 while x is below 100. In every remaining case x does send a request. Requests need not be answered, and nobody messages themself. Count every request and write the total.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

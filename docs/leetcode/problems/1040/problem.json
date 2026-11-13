@@ -1,0 +1,26 @@
+{
+  "id": 1040,
+  "slug": "moving-stones-until-consecutive-ii",
+  "summary": "数轴没有尽头，石子放在互不相同的整数位置上。石子颗数从 3 到 10000，每个位置从 1 到 1000000000。当前最左或最右的那颗叫做端部。每一手拿起一颗端部的石子，把它放到一个空着的整数点上，放下之后它不能还占据最左或最右。若无论放在哪里它都仍然占据端部，这一手就不允许。石子占满一段连续整数时无法再动手，对局停止。找出停止前最少能走多少手，以及最多能走多少手。先写较小的次数，再写较大的次数。",
+  "samples": [
+    {
+      "stdin": "[7,4,9]\n",
+      "stdout": "[1,2]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "[6,5,4,3,10]\n",
+      "stdout": "[2,3]\nWe can move 3 -> 8 then 10 -> 7 to finish the game.\nOr, we can move 3 -> 7, 4 -> 8, 5 -> 9 to finish the game.\nNotice we cannot move 10 -> 2 to finish the game, because that would be an illegal move.\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/moving-stones-until-consecutive-ii/",
+    "en": "https://leetcode.com/problems/moving-stones-until-consecutive-ii/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

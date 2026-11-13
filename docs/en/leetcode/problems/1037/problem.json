@@ -1,0 +1,8 @@
+{
+  "id": 1037,
+  "summary": "Read three points that sit on a flat plane. Each point is a pair of integers, and every coordinate is an integer from 0 through 100. The input always contains exactly three points. Judge whether those points form a valid boomerang. All three locations must differ from one another, and they must fail to lie on one common straight line. Write true when both rules hold. Write false when any two points coincide or when the three points are collinear.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

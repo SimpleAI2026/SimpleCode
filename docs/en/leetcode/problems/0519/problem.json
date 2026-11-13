@@ -1,0 +1,7 @@
+{
+  "id": 519,
+  "summary": "Prepare a matrix with m rows and n columns. Every cell starts as 0. Both m and n run from 1 to 10000. Implement three operations. Construction reads m and n. flip chooses one cell that is still 0, with equal chance among those cells, changes it to 1, and returns that cell row index and column index, counting from 0. Each flip call still has at least one 0 left. reset changes every cell back to 0. Calls to flip and reset together happen at most 1000 times. Every cell that is currently 0 must share the same chance of being chosen.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": 745,
+  "slug": "prefix-and-suffix-search",
+  "summary": "读入小写单词数组words，长度在1到15000之间，每个单词长度在1到10之间。下标为i的单词权重就是i。随后回答至多与单词个数相同的询问。每次询问给出一个前缀和一个后缀，两者长度都在0到10之间，并且只含小写字母。找出同时以该前缀开头、以该后缀结尾的单词中权重最大的一个，写出它的权重。没有匹配时写出-1。",
+  "samples": [
+    {
+      "stdin": "many words, words[i] has weight i.\n\nDesign a class WordFilter that supports one function, WordFilter.f(String prefix, String suffix). It will\n",
+      "stdout": "the word with given prefix and suffix with maximum weight. If no word exists, return -1.\n\nExamples:\n\nInput:\nWordFilter([\"apple\"])\nWordFilter.f(\"a\", \"e\") // returns 0\nWordFilter.f(\"b\", \"\") // returns -1\n\nNote:\n\n1. words has length in range [1, 15000].\n2. For each test case, up to words.length queries WordFilter.f may be made.\n3. words[i] has length in range [1, 10].\n4. prefix, suffix have lengths in range [0, 10].\n5. words[i] and prefix, suffix queries consist of lowercase letters only.\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/prefix-and-suffix-search/",
+    "en": "https://leetcode.com/problems/prefix-and-suffix-search/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

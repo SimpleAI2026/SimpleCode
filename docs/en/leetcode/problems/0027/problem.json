@@ -1,0 +1,8 @@
+{
+  "id": 27,
+  "summary": "Read a stretch of integers and one target integer named val. Inside the current storage, drop every element equal to val and keep the rest. Kept elements may change order relative to one another. Do not request another stretch of the same length, and keep spare space at a fixed size. Write how many elements stay. Cells outside that count do not need to be wiped.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

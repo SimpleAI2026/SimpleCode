@@ -1,0 +1,8 @@
+{
+  "id": 1720,
+  "summary": "Read an encoded list and a non-negative integer first. The hidden list arr holds n non-negative integers, n is from 2 to 104, the encoded list has length n - 1, and every encoded value as well as first lies between 0 and 10^5. The rule is that encoded[i] equals arr[i] bitwise-xor arr[i + 1], and arr[0] equals first. Rebuild the whole of arr from that rule and write it. The result is unique.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

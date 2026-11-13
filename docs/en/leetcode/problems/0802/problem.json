@@ -1,0 +1,7 @@
+{
+  "id": 802,
+  "summary": "Read a directed graph with at most 10000 nodes and at most 32000 edges. Labels run from zero through the node count minus one. Each node's outgoing list is sorted increasingly and holds distinct labels. From a chosen start, every step must follow one outgoing edge. The start is eventually safe when every possible continuation is forced to halt, after finitely many steps, on a node that has no outgoing edge. Find every eventually safe node and write the labels in increasing order.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

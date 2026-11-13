@@ -1,0 +1,8 @@
+{
+  "id": 1846,
+  "summary": "Read a column of positive integers. The column holds at most 100000 entries, and each entry is at most 1000000000. You may reorder the column any number of times, and you may lower any entry to a smaller positive integer any number of times. When you stop, the first entry must equal 1, and the absolute difference of any two neighbors must be at most 1. Under those two limits, make some entry as large as possible and write that largest attainable value.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

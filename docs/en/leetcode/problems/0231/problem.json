@@ -1,0 +1,8 @@
+{
+  "id": 231,
+  "summary": "Read one integer and decide whether it can be written as two raised to a non-negative integer power. The values one, two, four, eight, and larger members of that family all qualify. Write true when it qualifies and false otherwise. Zero and every negative integer fail. The decision uses only this one integer, with no second input. The exponent must be an integer and must not be a fraction.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

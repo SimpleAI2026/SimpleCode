@@ -1,0 +1,8 @@
+{
+  "id": 735,
+  "summary": "Read an array asteroids of at most 10000 nonzero integers, each lying between -1000 and 1000. The absolute value is the size, a positive sign means motion to the right, and a negative sign means motion to the left. All of them travel at one shared speed. Bodies that travel in one shared direction never meet. Bodies that travel toward each other collide: the smaller one disappears, and equal sizes make both disappear. Write the bodies that remain, from left to right, once every collision is over.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

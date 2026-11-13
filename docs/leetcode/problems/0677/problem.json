@@ -1,0 +1,21 @@
+{
+  "id": 677,
+  "slug": "map-sum-pairs",
+  "summary": "维护从字符串到整数的对应关系。insert 读入一个键和一个值：键是新的就记下这一对，键已存在就用新值换掉旧值。sum 读入一个前缀，把所有以它开头的键所对应的值相加，写出总和。键和前缀只含小写英文字母，长度各自从 1 到 50。每个值从 1 到 1000。两种操作加在一起最多进行 50 次。",
+  "samples": [
+    {
+      "stdin": "[\"MapSum\", \"insert\", \"sum\", \"insert\", \"sum\"]\n[[], [\"apple\", 3], [\"ap\"], [\"app\", 2], [\"ap\"]]\n",
+      "stdout": "[null, null, 3, null, 5]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/map-sum-pairs/",
+    "en": "https://leetcode.com/problems/map-sum-pairs/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

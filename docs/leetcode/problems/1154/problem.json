@@ -1,0 +1,26 @@
+{
+  "id": 1154,
+  "slug": "day-of-the-year",
+  "summary": "读入长度为 10 的日期文本，第 5 位和第 8 位是短横线，其余都是数字，格式为四位年份、两位月份、两位日。这个日期是公历里真实存在的一天，范围从 1900 年 1 月 1 日到 2019 年 12 月 31 日。把这一天是所在年份的第几天写出来，1 月 1 日算第 1 天。二月在闰年按 29 天计，在平年按 28 天计。年份上界是 2019。",
+  "samples": [
+    {
+      "stdin": "date = \"2019-01-09\"\n",
+      "stdout": "9\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "date = \"2019-02-10\"\n",
+      "stdout": "41\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/day-of-the-year/",
+    "en": "https://leetcode.com/problems/day-of-the-year/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

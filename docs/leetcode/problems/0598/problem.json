@@ -1,0 +1,21 @@
+{
+  "id": 598,
+  "slug": "range-addition-ii",
+  "summary": "有一张 m 行 n 列的表，一开始每个格子都是 0。m 与 n 都在 1 到 40000。随后读入一串更新，条数不超过 10000。每条更新给出正整数 a 与 b，把行号小于 a 且列号小于 b 的格子都加上 1，行号和列号都从 0 计起。a 在 1 到 m，b 在 1 到 n。全部更新做完后，找出表中最大的那个数字，并写出等于该数字的格子有多少个。",
+  "samples": [
+    {
+      "stdin": "m = 3, n = 3\noperations = [[2,2],[3,3]]\n",
+      "stdout": "4\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/range-addition-ii/",
+    "en": "https://leetcode.com/problems/range-addition-ii/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

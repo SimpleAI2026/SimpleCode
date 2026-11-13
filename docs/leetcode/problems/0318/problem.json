@@ -1,0 +1,26 @@
+{
+  "id": 318,
+  "slug": "maximum-product-of-word-lengths",
+  "summary": "读入若干个单词，这些单词里的字符全部是英文小写。找出两个单词，它们不含有任何一个相同的字母，并且两个长度相乘的积要在所有这样的配对里最大。把这个最大乘积写出来。如果每一对单词都会共享至少一个字母，就写出 0。不要把同一个单词和它自己配成一对。",
+  "samples": [
+    {
+      "stdin": "[\"abcw\",\"baz\",\"foo\",\"bar\",\"xtfn\",\"abcdef\"]\n",
+      "stdout": "16\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "[\"a\",\"ab\",\"abc\",\"d\",\"cd\",\"bcd\",\"abcd\"]\n",
+      "stdout": "4\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/maximum-product-of-word-lengths/",
+    "en": "https://leetcode.com/problems/maximum-product-of-word-lengths/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

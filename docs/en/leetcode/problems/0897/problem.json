@@ -1,0 +1,7 @@
+{
+  "id": 897,
+  "summary": "Read a binary search tree. It contains between 1 and 100 nodes, and each node stores a distinct integer from 0 through 1000. Rewire the nodes into a chain that only grows to the right and follows inorder. The earliest node in that order becomes the new root. Every later node hangs only as the right child of the node before it, and every left child link is dropped. Write the tree after this rewiring.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

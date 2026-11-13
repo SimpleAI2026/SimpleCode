@@ -1,0 +1,8 @@
+{
+  "id": 2165,
+  "summary": "Read an integer whose absolute value is at most 1000000000000000. You may only rearrange its decimal digits. The original sign must stay as it was, and the result must not contain a leading zero. Under those limits, make the numeric value as small as possible and write the resulting integer. A negative input must stay negative, and a non-negative input must stay non-negative.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

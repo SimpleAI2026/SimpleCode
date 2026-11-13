@@ -1,0 +1,8 @@
+{
+  "id": 630,
+  "summary": "Several online classes are available, from 1 to 104 of them. Each class gives a duration in days and a latest completion day, and both positive integers are at most 104. Study begins on day 1. Only one class can be studied at a time, a class must occupy consecutive days, and it must end on or before its latest completion day. Find how many classes can be completed at most, and write that count. Skipping some classes is allowed.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

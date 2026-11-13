@@ -1,0 +1,8 @@
+{
+  "id": 400,
+  "summary": "Write every positive integer in decimal, in increasing order, and join those writings into one endless stream of digits. Read a position n that is at least 1 and at most 2 raised to the power 31, minus 1. Count from the start of the stream until you reach place n, and write the digit sitting there.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

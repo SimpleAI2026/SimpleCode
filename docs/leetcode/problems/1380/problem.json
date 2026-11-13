@@ -1,0 +1,26 @@
+{
+  "id": 1380,
+  "slug": "lucky-numbers-in-a-matrix",
+  "summary": "读入一张 m 行 n 列的整数矩阵，矩阵里的整数两两不同。某个整数若是它所在那一行里的最小值，同时又是它所在那一列里的最大值，就把这个整数当作幸运数。找出矩阵中的全部幸运数，按任意顺序写成一个列表。若一个都没有，写出空列表。m 和 n 都介于 1 和 50 之间，每个整数介于 1 和 10^5 之间。",
+  "samples": [
+    {
+      "stdin": "matrix = [[3,7,8],[9,11,13],[15,16,17]]\n",
+      "stdout": "[15]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "matrix = [[1,10,4,2],[9,3,8,7],[15,16,17,12]]\n",
+      "stdout": "[12]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/lucky-numbers-in-a-matrix/",
+    "en": "https://leetcode.com/problems/lucky-numbers-in-a-matrix/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

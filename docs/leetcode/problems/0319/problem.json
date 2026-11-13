@@ -1,0 +1,26 @@
+{
+  "id": 319,
+  "slug": "bulb-switcher",
+  "summary": "一开始有 n 盏灯泡，全部处于熄灭。第 1 轮把每一盏都拨成点亮。之后每一轮按固定间隔拨动开关：第 i 轮从第一盏数起，每数到 i 就拨动一次，点亮的变成熄灭，熄灭的变成点亮。一直进行到第 n 轮，那一轮只拨动最后一盏。找出结束时仍然点亮的灯泡数量并写出来。",
+  "samples": [
+    {
+      "stdin": "n = 3\n",
+      "stdout": "1\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "n = 0\n",
+      "stdout": "0\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/bulb-switcher/",
+    "en": "https://leetcode.com/problems/bulb-switcher/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

@@ -1,0 +1,8 @@
+{
+  "id": 725,
+  "summary": "Read a singly linked list and an integer k. The list contains between 0 and 1000 nodes, each node stores an integer from 0 through 999, and k is an integer from 1 through 50. Cut the nodes, without changing their order, into exactly k consecutive pieces. Keep the piece lengths as close as possible: any two pieces differ by at most one node, and a piece that occurs earlier is never shorter than a piece that occurs later. Empty pieces are allowed when the list is short. Write the k pieces from front to back.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "id": 996,
+  "slug": "number-of-squareful-arrays",
+  "summary": "读入长度介于 1 和 12 的一串非负整数，每个数不超过十亿。把这些数重新排队，若排队后任意两个挨着的数之和都是某个整数的平方，则这种排队合格。统计合格排队的种数并写出来。只要存在一个位置上的数不相同，两种排队就视为不同。同一个数出现多次时，按它们所在的位置区分，而不是合并成一种。",
+  "samples": [
+    {
+      "stdin": "[1,17,8]\n",
+      "stdout": "2\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "[2,2,2]\n",
+      "stdout": "1\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/number-of-squareful-arrays/",
+    "en": "https://leetcode.com/problems/number-of-squareful-arrays/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

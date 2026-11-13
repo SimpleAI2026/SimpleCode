@@ -1,0 +1,7 @@
+{
+  "id": 713,
+  "summary": "Read a sequence of positive integers and one integer k. Count how many blocks of consecutive indexes have a product, taken over every integer in the block, that is strictly smaller than k. Do not count an empty block that holds no integer. Write the number of blocks you counted. The sequence length is greater than 0 and no more than 50000. Each element is greater than 0 and smaller than 1000. k is at least 0 and smaller than 10^6.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

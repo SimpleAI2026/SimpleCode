@@ -1,0 +1,21 @@
+{
+  "id": 257,
+  "slug": "binary-tree-paths",
+  "summary": "读入一棵二叉树。从根开始，沿着父子链接一直走到没有孩子的结点。没有左孩子也没有右孩子的结点叫做叶子。把每一条从根走到某个叶子的结点值按自上而下的次序连成一条路径，叶子有多少条就写出多少条。空孩子不写入路径。结点值保持原样，不要改写成别的编号。",
+  "samples": [
+    {
+      "stdin": "1\n/ \\\n2 3\n\\\n5\n",
+      "stdout": "[\"1->2->5\", \"1->3\"]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/binary-tree-paths/",
+    "en": "https://leetcode.com/problems/binary-tree-paths/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

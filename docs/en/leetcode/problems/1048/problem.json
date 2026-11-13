@@ -1,0 +1,8 @@
+{
+  "id": 1048,
+  "summary": "Read several words built from lowercase English letters only. The list holds between 1 and 1000 words, and each word spans between 1 and 16 letters. Call the shorter word a forerunner of the longer one when placing exactly one extra letter into the shorter word, at any index, yields the longer word. Pick words from this list and line them up so each word is a forerunner of the next. One lone word is a line of length 1. Find how many words the longest line can contain, and write that count.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

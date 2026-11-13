@@ -1,0 +1,8 @@
+{
+  "id": 1074,
+  "summary": "Read an integer matrix together with a target integer. The matrix has between 1 and 300 rows and between 1 and 300 columns. Every entry lies between -1000 and 1000. The target lies between -100000000 and 100000000. A block is a nonempty rectangle made from consecutive rows and consecutive columns. Two blocks count as distinct when at least one boundary index differs. Count how many blocks have entries adding up to the target. Write that count.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

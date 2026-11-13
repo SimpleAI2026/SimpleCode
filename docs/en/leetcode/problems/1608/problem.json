@@ -1,0 +1,8 @@
+{
+  "id": 1608,
+  "summary": "Read a list of non-negative integers. The list holds from 1 to 100 entries, and each entry is from 0 to 1000. Find an integer x for which the number of entries that are not smaller than x equals x itself. That integer is allowed to be absent from the list. Write x when such a value exists, and write -1 when it does not. There is never more than one possible x.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

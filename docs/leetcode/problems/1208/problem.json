@@ -1,0 +1,26 @@
+{
+  "id": 1208,
+  "slug": "get-equal-substrings-within-budget",
+  "summary": "读入两条长度相同的小写字符串 s 和 t，公共长度在 1 到 100000 之间，再读入预算 maxCost，范围是 0 到 1000000。把 s 某一位置上的字符改成 t 同一位置上的字符，花费等于两个字符编码之差的绝对值。在 s 中寻找一段连续区间，使它改成 t 中对齐的那段时花费总和不超过预算，并且这段尽量长。写出这段的长度。若不存在任何可行区间，写 0。预算上界是 1000000。",
+  "samples": [
+    {
+      "stdin": "s = \"abcd\", t = \"bcdf\", maxCost = 3\n",
+      "stdout": "3\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "s = \"abcd\", t = \"cdef\", maxCost = 3\n",
+      "stdout": "1\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/get-equal-substrings-within-budget/",
+    "en": "https://leetcode.com/problems/get-equal-substrings-within-budget/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

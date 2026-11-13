@@ -1,0 +1,26 @@
+{
+  "id": 1091,
+  "slug": "shortest-path-in-binary-matrix",
+  "summary": "读入一个阶数为 N 的正方形格子，N 从 1 到 100，每个格子只写 0 或 1。0 表示可以走进去，1 表示被挡住。一条路线从两个下标都是 0 的角落出发，走到两个下标都是 N 减 1 的对角。每一步可以迈进周围八格里的一格，斜向也算，而且经过的格子都必须写着 0。路线长度按经过的格子个数计算，两头的格子都要计入。找出最短路线有多长。没有路线时写出负 1，否则写出该长度。",
+  "samples": [
+    {
+      "stdin": "[[0,1],[1,0]]\n",
+      "stdout": "2\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "[[0,0,0],[1,1,0],[1,1,0]]\n",
+      "stdout": "4\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/shortest-path-in-binary-matrix/",
+    "en": "https://leetcode.com/problems/shortest-path-in-binary-matrix/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

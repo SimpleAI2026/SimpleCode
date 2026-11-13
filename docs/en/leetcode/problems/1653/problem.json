@@ -1,0 +1,8 @@
+{
+  "id": 1653,
+  "summary": "Read a string made only from the letter a and the letter b, with length from 1 to 105. Call the string balanced when no index pair i less than j has b in the earlier spot and a in the later spot. Any number of characters may be deleted, and the characters that stay keep their relative order. Write the fewest deletions that leave a balanced string.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

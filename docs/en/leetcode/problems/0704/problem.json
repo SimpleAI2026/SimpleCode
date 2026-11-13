@@ -1,6 +1,6 @@
 {
   "id": 704,
-  "summary": "The public title of this exercise is Binary Search. Read a count, that many integers, and one target integer from standard input and compute the result named by that title, using only those values. Print the result as one integer. The sample below is a short input written for this playground so the printed line can be checked locally. It is not a copy of an example from the problem site. The input stays under one hundred elements so it finishes quickly in the browser.",
+  "summary": "Read an integer array whose length is n. The array is already arranged from smaller values to larger values, and the elements differ from one another. Also read one target integer. Look through the array for that target. If the target occurs, write its index. If it never occurs, write -1. n sits in the closed interval from 1 to 10000, and every element sits in the closed interval from -9999 to 9999. Indexes begin at 0.",
   "notes": [
     "Compare after trimming trailing newlines. The input is a count, that many integers, and one target integer."
   ]

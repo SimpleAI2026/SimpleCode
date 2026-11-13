@@ -1,0 +1,7 @@
+{
+  "id": 387,
+  "summary": "Read one string of characters. Scan from the left and locate the earliest character that appears exactly once in the whole string. Write its position, counting the first character as position 0. If every character appears at least twice, no such character exists, and you should write -1. Count positions by character index only.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

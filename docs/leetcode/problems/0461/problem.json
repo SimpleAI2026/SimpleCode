@@ -1,0 +1,21 @@
+{
+  "id": 461,
+  "slug": "hamming-distance",
+  "summary": "读入整数 x 与整数 y。二者都大于等于 0，并且严格小于二的三十一次方。先把它们各自展开成二进制，再逐位对照，数一数有多少个位上的 0 和 1 对不上。把这个对不上的位数写出来，该位数称为汉明距离。",
+  "samples": [
+    {
+      "stdin": "x = 1, y = 4\n",
+      "stdout": "2\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/hamming-distance/",
+    "en": "https://leetcode.com/problems/hamming-distance/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

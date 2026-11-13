@@ -1,0 +1,7 @@
+{
+  "id": 863,
+  "summary": "Read a non-empty binary tree, one target node that sits on that tree, and an integer K. Every node value is unique and lies between 0 and 500. K lies between 0 and 1000. Distance counts edges, and a path may go through the parent as well as through children. Collect every node whose distance from the target is exactly K. Write the values of those nodes. Any order is acceptable. The target itself appears only when K is 0.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

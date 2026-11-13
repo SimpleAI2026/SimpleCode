@@ -1,0 +1,8 @@
+{
+  "id": 2170,
+  "summary": "Read a column of positive integers. Its length is between 1 and 100000, and every integer is at most 100000. Call the column alternating when, starting at the third entry, every entry equals the entry two places earlier, and every entry differs from the entry directly before it. One operation changes any chosen position into any positive integer. Find the fewest operations that make the column alternating, and write that count. A column that holds only one entry is already alternating.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

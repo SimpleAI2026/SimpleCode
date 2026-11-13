@@ -1,0 +1,8 @@
+{
+  "id": 475,
+  "summary": "Houses and heaters stand on one shared horizontal line. Read every house coordinate and every heater coordinate. Each coordinate is a non-negative integer no larger than 10^9. The house count and the heater count are each at most 25000, and either count may be zero. Every heater must use one common warm radius. A house is warmed when it lies inside that radius or sits exactly on the boundary. Find the smallest radius that warms every house, and write that integer. When no house is present, write 0.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

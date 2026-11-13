@@ -1,0 +1,8 @@
+{
+  "id": 2021,
+  "summary": "A straight street is a number line. Read at most 105 street lamps, each with a center and a radius. Every center lies between negative 108 and positive 108, and every radius lies between 0 and 108. A lamp covers each integer from its center minus its radius through its center plus its radius, including both ends. The brightness of an integer point equals how many lamps cover it. Find an integer point of greatest brightness. If several points tie, write the smallest coordinate.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

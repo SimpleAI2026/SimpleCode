@@ -1,0 +1,26 @@
+{
+  "id": 2037,
+  "slug": "minimum-number-of-moves-to-seat-everyone",
+  "summary": "数轴上座位的个数和学生的人数都记作 n。n 介于 1 和 100 之间，每个座位坐标和每个学生坐标都介于 1 和 100 之间。一开始允许多个座位或多名学生停在同一点。一次移动让一名学生的坐标增加 1 或减少 1。结束时每名学生都要占用一个座位，而且同一个座位不能分给两个人。把完成入座所需的步数最小值写出来。",
+  "samples": [
+    {
+      "stdin": "seats = [3,1,5], students = [2,7,4]\n",
+      "stdout": "4\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "seats = [4,1,5,9], students = [1,3,2,6]\n",
+      "stdout": "7\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/minimum-number-of-moves-to-seat-everyone/",
+    "en": "https://leetcode.com/problems/minimum-number-of-moves-to-seat-everyone/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

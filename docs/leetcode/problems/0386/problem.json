@@ -1,0 +1,21 @@
+{
+  "id": 386,
+  "slug": "lexicographical-numbers",
+  "summary": "读入正整数 n，其上限为 5000000。把 1 到 n 的每个整数都写成十进制文本，再按照字典里查单词的方式从小到大排列这些文本。按这个次序把对应的整数整列写出来，一个都不能漏，也不能超出 n。",
+  "samples": [
+    {
+      "stdin": "13,\n",
+      "stdout": "[1,10,11,12,13,2,3,4,5,6,7,8,9].\n\nPlease optimize your algorithm to use less time and space. The input size may be as large as 5,000,000.\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/lexicographical-numbers/",
+    "en": "https://leetcode.com/problems/lexicographical-numbers/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

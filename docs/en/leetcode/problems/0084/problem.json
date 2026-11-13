@@ -1,6 +1,6 @@
 {
   "id": 84,
-  "summary": "The public title of this exercise is Largest Rectangle In Histogram. Read tokens in the same order as the method parameters from standard input and compute the result named by that title, using only those values. Print the result as one integer. The sample below is a short input written for this playground so the printed line can be checked locally. It is not a copy of an example from the problem site. The input stays under one hundred elements so it finishes quickly in the browser.",
+  "summary": "Read the heights of several upright bars. Every height is an integer that is zero or positive. Every bar occupies one unit of width, and the bars stand next to each other from left to right. Find a solid rectangle inside the outline those bars form. The base of the rectangle rests on a contiguous run of bars, and the height of the rectangle cannot pass the shortest bar in that run. Write the largest area such a rectangle can reach. In the figure that comes with the task, that largest area equals 10.",
   "notes": [
     "Compare after trimming trailing newlines. The input is tokens in the same order as the method parameters."
   ]

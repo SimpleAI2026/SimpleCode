@@ -1,0 +1,26 @@
+{
+  "id": 658,
+  "slug": "find-k-closest-elements",
+  "summary": "读入一个已经从小到大排好的整数数组，以及正整数 k 和整数 x。数组不是空的，长度不超过 10000，而且 k 总是小于数组长度。数组里每个数的绝对值以及 x 的绝对值都不超过 10000。找出离 x 最近的 k 个数。若两个数到 x 的距离一样，就优先留下更小的那个。把选中的数按从小到大的次序写出来。",
+  "samples": [
+    {
+      "stdin": "[1,2,3,4,5], k=4, x=3\n",
+      "stdout": "[1,2,3,4]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "[1,2,3,4,5], k=4, x=-1\n",
+      "stdout": "[1,2,3,4]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/find-k-closest-elements/",
+    "en": "https://leetcode.com/problems/find-k-closest-elements/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

@@ -1,0 +1,26 @@
+{
+  "id": 753,
+  "slug": "cracking-the-safe",
+  "summary": "保险箱的密码是长度为n的数字串，每一位取自0到k减1。n是1到4的整数，k是1到10的整数，并且k的n次方不超过4096。连续输入数字时，机器只用最近的n位与真正密码比较。写出一条最短的数字串，使每一种可能的密码都作为其中一段连续的n位出现过。任意一条达到最短的串都可以。",
+  "samples": [
+    {
+      "stdin": "n = 1, k = 2\n",
+      "stdout": "\"01\"\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "n = 2, k = 2\n",
+      "stdout": "\"00110\"\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/cracking-the-safe/",
+    "en": "https://leetcode.com/problems/cracking-the-safe/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

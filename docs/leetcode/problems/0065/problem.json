@@ -1,0 +1,21 @@
+{
+  "id": 65,
+  "slug": "valid-number",
+  "summary": "读入一行文本。判断它算不算一个合法的十进制数值，算就算写出 true，不算就写出 false。正文要么是整数，要么是带点的小数，后面还可以接上指数。指数用字母 e 或 E 开头，后面必须再跟一个整数。整数可以先写加号或减号，符号之后至少要有一个数字。小数同样可以先写符号，符号之后只能是这三种样子：若干数字再加一个点、若干数字再加一个点再加若干数字、或者一个点再加若干数字。指数里的整数不能再出现点。两个符号挨在一起、指数缺了数字、混进其它字母、或者只有点而没有任何数字，都算不合法。",
+  "samples": [
+    {
+      "stdin": "s = \"0\"\n",
+      "stdout": "true\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/valid-number/",
+    "en": "https://leetcode.com/problems/valid-number/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

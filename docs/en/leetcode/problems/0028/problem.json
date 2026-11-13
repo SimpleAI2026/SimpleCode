@@ -1,0 +1,8 @@
+{
+  "id": 28,
+  "summary": "Read two texts. Call the first text the haystack and the second text the needle. Find the starting position of the first time the needle appears as a contiguous fragment inside the haystack. Positions are counted from 0. If the needle never appears, write -1. If the needle is an empty text, write 0. Compare one character at a time, and treat uppercase and lowercase letters as different.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

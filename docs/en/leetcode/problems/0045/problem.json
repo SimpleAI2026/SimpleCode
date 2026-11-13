@@ -1,6 +1,6 @@
 {
   "id": 45,
-  "summary": "The public title of this exercise is Jump Game II. Read tokens in the same order as the method parameters from standard input and compute the result named by that title, using only those values. Print the result as one integer. The sample below is a short input written for this playground so the printed line can be checked locally. It is not a copy of an example from the problem site. The input stays under one hundred elements so it finishes quickly in the browser.",
+  "summary": "Read a list of non-negative integers. The length is between 1 and 1000, and every value is at most 10^5. A person starts on the leftmost cell. The value in the current cell is the farthest number of cells that person may leap forward, and a shorter leap is allowed. Write the smallest number of leaps needed to land on the rightmost cell. Reaching that cell is always possible, so the answer is a finite count.",
   "notes": [
     "Compare after trimming trailing newlines. The input is tokens in the same order as the method parameters."
   ]

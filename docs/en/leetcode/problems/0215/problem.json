@@ -1,6 +1,6 @@
 {
   "id": 215,
-  "summary": "The public title of this exercise is Kth Largest Element In An Array. Read a count, that many integers, and one target integer from standard input and compute the result named by that title, using only those values. Print the result as one integer. The sample below is a short input written for this playground so the printed line can be checked locally. It is not a copy of an example from the problem site. The input stays under one hundred elements so it finishes quickly in the browser.",
+  "summary": "Read a list of integers and a positive integer k. Line the integers up from largest to smallest, and let equal values occupy separate places according to how often they occur. Do not merge equals into a single place first. Write the value sitting at place k in that line. k is always from 1 through the count of integers. The answer is the original value at that place, not an index.",
   "notes": [
     "Compare after trimming trailing newlines. The input is a count, that many integers, and one target integer."
   ]

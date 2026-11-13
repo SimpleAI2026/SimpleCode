@@ -1,0 +1,26 @@
+{
+  "id": 1691,
+  "slug": "maximum-height-by-stacking-cuboids",
+  "summary": "读入 n 个长方体，n 介于 1 和 100，每条棱长介于 1 和 100。每个长方体给出三条棱。可以任选其中若干个叠成一摞。若下方那一个的三条棱分别都不短于上方那一个对应的三条棱，就可以把上方放上去。叠之前允许把某个长方体的三条棱任意交换次序。找出叠好之后高度的最大值并写出来。高度按竖直方向那条棱累计。",
+  "samples": [
+    {
+      "stdin": "cuboids = [[50,45,20],[95,37,53],[45,23,12]]\n",
+      "stdout": "190\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "cuboids = [[38,25,45],[76,35,3]]\n",
+      "stdout": "76\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/maximum-height-by-stacking-cuboids/",
+    "en": "https://leetcode.com/problems/maximum-height-by-stacking-cuboids/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

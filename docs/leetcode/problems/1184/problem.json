@@ -1,0 +1,26 @@
+{
+  "id": 1184,
+  "slug": "distance-between-bus-stops",
+  "summary": "n 座车站围成一圈，编号从 0 到 n-1，且 1 <= n <= 10000。读入长度为 n 的路程表，第 i 项是车站 i 到车站 (i+1) 对 n 取余后那一站的距离，每段距离是 0 到 10000 的整数。车辆既能沿顺时针开，也能沿逆时针开。再读入起点站和终点站，二者都是合法编号。写出乘客从起点到终点的较短路程。",
+  "samples": [
+    {
+      "stdin": "distance = [1,2,3,4], start = 0, destination = 1\n",
+      "stdout": "1\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "distance = [1,2,3,4], start = 0, destination = 2\n",
+      "stdout": "3\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/distance-between-bus-stops/",
+    "en": "https://leetcode.com/problems/distance-between-bus-stops/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

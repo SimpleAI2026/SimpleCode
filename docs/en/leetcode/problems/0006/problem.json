@@ -1,0 +1,8 @@
+{
+  "id": 6,
+  "summary": "Read a text and a positive integer that tells how many horizontal bands to use. The text length runs from 1 to 1000, the band count also runs from 1 to 1000, and each character is an English letter, a comma, or a period. Drop characters down a column, then move diagonally upward, then drop down again, repeating until every character has a place. Afterward, scan each band from its left end to its right end, starting at the top band, and write the joined result.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

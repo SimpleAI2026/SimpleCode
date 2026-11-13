@@ -1,0 +1,8 @@
+{
+  "id": 583,
+  "summary": "Read two words built only from lowercase English letters. Each word has a length from 1 through 500. One move erases a single letter from one of the two words. Find the smallest number of moves that leaves the two words identical, and write that number. Order matters, so the same letters in a different order still differ.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

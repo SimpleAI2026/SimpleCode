@@ -1,0 +1,8 @@
+{
+  "id": 874,
+  "summary": "Read commands for a robot and a list of blocked cells. The robot starts at the origin facing north on an endless flat plane. North is positive y, east is positive x, south is negative y, and west is negative x. Command -2 turns left by 90 degrees, command -1 turns right by 90 degrees, and a command from 1 through 9 walks that many cells forward. If the next cell is blocked, the robot stays where it is and later commands still run. Among all integer cells the robot occupies, write the largest squared straight-line distance from the origin.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

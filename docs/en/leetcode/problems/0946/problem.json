@@ -1,0 +1,8 @@
+{
+  "id": 946,
+  "summary": "Read two integer sequences of equal length. One lists the push order and the other lists the pop order. The shared length may be 0 and is at most 1000. Values inside both sequences are distinct, every value is below 1000, and the two sequences contain exactly the same multiset of numbers. Start from an empty stack. The only allowed actions are pushing the next unused value from the push order, or popping the current top into the output. Decide whether some mix of those actions can reproduce the pop order and leave the stack empty at the end. Write true when that is possible and false when it is not.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "id": 1160,
+  "slug": "find-words-that-can-be-formed-by-characters",
+  "summary": "读入一份单词清单和一串字母库存，全部由小写英文字母组成。清单里的单词个数在 1 到 1000 之间，每个单词以及库存的长度都在 1 到 100 之间。某个单词能被拼出，当且仅当它所需要的每种字母的个数都不超过库存里该字母的个数。把所有能拼出的单词的长度相加，把这个和写出来。同一份库存不能在一个单词内部被重复透支。",
+  "samples": [
+    {
+      "stdin": "words = [\"cat\",\"bt\",\"hat\",\"tree\"], chars = \"atach\"\n",
+      "stdout": "6\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "words = [\"hello\",\"world\",\"leetcode\"], chars = \"welldonehoneyr\"\n",
+      "stdout": "10\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/find-words-that-can-be-formed-by-characters/",
+    "en": "https://leetcode.com/problems/find-words-that-can-be-formed-by-characters/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

@@ -1,7 +1,7 @@
 {
   "id": 211,
   "slug": "design-add-and-search-words-data-structure",
-  "summary": "公开题名是「添加与搜索单词 - 数据结构设计」。从标准输入读取若干条操作，每条一行，只根据这些值完成题名所说的计算，把结果写成每条操作的结果各占一行。下面的样例是我们另拟的一小段数据，用来在编辑器里对照输出，不是官网示例的原文。数据规模不超过一百，方便在浏览器里很快跑完。",
+  "summary": "维护一个只收录小写英文单词的词表，并完成两类调用。第一类把一个新单词登记进去。第二类送来一条查询，查询中每个字符要么是小写字母，要么是点号。点号可以顶替任意一个小写字母，而且只顶替一个位置。判断词表里有没有与整条查询长度相同、逐位都对得上的单词。有则写出 true，没有则写出 false。",
   "samples": [
     {
       "stdin": "addWord bad\naddWord dad\naddWord mad\nsearch pad\nsearch bad\nsearch .ad\nsearch b..\n",

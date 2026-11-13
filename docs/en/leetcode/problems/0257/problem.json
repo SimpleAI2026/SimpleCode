@@ -1,0 +1,7 @@
+{
+  "id": 257,
+  "summary": "Read a binary tree. Start at the root and follow parent to child links until a node has neither a left child nor a right child. Call that node a leaf. Write every path as the node values from the root down to one leaf, in top to bottom order. Produce one path for every leaf. Do not insert missing children into a path, and do not relabel any node value.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

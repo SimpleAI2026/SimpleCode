@@ -1,0 +1,26 @@
+{
+  "id": 923,
+  "slug": "3sum-with-multiplicity",
+  "summary": "读入整数序列 A 和整数 target。序列长度在 3 与 3000 之间，每个数在 0 与 100 之间，target 在 0 与 300 之间。统计下标三元组的个数，三个下标必须严格从小到大，对应的三个数相加正好等于 target。只要下标组合不同就分别计数，即使三个数的数值一样也不合并。个数可能很大，对 10^9+7 取余后写出。",
+  "samples": [
+    {
+      "stdin": "A = [1,1,2,2,3,3,4,4,5,5], target = 8\n",
+      "stdout": "20\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "A = [1,1,2,2,2,2], target = 5\n",
+      "stdout": "12\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/3sum-with-multiplicity/",
+    "en": "https://leetcode.com/problems/3sum-with-multiplicity/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

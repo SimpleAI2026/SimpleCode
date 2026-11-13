@@ -1,0 +1,7 @@
+{
+  "id": 909,
+  "summary": "Read a square board whose side N is at most 20. Cells are labeled from 1 through N times N, starting at the southwest cell, and neighboring rows run in opposite directions. When a cell stores a value other than -1, landing there sends you to the stored label, and that redirect happens only once per move even if the new cell also stores a redirect. Label 1 and the final label never redirect. From label x, one move may land on one of the next six labels that does not pass the final label. Write the fewest moves that reach the final label, or write -1 if it cannot be reached.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

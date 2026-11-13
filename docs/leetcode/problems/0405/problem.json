@@ -1,0 +1,26 @@
+{
+  "id": 405,
+  "slug": "convert-a-number-to-hexadecimal",
+  "summary": "读入一个整数，它保证能放进 32 位带符号的整数。把这个数写成十六进制字符串。遇到负数时按二进制补码来解释。字母 a 到 f 必须使用小写。不要在开头留下多余的零。当数值正好为零时，只写单个字符 0。不得调用库中直接做进制转换或格式化的函数。",
+  "samples": [
+    {
+      "stdin": "26\n",
+      "stdout": "\"1a\"\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "-1\n",
+      "stdout": "\"ffffffff\"\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/convert-a-number-to-hexadecimal/",
+    "en": "https://leetcode.com/problems/convert-a-number-to-hexadecimal/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

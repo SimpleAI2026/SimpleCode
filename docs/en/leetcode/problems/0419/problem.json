@@ -1,0 +1,8 @@
+{
+  "id": 419,
+  "summary": "Read a board with m rows and n columns, where both m and n lie between 1 and 200. The character X marks part of a ship and a dot marks open water. One ship is a contiguous run of one or more X cells along a single row or a single column, so each ship is a horizontal bar or a vertical bar. Two ships have at least one open cell between them and never touch, including diagonally. Write the number of ships.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

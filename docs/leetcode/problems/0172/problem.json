@@ -1,0 +1,26 @@
+{
+  "id": 172,
+  "slug": "factorial-trailing-zeroes",
+  "summary": "读入一个非负整数 n。按定义，n 的阶乘是从 1 连乘到 n 的积，而 0 的阶乘定为 1。把这个积写成十进制，数出末尾连续有多少个 0，把这个个数写出来。中间出现的 0 不算，只数贴在最右边的那一串。计算所用的步数要随着 n 按对数增长，不要把完整的阶乘逐位乘开再去数零。n 可以大到直接展开会溢出。",
+  "samples": [
+    {
+      "stdin": "3\n",
+      "stdout": "0\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "5\n",
+      "stdout": "1\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/factorial-trailing-zeroes/",
+    "en": "https://leetcode.com/problems/factorial-trailing-zeroes/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

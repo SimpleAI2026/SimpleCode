@@ -1,0 +1,8 @@
+{
+  "id": 576,
+  "summary": "Read m, then n, then maxMove, then startRow, then startColumn. These are five integers. The grid has m rows and n columns, both m and n run from 1 to 50, and the ball begins inside the grid at row startRow and column startColumn. Each step moves up, down, left, or right by one cell, and a step may cross the boundary. No more than maxMove steps may be used, and maxMove runs from 0 to 50. Count the walks that carry the ball past the outer edge without exceeding that step limit, including exits on different step counts. The count may be huge, so write it modulo 10^9 plus 7.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

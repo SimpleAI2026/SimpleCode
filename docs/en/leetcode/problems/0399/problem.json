@@ -1,6 +1,6 @@
 {
   "id": 399,
-  "summary": "The public title of this exercise is Evaluate Division. Read tokens in the same order as the method parameters from standard input and compute the result named by that title, using only those values. Print the result as one line of output. The sample below is a short input written for this playground so the printed line can be checked locally. It is not a copy of an example from the problem site. The input stays under one hundred elements so it finishes quickly in the browser.",
+  "summary": "Read several equations. Each equation divides one string variable by another and gives a positive floating quotient. Then read several questions, each also dividing one variable by another. Use the equations to compute every question. Write the floating result when it can be computed, and write -1.0 when it cannot. The input is valid, no divisor is 0, and the equations never conflict.",
   "notes": [
     "Compare after trimming trailing newlines. The input is tokens in the same order as the method parameters."
   ]

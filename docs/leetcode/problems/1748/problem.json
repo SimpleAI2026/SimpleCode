@@ -1,0 +1,26 @@
+{
+  "id": 1748,
+  "slug": "sum-of-unique-elements",
+  "summary": "读入一列整数。列的长度介于 1 和 100 之间，列中每个整数也介于 1 和 100 之间。若某个数值在整列里只出现一次，就称它独有。把所有独有数值相加，写出这个总和。出现两次以及更多次的数值全部排除，不参加求和。",
+  "samples": [
+    {
+      "stdin": "nums = [1,2,3,2]\n",
+      "stdout": "4\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "nums = [1,1,1,1,1]\n",
+      "stdout": "0\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/sum-of-unique-elements/",
+    "en": "https://leetcode.com/problems/sum-of-unique-elements/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

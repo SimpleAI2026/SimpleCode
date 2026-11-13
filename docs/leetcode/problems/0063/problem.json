@@ -1,0 +1,21 @@
+{
+  "id": 63,
+  "slug": "unique-paths-ii",
+  "summary": "读入一张 m 行 n 列的格子图。格子里的 0 代表可以踏入的空地，1 代表不能踏入的阻挡。棋子从最西北出发，想到达最东南。每一步只能走进南边紧邻或东边紧邻的空地。若出发格或终点格本身是阻挡，种数就是 0。请把避开全部阻挡的不同走法种数写出来。中途踏进阻挡的走法一律不算。",
+  "samples": [
+    {
+      "stdin": "[\n[0,0,0],\n[0,1,0],\n[0,0,0]\n]\n",
+      "stdout": "2\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/unique-paths-ii/",
+    "en": "https://leetcode.com/problems/unique-paths-ii/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

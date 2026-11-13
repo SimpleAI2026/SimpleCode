@@ -1,0 +1,8 @@
+{
+  "id": 850,
+  "summary": "Read at least 1 and at most 200 axis-aligned rectangles. Each rectangle supplies four integers for its lower-left corner and its upper-right corner. Every coordinate lies between 0 and 1000000000 inclusive. Compute the area of the union, so a region covered several times counts once. That area fits in a signed 64-bit integer and never exceeds 2 to the power 63 minus 1. The printed value may be huge, so write the area modulo 1000000007. Do not add an overlap a second time.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "id": 785,
+  "summary": "Read an undirected graph given by neighbor lists. The node count is from 1 to 100, and labels run from zero through that count minus one. No list contains its own label, no neighbor is listed twice, and a link recorded from one end is also recorded from the other. Decide whether the nodes can be partitioned into two camps so that every link joins different camps. Write true if they can and false if they cannot.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

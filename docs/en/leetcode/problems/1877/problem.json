@@ -1,0 +1,8 @@
+{
+  "id": 1877,
+  "summary": "Read an even number of positive integers. The count n lies between 2 and 105, and every integer is at most 105. Split them into n divided by 2 pairs so that each integer belongs to exactly one pair. A pair total is the sum of its two integers. One of those pair totals is the greatest. Choose a split that makes this greatest total as small as possible, and write that value.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

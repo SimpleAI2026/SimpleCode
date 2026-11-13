@@ -1,0 +1,8 @@
+{
+  "id": 1079,
+  "summary": "Read a collection of letter tiles. Each tile shows one uppercase English letter, and the number of tiles is from 1 to 7. You may use any nonempty subset of the tiles, but each physical tile is used at most once. Arrange the chosen tiles in a row. Two arrangements differ when their letter order differs. Tiles that show the same letter are interchangeable. Count every distinct nonempty sequence that can be formed this way, and write the count.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

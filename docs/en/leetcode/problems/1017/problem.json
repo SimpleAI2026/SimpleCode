@@ -1,0 +1,8 @@
+{
+  "id": 1017,
+  "summary": "Read an integer N from 0 through 10^9. Write N using base negative two as a string of characters, where every character is either 0 or 1. Starting at the rightmost place, the place weights are successive powers of negative two, beginning with the zeroth power. The weighted sum of the digits must equal N. Do not place extra zeros on the left unless the whole string is the single character 0. Write that string.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

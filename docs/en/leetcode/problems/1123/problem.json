@@ -1,0 +1,8 @@
+{
+  "id": 1123,
+  "summary": "Read a rooted binary tree holding between 1 and 1000 nodes. Each node stores a distinct integer from 1 to 1000. Call a node a leaf when it has no child. The top node has depth 0, and every child is one level below its parent. Among all leaves, keep those whose depth is greatest. Their shared ancestor is the deepest node whose branch still contains every one of those leaves. Write that ancestor node.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

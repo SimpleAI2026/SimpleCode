@@ -1,0 +1,26 @@
+{
+  "id": 1758,
+  "slug": "minimum-changes-to-make-alternating-binary-string",
+  "summary": "读入一条只由字符 0 与字符 1 构成的字符串，长度介于 1 和 104 之间。一次改写可以把某一处的 0 变成 1，或者把某一处的 1 变成 0。如果任意两个紧邻字符都不相同，这条字符串就称为交替。找出让它成为交替所需的最少改写次数，并把次数写出来。",
+  "samples": [
+    {
+      "stdin": "s = \"0100\"\n",
+      "stdout": "1\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "s = \"10\"\n",
+      "stdout": "0\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/minimum-changes-to-make-alternating-binary-string/",
+    "en": "https://leetcode.com/problems/minimum-changes-to-make-alternating-binary-string/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

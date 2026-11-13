@@ -1,0 +1,26 @@
+{
+  "id": 390,
+  "slug": "elimination-game",
+  "summary": "准备一列从 1 排到 n 的整数，n 介于 1 与 109 之间。先自左往右删：去掉当前最左边的数，之后每保留一个就再去掉一个，直到这一趟走完。接着自右往左删：去掉当前最右边的数，之后同样每保留一个再去掉一个。两个方向轮流进行，直到只留单独一个整数。写出它。",
+  "samples": [
+    {
+      "stdin": "n = 9\n",
+      "stdout": "6\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "n = 1\n",
+      "stdout": "1\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/elimination-game/",
+    "en": "https://leetcode.com/problems/elimination-game/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

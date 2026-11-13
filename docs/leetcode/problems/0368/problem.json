@@ -1,0 +1,26 @@
+{
+  "id": 368,
+  "slug": "largest-divisible-subset",
+  "summary": "读入一组两两不同的正整数。数组长度在 1 到 1000 之间，每个整数在 1 到 2 乘 10 的 9 次方之间。挑出一个元素个数最多的子集，使得子集里任意两个数，大的那个能被小的那个整除。如果有多个子集一样大，写出任意一个即可。",
+  "samples": [
+    {
+      "stdin": "nums = [1,2,3]\n",
+      "stdout": "[1,2]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "nums = [1,2,4,8]\n",
+      "stdout": "[1,2,4,8]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/largest-divisible-subset/",
+    "en": "https://leetcode.com/problems/largest-divisible-subset/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

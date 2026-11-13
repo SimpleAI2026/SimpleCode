@@ -1,0 +1,8 @@
+{
+  "id": 693,
+  "summary": "Read one positive integer and write it in binary with the high bit on the left and without leading zeros. Inspect each pair of bits that sit next to each other, moving from left to right. If any such pair holds two equal bits, decide that the integer fails the alternating test. Decide that it passes only when every neighboring pair holds two different bits. Write pass or fail. The integer is at least 1, so the bit string has at least one bit. A single bit has no neighbor pair and counts as a pass.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

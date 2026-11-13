@@ -1,0 +1,26 @@
+{
+  "id": 1028,
+  "slug": "recover-a-tree-from-preorder-traversal",
+  "summary": "从一份先序记录把二叉树重建出来。根的层级记作 0，某个结点的层级为 D 时，它的孩子层级是 D 加 1。每个结点先写下与层级相同个数的连字符，紧接着写下它保存的正整数。若某结点只带一个孩子，这个孩子一定挂在左边。结点总数从 1 到 1000，每个保存的整数从 1 到 1000000000。读入整段记录，写出还原之后的树根。",
+  "samples": [
+    {
+      "stdin": "\"1-2--3--4-5--6--7\"\n",
+      "stdout": "[1,2,5,3,4,6,7]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "\"1-2--3---4-5--6---7\"\n",
+      "stdout": "[1,2,5,3,null,6,null,4,null,7]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/recover-a-tree-from-preorder-traversal/",
+    "en": "https://leetcode.com/problems/recover-a-tree-from-preorder-traversal/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

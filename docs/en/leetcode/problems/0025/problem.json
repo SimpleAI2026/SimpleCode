@@ -1,6 +1,6 @@
 {
   "id": 25,
-  "summary": "The public title of this exercise is Reverse Nodes In K Group. Read tokens in the same order as the method parameters from standard input and compute the result named by that title, using only those values. Print the result as node values on one line, separated by spaces. The sample below is a short input written for this playground so the printed line can be checked locally. It is not a copy of an example from the problem site. The input stays under one hundred elements so it finishes quickly in the browser.",
+  "summary": "Read one singly linked chain and a positive integer k, where k is no larger than the node total. From the head, each time a full block of k nodes is available, turn the links of that whole block around. Nodes left at the tail in a block shorter than k keep their original direction. Extra storage may stay only at a fixed size. Integers inside nodes must not be altered. Write the head when processing finishes.",
   "notes": [
     "Compare after trimming trailing newlines. The input is tokens in the same order as the method parameters."
   ]

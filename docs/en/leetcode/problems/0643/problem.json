@@ -1,0 +1,7 @@
+{
+  "id": 643,
+  "summary": "Read n integers and a length k such that 1 is less than or equal to k, k is less than or equal to n, and n is at most 30000. Every integer lies between -10000 and 10000. Find a contiguous block holding exactly k numbers whose mean is the greatest among all such blocks, and write that mean.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "id": 676,
+  "summary": "First read several words that do not repeat and store them. Every stored word uses only lowercase English letters. Then, for each query word, decide whether replacing exactly one of its letters by a different letter makes the new spelling identical to some stored word. Replacing no letter, or two or more letters, does not succeed. Write yes or no for every query. Query words also use only lowercase letters.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

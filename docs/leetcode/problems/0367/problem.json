@@ -1,0 +1,26 @@
+{
+  "id": 367,
+  "slug": "valid-perfect-square",
+  "summary": "读入一个正整数。判断它是不是某个整数的平方。如果是，写出真；如果不是，写出假。不能调用语言自带的开平方函数，也不能用浮点库来取平方根。只用整数的乘法、除法或比较来完成判断。",
+  "samples": [
+    {
+      "stdin": "16\n",
+      "stdout": "true\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "14\n",
+      "stdout": "false\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/valid-perfect-square/",
+    "en": "https://leetcode.com/problems/valid-perfect-square/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

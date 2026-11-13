@@ -1,0 +1,7 @@
+{
+  "id": 433,
+  "summary": "Read a start gene, an end gene, and a bank of genes. Every gene is a string of length 8 whose letters are chosen from A, C, G, and T. One step alters exactly one letter. The start gene counts as legal even when the bank omits it, yet every gene visited after the start must occur in the bank. The start and the end are different. Find the smallest step count that turns the start into the end, and write that count. If no route exists, write -1.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

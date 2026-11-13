@@ -1,0 +1,8 @@
+{
+  "id": 617,
+  "summary": "Read two binary trees. Each tree contains from 0 to 2000 nodes, and every node value lies between -104 and 104. Overlay the trees by matching positions. When both positions contain a node, the result stores the sum of the two values. When only one side contains a node, keep that node and everything under it. Write the overlaid tree. If one tree is empty, the result is the other tree.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "id": 515,
+  "summary": "Read a binary tree. Nodes that share one depth form one level, and levels are ordered from top to bottom. On every level, choose the biggest node value among the nodes there, then write those chosen values following the levels downward. The level that contains the root is the first level. When a level holds only one node, that node value is the result for the level. Do not rank nodes that sit on different levels against each other. If the tree contains no node, write an empty result. Keep one entry per level instead of one biggest value for the whole tree.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

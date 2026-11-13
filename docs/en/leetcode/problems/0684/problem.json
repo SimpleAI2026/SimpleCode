@@ -1,6 +1,6 @@
 {
   "id": 684,
-  "summary": "The public title of this exercise is Redundant Connection. Read tokens in the same order as the method parameters from standard input and compute the result named by that title, using only those values. Print the result as integers on one line, separated by spaces. The sample below is a short input written for this playground so the printed line can be checked locally. It is not a copy of an example from the problem site. The input stays under one hundred elements so it finishes quickly in the browser.",
+  "summary": "Here a tree means a graph without direction that stays linked and contains no loop. The edges you read come from a tree on N nodes together with one extra edge. Labels are the distinct integers 1 through N. Each edge lists two endpoints, with the smaller label written on the left. The extra edge also joins labels in that range and was absent from the original tree. Delete one edge so the remainder is again a tree on N nodes. If more than one edge may be deleted, write the edge that stands last in the input order, still with the smaller label on the left. The edge count is from 3 to 1000. Endpoints lie from 1 to N, and N equals the edge count. The undirected wording was added to the statement in 2017.",
   "notes": [
     "Compare after trimming trailing newlines. The input is tokens in the same order as the method parameters."
   ]

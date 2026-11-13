@@ -1,6 +1,6 @@
 {
   "id": 207,
-  "summary": "The public title of this exercise is Course Schedule. Read tokens in the same order as the method parameters from standard input and compute the result named by that title, using only those values. Print the result as integers on one line, separated by spaces. The sample below is a short input written for this playground so the printed line can be checked locally. It is not a copy of an example from the problem site. The input stays under one hundred elements so it finishes quickly in the browser.",
+  "summary": "Read an integer n, the count of courses, labeled with integers from 0 through n minus 1. Then read prerequisite pairs. In a pair, the first label is the course you want and the second label is the course you must finish earlier. For example, the pair 0 with 1 means course 0 waits until course 1 is done. Pairs arrive as a list of edges, not as a matrix, and no edge repeats. Judge whether every course can be finished. Write false when the prerequisites form a cycle, and write true otherwise. n may be 0.",
   "notes": [
     "Compare after trimming trailing newlines. The input is tokens in the same order as the method parameters."
   ]

@@ -1,6 +1,6 @@
 {
   "id": 56,
-  "summary": "The public title of this exercise is Merge Intervals. Read tokens in the same order as the method parameters from standard input and compute the result named by that title, using only those values. Print the result as a row count and then one line of integers per row. The sample below is a short input written for this playground so the printed line can be checked locally. It is not a copy of an example from the problem site. The input stays under one hundred elements so it finishes quickly in the browser.",
+  "summary": "Read several closed ranges. Each range is given by two integers, a left end and a right end. When two ranges cross, or meet at an endpoint, replace them by one longer range whose ends cover both original pieces. Keep doing this until the ranges that remain no longer meet. Write every range that is left, ordered by increasing left ends. A shared endpoint is enough to join two ranges.",
   "notes": [
     "Compare after trimming trailing newlines. The input is tokens in the same order as the method parameters."
   ]
