@@ -4,8 +4,9 @@ Source: Zalando Research, Fashion-MNIST.
 https://github.com/zalandoresearch/fashion-mnist
 License: MIT (Copyright (c) 2017 Zalando SE).
 
-This file stores the first 5000 training rows and the first 1000 test rows.
+This file stores the first 32 training rows and the first 8 test rows.
 Each image is 28 by 28 grayscale pixels. Labels are the original class ids 0-9.
+Pixels stay uint8 until a batch is scaled.
 
 Layout, little-endian:
   uint32 magic 0x314E4D46

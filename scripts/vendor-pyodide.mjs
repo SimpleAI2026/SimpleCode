@@ -64,6 +64,49 @@ function idxLabels(buf, count) {
   return buf.subarray(8, 8 + count);
 }
 
+function lcg(seed) {
+  let state = seed >>> 0;
+  return () => {
+    state = (Math.imul(1664525, state) + 1013904223) >>> 0;
+    return state / 4294967296;
+  };
+}
+
+/** Fixed synthetic tables. Not slices of the Kaggle house CSV or the UCI airfoil file. */
+export function syntheticCsv(kind) {
+  if (kind === "house") {
+    const rand = lcg(20261113);
+    const cols = 36;
+    const header = [];
+    for (let i = 0; i < cols; i++) header.push(`f${String(i).padStart(2, "0")}`);
+    header.push("price");
+    const lines = [header.join(",")];
+    for (let row = 0; row < 24; row++) {
+      const values = [];
+      for (let c = 0; c < cols; c++) values.push((rand() * 2 - 1).toFixed(6));
+      const price = (0.4 * Number(values[0]) + 0.3 * Number(values[1]) + 1.5).toFixed(6);
+      values.push(price);
+      lines.push(values.join(","));
+    }
+    return Buffer.from(`${lines.join("\n")}\n`, "utf8");
+  }
+  if (kind === "airfoil") {
+    const rand = lcg(20261114);
+    const lines = ["freq,angle,chord,velocity,thickness,sound"];
+    for (let row = 0; row < 32; row++) {
+      const freq = (200 + rand() * 1800).toFixed(6);
+      const angle = (rand() * 22).toFixed(6);
+      const chord = (0.02 + rand() * 0.3).toFixed(6);
+      const velocity = (15 + rand() * 55).toFixed(6);
+      const thickness = (0.001 + rand() * 0.05).toFixed(6);
+      const sound = (90 + rand() * 40).toFixed(6);
+      lines.push([freq, angle, chord, velocity, thickness, sound].join(","));
+    }
+    return Buffer.from(`${lines.join("\n")}\n`, "utf8");
+  }
+  fail(`unknown synthetic table ${kind}`);
+}
+
 async function buildFashion(pin) {
   const parts = [];
   for (const source of pin.sources) {
@@ -90,6 +133,7 @@ async function buildFashion(pin) {
   ]);
 }
 
+async function main() {
 mkdirSync(outDir, { recursive: true });
 
 for (const [name, pin] of Object.entries(lock.files)) {
@@ -101,6 +145,8 @@ for (const [name, pin] of Object.entries(lock.files)) {
   let buf;
   if (pin.fashion) {
     buf = await buildFashion(pin.fashion);
+  } else if (pin.synthetic) {
+    buf = syntheticCsv(pin.synthetic);
   } else {
     console.log(`↓ ${name}`);
     buf = await download(pin.upstream);
@@ -126,3 +172,7 @@ try {
     fail(err instanceof Error ? err.message : String(err));
   }
 }
+}
+
+const isCli = process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.url);
+if (isCli) await main();
