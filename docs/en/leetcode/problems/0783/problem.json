@@ -1,0 +1,8 @@
+{
+  "id": 783,
+  "summary": "Read a binary search tree holding between 2 and 100 nodes. Each node stores an integer from 0 through 100000. Select any two different nodes and compute the absolute gap between the integers they store. Among every such selection, find the smallest gap and write it.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

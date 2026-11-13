@@ -1,0 +1,26 @@
+{
+  "id": 938,
+  "slug": "range-sum-of-bst",
+  "summary": "读入一棵二叉搜索树的根，再读入闭区间的下界与上界。结点总数从 1 起到二万，每个结点保存的整数互不相同，取值从 1 到 100000。下界与上界也在同一取值范围内，且下界不会超过上界。在树中找出每一个落在这个闭区间内的结点，把它们保存的整数全部相加，两端的边界值也要计入。最后把得到的总和写出来。",
+  "samples": [
+    {
+      "stdin": "root = [10,5,15,3,7,null,18], low = 7, high = 15\n",
+      "stdout": "32\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "root = [10,5,15,3,7,13,18,1,null,6], low = 6, high = 10\n",
+      "stdout": "23\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/range-sum-of-bst/",
+    "en": "https://leetcode.com/problems/range-sum-of-bst/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

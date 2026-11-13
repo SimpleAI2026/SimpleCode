@@ -1,0 +1,26 @@
+{
+  "id": 2164,
+  "slug": "sort-even-and-odd-indices-independently",
+  "summary": "读入一列整数，长度介于 1 和 100 之间，每个整数也介于 1 和 100 之间，下标从 0 开始。偶数下标上的那些数要按不下降的次序重新安放，奇数下标上的那些数要按不上升的次序重新安放。一个数只能留在与原来奇偶性相同的下标上。把重新安放后的整列写出来。",
+  "samples": [
+    {
+      "stdin": "nums = [4,1,2,3]\n",
+      "stdout": "[2,3,4,1]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "nums = [2,1]\n",
+      "stdout": "[2,1]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/sort-even-and-odd-indices-independently/",
+    "en": "https://leetcode.com/problems/sort-even-and-odd-indices-independently/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

@@ -1,6 +1,6 @@
 {
   "id": 91,
-  "summary": "The public title of this exercise is Decode Ways. Read one token of text without spaces from standard input and compute the result named by that title, using only those values. Print the result as one integer. The sample below is a short input written for this playground so the printed line can be checked locally. It is not a copy of an example from the problem site. The input stays under one hundred elements so it finishes quickly in the browser.",
+  "summary": "Read a non-empty text in which every character is a digit. The code records A as 1, B as 2, and continues through the alphabet until Z is recorded as 26. Count how many legal readings the digit text has, and write that count. A lone 0 does not stand for any letter. Two neighboring digits form a letter only when the number they make lies from 10 through 26, ends included. A reading may mix pieces of one digit and pieces of two digits, and every different cutting counts. When no legal cutting exists, write 0.",
   "notes": [
     "Compare after trimming trailing newlines. The input is one token of text without spaces."
   ]

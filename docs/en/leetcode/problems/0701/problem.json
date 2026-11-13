@@ -1,0 +1,8 @@
+{
+  "id": 701,
+  "summary": "Read the root of an ordered search tree and an integer that must be placed into it. Place that integer so the tree still obeys search-tree ordering afterward. The new integer differs from every value already stored, and the input guarantees this. When several placements are valid, write the root of any one that remains a proper search tree. The node count is from 0 to 104. Every node value and the inserted integer lie between -108 and 108, and all of them differ.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

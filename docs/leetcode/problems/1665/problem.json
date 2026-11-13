@@ -1,0 +1,26 @@
+{
+  "id": 1665,
+  "slug": "minimum-initial-energy-to-finish-tasks",
+  "summary": "读入若干任务，每项任务给出实际消耗和开工门槛。任务个数介于 1 与 105。消耗与门槛都是介于 1 与 104 的整数，并且消耗不会高于门槛。着手做某项任务时，手头能量必须不少于它的门槛；做完后能量减少实际消耗。任务的先后可以自由安排。写出做完每一项任务至少要准备的初始能量。",
+  "samples": [
+    {
+      "stdin": "tasks = [[1,2],[2,4],[4,8]]\n",
+      "stdout": "8\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "tasks = [[1,3],[2,4],[10,11],[10,12],[8,9]]\n",
+      "stdout": "32\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/minimum-initial-energy-to-finish-tasks/",
+    "en": "https://leetcode.com/problems/minimum-initial-energy-to-finish-tasks/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

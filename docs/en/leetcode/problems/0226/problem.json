@@ -1,6 +1,6 @@
 {
   "id": 226,
-  "summary": "The public title of this exercise is Invert Binary Tree. Read a level-order node count, using a dot for a missing child from standard input and compute the result named by that title, using only those values. Print the result as one level-order line, with a dot for a missing child. The sample below is a short input written for this playground so the printed line can be checked locally. It is not a copy of an example from the problem site. The input stays under one hundred elements so it finishes quickly in the browser.",
+  "summary": "Read the root of a binary tree. At every node, exchange its left child with its right child, and do that exchange at every node so the shape is mirrored from left to right. Integers stored in the nodes keep their original values; only the child links change. Write the tree after every exchange is finished. A child that was missing stays missing, and no new integer is invented.",
   "notes": [
     "Compare after trimming trailing newlines. The input is a level-order node count, using a dot for a missing child."
   ]

@@ -1,0 +1,8 @@
+{
+  "id": 1673,
+  "summary": "Read a list of integers together with a positive integer k. The list length is from 1 to 105, each entry is from 0 through 109, and k does not exceed the list length. Keep exactly k entries while preserving their original left-to-right order. Among every kept sequence of that length, find the one that is smallest in dictionary order: at the first index where two candidates disagree, the smaller entry wins. Write that sequence.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

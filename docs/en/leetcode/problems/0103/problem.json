@@ -1,0 +1,7 @@
+{
+  "id": 103,
+  "summary": "Read a binary tree that stores integers. Still collect one group for each level, but flip the direction between neighboring levels. The first level travels from the left toward the right, the immediately following level travels from the right toward the left, and every later level keeps switching. Keep the groups themselves in order from the root toward lower levels. Write every group. An empty tree writes an empty list. Some node integer may equal 20, and the direction rule applies to every other integer as well.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

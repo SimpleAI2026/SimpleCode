@@ -1,0 +1,7 @@
+{
+  "id": 460,
+  "summary": "Read a capacity limit. The capacity, every key, and every value are at most 104, and there will be at most 100000 calls. Keep a cache that drops entries according to how often they are used. On get, write the stored value when the key is present and write -1 when it is absent. On put, overwrite the value when the key is already stored, or insert the new pair when it is not. If the cache is already full, drop the entry with the smallest use count before the insert; when several entries share that count, drop the one touched longest ago. An entry's use count is the number of later get and put calls that name it, and the count returns to 0 after the entry is dropped.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

@@ -1,6 +1,6 @@
 {
   "id": 875,
-  "summary": "The public title of this exercise is Koko Eating Bananas. Read a count, that many integers, and one target integer from standard input and compute the result named by that title, using only those values. Print the result as one integer. The sample below is a short input written for this playground so the printed line can be checked locally. It is not a copy of an example from the problem site. The input stays under one hundred elements so it finishes quickly in the browser.",
+  "summary": "Read pile sizes and a time limit H in hours. There is at least 1 pile and at most 10000 piles. Each pile holds between 1 and 1000000000 bananas. H is at least the pile count and at most 1000000000. In one hour the eater selects a single pile and removes up to her speed in bananas from it. A smaller pile is finished, and she eats nothing else during that hour. She must finish every banana before H hours end. Write the smallest integer speed that makes this possible.",
   "notes": [
     "Compare after trimming trailing newlines. The input is a count, that many integers, and one target integer."
   ]

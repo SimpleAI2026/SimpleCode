@@ -1,0 +1,7 @@
+{
+  "id": 872,
+  "summary": "Read two binary trees. Each tree contains between 1 and 100 nodes. Walk each tree from left to right and record only the leaves, which are nodes with no child on either side. Compare the two leaf lists. Write true when the lists are identical in both values and order. Write false when they differ. Values stored on internal nodes are ignored. A tree may be a single leaf.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

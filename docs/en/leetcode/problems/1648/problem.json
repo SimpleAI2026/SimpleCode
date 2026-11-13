@@ -1,0 +1,8 @@
+{
+  "id": 1648,
+  "summary": "Read how many balls of each color are in stock at the start. The color count is from 1 to 100000, and each color starts with from 1 to 1000000000 balls. The buyer wants orders balls, where orders is at least 1 and at most the smaller of the full stock and 1000000000. Selling one ball of a color earns a price equal to how many balls of that color remain just before the sale, and that color then has one ball fewer. The sale order may be chosen freely. Write the greatest total price after exactly orders sales, reduced modulo 1000000000 plus 7.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

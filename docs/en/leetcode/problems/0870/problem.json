@@ -1,0 +1,8 @@
+{
+  "id": 870,
+  "summary": "Read two integer arrays of equal length. The length is from 1 to 10000. Every entry in either array is from 0 to 1000000000. The advantage is how many indexes i satisfy a strict greater-than test of the first array against the second at that same index. Reorder only the first array. The second array stays fixed. Make the advantage as large as possible. Write any reordering of the first array that achieves that largest advantage.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

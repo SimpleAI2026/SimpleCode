@@ -1,0 +1,26 @@
+{
+  "id": 1249,
+  "slug": "minimum-remove-to-make-valid-parentheses",
+  "summary": "读入一条长度在 1 到 100000 之间的字符串。每个字符要么是左圆括号，要么是右圆括号，要么是小写英文字母。要删掉尽量少的括号，删除位置不限，让剩下的内容成为合法括号串。空文本、只剩字母的文本、两段合法文本直接相连、以及用一对括号包住一段合法文本，都算合法。写出任意一条删除之后仍然合法的字符串。长度上界是 100000。",
+  "samples": [
+    {
+      "stdin": "s = \"lee(t(c)o)de)\"\n",
+      "stdout": "\"lee(t(c)o)de\"\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "s = \"a)b(c)d\"\n",
+      "stdout": "\"ab(c)d\"\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/minimum-remove-to-make-valid-parentheses/",
+    "en": "https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

@@ -1,0 +1,8 @@
+{
+  "id": 372,
+  "summary": "Read a positive integer a, then read another positive integer b that is far too large for a normal machine word. The decimal digits of b arrive in an array from the highest place to the lowest place, so they must not be merged into one ordinary integer first. Compute a raised to the power b, divide by 1337, and write the remainder.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

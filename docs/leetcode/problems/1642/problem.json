@@ -1,0 +1,26 @@
+{
+  "id": 1642,
+  "slug": "furthest-building-you-can-reach",
+  "summary": "读入每栋楼的高度，楼的数量介于 1 与 100000，每栋高度介于 1 与 1000000。再读入砖块数量与梯子数量，砖块不超过 1000000000，梯子不超过楼的数量。从下标 0 出发，只能走向紧邻的下一栋。下一栋不更高时可以直接过去。下一栋更高时，要么用掉一架梯子，要么用掉高度差那么多块砖。砖和梯子可以随意分配。写出这样仍能抵达的最大下标。",
+  "samples": [
+    {
+      "stdin": "heights = [4,2,7,6,9,14,12], bricks = 5, ladders = 1\n",
+      "stdout": "4\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "heights = [4,12,2,7,3,18,20,3,19], bricks = 10, ladders = 2\n",
+      "stdout": "7\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/furthest-building-you-can-reach/",
+    "en": "https://leetcode.com/problems/furthest-building-you-can-reach/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

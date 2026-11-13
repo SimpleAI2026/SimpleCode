@@ -1,0 +1,8 @@
+{
+  "id": 1619,
+  "summary": "Read a list of integers. Its length is a multiple of 20 and lies between 20 and 1000, and every integer lies between 0 and 100000. Drop the lowest five percent of the values, then drop the highest five percent. Compute the arithmetic average of whatever is left and write that average. A written value whose distance from the exact average is at most 10 to the power of minus 5 still counts as correct.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": 636,
+  "slug": "exclusive-time-of-functions",
+  "summary": "一台单线程机器上有 n 个函数，n 在 1 到 100，编号从 0 到 n 减 1。日志按时间顺序给出，每条包含编号、开始或结束标记，以及时间戳。不会有两个函数在同一时间戳开始或结束，每个函数结束时都会留下记录。函数可以再调用别的函数。某个函数单独占用的时间单位数，等于它自己真正执行的那段，它转去调用别人的时间要扣掉。按编号从小到大写出各函数单独占用的时间单位数。",
+  "samples": [
+    {
+      "stdin": "n = 2\nlogs = [\"0:start:0\",\"1:start:2\",\"1:end:5\",\"0:end:6\"]\n",
+      "stdout": "[3, 4]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/exclusive-time-of-functions/",
+    "en": "https://leetcode.com/problems/exclusive-time-of-functions/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

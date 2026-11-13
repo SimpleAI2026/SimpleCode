@@ -1,0 +1,8 @@
+{
+  "id": 220,
+  "summary": "Read a list of integers plus two non-negative integers k and t. Look for two different positions whose stored values differ by at most t and whose position numbers differ by at most k. Both limits must hold together. Write true when such a pair exists, and write false when none exists. A pair that meets only one of the two limits does not succeed.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

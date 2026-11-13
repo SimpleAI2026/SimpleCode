@@ -1,0 +1,8 @@
+{
+  "id": 952,
+  "summary": "Read a nonempty list of positive integers that are all different. The list holds at most 20000 numbers, and each number is at most 100000. Treat every number as a vertex. Draw an undirected edge between two vertices exactly when the two numbers share a divisor that is greater than 1. In the graph formed this way, find the connected piece that contains the most vertices and write how many vertices it has. A vertex with no edge still counts as a piece by itself.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

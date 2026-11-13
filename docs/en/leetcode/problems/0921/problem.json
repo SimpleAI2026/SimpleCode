@@ -1,0 +1,8 @@
+{
+  "id": 921,
+  "summary": "Read a string S made only of opening and closing parentheses, with length at most 1000. You may insert extra opening or closing parentheses anywhere, including at either end. After those insertions the string must be valid. A string with no characters is valid. Placing two valid strings end to end keeps the result valid. Wrapping one valid string inside a single matching pair also keeps it valid. Write the fewest insertions that make S valid.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

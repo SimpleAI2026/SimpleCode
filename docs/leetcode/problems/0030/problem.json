@@ -1,0 +1,26 @@
+{
+  "id": 30,
+  "slug": "substring-with-concatenation-of-all-words",
+  "summary": "读入一段源文本，以及若干个长度彼此相等的单词。把这些单词各取一次，按任意先后紧贴着拼起来，中间不许塞进别的字符。在源文本里找出每一处与这种拼法完全吻合的连续片段，并把每个片段起点的下标全部写出来。片段可以互相重叠，也可以分开，有几处就写几处。若一处都没有，结果为空。",
+  "samples": [
+    {
+      "stdin": "s = \"barfoothefoobarman\",\nwords = [\"foo\",\"bar\"]\n",
+      "stdout": "[0,9]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "s = \"wordgoodgoodgoodbestword\",\nwords = [\"word\",\"good\",\"best\",\"word\"]\n",
+      "stdout": "[]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/substring-with-concatenation-of-all-words/",
+    "en": "https://leetcode.com/problems/substring-with-concatenation-of-all-words/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

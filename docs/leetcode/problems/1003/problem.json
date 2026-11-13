@@ -1,0 +1,26 @@
+{
+  "id": 1003,
+  "slug": "check-if-word-is-valid-after-substitutions",
+  "summary": "字母只使用 a、b、c。单独三个字母 a、b、c 依次相连视为合格。把一条合格串切成左右两截，两截都允许为空，再把 a、b、c 插在两截之间，得到的新串仍合格。这个插入可以层层套用。读入一条长度不超过 20000 的串，判断它是否合格。合格写 true，不合格写 false。串中每个字符只能是这三个字母之一。",
+  "samples": [
+    {
+      "stdin": "\"aabcbc\"\n",
+      "stdout": "true\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "\"abcabcababcc\"\n",
+      "stdout": "true\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/check-if-word-is-valid-after-substitutions/",
+    "en": "https://leetcode.com/problems/check-if-word-is-valid-after-substitutions/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

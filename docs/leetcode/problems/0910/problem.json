@@ -1,0 +1,26 @@
+{
+  "id": 910,
+  "slug": "smallest-range-ii",
+  "summary": "读入非负整数序列 A 以及非负整数 K。序列长度、序列里的每个数，还有 K，都不超过 10000。对每一个数，要么加上 K，要么减去 K，只能改动一次。改完之后得到序列 B。写出 B 当中最大数与最小数之差能够小到什么程度。",
+  "samples": [
+    {
+      "stdin": "A = [1], K = 0\n",
+      "stdout": "0\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "A = [0,10], K = 2\n",
+      "stdout": "6\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/smallest-range-ii/",
+    "en": "https://leetcode.com/problems/smallest-range-ii/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

@@ -1,0 +1,8 @@
+{
+  "id": 2167,
+  "summary": "Read a line of cars made only of the characters 0 and 1. Its length is between 1 and 2 * 10^5, so it is also at most 200000. A character 1 means that car holds illegal goods. You may repeatedly detach the current leftmost car for a cost of 1, detach the current rightmost car for a cost of 1, or detach a car at any index for a cost of 2. Cars marked 0 may stay, but every car marked 1 must eventually be detached. An empty line is already clean. Write the least time that finishes the cleanup.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

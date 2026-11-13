@@ -1,0 +1,26 @@
+{
+  "id": 583,
+  "slug": "delete-operation-for-two-strings",
+  "summary": "读入两个只由小写英文字母组成的单词，每个单词的长度都在 1 到 500。每一步只能在其中一个单词里擦掉一个字母。请找出让两个单词变得完全一致所需的最少步数，并把这个步数写出来。比较时区分位置，字母顺序不同就不算一致。",
+  "samples": [
+    {
+      "stdin": "word1 = \"sea\", word2 = \"eat\"\n",
+      "stdout": "2\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "word1 = \"leetcode\", word2 = \"etco\"\n",
+      "stdout": "4\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/delete-operation-for-two-strings/",
+    "en": "https://leetcode.com/problems/delete-operation-for-two-strings/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

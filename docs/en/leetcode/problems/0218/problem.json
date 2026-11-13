@@ -1,6 +1,6 @@
 {
   "id": 218,
-  "summary": "The public title of this exercise is The Skyline Problem. Read tokens in the same order as the method parameters from standard input and compute the result named by that title, using only those values. Print the result as a row count and then one line of integers per row. The sample below is a short input written for this playground so the printed line can be checked locally. It is not a copy of an example from the problem site. The input stays under one hundred elements so it finishes quickly in the browser.",
+  "summary": "Read several rectangular buildings. Each building is three integers: a left x, a right x, and a positive height, with the right x greater than the left x. The ground is at height 0, and buildings may block one another. The count of buildings is from 0 through 10000, and they already arrive ordered by increasing left x. Write the outline bends. Each bend is the start of one horizontal run, stored as an x value and the height there, ordered by increasing x. Close the outline with a final height of 0. Runs that meet and share a height must be joined, so the same height is never written as two touching horizontal pieces.",
   "notes": [
     "Compare after trimming trailing newlines. The input is tokens in the same order as the method parameters."
   ]

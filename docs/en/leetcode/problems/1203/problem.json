@@ -1,0 +1,8 @@
+{
+  "id": 1203,
+  "summary": "There are n tasks belonging to at most m groups, with 1 <= m <= n <= 3 * 104. Read group, where group[i] names the group of task i and is -1 when the task has none. Tasks and groups are numbered from zero, and a group may own no task. Also read beforeItems. The list beforeItems[i] names tasks that must appear somewhere left of task i, and a task does not point at itself. Write an order where tasks of one group occupy one contiguous block and every predecessor constraint holds. If several orders work, write any. If none works, write an empty list.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

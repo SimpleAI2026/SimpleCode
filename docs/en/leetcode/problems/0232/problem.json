@@ -1,0 +1,7 @@
+{
+  "id": 232,
+  "summary": "Offer a first in first out container of integers, and use only stack actions to do it. Support four actions. push places one integer at the back of the container. pop removes and yields the integer that was placed earliest and is still inside. peek reports that earliest integer without removing it. empty writes true when nothing is stored and false otherwise. pop and peek are never called while the container is empty. A stack may only add, inspect, or remove its top item, and may report its size or whether it is vacant.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

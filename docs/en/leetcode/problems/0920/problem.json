@@ -1,0 +1,8 @@
+{
+  "id": 920,
+  "summary": "Read integers N, L, and K that satisfy 0 <= K < N <= L <= 100. A library holds N songs that differ from each other, and a playlist is a sequence of exactly L songs in which a song may appear more than once. Every song must show up one or more times. Before a song is used again, at least K other songs must sit between that reuse and the prior time it appeared. Count the playlists that obey both rules and write the count modulo 10^9 + 7.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

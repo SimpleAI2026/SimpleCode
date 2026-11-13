@@ -1,0 +1,8 @@
+{
+  "id": 80,
+  "summary": "Read a list of integers already arranged in non-decreasing order. On that same list, delete extra copies so that each value is left at most two times, while the values that remain keep their previous relative order. Write the length of the part that remains. Pack the remaining values at the front of the list. Slots after that length do not matter. Do not open another array of the same length to store those values. The input already does not decrease from left to right.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

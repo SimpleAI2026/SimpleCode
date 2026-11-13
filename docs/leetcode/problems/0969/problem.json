@@ -1,0 +1,26 @@
+{
+  "id": 969,
+  "slug": "pancake-sorting",
+  "summary": "读入一个整数排列，长度从 1 到 100，内容恰好是 1 到该长度的每个正整数各一次。一次煎饼翻转要选定一个正整数 k，k 不能超过当前长度，然后把前 k 个数倒过来。可以连续做若干次，也可以一次都不做。写出一串 k，按顺序执行这些翻转后，整个排列变成从小到大。只要翻转次数不超过长度的十倍，任何一串正确的 k 都算对。",
+  "samples": [
+    {
+      "stdin": "[3,2,4,1]\n",
+      "stdout": "[4,2,4,3]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "[1,2,3]\n",
+      "stdout": "[]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/pancake-sorting/",
+    "en": "https://leetcode.com/problems/pancake-sorting/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

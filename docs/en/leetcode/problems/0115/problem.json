@@ -1,6 +1,6 @@
 {
   "id": 115,
-  "summary": "The public title of this exercise is Distinct Subsequences. Read tokens in the same order as the method parameters from standard input and compute the result named by that title, using only those values. Print the result as one integer. The sample below is a short input written for this playground so the printed line can be checked locally. It is not a copy of an example from the problem site. The input stays under one hundred elements so it finishes quickly in the browser.",
+  "summary": "Read two strings made of English letters, one source and one target. Count the ways of deleting letters from the source so that the letters which remain, still in their original relative order, become exactly the target. Deleting nothing is allowed, and deleting any positive count is allowed, but the surviving letters may not be reordered. Distinct choices of which positions to delete count as distinct ways, even when the remaining text looks alike. Each string has length at most 1000. The answer fits inside a 32-bit signed integer. Write the count.",
   "notes": [
     "Compare after trimming trailing newlines. The input is tokens in the same order as the method parameters."
   ]

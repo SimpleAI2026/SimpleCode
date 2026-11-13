@@ -1,0 +1,8 @@
+{
+  "id": 844,
+  "summary": "Read two strings, each of length from 1 to 200. Every character is a lowercase letter or a hash mark. A hash mark deletes the character that is still sitting immediately on its left, and it does nothing when the left side is already empty. Apply this rule from left to right on each string separately. Compare the two texts that remain. Write true when they match and write false when they differ. Hashes never insert a visible letter of their own.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

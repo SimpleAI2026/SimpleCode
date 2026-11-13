@@ -1,6 +1,6 @@
 {
   "id": 560,
-  "summary": "The public title of this exercise is Subarray Sum Equals K. Read a count, that many integers, and one target integer from standard input and compute the result named by that title, using only those values. Print the result as one integer. The sample below is a short input written for this playground so the printed line can be checked locally. It is not a copy of an example from the problem site. The input stays under one hundred elements so it finishes quickly in the browser.",
+  "summary": "Read an array of integers and an integer named k. Count how many contiguous intervals have entries that add up to exactly k, then write that count. The array length runs from 1 to 2 * 104, each entry runs from -1000 to 1000, and k runs from -10^7 to 10^7. Intervals with different starts or different ends are counted apart even when their sums are equal.",
   "notes": [
     "Compare after trimming trailing newlines. The input is a count, that many integers, and one target integer."
   ]

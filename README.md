@@ -18,7 +18,7 @@
 - **没有账号。** 草稿、语言和界面语言记在 `localStorage`。
 - **运行时按需下载。** 侧栏按钮上能看到体积、下载百分比和缓存完成。WASI 与 Linux 进 Cache API `simplecode-wasm-v1`，Rust 是 `simplecode-rustc-v1`，Java 是 `simplecode-teavm-v1`。
 - **标准输入是真的。** 终端按键经 `SharedArrayBuffer` 送进程序，所以页面要跨源隔离。
-- **练习是内置的。** 十五本中英「快速入门」（含 NumPy 和 DeepLearning），以及 200 道 LeetCode 风格的题。题解默认收起。
+- **练习是内置的。** 十五本中英「快速入门」（含 NumPy 和 DeepLearning），以及 820 道 LeetCode 风格的题。题解默认收起。
 
 已经打开的页面，在运行时进缓存之后，断网也可以再跑这门语言。整站不是离线安装包：`coi-serviceworker.js` 只补隔离响应头，不缓存 HTML。刷新页面仍然要能取到静态文件。
 
@@ -28,7 +28,7 @@
 | 账号 | 没有 | 产品围绕账号和云端工作区 | 打开就能用，编译在服务器 | 提交通常要登录 |
 | 编译器 | 浏览器内的 clang、rustc、javac | 云端完整工具链 | 云端多种编译器，用来看汇编 | 云端 |
 | 再跑一次 | 运行时已缓存则不再下载；代码不出本机 | 依赖云端 | 依赖云端 | 依赖云端 |
-| 自带内容 | 快速入门 + 200 题（题解现为 Python） | 云端项目 | 汇编对照 | 官方题面和判题 |
+| 自带内容 | 快速入门 + 820 题（其中 200 道有 Python 题解） | 云端项目 | 汇编对照 | 官方题面和判题 |
 | 边界 | 单文件；Java 不是 OpenJDK；客户机没有网络 | 多文件、协作、完整系统 | 看编译结果 | 服务端判题 |
 
 ## 界面
@@ -37,7 +37,13 @@
 
 ![Python 快速入门抽屉，列出这本书的章节](assets/screenshots/quickstart.png)
 
-![LeetCode 模式的题目列表，按简单、中等、困难分组](assets/screenshots/leetcode-list.png)
+![LeetCode 模式的题目列表，820 题按简单、中等、困难分组](assets/screenshots/leetcode-list.png)
+
+![第 1 题的中文题面、样例，以及查看题解](assets/screenshots/leetcode-problem-zh.png)
+
+![界面为 English 时的题目列表](assets/screenshots/leetcode-list-en.png)
+
+![界面为 English 时的第 1 题](assets/screenshots/leetcode-problem-en.png)
 
 ![第 1 题，点「查看题解」之后展开 Python 题解和来源](assets/screenshots/leetcode-solution.png)
 
@@ -49,7 +55,7 @@
 - Monaco 编辑。正文字号 14px，注释 13px。未改过的示例在「中 / EN」切换时只换注释。
 - xterm 终端。Run 在工具栏和文档代码块里是同一个按钮。
 - 快速入门：中文 `docs/<book>/`，英文 `docs/en/<book>/`，同一文件名。这次构建是 1042 章（中英各 521）、3218 个可运行块（中英各 1609）。NumPy 17 章，DeepLearning 16 章，围栏语言是 `numpy`，走 Pyodide。
-- LeetCode 模式和快速入门共用一扇抽屉，不盖住 Run。200 题：简单 41、中等 135、困难 24。中英题名和摘要都有。题面不入库，抽屉里是自写短摘要、自写样例和官网链接。
+- LeetCode 模式和快速入门共用一扇抽屉，不盖住 Run。820 题：简单 270、中等 444、困难 106。中英题名和自写题面都有。题面按公开题号、难度、样例和限制重写，不收录上游原文。没有题解的题目仍显示题面，并可以运行样例。
 - 「查看题解」才展开代码。现在入库的题解是 Python。其他已下载、可刷题的语言会显示「这门语言还没有题解」。可以「运行样例」，也可以把题解放进编辑器再跑。
 - JS/TS 共用一份 wasmedge-quickjs。跑 TypeScript 时才加载 Sucrase，去掉类型后再执行，不做类型检查。
 - 界面黑白。语法色只出现在 Monaco 里。文案在 `src/i18n`，默认中文。
@@ -81,7 +87,7 @@ Rust 两份文件是 `rustc.wasm` 87,871,387 字节和 `sysroot-wasip1.bundle` 7
 
 - **自学。** 每本快速入门按短节写，代码块可以就地 Run。
 - **上课。** 学生打开静态页面即可，程序在他们自己的浏览器里跑，教室不用准备执行服务器。
-- **面试和刷题。** 200 题按难度分组，题解先藏着。样例输入可以跑。目前题解只有 Python。
+- **面试和刷题。** 820 题按难度分组，题解先藏着。样例输入可以跑。目前有 Python 题解的是 200 道，其余语言和其余题目显示还没有题解。
 - **试一小段。** 单文件、无账号。换语言会停掉上一个运行时并清掉终端。
 
 ## 快速开始
@@ -144,7 +150,7 @@ src/teavm/           TeaVM javac
 src/i18n/            界面文案 zh / en
 docs/<book>/         中文快速入门
 docs/en/<book>/      英文快速入门
-docs/leetcode/       200 题、题解、许可证
+docs/leetcode/       820 题、题解、许可证
 assets/screenshots/  README 配图，只给 GitHub 渲染
 wasm/rust/           已提交的 rustc 和 sysroot
 vendor/prebuilt/     vendor 失败时的 wasm 包

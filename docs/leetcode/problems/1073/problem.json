@@ -1,0 +1,21 @@
+{
+  "id": 1073,
+  "slug": "adding-two-negabinary-numbers",
+  "summary": "读入两个以负二为基数的整数，各自写成 0 与 1 的数组，左端是最高位，右端是最低位。数组长度从 1 到 1000，每一位只可能是 0 或 1。除了表示零的那个单元素数组以外，左端不能是 0。某一位上的 1 代表负二的对应次幂。把两个整数相加，再用同一种没有前导零的数组把和写出来。",
+  "samples": [
+    {
+      "stdin": "arr1 = [1,1,1,1,1], arr2 = [1,0,1]\n",
+      "stdout": "[1,0,0,0,0]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/adding-two-negabinary-numbers/",
+    "en": "https://leetcode.com/problems/adding-two-negabinary-numbers/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

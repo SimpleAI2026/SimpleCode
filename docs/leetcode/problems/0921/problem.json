@@ -1,0 +1,26 @@
+{
+  "id": 921,
+  "slug": "minimum-add-to-make-parentheses-valid",
+  "summary": "读入一条只由左圆括号和右圆括号组成的符号串 S，长度不超过 1000。允许在任意地方补上左圆括号或者右圆括号。补完以后必须成为合法括号串：什么符号都没有算合法；两段合法串首尾相接仍然合法；把一段合法串放进一对互相匹配的括号里也合法。写出需要补上的最少符号个数。",
+  "samples": [
+    {
+      "stdin": "\"())\"\n",
+      "stdout": "1\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "\"(((\"\n",
+      "stdout": "3\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/minimum-add-to-make-parentheses-valid/",
+    "en": "https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

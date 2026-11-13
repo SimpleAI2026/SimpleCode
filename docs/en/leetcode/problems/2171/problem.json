@@ -1,0 +1,8 @@
+{
+  "id": 2171,
+  "summary": "Read how many magic beans sit in each bag. The bag count is between 1 and 100000, and no bag holds more than 100000 beans. You may remove any number of beans from any bag, and removed beans may not go back into a bag. After the removals, every bag that is still nonempty must hold an equal count, and fully emptied bags are allowed. Find the smallest total number of beans that must be removed, and write that total.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

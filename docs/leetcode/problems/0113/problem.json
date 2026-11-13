@@ -1,0 +1,21 @@
+{
+  "id": 113,
+  "slug": "path-sum-ii",
+  "summary": "读入一棵由整数结点构成的树，同时读入一个需要命中的总和，这个总和可以等于 22。找出每一条从根开始、在叶子结束、沿途整数之和恰好等于目标的完整路线。叶子指没有任何孩子的结点。每条路线都要按从根到叶的顺序保留结点。把全部这样的路线写出来。一条都没有时写出空的集合。停在中间结点上的片段即使和已经相等，也不要写出。",
+  "samples": [
+    {
+      "stdin": "the below binary tree and sum = 22,\n\n5\n/ \\\n4 8\n/ / \\\n11 13 4\n/ \\ / \\\n7 2 5 1\n",
+      "stdout": "[\n[5,4,11,2],\n[5,8,4,5]\n]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/path-sum-ii/",
+    "en": "https://leetcode.com/problems/path-sum-ii/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

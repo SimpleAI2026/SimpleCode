@@ -1,0 +1,26 @@
+{
+  "id": 1189,
+  "slug": "maximum-number-of-balloons",
+  "summary": "读入一条长度为 1 到 10000 的字符串，其中每个字符都是英文小写。要用这些字符尽量多地拼出单词 balloon，同一个字符至多使用一次。每拼一份都要消耗一个 b、一个 a、两个 l、两个 o 和一个 n。写出最多能够拼成的份数。某种必需字母用尽之后，就不能再多拼一份。长度上界是 10000。",
+  "samples": [
+    {
+      "stdin": "text = \"nlaebolko\"\n",
+      "stdout": "1\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "text = \"loonbalxballpoon\"\n",
+      "stdout": "2\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/maximum-number-of-balloons/",
+    "en": "https://leetcode.com/problems/maximum-number-of-balloons/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

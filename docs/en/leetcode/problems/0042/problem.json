@@ -1,6 +1,6 @@
 {
   "id": 42,
-  "summary": "The public title of this exercise is Trapping Rain Water. Read tokens in the same order as the method parameters from standard input and compute the result named by that title, using only those values. Print the result as one integer. The sample below is a short input written for this playground so the printed line can be checked locally. It is not a copy of an example from the problem site. The input stays under one hundred elements so it finishes quickly in the browser.",
+  "summary": "Read a row of non-negative integers. Each integer is the height of one vertical bar, every bar has width 1, and the bars stand side by side on one flat baseline. After rain falls, water can settle in the lower gaps. Add the volume of water held along the whole row and write that total. The solid bars themselves are not part of the water. A height of 0 means no bar, yet that slot still occupies width 1.",
   "notes": [
     "Compare after trimming trailing newlines. The input is tokens in the same order as the method parameters."
   ]

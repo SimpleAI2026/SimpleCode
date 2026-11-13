@@ -1,0 +1,8 @@
+{
+  "id": 864,
+  "summary": "Read a grid with at most 30 rows and at most 30 columns, and at least one of each. A dot is open floor, a hash is a wall, and an at-sign is the place you start. Lowercase letters are keys and uppercase letters are locks. There are between 1 and 6 key types, each with one matching lock, using the first letters in alphabet order. Each move steps one cell up, down, left, or right. You may not leave the grid or step onto a wall. Stepping on a key collects it. A lock blocks you unless its matching key is already collected. Write the fewest moves that collect every key. Write -1 when that cannot be done.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

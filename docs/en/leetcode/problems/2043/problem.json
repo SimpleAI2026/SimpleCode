@@ -1,0 +1,7 @@
+{
+  "id": 2043,
+  "summary": "Build a small account system. The account count n is at most 100000, and ids run from 1 through n. Read each starting balance. A balance and every later money amount are at most 1000000000000. Then process transfer, deposit, and withdrawal calls, with at most 104 calls of each kind. Every account id must lie in the closed span from 1 through n. Money moved out of an account must not exceed the balance it holds then. A legal call rewrites balances and counts as success. An illegal call keeps balances as they were and counts as failure. Write success or failure for each call in order.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

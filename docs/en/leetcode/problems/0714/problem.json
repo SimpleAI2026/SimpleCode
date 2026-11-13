@@ -1,0 +1,7 @@
+{
+  "id": 714,
+  "summary": "Read the price of a share for each day, using the index as the day number, and read one fee that is not negative. Trades may happen any number of times, yet at most one share is held at the same moment, and another buy may happen only after a sale. Every completed sale pays that fee. Write the greatest profit that can be earned. The number of days is greater than 0 and at most 50000. Each day's price is greater than 0 and less than 50000. The fee is at least 0 and less than 50000.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

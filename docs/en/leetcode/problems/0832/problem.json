@@ -1,0 +1,8 @@
+{
+  "id": 832,
+  "summary": "Read a square binary picture whose side length is at least 1 and at most 20. Every entry is either 0 or 1, and the row count equals the column count. First reverse each row so the left end and the right end trade places. Then swap every 0 for a 1 and every 1 for a 0. Write the picture that remains after both changes. Do not change the size of the picture.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

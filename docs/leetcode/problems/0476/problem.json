@@ -1,0 +1,26 @@
+{
+  "id": 476,
+  "slug": "number-complement",
+  "summary": "读入一个正整数，它保证落在 32 位有符号整数能够表示的范围里。先把它写成二进制，最前面不要补零。然后把每一位的 0 换成 1，把每一位的 1 换成 0。再把翻转后的二进制还原成十进制整数，并把这个整数写出来。不要把符号位单独拿出来处理，也不要在最高位前面多塞一个 0 再一起翻转。输入本身不会是负数，也不会是零。",
+  "samples": [
+    {
+      "stdin": "5\n",
+      "stdout": "2\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "1\n",
+      "stdout": "0\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/number-complement/",
+    "en": "https://leetcode.com/problems/number-complement/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

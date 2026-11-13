@@ -1,0 +1,8 @@
+{
+  "id": 914,
+  "summary": "Read a deck in which every card shows an integer. The deck has at most 10000 cards, and each shown integer is at least 0 and strictly below 10000. Decide whether some integer X of size at least 2 can partition the whole deck into one or more groups so that every group contains exactly X cards and every card in a group shows the same integer. Write true when such an X exists, and write false otherwise.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": 863,
+  "slug": "all-nodes-distance-k-in-binary-tree",
+  "summary": "读入一棵非空的二叉树、树上的某个目标结点，以及整数 K。每个结点的数值互不相同，范围是 0 到 500，K 的范围是 0 到 1000。距离按边的条数计算，路径既可以走向孩子，也可以走向父结点。把与目标结点相距恰好 K 的所有结点的数值写出来，先后次序随意。只有当 K 等于 0 时，目标结点自己的数值才要写入。",
+  "samples": [
+    {
+      "stdin": "root = [3,5,1,6,2,0,8,null,null,7,4], target = 5, K = 2\n",
+      "stdout": "[7,4,1]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/all-nodes-distance-k-in-binary-tree/",
+    "en": "https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

@@ -1,0 +1,8 @@
+{
+  "id": 374,
+  "summary": "A hidden integer has been chosen from 1 through n. The upper bound on n is 231 - 1, and the hidden integer lies in that same closed range. You may call a ready-made guess function as many times as you need. A result of 0 means the guess is correct, a negative result means the hidden integer is smaller than the guess, and a positive result means it is larger. Find the hidden integer and write it.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

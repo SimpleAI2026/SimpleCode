@@ -1,0 +1,26 @@
+{
+  "id": 126,
+  "slug": "word-ladder-ii",
+  "summary": "读入起始单词、目标单词和一份单词表。两个单词都非空且彼此不同，所有单词长度一致，只含小写字母，表内没有重复项。每一步只能替换一个字母，替换之后的单词必须能在表里找到，起始单词不必先在表里。把从起点走到目标的每一种最短单词序列都写出来。一种都不存在时写空列表。",
+  "samples": [
+    {
+      "stdin": "beginWord = \"hit\",\nendWord = \"cog\",\nwordList = [\"hot\",\"dot\",\"dog\",\"lot\",\"log\",\"cog\"]\n",
+      "stdout": "[\n[\"hit\",\"hot\",\"dot\",\"dog\",\"cog\"],\n[\"hit\",\"hot\",\"lot\",\"log\",\"cog\"]\n]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "beginWord = \"hit\"\nendWord = \"cog\"\nwordList = [\"hot\",\"dot\",\"dog\",\"lot\",\"log\"]\n",
+      "stdout": "[]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/word-ladder-ii/",
+    "en": "https://leetcode.com/problems/word-ladder-ii/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

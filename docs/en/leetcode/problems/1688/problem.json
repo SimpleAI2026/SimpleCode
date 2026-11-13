@@ -1,0 +1,8 @@
+{
+  "id": 1688,
+  "summary": "Read the team count n, an integer from 1 to 200. Rounds continue until a single team remains. When the live count is even, teams pair off, half as many games are played, and half of the teams stay. When the live count is odd, one team stays without playing, the others pair off, the games played equal the count minus one then divided by two, and the teams that stay equal that game count plus one. Write how many games occur before a champion remains.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

@@ -1,6 +1,6 @@
 {
   "id": 413,
-  "summary": "The public title of this exercise is Arithmetic Slices. Read tokens in the same order as the method parameters from standard input and compute the result named by that title, using only those values. Print the result as one integer. The sample below is a short input written for this playground so the printed line can be checked locally. It is not a copy of an example from the problem site. The input stays under one hundred elements so it finishes quickly in the browser.",
+  "summary": "Read an integer array A of length N whose indexes start at 0. A pair of indexes P and Q marks a segment when 0 is less than or equal to P, P plus 1 is less than Q, and Q is less than N. The segment counts only when it contains at least three numbers and the gap between every two neighbors stays constant. Count those segments and write how many there are.",
   "notes": [
     "Compare after trimming trailing newlines. The input is tokens in the same order as the method parameters."
   ]

@@ -1,0 +1,26 @@
+{
+  "id": 823,
+  "slug": "binary-trees-with-factors",
+  "summary": "读入1到1000个彼此不同的整数，每个整数都大于1，并且不超过10^9。拿这些整数来搭二叉树，同一整数允许在多处结点上反复出现。凡是带有孩子的结点，其存放的数值必须等于两个孩子数值相乘。数一数符合上述乘法关系的树共有几棵。结果可能很大，先对10^9加7取模，再把余数写出来。",
+  "samples": [
+    {
+      "stdin": "arr = [2,4]\n",
+      "stdout": "3\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "arr = [2,4,5,10]\n",
+      "stdout": "7\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/binary-trees-with-factors/",
+    "en": "https://leetcode.com/problems/binary-trees-with-factors/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

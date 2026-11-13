@@ -1,0 +1,8 @@
+{
+  "id": 538,
+  "summary": "Read a search tree of the binary kind, beginning at its root. The number of nodes lies between 0 and 104, every stored number is unique, and the root satisfies the search-tree rule. A left branch holds only keys smaller than its parent, and a right branch holds only keys larger than its parent. Replace each node by the sum of every original key that is greater than or equal to that node's original number, then write the tree after those replacements. The recorded sheet lists 104 at both ends of the stored-number bound.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

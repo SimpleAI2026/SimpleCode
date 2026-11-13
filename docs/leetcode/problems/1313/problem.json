@@ -1,0 +1,26 @@
+{
+  "id": 1313,
+  "slug": "decompress-run-length-encoded-list",
+  "summary": "读入一条长度为偶数的整数列表，内容按成对的方式压缩存放。从左向右，每相邻两个数组成一对：前一个数是重复次数，后一个数是被重复的值。依照这些对的先后，把每个值按其次数展开，再把各段首尾相接，写出展开后的整条列表。原列表长度在 2 到 100 之间，每个整数也在 1 到 100 之间。",
+  "samples": [
+    {
+      "stdin": "nums = [1,2,3,4]\n",
+      "stdout": "[2,4,4,4]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "nums = [1,1,2,3]\n",
+      "stdout": "[1,3,3]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/decompress-run-length-encoded-list/",
+    "en": "https://leetcode.com/problems/decompress-run-length-encoded-list/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

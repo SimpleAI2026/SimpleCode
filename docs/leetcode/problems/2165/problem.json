@@ -1,0 +1,26 @@
+{
+  "id": 2165,
+  "slug": "smallest-value-of-the-rearranged-number",
+  "summary": "读入一个整数，它的绝对值不超过 1000000000000000。只允许重排它的十进制各位数字，原来的正负号必须原样保留，重排之后也不能出现前导零。在这些限制下让这个整数的数值尽可能小，并把结果写出来。输入若是负数，写出的结果也必须仍是负数；输入若是非负数，结果也保持非负。",
+  "samples": [
+    {
+      "stdin": "num = 310\n",
+      "stdout": "103\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "num = -7605\n",
+      "stdout": "-7650\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/smallest-value-of-the-rearranged-number/",
+    "en": "https://leetcode.com/problems/smallest-value-of-the-rearranged-number/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

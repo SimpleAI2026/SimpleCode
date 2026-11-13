@@ -1,0 +1,26 @@
+{
+  "id": 1716,
+  "slug": "calculate-money-in-leetcode-bank",
+  "summary": "读入天数 n，范围是 1 到 1000。从某周的周一算起，第一天存入 1。周二至周日的存入额逐日增加 1。之后每个新周一的存入额都比上一周的周一高出 1，同一周内仍然逐日增加 1。把第 n 天结束时已经存入的总金额写出来。",
+  "samples": [
+    {
+      "stdin": "n = 4\n",
+      "stdout": "10\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "n = 10\n",
+      "stdout": "37\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/calculate-money-in-leetcode-bank/",
+    "en": "https://leetcode.com/problems/calculate-money-in-leetcode-bank/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

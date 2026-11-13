@@ -1,0 +1,26 @@
+{
+  "id": 492,
+  "slug": "construct-the-rectangle",
+  "summary": "读入一个矩形的目标面积，它是 1 到 10000000 之间的整数。找出整数长 L 和整数宽 W，使两者相乘正好等于这块面积。同时要求 L 不小于 W，而且 L 减去 W 的差尽量小。如果有多组差一样小，仍然只保留 L 不小于 W 的那一组。按先长后宽的顺序把 L 和 W 写出来。不要把面积本身写进答案，也不要把长和宽对调。两边都必须是正整数。",
+  "samples": [
+    {
+      "stdin": "area = 4\n",
+      "stdout": "[2,2]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "area = 37\n",
+      "stdout": "[37,1]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/construct-the-rectangle/",
+    "en": "https://leetcode.com/problems/construct-the-rectangle/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

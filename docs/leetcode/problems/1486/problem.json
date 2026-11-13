@@ -1,0 +1,26 @@
+{
+  "id": 1486,
+  "slug": "xor-operation-in-an-array",
+  "summary": "读入两个整数 n 与 start。生成长度为 n 的数列，下标 i 从 0 算到 n 减 1，第 i 项等于 start 加上 2 乘以 i。把数列中全部数做按位异或，把得到的结果写出来。n 介于 1 与 1000，start 介于 0 与 1000。数列里的每一项都要参与这次按位异或，不能漏掉。",
+  "samples": [
+    {
+      "stdin": "n = 5, start = 0\n",
+      "stdout": "8\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "n = 4, start = 3\n",
+      "stdout": "8\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/xor-operation-in-an-array/",
+    "en": "https://leetcode.com/problems/xor-operation-in-an-array/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

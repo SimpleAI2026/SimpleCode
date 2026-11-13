@@ -1,0 +1,26 @@
+{
+  "id": 171,
+  "slug": "excel-sheet-column-number",
+  "summary": "读入一串表格列标，列标只含大写英文字母。把它换算成对应的正整数并写出来。A 对应 1，B 对应 2，一直到 Z 对应 26，AA 对应 27，AB 对应 28。同一套二十六进的字母计数也适用于更长的列标。ZY 必须能算出 701。空串不会出现。只写这个整数，不要再写字母。列标从左到右是高位到低位。",
+  "samples": [
+    {
+      "stdin": "\"A\"\n",
+      "stdout": "1\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "\"AB\"\n",
+      "stdout": "28\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/excel-sheet-column-number/",
+    "en": "https://leetcode.com/problems/excel-sheet-column-number/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

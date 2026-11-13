@@ -1,0 +1,8 @@
+{
+  "id": 1705,
+  "summary": "Read two integer lists named apples and days, both of length n. n is from 1 to 2 * 10000, and every stored number is from 0 to 2 * 10000. On day i, apples[i] new apples appear, and they spoil after days[i] days, so they cannot be eaten once that delay has passed. A day grows nothing only when both entries are 0. At most one apple is eaten per day, and eating may continue after day n while any apple is still fresh. Find the most apples that can be eaten and write that count.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

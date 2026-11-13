@@ -1,0 +1,26 @@
+{
+  "id": 1353,
+  "slug": "maximum-number-of-events-that-can-be-attended",
+  "summary": "读入若干场会议，每场会议给出开始日和结束日。在同一天里最多只能参加一场会议。某场会议可以在它的开始日到结束日之间的任意一天参加，两端都算在内。找出能够参加的会议场数的最大值，并把这个数目写出来。会议场数不超过 10^5。开始日和结束日都是 1 到 10^5 之间的整数，而且结束日不会早于开始日。",
+  "samples": [
+    {
+      "stdin": "events = [[1,2],[2,3],[3,4]]\n",
+      "stdout": "3\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "events= [[1,2],[2,3],[3,4],[1,2]]\n",
+      "stdout": "4\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/maximum-number-of-events-that-can-be-attended/",
+    "en": "https://leetcode.com/problems/maximum-number-of-events-that-can-be-attended/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

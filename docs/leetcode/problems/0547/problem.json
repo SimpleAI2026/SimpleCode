@@ -1,0 +1,26 @@
+{
+  "id": 547,
+  "slug": "number-of-provinces",
+  "summary": "读入整数 N 和一张 N 乘 N 的方阵，N 在 1 到 200 之间。方阵里第 i 行第 j 列等于 1，表示两名同学直接相识，等于 0 表示没有这条直接联系。对角线上每一格都是 1，而且方阵对称，i 到 j 有联系时 j 到 i 也有。相识可以顺着链条传递，于是直接或间接连在一起的同学属于同一群。写出一共能分成多少个这样的群。",
+  "samples": [
+    {
+      "stdin": "a N*N matrix M representing the friend relationship between students in the class. If M[i][j] = 1, then the ith and jth students are direct friends with each other, otherwise not. And you have to\n",
+      "stdout": "the total number of friend circles among all the students.\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "[[1,1,0],\n[1,1,0],\n[0,0,1]]\n",
+      "stdout": "2\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/number-of-provinces/",
+    "en": "https://leetcode.com/problems/number-of-provinces/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

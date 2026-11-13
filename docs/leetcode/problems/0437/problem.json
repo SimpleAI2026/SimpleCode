@@ -1,0 +1,26 @@
+{
+  "id": 437,
+  "slug": "path-sum-iii",
+  "summary": "读入一棵二叉树和一个目标和。树中结点个数在 0 到 1000 之间。一条路径必须从祖先走向子孙，只能沿父结点走到子结点，起点不必是根，终点也不必是叶子。找出有多少条路径上的结点值加起来正好等于目标和，并把这个条数写出来。",
+  "samples": [
+    {
+      "stdin": "root = [10,5,-3,3,2,null,11,3,-2,null,1], targetSum = 8\n",
+      "stdout": "3\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "root = [5,4,8,11,null,13,4,7,2,null,null,5,1], targetSum = 22\n",
+      "stdout": "3\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/path-sum-iii/",
+    "en": "https://leetcode.com/problems/path-sum-iii/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

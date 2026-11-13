@@ -1,0 +1,8 @@
+{
+  "id": 1396,
+  "summary": "Build a transit log with three actions. checkIn stores a rider id, a station name, and a time, and a rider occupies only one station at once. checkOut stores that same id leaving a station at a later time. getAverageTime takes a start station and an end station and writes the mean duration of every direct trip between them seen so far. A query arrives only after at least one such trip exists. Events come in time order, and each departure is strictly later than its matching arrival. There are at most 20000 operations. Ids and times run from 1 to 106. Station names use letters and digits and have length 1 to 10. A mean within 105 of the exact value is accepted.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

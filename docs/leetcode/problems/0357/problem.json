@@ -1,0 +1,21 @@
+{
+  "id": 357,
+  "slug": "count-numbers-with-unique-digits",
+  "summary": "读入一个非负整数 n。统计满足 0 小于等于 x 且 x 小于 10 的 n 次方的整数 x 有多少个，并且 x 的十进制各位数字两两不同。0 本身算一个。不要把没有写出来的前导零当成额外的一位。把这个个数写出来。",
+  "samples": [
+    {
+      "stdin": "2\n",
+      "stdout": "91\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/count-numbers-with-unique-digits/",
+    "en": "https://leetcode.com/problems/count-numbers-with-unique-digits/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

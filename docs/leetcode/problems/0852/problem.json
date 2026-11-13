@@ -1,0 +1,26 @@
+{
+  "id": 852,
+  "slug": "peak-index-in-a-mountain-array",
+  "summary": "读入一条已经确认呈山脉形状的整数序列，长度从 3 到 10000，每个数从 0 到 1000000。序列先严格升高，到一个最高点之后再严格降低，直到末尾。最高点不会落在第一个位置，也不会落在最后一个位置，而且这样的最高点只有一个。把最高点的下标写出来，下标从 0 起算。",
+  "samples": [
+    {
+      "stdin": "[0,1,0]\n",
+      "stdout": "1\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "[0,2,1,0]\n",
+      "stdout": "1\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/peak-index-in-a-mountain-array/",
+    "en": "https://leetcode.com/problems/peak-index-in-a-mountain-array/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

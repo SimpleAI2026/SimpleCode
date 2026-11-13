@@ -1,0 +1,26 @@
+{
+  "id": 1283,
+  "slug": "find-the-smallest-divisor-given-a-threshold",
+  "summary": "读入一串正整数和一个阈值。再选定一个正整数当作除数。每个原数都除以这个除数，商一律向上取整，然后把全部商加总。找出能使这个总和小于或等于阈值的最小除数，并把该除数写出来。这样的除数一定存在。数组长度不超过 5 乘 10^4，每个原数不超过 10^6，阈值不小于数组长度，也不超过 10^6。",
+  "samples": [
+    {
+      "stdin": "nums = [1,2,5,9], threshold = 6\n",
+      "stdout": "5\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "nums = [2,3,5,7,11], threshold = 11\n",
+      "stdout": "3\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/find-the-smallest-divisor-given-a-threshold/",
+    "en": "https://leetcode.com/problems/find-the-smallest-divisor-given-a-threshold/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

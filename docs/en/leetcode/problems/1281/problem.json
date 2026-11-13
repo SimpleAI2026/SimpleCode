@@ -1,0 +1,8 @@
+{
+  "id": 1281,
+  "summary": "Read one positive integer n. Its value is at least 1 and at most 10^5. Split n into separate decimal digits. Multiply those digits together, add those same digits together, and subtract the sum from the product. Write the resulting difference. When n has only one digit, the product and the sum are both that digit, so the written difference is 0. Use only the decimal digits of n and leave out any sign or separator.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "id": 581,
+  "summary": "Read a list of integers whose length is from 1 through 104, with every entry between -105 and 105 inclusive. Find one contiguous index span such that reordering only that span from small to large makes the whole list increase, and choose the shortest span that works. Write how many entries the span holds. If the list already increases from left to right, write 0.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

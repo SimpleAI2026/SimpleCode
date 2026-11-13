@@ -1,0 +1,7 @@
+{
+  "id": 204,
+  "summary": "Read a non-negative integer n. Count the primes that are strictly smaller than n and write that count. A prime is an integer greater than 1 whose only positive divisors are 1 and itself. If n is smaller than 2, write 0. The integer 1 is not a prime and must not be included. The integer 2 is the smallest prime. Write only the count, not a list of the primes themselves. When n itself is prime, leave it out of the count because it is not smaller than n.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

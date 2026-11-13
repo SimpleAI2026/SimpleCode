@@ -1,0 +1,7 @@
+{
+  "id": 274,
+  "summary": "Read the citation count of each paper by one researcher. Every count is a non-negative integer, and N is the paper total. Find the largest integer h such that at least h papers each have h or more citations, and every other paper has at most h citations. Write that h. When several integers satisfy the rule, keep only the largest one.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

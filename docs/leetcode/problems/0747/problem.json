@@ -1,0 +1,26 @@
+{
+  "id": 747,
+  "slug": "largest-number-at-least-twice-of-others",
+  "summary": "读入整数数组nums。数组长度在1到50之间，每个元素在0到100之间，而且其中最大的数值恰好只出现一次。判断这个唯一的最大值是否至少达到数组里其余每一个数的两倍。如果是，写出该最大值所在的下标；如果有别的数超过了它的一半，写出-1。",
+  "samples": [
+    {
+      "stdin": "nums = [3,6,1,0]\n",
+      "stdout": "1\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "nums = [1,2,3,4]\n",
+      "stdout": "-1\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/largest-number-at-least-twice-of-others/",
+    "en": "https://leetcode.com/problems/largest-number-at-least-twice-of-others/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

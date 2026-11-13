@@ -1,0 +1,7 @@
+{
+  "id": 386,
+  "summary": "Read a positive integer n no larger than 5000000. Turn every integer from 1 through n into decimal text and sort those texts the way a dictionary sorts words. Write the integers in that sorted order. Include every integer in the range and do not write anything beyond n.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

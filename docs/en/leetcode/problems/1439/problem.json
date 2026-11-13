@@ -1,0 +1,8 @@
+{
+  "id": 1439,
+  "summary": "Read an m by n integer matrix whose every row is already sorted in nondecreasing order, and read a positive integer k. Choose exactly one entry from each row and add the chosen entries together. Among every sum that can arise this way, find the sum standing at position k when the sums are ordered from small to large, and write it. Both m and n are from 1 to 40, k is at most the smaller of 200 and n raised to the power m, and every matrix entry is from 1 to 5000.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

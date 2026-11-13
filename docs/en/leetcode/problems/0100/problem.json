@@ -1,6 +1,6 @@
 {
   "id": 100,
-  "summary": "The public title of this exercise is Same Tree. Read tokens in the same order as the method parameters from standard input and compute the result named by that title, using only those values. Print the result as the word true or false. The sample below is a short input written for this playground so the printed line can be checked locally. It is not a copy of an example from the problem site. The input stays under one hundred elements so it finishes quickly in the browser.",
+  "summary": "Read a pair of binary trees. Each node stores an integer, and an absent child belongs to the shape. Decide whether the two trees agree completely. At every position both sides have a node or both sides are empty, and paired nodes must store one identical integer. A single difference in shape, or any mismatch among the integers, means they disagree. Two empty trees agree. Write the conclusion as yes or no.",
   "notes": [
     "Compare after trimming trailing newlines. The input is tokens in the same order as the method parameters."
   ]

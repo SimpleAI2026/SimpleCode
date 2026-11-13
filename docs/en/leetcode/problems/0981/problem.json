@@ -1,6 +1,6 @@
 {
   "id": 981,
-  "summary": "The public title of this exercise is Time Based Key Value Store. Read one command per line from standard input and compute the result named by that title, using only those values. Print the result as one result line for each command. The sample below is a short input written for this playground so the printed line can be checked locally. It is not a copy of an example from the problem site. The input stays under one hundred elements so it finishes quickly in the browser.",
+  "summary": "Build a map that stores strings together with timestamps. It supports two operations. The store operation reads a key, a value, and a timestamp, and records all three. The fetch operation reads a key and a timestamp, then must find the recorded value for that key whose timestamp is the greatest one that is still no later than the requested time. If the key has no record at or before that time, write an empty string. Every key and every value is a lowercase string of length 1 to 100. Timestamps used by store calls increase strictly, and each timestamp is an integer from 1 to 10000000. Store and fetch together are invoked at most 120000 times.",
   "notes": [
     "Compare after trimming trailing newlines. The input is one command per line."
   ]

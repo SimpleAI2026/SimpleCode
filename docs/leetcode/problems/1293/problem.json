@@ -1,0 +1,26 @@
+{
+  "id": 1293,
+  "slug": "shortest-path-in-a-grid-with-obstacles-elimination",
+  "summary": "读入一张 m 行 n 列的格子图，以及一个整数 k。格子里的 0 可以走，1 是障碍。每一步只能走到上下左右相邻的一格。从左上角走到右下角的途中，最多可以清掉 k 个障碍。找出这样走到终点所需的最少步数并写出来；若任何走法都到不了，就写 -1。起点和终点都是可走的格子。m 和 n 都不超过 40，k 至少为 1，并且不超过格子总数。",
+  "samples": [
+    {
+      "stdin": "grid = [[0,0,0],[1,1,0],[0,0,0],[0,1,1],[0,0,0]], k = 1\n",
+      "stdout": "6\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "grid = [[0,1,1],[1,1,1],[1,0,0]], k = 1\n",
+      "stdout": "-1\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/shortest-path-in-a-grid-with-obstacles-elimination/",
+    "en": "https://leetcode.com/problems/shortest-path-in-a-grid-with-obstacles-elimination/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

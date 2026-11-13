@@ -1,0 +1,7 @@
+{
+  "id": 111,
+  "summary": "Read a binary tree. Find how many nodes are visited on the shortest walk from the root to a nearest leaf. That count is called the minimum depth. A leaf is a node whose left child and right child are both absent. If the root connects to a child on only one side, keep walking until a real leaf, and do not treat the root as the end. A root alone answers one, and an empty tree answers zero. Write the answer as an integer. Stored integers may include 20, and the depth is unrelated to those integers.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

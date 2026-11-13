@@ -1,6 +1,6 @@
 {
   "id": 155,
-  "summary": "The public title of this exercise is Min Stack. Read one command per line from standard input and compute the result named by that title, using only those values. Print the result as one result line for each command. The sample below is a short input written for this playground so the printed line can be checked locally. It is not a copy of an example from the problem site. The input stays under one hundred elements so it finishes quickly in the browser.",
+  "summary": "Read a series of calls that keep an integer stack. A push call places the supplied integer on top. A pop call discards the integer that currently sits on top. A top call writes that same top integer and leaves it in place. A getMin call finds the smallest integer still stored and writes it. The stack begins with nothing in it. Pop and top arrive only when at least one integer is present. Each of the four calls must finish in a fixed amount of work that does not grow as more integers are stored. Write every top result and every getMin result in the order those calls arrive.",
   "notes": [
     "Compare after trimming trailing newlines. The input is one command per line."
   ]

@@ -1,0 +1,8 @@
+{
+  "id": 301,
+  "summary": "Read a string s made from lowercase English letters and round parentheses. Delete as few parentheses as you can so the remaining text is a valid parenthesized text, and leave every letter where it is. Find every different valid text that can result. Any order is fine. Write all of them. The length of s is at least 1 and at most 25. s contains at most 20 parentheses. Do not delete letters.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

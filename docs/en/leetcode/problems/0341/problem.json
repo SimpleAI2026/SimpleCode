@@ -1,0 +1,8 @@
+{
+  "id": 341,
+  "summary": "Read a structure whose pieces may sit inside one another. Every piece is either a single integer or another structure built by the same rule. Expose all of the integers from left to right, finishing an outer piece before entering a nested piece. Support fetching the next integer once per request, and stop after the last integer has been fetched. Write the integers in the order they are fetched.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

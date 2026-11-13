@@ -1,6 +1,6 @@
 {
   "id": 17,
-  "summary": "The public title of this exercise is Letter Combinations of a Phone Number. Read one token of text without spaces from standard input and compute the result named by that title, using only those values. Print the result as one string per line. The sample below is a short input written for this playground so the printed line can be checked locally. It is not a copy of an example from the problem site. The input stays under one hundred elements so it finishes quickly in the browser.",
+  "summary": "Read a text built only from the digits 2 through 9. Digits match letters the way a phone keypad does: 2 matches abc, 3 matches def, 4 matches ghi, 5 matches jkl, 6 matches mno, 7 matches pqrs, 8 matches tuv, and 9 matches wxyz. Moving from the left of the text to the right, pick one letter for each digit and form every possible letter text. Write all of those letter texts. Any arrangement among them is acceptable.",
   "notes": [
     "Compare after trimming trailing newlines. The input is one token of text without spaces."
   ]

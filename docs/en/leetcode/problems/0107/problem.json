@@ -1,0 +1,7 @@
+{
+  "id": 107,
+  "summary": "Read a binary tree whose nodes hold integers. First split the nodes into levels from the top downward, ordering each level from the left to the right. Then reverse the sequence of those levels so the level closest to the leaves stands first and the level that contains the root stands last. Each level remains a separate group. Write the groups after that reversal. An empty tree is written as an empty list. A node value may equal 20 and may also be any other integer.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

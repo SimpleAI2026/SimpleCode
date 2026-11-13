@@ -1,0 +1,8 @@
+{
+  "id": 992,
+  "summary": "Read a row of positive integers and one integer K. Take any contiguous block of positions. The block qualifies when the count of distinct integers inside it is exactly K. Extra copies of one integer still contribute only one distinct value. Count every qualifying block and write the total. The row length is at most 20000. Each element and K itself are integers from 1 through the row length. An empty block is never counted, so every block holds at least one position.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

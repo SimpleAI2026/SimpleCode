@@ -1,0 +1,7 @@
+{
+  "id": 922,
+  "summary": "Read a sequence A of nonnegative integers. Its length is even, at least 2, and at most 20000. Each value is at most 1000. Half of the values are odd and the other half are even. Rearrange the values so that every even index holds an even value and every odd index holds an odd value. Any arrangement that meets this rule is acceptable. Write one such sequence.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

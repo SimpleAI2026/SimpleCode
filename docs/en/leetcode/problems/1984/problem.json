@@ -1,0 +1,8 @@
+{
+  "id": 1984,
+  "summary": "Read the scores of several students. There are at most 1000 scores, and each score lies between 0 and 100000. Also read a positive integer k, with k at least 1 and no larger than the number of scores. Pick any k scores and subtract the lowest chosen score from the highest chosen score. Find a pick that makes this gap as small as possible, and write that smallest gap.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

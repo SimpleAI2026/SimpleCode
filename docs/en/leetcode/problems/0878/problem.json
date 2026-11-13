@@ -1,0 +1,8 @@
+{
+  "id": 878,
+  "summary": "Read two integers A and B, each at least 2 and at most 40000, plus a positive integer N that may be as large as 10^9. Call a positive integer magical when A divides it or when B divides it. Place every magical integer into one increasing column and select the entry that sits at place N. That entry can be enormous, so write the remainder after dividing it by 10^9 + 7.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

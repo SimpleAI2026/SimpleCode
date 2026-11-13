@@ -1,0 +1,8 @@
+{
+  "id": 1200,
+  "summary": "Read a list of distinct integers. Its length is between 2 and 100000, and every integer lies between -1000000 and 1000000. Consider the absolute gap between every two values and determine the smallest gap that occurs. Collect every pair of values whose absolute gap equals that smallest gap. Write each pair with the lesser value before the greater value, and write the collected pairs in ascending order. The magnitude bound is 1000000.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

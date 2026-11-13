@@ -1,6 +1,6 @@
 {
   "id": 190,
-  "summary": "The public title of this exercise is Reverse Bits. Read tokens in the same order as the method parameters from standard input and compute the result named by that title, using only those values. Print the result as one integer. The sample below is a short input written for this playground so the printed line can be checked locally. It is not a copy of an example from the problem site. The input stays under one hundred elements so it finishes quickly in the browser.",
+  "summary": "Read a 32-bit integer and reverse the order of its bits. The old low bit becomes the high bit. Keep the width at 32, filling open places with 0, and write the integer named by the reversed bits. In languages without an unsigned type, both the value you read and the value you write are signed, but you still reverse that same bit pattern. Under two's complement, reading -3 must write -1073741825. Do not alter the reversal because a sign bit is set.",
   "notes": [
     "Compare after trimming trailing newlines. The input is tokens in the same order as the method parameters."
   ]

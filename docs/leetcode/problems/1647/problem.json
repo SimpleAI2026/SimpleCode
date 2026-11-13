@@ -1,0 +1,26 @@
+{
+  "id": 1647,
+  "slug": "minimum-deletions-to-make-character-frequencies-unique",
+  "summary": "读入一条只含小写英文字母的串，长度介于 1 与 105。某个字母的频次指它在串里露面的次数。若任意两个不相同的字母频次都不一样，这条串就合格。每次只能删掉一个字符。写出为了让串合格而必须删掉的最少字符个数。",
+  "samples": [
+    {
+      "stdin": "s = \"aab\"\n",
+      "stdout": "0\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "s = \"aaabbbcc\"\n",
+      "stdout": "2\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/minimum-deletions-to-make-character-frequencies-unique/",
+    "en": "https://leetcode.com/problems/minimum-deletions-to-make-character-frequencies-unique/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

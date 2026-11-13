@@ -1,0 +1,7 @@
+{
+  "id": 1603,
+  "summary": "Implement a parking lot with large, medium, and small stalls. The constructor receives how many free stalls of each size exist. addCar is passed 1, 2, or 3, meaning a large car, a medium car, or a small car. A car may enter only a stall of its own size. If that size still has a free stall, occupy one and write true; otherwise write false. Each size count is from 0 to 1000, and addCar is invoked at most 1000 times.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

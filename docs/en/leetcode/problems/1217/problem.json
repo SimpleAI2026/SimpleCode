@@ -1,0 +1,8 @@
+{
+  "id": 1217,
+  "summary": "Chips lie on a number line and their positions come from one list. The list length is between 1 and 100, each position is an integer from 1 to 10^9, and several chips may start on one spot. Any chip may move any number of times. A move of 2 units costs 0, and a move of 1 unit costs 1. Gather every chip onto one shared position, and the destination may be chosen freely. Write the smallest total cost of that gathering. The position bound is 10^9.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

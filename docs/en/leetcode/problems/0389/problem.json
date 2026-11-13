@@ -1,0 +1,7 @@
+{
+  "id": 389,
+  "summary": "Read two strings named s and t. Both contain only lowercase English letters. The string t was produced by rearranging every letter of s and then inserting exactly one extra letter at some place. Find that extra letter and write it. There is always exactly one such letter.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

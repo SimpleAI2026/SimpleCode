@@ -1,0 +1,8 @@
+{
+  "id": 1232,
+  "summary": "Read a set of points on the plane. There are between 2 and 1000 points, and no point is repeated. Each point is two integers, one horizontal coordinate and one vertical coordinate, and both coordinates lie between -10000 and 10000. Decide whether all of the points rest on one single straight line. Write true when they do. Write false when they do not. The coordinate magnitude bound is 10000.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

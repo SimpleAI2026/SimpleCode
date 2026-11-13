@@ -1,0 +1,26 @@
+{
+  "id": 692,
+  "slug": "top-k-frequent-words",
+  "summary": "读入一份不会是空的单词清单和一个正整数 k。清单里的单词只由小写英文字母拼成。统计每个单词出现的次数，挑出次数最高的 k 个单词。写出时按次数由多到少排列。次数一样时，按字典序更靠前的单词排在更前面。k 不会大于不同单词的种数。比较时看整个单词，字母全是小写，因此没有大小写差别。",
+  "samples": [
+    {
+      "stdin": "[\"i\", \"love\", \"leetcode\", \"i\", \"love\", \"coding\"], k = 2\n",
+      "stdout": "[\"i\", \"love\"]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "[\"the\", \"day\", \"is\", \"sunny\", \"the\", \"the\", \"the\", \"sunny\", \"is\", \"is\"], k = 4\n",
+      "stdout": "[\"the\", \"is\", \"sunny\", \"day\"]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/top-k-frequent-words/",
+    "en": "https://leetcode.com/problems/top-k-frequent-words/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

@@ -1,0 +1,26 @@
+{
+  "id": 838,
+  "slug": "push-dominoes",
+  "summary": "读入一排骨牌的起始姿态，长度 N 可以是 0，也可以大到 100000。字符只允许 L、R 和圆点。L 表示这块已经朝左推倒，R 表示朝右推倒，圆点表示还立着。每过一秒，朝左倒的会碰倒紧挨在左边、仍然立着的那一块，朝右则碰右边。一块立着的牌若左右同时被推，就保持立着。已经在倒的牌不会再给别的正在倒的牌追加推力。全部静止后，把姿态写成一串字符。",
+  "samples": [
+    {
+      "stdin": "\".L.R...LR..L..\"\n",
+      "stdout": "\"LL.RR.LLRRLL..\"\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "\"RR.L\"\n",
+      "stdout": "\"RR.L\"\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/push-dominoes/",
+    "en": "https://leetcode.com/problems/push-dominoes/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

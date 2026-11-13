@@ -1,0 +1,8 @@
+{
+  "id": 674,
+  "summary": "Read a row of integers that may not be sorted. Find a block of neighboring positions whose values strictly rise from left to right, and choose the block with the greatest length among all such blocks. Write that length. A block holding a single integer still counts. The row length is between 0 and 10^4. The absolute value of every integer is at most 10^9.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

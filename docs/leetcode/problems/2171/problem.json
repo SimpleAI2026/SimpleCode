@@ -1,0 +1,26 @@
+{
+  "id": 2171,
+  "slug": "removing-minimum-number-of-magic-beans",
+  "summary": "读入若干个袋子里的魔法豆颗数。袋子个数介于 1 和 100000 之间，每一袋的颗数也不超过 100000。可以从任一袋中取走任意颗，取走的豆子不许再放回任何一个袋子。取完以后，每个仍然非空的袋子必须装有相同的颗数，完全取空的袋子允许存在。找出需要取走的最少总颗数，并把这个总数写出来。",
+  "samples": [
+    {
+      "stdin": "beans = [4,1,6,5]\n",
+      "stdout": "4\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "beans = [2,10,3,2]\n",
+      "stdout": "7\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/removing-minimum-number-of-magic-beans/",
+    "en": "https://leetcode.com/problems/removing-minimum-number-of-magic-beans/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

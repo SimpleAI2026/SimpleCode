@@ -1,0 +1,7 @@
+{
+  "id": 498,
+  "summary": "Read a matrix of M rows and N columns. The number of entries is at most 10000. Write every entry in diagonal order, once each. Cells on one diagonal share one sum of row index plus column index. When the sum is even, start at the cell on that diagonal with the largest row index and move toward smaller row indexes. When the sum is odd, start at the cell with the smallest row index and move toward larger row indexes. Begin with sum 0 and add 1 each time until every cell is written. Row and column indexes start at 0.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

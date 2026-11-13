@@ -1,0 +1,8 @@
+{
+  "id": 862,
+  "summary": "Read an integer list A and a positive integer K. The list length is from 1 to 50000. Each entry lies between -100000 and 100000. K lies between 1 and 1000000000. Look at every contiguous non-empty segment and add the values inside it. Among segments whose sum is at least K, choose one with the fewest entries. Write that entry count. Write -1 when no segment has a sum that large.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

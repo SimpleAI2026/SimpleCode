@@ -1,0 +1,8 @@
+{
+  "id": 263,
+  "summary": "Read one integer and decide whether it is ugly, then write yes or no. An ugly integer must be positive, and every prime factor must be 2, 3, or 5. The integer 1 counts as ugly. Zero and every negative value do not. The input is a signed 32 bit integer, from negative two to the power 31 through two to the power 31 minus one.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

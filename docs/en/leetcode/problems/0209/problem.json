@@ -1,6 +1,6 @@
 {
   "id": 209,
-  "summary": "The public title of this exercise is Minimum Size Subarray Sum. Read tokens in the same order as the method parameters from standard input and compute the result named by that title, using only those values. Print the result as one integer. The sample below is a short input written for this playground so the printed line can be checked locally. It is not a copy of an example from the problem site. The input stays under one hundred elements so it finishes quickly in the browser.",
+  "summary": "Read a sequence of positive integers and one more positive integer s. Find a contiguous block whose values add to at least s and that contains as few values as possible. Write that smallest count of values. If no block can reach s, write 0. A block includes at least one value and is never empty. Every value in the sequence is positive, so zeros and negatives do not appear. The block must stay contiguous in the original order. You cannot pull apart nonadjacent values and add those instead.",
   "notes": [
     "Compare after trimming trailing newlines. The input is tokens in the same order as the method parameters."
   ]

@@ -1,0 +1,21 @@
+{
+  "id": 966,
+  "slug": "vowel-spellchecker",
+  "summary": "读入一份词典和若干查询，两边的条数都从 1 到 5000，每条字符串长度从 1 到 7，并且只含英文字母。对每条查询按下面的优先次序找词典中的对应项：先找大小写完全一致的词；找不到再忽略大小写，取词典里最早出现的那一条；仍找不到就把查询中的元音字母 a、e、i、o、u 任意换成别的元音后再忽略大小写去比，同样取词典中最早的命中。三种都失败就对应空文本。按查询顺序写出全部结果。",
+  "samples": [
+    {
+      "stdin": "wordlist = [\"KiTe\",\"kite\",\"hare\",\"Hare\"], queries = [\"kite\",\"Kite\",\"KiTe\",\"Hare\",\"HARE\",\"Hear\",\"hear\",\"keti\",\"keet\",\"keto\"]\n",
+      "stdout": "[\"kite\",\"KiTe\",\"KiTe\",\"Hare\",\"hare\",\"\",\"\",\"KiTe\",\"\",\"KiTe\"]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/vowel-spellchecker/",
+    "en": "https://leetcode.com/problems/vowel-spellchecker/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

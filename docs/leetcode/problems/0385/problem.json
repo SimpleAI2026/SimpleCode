@@ -1,0 +1,26 @@
+{
+  "id": 385,
+  "slug": "mini-parser",
+  "summary": "读入一条不含空白的字符串，它描述一份由整数层层嵌套而成的清单。成员要么是一个整数，要么是另一份同样规则的清单。文本保证不是空的，格式一定正确，字符只会出现数字、左右方括号、逗号以及表示负数的减号。把这份文本还原成对应结构并写出来。",
+  "samples": [
+    {
+      "stdin": "s = \"324\",\n",
+      "stdout": "a NestedInteger object which contains a single integer 324.\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "s = \"[123,[456,[789]]]\",\n",
+      "stdout": "a NestedInteger object containing a nested list with 2 elements:\n\n1. An integer containing value 123.\n2. A nested list containing two elements:\ni. An integer containing value 456.\nii. A nested list with one element:\na. An integer containing value 789.\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/mini-parser/",
+    "en": "https://leetcode.com/problems/mini-parser/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

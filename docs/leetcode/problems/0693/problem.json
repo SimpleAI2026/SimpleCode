@@ -1,0 +1,26 @@
+{
+  "id": 693,
+  "slug": "binary-number-with-alternating-bits",
+  "summary": "读入一个正整数，把它写成不带前导零的二进制，高位放在左边。从左往右查看每一对紧挨着的位。只要有一对两位相同，就判断这个整数不符合交替条件。只有每一对紧挨着的位都互不相同，才判断它符合。写出符合或不符合。因为整数至少为 1，位串至少含有一位。单独一位时没有相邻对，视为符合。",
+  "samples": [
+    {
+      "stdin": "5\n",
+      "stdout": "True\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "7\n",
+      "stdout": "False\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/binary-number-with-alternating-bits/",
+    "en": "https://leetcode.com/problems/binary-number-with-alternating-bits/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

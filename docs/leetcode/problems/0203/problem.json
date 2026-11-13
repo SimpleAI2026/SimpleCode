@@ -1,0 +1,21 @@
+{
+  "id": 203,
+  "slug": "remove-linked-list-elements",
+  "summary": "读入一条由整数结点组成的单向链，再读入一个目标值。把链上每一个等于目标值的结点去掉，留下来的结点保持原来的先后次序，写出去掉之后的链。如果一个结点都不剩，就写空。头结点也可能等于目标值，那时新的头是后面第一个留下来的结点。目标值可能一次都不出现，这时整条链原样写出。结点里的其他整数不要改写。",
+  "samples": [
+    {
+      "stdin": "1->2->6->3->4->5->6, val = 6\n",
+      "stdout": "1->2->3->4->5\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/remove-linked-list-elements/",
+    "en": "https://leetcode.com/problems/remove-linked-list-elements/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

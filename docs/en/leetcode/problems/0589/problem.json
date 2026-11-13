@@ -1,0 +1,8 @@
+{
+  "id": 589,
+  "summary": "Read a tree in which a node may have many children. The node count is from 0 through 104, each stored integer is from 0 through 10000, and the height is at most 1000. Write the values in preorder: record a node before its children, and visit children from left to right. An empty tree produces an empty sequence. Input is listed level by level, with a null marker between sibling groups.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

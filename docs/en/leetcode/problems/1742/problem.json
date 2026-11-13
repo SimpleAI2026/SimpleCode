@@ -1,0 +1,8 @@
+{
+  "id": 1742,
+  "summary": "Read a lower label and an upper label for balls. Both labels lie between 1 and 100000, and the lower label is never above the upper label. Every integer in that closed span names one ball. Drop each ball into the box whose index equals the sum of the decimal digits of the label. Count how many balls land in each box, find a box with the greatest count, and write that count. If several boxes tie, any one of those counts is fine.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "id": 179,
+  "slug": "largest-number",
+  "summary": "读入一串非负整数。重新安排它们的先后，再按这个先后把十进制写法首尾粘成一个数。在所有安排方式里，找出能粘出的最大的那个数，并用字符串把它写出来。结果可能非常长，不能塞进固定宽度的整数。若所有粘法都只剩下零，就写成一个字符 0。整数本身的前导零不会出现在输入里，但粘接之后最高位可能是 0。",
+  "samples": [
+    {
+      "stdin": "[10,2]\n",
+      "stdout": "\"210\"\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "[3,30,34,5,9]\n",
+      "stdout": "\"9534330\"\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/largest-number/",
+    "en": "https://leetcode.com/problems/largest-number/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

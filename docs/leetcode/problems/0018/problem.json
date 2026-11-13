@@ -1,0 +1,21 @@
+{
+  "id": 18,
+  "slug": "4sum",
+  "summary": "读入一组整数以及一个目标和。在四个不同位置各选一个数，使四数相加等于目标和。找出全部选择，但若两组所含数值的种类和次数都一样，只写一次。把留下的每组四个数写出来。组的顺序以及每组内部的顺序都没有限制。",
+  "samples": [
+    {
+      "stdin": "array nums = [1, 0, -1, 0, -2, 2], and target = 0.\n",
+      "stdout": "[\n[-1, 0, 0, 1],\n[-2, -1, 1, 2],\n[-2, 0, 0, 2]\n]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/4sum/",
+    "en": "https://leetcode.com/problems/4sum/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

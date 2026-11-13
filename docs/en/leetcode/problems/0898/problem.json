@@ -1,0 +1,8 @@
+{
+  "id": 898,
+  "summary": "Read a sequence A of nonnegative integers. Its length is at most 50000, and each integer is at most 10^9. For every pair of indexes whose left end is not past the right end, compute the bitwise OR of the integers that sit on that contiguous span. Many spans may yield the same integer. Count how many different OR results appear and write that count.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

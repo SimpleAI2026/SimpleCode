@@ -1,0 +1,26 @@
+{
+  "id": 1022,
+  "slug": "sum-of-root-to-leaf-binary-numbers",
+  "summary": "读入结点值只为 0 或 1 的二叉树，结点个数介于 1 和 1000。每一条从根走到叶子的路径都按途经的 0 和 1 组成一个二进制数，根上的位是最高位，叶子上的位是最低位。把所有叶子对应的二进制数相加，写出这个和。数据保证该和可以放进三十二位整数。只有走到叶子的路径才计入，中途结点单独不成数。",
+  "samples": [
+    {
+      "stdin": "root = [1,0,1,0,1,0,1]\n",
+      "stdout": "22\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "root = [0]\n",
+      "stdout": "0\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/sum-of-root-to-leaf-binary-numbers/",
+    "en": "https://leetcode.com/problems/sum-of-root-to-leaf-binary-numbers/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

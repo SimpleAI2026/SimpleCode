@@ -1,0 +1,8 @@
+{
+  "id": 385,
+  "summary": "Read a single string with no blank characters. It describes a collection whose members are whole numbers or further collections built by the same rule. The text is never empty, its format is always correct, and the only symbols are digits, opening and closing brackets, commas, and a minus sign for negatives. Write the structure recovered from that text.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

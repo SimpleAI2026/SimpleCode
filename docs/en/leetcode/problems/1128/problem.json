@@ -1,0 +1,7 @@
+{
+  "id": 1128,
+  "summary": "Read a list of dominoes, each written as two integers for its two halves. The list length runs from 1 to 40000, and each half shows an integer from 1 to 9. Treat two dominoes as matching when they already show the same ordered pair, or when turning one of them by 180 degrees makes the ordered pairs agree. Other turns do not count. Count index pairs where the earlier index is strictly smaller and the two dominoes match. Write that count.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "id": 154,
+  "summary": "Read a row of integers. They began in increasing order, then an unknown index split the row and the right portion was moved in front of the left portion. This task allows the same integer to appear repeatedly, so equal values may sit next to each other after the move. Find the smallest integer and write it. When several positions share that smallest value, write the value once. The row length is at least one.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

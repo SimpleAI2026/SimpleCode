@@ -1,0 +1,8 @@
+{
+  "id": 13,
+  "summary": "Read one Roman symbol string whose integer value lies from 1 through 3999, and write that integer in decimal. Weights are I as 1, V as 5, X as 10, L as 50, C as 100, D as 500, and M as 1000. Walk from the left and look at neighboring symbols. Add the current weight when it is greater than or equal to the weight on its right, and subtract the current weight when it is smaller. The total after the walk is the integer to write.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

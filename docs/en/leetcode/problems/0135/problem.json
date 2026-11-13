@@ -1,0 +1,8 @@
+{
+  "id": 135,
+  "summary": "Read ratings for n children who stand in a single row. n is at least 1, and both n and every rating are at most 2 times 10^4. A rating may be 0. Each child must receive at least 1 candy. Whenever a child has a strictly higher rating than the neighbor immediately on the left or on the right, that child must receive strictly more candies than the neighbor. Satisfy both sides when both neighbors are lower. Write the smallest total number of candies that meets every requirement.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

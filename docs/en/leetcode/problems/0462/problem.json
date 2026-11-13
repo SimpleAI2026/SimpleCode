@@ -1,0 +1,8 @@
+{
+  "id": 462,
+  "summary": "Read an integer array whose length is between 1 and 100000. Every element lies between negative 10^9 and 10^9. One operation adds 1 to a single element or subtracts 1 from a single element. Find the fewest operations that bring every element to one common value, and write that operation count.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

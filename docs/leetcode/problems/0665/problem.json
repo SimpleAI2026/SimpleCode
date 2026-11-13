@@ -1,0 +1,26 @@
+{
+  "id": 665,
+  "slug": "non-decreasing-array",
+  "summary": "读入 n 个整数排成一行。n 在 1 到 104 之间，每个整数在 -100000 到 100000 之间。判断是否最多改掉其中一项，就能让这一行变成非递减：只要右边还有下一项，左边的数就不大于它。可以做到就写 true，否则写 false。",
+  "samples": [
+    {
+      "stdin": "nums = [4,2,3]\n",
+      "stdout": "true\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "nums = [4,2,1]\n",
+      "stdout": "false\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/non-decreasing-array/",
+    "en": "https://leetcode.com/problems/non-decreasing-array/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

@@ -1,0 +1,8 @@
+{
+  "id": 942,
+  "summary": "Read a string made only of the letters I and D. Its length N is between 1 and 10000. Write one ordering of the integers 0 through N, which means the ordering contains N plus 1 numbers. At every index i, look at the letter in that place. When the letter is I, the number at index i must be smaller than the number immediately to its right. When the letter is D, the number at index i must be larger than the number immediately to its right. Any ordering that satisfies every adjacent comparison is acceptable.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

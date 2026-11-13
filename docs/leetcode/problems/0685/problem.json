@@ -1,0 +1,26 @@
+{
+  "id": 685,
+  "slug": "redundant-connection-ii",
+  "summary": "带根的树在这里是有向图：恰有一个根，其他每个结点都能沿箭头从根走到，并且除根之外每个结点恰好一个父亲。读入的边来自 N 个结点的这样一棵树，再外加一条有向边。编号是 1 到 N。边从父亲指向孩子。外加边的两端都在 1 到 N，且原先不存在。删掉一条边之后，余下部分必须重新成为含有 N 个结点且仍带根的图。能删的边不止一条时，采用输入序列里排在最后的那条。边的条数在 3 到 1000 之间，端点整数在 1 到 N 之间，N 就是边数。",
+  "samples": [
+    {
+      "stdin": "[[1,2], [1,3], [2,3]]\n",
+      "stdout": "[2,3]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "[[1,2], [2,3], [3,4], [4,1], [1,5]]\n",
+      "stdout": "[4,1]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/redundant-connection-ii/",
+    "en": "https://leetcode.com/problems/redundant-connection-ii/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

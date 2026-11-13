@@ -1,0 +1,26 @@
+{
+  "id": 878,
+  "slug": "nth-magical-number",
+  "summary": "读入两个不小于二的正整数 A 与 B，再读入正整数 N。凡是能被 A 整除，或者能被 B 整除的正整数，都记作魔法数。把全部魔法数按从小到大排成一列，取出位于第 N 位的那个。这个数可能极大，写出它除以 10^9+7 之后的余数。N 最大是 1000000000，A 与 B 各自最大是 40000。",
+  "samples": [
+    {
+      "stdin": "N = 1, A = 2, B = 3\n",
+      "stdout": "2\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "N = 4, A = 2, B = 3\n",
+      "stdout": "6\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/nth-magical-number/",
+    "en": "https://leetcode.com/problems/nth-magical-number/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

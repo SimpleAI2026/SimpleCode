@@ -1,0 +1,8 @@
+{
+  "id": 918,
+  "summary": "Read an integer sequence A of length at most 30000, with each value between -30000 and 30000. Join the first position to the last so the sequence forms a loop. Take one contiguous segment on that loop. The segment must contain at least one value, and it may use each position at most once, so it cannot lap the loop and overlap itself. Write the largest sum of the values inside any such segment.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

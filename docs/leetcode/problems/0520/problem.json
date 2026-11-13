@@ -1,0 +1,26 @@
+{
+  "id": 520,
+  "slug": "detect-capital",
+  "summary": "读入一个只含英文字母的单词 word，长度从 1 到 100。判断它的大写形式是否属于下面三种，并写出 true 或 false。第一种：每个字母都是大写。第二种：每个字母都是小写。第三种：只有第一个字母是大写，后面每一个字母都是小写。单词只有一个字母而且这个字母是大写时，也算符合第三种。这三种以外的混用都算不符合。不要忽略中间某个字母的大小写。比较时按字符本身的大小写，不按单词含义。",
+  "samples": [
+    {
+      "stdin": "word = \"USA\"\n",
+      "stdout": "true\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "word = \"FlaG\"\n",
+      "stdout": "false\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/detect-capital/",
+    "en": "https://leetcode.com/problems/detect-capital/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

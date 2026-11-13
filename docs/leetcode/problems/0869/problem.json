@@ -1,0 +1,26 @@
+{
+  "id": 869,
+  "slug": "reordered-power-of-2",
+  "summary": "读入一个正整数 N，N 至少为 1，至多为 1000000000。可以把十进制各位上的数字任意重排，也允许保持原来的次序，但排完以后最高一位不许是 0。判断能不能由此得到 2 的某个非负整数次幂。能得到就写出真，不能得到就写出假。重排时每一位原有数字都要保留，不能增删。",
+  "samples": [
+    {
+      "stdin": "1\n",
+      "stdout": "true\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "10\n",
+      "stdout": "false\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/reordered-power-of-2/",
+    "en": "https://leetcode.com/problems/reordered-power-of-2/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

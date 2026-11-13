@@ -1,0 +1,21 @@
+{
+  "id": 174,
+  "slug": "dungeon-game",
+  "summary": "读入一张矩形整数格子。骑士从左上角出发，公主在右下角。每一步只能向右走一格或向下走一格。走进某一格时，把该格上的整数加到生命上：负数是扣血，零是不变，正数是补血。生命一旦落到 0 或更低就立刻失败。写出出发前至少要准备的正整数生命，使得存在一条路线能活着走到右下角。生命没有上限。起点那一格和终点那一格同样可能扣血或补血。",
+  "samples": [
+    {
+      "stdin": "For example, given the dungeon below, the initial health of the knight must be at least 7 if he follows the optimal path RIGHT\n",
+      "stdout": "RIGHT\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/dungeon-game/",
+    "en": "https://leetcode.com/problems/dungeon-game/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

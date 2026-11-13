@@ -1,0 +1,8 @@
+{
+  "id": 1091,
+  "summary": "Read an N by N grid of zeros and ones. N is an integer from 1 to 100. A zero can be entered and a one is blocked. A route begins at the corner whose two indexes are both zero and finishes at the corner whose two indexes are both N minus 1. Each step moves into one of the eight neighboring cells, including diagonals, and every cell on the route must hold zero. The length of a route counts every cell visited, including both ends. Find the smallest such length. Write -1 when no route exists, otherwise write that length.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

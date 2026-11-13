@@ -1,6 +1,6 @@
 {
   "id": 695,
-  "summary": "The public title of this exercise is Max Area of Island. Read tokens in the same order as the method parameters from standard input and compute the result named by that title, using only those values. Print the result as one integer. The sample below is a short input written for this playground so the printed line can be checked locally. It is not a copy of an example from the problem site. The input stays under one hundred elements so it finishes quickly in the browser.",
+  "summary": "Read a grid that is not empty. Every cell holds either the digit 0 or the digit 1. A 1 stands for land and a 0 stands for water. Land cells that share a full side, whether above, below, left, or right, belong to one island. Meeting only at a corner does not connect them. Treat everything beyond the four borders as water. An island's area equals how many land cells it holds. Find the island whose area is largest and write that area. When the grid contains no land at all, write 0.",
   "notes": [
     "Compare after trimming trailing newlines. The input is tokens in the same order as the method parameters."
   ]

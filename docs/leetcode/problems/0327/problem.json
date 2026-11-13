@@ -1,0 +1,21 @@
+{
+  "id": 327,
+  "slug": "count-of-range-sum",
+  "summary": "读入一串整数，再读入两个边界，分别叫做下界和上界。任取一段位置连续的数，把它们相加得到一个合计。位置只能从左往右，不能倒着取，空段也不算。统计有多少段的合计大于等于下界并且小于等于上界。把这个段数写出来。",
+  "samples": [
+    {
+      "stdin": "nums = [-2,5,-1], lower = -2, upper = 2,\n",
+      "stdout": "3\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/count-of-range-sum/",
+    "en": "https://leetcode.com/problems/count-of-range-sum/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

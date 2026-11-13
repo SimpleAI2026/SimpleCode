@@ -1,0 +1,7 @@
+{
+  "id": 65,
+  "summary": "Read a single string s. Print true when s is legal as a decimal numeral and print false otherwise. The whole text is a whole number or a fraction, and it may then carry an exponent. An exponent is the letter e or the letter E, then a whole number. A whole number may start with a plus or a minus, and after the sign it needs at least one digit. A fraction may also start with a plus or a minus. After that sign, the rest must be digits and then a dot, or digits and then a dot and then digits, or a dot and then digits. The exponent whole number cannot itself contain a dot. Two signs in a row, a missing exponent, a stray letter, or a dot with no digit anywhere all make s illegal.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "id": 328,
+  "summary": "Read a one-way linked chain. Reconnect the nodes by their positions, counting the first node as position one. Place every odd-position node first, preserving the order those nodes already had, then append every even-position node, again preserving that group's earlier order. Positions matter here, and the numbers stored in the nodes do not. Write the head of the reconnected chain.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

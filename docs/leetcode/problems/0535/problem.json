@@ -1,0 +1,21 @@
+{
+  "id": 535,
+  "slug": "encode-and-decode-tinyurl",
+  "summary": "读入一条完整的网址。设计编码与解码两步：编码把这条网址收成一条更短的记号，解码再凭该记号还原出最初的网址。记号的具体样子可以自己规定，不要求与任何公开网站上的短链接相同。唯一必须遵守的是，同一条网址经过编码再解码之后，得到的文本与最初那条逐字相同。把编码结果和解码结果按调用顺序写出来。",
+  "samples": [
+    {
+      "stdin": "https://example.com/a\n",
+      "stdout": "https://example.com/a\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/encode-and-decode-tinyurl/",
+    "en": "https://leetcode.com/problems/encode-and-decode-tinyurl/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

@@ -1,0 +1,21 @@
+{
+  "id": 784,
+  "slug": "letter-case-permutation",
+  "summary": "读入一条长度介于1和12之间的字符串，字符只能是英文字母或数字。数字一律原样留下。每个字母都可以单独决定写成小写或大写，各个字母的决定互不牵连。把所有能够得到的不同字符串都找齐，按任意顺序写成一份清单。",
+  "samples": [
+    {
+      "stdin": "S = \"a1b2\"\n",
+      "stdout": "[\"a1b2\", \"a1B2\", \"A1b2\", \"A1B2\"]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/letter-case-permutation/",
+    "en": "https://leetcode.com/problems/letter-case-permutation/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

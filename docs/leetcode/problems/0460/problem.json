@@ -1,0 +1,21 @@
+{
+  "id": 460,
+  "slug": "lfu-cache",
+  "summary": "读入容量上限。容量、键和值都不超过 104，随后最多有 100000 次调用。维护一个按使用次数淘汰的缓存。get 在键存在时写出对应的值，否则写出 -1。put 在键已经存在时改写它的值，不存在时放入新的一对；如果当前已经放满，先丢掉使用次数最少的那一项，次数并列时丢掉最久没有被碰到的那一项。某一项的使用次数等于放入之后 get 与 put 再次命中它的次数，丢掉之后次数回到 0。",
+  "samples": [
+    {
+      "stdin": "[\"LFUCache\", \"put\", \"put\", \"get\", \"put\", \"get\", \"get\", \"put\", \"get\", \"get\", \"get\"]\n[[2], [1, 1], [2, 2], [1], [3, 3], [2], [3], [4, 4], [1], [3], [4]]\n",
+      "stdout": "[null, null, null, 1, null, -1, 3, null, -1, 3, 4]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/lfu-cache/",
+    "en": "https://leetcode.com/problems/lfu-cache/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

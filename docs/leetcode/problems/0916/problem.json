@@ -1,0 +1,26 @@
+{
+  "id": 916,
+  "slug": "word-subsets",
+  "summary": "读入单词表 A 和单词表 B。单词只用小写字母，两张表的词数各自至多 10000，每个单词长度至多 10，A 里的词互不重复。若单词 b 里每个字母在单词 a 里出现的次数都不比 b 自己少，就说 a 盖住了 b。若 A 里的某个词能盖住 B 中的每一个词，这个词就是通用词。把 A 里所有通用词找出来，次序随意地写成一列。",
+  "samples": [
+    {
+      "stdin": "A = [\"amazon\",\"apple\",\"facebook\",\"google\",\"leetcode\"], B = [\"e\",\"o\"]\n",
+      "stdout": "[\"facebook\",\"google\",\"leetcode\"]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "A = [\"amazon\",\"apple\",\"facebook\",\"google\",\"leetcode\"], B = [\"l\",\"e\"]\n",
+      "stdout": "[\"apple\",\"google\",\"leetcode\"]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/word-subsets/",
+    "en": "https://leetcode.com/problems/word-subsets/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

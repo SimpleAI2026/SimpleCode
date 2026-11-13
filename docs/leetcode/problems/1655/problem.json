@@ -1,0 +1,26 @@
+{
+  "id": 1655,
+  "slug": "distribute-repeating-integers",
+  "summary": "读入整数列 nums 与订单列 quantity。nums 的长度 n 介于 1 与 105，每个元素介于 1 与 1000，列中不同的取值最多 50 种。订单条数 m 介于 1 与 10，每条订单索取的份数介于 1 与 105。判断能否把 nums 中的整数分发出去，使第 i 位顾客正好得到第 i 条订单所写的份数，而且这位顾客分得的每一份都是同一个数，同时每一位顾客都分到。能分出则写出 true，否则写出 false。",
+  "samples": [
+    {
+      "stdin": "nums = [1,2,3,4], quantity = [2]\n",
+      "stdout": "false\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "nums = [1,2,3,3], quantity = [2]\n",
+      "stdout": "true\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/distribute-repeating-integers/",
+    "en": "https://leetcode.com/problems/distribute-repeating-integers/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

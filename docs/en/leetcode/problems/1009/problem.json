@@ -1,0 +1,8 @@
+{
+  "id": 1009,
+  "summary": "Read a non-negative integer n that satisfies 0 <= n < 109. Express n in binary and drop any leading zero. When n is zero, the binary form is a single zero. Then exchange every zero bit for a one bit and every one bit for a zero bit, keeping the width unchanged. Interpret the resulting bits as a binary integer and write the ordinary decimal value. Do not insert extra bits and do not drop a trailing bit.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

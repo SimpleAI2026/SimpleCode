@@ -1,0 +1,26 @@
+{
+  "id": 1123,
+  "slug": "lowest-common-ancestor-of-deepest-leaves",
+  "summary": "读入一棵有根的二叉树。结点个数在 1 到 1000 之间，每个结点的数值在 1 到 1000 之间且互不相同。没有孩子的结点称作叶子。最上面那个结点的深度记为 0，每个孩子都比它的父亲深一层。在全部叶子里面，留下深度最大的那些。它们共同的祖先是仍能包住每一个这样叶子的最深结点。写出这个祖先结点。",
+  "samples": [
+    {
+      "stdin": "root = [1,2,3]\n",
+      "stdout": "[1,2,3]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "root = [1,2,3,4]\n",
+      "stdout": "[4]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/lowest-common-ancestor-of-deepest-leaves/",
+    "en": "https://leetcode.com/problems/lowest-common-ancestor-of-deepest-leaves/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

@@ -1,0 +1,21 @@
+{
+  "id": 387,
+  "slug": "first-unique-character-in-a-string",
+  "summary": "读入一串字符。从左向右查找最先出现、并且整串里只露面一次的那个字符，把它从零数起的位置写出来。如果每个字符都至少露面两次，就不存在这样的字符，此时写出 -1。位置按字符下标计算，空位不另计。",
+  "samples": [
+    {
+      "stdin": "Given a string, find the first non-repeating character in it and return it's index. If it doesn't exist, return -1.\n",
+      "stdout": "0\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/first-unique-character-in-a-string/",
+    "en": "https://leetcode.com/problems/first-unique-character-in-a-string/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

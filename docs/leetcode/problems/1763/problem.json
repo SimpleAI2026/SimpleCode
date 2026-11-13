@@ -1,0 +1,26 @@
+{
+  "id": 1763,
+  "slug": "longest-nice-substring",
+  "summary": "读入一条字符串，长度介于 1 和 100 之间，字符只含英文的大写字母和小写字母。若一段连续片段里，每个已经出现的字母都同时具备大写与小写两种写法，这段片段就称为美好。找出美好片段里最长的一段。长度相同的时候，写出起点最靠左的那段。整段文本里若找不到美好片段，就写出空串。",
+  "samples": [
+    {
+      "stdin": "s = \"YazaAay\"\n",
+      "stdout": "\"aAa\"\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "s = \"Bb\"\n",
+      "stdout": "\"Bb\"\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/longest-nice-substring/",
+    "en": "https://leetcode.com/problems/longest-nice-substring/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

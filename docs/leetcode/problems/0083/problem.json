@@ -1,0 +1,26 @@
+{
+  "id": 83,
+  "slug": "remove-duplicates-from-sorted-list",
+  "summary": "读入一条单链表，结点里的数值已经按非递减次序排好。请去掉重复出现的结点，使每个数值只留下最先遇到的那一个结点，稍后再次出现的相同数值都要去掉。不同数值之间原来谁先谁后，要保持不变。写出整理之后的链表。这条规则要求留下一份，而不是把出现过多次的数值整组清掉。空链表整理之后仍是空的。",
+  "samples": [
+    {
+      "stdin": "1->1->2\n",
+      "stdout": "1->2\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "1->1->2->3->3\n",
+      "stdout": "1->2->3\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/remove-duplicates-from-sorted-list/",
+    "en": "https://leetcode.com/problems/remove-duplicates-from-sorted-list/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

@@ -1,6 +1,6 @@
 {
   "id": 239,
-  "summary": "The public title of this exercise is Sliding Window Maximum. Read a count, that many integers, and one target integer from standard input and compute the result named by that title, using only those values. Print the result as indexes on one line, separated by a space. The sample below is a short input written for this playground so the printed line can be checked locally. It is not a copy of an example from the problem site. The input stays under one hundred elements so it finishes quickly in the browser.",
+  "summary": "Read a list of integers and a window width k. The window first covers the leftmost k integers, then shifts one step to the right until the right end of the window reaches the end of the list. The window always contains exactly k integers. At every stop, find the largest integer inside the window, and write those largest integers from left to right. The width k is at least 1 and is never greater than the length of the list.",
   "notes": [
     "Compare after trimming trailing newlines. The input is a count, that many integers, and one target integer."
   ]

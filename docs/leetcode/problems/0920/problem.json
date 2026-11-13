@@ -1,0 +1,26 @@
+{
+  "id": 920,
+  "slug": "number-of-music-playlists",
+  "summary": "读入整数 N、L 和 K，它们满足 0 小于等于 K，K 小于 N，N 小于等于 L，并且 L 小于等于 100。曲库里有 N 首彼此不同的歌，要排成一份长度恰好为 L 的曲目单，同一首歌允许出现多次。每首歌都要至少出现一回。某首歌若再次出现，它和上一次出现之间至少要隔着另外 K 首歌。数出满足这两条的曲目单一共有多少份，对 10^9+7 取余后写出来。",
+  "samples": [
+    {
+      "stdin": "N = 3, L = 3, K = 1\n",
+      "stdout": "6\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "N = 2, L = 3, K = 0\n",
+      "stdout": "6\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/number-of-music-playlists/",
+    "en": "https://leetcode.com/problems/number-of-music-playlists/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

@@ -1,0 +1,8 @@
+{
+  "id": 1624,
+  "summary": "Read a string made only of lowercase English letters, with length from 1 to 300. Search for two copies of the same letter and count only the symbols lying strictly inside that pair, leaving both copies out of the count. Keep the pair whose inside stretch is the longest. Write -1 when no letter is repeated anywhere. Otherwise write the length of that inside stretch. The stretch has to sit in one unbroken piece of the original string.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

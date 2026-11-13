@@ -1,0 +1,8 @@
+{
+  "id": 892,
+  "summary": "Read a square grid whose side length N is at most 50. The number stored in a cell tells how many cubes of edge length 1 are stacked on that cell, and each stored number lies between 0 and 50. When two cubes share a face, those two faces are covered and no longer exposed. Write the total area of every face that stays exposed after the stacking is finished.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

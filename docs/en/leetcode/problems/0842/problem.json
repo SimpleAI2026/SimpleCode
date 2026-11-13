@@ -1,0 +1,8 @@
+{
+  "id": 842,
+  "summary": "Read a digit string whose length is at least 1 and at most 200. Cut it into three or more pieces that form integers. Each integer is at least 0 and at most 2 to the power 31 minus 1, so it fits in a signed 32-bit cell. A piece may not start with 0 unless the whole piece is the single digit 0. From the third piece onward, each value must equal the sum of the two values before it. Write any such list of integers when a cut exists. Write an empty list when no cut works.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": 303,
+  "slug": "range-sum-query-immutable",
+  "summary": "读入一个整数数组，这个数组在整个过程中都不会被修改。随后会有很多次区间询问。每次给出两个下标 i 和 j，并且 i 小于或等于 j。把下标从 i 到 j 的元素全部相加，两端的元素都要算上，然后把这个和写出来。多次询问之间，数组里的每个元素都保持最初的值。",
+  "samples": [
+    {
+      "stdin": "sumRange(0, 2)\nsumRange(2, 5)\nsumRange(0, 5)\n",
+      "stdout": "1\n-1\n-3\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/range-sum-query-immutable/",
+    "en": "https://leetcode.com/problems/range-sum-query-immutable/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

@@ -1,0 +1,7 @@
+{
+  "id": 791,
+  "summary": "Read two strings made only of lowercase letters. The first is an order key of length at most 26 in which no letter repeats. The second is a body of length at most 200. While rearranging the body, a letter that stands further left in the order key must also stand further left in the result. Letters missing from the order key may be placed freely. Write any rearrangement that respects this precedence.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

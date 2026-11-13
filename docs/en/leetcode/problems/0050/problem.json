@@ -1,6 +1,6 @@
 {
   "id": 50,
-  "summary": "The public title of this exercise is Pow(x, n). Read tokens in the same order as the method parameters from standard input and compute the result named by that title, using only those values. Print the result as one number. The sample below is a short input written for this playground so the printed line can be checked locally. It is not a copy of an example from the problem site. The input stays under one hundred elements so it finishes quickly in the browser.",
+  "summary": "Read a real base and an integer exponent. The base is strictly above -100 and strictly below 100. The exponent is a 32-bit signed integer lying in the closed span from negative 2 to the power 31 through 2 to the power 31 minus 1. Compute the base raised to that exponent and write the real value. An exponent of 0 yields 1. A negative exponent yields the reciprocal of the power with the exponent made positive.",
   "notes": [
     "Compare after trimming trailing newlines. The input is tokens in the same order as the method parameters."
   ]

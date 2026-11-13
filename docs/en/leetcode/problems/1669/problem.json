@@ -1,0 +1,8 @@
+{
+  "id": 1669,
+  "summary": "Read two singly linked chains plus two positions a and b. The first chain holds from 3 to 104 nodes, and the second holds from 1 to 104 nodes. Position a is at least 1, b is at least a, and b must stop before the second-to-last node of the first chain. Cut out every node of the first chain whose place runs from a through b, then attach the whole second chain into that opening. Write the head of the chain that is left.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

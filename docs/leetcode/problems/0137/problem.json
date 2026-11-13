@@ -1,0 +1,26 @@
+{
+  "id": 137,
+  "slug": "single-number-ii",
+  "summary": "读入一个非空的整数数组。里面恰好有一个数值只出现一次，其他每个数值都出现三次。把那个只出现一次的数值找出来并写上。扫描和更新的步数要与数组长度成正比，额外占用只能是若干个与长度无关的变量。三次出现可以分散在不同位置，整数可以是负数或零。",
+  "samples": [
+    {
+      "stdin": "[2,2,3,2]\n",
+      "stdout": "3\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "[0,1,0,1,0,1,99]\n",
+      "stdout": "99\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/single-number-ii/",
+    "en": "https://leetcode.com/problems/single-number-ii/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

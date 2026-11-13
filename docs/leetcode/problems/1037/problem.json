@@ -1,0 +1,26 @@
+{
+  "id": 1037,
+  "slug": "valid-boomerang",
+  "summary": "读入平面上的三个点，每个点写成一对整数，横纵坐标都落在 0 到 100 的闭区间里，输入里点的个数固定是三个。判断这三个点能不能算作一枚有效的回旋镖。三个位置必须彼此不同，同时它们不能共处同一条直线。两个条件一起成立就写出真。只要任意两点重合，或者三点排成一条直线，就写出假。",
+  "samples": [
+    {
+      "stdin": "[[1,1],[2,3],[3,2]]\n",
+      "stdout": "true\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "[[1,1],[2,2],[3,3]]\n",
+      "stdout": "false\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/valid-boomerang/",
+    "en": "https://leetcode.com/problems/valid-boomerang/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

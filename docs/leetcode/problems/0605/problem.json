@@ -1,0 +1,26 @@
+{
+  "id": 605,
+  "slug": "can-place-flowers",
+  "summary": "花坛是一排格子，长度从 1 到 2 乘 104，格子里只有 0 或 1。0 表示空着，1 表示已经有花，并且现有的花互不相邻。再读入整数 n，范围是 0 到花坛长度。新花也不能种在相邻格子上。判断能不能再放下恰好 n 朵。能就写 true，不能就写 false。",
+  "samples": [
+    {
+      "stdin": "flowerbed = [1,0,0,0,1], n = 1\n",
+      "stdout": "true\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "flowerbed = [1,0,0,0,1], n = 2\n",
+      "stdout": "false\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/can-place-flowers/",
+    "en": "https://leetcode.com/problems/can-place-flowers/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

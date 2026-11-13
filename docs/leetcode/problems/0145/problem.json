@@ -1,0 +1,21 @@
+{
+  "id": 145,
+  "slug": "binary-tree-postorder-traversal",
+  "summary": "读入一棵二叉树，结点上是整数，左孩子或右孩子都可能缺失。按先展开左子树、再展开右子树、最后才记录根结点的顺序，把访问到的整数依次写出来。缺失的孩子直接跳过。树中只有根时，只写出根上的整数。整棵树是空的时候，写出空的序列。每棵子树都遵守同一顺序。",
+  "samples": [
+    {
+      "stdin": "[1,null,2,3]\n1\n\\\n2\n/\n3\n",
+      "stdout": "[3,2,1]\n\n\n\nFollow up: Recursive solution is trivial, could you do it iteratively?\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/binary-tree-postorder-traversal/",
+    "en": "https://leetcode.com/problems/binary-tree-postorder-traversal/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

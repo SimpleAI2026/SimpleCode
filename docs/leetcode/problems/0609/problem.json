@@ -1,0 +1,26 @@
+{
+  "id": 609,
+  "slug": "find-duplicate-file-in-system",
+  "summary": "读入若干条目录记录，条数在 1 到 2 乘 104，每条字符串长度不超过 3000，所有字符串长度之和不超过 5 乘 105。每条先给出目录路径，再列出其中的文件，文件名后用括号包住正文，各段用单个空格分开。同一目录中的名字互不相同。把正文完全一样的文件分成一组，每组至少两条路径。写出各组的完整路径，组与组之间以及组内的次序都可以自定。",
+  "samples": [
+    {
+      "stdin": "paths = [\"root/a 1.txt(abcd) 2.txt(efgh)\",\"root/c 3.txt(abcd)\",\"root/c/d 4.txt(efgh)\",\"root 4.txt(efgh)\"]\n",
+      "stdout": "[[\"root/a/2.txt\",\"root/c/d/4.txt\",\"root/4.txt\"],[\"root/a/1.txt\",\"root/c/3.txt\"]]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "paths = [\"root/a 1.txt(abcd) 2.txt(efgh)\",\"root/c 3.txt(abcd)\",\"root/c/d 4.txt(efgh)\"]\n",
+      "stdout": "[[\"root/a/2.txt\",\"root/c/d/4.txt\"],[\"root/a/1.txt\",\"root/c/3.txt\"]]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/find-duplicate-file-in-system/",
+    "en": "https://leetcode.com/problems/find-duplicate-file-in-system/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

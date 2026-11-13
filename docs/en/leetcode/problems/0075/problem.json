@@ -1,6 +1,6 @@
 {
   "id": 75,
-  "summary": "The public title of this exercise is Sort Colors. Read tokens in the same order as the method parameters from standard input and compute the result named by that title, using only those values. Print the result as the input value after the method updates it. The sample below is a short input written for this playground so the printed line can be checked locally. It is not a copy of an example from the problem site. The input stays under one hundred elements so it finishes quickly in the browser.",
+  "summary": "Read a list of n integers. Each integer can only be 0, 1, or 2. Zero stands for red, one stands for white, and two stands for blue. Rearrange the list so that every 0 sits before every 1, and every 1 sits before every 2, with equal values gathered together. Do the rearrangement inside the original list, then write the whole list after that change. Do not request another block of storage with the same length just to copy these numbers.",
   "notes": [
     "Compare after trimming trailing newlines. The input is tokens in the same order as the method parameters."
   ]

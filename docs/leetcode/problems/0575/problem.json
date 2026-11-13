@@ -1,0 +1,26 @@
+{
+  "id": 575,
+  "slug": "distribute-candies",
+  "summary": "读入一个偶数长度的整数数组，长度在 2 到 10000 之间，每个整数在负 100000 到正 100000 之间。不同的整数代表不同口味，每个整数代表一颗糖。把这些糖按颗数平均分给妹妹和弟弟。在颗数必须相同的前提下，找出妹妹最多可以拿到多少种口味，并把这个种类数写出来。",
+  "samples": [
+    {
+      "stdin": "candies = [1,1,2,2,3,3]\n",
+      "stdout": "3\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "candies = [1,1,2,3]\n",
+      "stdout": "2\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/distribute-candies/",
+    "en": "https://leetcode.com/problems/distribute-candies/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

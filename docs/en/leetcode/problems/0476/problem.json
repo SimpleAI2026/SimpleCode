@@ -1,0 +1,8 @@
+{
+  "id": 476,
+  "summary": "Read one positive integer that fits inside a signed 32 bit integer. Write it in binary and do not pad any zero in front. Then change every 0 bit into a 1 bit and every 1 bit into a 0 bit. Turn the flipped binary back into a decimal integer and write that integer. Do not handle a sign bit on its own, and do not insert an extra leading 0 before the flip. The input itself is never negative and never zero.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

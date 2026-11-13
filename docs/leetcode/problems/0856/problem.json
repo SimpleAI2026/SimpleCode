@@ -1,0 +1,26 @@
+{
+  "id": 856,
+  "slug": "score-of-parentheses",
+  "summary": "读入一条已经左右配对好的括号文本，长度从 2 到 50，里面只有圆括号。里面什么都没有的一对，记作 1 分。两段各自合法的内容首尾相接，分数相加。把一段合法内容再外套一对括号，分数变成原来的二倍。只按这三条计算整段文本的分数，并把该分数写出来。嵌套和并列都要按同样的规则层层处理。",
+  "samples": [
+    {
+      "stdin": "\"()\"\n",
+      "stdout": "1\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "\"(())\"\n",
+      "stdout": "2\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/score-of-parentheses/",
+    "en": "https://leetcode.com/problems/score-of-parentheses/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

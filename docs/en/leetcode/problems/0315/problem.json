@@ -1,0 +1,7 @@
+{
+  "id": 315,
+  "summary": "Read a list of integers. For every position, count how many integers strictly to its right are smaller than the integer at that position, producing a count list of the same length. Write that count list in the original left to right order. Equal integers do not count as smaller. Integers to the left are ignored for that position. The rightmost count is always zero.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

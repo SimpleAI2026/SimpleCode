@@ -1,0 +1,26 @@
+{
+  "id": 1636,
+  "slug": "sort-array-by-increasing-frequency",
+  "summary": "读入一列整数，列长介于 1 与 100，每个整数介于 -100 与 100。按照各个数值出现的次数由少到多重新排列整列。若两个数值出现的次数一样多，则数值更大的排在更前面。把排完之后的整列写出来，次数相同的数值要保持降序，不能打乱这条次序。",
+  "samples": [
+    {
+      "stdin": "nums = [1,1,2,2,2,3]\n",
+      "stdout": "[3,1,1,2,2,2]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "nums = [2,3,1,3,2]\n",
+      "stdout": "[1,3,3,2,2]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/sort-array-by-increasing-frequency/",
+    "en": "https://leetcode.com/problems/sort-array-by-increasing-frequency/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

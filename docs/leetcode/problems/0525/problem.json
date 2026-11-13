@@ -1,0 +1,26 @@
+{
+  "id": 525,
+  "slug": "contiguous-array",
+  "summary": "读入一条只由数字 0 和 1 组成的序列。从中选取一段连续位置，使这一段里 0 出现的次数与 1 出现的次数完全相同，并且在所有满足该平衡的段落中它最长。把这段所含元素的个数写成整数。如果整条序列里不存在次数相同的段落，就写出 0。序列长度在 1 到 105 之间，每个位置只能取 0 或 1。",
+  "samples": [
+    {
+      "stdin": "nums = [0,1]\n",
+      "stdout": "2\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "nums = [0,1,0]\n",
+      "stdout": "2\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/contiguous-array/",
+    "en": "https://leetcode.com/problems/contiguous-array/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

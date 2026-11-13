@@ -1,0 +1,7 @@
+{
+  "id": 677,
+  "summary": "Keep a correspondence from strings to integers. insert reads a key and a value: record the pair when the key is new, and replace the stored integer when the key is already recorded. sum reads a prefix and writes the total of every stored integer whose key opens with that prefix. Keys and prefixes contain only lowercase English letters, and each has length from 1 to 50. Every stored integer is from 1 to 1000. The two operations together run at most 50 times.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

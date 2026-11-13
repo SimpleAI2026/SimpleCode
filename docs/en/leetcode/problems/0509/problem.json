@@ -1,0 +1,8 @@
+{
+  "id": 509,
+  "summary": "Read an integer N from 0 through 30. Call the sequence F. Set F(0) equal to 0 and F(1) equal to 1. When N is greater than 1, F(N) equals the sum of the two terms just before it, namely F(N minus 1) plus F(N minus 2). Compute the single term at index N under that rule and write it. Do not print every term from 0 through N. When N is 0 or 1, write the starting value assigned above. Indexes begin at 0, not at 1.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

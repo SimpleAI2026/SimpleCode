@@ -1,6 +1,6 @@
 {
   "id": 394,
-  "summary": "The public title of this exercise is Decode String. Read one token of text without spaces from standard input and compute the result named by that title, using only those values. Print the result as one line of text. The sample below is a short input written for this playground so the printed line can be checked locally. It is not a copy of an example from the problem site. The input stays under one hundred elements so it finishes quickly in the browser.",
+  "summary": "Read one encoded piece of text. When a positive integer k sits immediately before a matching pair of brackets, the fragment inside is copied k times in place. Brackets may be nested, and inner fragments expand first. The text is always valid: there is no stray whitespace, brackets match, letters contain no digits, and digits serve only as copy counts. A count glued to a letter without brackets never appears. Write the fully expanded text.",
   "notes": [
     "Compare after trimming trailing newlines. The input is one token of text without spaces."
   ]

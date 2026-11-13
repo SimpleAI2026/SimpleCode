@@ -1,0 +1,26 @@
+{
+  "id": 1674,
+  "slug": "minimum-moves-to-make-array-complementary",
+  "summary": "读入偶数个整数排成的一条序列，另给上限 limit。长度 n 介于 2 和 105，每个元素以及 limit 都介于 1 和 105。一次改动可以把任意一个元素换成 1 到 limit 里的另一个整数。若对每个下标 i，位置 i 与位置 n 减 1 再减 i 上的两数之和都相同，这条数组就算配对成功。找出让它配对成功所需的最少改动次数，并写出来。",
+  "samples": [
+    {
+      "stdin": "nums = [1,2,4,3], limit = 4\n",
+      "stdout": "1\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "nums = [1,2,2,1], limit = 2\n",
+      "stdout": "2\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/minimum-moves-to-make-array-complementary/",
+    "en": "https://leetcode.com/problems/minimum-moves-to-make-array-complementary/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

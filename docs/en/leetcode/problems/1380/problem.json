@@ -1,0 +1,8 @@
+{
+  "id": 1380,
+  "summary": "Read an m by n matrix of integers in which every value is different from the others. Call a value lucky when it is the smallest value in its own row and also the largest value in its own column. Find every lucky value and write them as a list in any order. Write an empty list when the matrix contains none. Both m and n are between 1 and 50, and every integer is between 1 and 10^5.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

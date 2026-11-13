@@ -1,0 +1,26 @@
+{
+  "id": 862,
+  "slug": "shortest-subarray-with-sum-at-least-k",
+  "summary": "读入一列整数 A 以及正整数 K。A 的长度从 1 到 50000，其中每个数在负 100000 和正 100000 之间，K 从 1 到 1000000000。考察所有连续且非空的区间，把区间内的数相加。在和至少达到 K 的那些区间中，找出包含个数最少的一个，把它的长度写出来。如果没有任何区间的和能够达到 K，写出 -1。",
+  "samples": [
+    {
+      "stdin": "A = [1], K = 1\n",
+      "stdout": "1\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "A = [1,2], K = 4\n",
+      "stdout": "-1\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/shortest-subarray-with-sum-at-least-k/",
+    "en": "https://leetcode.com/problems/shortest-subarray-with-sum-at-least-k/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

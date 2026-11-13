@@ -1,6 +1,6 @@
 {
   "id": 101,
-  "summary": "The public title of this exercise is Symmetric Tree. Read a level-order node count, using a dot for a missing child from standard input and compute the result named by that title, using only those values. Print the result as the word true or false. The sample below is a short input written for this playground so the printed line can be checked locally. It is not a copy of an example from the problem site. The input stays under one hundred elements so it finishes quickly in the browser.",
+  "summary": "Read one binary tree whose nodes store integers. Decide whether the tree forms a mirror across a vertical center line. The left side of the root and the right side must reflect each other: outer nodes pair with outer nodes, inner nodes pair with inner nodes, paired nodes store equal integers, and empty spots must occur in pairs. A lone root and a completely empty tree both count as success. Write the conclusion as yes or no.",
   "notes": [
     "Compare after trimming trailing newlines. The input is a level-order node count, using a dot for a missing child."
   ]

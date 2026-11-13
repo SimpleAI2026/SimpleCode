@@ -1,0 +1,7 @@
+{
+  "id": 611,
+  "summary": "Read a list of non-negative integers. Select three distinct indexes and treat those three values as edge lengths. The three values form a triangle when every pair of lengths adds up to strictly more than the remaining length. Count how many index triples satisfy that test, and write the count. Equal values stay distinct by index, so different index triples are separate.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

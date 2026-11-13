@@ -1,0 +1,21 @@
+{
+  "id": 409,
+  "slug": "longest-palindrome",
+  "summary": "读入一串英文字母，里面既有大写也有小写，总长度不超过 1010。大写与小写算作不同符号，因此 Aa 不能被看成回文。允许丢掉一部分字母，也可以重新排列，目标是拼出尽量长的回文。写出能够达到的最大长度。",
+  "samples": [
+    {
+      "stdin": "\"abccccdd\"\n",
+      "stdout": "7\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/longest-palindrome/",
+    "en": "https://leetcode.com/problems/longest-palindrome/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

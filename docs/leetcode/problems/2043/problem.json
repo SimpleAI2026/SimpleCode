@@ -1,0 +1,21 @@
+{
+  "id": 2043,
+  "slug": "simple-bank-system",
+  "summary": "编写一套简易账户。账户个数 n 至多 100000，编号从 1 连续排到 n。读入每个账户的起始余额，余额以及随后每一笔金额都不超过 1000000000000。接下来处理转账、存入和取出，每一种至多被调用 104 次。账号必须落在 1 到 n 的闭区间里。从某账户转出或取出的金额不得超过它当时的余额。合法调用要改写余额并记成功，非法调用保持余额不变并记失败。按调用次序写出每次是成功还是失败。",
+  "samples": [
+    {
+      "stdin": "[\"Bank\", \"withdraw\", \"transfer\", \"deposit\", \"transfer\", \"withdraw\"]\n[[[10, 100, 20, 50, 30]], [3, 10], [5, 1, 20], [5, 20], [3, 4, 15], [10, 50]]\n",
+      "stdout": "[null, true, true, true, false, false]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/simple-bank-system/",
+    "en": "https://leetcode.com/problems/simple-bank-system/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

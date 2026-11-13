@@ -1,0 +1,21 @@
+{
+  "id": 173,
+  "slug": "binary-search-tree-iterator",
+  "summary": "读入一棵二叉查找树的根。每个结点保存一个整数，左子树里的整数都更小，右子树里的整数都更大。做出一个按从小到大逐个报出结点值的游标。next 每次写出还没报过的整数里最小的那个。hasNext 判断后面是否还剩没报过的整数。可以认为调用 next 时后面确实还有数。平均说来，next 和 hasNext 都只做固定的几步，额外占用与树的高度成正比。空树不会被拿来初始化。",
+  "samples": [
+    {
+      "stdin": "iterator.next()\niterator.next()\niterator.hasNext()\niterator.next()\niterator.hasNext()\niterator.next()\niterator.hasNext()\niterator.next()\niterator.hasNext()\n",
+      "stdout": "3\n7\ntrue\n9\ntrue\n15\ntrue\n20\nfalse\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/binary-search-tree-iterator/",
+    "en": "https://leetcode.com/problems/binary-search-tree-iterator/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

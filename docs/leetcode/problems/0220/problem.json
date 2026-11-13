@@ -1,0 +1,26 @@
+{
+  "id": 220,
+  "slug": "contains-duplicate-iii",
+  "summary": "读入一串整数，以及两个非负整数 k 和 t。判断能否找到两个不同位置，使位置上的数值之差的绝对值不大于 t，同时位置编号之差的绝对值不大于 k。两个条件要同时成立。成立则写出 true，否则写出 false。只满足其中一个条件的位置对不能算作成功。",
+  "samples": [
+    {
+      "stdin": "nums = [1,2,3,1], k = 3, t = 0\n",
+      "stdout": "true\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "nums = [1,0,1,1], k = 1, t = 2\n",
+      "stdout": "true\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/contains-duplicate-iii/",
+    "en": "https://leetcode.com/problems/contains-duplicate-iii/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

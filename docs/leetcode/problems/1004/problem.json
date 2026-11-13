@@ -1,0 +1,26 @@
+{
+  "id": 1004,
+  "slug": "max-consecutive-ones-iii",
+  "summary": "读入一条只含 0 和 1 的数列，以及整数 K。最多可以把 K 个 0 改写成 1，其余数字必须原样保留。改写之后，找出一段连续且里面全是 1 的最长区间，把区间长度写出来。数列长度至多 20000。K 介于 0 和数列长度之间。若一个 0 都不改也能得到全 1 的区间，同样按实际长度计算。",
+  "samples": [
+    {
+      "stdin": "A = [1,1,1,0,0,0,1,1,1,1,0], K = 2\n",
+      "stdout": "6\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "A = [0,0,1,1,0,0,1,1,1,0,1,1,0,0,0,1,1,1,1], K = 3\n",
+      "stdout": "10\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/max-consecutive-ones-iii/",
+    "en": "https://leetcode.com/problems/max-consecutive-ones-iii/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

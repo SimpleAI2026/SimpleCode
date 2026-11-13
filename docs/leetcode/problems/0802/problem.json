@@ -1,0 +1,21 @@
+{
+  "id": 802,
+  "slug": "find-eventual-safe-states",
+  "summary": "读入一张有向图，结点至多10000个，边至多32000条。编号从零排到结点个数减一，每个结点的出边列表已经按升序排好，并且列表里的编号互不相同。从某结点出发，每一步都必须沿着一条出边前进。若无论之后如何选择路线，走过有限步之后都一定会停在没有出边的结点上，则该起点是最终安全的。找出全部最终安全的结点，按编号从小到大写成一个数组。",
+  "samples": [
+    {
+      "stdin": "graph = [[1,2],[2,3],[5],[0],[5],[],[]]\n",
+      "stdout": "[2,4,5,6]\nHere is a diagram of the above graph.\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/find-eventual-safe-states/",
+    "en": "https://leetcode.com/problems/find-eventual-safe-states/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

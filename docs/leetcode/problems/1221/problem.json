@@ -1,0 +1,26 @@
+{
+  "id": 1221,
+  "slug": "split-a-string-in-balanced-strings",
+  "summary": "一条只由字母 L 和 R 构成的字符串，当两种字母的个数一样多时，称为平衡串。读入的字符串 s 本身已经是平衡串，长度在 1 到 1000 之间，每个字符只能是 L 或 R。要把 s 切成若干段，各段按原顺序拼接后仍是整条 s，而且每一段自己也是平衡串。写出最多可以切成的段数。长度上界是 1000。",
+  "samples": [
+    {
+      "stdin": "s = \"RLRRLLRLRL\"\n",
+      "stdout": "4\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "s = \"RLLLLRRRLR\"\n",
+      "stdout": "3\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/split-a-string-in-balanced-strings/",
+    "en": "https://leetcode.com/problems/split-a-string-in-balanced-strings/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

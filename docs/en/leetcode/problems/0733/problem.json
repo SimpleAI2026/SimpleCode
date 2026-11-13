@@ -1,0 +1,7 @@
+{
+  "id": 733,
+  "summary": "Read an image stored as an integer grid, a starting row sr, a starting column sc, and a replacement color newColor. Both the row count and the column count are from 1 to 50, and the start cell lies inside the grid. Every pixel and newColor is an integer from 0 through 65535. Recolor the start cell together with every cell reachable from it by steps that move only up, down, left, or right through cells whose original color equals the start color. Diagonal neighbors are not connected. Write the full grid after that recoloring.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

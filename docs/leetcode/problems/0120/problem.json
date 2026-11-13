@@ -1,0 +1,21 @@
+{
+  "id": 120,
+  "slug": "triangle",
+  "summary": "读入一个由整数排成的三角形。第几行就有几个整数，因此往下的每一行都比上一行恰好多一个数。从最顶上那一个数出发，每走一步只能到达下一行里与当前数相邻的某个位置，并且必须一直走到最底下一行。在所有这种走法中找出沿途整数相加以后最小的和，把这个和写出来。三角形至少包含一行。",
+  "samples": [
+    {
+      "stdin": "[\n[2],\n[3,4],\n[6,5,7],\n[4,1,8,3]\n]\n",
+      "stdout": "11\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/triangle/",
+    "en": "https://leetcode.com/problems/triangle/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

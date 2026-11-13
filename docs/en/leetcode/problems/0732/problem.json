@@ -1,0 +1,7 @@
+{
+  "id": 732,
+  "summary": "Build a calendar that always stores the next booking. Each book call reads integers start and end from the range 0 through 10^9 and inserts the half-open span that includes start and excludes end. A depth of k means some moment of time lies inside k stored spans together. After each insertion, write the largest depth that occurs anywhere on the calendar. A single test makes at most 400 book calls.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": 781,
+  "slug": "rabbits-in-forest",
+  "summary": "读入至多1000个回答，每个回答都是0到999的整数。开口的兔子说出，除自己以外还有多少只与它同色。同一颜色里凡是开口的兔子，报出的数目必须一致，没开口的兔子则不产生记录。找出一种与全部回答都不矛盾的颜色分配，使兔子的总只数最小，并把这个最小只数写出来。",
+  "samples": [
+    {
+      "stdin": "answers = [1, 1, 2]\n",
+      "stdout": "5\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/rabbits-in-forest/",
+    "en": "https://leetcode.com/problems/rabbits-in-forest/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

@@ -1,0 +1,7 @@
+{
+  "id": 222,
+  "summary": "Read a binary tree. Every level above the deepest one is full, and on the deepest level the nodes sit from left to right with no holes between them. Count how many nodes actually exist in the tree and write that integer. An empty tree yields 0. Do not count a missing child slot as a node, and do not treat a level number as the node count.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

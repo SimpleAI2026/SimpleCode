@@ -1,0 +1,26 @@
+{
+  "id": 1573,
+  "slug": "number-of-ways-to-split-a-string",
+  "summary": "读入一条只含字符 0 和 1 的字符串 s。把它切成三段，每一段都不能是空的，而且三段按原次序拼回去必须正好得到 s。只有当三段各自包含的字符 1 个数完全一致时，这种切法才计数。把合法切法的个数对 10^9 加 7 取余之后写出来。s 的长度介于 3 与 100000。",
+  "samples": [
+    {
+      "stdin": "s = \"10101\"\n",
+      "stdout": "4\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "s = \"1001\"\n",
+      "stdout": "0\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/number-of-ways-to-split-a-string/",
+    "en": "https://leetcode.com/problems/number-of-ways-to-split-a-string/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

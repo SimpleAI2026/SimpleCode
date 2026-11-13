@@ -1,0 +1,26 @@
+{
+  "id": 1669,
+  "slug": "merge-in-between-linked-lists",
+  "summary": "读入两条单向链表以及两个位置 a 和 b。第一条的节点数在 3 到 104 之间，第二条在 1 到 104 之间。a 至少为 1，b 不小于 a，并且 b 必须停在第一条倒数第二个节点之前。把第一条里从位置 a 到位置 b 的整段摘掉，再把第二条原样接到这个缺口上。写出接好之后那条链的头。",
+  "samples": [
+    {
+      "stdin": "list1 = [0,1,2,3,4,5], a = 3, b = 4, list2 = [1000000,1000001,1000002]\n",
+      "stdout": "[0,1,2,1000000,1000001,1000002,5]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "list1 = [0,1,2,3,4,5,6], a = 2, b = 5, list2 = [1000000,1000001,1000002,1000003,1000004]\n",
+      "stdout": "[0,1,1000000,1000001,1000002,1000003,1000004,6]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/merge-in-between-linked-lists/",
+    "en": "https://leetcode.com/problems/merge-in-between-linked-lists/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

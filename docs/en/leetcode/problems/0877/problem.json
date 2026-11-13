@@ -1,0 +1,7 @@
+{
+  "id": 877,
+  "summary": "Read a straight line of stone piles whose count is an even integer from 2 to 500. Every pile contains between 1 and 500 stones. Adding every pile produces an odd total, which removes the chance of a draw. Two players alternate, and the player who starts takes the first turn. A turn removes the entire pile now sitting at the left tip, or the entire pile now sitting at the right tip. Both sides choose the best moves they can. Write true when the starting player ends with strictly more stones. Write false when the other player ends with more.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

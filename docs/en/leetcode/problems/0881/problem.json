@@ -1,0 +1,8 @@
+{
+  "id": 881,
+  "summary": "Read the weight of every person and the load cap of one boat, called limit. A boat may seat one person or two people on a single trip, but the weights on board must add up to no more than limit. No person is heavier than that cap alone. Find how few boats are enough to ferry the whole group and write that count. The group has size at most 50000, and both each weight and the cap stay at most 30000.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

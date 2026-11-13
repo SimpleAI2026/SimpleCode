@@ -1,0 +1,7 @@
+{
+  "id": 485,
+  "summary": "Read an array that holds only the digits 0 and 1. Its length is a positive integer and is at most 10000. Scanning from left to right, a run is a stretch of adjacent entries that are all 1 and that contain no 0 inside. Find how many 1 digits sit in the longest run, and write that count. If the array contains no 1 at all, write 0. One isolated 1 still counts as a run whose length is 1. Two runs split by a 0 must not be joined before the comparison.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

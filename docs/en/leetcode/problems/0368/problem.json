@@ -1,0 +1,8 @@
+{
+  "id": 368,
+  "summary": "Read a list of positive integers that are all different from one another. The list length is between 1 and 1000, and each integer is between 1 and 2 times 10 to the 9th power. Choose a subset with as many members as possible so that, for every two members, the bigger one is divisible by the smaller one. If several subsets are tied for size, write any one of them.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

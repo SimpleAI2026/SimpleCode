@@ -1,6 +1,6 @@
 {
   "id": 41,
-  "summary": "The public title of this exercise is First Missing Positive. Read tokens in the same order as the method parameters from standard input and compute the result named by that title, using only those values. Print the result as one integer. The sample below is a short input written for this playground so the printed line can be checked locally. It is not a copy of an example from the problem site. The input stays under one hundred elements so it finishes quickly in the browser.",
+  "summary": "Read an unordered list of integers. Negatives, zeros, and repeated values may all appear. Starting at 1 and counting upward through the positive integers, find the smallest one that never occurs in the list, and write it. Base the decision only on the values actually read, without assuming a fixed ceiling printed beside the task. When 1 itself is absent, the answer is 1.",
   "notes": [
     "Compare after trimming trailing newlines. The input is tokens in the same order as the method parameters."
   ]

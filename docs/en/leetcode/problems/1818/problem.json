@@ -1,0 +1,8 @@
+{
+  "id": 1818,
+  "summary": "Read two sequences of positive integers that share a length n. The length n is between 1 and 100000, and every value is at most 100000. The absolute gap total adds the absolute difference of the two values at each shared index. You may replace at most one entry of the first sequence by a value that already occurs somewhere in that first sequence, in order to shrink the total. Write the smallest total obtainable after that optional replacement, then reduce it modulo 1000000007.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

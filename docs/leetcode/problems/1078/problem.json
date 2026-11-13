@@ -1,0 +1,26 @@
+{
+  "id": 1078,
+  "slug": "occurrences-after-bigram",
+  "summary": "读入一段文本和两个词。文本里的词用空格隔开，文本总长度从 1 到 1000，两个词的长度各自从 1 到 10，词中只有小写英文字母。从左到右查看紧连的三个词。当前两个词依次正好是读入的那两个词时，把第三个词记下来。同一段里可以记下不止一次。按从左到右的次序写出记下来的全部词。",
+  "samples": [
+    {
+      "stdin": "text = \"alice is a good girl she is a good student\", first = \"a\", second = \"good\"\n",
+      "stdout": "[\"girl\",\"student\"]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "text = \"we will we will rock you\", first = \"we\", second = \"will\"\n",
+      "stdout": "[\"we\",\"rock\"]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/occurrences-after-bigram/",
+    "en": "https://leetcode.com/problems/occurrences-after-bigram/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

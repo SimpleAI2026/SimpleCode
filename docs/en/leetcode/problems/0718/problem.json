@@ -1,0 +1,7 @@
+{
+  "id": 718,
+  "summary": "Read two integer arrays called A and B. Each array contains between 1 and 1000 values, and every value is an integer that is at least 0 and strictly less than 100. Find one contiguous block inside A and one contiguous block inside B that hold exactly the same numbers in the same order. Write the greatest length any such matching pair of blocks can reach.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

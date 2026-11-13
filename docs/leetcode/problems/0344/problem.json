@@ -1,0 +1,26 @@
+{
+  "id": 344,
+  "slug": "reverse-string",
+  "summary": "读入一列字符，这些字符都是可打印的 ASCII。把这一列就地首尾交换，使最左边的字符移到最右边，其余字符移到对称的位置。不要另外申请一列来保存结果，额外占用的空间只能是常数。交换完成后，把这一列写出来。",
+  "samples": [
+    {
+      "stdin": "[\"h\",\"e\",\"l\",\"l\",\"o\"]\n",
+      "stdout": "[\"o\",\"l\",\"l\",\"e\",\"h\"]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "[\"H\",\"a\",\"n\",\"n\",\"a\",\"h\"]\n",
+      "stdout": "[\"h\",\"a\",\"n\",\"n\",\"a\",\"H\"]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/reverse-string/",
+    "en": "https://leetcode.com/problems/reverse-string/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

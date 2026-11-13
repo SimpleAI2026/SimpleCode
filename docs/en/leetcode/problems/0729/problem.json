@@ -1,0 +1,7 @@
+{
+  "id": 729,
+  "summary": "Build a calendar that supports a book operation. Each call reads two integers start and end, both in the range from 0 through 10^9, and names the half-open span that includes the left endpoint and excludes the right endpoint. If the new span shares any time with a span already stored, reject the call, write false, and leave storage unchanged. If there is no overlap, store the span and write true. One test performs at most 1000 book calls.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "id": 383,
+  "slug": "ransom-note",
+  "summary": "读入两段仅由英文小写字母构成的文本，前一段是便条，后一段是剪报来源。两段长度都在 1 到 100000 之间。剪报里的每个字母最多只能剪下来用一次。若便条上的每个字母都能这样配齐，写出 true，否则写出 false。",
+  "samples": [
+    {
+      "stdin": "ransomNote = \"a\", magazine = \"b\"\n",
+      "stdout": "false\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "ransomNote = \"aa\", magazine = \"ab\"\n",
+      "stdout": "false\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/ransom-note/",
+    "en": "https://leetcode.com/problems/ransom-note/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

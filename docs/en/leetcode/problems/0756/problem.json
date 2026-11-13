@@ -1,0 +1,8 @@
+{
+  "id": 756,
+  "summary": "Stack blocks whose colors are single letters into a pyramid. Read a bottom row as a string of length 2 to 8, and read a list allowed of 0 to 200 rules. Each rule is a string of length 3, and every letter is chosen from A through G. A rule ABC allows block C to sit directly above the neighboring pair with A on the left and B on the right. Every higher row contains one fewer block than the row beneath it, until only one cap block remains. Decide whether some placement reaches that cap. Write true or write false.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

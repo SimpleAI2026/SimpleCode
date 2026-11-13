@@ -1,0 +1,8 @@
+{
+  "id": 478,
+  "summary": "When the object is constructed, read three floating point numbers: the center horizontal coordinate, the center vertical coordinate, and the radius. Write a function called randPoint. Each call must draw one point inside the disk so that every place in the disk is equally likely. A point that lands exactly on the rim still counts as inside, so keep it. Return an array of length 2, with the random horizontal coordinate first and the vertical coordinate second, both still floating point numbers. The center and the radius stay fixed across calls.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

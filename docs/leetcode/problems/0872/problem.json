@@ -1,0 +1,21 @@
+{
+  "id": 872,
+  "slug": "leaf-similar-trees",
+  "summary": "读入两棵二叉树，每棵树上的结点个数在 1 和 100 之间。从左往右只抄下叶子上的数值，叶子是指左右两边都没有孩子的结点。比较两串抄下来的数值。若数值和先后次序都完全一样，写出真，否则写出假。长在内部结点上的数值不参与比较。某棵树也可以只有单独的一个叶子。",
+  "samples": [
+    {
+      "stdin": "tree above, the leaf value sequence is (6, 7, 4, 9, 8).\n\nTwo binary trees are considered *leaf-similar* if their leaf value sequence is the same.\n",
+      "stdout": "true if and only if the two given trees with head nodes root1 and root2 are leaf-similar.\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/leaf-similar-trees/",
+    "en": "https://leetcode.com/problems/leaf-similar-trees/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

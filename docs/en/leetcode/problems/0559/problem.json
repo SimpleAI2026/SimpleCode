@@ -1,0 +1,8 @@
+{
+  "id": 559,
+  "summary": "Read a tree in which a node may have many children. The total number of nodes runs from 0 to 10000, and the tree height is at most 1000. Depth here means how many nodes lie on a walk from the root to the farthest leaf, counting the root as well. When the tree has no nodes, the depth is 0. Find the greatest depth and write it. The input is listed level by level, and an empty mark separates the children that share one parent.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

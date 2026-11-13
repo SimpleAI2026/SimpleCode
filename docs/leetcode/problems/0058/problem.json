@@ -1,0 +1,26 @@
+{
+  "id": 58,
+  "slug": "length-of-last-word",
+  "summary": "读入一段长度从 1 到 104 的文本，其中只有英文字母和空格。空格把文本隔成若干单词，而且至少存在一个单词。一个单词是一段连续字母，内部没有空格。找出最靠右端的那个单词，把它包含的字母个数写出来。这个单词前后的空格都不算进个数。即使文本末尾还有空格，最后那个单词仍然按字母计数。",
+  "samples": [
+    {
+      "stdin": "s = \"Hello World\"\n",
+      "stdout": "5\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "s = \" fly me to the moon \"\n",
+      "stdout": "4\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/length-of-last-word/",
+    "en": "https://leetcode.com/problems/length-of-last-word/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

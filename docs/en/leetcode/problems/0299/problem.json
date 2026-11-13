@@ -1,0 +1,8 @@
+{
+  "id": 299,
+  "summary": "Read two digit strings of equal length. The first string is the secret and the second string is one guess. A bull is a digit that matches the secret at the same index. A cow is a digit that occurs in the secret but not at that index. One index cannot count both as a bull and as a cow. Match repeated digits by how many times each digit occurs. Write the hint in the form xAyB. Here x counts bulls and y counts cows. Each length runs from 1 to 1000.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

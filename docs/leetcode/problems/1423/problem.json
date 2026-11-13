@@ -1,0 +1,26 @@
+{
+  "id": 1423,
+  "slug": "maximum-points-you-can-obtain-from-cards",
+  "summary": "一排卡牌，每张写着一个正整数点数，全部记在 cardPoints 里。一共要抽走恰好 k 张。每一次只能从这一排当前的最左端或最右端抽走一张。得分等于抽到的点数相加。把能够得到的最高得分写出来。牌的张数介于 1 与 100000，单张点数介于 1 与 10000，k 介于 1 与张数之间。",
+  "samples": [
+    {
+      "stdin": "cardPoints = [1,2,3,4,5,6,1], k = 3\n",
+      "stdout": "12\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "cardPoints = [2,2,2], k = 2\n",
+      "stdout": "4\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/maximum-points-you-can-obtain-from-cards/",
+    "en": "https://leetcode.com/problems/maximum-points-you-can-obtain-from-cards/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

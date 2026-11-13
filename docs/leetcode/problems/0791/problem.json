@@ -1,0 +1,21 @@
+{
+  "id": 791,
+  "slug": "custom-sort-string",
+  "summary": "读入两条仅由小写字母构成的字符串。第一条称为顺序串，长度至多26，每个字母至多出现一次。第二条称为待排串，长度至多200。重排待排串的字符时，若某字母在顺序串中更靠左，它在结果中也必须更靠左。顺序串里没有的字母，位置可以自由安排。写出任意一条满足上述先后关系的重排结果。",
+  "samples": [
+    {
+      "stdin": "order = \"cba\"\nstr = \"abcd\"\n",
+      "stdout": "\"cbad\"\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/custom-sort-string/",
+    "en": "https://leetcode.com/problems/custom-sort-string/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

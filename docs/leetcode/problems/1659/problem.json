@@ -1,0 +1,26 @@
+{
+  "id": 1659,
+  "slug": "maximize-grid-happiness",
+  "summary": "读入四个整数：行数 m、列数 n、内向者人数与外向者人数。m 和 n 都介于 1 与 5，两种人数都介于 0 与 m 乘 n 和 6 的较小值之间。人可以有一部分不放入网格。内向者的起始心情分是 120，每多一个上下左右紧邻的居住者就减去 30。外向者的起始心情分是 40，每多一个这样的紧邻居住者就加上 20。整张网格的分数是所有入住者心情分之和。写出能够达到的最高网格分数。",
+  "samples": [
+    {
+      "stdin": "m = 2, n = 3, introvertsCount = 1, extrovertsCount = 2\n",
+      "stdout": "240\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "m = 3, n = 1, introvertsCount = 2, extrovertsCount = 1\n",
+      "stdout": "260\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/maximize-grid-happiness/",
+    "en": "https://leetcode.com/problems/maximize-grid-happiness/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

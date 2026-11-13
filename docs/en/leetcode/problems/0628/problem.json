@@ -1,0 +1,8 @@
+{
+  "id": 628,
+  "summary": "Read a list of integers whose length runs from 3 to 10000. Every entry lies between -1000 and 1000, and the product of any three entries fits in a 32-bit signed integer. Pick three different indexes so the product of their values is as large as possible, and write that product. Keep the sign when a negative entry takes part in the multiplication.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

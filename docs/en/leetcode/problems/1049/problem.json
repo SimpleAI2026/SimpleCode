@@ -1,0 +1,7 @@
+{
+  "id": 1049,
+  "summary": "Read the positive integer weights of a pile of stones. The pile contains from 1 to 30 stones, and each weight is an integer from 1 to 100. On every turn, select any pair and smash them. Equal weights make both stones disappear. Unequal weights make the lighter stone disappear and replace the heavier weight by their positive difference. Keep going until one stone or none remains. Over every sequence of choices, find the least weight that the final stone can have. Use 0 when the pile can be cleared completely. Write that least weight.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

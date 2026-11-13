@@ -1,0 +1,8 @@
+{
+  "id": 1704,
+  "summary": "Read a string s whose length is even and lies between 2 and 1000. It contains only uppercase and lowercase English letters. Cut it at the midpoint into a front half and a back half of equal length. Treat the halves as alike when they contain the same count of vowels. A vowel is a, e, i, o, or u, and the matching capital letter counts too. Write true when the halves are alike, and write false otherwise.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

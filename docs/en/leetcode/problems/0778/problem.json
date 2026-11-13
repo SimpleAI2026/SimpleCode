@@ -1,6 +1,6 @@
 {
   "id": 778,
-  "summary": "The public title of this exercise is Swim In Rising Water. Read tokens in the same order as the method parameters from standard input and compute the result named by that title, using only those values. Print the result as one integer. The sample below is a short input written for this playground so the printed line can be checked locally. It is not a copy of an example from the problem site. The input stays under one hundred elements so it finishes quickly in the browser.",
+  "summary": "Read a square elevation table whose side length N lies between 2 and 50. The cells hold distinct integers and together they are exactly 0 through N squared minus 1. At each moment the water surface equals that moment everywhere. A step between cells that share a side is legal only while both elevations sit at or below the surface, movement inside a cell costs nothing, and the path must stay inside the table. Begin at the upper left cell and write the earliest moment the lower right cell becomes reachable.",
   "notes": [
     "Compare after trimming trailing newlines. The input is tokens in the same order as the method parameters."
   ]

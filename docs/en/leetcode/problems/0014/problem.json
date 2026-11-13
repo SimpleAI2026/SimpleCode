@@ -1,6 +1,6 @@
 {
   "id": 14,
-  "summary": "The public title of this exercise is Longest Common Prefix. Read a count followed by that many strings from standard input and compute the result named by that title, using only those values. Print the result as one line of text. The sample below is a short input written for this playground so the printed line can be checked locally. It is not a copy of an example from the problem site. The input stays under one hundred elements so it finishes quickly in the browser.",
+  "summary": "Read from 1 to 200 strings. Each string has length from 0 through 200 and holds only lowercase English letters. Find the longest opening fragment that every string owns, where ownership means the start of each string matches that fragment character by character. Write the fragment. If the strings own no opening character in common, write an empty result.",
   "notes": [
     "Compare after trimming trailing newlines. The input is a count followed by that many strings."
   ]

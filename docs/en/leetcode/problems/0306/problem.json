@@ -1,0 +1,8 @@
+{
+  "id": 306,
+  "summary": "Read a string whose characters are digits from 0 through 9. Decide whether it can be cut into at least 3 integers so that, starting at the third integer, each one equals the sum of the two integers just before it. A cut integer may not have a leading zero, so cuts such as 1, 2, 03 and 1, 02, 3 are illegal. Write yes or no for whether such a cut exists.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

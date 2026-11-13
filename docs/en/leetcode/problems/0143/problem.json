@@ -1,6 +1,6 @@
 {
   "id": 143,
-  "summary": "The public title of this exercise is Reorder List. Read a node count followed by the integer stored in each node from standard input and compute the result named by that title, using only those values. Print the result as the input value after the method updates it. The sample below is a short input written for this playground so the printed line can be checked locally. It is not a copy of an example from the problem site. The input stays under one hundred elements so it finishes quickly in the browser.",
+  "summary": "Read a singly linked list. Relink the nodes into this order: the head, the tail, the second node, the node second from the tail, the third node, the node third from the tail, and so on until every node appears once. Do not rewrite the integer stored inside a node. Change only successor pointers. Write the list after that relinking. When the list has no node or only one node, leave it unchanged.",
   "notes": [
     "Compare after trimming trailing newlines. The input is a node count followed by the integer stored in each node."
   ]

@@ -1,0 +1,26 @@
+{
+  "id": 1658,
+  "slug": "minimum-operations-to-reduce-x-to-zero",
+  "summary": "读入整数列 nums 与整数 x。列长介于 1 与 105，每个元素介于 1 与 104，x 介于 1 与 109。一次操作只能去掉当前最左端或最右端的一个元素，并把 x 减去这个元素。列会因为去掉元素而变短，后续操作看到的是变短后的列。若能把 x 正好减成 0，写出最少的操作次数；做不到就写出 -1。",
+  "samples": [
+    {
+      "stdin": "nums = [1,1,4,2,3], x = 5\n",
+      "stdout": "2\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "nums = [5,6,7,8,9], x = 4\n",
+      "stdout": "-1\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/minimum-operations-to-reduce-x-to-zero/",
+    "en": "https://leetcode.com/problems/minimum-operations-to-reduce-x-to-zero/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

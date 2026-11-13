@@ -1,0 +1,21 @@
+{
+  "id": 454,
+  "slug": "4sum-ii",
+  "summary": "读入四个等长的整数数组 A、B、C、D。公共长度 N 从 0 到 500。每个整数都落在负的二的二十八次方到二的二十八次方减一之间。统计有多少个下标四元组，使四个数组里对应位置的数加起来等于 0。这个组数不会超过二的三十一次方减一。把组数写出来。",
+  "samples": [
+    {
+      "stdin": "A = [ 1, 2]\nB = [-2,-1]\nC = [-1, 2]\nD = [ 0, 2]\n",
+      "stdout": "2\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/4sum-ii/",
+    "en": "https://leetcode.com/problems/4sum-ii/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

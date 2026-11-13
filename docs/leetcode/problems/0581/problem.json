@@ -1,0 +1,26 @@
+{
+  "id": 581,
+  "slug": "shortest-unsorted-continuous-subarray",
+  "summary": "读入一列整数，长度在 1 到 104 之间，每个整数都落在 -105 到 105。请找出一段连续下标，只把这一段按从小到大重排后，整列都变成升序，并且这段在所有满足条件的片段里最短。把这段含有的元素个数写出来。若整列一开始就已经升序，则写出 0。",
+  "samples": [
+    {
+      "stdin": "nums = [2,6,4,8,10,9,15]\n",
+      "stdout": "5\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "nums = [1,2,3,4]\n",
+      "stdout": "0\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/shortest-unsorted-continuous-subarray/",
+    "en": "https://leetcode.com/problems/shortest-unsorted-continuous-subarray/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

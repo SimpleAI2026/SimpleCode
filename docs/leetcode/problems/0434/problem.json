@@ -1,0 +1,26 @@
+{
+  "id": 434,
+  "slug": "number-of-segments-in-a-string",
+  "summary": "读入一条字符串，长度在 0 到 300 之间。字符只含大小写英文字母、数字，或者 !@#$%^&*()_+-=',.: 这一组符号，空白只会是普通空格。把连续的一截非空格字符算成一段。统计这样的段一共有多少个，并把这个个数写出来。",
+  "samples": [
+    {
+      "stdin": "s = \"Hello, my name is John\"\n",
+      "stdout": "5\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "s = \"Hello\"\n",
+      "stdout": "1\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/number-of-segments-in-a-string/",
+    "en": "https://leetcode.com/problems/number-of-segments-in-a-string/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

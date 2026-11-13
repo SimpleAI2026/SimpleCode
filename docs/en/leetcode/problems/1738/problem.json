@@ -1,0 +1,8 @@
+{
+  "id": 1738,
+  "summary": "Read a matrix of non-negative integers. Both the row count and the column count lie between 1 and 1000, and every cell is at most 1000000. Also read a positive integer k that starts counting at 1 and never exceeds the cell count. For any cell, take the closed rectangle from the top-left corner through that cell and combine every cell inside it with bitwise exclusive or. That result is the cell score. Find the kth largest score and write it.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

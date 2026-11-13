@@ -1,0 +1,8 @@
+{
+  "id": 1030,
+  "summary": "Read two positive integers that give how many rows and columns a grid has, plus the row and column of one start cell. Row indexes run from 0 up to the row count minus 1, and column indexes run the same way. Both dimensions lie between 1 and 100, and the start cell lies inside the grid. List every cell as a coordinate pair, ordered by Manhattan distance from the start, nearer cells first. That distance is the absolute row gap plus the absolute column gap. Cells that share a distance may appear in any mutual order. Write the full list.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

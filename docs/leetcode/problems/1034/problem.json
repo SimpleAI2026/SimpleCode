@@ -1,0 +1,26 @@
+{
+  "id": 1034,
+  "slug": "coloring-a-border",
+  "summary": "读入一块若干行若干列的颜色网格，以及起点的行号、列号和一种准备涂上的新颜色。格子里的整数就是该处原来的颜色。行数和列数都在 1 到 50 之间，各种颜色含新颜色在内都在 1 到 1000 之间，起点落在网格内。颜色相同并且共享一条边的格子属于同一片区域。区域中的格子如果有一边挨着区域以外，或者它贴着整张网格的外沿，就算这片区域的边缘。把含有起点的那片区域的边缘涂成新颜色，别的格子保持原样。写出涂完的网格。",
+  "samples": [
+    {
+      "stdin": "grid = [[1,1],[1,2]], row = 0, col = 0, color = 3\n",
+      "stdout": "[[3,3],[3,2]]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "grid = [[1,2,2],[2,3,2]], row = 0, col = 1, color = 3\n",
+      "stdout": "[[1,3,3],[2,3,3]]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/coloring-a-border/",
+    "en": "https://leetcode.com/problems/coloring-a-border/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

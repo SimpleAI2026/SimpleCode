@@ -1,0 +1,8 @@
+{
+  "id": 991,
+  "summary": "Read two positive integers X and Y. A display begins on X. The only working controls multiply the shown value by two or subtract one from the shown value. Find how few control presses are required to make the display equal Y, and write that count. Both inputs lie in the closed range from 1 to 10^9. Each control may be used any number of times, and the presses may come in any sequence. The shown value remains an integer after every press.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

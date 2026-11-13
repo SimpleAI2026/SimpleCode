@@ -1,0 +1,26 @@
+{
+  "id": 726,
+  "slug": "number-of-atoms",
+  "summary": "读入一条化学式，长度在1到1000之间，只含字母、数字和圆括号，并且是合法式子。原子名由一个大写字母开头，后面可跟若干小写字母。数量大于1时，名字或括号后面紧跟数字；数量等于1时不写数字。两段式子直接相连仍是式子，括号包住的式子右侧还可以带倍数。统计每种原子的总数，按名字的词典顺序连成一串：先写名字，数量大于1再写数字，数量为1只写名字，中间不留空格。",
+  "samples": [
+    {
+      "stdin": "formula = \"H2O\"\n",
+      "stdout": "\"H2O\"\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "formula = \"Mg(OH)2\"\n",
+      "stdout": "\"H2MgO2\"\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/number-of-atoms/",
+    "en": "https://leetcode.com/problems/number-of-atoms/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

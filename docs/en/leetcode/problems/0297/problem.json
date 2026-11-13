@@ -1,6 +1,6 @@
 {
   "id": 297,
-  "summary": "The public title of this exercise is Serialize And Deserialize Binary Tree. Read one command per line from standard input and compute the result named by that title, using only those values. Print the result as one result line for each command. The sample below is a short input written for this playground so the printed line can be checked locally. It is not a copy of an example from the problem site. The input stays under one hundred elements so it finishes quickly in the browser.",
+  "summary": "Prepare two inverse operations for a binary tree. First turn the tree into one piece of text. Then rebuild, from that text, a tree with the same shape and the same node values. The empty tree must survive a full round trip. The node count lies between 0 and 104. The absolute value of every node value is at most 1000. Any text format is acceptable when the rebuilt tree matches the original. Implement both operations.",
   "notes": [
     "Compare after trimming trailing newlines. The input is one command per line."
   ]

@@ -1,0 +1,8 @@
+{
+  "id": 766,
+  "summary": "Read a matrix of integers. Its row count and its column count each lie between 1 and 20, and every entry is an integer from 0 through 99. Call the matrix Toeplitz when each diagonal that runs from the upper left toward the lower right holds only one repeated value. Decide whether the matrix you read has that property. Write true when it does, and write false when it does not.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

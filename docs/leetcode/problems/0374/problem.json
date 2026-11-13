@@ -1,0 +1,26 @@
+{
+  "id": 374,
+  "slug": "guess-number-higher-or-lower",
+  "summary": "有人在 1 到 n 之间秘密选定一个整数，n 的上限是 231 减 1，选定的数也落在这个闭区间里。你可以多次调用现成的 guess 函数去猜。返回 0 表示猜对，返回负数表示秘密数比你猜的小，返回正数表示秘密数比你猜的大。找出秘密数并写出来。",
+  "samples": [
+    {
+      "stdin": "n = 10, pick = 6\n",
+      "stdout": "6\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "n = 1, pick = 1\n",
+      "stdout": "1\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/guess-number-higher-or-lower/",
+    "en": "https://leetcode.com/problems/guess-number-higher-or-lower/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

@@ -1,6 +1,6 @@
 {
   "id": 208,
-  "summary": "The public title of this exercise is Implement Trie Prefix Tree. Read one command per line from standard input and compute the result named by that title, using only those values. Print the result as one result line for each command. The sample below is a short input written for this playground so the printed line can be checked locally. It is not a copy of an example from the problem site. The input stays under one hundred elements so it finishes quickly in the browser.",
+  "summary": "Build a dictionary for lowercase words and answer three calls. insert stores one non-empty word, and storing the same word again still means it is present. search tells whether that entire word was stored, writing true or false. startsWith tells whether at least one stored word begins with the supplied fragment, writing true or false. Every input contains only letters from a through z and is never an empty string. A fragment may be shorter than a stored word. Calls may arrive in any mix after the dictionary is created.",
   "notes": [
     "Compare after trimming trailing newlines. The input is one command per line."
   ]

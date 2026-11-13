@@ -1,0 +1,26 @@
+{
+  "id": 953,
+  "slug": "verifying-an-alien-dictionary",
+  "summary": "读入若干个由小写字母拼成的单词，以及一份长度为 26 的字母顺序。单词个数从 1 到 100，每个单词的长度从 1 到 20。这份顺序是二十六位小写字母的一种排列，排在前面的字母更小。按照这份顺序比较相邻单词：先看第一个不同的字母，前者更小则顺序正确；若一个单词是另一个的前缀，较短的那个必须排在前面。判断整列单词是否已经按这个规则从小到大排好。是则写出真，否则写出假。",
+  "samples": [
+    {
+      "stdin": "words = [\"hello\",\"leetcode\"], order = \"hlabcdefgijkmnopqrstuvwxyz\"\n",
+      "stdout": "true\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "words = [\"word\",\"world\",\"row\"], order = \"worldabcefghijkmnpqstuvxyz\"\n",
+      "stdout": "false\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/verifying-an-alien-dictionary/",
+    "en": "https://leetcode.com/problems/verifying-an-alien-dictionary/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

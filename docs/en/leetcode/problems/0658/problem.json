@@ -1,0 +1,8 @@
+{
+  "id": 658,
+  "summary": "Read an array of integers already arranged from small to large, plus a positive integer k and an integer x. The array is non-empty, its length is at most 10000, and k is always smaller than that length. The absolute value of each array entry and of x is at most 10000. Find the k entries nearest to x. If two entries are the same distance from x, keep the smaller one first. Write the chosen entries from small to large.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

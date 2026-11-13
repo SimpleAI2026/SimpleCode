@@ -1,0 +1,8 @@
+{
+  "id": 884,
+  "summary": "Read two passages named A and B. A passage is a sequence of words split by spaces, every word uses only lowercase letters, and each passage has length at most 200 characters, or it may be empty. Mark a word as rare when it shows up exactly one time inside one passage and cannot be found at all inside the other passage. Collect every rare word and write them as a list. Any order is acceptable.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

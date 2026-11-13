@@ -1,0 +1,8 @@
+{
+  "id": 1732,
+  "summary": "Read the integer list named gain, which holds n entries. n is from 1 to 100, and each difference is from -100 through 100. A ride starts at altitude 0 and visits n + 1 points. The entry gain[i] is the altitude change from point i to point i + 1 and may be positive or negative. Compute the altitude of every point, find the highest one, and write it. The starting point takes part in the comparison.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

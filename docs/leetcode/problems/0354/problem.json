@@ -1,0 +1,21 @@
+{
+  "id": 354,
+  "slug": "russian-doll-envelopes",
+  "summary": "读入若干只信封，每一只用两个正整数表示宽度和高度。一只较小的信封要放进另一只，必须宽度更小而且高度也更小，两个方向都是严格小于。不允许把信封转九十度之后再比较大小。问最多能有多少只信封套成一串，里面一只接着一只。把这个数量写出来。",
+  "samples": [
+    {
+      "stdin": "[[5,4],[6,4],[6,7],[2,3]]\n",
+      "stdout": "3\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/russian-doll-envelopes/",
+    "en": "https://leetcode.com/problems/russian-doll-envelopes/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

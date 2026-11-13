@@ -1,0 +1,26 @@
+{
+  "id": 890,
+  "slug": "find-and-replace-pattern",
+  "summary": "读入若干个单词和一条模式。模式与每个单词都只用小写英文字母，彼此长度相等，模式最长 20，单词个数最多 50。若能规定一种字母到字母的一一对应，把模式里的每个字母替换之后正好得到某个单词，这个单词就算匹配。两个不一样的字母不能映到同一个字母。把所有匹配的单词找出来，次序不限地写下来。",
+  "samples": [
+    {
+      "stdin": "words = [\"abc\",\"deq\",\"mee\",\"aqq\",\"dkd\",\"ccc\"], pattern = \"abb\"\n",
+      "stdout": "[\"mee\",\"aqq\"]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "words = [\"a\",\"b\",\"c\"], pattern = \"a\"\n",
+      "stdout": "[\"a\",\"b\",\"c\"]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/find-and-replace-pattern/",
+    "en": "https://leetcode.com/problems/find-and-replace-pattern/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

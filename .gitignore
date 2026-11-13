@@ -30,6 +30,8 @@ wasm/rust/*
 # third-party source and toolchain caches (clone / vendor separately, see README)
 thirdparty/runno/
 thirdparty/cache/
+# LeetCode-Go is source material for the rewrite step only. Do not commit it.
+thirdparty/LeetCode-Go/
 
 # tests / artifacts
 tests/screenshots/

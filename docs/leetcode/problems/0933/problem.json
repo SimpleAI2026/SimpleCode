@@ -1,0 +1,21 @@
+{
+  "id": 933,
+  "slug": "number-of-recent-calls",
+  "summary": "实现一个只提供查询的计数器。每次查询带来一个时刻 t，单位是毫秒，并且保证后一次的 t 严格大于前一次。t 的范围是 1 到 1000000000。一次测试里查询次数至多 10000。每次查询都要统计最近 3000 毫秒内到来的次数，也就是落在闭区间从 t 减 3000 到 t 之间的全部查询，包含当前这一次。把这个次数写出来。",
+  "samples": [
+    {
+      "stdin": "inputs = [\"RecentCounter\",\"ping\",\"ping\",\"ping\",\"ping\"], inputs = [[],[1],[100],[3001],[3002]]\n",
+      "stdout": "[null,1,2,3,3]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/number-of-recent-calls/",
+    "en": "https://leetcode.com/problems/number-of-recent-calls/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

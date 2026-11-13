@@ -1,0 +1,8 @@
+{
+  "id": 1283,
+  "summary": "Read a list of positive integers and a threshold. Choose one positive integer to act as a divisor. Divide every list value by that divisor, round each quotient up to a whole number, and add the rounded quotients. Find the smallest divisor that keeps this total less than or equal to the threshold, and write that divisor. A suitable divisor is guaranteed to exist. The list length is at most 5 times 10^4, each value is at most 10^6, and the threshold is at least the list length and at most 10^6.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

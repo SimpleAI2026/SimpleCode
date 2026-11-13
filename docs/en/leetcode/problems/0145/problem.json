@@ -1,0 +1,7 @@
+{
+  "id": 145,
+  "summary": "Read a binary tree. Each node stores an integer, and either child may be absent. Expand the left subtree first, then expand the right subtree, and record the root value only after both subtrees are done. Write the integers in that visiting order. Skip a child that is absent. When the tree is only a root, write that single integer. When the tree is empty, write an empty sequence. Every subtree follows this same order.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

@@ -1,6 +1,6 @@
 {
   "id": 846,
-  "summary": "The public title of this exercise is Hand of Straights. Read a count, that many integers, and one target integer from standard input and compute the result named by that title, using only those values. Print the result as the word true or false. The sample below is a short input written for this playground so the printed line can be checked locally. It is not a copy of an example from the problem site. The input stays under one hundred elements so it finishes quickly in the browser.",
+  "summary": "Read the face values on a hand of cards and an integer group size. The hand has between 1 and 10000 cards. Each face value is an integer from 0 through 1000000000. The group size is at least 1 and at most the number of cards. Decide whether the cards can be packed into groups that each use that many cards, with no card reused. Inside a group the face values must be consecutive integers, each appearing once in that group. Write true when such a packing exists and write false otherwise.",
   "notes": [
     "Compare after trimming trailing newlines. The input is a count, that many integers, and one target integer."
   ]

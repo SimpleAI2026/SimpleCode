@@ -1,0 +1,26 @@
+{
+  "id": 717,
+  "slug": "1-bit-and-2-bit-characters",
+  "summary": "读入一条只含数字0和1的比特序列，长度在1到1000之间。单独的0算一种符号，10和11各自算另一种符号。整条序列的末尾一定是0。判断每一种符合规则的切分是不是都会把末尾符号切成单独的那个0。若必然如此，写出true，否则写出false。",
+  "samples": [
+    {
+      "stdin": "bits = [1, 0, 0]\n",
+      "stdout": "True\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "bits = [1, 1, 1, 0]\n",
+      "stdout": "False\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/1-bit-and-2-bit-characters/",
+    "en": "https://leetcode.com/problems/1-bit-and-2-bit-characters/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

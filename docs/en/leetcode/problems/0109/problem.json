@@ -1,0 +1,7 @@
+{
+  "id": 109,
+  "summary": "Read a singly linked list already linked from small values toward large values, with one integer on each node. Build a binary search tree from those integers so that, at every node, the left subtree and the right subtree differ in depth by at most one. Depth counts nodes from that node down to its farthest descendant. Search order must hold: smaller values sit to the left and larger values sit to the right. Any shape that meets both rules is correct. Write the finished tree. An empty list corresponds to an empty tree.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

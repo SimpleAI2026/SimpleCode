@@ -1,0 +1,7 @@
+{
+  "id": 88,
+  "summary": "Read two lists of integers that are already arranged from small to large, plus the counts m and n of values currently stored in each list. The first list has empty slots at its tail, and the number of empty slots is at least n, so every value from the second list can fit. Combine both groups into one sequence that still runs from small to large, and store that sequence in the first list. Write the leading entries, as many as m plus n. Keep every existing value, and do not leave the stored sequence out of order.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

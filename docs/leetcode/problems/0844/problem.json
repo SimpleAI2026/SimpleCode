@@ -1,0 +1,26 @@
+{
+  "id": 844,
+  "slug": "backspace-string-compare",
+  "summary": "读入两段文本，每段长度从 1 到 200，字符只含小写字母以及代表删除的井号。从左往右扫描时，井号会删掉它左边还留着的一个字符；左边已经没有任何字符时，这个井号就不起作用。两段各自处理完毕后，判断剩下的内容是否一样。一样就写出真，不一样就写出假。",
+  "samples": [
+    {
+      "stdin": "S = \"ab#c\", T = \"ad#c\"\n",
+      "stdout": "true\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "S = \"ab##\", T = \"c#d#\"\n",
+      "stdout": "true\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/backspace-string-compare/",
+    "en": "https://leetcode.com/problems/backspace-string-compare/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

@@ -1,0 +1,8 @@
+{
+  "id": 697,
+  "summary": "Read a non-empty column of non-negative integers. Call the degree of a column the greatest number of times any one value shows up. Find a block of consecutive indexes whose own degree equals the degree of the full column, and whose length is the shortest among every block that qualifies. Write that shortest length. The column length is between 1 and 50000, and each integer is between 0 and 49999.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

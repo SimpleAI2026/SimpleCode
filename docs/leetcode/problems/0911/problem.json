@@ -1,0 +1,21 @@
+{
+  "id": 911,
+  "slug": "online-election",
+  "summary": "读入一场选举的选票。第 i 张票在时刻 times[i] 投给编号 persons[i]。时刻严格变大，并且每个时刻都在 0 到 10^9 之内。候选人编号从 0 开始，不会超过票的张数。查询某个时刻 t 时，要找出当时得票最高的候选人，时刻正好等于 t 的票也计算在内。得票相同则最近拿到一票的人领先。每次查询的 t 都不小于第一张票的时刻。票的张数至多 5000，一份测试里的查询至多 10000 次。按查询次序把领先者的编号写出来。",
+  "samples": [
+    {
+      "stdin": "[\"TopVotedCandidate\",\"q\",\"q\",\"q\",\"q\",\"q\",\"q\"], [[[0,1,1,0,0,1,0],[0,5,10,15,20,25,30]],[3],[12],[25],[15],[24],[8]]\n",
+      "stdout": "[null,0,1,1,0,0,1]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/online-election/",
+    "en": "https://leetcode.com/problems/online-election/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

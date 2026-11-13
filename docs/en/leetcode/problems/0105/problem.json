@@ -1,6 +1,6 @@
 {
   "id": 105,
-  "summary": "The public title of this exercise is Construct Binary Tree From Preorder And Inorder Traversal. Read tokens in the same order as the method parameters from standard input and compute the result named by that title, using only those values. Print the result as one level-order line, with a dot for a missing child. The sample below is a short input written for this playground so the printed line can be checked locally. It is not a copy of an example from the problem site. The input stays under one hundred elements so it finishes quickly in the browser.",
+  "summary": "Read two integer sequences of equal length. The first records a preorder visit of some binary tree, and the second records an inorder visit of that same tree. All node values are distinct. The opening value of the preorder sequence is the root. In the inorder sequence the segment on its left forms the left side and the segment on its right forms the right side. Split both sides by the same rule. Write the rebuilt tree. Either sequence may be empty, and empty sequences correspond to an empty tree.",
   "notes": [
     "Compare after trimming trailing newlines. The input is tokens in the same order as the method parameters."
   ]

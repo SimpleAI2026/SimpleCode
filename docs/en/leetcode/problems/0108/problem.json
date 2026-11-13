@@ -1,6 +1,6 @@
 {
   "id": 108,
-  "summary": "The public title of this exercise is Convert Sorted Array to Binary Search Tree. Read tokens in the same order as the method parameters from standard input and compute the result named by that title, using only those values. Print the result as one level-order line, with a dot for a missing child. The sample below is a short input written for this playground so the printed line can be checked locally. It is not a copy of an example from the problem site. The input stays under one hundred elements so it finishes quickly in the browser.",
+  "summary": "Read an array of integers that is already arranged from small to large. Organize it as a binary search tree, and require that the left side and the right side of every node differ in height by at most one. Height is the count of nodes on the longest downward route from the node in question. Any shape is acceptable when it keeps search order and this height limit. Write the tree you build. An empty array produces an empty tree.",
   "notes": [
     "Compare after trimming trailing newlines. The input is tokens in the same order as the method parameters."
   ]

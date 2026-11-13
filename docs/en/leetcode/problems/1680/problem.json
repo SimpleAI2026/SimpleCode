@@ -1,0 +1,8 @@
+{
+  "id": 1680,
+  "summary": "Read an integer n in the closed range from 1 to 10^5. Take the binary writing of every integer from 1 through n and glue those writings together in increasing order, forming one long string of bits. Interpret that string as a binary integer, convert it to decimal, reduce it modulo 10^9 + 7, and write the remainder.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

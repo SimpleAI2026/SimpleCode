@@ -1,0 +1,21 @@
+{
+  "id": 985,
+  "slug": "sum-of-even-numbers-after-queries",
+  "summary": "读入一列整数，再读入若干次修改。每次修改带有一个加数和一个从零计的位置，把加数累加到该位置，并且这次改动会保留下来。每做完一次修改，就把当前数列里所有偶数相加，记下这个和。全部修改做完后，按修改的先后写出每一个和。数列长度、修改次数以及任一整数的绝对值都不超过 10000。位置永远落在数列下标范围内。",
+  "samples": [
+    {
+      "stdin": "A = [1,2,3,4], queries = [[1,0],[-3,1],[-4,0],[2,3]]\n",
+      "stdout": "[8,6,2,4]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/sum-of-even-numbers-after-queries/",
+    "en": "https://leetcode.com/problems/sum-of-even-numbers-after-queries/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

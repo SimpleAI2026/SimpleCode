@@ -1,0 +1,8 @@
+{
+  "id": 224,
+  "summary": "Read one formula. It contains only plus signs, minus signs, parentheses, non-negative integers, and spaces, and it is always valid. Parts inside parentheses are handled first, and addition and subtraction run from left to right. Write the integer that results. Spaces may sit between numbers and signs and are ignored. Do not call a language facility that evaluates a whole formula at once. A minus sign may mean subtraction or a unary negation.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

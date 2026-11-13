@@ -1,0 +1,26 @@
+{
+  "id": 373,
+  "slug": "find-k-pairs-with-smallest-sums",
+  "summary": "读入两个已经按升序排好的整数数组，再读入一个正整数 k。配对时，前一个数必须取自第一个数组，后一个数必须取自第二个数组。在全部配对中，按照两数之和从小到大选取 k 对。若和相同，保留哪一对都可以。把选出的 k 对写出来。",
+  "samples": [
+    {
+      "stdin": "nums1 = [1,7,11], nums2 = [2,4,6], k = 3\n",
+      "stdout": "[[1,2],[1,4],[1,6]]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "nums1 = [1,1,2], nums2 = [1,2,3], k = 2\n",
+      "stdout": "[1,1],[1,1]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/find-k-pairs-with-smallest-sums/",
+    "en": "https://leetcode.com/problems/find-k-pairs-with-smallest-sums/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

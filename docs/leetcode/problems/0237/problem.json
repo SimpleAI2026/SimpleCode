@@ -1,0 +1,26 @@
+{
+  "id": 237,
+  "slug": "delete-node-in-a-linked-list",
+  "summary": "一条单向链表含有的结点数在 2 到 1000 之间。每个结点的整数互不相同，其绝对值不超过 1000。你得不到链的开头，只能得到必须删去的那个结点，而且它一定不是最后一个。就地改动链接，让这个结点从链上消失，它后面的结点仍按原有次序接好。不要另外新建一条链来替换。写出从原来的开头所能读到的剩余结点。",
+  "samples": [
+    {
+      "stdin": "head = [4,5,1,9], node = 5\n",
+      "stdout": "[4,1,9]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "head = [4,5,1,9], node = 1\n",
+      "stdout": "[4,5,9]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/delete-node-in-a-linked-list/",
+    "en": "https://leetcode.com/problems/delete-node-in-a-linked-list/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

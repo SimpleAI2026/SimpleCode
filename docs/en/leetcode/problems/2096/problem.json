@@ -1,0 +1,8 @@
+{
+  "id": 2096,
+  "summary": "Read a binary tree whose node count n is between 2 and 105. Each node stores an integer from 1 through n, and those integers are all different. Also read a start value and an end value. The two values differ, and both lie between 1 and n. Find a shortest route from the start node to the end node. Mark each step with one capital letter: L when moving to the left child, R when moving to the right child, and U when moving to the parent. Join those letters in walking order and write the string.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

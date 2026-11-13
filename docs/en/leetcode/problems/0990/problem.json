@@ -1,0 +1,8 @@
+{
+  "id": 990,
+  "summary": "Read from 1 to 500 strings, each exactly four characters long. The first and last characters are lowercase English letters naming variables, and those two letters may match. The middle two characters are either a pair of equals signs, or an exclamation mark followed by one equals sign. Decide whether some integer labeling of the letters makes every equality and every inequality hold together. Write true when that labeling exists and write false when it does not.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

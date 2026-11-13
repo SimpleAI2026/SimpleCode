@@ -1,0 +1,8 @@
+{
+  "id": 1209,
+  "summary": "Read a string of lowercase English letters with length from 1 to 100000, and read an integer k satisfying 2 <= k <= 10000. Whenever k letters are neighbors and all of them are the same character, delete those k letters and join the text on both sides of the deletion. Repeat until no such run can be found. Write the string that remains at the end. Only one final result is possible. The length bound is 100000.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

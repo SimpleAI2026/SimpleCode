@@ -1,0 +1,21 @@
+{
+  "id": 643,
+  "slug": "maximum-average-subarray-i",
+  "summary": "读入 n 个整数以及一个长度 k，它们满足 1 小于等于 k、k 小于等于 n、n 小于等于 30000。每个整数都在 -10000 到 10000。找出一段连续区间，区间里恰好有 k 个数，并且这段数的平均数在所有这样的区间里最大。把这个最大平均数写出来。",
+  "samples": [
+    {
+      "stdin": "[1,12,-5,-6,50,3], k = 4\n",
+      "stdout": "12.75\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/maximum-average-subarray-i/",
+    "en": "https://leetcode.com/problems/maximum-average-subarray-i/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

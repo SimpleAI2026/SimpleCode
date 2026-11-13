@@ -1,0 +1,26 @@
+{
+  "id": 701,
+  "slug": "insert-into-a-binary-search-tree",
+  "summary": "读入一棵二叉搜索树的根，以及一个要放进去的整数。把该整数插进树中，插完之后整棵树仍须保持二叉搜索树的大小关系。新整数与树上已有的每个结点值都不同，这一点由输入保证。插法若有多种，只要结果仍是合法的二叉搜索树，写出任意一种的根即可。结点个数在 0 到 104 之间，结点值和待插入的整数都在 -108 到 108 之间，并且互不相同。",
+  "samples": [
+    {
+      "stdin": "root = [4,2,7,1,3], val = 5\n",
+      "stdout": "[4,2,7,1,3,5]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "root = [40,20,60,10,30,50,70], val = 25\n",
+      "stdout": "[40,20,60,10,30,50,70,null,null,25]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/insert-into-a-binary-search-tree/",
+    "en": "https://leetcode.com/problems/insert-into-a-binary-search-tree/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

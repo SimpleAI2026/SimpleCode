@@ -1,0 +1,8 @@
+{
+  "id": 685,
+  "summary": "A rooted tree here means a graph with arrows and a single root. Every other node is reachable by following arrows from that root, and every node except the root has one parent. The edges you read come from such a tree on N nodes plus one extra directed edge. Labels run from 1 to N. An edge points from parent toward child. The extra edge joins two labels in that range and was not already there. Delete one edge so the graph that remains is a rooted tree on N nodes. When several deletions are possible, write the edge located furthest toward the end of the input. The count of edges is from 3 to 1000. Each endpoint is an integer from 1 to N, and N is that count.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

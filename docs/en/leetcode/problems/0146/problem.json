@@ -1,6 +1,6 @@
 {
   "id": 146,
-  "summary": "The public title of this exercise is LRU Cache. Read one command per line from standard input and compute the result named by that title, using only those values. Print the result as one result line for each command. The sample below is a short input written for this playground so the printed line can be checked locally. It is not a copy of an example from the problem site. The input stays under one hundred elements so it finishes quickly in the browser.",
+  "summary": "Build a cache that discards the item left unused for the longest time. Capacity is an integer from 1 to 3000. Keys run from 0 to 3000 and values run from 0 to 104. Calls to get and put together number at most 3 times 104. get writes the stored value when the key is present and writes -1 when the key is absent, and that read counts as a use. put writes a new pair or overwrites an old one. When the count of keys would exceed capacity, delete the key that has gone the longest without a get or a put, then store the new key.",
   "notes": [
     "Compare after trimming trailing newlines. The input is one command per line."
   ]

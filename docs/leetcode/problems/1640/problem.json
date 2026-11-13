@@ -1,0 +1,26 @@
+{
+  "id": 1640,
+  "slug": "check-array-formation-through-concatenation",
+  "summary": "读入目标序列 arr，以及若干小段 pieces。arr 里的整数两两不同，各小段里的整数合在一起也两两不同。arr 的长度介于 1 与 100，小段的段数不超过这个长度，各小段长度之和正好等于 arr 的长度，每个整数介于 1 与 100。这些小段可以按任意先后拼接，但每一段内部的次序必须保持原样。判断能否拼出 arr，能则写出 true，不能则写出 false。",
+  "samples": [
+    {
+      "stdin": "arr = [85], pieces = [[85]]\n",
+      "stdout": "true\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "arr = [15,88], pieces = [[88],[15]]\n",
+      "stdout": "true\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/check-array-formation-through-concatenation/",
+    "en": "https://leetcode.com/problems/check-array-formation-through-concatenation/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

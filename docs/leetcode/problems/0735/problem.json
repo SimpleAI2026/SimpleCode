@@ -1,0 +1,26 @@
+{
+  "id": 735,
+  "slug": "asteroid-collision",
+  "summary": "读入整数数组asteroids，长度最多10000。每个整数都不为0，并且落在-1000到1000之间。绝对值表示体积，正号表示向右飞行，负号表示向左飞行，所有行星速度相同。同向飞行的行星不会相遇。迎面相撞时，体积小的消失；体积一样则两颗一起消失。找出碰撞全部结束后仍留在这一行的行星，按从左到右的顺序写出来。",
+  "samples": [
+    {
+      "stdin": "asteroids = [5, 10, -5]\n",
+      "stdout": "[5, 10]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "asteroids = [8, -8]\n",
+      "stdout": "[]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/asteroid-collision/",
+    "en": "https://leetcode.com/problems/asteroid-collision/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

@@ -1,6 +1,6 @@
 {
   "id": 141,
-  "summary": "The public title of this exercise is Linked List Cycle. Read a node count followed by the integer stored in each node from standard input and compute the result named by that title, using only those values. Print the result as the word true or false. The sample below is a short input written for this playground so the printed line can be checked locally. It is not a copy of an example from the problem site. The input stays under one hundred elements so it finishes quickly in the browser.",
+  "summary": "Read a linked list whose nodes store integers. Decide whether following successor pointers can bring you back to a node you have already visited. Write true when that return happens, which means a cycle is present. Write false when the walk reaches an empty link instead. During the check, keep only a fixed count of pointers and do not allocate storage that grows with the number of nodes. An empty list writes false.",
   "notes": [
     "Compare after trimming trailing newlines. The input is a node count followed by the integer stored in each node."
   ]

@@ -1,0 +1,8 @@
+{
+  "id": 709,
+  "summary": "Read one string whose length is between 1 and 100. Every character is printable ASCII. Look at the characters one by one. When you meet an uppercase English letter, switch it to the matching lowercase letter. Digits, whitespace, punctuation, and letters that are already lowercase remain untouched. Join the characters in their previous order and write the new string. Do not add or delete characters, and do not shift any character to another position.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

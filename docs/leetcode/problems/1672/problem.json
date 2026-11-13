@@ -1,0 +1,26 @@
+{
+  "id": 1672,
+  "slug": "richest-customer-wealth",
+  "summary": "读入一张记录客户存款的整数表。行数与列数各自介于 1 和 50，格子里的金额介于 1 和 100。每一行对应一位客户，行内每个格子是他在某一家银行里的存款。把同一行的数字全部相加，得到这位客户名下的资产。在所有客户里找出资产最高的一位，并把该资产写出来。",
+  "samples": [
+    {
+      "stdin": "accounts = [[1,2,3],[3,2,1]]\n",
+      "stdout": "6\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "accounts = [[1,5],[7,3],[3,5]]\n",
+      "stdout": "10\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/richest-customer-wealth/",
+    "en": "https://leetcode.com/problems/richest-customer-wealth/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

@@ -1,0 +1,8 @@
+{
+  "id": 1190,
+  "summary": "Read a string whose length is from 0 to 2000. It holds only lowercase English letters and round parentheses, and all parentheses are correctly paired. Begin with the innermost pair and flip the text sitting inside that pair, then apply the same flip to pairs farther outward until every pair has been handled. Write the finished text. No parenthesis character may remain in the result. The length bound is 2000.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

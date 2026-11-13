@@ -1,0 +1,21 @@
+{
+  "id": 352,
+  "slug": "data-stream-as-disjoint-intervals",
+  "summary": "维护一条陆续到来的非负整数记录，开始时一个数都没有。每次可以加入一个整数，取值在 0 到 10000 之间，含两端。任何时候都要把已经见过的整数归纳成若干互不重叠的闭区间，能连成一片的连续整数必须并进同一段，每段用左端点和右端点表示。加入与查询加起来最多进行 3 乘以 10000 次。把当前的区间列表写出来。",
+  "samples": [
+    {
+      "stdin": "[\"SummaryRanges\", \"addNum\", \"getIntervals\", \"addNum\", \"getIntervals\", \"addNum\", \"getIntervals\", \"addNum\", \"getIntervals\", \"addNum\", \"getIntervals\"]\n[[], [1], [], [3], [], [7], [], [2], [], [6], []]\n",
+      "stdout": "[null, null, [[1, 1]], null, [[1, 1], [3, 3]], null, [[1, 1], [3, 3], [7, 7]], null, [[1, 3], [7, 7]], null, [[1, 3], [6, 7]]]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/data-stream-as-disjoint-intervals/",
+    "en": "https://leetcode.com/problems/data-stream-as-disjoint-intervals/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

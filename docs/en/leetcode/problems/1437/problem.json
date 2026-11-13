@@ -1,0 +1,8 @@
+{
+  "id": 1437,
+  "summary": "Read a list nums made only of zeros and ones, plus an integer k. Decide whether every pair of ones has at least k indices lying strictly between those two ones. Write true when the rule holds for every pair and false otherwise. The list length is from 1 to 100000, k is from 0 through that length, and no other values appear in the list.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

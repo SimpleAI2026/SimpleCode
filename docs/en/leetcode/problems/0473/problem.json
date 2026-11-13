@@ -1,0 +1,8 @@
+{
+  "id": 473,
+  "summary": "Read the lengths of several matchsticks. The number of sticks runs from 1 through 15, and each length runs from 0 through 109. Breaking a stick is forbidden, but sticks may be joined end to end, and every stick must be used once. Decide whether those sticks can form one square. Write true when they can and false when they cannot.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

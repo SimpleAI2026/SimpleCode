@@ -1,0 +1,8 @@
+{
+  "id": 947,
+  "summary": "Stones sit on a plane at integer coordinates, with at most one stone on any single point. The number of stones is between 1 and 1000, and every coordinate component is a nonnegative integer below 10000. One move takes away a stone only when another stone still on the plane shares its row or its column. Find the greatest number of moves that can be performed, and write that number. A stone already taken away can no longer serve as the partner for a later move.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

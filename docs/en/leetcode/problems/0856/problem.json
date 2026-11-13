@@ -1,0 +1,8 @@
+{
+  "id": 856,
+  "summary": "Read a parentheses string that is already balanced. Its length is from 2 to 50, and the only characters are round opening and closing brackets. A pair with nothing inside scores 1. Placing two balanced pieces one after another adds their scores. Wrapping one balanced piece in an extra pair doubles that score. Use only these scoring rules and write the score of the whole string. Nesting and side by side placement both follow the same rules.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

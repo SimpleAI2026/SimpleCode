@@ -1,0 +1,7 @@
+{
+  "id": 784,
+  "summary": "Read a string whose length is from 1 to 12 and whose characters are only letters or digits. Leave every digit exactly as it stands. Each letter may be written in lowercase or uppercase on its own, and one letter's choice never constrains another. Collect every distinct string those choices can produce and write the collection in any order.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

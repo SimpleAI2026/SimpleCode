@@ -1,0 +1,7 @@
+{
+  "id": 382,
+  "summary": "Read one singly linked chain. It contains between 1 and 10^4 nodes, and each node stores an integer from negative 10^4 to positive 10^4. Provide an operation that returns the stored integer of a node chosen at random, giving every node an equal probability. That operation is invoked at most 10^4 times. The chain might be extremely long and its length might be unknown in advance, so the extra memory used should remain constant. Write each value the operation returns.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

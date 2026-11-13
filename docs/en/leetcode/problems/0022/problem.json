@@ -1,6 +1,6 @@
 {
   "id": 22,
-  "summary": "The public title of this exercise is Generate Parentheses. Read tokens in the same order as the method parameters from standard input and compute the result named by that title, using only those values. Print the result as one string per line. The sample below is a short input written for this playground so the printed line can be checked locally. It is not a copy of an example from the problem site. The input stays under one hundred elements so it finishes quickly in the browser.",
+  "summary": "Read a non-negative integer n. Using n opening round brackets and n closing round brackets, find every arrangement that closes correctly. Correct closing means that, from the start up to any position, the running count of openers is never below the running count of closers, and the whole arrangement has equal counts. Write each accepted arrangement as its own text. The order among those texts is not fixed.",
   "notes": [
     "Compare after trimming trailing newlines. The input is tokens in the same order as the method parameters."
   ]

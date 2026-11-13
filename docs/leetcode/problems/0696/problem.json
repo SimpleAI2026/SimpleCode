@@ -1,0 +1,26 @@
+{
+  "id": 696,
+  "slug": "count-binary-substrings",
+  "summary": "读入一条只由字符 0 和字符 1 构成的字符串。统计有多少个非空的连续片段同时满足两点：片段中 0 的个数与 1 的个数相同，而且全部的 0 挤在一起、全部的 1 也挤在一起。同一片段在不同起点出现，就要按出现次数累加。写出这个总数。字符串长度在 1 到 50000 之间。",
+  "samples": [
+    {
+      "stdin": "\"00110011\"\n",
+      "stdout": "6\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "\"10101\"\n",
+      "stdout": "4\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/count-binary-substrings/",
+    "en": "https://leetcode.com/problems/count-binary-substrings/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

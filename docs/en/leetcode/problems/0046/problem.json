@@ -1,6 +1,6 @@
 {
   "id": 46,
-  "summary": "The public title of this exercise is Permutations. Read tokens in the same order as the method parameters from standard input and compute the result named by that title, using only those values. Print the result as a row count and then one line of integers per row. The sample below is a short input written for this playground so the printed line can be checked locally. It is not a copy of an example from the problem site. The input stays under one hundred elements so it finishes quickly in the browser.",
+  "summary": "Read a list of integers in which all values differ. Write every ordering those integers can form. Two orderings are different as soon as some position holds a different integer. Inside any one ordering, each integer appears exactly once, no more and no less. The ordering that matches the input must be included along with every rearrangement. Write all of those orderings.",
   "notes": [
     "Compare after trimming trailing newlines. The input is tokens in the same order as the method parameters."
   ]

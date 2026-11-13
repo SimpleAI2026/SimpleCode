@@ -1,0 +1,8 @@
+{
+  "id": 2164,
+  "summary": "Read a column of integers whose length is between 1 and 100. Each integer is also between 1 and 100, and indexes begin at 0. Place the values from even indexes into nondecreasing order, and place the values from odd indexes into nonincreasing order. A value may stay only on an index of the same parity as before. Write the whole column after both placements.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

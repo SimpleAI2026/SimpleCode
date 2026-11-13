@@ -1,0 +1,21 @@
+{
+  "id": 463,
+  "slug": "island-perimeter",
+  "summary": "读入一个只含 0 和 1 的矩形网格，宽度和高度各自不超过 100。数字 1 代表陆地，数字 0 代表水。格子只沿上下左右的整条边相邻，斜角碰上不算连在一起。网格外面一圈都是水，里面恰好有一块陆地，这块陆地内部也没有被整块陆地围住的水。每一格都是边长等于 1 的方块。找出这块陆地的周长，并把这个长度写出来。",
+  "samples": [
+    {
+      "stdin": "[[0,1,0,0],\n[1,1,1,0],\n[0,1,0,0],\n[1,1,0,0]]\n",
+      "stdout": "16\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/island-perimeter/",
+    "en": "https://leetcode.com/problems/island-perimeter/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

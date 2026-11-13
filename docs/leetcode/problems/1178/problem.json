@@ -1,0 +1,21 @@
+{
+  "id": 1178,
+  "slug": "number-of-valid-words-for-each-puzzle",
+  "summary": "读入一批小写单词和一批谜面。单词条数在 1 到 100000 之间，每条长度在 4 到 50 之间。谜面有 1 到 10000 条，每条恰好 7 个互不相同的小写字母。一个单词能回答某条谜面，必须含有该谜面排在最前的那个字母，而且单词里用到的字母都能在这条谜面里找到。对每条谜面分别统计能回答它的单词个数，按谜面原来的次序把这些个数写成一列。",
+  "samples": [
+    {
+      "stdin": "words = [\"aaaa\",\"asas\",\"able\",\"ability\",\"actt\",\"actor\",\"access\"],\npuzzles = [\"aboveyz\",\"abrodyz\",\"abslute\",\"absoryz\",\"actresz\",\"gaswxyz\"]\n",
+      "stdout": "[1,1,3,2,4,0]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/number-of-valid-words-for-each-puzzle/",
+    "en": "https://leetcode.com/problems/number-of-valid-words-for-each-puzzle/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

@@ -1,0 +1,7 @@
+{
+  "id": 901,
+  "summary": "Build a StockSpanner that records the daily price of one stock. Each call next reads that day's price, an integer from 1 through 100000. The span for the day is how many consecutive days, ending on that day and counting that day, have a price no higher than the price recorded for that day. Write the span after every call. One test makes at most 10000 calls, and all tests together make at most 150000 calls.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

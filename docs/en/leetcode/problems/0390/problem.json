@@ -1,0 +1,8 @@
+{
+  "id": 390,
+  "summary": "Begin with the integers 1, 2, and so on up to n, where n is an integer from 1 to 109. First sweep from the left: delete the current leftmost entry, then alternately keep one and delete one until that sweep finishes. Next sweep from the right: delete the current rightmost entry, then keep one and delete one in the same alternating way. Continue switching direction until a lone integer remains. Write it.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

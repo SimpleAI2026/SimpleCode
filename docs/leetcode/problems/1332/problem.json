@@ -1,0 +1,26 @@
+{
+  "id": 1332,
+  "slug": "remove-palindromic-subsequences",
+  "summary": "读入一个只由字母 a 和 b 构成的字符串，长度在 0 到 1000 之间。一次操作可以删去其中一个正读和反读相同的子序列。被删掉的字符必须保持它们在原串中的相对先后。找出把所有字符都删光、使字符串变成空串所需的最少操作次数，并把这个次数写出来。输入本身已经是空串时，次数为 0。",
+  "samples": [
+    {
+      "stdin": "s = \"ababa\"\n",
+      "stdout": "1\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "s = \"abb\"\n",
+      "stdout": "2\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/remove-palindromic-subsequences/",
+    "en": "https://leetcode.com/problems/remove-palindromic-subsequences/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

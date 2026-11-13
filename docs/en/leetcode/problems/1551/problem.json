@@ -1,0 +1,8 @@
+{
+  "id": 1551,
+  "summary": "A list of length n stores, at index i counting from zero, the value twice i plus one. One change picks two indices, decreases one stored value by 1, and increases the other stored value by 1. Success means every stored value has become identical. The tests promise that this goal can always be reached. Write the fewest changes required. n is from 1 to 10000.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

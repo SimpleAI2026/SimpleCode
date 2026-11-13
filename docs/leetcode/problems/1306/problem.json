@@ -1,0 +1,26 @@
+{
+  "id": 1306,
+  "slug": "jump-game-iii",
+  "summary": "读入一串不会小于零的整数，再读入出发时的下标。人一开始站在这个起始下标上。站在下标 i 时，下一步只能落到 i 加上该处的数，或者 i 减去该处的数，而且落点必须仍然落在数组里面。判断能否经过若干步到达某个存放着 0 的下标。能到达就写出 true，不能到达就写出 false。数组长度不超过 5 乘 10^4，每个元素都小于数组长度，起始下标也在合法范围内。",
+  "samples": [
+    {
+      "stdin": "arr = [4,2,3,0,3,1,2], start = 5\n",
+      "stdout": "true\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "arr = [4,2,3,0,3,1,2], start = 0\n",
+      "stdout": "true\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/jump-game-iii/",
+    "en": "https://leetcode.com/problems/jump-game-iii/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

@@ -1,0 +1,8 @@
+{
+  "id": 953,
+  "summary": "Read a list of words written with lowercase letters, plus an alphabet order whose length is 26. The list contains between 1 and 100 words, and each word contains between 1 and 20 letters. The order is one arrangement of the twenty-six lowercase letters, and a letter earlier in that arrangement is smaller. Compare neighboring words by the first position where they differ. The word with the smaller letter there must come first. If one word is a prefix of the next, the shorter word must come first. Decide whether the whole list is already sorted under this rule. Write true if it is, and write false otherwise.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

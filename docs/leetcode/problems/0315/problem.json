@@ -1,0 +1,21 @@
+{
+  "id": 315,
+  "slug": "count-of-smaller-numbers-after-self",
+  "summary": "读入一列整数。对于每一个位置，统计它右侧有多少个整数严格小于该位置上的整数，从而得到一条与原列等长的计数。按从左到右的原有次序把这条计数写出来。相等的整数不算作更小。左侧的整数不参与该位置的统计。最右端的计数一定是零。",
+  "samples": [
+    {
+      "stdin": "[5,2,6,1]\n",
+      "stdout": "[2,1,1,0]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/count-of-smaller-numbers-after-self/",
+    "en": "https://leetcode.com/problems/count-of-smaller-numbers-after-self/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

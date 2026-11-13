@@ -1,0 +1,26 @@
+{
+  "id": 1079,
+  "slug": "letter-tile-possibilities",
+  "summary": "读入一套活字，每块活字上面刻着一个大写英文字母，块数从 1 到 7。可以只用其中一部分，但同一块不能使用两次。用选出的活字排成一行，字母次序不同就算不同结果，什么都不排不算。刻着相同字母的活字彼此没有区别。找出一共能排出多少种非空的字母序列，并把这个数目写出来。",
+  "samples": [
+    {
+      "stdin": "\"AAB\"\n",
+      "stdout": "8\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "\"AAABBC\"\n",
+      "stdout": "188\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/letter-tile-possibilities/",
+    "en": "https://leetcode.com/problems/letter-tile-possibilities/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

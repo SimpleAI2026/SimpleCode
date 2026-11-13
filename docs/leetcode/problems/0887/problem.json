@@ -1,0 +1,26 @@
+{
+  "id": 887,
+  "slug": "super-egg-drop",
+  "summary": "读入鸡蛋枚数 K 和楼层总数 N。楼层用 1 到 N 编号。存在一个未知临界层 F，它可以是 0 到 N 中的任意整数。从比 F 更高的层扔下，蛋会破裂；从 F 本层或更低的层扔下，蛋保持完好。已经破裂的蛋不能再扔。每一次试投可以拿一枚完好的蛋，从任意一层扔下。无论 F 落在哪个允许的整数上，都要能把它确定下来。写出在最不利情形下仍然够用的最少试投次数。K 不超过 100，N 不超过 10000。",
+  "samples": [
+    {
+      "stdin": "K = 1, N = 2\n",
+      "stdout": "2\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "K = 2, N = 6\n",
+      "stdout": "3\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/super-egg-drop/",
+    "en": "https://leetcode.com/problems/super-egg-drop/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

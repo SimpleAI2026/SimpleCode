@@ -1,0 +1,26 @@
+{
+  "id": 1030,
+  "slug": "matrix-cells-in-distance-order",
+  "summary": "读入两个正整数，分别当作网格的行数和列数，再读入一个起点格子的行号与列号。行号从 0 取到行数减 1，列号从 0 取到列数减 1。行数和列数都落在 1 到 100 之间，起点一定落在网格里面。把每一个格子写成坐标，按它到起点的曼哈顿距离由近到远排列。曼哈顿距离等于行差的绝对值加上列差的绝对值。距离相同的格子谁先谁后都可以。写出排好的全部坐标。",
+  "samples": [
+    {
+      "stdin": "R = 1, C = 2, r0 = 0, c0 = 0\n",
+      "stdout": "[[0,0],[0,1]]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "R = 2, C = 2, r0 = 0, c0 = 1\n",
+      "stdout": "[[0,1],[0,0],[1,1],[1,0]]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/matrix-cells-in-distance-order/",
+    "en": "https://leetcode.com/problems/matrix-cells-in-distance-order/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

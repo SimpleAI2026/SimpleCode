@@ -1,0 +1,26 @@
+{
+  "id": 1089,
+  "slug": "duplicate-zeros",
+  "summary": "读入一条整数数组，长度事先固定，范围从 1 到 10000，每个数只取 0 到 9。针对原来就存在的每一个 0，在它后面再补一个 0，并把右侧的数依次向末尾挪动。由补出来的 0 不要再次追加。挪出原长度之外的数全部舍弃，因此长度保持不变。直接在这条数组上完成修改，然后把修改后的数组写出来。",
+  "samples": [
+    {
+      "stdin": "[1,0,2,3,0,4,5,0]\n",
+      "stdout": "null\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "[1,2,3]\n",
+      "stdout": "null\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/duplicate-zeros/",
+    "en": "https://leetcode.com/problems/duplicate-zeros/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

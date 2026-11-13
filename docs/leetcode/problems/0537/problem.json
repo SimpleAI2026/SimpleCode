@@ -1,0 +1,26 @@
+{
+  "id": 537,
+  "slug": "complex-number-multiplication",
+  "summary": "读入两段用来书写复数的文本。每一段都写成紧凑的 a+bi，中间没有空白。字母 a 与 b 所代表的整数都落在负 100 到正 100 之间。按虚数单位的平方等于负一，求出这两段所写数值相乘的结果，再把结果写成同样的 a+bi。实部与虚部都要是整数，加号的位置和正负号都要符合这种紧凑写法，然后把结果文本写出来。",
+  "samples": [
+    {
+      "stdin": "\"1+1i\", \"1+1i\"\n",
+      "stdout": "\"0+2i\"\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "\"1+-1i\", \"1+-1i\"\n",
+      "stdout": "\"0+-2i\"\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/complex-number-multiplication/",
+    "en": "https://leetcode.com/problems/complex-number-multiplication/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

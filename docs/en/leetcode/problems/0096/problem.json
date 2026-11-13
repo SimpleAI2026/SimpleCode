@@ -1,0 +1,7 @@
+{
+  "id": 96,
+  "summary": "Read a non-negative integer and use it as an upper bound. When the bound is positive, the node values are every integer from one through that bound, each used once. Each node keeps only smaller values on its left and only larger values on its right. Count how many distinct shapes of binary search tree satisfy that rule, and do not print the trees. When the bound is zero there is exactly one empty tree, so write one. In every other case write the number of shapes as a single integer.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

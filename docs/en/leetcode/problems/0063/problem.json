@@ -1,0 +1,7 @@
+{
+  "id": 63,
+  "summary": "Read a grid with m rows and n columns. A cell that stores 0 is open ground, and a cell that stores 1 is a block that cannot be entered. A piece starts at the northwest cell and wants the southeast cell. Each step may enter only the open cell next to it on the south side or the east side. When the starting cell or the ending cell is a block, the count is 0. Write how many distinct routes avoid every block. Any route that steps on a block is ignored.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

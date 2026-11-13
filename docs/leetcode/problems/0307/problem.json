@@ -1,0 +1,21 @@
+{
+  "id": 307,
+  "slug": "range-sum-query-mutable",
+  "summary": "读入一个整数数组。需要支持两种操作。第一种把下标 i 上的整数改成一个新的整数。第二种询问下标 i 到 j 的闭区间之和，并且 i 小于或等于 j。数组只会因为第一种操作而改变。两种操作的调用次数大致均衡。每次区间求和都要把得到的和写出来。下标都落在数组已有的范围内。",
+  "samples": [
+    {
+      "stdin": "sumRange(0, 2)\nsumRange(0, 2)\n",
+      "stdout": "9\n8\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/range-sum-query-mutable/",
+    "en": "https://leetcode.com/problems/range-sum-query-mutable/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

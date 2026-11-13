@@ -1,0 +1,26 @@
+{
+  "id": 27,
+  "slug": "remove-element",
+  "summary": "读入一段整数，再读入一个叫 val 的目标整数。在原存储中去掉每一个等于 val 的元素，其余元素留下来，留下来的元素可以改变彼此的先后。不要申请另一段同样长度的存储，额外空间维持常数。写出留下来的元素个数。个数范围之外的格子无需抹掉。",
+  "samples": [
+    {
+      "stdin": "nums = [3,2,2,3], val = 3,\n\nYour function should\n",
+      "stdout": "length = 2, with the first two elements of nums being 2.\n\nIt doesn't matter what you leave beyond the returned length.\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "nums = [0,1,2,2,3,0,4,2], val = 2,\n\nYour function should\n",
+      "stdout": "length = 5, with the first five elements of nums containing 0, 1, 3, 0, and 4.\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/remove-element/",
+    "en": "https://leetcode.com/problems/remove-element/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

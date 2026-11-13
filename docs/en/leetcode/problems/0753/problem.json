@@ -1,0 +1,8 @@
+{
+  "id": 753,
+  "summary": "A safe password is a string of n digits, and each digit is chosen from 0 through k minus 1. The integer n lies from 1 to 4, the integer k lies from 1 to 10, and k raised to the power n is at most 4096. While digits are typed in one stream, the safe checks only the latest n digits against the secret. Write one shortest digit string such that every possible password occurs as some contiguous block of length n. Any string that achieves this shortest length is acceptable.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

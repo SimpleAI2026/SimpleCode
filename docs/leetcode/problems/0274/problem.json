@@ -1,0 +1,21 @@
+{
+  "id": 274,
+  "slug": "h-index",
+  "summary": "读入一位研究者每篇论文的引用次数，次数都是非负整数，论文总数记为 N。找出最大的整数 h，使得至少 h 篇论文的引用次数各自不少于 h，而其余每篇论文的引用次数至多是 h。把这个 h 写出来。如果多个整数都满足条件，只取其中最大的一个。",
+  "samples": [
+    {
+      "stdin": "citations = [3,0,6,1,5]\n",
+      "stdout": "3\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/h-index/",
+    "en": "https://leetcode.com/problems/h-index/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

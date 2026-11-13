@@ -1,0 +1,26 @@
+{
+  "id": 1653,
+  "slug": "minimum-deletions-to-make-string-balanced",
+  "summary": "读入一条只由字母 a 与字母 b 组成的串，长度介于 1 与 105。所谓平衡，是指不存在一对下标 i 小于 j，使得较前的位置是 b 而较后的位置是 a。允许删去任意多个字符，剩下的字符仍保持相对次序。写出让剩下的串达到平衡所需要的最少删除次数。",
+  "samples": [
+    {
+      "stdin": "s = \"aababbab\"\n",
+      "stdout": "2\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "s = \"bbaaaaabb\"\n",
+      "stdout": "2\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/minimum-deletions-to-make-string-balanced/",
+    "en": "https://leetcode.com/problems/minimum-deletions-to-make-string-balanced/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

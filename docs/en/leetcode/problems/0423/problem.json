@@ -1,0 +1,8 @@
+{
+  "id": 423,
+  "summary": "Read one text built only from lowercase English letters, with a length strictly under 50000. The letters come from the English spellings of digits from zero through nine, but their earlier order has been shuffled. The mixture is always legal and can be restored. Recover those digits, arrange them from smallest to largest, and write them as one digit string.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

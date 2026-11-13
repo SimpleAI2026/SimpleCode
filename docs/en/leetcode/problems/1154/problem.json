@@ -1,0 +1,8 @@
+{
+  "id": 1154,
+  "summary": "Read a date stored as a 10-character text. Characters at the fifth and eighth places are hyphens, and every other character is a digit, so the shape is a four-digit year, a two-digit month, and a two-digit day. The date is a real Gregorian day from January 1, 1900 through December 31, 2019. Write which day of that year it is, counting January 1 as day 1. February has 29 days in a leap year and 28 days otherwise. The latest year allowed is 2019.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

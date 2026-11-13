@@ -1,6 +1,6 @@
 {
   "id": 16,
-  "summary": "The public title of this exercise is 3Sum Closest. Read a count, that many integers, and one target integer from standard input and compute the result named by that title, using only those values. Print the result as one integer. The sample below is a short input written for this playground so the printed line can be checked locally. It is not a copy of an example from the problem site. The input stays under one hundred elements so it finishes quickly in the browser.",
+  "summary": "Read a collection of integers and then one target integer. Take values from three different positions and add them. Find a way of taking those values so that the absolute gap between their total and the target is as small as possible. Each input has only one best total. Write that total. The three taken values themselves should not be written.",
   "notes": [
     "Compare after trimming trailing newlines. The input is a count, that many integers, and one target integer."
   ]

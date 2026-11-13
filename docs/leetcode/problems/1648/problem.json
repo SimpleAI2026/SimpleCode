@@ -1,0 +1,26 @@
+{
+  "id": 1648,
+  "slug": "sell-diminishing-valued-colored-balls",
+  "summary": "读入各种颜色一开始各有多少球。颜色种数介于 1 与 100000，每种颜色的球数介于 1 与 1000000000。顾客想买的总数 orders 至少为 1，并且不超过全部库存与 1000000000 里较小的那个。卖出某颜色的一颗球时，售价等于卖出前该颜色还剩的球数，卖完该颜色少一颗。出售顺序可以自定。写出卖满 orders 颗之后能拿到的最大总售价，并对 1000000000 加 7 取余后再写出。",
+  "samples": [
+    {
+      "stdin": "an integer array, inventory, where inventory[i] represents the number of balls of the ith color that you initially own. You are also given an integer orders, which represents the total number of balls that the customer wants. You can sell the balls in any order.\n",
+      "stdout": "*the maximum total value that you can attain after selling* orders *colored balls*. As the answer may be too large, return it modulo 109 + 7.\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "inventory = [2,5], orders = 4\n",
+      "stdout": "14\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/sell-diminishing-valued-colored-balls/",
+    "en": "https://leetcode.com/problems/sell-diminishing-valued-colored-balls/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

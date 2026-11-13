@@ -1,0 +1,26 @@
+{
+  "id": 227,
+  "slug": "basic-calculator-ii",
+  "summary": "读入一条由非负整数以及加、减、乘、除组成的算式，数字和符号之间可以夹着空白。算式长度至少为 1，至多为 3 * 10^5。每个整数都在 0 与 2^31 减 1 之间。算式保证合法，最终结果放得进 32 位整数。乘法和除法比加减更先进行，同一级别从左往右。除法只保留商的整数，余数丢掉。写出这个整数结果。",
+  "samples": [
+    {
+      "stdin": "s = \"3+2*2\"\n",
+      "stdout": "7\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "s = \" 3/2 \"\n",
+      "stdout": "1\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/basic-calculator-ii/",
+    "en": "https://leetcode.com/problems/basic-calculator-ii/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

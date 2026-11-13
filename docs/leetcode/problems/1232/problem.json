@@ -1,0 +1,26 @@
+{
+  "id": 1232,
+  "slug": "check-if-it-is-a-straight-line",
+  "summary": "在平面上读入一组点，点的个数在 2 到 1000 之间，而且没有重复的点。每个点由横坐标和纵坐标两个整数组成，两个坐标都介于 -10000 和 10000 之间。判断全部的点是不是位于同一条直线上。如果是，写 true；如果不是，写 false。坐标绝对值的上界是 10000。",
+  "samples": [
+    {
+      "stdin": "coordinates = [[1,2],[2,3],[3,4],[4,5],[5,6],[6,7]]\n",
+      "stdout": "true\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "coordinates = [[1,1],[2,2],[3,4],[4,5],[5,6],[7,7]]\n",
+      "stdout": "false\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/check-if-it-is-a-straight-line/",
+    "en": "https://leetcode.com/problems/check-if-it-is-a-straight-line/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

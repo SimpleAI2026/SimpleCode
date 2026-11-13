@@ -1,0 +1,26 @@
+{
+  "id": 1846,
+  "slug": "maximum-element-after-decreasing-and-rearranging",
+  "summary": "读入一列正整数，个数至多 100000，每个数至多 1000000000。可以不限次数地重排整列，也可以把任意一项改成比它更小的正整数。结束后第一项必须是 1，而且相邻两项差的绝对值不得超过 1。在满足这两条限制的前提下，让列中某一项尽可能大，并把这个最大可能值写出来。",
+  "samples": [
+    {
+      "stdin": "arr = [2,2,1,2,1]\n",
+      "stdout": "2\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "arr = [100,1,1000]\n",
+      "stdout": "3\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/maximum-element-after-decreasing-and-rearranging/",
+    "en": "https://leetcode.com/problems/maximum-element-after-decreasing-and-rearranging/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

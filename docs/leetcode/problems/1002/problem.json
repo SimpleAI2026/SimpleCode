@@ -1,0 +1,26 @@
+{
+  "id": 1002,
+  "slug": "find-common-characters",
+  "summary": "读入至多 100 条单词，每条长度也至多 100，单词里只有英文小写。若某个字母在每一条单词中都出现，就按各条单词里该字母出现次数的最小值，把同样多个该字母放进结果。某条单词里缺少它，结果里就不放。写出这些字母，排列次序可以任选。次数按逐条比较后的下限计算，不按总和计算。",
+  "samples": [
+    {
+      "stdin": "[\"bella\",\"label\",\"roller\"]\n",
+      "stdout": "[\"e\",\"l\",\"l\"]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "[\"cool\",\"lock\",\"cook\"]\n",
+      "stdout": "[\"c\",\"o\"]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/find-common-characters/",
+    "en": "https://leetcode.com/problems/find-common-characters/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

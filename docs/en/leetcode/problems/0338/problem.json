@@ -1,6 +1,6 @@
 {
   "id": 338,
-  "summary": "The public title of this exercise is Counting Bits. Read tokens in the same order as the method parameters from standard input and compute the result named by that title, using only those values. Print the result as integers on one line, separated by spaces. The sample below is a short input written for this playground so the printed line can be checked locally. It is not a copy of an example from the problem site. The input stays under one hundred elements so it finishes quickly in the browser.",
+  "summary": "Read an integer n that is greater than or equal to zero. For every integer from zero through n, including both ends, count how many times the digit 1 appears in its binary writing. List those counts from the smallest integer to the largest, and write the list.",
   "notes": [
     "Compare after trimming trailing newlines. The input is tokens in the same order as the method parameters."
   ]

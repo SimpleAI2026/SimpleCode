@@ -1,0 +1,8 @@
+{
+  "id": 928,
+  "summary": "Read an undirected graph as a square matrix whose side is greater than 1 and at most 300. Diagonal cells are 1, the matrix is symmetric, and every cell is 0 or 1. Also read a list of nodes that start out infected. That list has at least one node and is shorter than the matrix side. Infection crosses any edge that touches an already infected node, and it keeps moving until nothing new can catch it. You may delete exactly one node from the starting list, together with every edge that touched it, and then let infection run on what remains. Write the deleted node that leaves the fewest infected nodes at the end. If several nodes tie, write the one with the smallest index.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

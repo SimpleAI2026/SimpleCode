@@ -1,0 +1,26 @@
+{
+  "id": 1695,
+  "slug": "maximum-erasure-value",
+  "summary": "读入一串正整数。数组长度介于 1 和 105，每个元素介于 1 和 104。在里面圈出一段连续的下标区间，区间里的数值必须彼此都不一样。该区间的得分定义为其中全部数值相加的结果。只准圈出一段，不能拆成多段再合并。找出所有合法区间里最高的得分，并把这个得分写出来。",
+  "samples": [
+    {
+      "stdin": "nums = [4,2,4,5,6]\n",
+      "stdout": "17\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "nums = [5,2,1,2,5,2,1,2,5]\n",
+      "stdout": "8\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/maximum-erasure-value/",
+    "en": "https://leetcode.com/problems/maximum-erasure-value/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

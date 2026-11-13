@@ -1,0 +1,26 @@
+{
+  "id": 767,
+  "slug": "reorganize-string",
+  "summary": "读入一条只由小写字母构成的字符串S，长度落在1到500之间。把这些字母重新排成一条新的字符串，要求任意两个相邻位置上的字母都不一样。只要存在至少一种满足要求的排法，就写出其中任意一种。如果每种排法都会让某处相邻字母相同，就写出一个空字符串。",
+  "samples": [
+    {
+      "stdin": "S = \"aab\"\n",
+      "stdout": "\"aba\"\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "S = \"aaab\"\n",
+      "stdout": "\"\"\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/reorganize-string/",
+    "en": "https://leetcode.com/problems/reorganize-string/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

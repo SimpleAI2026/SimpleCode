@@ -1,0 +1,26 @@
+{
+  "id": 748,
+  "slug": "shortest-completing-word",
+  "summary": "读入牌照字符串licensePlate和单词数组words。牌照长度在1到7之间，可以包含数字、空格以及大小写字母。单词个数在10到1000之间，每个单词由1到15个小写字母组成。比较时忽略牌照中的数字、空格和大小写，只统计字母，某种字母出现几次，单词里就必须至少出现几次。找出满足这些次数的最短单词；长度相同则取数组中更靠前的一个。答案保证存在。写出该单词。",
+  "samples": [
+    {
+      "stdin": "licensePlate = \"1s3 PSt\", words = [\"step\", \"steps\", \"stripe\", \"stepple\"]\n",
+      "stdout": "\"steps\"\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "licensePlate = \"1s3 456\", words = [\"looks\", \"pest\", \"stew\", \"show\"]\n",
+      "stdout": "\"pest\"\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/shortest-completing-word/",
+    "en": "https://leetcode.com/problems/shortest-completing-word/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

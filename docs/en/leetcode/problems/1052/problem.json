@@ -1,0 +1,7 @@
+{
+  "id": 1052,
+  "summary": "Read a per-minute arrival count, a mood flag for each minute, and an integer X. The open period lasts from 1 to 20000 minutes, X is at least 1 and at most that period, each arrival count is from 0 to 1000, and each flag is 0 or 1. People who arrive during a minute leave when it ends. A flag of 1 makes that minute's visitors unhappy, while a flag of 0 makes them happy. The owner may pick one block of X back-to-back minutes and force every flag inside it to behave as calm. That block may be used only a single time. Find the largest total of happy visitors achievable in the whole period, and write it.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

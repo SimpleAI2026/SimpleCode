@@ -1,0 +1,8 @@
+{
+  "id": 1665,
+  "summary": "Read several tasks. Each task lists an actual cost and a start threshold. The task count is from 1 to 105. Both the cost and the threshold are integers from 1 to 104, and the cost is never above the threshold. Beginning a task requires energy on hand at least equal to its threshold, and finishing it subtracts the actual cost. The tasks may be ordered freely. Write the least initial energy that still finishes every task.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

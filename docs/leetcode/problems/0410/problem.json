@@ -1,0 +1,21 @@
+{
+  "id": 410,
+  "slug": "split-array-largest-sum",
+  "summary": "读入由非负整数排成的序列，以及正整数 m。设序列长度为 n，则 n 在 1 到 1000 之间，m 在 1 到 50 与 n 两者中较小的那个数之间。把序列切成 m 段，每段都要非空，而且必须保持原先连续的次序。写出一个最小的数，使得存在一种切法，各段之和都不超过这个数。",
+  "samples": [
+    {
+      "stdin": "nums = [7,2,5,10,8]\nm = 2\n",
+      "stdout": "18\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/split-array-largest-sum/",
+    "en": "https://leetcode.com/problems/split-array-largest-sum/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

@@ -1,0 +1,21 @@
+{
+  "id": 986,
+  "slug": "interval-list-intersections",
+  "summary": "读入两组闭区间。每一组内部按左端点递增，并且任意两段没有公共实数。一段闭区间覆盖从左端点到右端点的全部实数，两端都算在内。找出所有同时被第一组某段和第二组某段覆盖的实数范围，把每一段非空重叠写成新的闭区间。按左端点从小到大写出这些区间。每一组的段数都小于 1000。所有端点都是不小于零且严格小于 10^9 的整数。",
+  "samples": [
+    {
+      "stdin": "A = [[0,2],[5,10],[13,23],[24,25]], B = [[1,5],[8,12],[15,24],[25,26]]\n",
+      "stdout": "[[1,2],[5,5],[8,10],[15,23],[24,24],[25,25]]\nReminder: The inputs and the desired output are lists of Interval objects, and not arrays or lists.\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/interval-list-intersections/",
+    "en": "https://leetcode.com/problems/interval-list-intersections/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

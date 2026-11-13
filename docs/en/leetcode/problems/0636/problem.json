@@ -1,0 +1,7 @@
+{
+  "id": 636,
+  "summary": "A single-thread machine runs n functions, where n is from 1 to 100 and ids run from 0 through n minus 1. Logs arrive ordered by time. Each log carries an id, a start mark or a finish mark, and a timestamp. No two functions start or finish on the same timestamp, and every function logs its finish. A function may invoke another function. Exclusive duration is the count of time units a function itself is running, leaving out time spent in functions it invokes. Write those durations from the smallest id to the largest.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

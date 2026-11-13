@@ -1,0 +1,21 @@
+{
+  "id": 563,
+  "slug": "binary-tree-tilt",
+  "summary": "读入一棵二叉树。对任意结点，先分别求出左支全部数值之和与右支全部数值之和，缺掉的一支和记为 0，再取这两个和的正差，这个正差就是该结点的坡度。把每个结点的坡度加总，得到整棵树的坡度并写出来。任何一支上的数值之和，以及每个坡度，都落在 32 位整数可以表示的范围里。",
+  "samples": [
+    {
+      "stdin": "1\n/ \\\n2 3\n",
+      "stdout": "1\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/binary-tree-tilt/",
+    "en": "https://leetcode.com/problems/binary-tree-tilt/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

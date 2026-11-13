@@ -1,0 +1,26 @@
+{
+  "id": 628,
+  "slug": "maximum-product-of-three-numbers",
+  "summary": "读入一列整数，长度从 3 到 10000，每个数都在 -1000 到 1000 之间，任意三个数相乘的结果都落在 32 位有符号整数能表示的范围里。选出三个不同的位置，使这三个数的乘积达到最大，并把这个乘积写出来。负数参与相乘时符号要保留。",
+  "samples": [
+    {
+      "stdin": "[1,2,3]\n",
+      "stdout": "6\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "[1,2,3,4]\n",
+      "stdout": "24\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/maximum-product-of-three-numbers/",
+    "en": "https://leetcode.com/problems/maximum-product-of-three-numbers/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

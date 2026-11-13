@@ -1,0 +1,26 @@
+{
+  "id": 1048,
+  "slug": "longest-string-chain",
+  "summary": "读入若干个只由小写英文字母构成的单词。单词个数从 1 到 1000，每个单词的长度从 1 到 16。若在较短单词的某个位置塞进恰好一个字母就能得到较长单词，就把较短的那个称作较长那个的前驱。从这份名单里挑出单词排成一列，要求前一个是后一个的前驱。单独一个单词也算长度为 1 的列。找出最长一列包含多少个单词，并把这个长度写出来。",
+  "samples": [
+    {
+      "stdin": "words = [\"a\",\"b\",\"ba\",\"bca\",\"bda\",\"bdca\"]\n",
+      "stdout": "4\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "words = [\"xbc\",\"pcxbcf\",\"xb\",\"cxbc\",\"pcxbc\"]\n",
+      "stdout": "5\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/longest-string-chain/",
+    "en": "https://leetcode.com/problems/longest-string-chain/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

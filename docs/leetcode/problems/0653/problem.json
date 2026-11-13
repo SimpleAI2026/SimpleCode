@@ -1,0 +1,26 @@
+{
+  "id": 653,
+  "slug": "two-sum-iv-input-is-a-bst",
+  "summary": "读入一棵搜索二叉树，再读入一个整数当作目标和。查看树里有没有两个不同的结点，它们保存的数相加正好等于这个目标。有就写 true，没有就写 false。沿着中序走会得到升序数列，但这里只要是否存在的结论，不用指出是哪两个结点。",
+  "samples": [
+    {
+      "stdin": "5\n/ \\\n3 6\n/ \\ \\\n2 4 7\n\nTarget = 9\n",
+      "stdout": "True\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "5\n/ \\\n3 6\n/ \\ \\\n2 4 7\n\nTarget = 28\n",
+      "stdout": "False\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/two-sum-iv-input-is-a-bst/",
+    "en": "https://leetcode.com/problems/two-sum-iv-input-is-a-bst/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

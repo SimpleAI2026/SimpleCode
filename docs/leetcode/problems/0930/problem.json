@@ -1,0 +1,21 @@
+{
+  "id": 930,
+  "slug": "binary-subarrays-with-sum",
+  "summary": "读入一条只由数字 0 与 1 构成的序列，再读入一个目标和。序列长度至多 30000，目标和介于 0 和序列长度之间，序列中每个位置只会出现这两种数字。在序列上圈出一段连续区间，区间里至少要有一个数字，并把区间内的数字全部加起来。统计有多少段互不相同的区间能让这个和正好等于目标，起点或终点只要有一处不同就算另一段。把这段数作为答案写出来。",
+  "samples": [
+    {
+      "stdin": "A = [1,0,1,0,1], S = 2\n",
+      "stdout": "4\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/binary-subarrays-with-sum/",
+    "en": "https://leetcode.com/problems/binary-subarrays-with-sum/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

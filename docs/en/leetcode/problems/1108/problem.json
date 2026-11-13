@@ -1,0 +1,8 @@
+{
+  "id": 1108,
+  "summary": "Read one valid Internet Protocol version 4 address as text. It holds four decimal sections separated by single dots, and the input is guaranteed to be a legal address. Replace each dot by the three characters left bracket, dot, and right bracket. Leave every digit unchanged, and do not insert, delete, or reorder the four sections. Write the full string after those replacements are done.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

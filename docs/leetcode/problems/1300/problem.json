@@ -1,0 +1,26 @@
+{
+  "id": 1300,
+  "slug": "sum-of-mutated-array-closest-to-target",
+  "summary": "读入若干个整数，外加一个希望靠近的数值。选定一个整数作为上限。数组里凡是比上限大的数都改成这个上限，不超过上限的数保持原样，然后把数组求和。找出能使这个和与目标值的绝对差最小的上限；若有多个上限同样接近，写出其中最小的上限。这个上限不必是数组里原来就有的数。数组长度不超过 10^4，每个元素和目标值都介于 1 和 10^5 之间。",
+  "samples": [
+    {
+      "stdin": "arr = [4,9,3], target = 10\n",
+      "stdout": "3\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "arr = [2,3,5], target = 10\n",
+      "stdout": "5\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/sum-of-mutated-array-closest-to-target/",
+    "en": "https://leetcode.com/problems/sum-of-mutated-array-closest-to-target/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

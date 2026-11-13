@@ -1,0 +1,7 @@
+{
+  "id": 1105,
+  "summary": "Read books already lined up, plus the width allowed on every shelf. Book number i is described by two positive integers, thickness first and height second. There are between 1 and 1000 books. Thickness, height, and shelf width each lie between 1 and 1000, and no single book is thicker than the shelf. Keep the original sequence while placing them. On one shelf the thicknesses must add up to at most the width, and that shelf's height is the tallest book placed there. The full bookcase height is the sum of its shelf heights. Find the smallest bookcase height achievable under these rules, and write it.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

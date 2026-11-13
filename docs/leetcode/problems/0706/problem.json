@@ -1,0 +1,21 @@
+{
+  "id": 706,
+  "slug": "design-hashmap",
+  "summary": "自己做一张从整数键到整数值的表，禁止调用语言内置的哈希表。put 收到键和值时，键若是首次出现就存下这一对，键若已有记录就改成新值。get 收到键时，表中有该键就写出对应值，没有就写出 -1。remove 收到键时，表中有该键就删去记录，没有就什么都不改。键和值都在 0 到 1000000 之间，操作次数合计在 1 到 10000 之间。",
+  "samples": [
+    {
+      "stdin": "hashMap.put(1, 1)\nhashMap.put(2, 2)\nhashMap.get(1)\nhashMap.get(3)\nhashMap.put(2, 1); // update the existing value\nhashMap.get(2)\nhashMap.remove(2); // remove the mapping for 2\nhashMap.get(2)\n",
+      "stdout": "1\n-1\n1\n-1\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/design-hashmap/",
+    "en": "https://leetcode.com/problems/design-hashmap/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

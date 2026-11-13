@@ -1,0 +1,8 @@
+{
+  "id": 1636,
+  "summary": "Read a list of integers whose length is from 1 to 100, with each integer from -100 through 100. Reorder the whole list so that a value seen fewer times stands before a value seen more times. When two values are seen the same number of times, put the larger value ahead of the smaller one. Write the list after this reordering is finished. Keep that larger-before-smaller rule for every tie, and do not scramble values that share a count.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

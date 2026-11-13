@@ -1,0 +1,7 @@
+{
+  "id": 284,
+  "summary": "An iterator is already available. It can only report whether another element remains, and it can only yield the next element. Wrap it so a caller can inspect the upcoming element without consuming that element. Repeated inspections, before a real yield, must show the same element. A real yield still calls the original step that produces the next element. Write this wrapper that can inspect the upcoming element.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

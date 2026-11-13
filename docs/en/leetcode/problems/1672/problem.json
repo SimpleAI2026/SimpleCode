@@ -1,0 +1,8 @@
+{
+  "id": 1672,
+  "summary": "Read a grid of integers whose row count and column count each lie between 1 and 50. Every cell holds an amount from 1 through 100. Each row belongs to one customer, and each cell is the money that customer keeps at one bank. Add every cell in a row to obtain that customer's wealth. Find the customer whose wealth is largest and write that wealth.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

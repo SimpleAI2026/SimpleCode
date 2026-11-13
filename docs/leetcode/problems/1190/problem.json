@@ -1,0 +1,26 @@
+{
+  "id": 1190,
+  "slug": "reverse-substrings-between-each-pair-of-parentheses",
+  "summary": "读入一条长度在 0 到 2000 之间的字符串。它只包含小写英文字母和圆括号，而且所有括号都已正确配对。先处理最里面的一对括号，把这对括号之间的文字前后对调，然后按同样办法处理更外面的各对，直到每一对都处理过。写出最终文字。结果里面不得保留任何括号字符。长度上界是 2000。",
+  "samples": [
+    {
+      "stdin": "s = \"(abcd)\"\n",
+      "stdout": "\"dcba\"\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "s = \"(u(love)i)\"\n",
+      "stdout": "\"iloveu\"\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/reverse-substrings-between-each-pair-of-parentheses/",
+    "en": "https://leetcode.com/problems/reverse-substrings-between-each-pair-of-parentheses/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

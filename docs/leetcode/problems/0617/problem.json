@@ -1,0 +1,26 @@
+{
+  "id": 617,
+  "slug": "merge-two-binary-trees",
+  "summary": "读入两棵二叉树，每棵的结点数都在 0 到 2000，结点上的整数介于 -104 与 104。按相同位置把两棵树叠在一起。两边都有结点时，新结点保存两个值的和；只有一边有结点时，保留这一边的结点以及它下方的结构。写出叠好之后的树。其中一棵是空树时，结果就是另一棵。",
+  "samples": [
+    {
+      "stdin": "root1 = [1,3,2,5], root2 = [2,1,3,null,4,null,7]\n",
+      "stdout": "[3,4,5,5,4,null,7]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "root1 = [1], root2 = [1,2]\n",
+      "stdout": "[2,2]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/merge-two-binary-trees/",
+    "en": "https://leetcode.com/problems/merge-two-binary-trees/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

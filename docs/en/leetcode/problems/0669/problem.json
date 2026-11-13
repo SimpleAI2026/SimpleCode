@@ -1,0 +1,8 @@
+{
+  "id": 669,
+  "summary": "Read a search tree by its root pointer, plus integer bounds named low and high. Delete every node whose value lies outside the closed interval, so each remaining value sits between low and high. Nodes that stay must keep their earlier ancestor and descendant links. The tree produced this way is unique. Write the new root, which might no longer be the original root. The node count is from 1 to 10^4. Node values are unique. Each value and both bounds lie from 0 to 10^4, with low no greater than high. The input is already a valid search tree.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

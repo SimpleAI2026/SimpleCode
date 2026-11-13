@@ -1,0 +1,26 @@
+{
+  "id": 1446,
+  "slug": "consecutive-characters",
+  "summary": "读入一条仅由小写英文字母构成的字符串。把它的能量定义成某一段的长度，这一段必须非空，而且从头到尾只重复同一个字母。在所有这样的片段里取最长的长度，把该长度写出来。字符串的长度介于 1 与 500，不会出现大写、数字或空格。",
+  "samples": [
+    {
+      "stdin": "s = \"leetcode\"\n",
+      "stdout": "2\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "s = \"abbcccddddeeeeedcba\"\n",
+      "stdout": "5\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/consecutive-characters/",
+    "en": "https://leetcode.com/problems/consecutive-characters/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

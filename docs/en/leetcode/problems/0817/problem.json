@@ -1,0 +1,8 @@
+{
+  "id": 817,
+  "summary": "Read a linked list whose node values are all different. Let N be its length: N is from 1 to 10000, and each value is chosen from 0 through N minus 1. Also read a subset of those values whose size is likewise from 1 to 10000. Two subset values are linked when they occupy neighboring nodes. Find how many separate contiguous runs those values form along the list, and write the number of runs.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "id": 1239,
+  "slug": "maximum-length-of-a-concatenated-string-with-unique-characters",
+  "summary": "读入一个字符串数组。数组长度在 1 到 16 之间，每条字符串的长度在 1 到 26 之间，内容只含小写英文字母。按原来的相对次序挑出若干条，可以跳过一些，再把挑出的字符串首尾相接。接成的新串里，每个字符至多出现一次。在所有满足这个条件的接法中，写出新串的最大长度。如果任何挑法都会重复字母，这个长度就是 0。单条字符串的长度上界是 26。",
+  "samples": [
+    {
+      "stdin": "arr = [\"un\",\"iq\",\"ue\"]\n",
+      "stdout": "4\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "arr = [\"cha\",\"r\",\"act\",\"ers\"]\n",
+      "stdout": "6\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/maximum-length-of-a-concatenated-string-with-unique-characters/",
+    "en": "https://leetcode.com/problems/maximum-length-of-a-concatenated-string-with-unique-characters/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

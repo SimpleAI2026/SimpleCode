@@ -1,0 +1,26 @@
+{
+  "id": 1720,
+  "slug": "decode-xored-array",
+  "summary": "读入一条编码数组 encoded 和一个非负整数 first。原数组 arr 有 n 个非负整数，n 介于 2 和 104，encoded 的长度是 n 减 1，其中每个数以及 first 都介于 0 和 10^5。编码规则是 encoded 的第 i 项等于 arr 的第 i 项与第 i 加 1 项做按位异或，并且 arr 的开头等于 first。按这个关系还原出整个 arr 并写出来。答案唯一。",
+  "samples": [
+    {
+      "stdin": "the encoded array. You are also given an integer first, that is the first element of arr, i.e. arr[0].\n",
+      "stdout": "*the original array* arr. It can be proved that the answer exists and is unique.\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "encoded = [1,2,3], first = 1\n",
+      "stdout": "[1,0,2,1]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/decode-xored-array/",
+    "en": "https://leetcode.com/problems/decode-xored-array/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

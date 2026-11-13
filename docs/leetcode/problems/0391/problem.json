@@ -1,0 +1,26 @@
+{
+  "id": 391,
+  "slug": "perfect-rectangle",
+  "summary": "读入若干轴对齐矩形，个数至多是 2 乘 10000。每个矩形由西南角和东北角的横纵坐标给出，四个数都落在负 100000 到正 100000。判断这些矩形拼合之后，是否既不互相压住，也不留下空洞，并且外边界正好构成一个大矩形。是则写出 true，否则写出 false。",
+  "samples": [
+    {
+      "stdin": "rectangles = [[1,1,3,3],[3,1,4,2],[3,2,4,4],[1,3,2,4],[2,3,3,4]]\n",
+      "stdout": "true\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "rectangles = [[1,1,2,3],[1,3,2,4],[3,1,4,2],[3,2,4,4]]\n",
+      "stdout": "false\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/perfect-rectangle/",
+    "en": "https://leetcode.com/problems/perfect-rectangle/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

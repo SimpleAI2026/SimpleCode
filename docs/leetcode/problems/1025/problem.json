@@ -1,0 +1,26 @@
+{
+  "id": 1025,
+  "slug": "divisor-game",
+  "summary": "黑板一开始写着整数 N，N 的范围是 1 到 1000。爱丽丝与鲍勃轮流改写这个数，爱丽丝先改。每一步选择正整数 x，x 必须小于当前数，而且当前数除以 x 的余数为零，随后把当前数减去 x。选不出合法 x 的一方失败。双方都采取对自己最有利的走法。判断爱丽丝是否会赢，会赢写 true，否则写 false。",
+  "samples": [
+    {
+      "stdin": "2\n",
+      "stdout": "true\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "3\n",
+      "stdout": "false\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/divisor-game/",
+    "en": "https://leetcode.com/problems/divisor-game/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

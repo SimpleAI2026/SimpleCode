@@ -1,0 +1,21 @@
+{
+  "id": 114,
+  "slug": "flatten-binary-tree-to-linked-list",
+  "summary": "读入一棵二叉树。不要另外申请一条新链，就在原来的结点上把它拉成只通过右孩子向后延伸的一条单链。结点的排列遵循前序：先当前结点，再原来的整个左侧，再原来的整个右侧。原来挂在左边的结点要改挂到这条右链上，每个结点的左孩子最后都变成空。写出变形之后的树。空树仍然为空，结点中的整数保持不变。",
+  "samples": [
+    {
+      "stdin": "1 2 5 3 4 null 6\n",
+      "stdout": "1 2 3 4 5 6\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/flatten-binary-tree-to-linked-list/",
+    "en": "https://leetcode.com/problems/flatten-binary-tree-to-linked-list/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

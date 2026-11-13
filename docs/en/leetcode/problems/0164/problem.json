@@ -1,0 +1,8 @@
+{
+  "id": 164,
+  "summary": "Read unsorted non-negative integers. Every value fits inside a signed 32-bit range. Imagine them ordered from small to large, then look only at values that become neighbors in that order. Write the largest difference between any such neighboring pair. If fewer than two values are present, write 0. Both the running time and the extra memory should grow in proportion to how many values were read. Equal neighbors contribute a difference of 0, and the written result is still the widest neighboring gap.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

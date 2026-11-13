@@ -1,0 +1,8 @@
+{
+  "id": 1752,
+  "summary": "Read a column of integers of length between 1 and 100. Each entry is between 1 and 100, and repeated entries are allowed. Picture those same numbers arranged so that no entry is smaller than the one before it, then rotate the whole column by any number of steps, including a rotation of zero steps. Decide whether the column you read can come from that rotation. Write true if it can, and false if it cannot.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

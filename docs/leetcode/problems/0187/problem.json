@@ -1,0 +1,21 @@
+{
+  "id": 187,
+  "slug": "repeated-dna-sequences",
+  "summary": "读入一条只含字母 A、C、G、T 的字符串，把它当作一段遗传序列。在其中找出每一个长度刚好是 10 的片段，并且这个片段在整条字符串里至少出现了两次。每个这样的片段只写一次，书写顺序随意。若没有任何片段重复出现，就写空的结果。片段必须是连续的十个字符，不能跳着取。重叠的窗口只要内容相同并且出现超过一次，也要算进去。",
+  "samples": [
+    {
+      "stdin": "s = \"AAAAACCCCCAAAAACCCCCCAAAAAGGGTTT\"\n",
+      "stdout": "[\"AAAAACCCCC\", \"CCCCCAAAAA\"]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/repeated-dna-sequences/",
+    "en": "https://leetcode.com/problems/repeated-dna-sequences/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

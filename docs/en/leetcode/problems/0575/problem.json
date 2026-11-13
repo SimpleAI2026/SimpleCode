@@ -1,0 +1,8 @@
+{
+  "id": 575,
+  "summary": "Read an integer array whose length is even and lies between 2 and 10000. Every integer lies between -100000 and 100000. Different integers stand for different flavors, and each integer stands for one candy. Split the candies so the sister and the brother receive equally many pieces. Under that equal count, find the largest number of flavors the sister can hold, and write that number.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

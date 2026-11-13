@@ -1,0 +1,26 @@
+{
+  "id": 970,
+  "slug": "powerful-integers",
+  "summary": "读入两个正整数 x 和 y，以及一个上界。x 和 y 各自从 1 到 100，上界从 0 到 1000000。一个整数如果可以写成 x 的某个非负整数次幂，再加上 y 的某个非负整数次幂，就称为强整数。指数从 0 开始，因此 x 或 y 的 0 次幂等于 1。找出所有不超过上界的强整数，每个数值只保留一次，顺序不限，把它们写出来。",
+  "samples": [
+    {
+      "stdin": "x = 2, y = 3, bound = 10\n",
+      "stdout": "[2,3,4,5,7,9,10]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "x = 3, y = 5, bound = 15\n",
+      "stdout": "[2,4,6,8,10,14]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/powerful-integers/",
+    "en": "https://leetcode.com/problems/powerful-integers/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

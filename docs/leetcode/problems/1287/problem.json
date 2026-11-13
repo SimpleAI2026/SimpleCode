@@ -1,0 +1,21 @@
+{
+  "id": 1287,
+  "slug": "element-appearing-more-than-25-in-sorted-array",
+  "summary": "读入一个已经按非递减顺序排好的整数数组。当中有且只有一个整数，它出现的次数严格多于元素总数的四分之一。找出这个整数，并把它单独写出来，不要附带次数。数组长度介于 1 和 10^4 之间，每个元素介于 0 和 10^5 之间。因为顺序已经排好，相等的数一定彼此相邻。",
+  "samples": [
+    {
+      "stdin": "arr = [1,2,2,6,6,6,6,7,10]\n",
+      "stdout": "6\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/element-appearing-more-than-25-in-sorted-array/",
+    "en": "https://leetcode.com/problems/element-appearing-more-than-25-in-sorted-array/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

@@ -1,0 +1,8 @@
+{
+  "id": 1640,
+  "summary": "Read a target sequence arr and several short blocks called pieces. Integers inside arr are pairwise different, and integers across all blocks are pairwise different too. The length of arr is from 1 to 100, the block count does not exceed that length, the blocks together hold exactly as many integers as arr, and every integer is from 1 to 100. Blocks may be lined up in any order, yet the order inside a single block must stay untouched. Write true when the blocks can be joined into arr, and write false when they cannot.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

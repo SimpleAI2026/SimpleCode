@@ -1,0 +1,8 @@
+{
+  "id": 1028,
+  "summary": "Read a preorder transcript and rebuild the binary tree it describes. The top node sits at level zero, and a child sits one level below its parent. Each entry begins with a run of hyphens whose count equals that level, then gives the positive integer stored there. When a node owns a single child, that child hangs on the left side. The tree holds from 1 to 1000 nodes, and every stored integer lies between 1 and 1000000000. Write the root of the recovered tree.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

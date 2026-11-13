@@ -1,0 +1,8 @@
+{
+  "id": 162,
+  "summary": "Read a list of numbers in which every pair of neighbors differs. Treat both missing ends as negative infinity. A position is a peak when its value is strictly larger than the value beside it on the left and the value beside it on the right. Several peaks may sit in the same list. Write the zero-based index of any one peak. The number of comparisons must grow like the logarithm of the length, so walking across every entry is not acceptable. An endpoint counts when it is strictly larger than its only neighbor.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

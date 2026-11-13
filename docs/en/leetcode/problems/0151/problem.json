@@ -1,0 +1,8 @@
+{
+  "id": 151,
+  "summary": "Read one line of text. Spaces may appear at the start, at the end, or between words. A word is a maximal run of characters that are not spaces. Reverse the sequence of words so the word that was last becomes the word that is first, and keep the characters inside each word as they were. The result must not keep spaces at either end, and neighboring words are separated by one space only. Write the line. Write an empty line when there is no word.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

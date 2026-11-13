@@ -1,0 +1,8 @@
+{
+  "id": 82,
+  "summary": "Read a singly linked list whose stored numbers are already arranged in non-decreasing order. If a number shows up two times or more, erase every node that stores that number, so none of them remain. Keep only numbers that show up a single time in the whole list, and keep the earlier relative order of those nodes. Write the list left after the erasing. When no node remains, the result is an empty list. Count occurrences across the whole list, not inside a short fragment only.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

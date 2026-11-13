@@ -1,0 +1,8 @@
+{
+  "id": 458,
+  "summary": "Read a bucket count, a death wait in minutes, and a total testing time in minutes. The bucket count runs from 1 through 1000, both times run from 1 through 100, and the death wait is at most the total testing time. Exactly one bucket holds poison and the rest hold water, and all buckets look the same. A pig may drink from any number of buckets at once, and drinking takes no time. Afterward you must wait out the death wait before feeding again. When that wait ends, every pig that drank poison dies and every other pig stays alive. Find the smallest number of pigs that can identify the poisoned bucket before testing time runs out, and write that number.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

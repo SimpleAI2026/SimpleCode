@@ -1,0 +1,26 @@
+{
+  "id": 1663,
+  "slug": "smallest-string-with-a-given-numeric-value",
+  "summary": "读入两个整数 n 与 k。n 介于 1 与 105，k 介于 n 与 26 乘 n。把 a 到 z 依次记成 1 到 26，一条小写串的总分是其中每个字母对应数字相加。写出长度正好为 n、总分正好为 k、并且在字典次序里最小的那条小写串。",
+  "samples": [
+    {
+      "stdin": "n = 3, k = 27\n",
+      "stdout": "\"aay\"\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "n = 5, k = 73\n",
+      "stdout": "\"aaszz\"\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/smallest-string-with-a-given-numeric-value/",
+    "en": "https://leetcode.com/problems/smallest-string-with-a-given-numeric-value/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

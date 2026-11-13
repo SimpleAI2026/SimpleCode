@@ -1,0 +1,8 @@
+{
+  "id": 397,
+  "summary": "Read a positive integer n. If the current value is even, replace it with half of that value. If the current value is odd, replace it with the value plus 1 or with the value minus 1. Keep replacing until the value equals 1. Write the fewest steps that can reach that goal.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

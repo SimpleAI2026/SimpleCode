@@ -1,0 +1,7 @@
+{
+  "id": 225,
+  "summary": "Offer a last in first out container of integers, and use only queue actions to do it. Support four actions. push places one integer into the container. pop removes and yields the integer that was placed most recently and is still inside. top reports that integer without removing it. empty writes true when the container holds nothing and false when it holds something. pop and top are never called while the container is empty. A queue may only add at its rear, inspect or remove its front, and report its size or whether it is vacant.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

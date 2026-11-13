@@ -1,6 +1,6 @@
 {
   "id": 234,
-  "summary": "The public title of this exercise is Palindrome Linked List. Read a node count followed by the integer stored in each node from standard input and compute the result named by that title, using only those values. Print the result as the word true or false. The sample below is a short input written for this playground so the printed line can be checked locally. It is not a copy of an example from the problem site. The input stays under one hundred elements so it finishes quickly in the browser.",
+  "summary": "Read a one-way linked list in which every node stores an integer. Walk from the front to the back to obtain a sequence of integers. Write true when that sequence matches the sequence obtained by walking from the back to the front, and write false when it does not. An empty list and a list of one node both produce true. Compare the integers in the nodes, not the place of a node in memory.",
   "notes": [
     "Compare after trimming trailing newlines. The input is a node count followed by the integer stored in each node."
   ]

@@ -1,0 +1,26 @@
+{
+  "id": 1668,
+  "slug": "maximum-repeating-substring",
+  "summary": "读入字符串 sequence 与单词 word。二者都只含小写英文字母，长度各自介于 1 与 100。若把 word 原样首尾相连重复 k 遍之后，得到的结果是 sequence 里面一段连续内容，则 k 可以当作重复次数。写出 word 在 sequence 里能够取得的最大重复次数。若 word 一次都没有作为连续内容出现，这个最大次数记为 0，照样写出。",
+  "samples": [
+    {
+      "stdin": "sequence = \"ababc\", word = \"ab\"\n",
+      "stdout": "2\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "sequence = \"ababc\", word = \"ba\"\n",
+      "stdout": "1\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/maximum-repeating-substring/",
+    "en": "https://leetcode.com/problems/maximum-repeating-substring/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

@@ -1,0 +1,8 @@
+{
+  "id": 1104,
+  "summary": "Picture an endless binary tree in which every node owns a left child and a right child, so each lower row holds twice as many nodes as the row above it. Positive integers starting at 1 fill the nodes row by row, and the top row holds only the first label. On odd rows the numbers grow from the left side toward the right side. On even rows the numbers grow from the right side toward the left side. Successive rows continue the integer sequence without gaps. Read one target label between 1 and 1000000. Find every label visited while walking downward from the top node to that target. Write those labels from the top downward.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

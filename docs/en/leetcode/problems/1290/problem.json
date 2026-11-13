@@ -1,0 +1,8 @@
+{
+  "id": 1290,
+  "summary": "Read a non-empty singly linked list whose nodes run from front to back. Every node stores either 0 or 1. The head is the high bit and the tail is the low bit, so the chain spells one integer in binary. Convert that binary spelling into a decimal integer and write the decimal value. The chain contains at most 30 nodes, and no node stores a digit other than a single bit.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

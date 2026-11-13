@@ -1,0 +1,8 @@
+{
+  "id": 1663,
+  "summary": "Read two integers n and k. n is from 1 to 105, and k is from n to 26 times n. A lowercase letter scores its place in the alphabet, so a scores 1, b scores 2, and so on until z scores 26. A lowercase string scores the sum of its letters. Write the string that has length exactly n, scores exactly k, and is the smallest such string in dictionary order.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

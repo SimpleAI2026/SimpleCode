@@ -1,0 +1,21 @@
+{
+  "id": 1128,
+  "slug": "number-of-equivalent-domino-pairs",
+  "summary": "读入若干张骨牌，每张牌用两个整数表示上下两半的点数。牌的张数从 1 到 40000，每一半的点数从 1 到 9。两张牌如果本来就相同，或者把其中一张转动 180 度之后变得相同，就当作一对匹配。别的转动角度不算。在前一个下标严格小于后一个下标的前提下，统计匹配的牌对一共有多少，并把这个对数写出来。",
+  "samples": [
+    {
+      "stdin": "dominoes = [[1,2],[2,1],[3,4],[5,6]]\n",
+      "stdout": "1\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/number-of-equivalent-domino-pairs/",
+    "en": "https://leetcode.com/problems/number-of-equivalent-domino-pairs/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

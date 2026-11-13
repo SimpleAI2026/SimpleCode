@@ -1,0 +1,21 @@
+{
+  "id": 922,
+  "slug": "sort-array-by-parity-ii",
+  "summary": "读入非负整数序列 A。它的长度是偶数，至少为 2，至多为 20000，每个数至多 1000。其中奇数值和偶数值正好各占一半。重新安排这些数，使偶数下标上放偶数，奇数下标上放奇数。任何满足这一条的安排都可以接受。把安排之后的序列写出来。",
+  "samples": [
+    {
+      "stdin": "[4,2,5,7]\n",
+      "stdout": "[4,5,2,7]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/sort-array-by-parity-ii/",
+    "en": "https://leetcode.com/problems/sort-array-by-parity-ii/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

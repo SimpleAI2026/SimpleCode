@@ -1,0 +1,7 @@
+{
+  "id": 410,
+  "summary": "Read a sequence of non-negative integers and a positive integer m. Let n be the length. Then n runs from 1 to 1000, and m runs from 1 to the smaller of 50 and n. Cut the sequence into m blocks. Every block must be non-empty and must keep a contiguous stretch of the original order. Write the smallest cap such that some cut keeps every block sum at or below that cap.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

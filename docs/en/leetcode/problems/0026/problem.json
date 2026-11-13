@@ -1,0 +1,8 @@
+{
+  "id": 26,
+  "summary": "Read a stretch of integers that is already sorted from small to large. Compact that stretch inside its current storage so each distinct value is kept once and the kept values stay adjacent in ascending order. Do not request a second stretch of the same length, and keep spare space at a fixed size. Write the length of the compacted live part. Cells after that length may contain anything.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

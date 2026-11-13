@@ -1,0 +1,8 @@
+{
+  "id": 1089,
+  "summary": "Read an integer array whose length stays fixed. The length runs from 1 to 10000, and every entry is an integer from 0 through 9. For each zero that was already present, place one extra zero directly after it and shift later entries toward the end. Do not repeat the process on a zero that was created as a copy. Discard anything that would extend past the original length, so the length stays unchanged. Perform the change inside the same array, then write the array.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

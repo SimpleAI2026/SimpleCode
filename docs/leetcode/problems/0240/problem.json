@@ -1,0 +1,21 @@
+{
+  "id": 240,
+  "slug": "search-a-2d-matrix-ii",
+  "summary": "读入一个 m 行 n 列的整数矩阵，以及一个目标整数。每一行从左到右递增，每一列从上到下递增。行数和列数都是正整数，并且都不超过 20。判断目标整数是否出现在某个格子里。出现则写出 true，未出现则写出 false。相等才算找到，只是大小接近不算。",
+  "samples": [
+    {
+      "stdin": "target = 5,\n",
+      "stdout": "true.\n\nGiven target = 20, return false.\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/search-a-2d-matrix-ii/",
+    "en": "https://leetcode.com/problems/search-a-2d-matrix-ii/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

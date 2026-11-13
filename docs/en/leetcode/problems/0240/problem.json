@@ -1,0 +1,7 @@
+{
+  "id": 240,
+  "summary": "Read an integer matrix with m rows and n columns, plus one target integer. Each row increases from left to right, and each column increases from top to bottom. Both m and n are positive integers, and neither exceeds 20. Decide whether the target integer occurs in some cell. Write true when it occurs and false when it does not. Only an equal value counts as found; a merely close value does not.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

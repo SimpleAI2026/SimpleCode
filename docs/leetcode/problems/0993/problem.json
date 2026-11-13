@@ -1,0 +1,26 @@
+{
+  "id": 993,
+  "slug": "cousins-in-binary-tree",
+  "summary": "读入一棵每个结点数值都不同的二叉树，以及两个不同的目标值 x 和 y。根的深度是零，任一孩子的深度等于父亲深度加一。两个结点若深度相同但父亲不是同一个，就称为堂兄弟。结点个数介于 2 和 100，结点数值取自 1 到 100。判断存有 x 的结点与存有 y 的结点是否为堂兄弟。是则写 true，否则写 false。",
+  "samples": [
+    {
+      "stdin": "root = [1,2,3,4], x = 4, y = 3\n",
+      "stdout": "false\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "root = [1,2,3,null,4,null,5], x = 5, y = 4\n",
+      "stdout": "true\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/cousins-in-binary-tree/",
+    "en": "https://leetcode.com/problems/cousins-in-binary-tree/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

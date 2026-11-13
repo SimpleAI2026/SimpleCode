@@ -1,0 +1,8 @@
+{
+  "id": 1480,
+  "summary": "Read an integer list nums. Build a new list of the same length whose entry at index i, counting from zero, equals the sum of nums from the first entry through index i. Write the whole new list. The input length is from 1 to 1000, and each value is from -1000000 to 1000000.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

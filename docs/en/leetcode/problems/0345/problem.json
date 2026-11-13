@@ -1,0 +1,8 @@
+{
+  "id": 345,
+  "summary": "Read one string. Reverse only the vowel letters in the order they appear, and leave consonants, digits, and every other symbol where they already stand. Vowels are a, e, i, o, and u, plus the matching uppercase letters. When a vowel moves, keep the case it already had. Write the whole string after the change.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

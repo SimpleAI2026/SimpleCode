@@ -1,0 +1,26 @@
+{
+  "id": 1385,
+  "slug": "find-the-distance-value-between-two-arrays",
+  "summary": "读入两列整数以及一个非负整数 d。对第一列里的每一个数，查看第二列有没有某个数，使两者相差的绝对值不超过 d。若一个都找不到，这个数就记为合格。把合格个数写出来。两列的长度都介于 1 与 500，每个整数都介于负 1000 与 1000，d 介于 0 与 100。",
+  "samples": [
+    {
+      "stdin": "arr1 = [4,5,8], arr2 = [10,9,1,8], d = 2\n",
+      "stdout": "2\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "arr1 = [1,4,2,3], arr2 = [-4,-3,6,10,20,30], d = 3\n",
+      "stdout": "2\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/find-the-distance-value-between-two-arrays/",
+    "en": "https://leetcode.com/problems/find-the-distance-value-between-two-arrays/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

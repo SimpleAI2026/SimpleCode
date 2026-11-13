@@ -1,0 +1,8 @@
+{
+  "id": 969,
+  "summary": "Read a permutation of the integers from 1 through its own length. The length is between 1 and 100. A pancake flip picks a positive integer k no larger than the current length and reverses the prefix of that many entries. You may perform any number of flips, including none. Write a sequence of k values which, applied in order, leaves the list sorted from small to large. Any sequence that finishes the sort within ten times the length is accepted.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

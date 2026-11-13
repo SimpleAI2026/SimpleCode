@@ -1,0 +1,26 @@
+{
+  "id": 1609,
+  "slug": "even-odd-tree",
+  "summary": "读入一棵二叉树。节点总数介于 1 与 100000，节点上的整数介于 1 与 1000000。把根记作第 0 层，孩子所在层号逐代加一。偶数层的数值必须全为奇数，并且由左向右越来越大，相邻两项不能相等。奇数层的数值必须全为偶数，并且由左向右越来越小，相邻两项也不能相等。判断整棵树是否符合这些层规则，符合写出 true，否则写出 false。",
+  "samples": [
+    {
+      "stdin": "root = [1,10,4,3,null,7,9,12,8,6,null,null,2]\n",
+      "stdout": "true\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "root = [5,4,2,3,3,7]\n",
+      "stdout": "false\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/even-odd-tree/",
+    "en": "https://leetcode.com/problems/even-odd-tree/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

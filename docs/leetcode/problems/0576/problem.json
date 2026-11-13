@@ -1,0 +1,26 @@
+{
+  "id": 576,
+  "slug": "out-of-boundary-paths",
+  "summary": "读入五个整数 m、n、maxMove、startRow、startColumn。网格有 m 行 n 列，m 和 n 都在 1 到 50 之间，球从网格内部的 startRow 行 startColumn 列出发。每一步可以向上、下、左、右移动一格，也允许迈出边界。最多走 maxMove 步，maxMove 在 0 到 50 之间。统计有多少种走法能在不超过该步数时让球离开网格，不同步数出界都要计入。数目可能很大，写出它除以 10^9 加 7 的余数。",
+  "samples": [
+    {
+      "stdin": "m = 2, n = 2, maxMove = 2, startRow = 0, startColumn = 0\n",
+      "stdout": "6\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "m = 1, n = 3, maxMove = 3, startRow = 0, startColumn = 1\n",
+      "stdout": "12\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/out-of-boundary-paths/",
+    "en": "https://leetcode.com/problems/out-of-boundary-paths/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

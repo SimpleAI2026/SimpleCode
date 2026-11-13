@@ -1,0 +1,8 @@
+{
+  "id": 1816,
+  "summary": "Read an English sentence whose length is at most 500. One space stands between words, neither end of the sentence has a space, and every word uses only capital or small English letters. Also read a positive integer k that is not larger than the word count. Keep only the leftmost k words, drop the rest, and join the kept words with one space. Write the shortened sentence.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "id": 724,
+  "summary": "Read an integer array nums. Its length may be 0 and is at most 10000, and each value lies between -1000 and 1000 inclusive. Call an index balanced when the total of every value strictly before it equals the total of every value strictly after it. The value stored at the index itself is excluded from both totals. A side with no values has total zero. Find the left-most balanced index and write it. Write -1 when the array has no balanced index.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

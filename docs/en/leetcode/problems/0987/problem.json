@@ -1,0 +1,8 @@
+{
+  "id": 987,
+  "summary": "Read a binary tree and assign coordinates. The root occupies row zero and column zero. A left child occupies the next row and the column just left of its parent. A right child occupies the next row and the column just right of its parent. Bucket the nodes by column, taking the smallest column first. Inside a column, smaller row numbers come first, and nodes that share a row are ordered by the integer stored in the node, smaller first. Write one group of integers for each column, keeping the columns from left to right. The node count is between 1 and 1000, and each stored integer is between 0 and 1000.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

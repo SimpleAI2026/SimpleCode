@@ -1,0 +1,26 @@
+{
+  "id": 924,
+  "slug": "minimize-malware-spread",
+  "summary": "读入无向图的邻接方阵，边长大于 1 且至多 300。方阵是对称的，值为 1 表示两端直接有连线，对角线上全是 1。另有一份最初染病的结点名单，名单非空而且短于结点总数，里面的编号都合法。一条连线的两端只要有一端已经染病，另一端也会染病，直到不能再扩散。扩散结束后的染病结点数记作 M。从名单里恰好去掉一个结点，让 M 尽可能小。有多个结点效果一样时，写出编号最小的那个。被去掉的结点后来仍可能因为扩散而染病。",
+  "samples": [
+    {
+      "stdin": "graph = [[1,1,0],[1,1,0],[0,0,1]], initial = [0,1]\n",
+      "stdout": "0\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "graph = [[1,0,0],[0,1,0],[0,0,1]], initial = [0,2]\n",
+      "stdout": "0\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/minimize-malware-spread/",
+    "en": "https://leetcode.com/problems/minimize-malware-spread/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

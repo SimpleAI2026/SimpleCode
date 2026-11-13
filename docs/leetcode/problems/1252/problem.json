@@ -1,0 +1,26 @@
+{
+  "id": 1252,
+  "slug": "cells-with-odd-values-in-a-matrix",
+  "summary": "准备一张 n 行 m 列的表，一开始每个格子都是 0。n 和 m 都是 1 到 50 的整数。接着读入 1 到 100 次操作。每次操作指定一个行号和一个列号，编号从 0 开始，并且不会超出表格边界。该次操作要把这一整行和这一整列的每个格子都加上 1，行列交叉的那一格因此会被加上两次。全部操作完成后，统计当前数值为奇数的格子个数并写出来。操作次数上界是 100。",
+  "samples": [
+    {
+      "stdin": "n = 2, m = 3, indices = [[0,1],[1,1]]\n",
+      "stdout": "6\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "n = 2, m = 2, indices = [[1,1],[0,0]]\n",
+      "stdout": "0\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/cells-with-odd-values-in-a-matrix/",
+    "en": "https://leetcode.com/problems/cells-with-odd-values-in-a-matrix/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

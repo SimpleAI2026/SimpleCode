@@ -1,0 +1,8 @@
+{
+  "id": 1573,
+  "summary": "Read a string s made only of the characters 0 and 1. Cut it into three pieces that are each nonempty and that concatenate, in the original order, back to s. A cut counts only when the three pieces contain identical counts of the character 1. Write how many such cuts exist, after reducing the count modulo 10^9 plus 7. The length of s is from 3 to 100000.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

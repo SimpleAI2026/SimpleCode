@@ -1,0 +1,8 @@
+{
+  "id": 1260,
+  "summary": "Read an integer table with m rows and n columns together with a shift count k. View the cells as one ring that runs left to right across a row and then continues at the start of the next row. Each shift slides every integer one step along that ring: a cell moves one place right, a value at the end of a row drops onto the first cell of the following row, and the bottom-right value wraps onto the top-left cell. Write the table after exactly k shifts. m and n are each at most 50, every stored integer lies between -1000 and 1000, and k lies between 0 and 100.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

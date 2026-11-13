@@ -1,0 +1,8 @@
+{
+  "id": 665,
+  "summary": "Read an integer array whose length is n. n lies from 1 to 104, and every integer lies from -100000 to 100000. Decide whether altering at most one entry can make the array non-decreasing: for every index i where i plus 1 is still valid, the left entry is less than or equal to the right entry. Write true if this is possible and write false otherwise.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

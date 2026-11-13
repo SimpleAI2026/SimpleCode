@@ -1,0 +1,26 @@
+{
+  "id": 1006,
+  "slug": "clumsy-factorial",
+  "summary": "读入正整数 N，范围是 1 到 10000。把 N、N 减一，依此降到 1 排成一行。相邻两数之间按乘、除、加、减的次序循环填入运算符，用完四种后再从头循环。先从左向右处理所有乘与除，除法结果向下取整，十乘以九再除以八得到十一；加减留到乘除全部完成后再从左向右计算。写出最终的整数。这个整数保证能放进三十二位有符号范围。",
+  "samples": [
+    {
+      "stdin": "4\n",
+      "stdout": "7\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "10\n",
+      "stdout": "12\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/clumsy-factorial/",
+    "en": "https://leetcode.com/problems/clumsy-factorial/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

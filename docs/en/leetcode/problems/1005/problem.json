@@ -1,0 +1,8 @@
+{
+  "id": 1005,
+  "summary": "Read a row of integers and a positive integer K. Each step selects one index and replaces the integer at that index by its opposite sign. Selecting one index on several steps is allowed. After exactly K steps, add every integer in the row. Find the biggest attainable total and write it. Both the row length and K are at most 10000, and every integer lies between -100 and 100 inclusive. The step budget must be spent in full, with no steps left unused.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

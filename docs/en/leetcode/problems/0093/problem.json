@@ -1,0 +1,7 @@
+{
+  "id": 93,
+  "summary": "Read a text composed only of digit characters. Divide it into four sections so that each section can act as one piece of an address. A section has length one, two, or three, its integer value lies between zero and two hundred fifty five, and it must not carry a leading zero unless the value itself is zero. The four sections together must use the entire text exactly. Find every division that meets these limits, print each as four sections separated by dots, and accept any order.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

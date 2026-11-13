@@ -1,0 +1,8 @@
+{
+  "id": 1791,
+  "summary": "Read a set of undirected edges. Nodes are numbered from 1 through n, n is between 3 and 100000, and the edge count equals n minus 1. The edges form a star: exactly one hub is joined to every remaining node, and no further link exists. Find that hub and write its number. The edges are guaranteed to form a valid star.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "id": 765,
+  "summary": "N couples sit in one row of 2N seats. People and seats use integers from 0 through 2N minus 1, and couple number i is the pair of ids 2i and 2i plus 1. Read an array row whose length is an even integer from 4 through 60. The array is a permutation of the integers from 0 through its length minus 1, and the value at index i is the person who starts in seat i. One operation lets any two people trade seats. Find the fewest operations that put every couple into a pair of neighboring seats, and write that count.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

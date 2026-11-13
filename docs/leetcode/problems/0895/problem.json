@@ -1,0 +1,21 @@
+{
+  "id": 895,
+  "slug": "maximum-frequency-stack",
+  "summary": "做出名为 FreqStack 的容器。push 接收一个介于 0 与 1000000000 之间的整数并放进容器。pop 取出出现次数最高的整数并把它写出来；若有多个整数的次数同为最高，就取最晚放进去的那一个。容器里没有整数时不会调用 pop。单独一份测试里 push 和 pop 各自至多 10000 次，所有测试合在一起这两种调用至多 150000 次。",
+  "samples": [
+    {
+      "stdin": "[\"FreqStack\",\"push\",\"push\",\"push\",\"push\",\"push\",\"push\",\"pop\",\"pop\",\"pop\",\"pop\"],\n[[],[5],[7],[5],[7],[4],[5],[],[],[],[]]\n",
+      "stdout": "[null,null,null,null,null,null,null,5,7,5,4]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/maximum-frequency-stack/",
+    "en": "https://leetcode.com/problems/maximum-frequency-stack/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

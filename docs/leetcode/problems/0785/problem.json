@@ -1,0 +1,26 @@
+{
+  "id": 785,
+  "slug": "is-graph-bipartite",
+  "summary": "读入一张无向图的邻接表，结点个数介于1和100之间，编号从零连续排到个数减一。任何结点的邻居列表都不包含它自己，也不重复登记同一个邻居。若甲出现在乙的列表里，乙也一定出现在甲的列表里。判断能否把全部结点分成两组，使每条边的两端分属不同的组。能分成就写出真，不能就写出假。",
+  "samples": [
+    {
+      "stdin": "[[1,3], [0,2], [1,3], [0,2]]\n",
+      "stdout": "true\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "[[1,2,3], [0,2], [0,1,3], [0,2]]\n",
+      "stdout": "false\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/is-graph-bipartite/",
+    "en": "https://leetcode.com/problems/is-graph-bipartite/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

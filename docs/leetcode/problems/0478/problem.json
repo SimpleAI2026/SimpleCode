@@ -1,0 +1,26 @@
+{
+  "id": 478,
+  "slug": "generate-random-point-in-a-circle",
+  "summary": "构造对象时读入三个浮点数：圆心的横坐标、圆心的纵坐标，以及圆的半径。请写出函数 randPoint。每次调用都要在圆盘内部均匀抽出一个点，圆盘各处被抽到的机会相同。正好落在圆周上的点也算在圆内，不要把它丢掉。函数返回长度为 2 的数组，先放随机点的横坐标，再放纵坐标，两个数仍然是浮点数。多次调用之间，圆心和半径保持不变。",
+  "samples": [
+    {
+      "stdin": "[\"Solution\",\"randPoint\",\"randPoint\",\"randPoint\"]\n[[1,0,0],[],[],[]]\n",
+      "stdout": "[null,[-0.72939,-0.65505],[-0.78502,-0.28626],[-0.83119,-0.19803]]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "[\"Solution\",\"randPoint\",\"randPoint\",\"randPoint\"]\n[[10,5,-7.5],[],[],[]]\n",
+      "stdout": "[null,[11.52438,-8.33273],[2.46992,-16.21705],[11.13430,-12.42337]]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/generate-random-point-in-a-circle/",
+    "en": "https://leetcode.com/problems/generate-random-point-in-a-circle/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

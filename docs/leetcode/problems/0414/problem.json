@@ -1,0 +1,26 @@
+{
+  "id": 414,
+  "slug": "third-maximum-number",
+  "summary": "读入一个不含空缺的整数数组。先忽略重复出现的值，再找出第三大的那个值并写出来。如果互不相同的值还不到三个，就改为写出最大的值。完成这项工作所用的时间应当与数组长度成正比。",
+  "samples": [
+    {
+      "stdin": "[3, 2, 1]\n",
+      "stdout": "1\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "[1, 2]\n",
+      "stdout": "2\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/third-maximum-number/",
+    "en": "https://leetcode.com/problems/third-maximum-number/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

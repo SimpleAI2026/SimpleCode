@@ -1,0 +1,21 @@
+{
+  "id": 1157,
+  "slug": "online-majority-element-in-subarray",
+  "summary": "用一条整数序列建好一个查询结构。序列长度在 1 到 20000 之间，每个整数也在 1 到 20000 之间。之后最多到来 10000 次提问。每次提问给出闭区间的左端、右端和一个次数下限，左端不超过右端，两端都在下标范围内，而且次数下限一定严格大于该区间长度的一半。在这个连续下标范围内找出出现次数达到下限的整数并写出来。若没有这样的整数，写 -1。",
+  "samples": [
+    {
+      "stdin": "majorityChecker.query(0,5,4)\nmajorityChecker.query(0,3,3)\nmajorityChecker.query(2,3,2)\n",
+      "stdout": "1\n-1\n2\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/online-majority-element-in-subarray/",
+    "en": "https://leetcode.com/problems/online-majority-element-in-subarray/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

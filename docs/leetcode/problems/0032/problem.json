@@ -1,0 +1,26 @@
+{
+  "id": 32,
+  "slug": "longest-valid-parentheses",
+  "summary": "读入一串只含左右圆括号的文本，长度可以从 0 一直到 3 乘以 104。从中找出一段连续片段，片段里的括号配对完全正确，并且这段的字符数在所有正确片段里最长。把这个长度写出来。正确指每个左括号都能配上右括号，嵌套或并排都算。若整串里没有任何正确片段，长度写 0。",
+  "samples": [
+    {
+      "stdin": "s = \"(()\"\n",
+      "stdout": "2\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "s = \")()())\"\n",
+      "stdout": "4\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/longest-valid-parentheses/",
+    "en": "https://leetcode.com/problems/longest-valid-parentheses/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

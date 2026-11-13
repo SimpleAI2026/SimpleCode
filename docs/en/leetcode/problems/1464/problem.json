@@ -1,0 +1,8 @@
+{
+  "id": 1464,
+  "summary": "Read an integer list nums. Choose two different positions, subtract one from each chosen value, and multiply those two differences. Write the largest product that any choice of two positions can produce. The list length is from 2 to 500, each value is from 1 to 1000, and the two positions must not be the same index.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

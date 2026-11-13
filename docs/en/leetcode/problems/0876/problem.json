@@ -1,0 +1,8 @@
+{
+  "id": 876,
+  "summary": "Read one non-empty singly linked list. The node count is from 1 to 100. Find a middle node. When the count is odd there is one central node, and that node is the answer. When the count is even there are two central nodes, and the answer is the later one. Write the list that begins at the chosen node and continues through the tail. The head is the first node. Do not reorder any links.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

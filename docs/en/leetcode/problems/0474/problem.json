@@ -1,0 +1,8 @@
+{
+  "id": 474,
+  "summary": "Read two limits m and n, plus a list of strings that contain only the characters 0 and 1. Both m and n are at most 100, and the list holds at most 600 strings. You may spend at most m zeros and n ones, and each digit may be spent only once. Find the largest count of those strings that can be spelled in full, and write that count.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

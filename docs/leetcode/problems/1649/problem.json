@@ -1,0 +1,26 @@
+{
+  "id": 1649,
+  "slug": "create-sorted-array-through-instructions",
+  "summary": "读入指令序列，长度介于 1 与 105，每个指令值也介于 1 与 105。从空序列起步，按原有先后把每个指令值插进去。某次插入的花费，等于当时序列里严格更小的个数与严格更大的个数这两者中的较小者，相等的值两边都不算。把每一次花费相加，再对 10 的 9 次方加 7 取余，写出余数。",
+  "samples": [
+    {
+      "stdin": "instructions = [1,5,6,2]\n",
+      "stdout": "1\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "instructions = [1,2,3,6,5,4]\n",
+      "stdout": "3\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/create-sorted-array-through-instructions/",
+    "en": "https://leetcode.com/problems/create-sorted-array-through-instructions/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

@@ -1,0 +1,26 @@
+{
+  "id": 80,
+  "slug": "remove-duplicates-from-sorted-array-ii",
+  "summary": "读入一列已经按非递减次序排好的整数。请在这同一列上删掉多余的重复项，让每个数值至多留下两个，留下的那些数仍保持原先的相对次序。把留下部分的长度写出来。留下的数要靠在列的前部，长度之后的位置不必关心。不要另开一列同样长度的新数组来保存这些数。输入本身已经从左到右不下降。",
+  "samples": [
+    {
+      "stdin": "nums = [1,1,1,2,2,3],\n\nYour function should\n",
+      "stdout": "length = 5, with the first five elements of nums being 1, 1, 2, 2 and 3 respectively.\n\nIt doesn't matter what you leave beyond the returned length.\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "nums = [0,0,1,1,1,1,2,3,3],\n\nYour function should\n",
+      "stdout": "length = 7, with the first seven elements of nums being modified to 0, 0, 1, 1, 2, 3 and 3 respectively.\n\nIt doesn't matter what values are set beyond the returned length.\n\n\nClarification:\n\nConfused why the returned value is an integer but your answer is an array?\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/remove-duplicates-from-sorted-array-ii/",
+    "en": "https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

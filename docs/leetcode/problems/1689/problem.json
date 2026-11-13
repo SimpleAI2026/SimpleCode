@@ -1,0 +1,26 @@
+{
+  "id": 1689,
+  "slug": "partitioning-into-minimum-number-of-deci-binary-numbers",
+  "summary": "读入一个由数字组成的字符串 n，长度在 1 到 105 之间，没有前导零，表示一个正整数。一种特殊的正整数要求每一位只能是 0 或 1，并且自身不能有前导零。找出若干个这种特殊正整数，使它们相加恰好等于 n，并写出所需个数的最小值。",
+  "samples": [
+    {
+      "stdin": "n = \"32\"\n",
+      "stdout": "3\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "n = \"82734\"\n",
+      "stdout": "8\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/partitioning-into-minimum-number-of-deci-binary-numbers/",
+    "en": "https://leetcode.com/problems/partitioning-into-minimum-number-of-deci-binary-numbers/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

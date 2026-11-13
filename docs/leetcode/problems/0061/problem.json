@@ -1,0 +1,26 @@
+{
+  "id": 61,
+  "slug": "rotate-list",
+  "summary": "读入一条单链表，以及一个不小于零的整数 k。把整条链朝右循环挪动 k 步：从尾部数出 k 个结点，整块接到表头之前，其余结点彼此的前后关系保持原样。若 k 大于结点总数，先用总数取余数再挪。写出挪完之后从新的表头到新的表尾的结点值。空链则仍然为空。结点值按它们在新链中的先后写出。",
+  "samples": [
+    {
+      "stdin": "1->2->3->4->5->NULL, k = 2\n",
+      "stdout": "4->5->1->2->3->NULL\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "0->1->2->NULL, k = 4\n",
+      "stdout": "2->0->1->NULL\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/rotate-list/",
+    "en": "https://leetcode.com/problems/rotate-list/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

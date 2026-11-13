@@ -1,0 +1,26 @@
+{
+  "id": 997,
+  "slug": "find-the-town-judge",
+  "summary": "人数为 n，编号从 1 连续编到 n。读入若干条信任记录，每条是两个不同编号，表示前者信任后者。若某编号不信任任何别人，同时其余每个编号都信任它，而且同时符合这两点的编号只有一个，就把该编号写出来。没有这样的编号就写 -1。n 至多 1000，记录条数至多 10000，记录两两不重复。",
+  "samples": [
+    {
+      "stdin": "n = 2, trust = [[1,2]]\n",
+      "stdout": "2\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "n = 3, trust = [[1,3],[2,3]]\n",
+      "stdout": "3\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/find-the-town-judge/",
+    "en": "https://leetcode.com/problems/find-the-town-judge/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

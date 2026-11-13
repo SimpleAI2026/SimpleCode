@@ -1,0 +1,26 @@
+{
+  "id": 376,
+  "slug": "wiggle-subsequence",
+  "summary": "读入一列整数，长度介于 1 和 1000 之间，每个整数介于 0 和 1000 之间。若相邻两项之差严格地正负交替，就称它为摆动，第一处差值的正负不限。少于两个数的列也算摆动。允许删掉若干个数，剩余部分必须维持原先的相对顺序。找出最长摆动子序列有多长并写出来。",
+  "samples": [
+    {
+      "stdin": "nums = [1,7,4,9,2,5]\n",
+      "stdout": "6\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "nums = [1,17,5,10,13,15,10,5,16,8]\n",
+      "stdout": "7\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/wiggle-subsequence/",
+    "en": "https://leetcode.com/problems/wiggle-subsequence/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

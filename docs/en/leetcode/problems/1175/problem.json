@@ -1,0 +1,8 @@
+{
+  "id": 1175,
+  "summary": "Place each integer from 1 through n once in a row. Positions are numbered starting at 1, and n is an integer with 1 <= n <= 100. Every prime number must occupy a prime position. A prime is an integer greater than 1 that is not a product of two smaller positive integers. Count the placements that obey this rule. The count may be very large, so write it modulo 10^9 + 7. The upper bound on n is 100.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

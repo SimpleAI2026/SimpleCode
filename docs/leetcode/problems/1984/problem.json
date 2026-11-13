@@ -1,0 +1,26 @@
+{
+  "id": 1984,
+  "slug": "minimum-difference-between-highest-and-lowest-of-k-scores",
+  "summary": "读入若干名学生的分数。人数至多 1000，每名学生的分数介于 0 和 100000 之间。再读入正整数 k，k 至少为 1 且不超过人数。任意挑选 k 个分数，用其中的最高分减去最低分。找出一种挑选，使这个差值最小，并把该最小差值写出来。",
+  "samples": [
+    {
+      "stdin": "nums = [90], k = 1\n",
+      "stdout": "0\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "nums = [9,4,1,7], k = 2\n",
+      "stdout": "2\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/minimum-difference-between-highest-and-lowest-of-k-scores/",
+    "en": "https://leetcode.com/problems/minimum-difference-between-highest-and-lowest-of-k-scores/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

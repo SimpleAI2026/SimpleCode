@@ -1,0 +1,26 @@
+{
+  "id": 1038,
+  "slug": "binary-search-tree-to-greater-sum-tree",
+  "summary": "读入一棵搜索树的根。树上结点个数在 1 到 100 之间，每个结点保存的整数也在 0 到 100 之间，并且互不重复。左孩子比父结点小，右孩子比父结点大，两侧挂着的部分同样遵守这条次序。把每个结点改写成一个新整数，新值等于改写前所有不比该结点旧值小的那些数之和。写出改写之后的树根。",
+  "samples": [
+    {
+      "stdin": "root = [4,1,6,0,2,5,7,null,null,null,3,null,null,null,8]\n",
+      "stdout": "[30,36,21,36,35,26,15,null,null,null,33,null,null,null,8]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "root = [0,null,1]\n",
+      "stdout": "[1,null,1]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/binary-search-tree-to-greater-sum-tree/",
+    "en": "https://leetcode.com/problems/binary-search-tree-to-greater-sum-tree/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

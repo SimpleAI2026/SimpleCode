@@ -1,0 +1,26 @@
+{
+  "id": 301,
+  "slug": "remove-invalid-parentheses",
+  "summary": "读入字符串 s。它里面混有英文小写字母，还有左右圆括号。删掉尽量少的括号，使剩下的文本成为合法的括号文本，字母保持原位不动。找出每一种能得到的不同合法文本，排列次序不限，并全部写出来。s 的长度最少是 1，最多是 25。s 里的括号最多有 20 个。不要删除字母。",
+  "samples": [
+    {
+      "stdin": "s = \"()())()\"\n",
+      "stdout": "[\"(())()\",\"()()()\"]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "s = \"(a)())()\"\n",
+      "stdout": "[\"(a())()\",\"(a)()()\"]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/remove-invalid-parentheses/",
+    "en": "https://leetcode.com/problems/remove-invalid-parentheses/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

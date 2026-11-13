@@ -1,0 +1,26 @@
+{
+  "id": 1170,
+  "slug": "compare-strings-by-frequency-of-the-smallest-character",
+  "summary": "对一条非空的小写字符串，先确定其中字典序最小的字母，再数这个字母出现了几次，把次数当作该串的分数。读入两组字符串：待查组和对照词表。每组的条数都在 1 到 2000 之间，每条的长度都在 1 到 10 之间。针对待查组里的每一条，数出对照词表中分数严格更大的词有多少个。按待查组原来的顺序，把这些个数写成一列整数。",
+  "samples": [
+    {
+      "stdin": "queries = [\"cbd\"], words = [\"zaaaz\"]\n",
+      "stdout": "[1]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "queries = [\"bbb\",\"cc\"], words = [\"a\",\"aa\",\"aaa\",\"aaaa\"]\n",
+      "stdout": "[1,2]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/compare-strings-by-frequency-of-the-smallest-character/",
+    "en": "https://leetcode.com/problems/compare-strings-by-frequency-of-the-smallest-character/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

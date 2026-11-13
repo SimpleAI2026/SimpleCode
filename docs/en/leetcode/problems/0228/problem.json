@@ -1,0 +1,8 @@
+{
+  "id": 228,
+  "summary": "Read a list of integers already ordered from small to large, with every value different. The length is between 0 and 20. Each integer is at least negative 231 and at most 231 minus 1. Group values that form a run in which each next value is exactly one larger. When a run holds one value, write that value alone. When a run goes from a to a different b, write a pointing to b. Order the groups by their starting value. Every input integer belongs to exactly one group, and a group must not invent an integer absent from the list.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

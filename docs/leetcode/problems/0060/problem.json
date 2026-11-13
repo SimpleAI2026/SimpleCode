@@ -1,0 +1,26 @@
+{
+  "id": 60,
+  "slug": "permutation-sequence",
+  "summary": "读入两个正整数 n 与 k。将 1、2、直到 n 这几个数各取一次，组成所有互异的先后次序，并按字典序由小到大编上号码，最小的一串记为 1 号。找出号码刚好是 k 的那一串，把各位数字紧贴着连成一段文本写出来。n 的范围是 1 到 9，k 的范围是 1 到 n 的阶乘，所以所求的那一串必定存在。",
+  "samples": [
+    {
+      "stdin": "n = 3, k = 3\n",
+      "stdout": "\"213\"\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "n = 4, k = 9\n",
+      "stdout": "\"2314\"\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/permutation-sequence/",
+    "en": "https://leetcode.com/problems/permutation-sequence/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

@@ -1,0 +1,21 @@
+{
+  "id": 284,
+  "slug": "peeking-iterator",
+  "summary": "手头已有一个迭代器，它只能回答后面是否还有元素，以及取出下一个元素。在它外面再包一层，让调用方可以先查看下一个即将被取出的元素，而这次查看不会把该元素消耗掉。在真正取出之前，反复查看应该看到同一个元素。真正取出时仍然调用原来的取下一个。把这个可查看下一元素的包装实现出来。",
+  "samples": [
+    {
+      "stdin": "an Iterator class interface with methods: next() and hasNext(), design and implement a PeekingIterator that support the peek() operation -- it essentially peek() at the element that will be returned by the next call to next().\n\nExample:\n\n\nAssume that the iterator is initialized to the beginning of the list: [1,2,3].\n\nCall next() gets you 1, the first element in the list.\nNow you call peek() and it returns 2, the next element. Calling next() after that still\n",
+      "stdout": "2.\nYou call next() the final time and it returns 3, the last element.\nCalling hasNext() after that should return false.\n\n\nFollow up: How would you extend your design to be generic and work with all types, not just integer?\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/peeking-iterator/",
+    "en": "https://leetcode.com/problems/peeking-iterator/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

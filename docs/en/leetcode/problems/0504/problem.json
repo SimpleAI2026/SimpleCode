@@ -1,0 +1,8 @@
+{
+  "id": 504,
+  "summary": "Read an integer num from -10000000 through 10000000. Convert it into base 7 and write a string. Do not add a plus sign when the value is positive or zero. When the value is negative, convert the absolute value into base 7 and put a minus sign at the front of the string. Aside from that minus sign, the string may hold only digit characters. Do not leave the value in base 10, and do not drop the highest digit. Write zero as the single character 0. Use base 7 place values during the conversion.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

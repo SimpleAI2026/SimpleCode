@@ -1,0 +1,8 @@
+{
+  "id": 1662,
+  "summary": "Read two arrays of strings named word1 and word2. Each array holds from 1 to 103 pieces, each piece has length from 1 to 103, the total number of characters in each array is at most 103, and every character is a lowercase letter. Glue the pieces of one array in their existing order to form a single string. Decide whether the two glued strings match character by character. Write true when they match, and write false when they differ.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

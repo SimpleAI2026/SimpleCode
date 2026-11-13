@@ -1,6 +1,6 @@
 {
   "id": 206,
-  "summary": "The public title of this exercise is Reverse Linked List. Read a node count followed by the integer stored in each node from standard input and compute the result named by that title, using only those values. Print the result as node values on one line, separated by spaces. The sample below is a short input written for this playground so the printed line can be checked locally. It is not a copy of an example from the problem site. The input stays under one hundred elements so it finishes quickly in the browser.",
+  "summary": "Read one singly linked chain. Each node stores an integer and points at the next node. Reverse every successor arrow so the old tail becomes the new head and the old head becomes the new tail. Write the chain after that reversal. An empty chain stays empty. A chain of one node stays that same node. Integers stored in the nodes stay unchanged; only the arrows move. Walking from the new head to the new tail visits the integers in the opposite order from the chain you read.",
   "notes": [
     "Compare after trimming trailing newlines. The input is a node count followed by the integer stored in each node."
   ]

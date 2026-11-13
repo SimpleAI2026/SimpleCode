@@ -1,0 +1,26 @@
+{
+  "id": 201,
+  "slug": "bitwise-and-of-numbers-range",
+  "summary": "读入两个整数 m 和 n，它们满足 0 小于等于 m，m 小于等于 n，并且 n 小于等于 2147483647。把从 m 到 n 的每一个整数都做按位与，m 和 n 两端都要包括，把运算得到的结果写出来。当 m 和 n 相等时，结果就是这个整数本身。按位与对每一位独立进行，某一位只有在范围内每个整数的该位都是 1 时，结果的该位才是 1。",
+  "samples": [
+    {
+      "stdin": "[5,7]\n",
+      "stdout": "4\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "[0,1]\n",
+      "stdout": "0\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/bitwise-and-of-numbers-range/",
+    "en": "https://leetcode.com/problems/bitwise-and-of-numbers-range/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

@@ -1,0 +1,7 @@
+{
+  "id": 812,
+  "summary": "Read 3 to 50 points in the plane, with no two points occupying the same place. Each coordinate is an integer from -50 through 50. Pick any three points and, when they are not collinear, compute the area of the triangle they enclose. Find the largest such area and write it. A written number that differs from the exact area by at most 10 to the power of -6 counts as correct.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

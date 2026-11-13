@@ -1,0 +1,21 @@
+{
+  "id": 96,
+  "slug": "unique-binary-search-trees",
+  "summary": "读入一个非负整数作为上界。上界为正时，结点值是从一连续取到该上界的全部整数，每个用一次。每个结点左侧只放更小的值，右侧只放更大的值。只计算这样的二分查找树有多少种不同形状，不要把树本身打印出来。上界为零时存在恰好一种空树，此时写出一。其他情况把形状的种数写成一个整数。",
+  "samples": [
+    {
+      "stdin": "3\n",
+      "stdout": "5\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/unique-binary-search-trees/",
+    "en": "https://leetcode.com/problems/unique-binary-search-trees/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

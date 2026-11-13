@@ -1,0 +1,21 @@
+{
+  "id": 93,
+  "slug": "restore-ip-addresses",
+  "summary": "读入一串仅由数字字符构成的文本。把它分成四节，使每一节都能充当地址中的一段：长度是一、二或三，对应的整数在零与二百五十五之间，并且除了数值本身为零以外不得带前导零。四节连起来必须恰好用完整个文本。找出每一种符合这些限制的分法，各写成用圆点隔开的四节，顺序不限，全部打印出来。",
+  "samples": [
+    {
+      "stdin": "\"25525511135\"\n",
+      "stdout": "[\"255.255.11.135\", \"255.255.111.35\"]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/restore-ip-addresses/",
+    "en": "https://leetcode.com/problems/restore-ip-addresses/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

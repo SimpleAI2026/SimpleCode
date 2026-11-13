@@ -1,0 +1,26 @@
+{
+  "id": 1074,
+  "slug": "number-of-submatrices-that-sum-to-target",
+  "summary": "读入一个整数矩阵和一个目标整数。行数与列数都在 1 到 300 之间，每个元素在负 1000 到 1000 之间，目标整数在负 100000000 到 100000000 之间。一块子块由连续的若干行与连续的若干列相交而成，而且不能是空的。两块只要有一条边界下标不一样就算作不同的块。找出元素加起来恰好等于目标整数的子块一共有多少，并把这个块数写出来。",
+  "samples": [
+    {
+      "stdin": "matrix = [[0,1,0],[1,1,1],[0,1,0]], target = 0\n",
+      "stdout": "4\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "matrix = [[1,-1],[-1,1]], target = 0\n",
+      "stdout": "5\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/number-of-submatrices-that-sum-to-target/",
+    "en": "https://leetcode.com/problems/number-of-submatrices-that-sum-to-target/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

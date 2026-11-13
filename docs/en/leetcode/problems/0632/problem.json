@@ -1,0 +1,7 @@
+{
+  "id": 632,
+  "summary": "Read k lists of integers, each already arranged from small to large. k is from 1 to 3500, repeated values inside a list are allowed, and every value lies between -100000 and 100000. Find a closed interval that contains at least one value from every list and is smallest by this rule: compare lengths first and prefer the shorter one; if the lengths match, prefer the smaller left endpoint. Write the left endpoint and the right endpoint of that interval.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

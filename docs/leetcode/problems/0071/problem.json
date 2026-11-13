@@ -1,0 +1,26 @@
+{
+  "id": 71,
+  "slug": "simplify-path",
+  "summary": "读入一条以斜线开头的绝对路径，书写风格与 Unix 相同。请把它整理成规范写法并输出。单独一个点表示当前目录，应当删去；连续两个点表示回到上一层目录。连续出现的多条斜线要收成一条。规范结果永远以一条斜线开头，目录名之间只用一条斜线分隔，结尾不再额外加斜线，只有整条路径就是根目录时才可以只剩一条斜线。若回到上一层的次数已经超过现有层数，就停在根目录。除了单个点和两个点之外，其它目录名按原样保留。",
+  "samples": [
+    {
+      "stdin": "\"/home/\"\n",
+      "stdout": "\"/home\"\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "\"/../\"\n",
+      "stdout": "\"/\"\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/simplify-path/",
+    "en": "https://leetcode.com/problems/simplify-path/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

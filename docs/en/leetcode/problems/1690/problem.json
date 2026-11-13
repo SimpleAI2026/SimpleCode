@@ -1,0 +1,8 @@
+{
+  "id": 1690,
+  "summary": "A row holds n stones, n is from 2 to 1000, and each stone is worth from 1 to 1000. Two players alternate turns, and the first player starts. On a turn a player must take either the leftmost or the rightmost remaining stone and scores the sum of the values still left afterward. Play ends when no stone remains, and the higher score wins. Both players act to make their own score advantage as large as possible. Write the first player's score minus the second player's score.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

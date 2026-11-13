@@ -1,0 +1,26 @@
+{
+  "id": 720,
+  "slug": "longest-word-in-dictionary",
+  "summary": "读入小写单词数组words。数组长度在1到1000之间，每个单词长度在1到30之间。一个单词合格，是指从它末尾逐个删掉字母后，得到的每一个更短前缀也都出现在数组中。在合格单词里找出最长的一个；长度并列时取词典顺序更靠前的。若没有合格单词，写出空串。",
+  "samples": [
+    {
+      "stdin": "words = [\"w\",\"wo\",\"wor\",\"worl\", \"world\"]\n",
+      "stdout": "\"world\"\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "words = [\"a\", \"banana\", \"app\", \"appl\", \"ap\", \"apply\", \"apple\"]\n",
+      "stdout": "\"apple\"\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/longest-word-in-dictionary/",
+    "en": "https://leetcode.com/problems/longest-word-in-dictionary/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

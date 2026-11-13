@@ -1,0 +1,8 @@
+{
+  "id": 373,
+  "summary": "Read two integer arrays that have already been arranged in increasing order, and also read a positive integer k. A pair takes its first number from array one and its second number from array two. Look at every pair that can be built this way. Select the k pairs with the smallest totals of the two numbers. If two totals match, either pair may be kept. Write the selected pairs.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": 839,
+  "slug": "similar-string-groups",
+  "summary": "读入一组互不重复的小写单词。它们长短一致，而且彼此只是字母次序不同。单词个数至多 2000，单个单词长度至多 1000，二者相乘不超过 20000。若把甲词里两个位置不同的字母互换一次就能得到乙词，就说甲和乙靠近。靠近可以沿着链条传递，能连到一起的词归入同一簇，单独的词自己成簇。写出簇的个数。",
+  "samples": [
+    {
+      "stdin": "[\"tars\",\"rats\",\"arts\",\"star\"]\n",
+      "stdout": "2\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/similar-string-groups/",
+    "en": "https://leetcode.com/problems/similar-string-groups/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

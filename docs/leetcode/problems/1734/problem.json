@@ -1,0 +1,26 @@
+{
+  "id": 1734,
+  "slug": "decode-xored-permutation",
+  "summary": "读入一条整数序列，它比某个奇数 n 少一项。n 至少是 3，至多是 100000。另有一条隐藏排列，里面恰好是从 1 到 n 的每个正整数各出现一次。序列中每一项都等于隐藏排列里相邻两项做按位异或的结果。把这条隐藏排列按原有先后完整写出来。符合条件的排列只有一种。",
+  "samples": [
+    {
+      "stdin": "encoded = [3,1]\n",
+      "stdout": "[1,2,3]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "encoded = [6,5,4,6]\n",
+      "stdout": "[2,4,1,5,3]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/decode-xored-permutation/",
+    "en": "https://leetcode.com/problems/decode-xored-permutation/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

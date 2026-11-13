@@ -1,6 +1,6 @@
 {
   "id": 11,
-  "summary": "The public title of this exercise is Container With Most Water. Read tokens in the same order as the method parameters from standard input and compute the result named by that title, using only those values. Print the result as one integer. The sample below is a short input written for this playground so the printed line can be checked locally. It is not a copy of an example from the problem site. The input stays under one hundred elements so it finishes quickly in the browser.",
+  "summary": "Read a row of non-negative integer heights. The upright at index i stands at horizontal coordinate i, with its top at the stated height and its foot on the horizontal axis. Pick any two different uprights. The area they enclose with the axis equals the gap between their indexes times the shorter height. Find the pair with the greatest area and write that area as an integer. The area is a non-negative integer, and 49 is one concrete value it can take.",
   "notes": [
     "Compare after trimming trailing newlines. The input is tokens in the same order as the method parameters."
   ]

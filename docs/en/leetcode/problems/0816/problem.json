@@ -1,0 +1,8 @@
+{
+  "id": 816,
+  "summary": "Read a string of length 4 to 12. It starts with a left parenthesis, ends with a right parenthesis, and contains only digits in the middle. Those digits once formed a pair of plane coordinates after commas, decimal points, and spaces were deleted. Restore pairs with exactly one space following the comma. A decimal point must be preceded by at least one digit, and no extra zero may remain, so 00, 0.0, 1.0, and a form that opens with a point are all illegal. List every possible original writing in any order.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

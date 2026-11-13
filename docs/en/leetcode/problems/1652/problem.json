@@ -1,0 +1,8 @@
+{
+  "id": 1652,
+  "summary": "Read a circular list code of length n together with an integer k. n is from 1 to 100, every entry is from 1 to 100, and k lies between 1 minus n and n minus 1. Change every position at the same moment. When k is positive, position i becomes the sum of the k entries that follow it. When k is negative, it becomes the sum of the entries that precede it, taking a count equal to the absolute value of k. When k is 0, every position becomes 0. The follower of the last entry is the first entry, and the predecessor of the first entry is the last entry. Write the whole list after the change.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

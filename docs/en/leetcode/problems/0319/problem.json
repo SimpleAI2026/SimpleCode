@@ -1,0 +1,8 @@
+{
+  "id": 319,
+  "summary": "Begin with n bulbs, every one dark. On round 1, switch every bulb to lit. On each later round, walk the bulbs with a fixed step: on round i, start at the first bulb and switch a bulb every i steps, so a lit bulb becomes dark and a dark bulb becomes lit. Continue until round n, which switches only the final bulb. Find how many bulbs remain lit at the end and write that count.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

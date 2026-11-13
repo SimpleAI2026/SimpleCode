@@ -1,0 +1,26 @@
+{
+  "id": 925,
+  "slug": "long-pressed-name",
+  "summary": "读入两段由小写字母组成的文本，前一段是姓名，后一段是实际敲出来的内容。两段长度各自都不超过 1000。敲键时手指可能在同一个键上多停一会儿，于是某个字母会在结果里连续重复出现多次，但字母的种类和出现次序必须与姓名完全一致，既不能漏掉姓名里的字母，也不能凭空多出别的字母。判断这段敲击结果能不能由该姓名通过这种重复按键产生。能产生就写出真，否则写出假。",
+  "samples": [
+    {
+      "stdin": "name = \"alex\", typed = \"aaleex\"\n",
+      "stdout": "true\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "name = \"saeed\", typed = \"ssaaedd\"\n",
+      "stdout": "false\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/long-pressed-name/",
+    "en": "https://leetcode.com/problems/long-pressed-name/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

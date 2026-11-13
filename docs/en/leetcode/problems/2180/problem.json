@@ -1,0 +1,8 @@
+{
+  "id": 2180,
+  "summary": "Read one positive integer bound that is at most 1000. Walk every whole number from 1 through that bound. Add the decimal digits of the current number. Count it when that total is divisible by two. Write how many such numbers exist inside the closed range. Include both the lower end 1 and the bound itself. The bound is never smaller than 1.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

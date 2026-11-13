@@ -1,0 +1,7 @@
+{
+  "id": 786,
+  "summary": "Read an ascending list of integers whose length is from 2 to 2000. Each integer is from 1 to 30000, and the list contains 1 plus some primes. Every pair with the left value strictly smaller than the right value forms a fraction. Also read a rank K that is at least 1 and at most the number of pairs. Order the fractions from smaller to larger, find the fraction sitting at rank K, and write its numerator and denominator as two integers.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

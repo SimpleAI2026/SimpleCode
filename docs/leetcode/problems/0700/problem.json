@@ -1,0 +1,26 @@
+{
+  "id": 700,
+  "slug": "search-in-a-binary-search-tree",
+  "summary": "读入一棵二叉搜索树的根，再读入整数 val。在树中寻找存放的数恰好等于 val 的结点。找到则写出以该结点为根的子树，找不到则写出空。结点个数在 1 到 5000 之间。每个结点里的数以及 val 都在 1 到 10000000 之间。输入保证该树是二叉搜索树。",
+  "samples": [
+    {
+      "stdin": "root = [4,2,7,1,3], val = 2\n",
+      "stdout": "[2,1,3]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "root = [4,2,7,1,3], val = 5\n",
+      "stdout": "[]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/search-in-a-binary-search-tree/",
+    "en": "https://leetcode.com/problems/search-in-a-binary-search-tree/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

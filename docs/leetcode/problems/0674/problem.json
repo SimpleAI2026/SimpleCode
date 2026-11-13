@@ -1,0 +1,26 @@
+{
+  "id": 674,
+  "slug": "longest-continuous-increasing-subsequence",
+  "summary": "读入一列可能尚未排序的整数。从中找出下标连续、数值严格变大的一段，让这段的长度在所有同类片段里最长，并把长度写出来。只含一个数的片段也算数。数组长度在 0 到 10^4 之间。每个整数的绝对值不超过 10^9。",
+  "samples": [
+    {
+      "stdin": "nums = [1,3,5,4,7]\n",
+      "stdout": "3\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "nums = [2,2,2,2,2]\n",
+      "stdout": "1\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/longest-continuous-increasing-subsequence/",
+    "en": "https://leetcode.com/problems/longest-continuous-increasing-subsequence/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

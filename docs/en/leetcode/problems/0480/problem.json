@@ -1,0 +1,7 @@
+{
+  "id": 480,
+  "summary": "Read a list of integers and a window width k. For a non-empty list, k is always valid and is smaller than the list length. The window always holds k adjacent values. It begins flush with the left end and shifts one step right each time until its right edge is flush with the far end. For each window, look at the values from small to large. If the count is odd, the middle marker is the single central value. If the count is even, the middle marker is the arithmetic mean of the two central values, and that mean may be fractional. Write the markers in the order the windows appear.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

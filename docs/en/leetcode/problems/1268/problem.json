@@ -1,0 +1,8 @@
+{
+  "id": 1268,
+  "summary": "Read a catalog of distinct product names and a query that a shopper types one letter at a time. Names and the query use only lowercase English letters. After each newly typed letter, look at the prefix formed so far and collect catalog names that begin with it. Write at most three names for that prefix. When more names match, keep only the three that come earliest in dictionary order. Print one group for every prefix length, following the order of the typed letters. The catalog size and the query length are each at most 1000.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

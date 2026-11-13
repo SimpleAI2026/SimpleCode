@@ -1,0 +1,8 @@
+{
+  "id": 999,
+  "summary": "Read an eight by eight board. Exactly one cell holds a white rook written as uppercase R. Every other cell is a dot for empty, an uppercase B for a white bishop, or a lowercase p for a black pawn. Uppercase means friendly and lowercase means opposing. The rook slides in a straight horizontal or vertical line. It may not enter or cross a bishop. It may stop on a pawn and capture it, or stop early by choice, or stop when the rim blocks it. Count the pawns capturable in one slide and write that number.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

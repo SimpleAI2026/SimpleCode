@@ -1,0 +1,26 @@
+{
+  "id": 1202,
+  "slug": "smallest-string-with-swaps",
+  "summary": "读入一条只含小写英文字母的字符串，长度在 1 到 100000 之间，另读入若干组可交换的下标。组数在 0 到 100000 之间，下标从 0 计起，并且都落在字符串内部。任意一组下标上的两个字符可以交换任意多次，反复交换还能在互相连通的位置之间搬运字母。写出经过这些交换之后，按字母表顺序排在最前的那条字符串。规模上界是 100000。",
+  "samples": [
+    {
+      "stdin": "s = \"dcab\", pairs = [[0,3],[1,2]]\n",
+      "stdout": "\"bacd\"\nExplaination:\nSwap s[0] and s[3], s = \"bcad\"\nSwap s[1] and s[2], s = \"bacd\"\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "s = \"dcab\", pairs = [[0,3],[1,2],[0,2]]\n",
+      "stdout": "\"abcd\"\nExplaination:\nSwap s[0] and s[3], s = \"bcad\"\nSwap s[0] and s[2], s = \"acbd\"\nSwap s[1] and s[2], s = \"abcd\"\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/smallest-string-with-swaps/",
+    "en": "https://leetcode.com/problems/smallest-string-with-swaps/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

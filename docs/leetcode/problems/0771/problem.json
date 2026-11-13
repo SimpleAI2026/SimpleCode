@@ -1,0 +1,26 @@
+{
+  "id": 771,
+  "slug": "jewels-and-stones",
+  "summary": "读入两个只含字母的字符串J和S，各自长度最多为50。J中的字符互不相同，每个字符表示一种宝石。S中的每个字符表示你持有的一颗石头。大写字母和小写字母算作不同种类，因此a与A不能互相匹配。统计S里有多少颗石头的种类也出现在J中，把这个数量写出来。",
+  "samples": [
+    {
+      "stdin": "J = \"aA\", S = \"aAAbbbb\"\n",
+      "stdout": "3\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "J = \"z\", S = \"ZZ\"\n",
+      "stdout": "0\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/jewels-and-stones/",
+    "en": "https://leetcode.com/problems/jewels-and-stones/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

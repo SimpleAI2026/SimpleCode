@@ -1,0 +1,7 @@
+{
+  "id": 203,
+  "summary": "Read a singly linked chain of integer nodes and one target value. Delete every node whose integer equals the target. Keep the surviving nodes in their original order and write the chain that remains. If no node survives, write null. The head node may equal the target, and then the new head is the first node that stays. The target may match nothing, in which case you write the original chain unchanged. Do not rewrite the integers stored in the nodes you keep.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

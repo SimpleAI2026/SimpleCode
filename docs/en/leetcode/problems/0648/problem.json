@@ -1,0 +1,7 @@
+{
+  "id": 648,
+  "summary": "Read a set of roots and one English sentence. Every character is a lowercase letter. The set contains from 1 to 1000 roots, the sentence contains from 1 to 1000 words, each root has length from 1 to 100, and each word in the sentence has length at most 1000. If the opening of a word matches one or more roots, replace that word with the shortest root that matches. Write the full sentence after replacement, with spaces still between words. A word that matches nothing stays as it is.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

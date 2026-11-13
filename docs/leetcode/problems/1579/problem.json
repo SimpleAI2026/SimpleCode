@@ -1,0 +1,26 @@
+{
+  "id": 1579,
+  "slug": "remove-max-number-of-edges-to-keep-graph-fully-traversable",
+  "summary": "一张无向图有 n 个点，边分成三类。第一类只有 Alice 可以走，第二类只有 Bob 可以走，第三类两个人都可以走。每条边给出类别和两个端点，并且两个方向都能通过。在两个人仍然都能从任意一点到达其余每一个点的前提下，找出最多能删去多少条边。如果无论保留哪些边都做不到这一点，写出 -1。n 和边的条数都不超过 100000。端点介于 1 与 n，类别是 1、2 或 3，同一类别配同一对端点不会重复出现。",
+  "samples": [
+    {
+      "stdin": "n = 4, edges = [[3,1,2],[3,2,3],[1,1,3],[1,2,4],[1,1,2],[2,3,4]]\n",
+      "stdout": "2\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "n = 4, edges = [[3,1,2],[3,2,3],[1,1,4],[2,1,4]]\n",
+      "stdout": "0\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/remove-max-number-of-edges-to-keep-graph-fully-traversable/",
+    "en": "https://leetcode.com/problems/remove-max-number-of-edges-to-keep-graph-fully-traversable/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

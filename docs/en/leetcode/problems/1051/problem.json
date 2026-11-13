@@ -1,0 +1,8 @@
+{
+  "id": 1051,
+  "summary": "Read the heights of students standing in one row. The row length is from 1 to 100, and each height is an integer from 1 to 100. The row should end up sorted so height never falls as you walk from left to right. You may mark some students and rearrange only those marked students among the seats they already occupy. Everyone left unmarked stays in the same seat. Find the smallest number of marked students that makes such a rearrangement possible. Write that number.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

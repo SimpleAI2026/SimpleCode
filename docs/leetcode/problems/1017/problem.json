@@ -1,0 +1,26 @@
+{
+  "id": 1017,
+  "slug": "convert-to-base-2",
+  "summary": "读入整数 N，范围从 0 到 10^9。用负二作为基数，把 N 表示成一串字符，每个字符只能是 0 或 1。从右端起，各位的权依次是负二的零次方、一次方、二次方，依此类推。这些位与权相乘再求和必须等于 N。若整串不是单个 0，就不要在左边补 0。把这串字符写出来。",
+  "samples": [
+    {
+      "stdin": "2\n",
+      "stdout": "\"110\"\nExplantion: (-2) ^ 2 + (-2) ^ 1 = 2\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "3\n",
+      "stdout": "\"111\"\nExplantion: (-2) ^ 2 + (-2) ^ 1 + (-2) ^ 0 = 3\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/convert-to-base-2/",
+    "en": "https://leetcode.com/problems/convert-to-base-2/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

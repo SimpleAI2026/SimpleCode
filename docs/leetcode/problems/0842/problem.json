@@ -1,0 +1,26 @@
+{
+  "id": 842,
+  "slug": "split-array-into-fibonacci-sequence",
+  "summary": "读入一条只含数字字符的文本，长度至少为 1、至多为 200。把它切成不少于三段，每段读成一个非负整数，数值不得超过 2 的 31 次方减 1，从而放得进 32 位带符号整数。除了单独一个 0，任何一段都不许以 0 开头。从第三段开始，每一段都要等于紧挨着的前两段之和。若存在切法，写出任意一组这样的整数；若不存在，写出空的列表。",
+  "samples": [
+    {
+      "stdin": "\"123456579\"\n",
+      "stdout": "[123,456,579]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "\"11235813\"\n",
+      "stdout": "[1,1,2,3,5,8,13]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/split-array-into-fibonacci-sequence/",
+    "en": "https://leetcode.com/problems/split-array-into-fibonacci-sequence/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

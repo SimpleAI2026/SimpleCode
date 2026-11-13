@@ -1,0 +1,8 @@
+{
+  "id": 1313,
+  "summary": "Read an even-length list of integers that stores a compressed run. Moving from left to right, take the numbers as adjacent pairs. The first number of a pair is how many times to repeat, and the second number is the value being repeated. Expand every pair in that same order, place the repeated values one after another, and write the full expanded list. The input length is between 2 and 100 and is even, and every integer is between 1 and 100.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

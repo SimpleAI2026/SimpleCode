@@ -1,0 +1,21 @@
+{
+  "id": 515,
+  "slug": "find-largest-value-in-each-tree-row",
+  "summary": "读入一棵二叉树。深度相同的结点算作同一层，层的次序从上到下。对每一层，在该层的结点值里面找出最大的一个，再按从上到下的层序把这些最大值依次写出来。根所在的层是第一层。某一层只有一个结点时，这个结点的值就是该层的结果。不同层的结点不要放在一起比大小。如果树里一个结点都没有，就写出空的结果。每一层都要有自己的一项，不能把整棵树只留一个最大值。",
+  "samples": [
+    {
+      "stdin": "1\n/ \\\n3 2\n/ \\ \\\n5 3 9\n",
+      "stdout": "[1, 3, 9]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/find-largest-value-in-each-tree-row/",
+    "en": "https://leetcode.com/problems/find-largest-value-in-each-tree-row/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

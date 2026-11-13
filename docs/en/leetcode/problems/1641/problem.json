@@ -1,0 +1,8 @@
+{
+  "id": 1641,
+  "summary": "Read an integer n in the range from 1 to 50. Using only the five vowels a, e, i, o, and u, count the strings of length n that never descend in dictionary order. Never descending means that, apart from the final letter, every letter is either identical to its right-hand neighbor or stands earlier in the alphabet than that neighbor. Write how many strings meet the length and the order rule.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

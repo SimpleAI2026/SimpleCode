@@ -1,0 +1,8 @@
+{
+  "id": 880,
+  "summary": "Read a code string S and a one-based position K. S starts with a lowercase letter, uses only lowercase letters and digits from 2 through 9, and has length at most 100. Scan from the left: a letter is appended to a growing slip of text, and a digit d means that whole slip is copied again d minus 1 times. Do not build the enormous slip for real. Write the letter that lands at position K after the expansion. K may be as large as 10^9, and the expanded slip is guaranteed to hold fewer than 2 to the power 63 letters.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

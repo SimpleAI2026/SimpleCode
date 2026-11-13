@@ -1,0 +1,8 @@
+{
+  "id": 1442,
+  "summary": "Read an integer list arr. Count triples of indices i, j, and k. Indices start at 0, i must be strictly before j, j must be at most k, and k must be strictly before the list length. The bitwise exclusive or of the slice from i through the cell just before j must equal the bitwise exclusive or of the slice from j through k. Write how many triples satisfy that equality. The length is from 1 to 300, and each value is from 1 to 100000000.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

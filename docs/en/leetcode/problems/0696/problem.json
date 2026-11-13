@@ -1,0 +1,8 @@
+{
+  "id": 696,
+  "summary": "Read a string built only from the character 0 and the character 1. Count the non-empty contiguous pieces that meet two conditions at once: the piece holds equally many zeros and ones, and its zeros sit together in one block while its ones sit together in another block. When the same piece starts at several places, add one for each place. Write the resulting total. The string length is between 1 and 50000.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

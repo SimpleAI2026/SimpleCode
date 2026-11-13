@@ -1,6 +1,6 @@
 {
   "id": 973,
-  "summary": "The public title of this exercise is K Closest Points to Origin. Read tokens in the same order as the method parameters from standard input and compute the result named by that title, using only those values. Print the result as a row count and then one line of integers per row. The sample below is a short input written for this playground so the printed line can be checked locally. It is not a copy of an example from the problem site. The input stays under one hundred elements so it finishes quickly in the browser.",
+  "summary": "Read points located on a plane together with a positive integer K. There are at least K points and at most 10000 points. Each point uses integer coordinates, and each coordinate has absolute value strictly below 10000. Closeness is ordinary Euclidean distance from the origin, where both coordinates are 0. Select the K points nearest the origin. Order among the selected points may vary, and apart from order only one selection is correct. Write the selected points.",
   "notes": [
     "Compare after trimming trailing newlines. The input is tokens in the same order as the method parameters."
   ]

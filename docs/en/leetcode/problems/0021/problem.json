@@ -1,6 +1,6 @@
 {
   "id": 21,
-  "summary": "The public title of this exercise is Merge Two Sorted Lists. Read tokens in the same order as the method parameters from standard input and compute the result named by that title, using only those values. Print the result as node values on one line, separated by spaces. The sample below is a short input written for this playground so the printed line can be checked locally. It is not a copy of an example from the problem site. The input stays under one hundred elements so it finishes quickly in the browser.",
+  "summary": "Read two singly linked chains whose stored integers already run from small to large along each chain. Attach every node from both chains into one fresh chain that also runs from small to large. Changing the pointer from a node to its successor is allowed, but changing the integer inside a node is not. Write the head of the fresh chain. Either input chain may be empty, and an empty chain supplies no nodes.",
   "notes": [
     "Compare after trimming trailing newlines. The input is tokens in the same order as the method parameters."
   ]

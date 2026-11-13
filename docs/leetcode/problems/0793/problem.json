@@ -1,0 +1,26 @@
+{
+  "id": 793,
+  "slug": "preimage-size-of-factorial-zeroes-function",
+  "summary": "把非负整数x的阶乘在十进制写法里末尾连续的零的个数记为函数值，并约定零的阶乘等于一。读入整数K，K落在从0到1000000000的闭区间里。找出有多少个非负整数x的函数值恰好等于K，并把这个个数写出来。",
+  "samples": [
+    {
+      "stdin": "K = 0\n",
+      "stdout": "5\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "K = 5\n",
+      "stdout": "0\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/preimage-size-of-factorial-zeroes-function/",
+    "en": "https://leetcode.com/problems/preimage-size-of-factorial-zeroes-function/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

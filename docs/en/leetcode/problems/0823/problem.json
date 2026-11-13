@@ -1,0 +1,8 @@
+{
+  "id": 823,
+  "summary": "Read from 1 to 1000 distinct integers, each greater than 1 and at most 10^9. Build binary trees from these integers, and any integer may be used any number of times. Every non-leaf must store the product of the integers stored by its two children. Count how many such trees exist. The count may be huge, so reduce it modulo 10^9 plus 7 and write the remainder.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

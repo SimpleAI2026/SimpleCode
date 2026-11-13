@@ -1,0 +1,7 @@
+{
+  "id": 1287,
+  "summary": "Read an integer array that is already arranged in non-decreasing order. Exactly one value occurs strictly more often than one quarter of the entries. Find that value and write it by itself, without writing how often it occurs. The length is between 1 and 10^4, and every entry is between 0 and 10^5. Because the order is already sorted, equal values sit next to one another.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

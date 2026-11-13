@@ -1,0 +1,26 @@
+{
+  "id": 1254,
+  "slug": "number-of-closed-islands",
+  "summary": "读入一张矩形格子表，格子里只有 0 和 1。0 表示一块陆地，1 表示一格水。上下左右四个方向彼此贴邻的陆地算作同一片岛。若这片岛不接触表的最外圈，并且它外侧紧挨的每一格都是水，就把它记为被水围住的岛。找出这样的岛一共有几片，并把片数写出来。表的行数和列数都在 1 到 100 之间。",
+  "samples": [
+    {
+      "stdin": "grid = [[1,1,1,1,1,1,1,0],[1,0,0,0,0,1,1,0],[1,0,1,0,1,1,1,0],[1,0,0,0,0,1,0,1],[1,1,1,1,1,1,1,0]]\n",
+      "stdout": "2\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "grid = [[0,0,1,0,0],[0,1,0,1,0],[0,1,1,1,0]]\n",
+      "stdout": "1\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/number-of-closed-islands/",
+    "en": "https://leetcode.com/problems/number-of-closed-islands/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

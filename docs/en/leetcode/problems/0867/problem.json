@@ -1,0 +1,8 @@
+{
+  "id": 867,
+  "summary": "Read a matrix of integers. The row count is from 1 to 1000, and the column count is also from 1 to 1000. Build a new matrix by moving the entry in row i and column j to row j and column i. The new row count equals the old column count, and the new column count equals the old row count. Write the new matrix. Indexes begin at 0. No entry changes its value, only its position.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

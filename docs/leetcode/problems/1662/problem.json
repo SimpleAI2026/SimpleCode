@@ -1,0 +1,26 @@
+{
+  "id": 1662,
+  "slug": "check-if-two-string-arrays-are-equivalent",
+  "summary": "读入两个字符串数组 word1 与 word2。每个数组的段数介于 1 与 103，每一段的长度也介于 1 与 103，两个数组各自的字符总数都不超过 103，字符均为小写字母。把一个数组里的各段按原有先后粘成一条串。判断两条粘出来的串是否逐字符相同。相同则写出 true，不同则写出 false。",
+  "samples": [
+    {
+      "stdin": "word1 = [\"ab\", \"c\"], word2 = [\"a\", \"bc\"]\n",
+      "stdout": "true\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "word1 = [\"a\", \"cb\"], word2 = [\"ab\", \"c\"]\n",
+      "stdout": "false\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/check-if-two-string-arrays-are-equivalent/",
+    "en": "https://leetcode.com/problems/check-if-two-string-arrays-are-equivalent/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

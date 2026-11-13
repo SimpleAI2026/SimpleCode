@@ -1,0 +1,26 @@
+{
+  "id": 1296,
+  "slug": "divide-array-in-sets-of-k-consecutive-numbers",
+  "summary": "读入一串整数以及一个正整数 k。判断这些整数能否分成若干组，使每一组都恰好含有 k 个整数，并且组内按从小到大排列后，相邻两个整数的差都是 1。如果可以全部分完，写出 true；如果会剩下无法入组的整数，写出 false。k 不小于 1，数组长度不超过 100000，每个整数位于 1 和 1000000000 之间。同一个整数出现多次时，每次出现都要单独入组。",
+  "samples": [
+    {
+      "stdin": "nums = [1,2,3,3,4,4,5,6], k = 4\n",
+      "stdout": "true\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "nums = [3,2,1,2,3,4,3,4,5,9,10,11], k = 3\n",
+      "stdout": "true\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/divide-array-in-sets-of-k-consecutive-numbers/",
+    "en": "https://leetcode.com/problems/divide-array-in-sets-of-k-consecutive-numbers/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

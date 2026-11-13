@@ -1,0 +1,8 @@
+{
+  "id": 455,
+  "summary": "Read a positive appetite for every child and a size for every cookie. Each child may receive no more than one cookie, and each cookie may go to no more than one child. A child counts as satisfied only when the cookie handed over is at least as large as that child's appetite. Find the largest number of children that can be satisfied at the same time, and write that number.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

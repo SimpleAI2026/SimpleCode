@@ -1,0 +1,21 @@
+{
+  "id": 1656,
+  "slug": "design-an-ordered-stream",
+  "summary": "实现一个按编号向外送出字符串的流。编号是 1 到 n 的整数，n 介于 1 与 1000。每个字符串长度正好为 5，并且只含小写字母。插入正好发生 n 次，每次编号都不重复。构造时把游标设成 1。每存入一对编号和字符串后，如果游标上的编号已经在流中，就从游标起取出最长的一段已经到齐的连续编号，按编号从小到大把对应字符串写出来，再把游标改成这段末尾编号再加 1。若游标上的编号还没到，写出空列表。",
+  "samples": [
+    {
+      "stdin": "[\"OrderedStream\", \"insert\", \"insert\", \"insert\", \"insert\", \"insert\"]\n[[5], [3, \"ccccc\"], [1, \"aaaaa\"], [2, \"bbbbb\"], [5, \"eeeee\"], [4, \"ddddd\"]]\n",
+      "stdout": "[null, [], [\"aaaaa\"], [\"bbbbb\", \"ccccc\"], [], [\"ddddd\", \"eeeee\"]]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/design-an-ordered-stream/",
+    "en": "https://leetcode.com/problems/design-an-ordered-stream/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

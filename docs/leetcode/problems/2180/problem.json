@@ -1,0 +1,26 @@
+{
+  "id": 2180,
+  "slug": "count-integers-with-even-digit-sum",
+  "summary": "读入一个范围上限，它是介于1与1000之间的正整数。考察从1一直到该上限的每个整数，把每一位上的数码加总。加总结果若能被2整除，这个整数就算一次。把符合条件的整数一共有多少个写出来。1也要纳入检查，上限本身同样要检查。",
+  "samples": [
+    {
+      "stdin": "num = 4\n",
+      "stdout": "2\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "num = 30\n",
+      "stdout": "14\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/count-integers-with-even-digit-sum/",
+    "en": "https://leetcode.com/problems/count-integers-with-even-digit-sum/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

@@ -1,0 +1,8 @@
+{
+  "id": 1353,
+  "summary": "Read a list of meetings. Each meeting gives a start day and an end day. On any single day, at most one meeting may be attended. A meeting may be attended on any day from its start day through its end day, and both endpoints count. Find the largest number of meetings that can be attended and write that number. There are at most 10^5 meetings. Every start day and every end day is an integer from 1 to 10^5, and the end day is never earlier than the start day.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

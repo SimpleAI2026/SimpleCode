@@ -1,0 +1,21 @@
+{
+  "id": 1329,
+  "slug": "sort-the-matrix-diagonally",
+  "summary": "读入一张 m 行 n 列的整数矩阵。从某个格子出发，行号和列号每次都同时增加 1，直到走出矩阵，这些格子算作同一条斜线。把每一条斜线里的整数按从小到大重新放回原斜线，斜线之间不要交换整数。写出整理之后的整张矩阵。m 和 n 都不超过 100，矩阵里的每个整数都在 1 到 100 之间。",
+  "samples": [
+    {
+      "stdin": "mat = [[3,3,1,1],[2,2,1,2],[1,1,1,2]]\n",
+      "stdout": "[[1,1,1,1],[1,2,2,2],[1,2,3,3]]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/sort-the-matrix-diagonally/",
+    "en": "https://leetcode.com/problems/sort-the-matrix-diagonally/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

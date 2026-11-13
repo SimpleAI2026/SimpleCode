@@ -1,0 +1,8 @@
+{
+  "id": 1389,
+  "summary": "Read two equal-length integer sequences, one holding values to place and the other holding slots. Their shared length is from 1 to 100, and each value is from 0 to 100. Start from an empty result. Walking in index order, drop the current value into the result at the named slot, shifting the occupant of that slot and everything after it one step toward the end. Every slot is promised to be legal for the result built so far. Write the finished result.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

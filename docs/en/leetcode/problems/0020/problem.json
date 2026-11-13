@@ -1,6 +1,6 @@
 {
   "id": 20,
-  "summary": "The public title of this exercise is Valid Parentheses. Read one token of text without spaces from standard input and compute the result named by that title, using only those values. Print the result as the word true or false. The sample below is a short input written for this playground so the printed line can be checked locally. It is not a copy of an example from the problem site. The input stays under one hundred elements so it finishes quickly in the browser.",
+  "summary": "Read a text whose characters can only be opening or closing round, square, or curly brackets. Decide whether the brackets close in a fully correct way. Each opener must be finished by a closer of the same shape, a later opener must be finished before an earlier one, and pairs may not cross. A text with no characters counts as correct. Write true or false for the decision.",
   "notes": [
     "Compare after trimming trailing newlines. The input is one token of text without spaces."
   ]

@@ -1,0 +1,26 @@
+{
+  "id": 231,
+  "slug": "power-of-two",
+  "summary": "读入一个整数，判断它能否写成二的某个非负整数次幂。一、二、四、八以及更大的同类数都算成立。成立就写出 true，否则写出 false。零和一切负数都不成立。判断只依据这一个整数，没有第二份输入。次幂的指数必须是整数，不能是分数。",
+  "samples": [
+    {
+      "stdin": "1\n",
+      "stdout": "true\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "16\n",
+      "stdout": "true\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/power-of-two/",
+    "en": "https://leetcode.com/problems/power-of-two/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

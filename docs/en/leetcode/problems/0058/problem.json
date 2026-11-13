@@ -1,0 +1,8 @@
+{
+  "id": 58,
+  "summary": "Read a text whose length is from 1 to 104. The text holds only English letters and spaces. Spaces divide it into words, and at least one word is present. A word is a stretch of letters with no space inside. Find the word closest to the right end and write how many letters it holds. Spaces before or after that word do not raise the count. Trailing spaces at the end of the text still leave the final word counted by its letters.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

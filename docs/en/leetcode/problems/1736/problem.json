@@ -1,0 +1,8 @@
+{
+  "id": 1736,
+  "summary": "Read four clock digits with a colon between the hour pair and the minute pair. Some digits may be question marks. Replace every question mark with one decimal digit so the text names a real time of day. Legal times run from midnight through 23:59, and both ends count. Among every filling that passes this check, find the latest clock face and print it with two digits, a colon, and two digits. Some legal filling always exists.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

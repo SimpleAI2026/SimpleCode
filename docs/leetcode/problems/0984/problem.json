@@ -1,0 +1,26 @@
+{
+  "id": 984,
+  "slug": "string-without-aaa-or-bbb",
+  "summary": "读入两个整数 A 和 B，它们各自从 0 到 100。写出一条只含字母 a 和 b 的文本。文本长度必须等于 A 加 B，其中字母 a 恰好出现 A 次，字母 b 恰好出现 B 次。文本中不能出现连续三个 a，也不能出现连续三个 b。对于给出的 A 和 B，这样的文本一定存在。任意一条满足上述条件的文本都可以。",
+  "samples": [
+    {
+      "stdin": "A = 1, B = 2\n",
+      "stdout": "\"abb\"\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "A = 4, B = 1\n",
+      "stdout": "\"aabaa\"\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/string-without-aaa-or-bbb/",
+    "en": "https://leetcode.com/problems/string-without-aaa-or-bbb/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

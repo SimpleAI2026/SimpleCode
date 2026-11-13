@@ -1,0 +1,26 @@
+{
+  "id": 968,
+  "slug": "binary-tree-cameras",
+  "summary": "读入一棵二叉树，结点个数从 1 到 1000，每个结点保存的数值都是 0。允许在某些结点上放置摄像头。放在某个结点上的摄像头可以照看它的父结点、它自己，以及它的直接孩子。选出一组放置位置，使得每个结点都被至少一个摄像头看到，并且摄像头的个数最少。把这个最少个数写出来。",
+  "samples": [
+    {
+      "stdin": "[0,0,null,0,0]\n",
+      "stdout": "1\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "[0,0,null,0,null,0,null,null,0]\n",
+      "stdout": "2\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/binary-tree-cameras/",
+    "en": "https://leetcode.com/problems/binary-tree-cameras/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

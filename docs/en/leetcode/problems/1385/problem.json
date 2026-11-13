@@ -1,0 +1,8 @@
+{
+  "id": 1385,
+  "summary": "Read two columns of integers together with a nonnegative integer d. A number from the first column qualifies when the second column contains nothing whose absolute gap from it is at most d. Write how many numbers qualify. Each column holds from 1 to 500 integers, every integer lies between -1000 and 1000 inclusive, and d lies between 0 and 100 inclusive.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

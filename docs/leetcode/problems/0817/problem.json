@@ -1,0 +1,26 @@
+{
+  "id": 817,
+  "slug": "linked-list-components",
+  "summary": "读入一条结点值互不相同的链表。设长度为N，则N介于1和10000之间，每个结点的值取自0到N减一。再读入这些值的一个子集，子集大小同样介于1和10000之间。子集中的两个值若在链表里占据相邻结点，就看成彼此相连。找出这些值在链表上被分成了多少段互不相邻的连续组件，并把段数写出来。",
+  "samples": [
+    {
+      "stdin": "head: 0->1->2->3\nG = [0, 1, 3]\n",
+      "stdout": "2\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "head: 0->1->2->3->4\nG = [0, 3, 1, 4]\n",
+      "stdout": "2\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/linked-list-components/",
+    "en": "https://leetcode.com/problems/linked-list-components/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

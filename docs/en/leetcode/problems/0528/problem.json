@@ -1,0 +1,8 @@
+{
+  "id": 528,
+  "summary": "Read a list of positive integer weights, with indexes starting at zero. Perform a random draw that selects one index with a chance proportional to the weight stored there, then write the selected index. The list length runs from 1 to 10000, and each weight runs from 1 to 10^5. The draw is requested at most 10000 times. Separate requests do not affect one another, and only the proportion on a single draw is required.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

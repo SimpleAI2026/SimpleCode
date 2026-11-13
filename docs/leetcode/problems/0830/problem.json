@@ -1,0 +1,26 @@
+{
+  "id": 830,
+  "slug": "positions-of-large-groups",
+  "summary": "从一串只含小写英文字母的文本里划分区段，文本长度至少为 1、最多为 1000。同一区段里的字母必须相同，而且这些字母的位置要紧挨在一起。每个区段用一对下标表示，左端与右端都算进去。找出所有跨度达到三个字母及以上的区段，按左端下标从小到大写出这些下标对。更短的区段不要写入答案。",
+  "samples": [
+    {
+      "stdin": "s = \"abbxxxxzzy\"\n",
+      "stdout": "[[3,6]]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "s = \"abc\"\n",
+      "stdout": "[]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/positions-of-large-groups/",
+    "en": "https://leetcode.com/problems/positions-of-large-groups/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

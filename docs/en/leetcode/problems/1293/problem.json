@@ -1,0 +1,8 @@
+{
+  "id": 1293,
+  "summary": "Read an m by n grid and an integer k. A cell that holds 0 is open and a cell that holds 1 is blocked. One step moves into a neighboring cell up, down, left, or right. While walking from the upper-left corner to the lower-right corner, at most k blocked cells may be cleared. Find the fewest steps such a walk can take and write that count. If no walk can arrive, write -1. Both corners begin open. m and n are each at most 40, and k is at least 1 and at most the number of cells.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

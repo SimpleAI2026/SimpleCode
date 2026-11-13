@@ -1,0 +1,8 @@
+{
+  "id": 237,
+  "summary": "A one-way linked list contains between 2 and 1000 nodes. The integer in each node is unique, and its absolute value is at most 1000. You do not receive the opening node. You receive only the node that must be removed, and that node is never the final one. Change the links where they already are so the chosen node disappears and every later node stays in its previous order. Do not allocate a fresh list as a replacement. Write the nodes still readable from the original opening.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

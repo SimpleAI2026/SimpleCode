@@ -1,0 +1,8 @@
+{
+  "id": 1040,
+  "summary": "Read distinct stone positions along an endless axis. The count of stones runs from 3 to 10000, and each coordinate is an integer from 1 to 1000000000. A stone counts as an end when it currently holds the least or greatest coordinate. One move lifts an end stone and drops it on an empty integer so the dropped stone is not an end afterward. A lift is illegal when every empty landing would leave that same stone as an end. Play stops once the occupied spots form an unbroken block of integers. Find the fewest legal moves that can reach a stop, and the most legal moves that can be spent before a stop. Write the two counts with the smaller one first.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

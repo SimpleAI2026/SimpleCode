@@ -1,0 +1,26 @@
+{
+  "id": 1455,
+  "slug": "check-if-a-word-occurs-as-a-prefix-of-any-word-in-a-sentence",
+  "summary": "读入一句由单个空格隔开的句子，以及一个检索词。句子和检索词都只用小写字母，句子长度介于 1 与 100，检索词长度介于 1 与 10。若某个单词的开头一段连续字符正好等于检索词，这个单词就算命中。写出最早命中的单词在句中的序号，序号从 1 起算。多个命中时保留最靠前的那个。一个都没有就写出 -1。",
+  "samples": [
+    {
+      "stdin": "sentence = \"i love eating burger\", searchWord = \"burg\"\n",
+      "stdout": "4\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "sentence = \"this problem is an easy problem\", searchWord = \"pro\"\n",
+      "stdout": "2\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/check-if-a-word-occurs-as-a-prefix-of-any-word-in-a-sentence/",
+    "en": "https://leetcode.com/problems/check-if-a-word-occurs-as-a-prefix-of-any-word-in-a-sentence/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

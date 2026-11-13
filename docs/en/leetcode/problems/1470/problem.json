@@ -1,0 +1,8 @@
+{
+  "id": 1470,
+  "summary": "Read an integer list whose length is exactly 2n. The opening half is x1 through xn and the closing half is y1 through yn. Rewrite the list so the items alternate as x1, y1, x2, y2, and so on, ending with xn, yn. Write the rewritten list. n is from 1 to 500, and each stored value is from 1 to 1000.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

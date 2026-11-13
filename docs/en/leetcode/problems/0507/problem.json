@@ -1,0 +1,7 @@
+{
+  "id": 507,
+  "summary": "Read an integer n and decide whether it is perfect, then write true or false. A perfect number must be positive, and it must equal the sum of all positive divisors after the number itself is removed. Take 28 as an example. Its positive divisors are 1, 2, 4, 7, 14, and 28. Removing 28 leaves a sum of 28, so 28 qualifies. The only positive divisor of 1 is 1, so removing it leaves 0 and 1 does not qualify. Zero and negative values do not qualify either. A divisor must divide evenly.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

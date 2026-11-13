@@ -1,0 +1,26 @@
+{
+  "id": 1742,
+  "slug": "maximum-number-of-balls-in-a-box",
+  "summary": "读入小球编号的下界和上界。两个边界都介于 1 和 100000 之间，而且下界不会高于上界。闭区间里的每个整数都是一颗球的编号。把球放进盒子时，盒子号码等于编号各位数字之和。统计每个盒子最终装进多少颗球，找出装得最多的盒子，并把那个数量写出来。并列最多时，写出其中任意一个盒子的数量即可。",
+  "samples": [
+    {
+      "stdin": "lowLimit = 1, highLimit = 10\n",
+      "stdout": "2\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "lowLimit = 5, highLimit = 15\n",
+      "stdout": "2\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/maximum-number-of-balls-in-a-box/",
+    "en": "https://leetcode.com/problems/maximum-number-of-balls-in-a-box/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

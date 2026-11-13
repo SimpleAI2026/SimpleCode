@@ -1,0 +1,8 @@
+{
+  "id": 807,
+  "summary": "Read a square city whose side length is from 2 to 50. Each cell holds one building whose height is an integer from 0 through 100, and a height of zero still counts as a building. From the north, east, south, or west, the skyline is formed by the tallest building on each line of sight. Any collection of buildings may be raised by any nonnegative amounts, yet the skyline seen from all four directions must stay exactly the same. Find the greatest possible sum of the raises and write that sum.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

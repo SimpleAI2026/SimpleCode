@@ -1,0 +1,7 @@
+{
+  "id": 645,
+  "summary": "Each integer from 1 through n should have appeared once. After a mistake, one value was replaced by another value that already belonged in the collection, so one value shows up twice and another value is gone. Read the resulting array, which is unordered and has length from 2 to 10000. Find the value that shows up twice, then the value that is gone, and write those two values in that order.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

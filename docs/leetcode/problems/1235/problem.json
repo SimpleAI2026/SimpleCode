@@ -1,0 +1,26 @@
+{
+  "id": 1235,
+  "slug": "maximum-profit-in-job-scheduling",
+  "summary": "一共有 n 份兼职，n 介于 1 和 5 乘 10000 之间。第 i 份从 startTime[i] 做到 endTime[i]，报酬为 profit[i]。开始时刻严格早于结束时刻，结束时刻不超过 10^9，每份报酬是 1 到 10000 的整数。时间范围互相重叠的两份不能一起承接。一份在时刻 X 结束时，可以马上承接另一份在时刻 X 开始的工作。选出互不冲突的若干份，写出所能获得报酬的最大值。时间上界是 10^9。",
+  "samples": [
+    {
+      "stdin": "startTime = [1,2,3,3], endTime = [3,4,5,6], profit = [50,10,40,70]\n",
+      "stdout": "120\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "startTime = [1,2,3,4,6], endTime = [3,5,10,6,9], profit = [20,20,100,70,60]\n",
+      "stdout": "150\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/maximum-profit-in-job-scheduling/",
+    "en": "https://leetcode.com/problems/maximum-profit-in-job-scheduling/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

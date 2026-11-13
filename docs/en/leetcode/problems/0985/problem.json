@@ -1,0 +1,7 @@
+{
+  "id": 985,
+  "summary": "Read one column of integers and a sequence of edits. Each edit carries an addend and a zero-based position. Add the addend into the integer at that position and keep the updated value for later edits. After every edit, add all even integers currently in the column and remember that total. When the edits are finished, write the remembered totals in the same order as the edits. The column length and the edit count are each at most 10000, and every integer has absolute value at most 10000. Each position always lies inside the column.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

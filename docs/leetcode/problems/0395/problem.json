@@ -1,0 +1,26 @@
+{
+  "id": 395,
+  "slug": "longest-substring-with-at-least-k-repeating-characters",
+  "summary": "读入只由小写英文字母组成的字符串 s，以及整数 k。s 的长度介于 1 与 10000 之间，k 介于 1 与 100000 之间。在 s 中寻找连续的一段，使得这段里面每种字母的出现量都要达到 k。在所有合格的段里取最长者，写出它的长度。",
+  "samples": [
+    {
+      "stdin": "s = \"aaabb\", k = 3\n",
+      "stdout": "3\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "s = \"ababbc\", k = 2\n",
+      "stdout": "5\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/longest-substring-with-at-least-k-repeating-characters/",
+    "en": "https://leetcode.com/problems/longest-substring-with-at-least-k-repeating-characters/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

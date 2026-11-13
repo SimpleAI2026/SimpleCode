@@ -1,0 +1,8 @@
+{
+  "id": 147,
+  "summary": "Read a singly linked list of integer nodes. Values may repeat and may be negative. Order the nodes into non-decreasing order by insertion. The ordered section begins as the first node alone. Each following step takes the next node that is not yet placed and inserts it just before the first node in the ordered section whose value is greater than or equal to it. Keep each integer on its original node and move links only. Write the list when every node has been placed.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "id": 341,
+  "slug": "flatten-nested-list-iterator",
+  "summary": "读入一份可以层层嵌套的结构。结构里的每一项要么本身就是一个整数，要么又是一份同样规则的结构。按照从左到右、外层走完再进入内层的次序，把出现过的所有整数依次暴露出来。需要支持一次取出下一个整数，并在全部取完后停止。把依次取出的整数写出来。",
+  "samples": [
+    {
+      "stdin": "[[1,1],2,[1,1]]\n",
+      "stdout": "[1,1,2,1,1]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "[1,[4,[6]]]\n",
+      "stdout": "[1,4,6]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/flatten-nested-list-iterator/",
+    "en": "https://leetcode.com/problems/flatten-nested-list-iterator/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

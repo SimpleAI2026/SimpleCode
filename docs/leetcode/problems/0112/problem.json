@@ -1,0 +1,21 @@
+{
+  "id": 112,
+  "slug": "path-sum",
+  "summary": "读入一棵整数二叉树，再读入一个目标和，这个目标可以是 22，也可以是别的整数。判断有没有一条从根一直走到叶子的路线，使路线上全部结点的整数相加正好等于目标。叶子是左右都没有孩子的结点。走到一半时即使累加结果已经等于目标，只要还没到叶子，就不能算成功。把判断写成是或否。",
+  "samples": [
+    {
+      "stdin": "the below binary tree and sum = 22,\n\n5\n/ \\\n4 8\n/ / \\\n11 13 4\n/ \\ \\\n7 2 1\n",
+      "stdout": "true, as there exist a root-to-leaf path 5->4->11->2 which sum is 22.\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/path-sum/",
+    "en": "https://leetcode.com/problems/path-sum/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

@@ -1,0 +1,7 @@
+{
+  "id": 911,
+  "summary": "Read ballots from an election. Ballot i chooses the candidate whose id is persons[i], and the stamp on that ballot is times[i]. Those stamps strictly increase, and every stamp lies between 0 and 10^9 inclusive. Candidate ids start at 0 and never exceed the ballot count. A query for a moment t asks which candidate has the most ballots by then, and a ballot stamped exactly at t counts. On a tie, the candidate who gained a ballot most recently among those tied is ahead. Every queried moment is at least as late as the first stamp. There are at most 5000 ballots, and one test asks at most 10000 queries. Write the leading candidate id for each query, in order.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

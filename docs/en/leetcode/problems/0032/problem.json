@@ -1,0 +1,8 @@
+{
+  "id": 32,
+  "summary": "Read a text that contains only opening and closing round parentheses. Its length runs from 0 up to 3 times 104. Find a contiguous slice whose parentheses pair correctly, and choose the slice with the greatest number of characters. Write that length. A correct slice pairs every opening mark with a closing mark, and both nesting and side by side pairs are allowed. When the text has no correct slice, write 0.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

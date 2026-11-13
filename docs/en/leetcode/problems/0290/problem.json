@@ -1,0 +1,8 @@
+{
+  "id": 290,
+  "summary": "Read a pattern and a row of words separated by a single space. The pattern contains only lowercase letters, and every word contains only lowercase letters. Decide whether the words match the pattern fully: each letter pairs with one nonempty word, different letters pair with different words, and the pairs line up from left to right. Write yes or no. Words are nonempty and spaces are not doubled.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

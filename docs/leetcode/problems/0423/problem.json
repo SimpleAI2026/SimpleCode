@@ -1,0 +1,26 @@
+{
+  "id": 423,
+  "slug": "reconstruct-original-digits-from-english",
+  "summary": "读入一段只由英文小写字母组成的文本，长度严格小于 50000。这些字母来自若干个零到九的英文拼写，原来的先后次序已被打乱，而且这段文本保证能够还原成一组数字。找出原来的那些数字，按从小到大排好，连成一串数字字符写出来。",
+  "samples": [
+    {
+      "stdin": "\"owoztneoer\"\n",
+      "stdout": "\"012\"\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "\"fviefuro\"\n",
+      "stdout": "\"45\"\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/reconstruct-original-digits-from-english/",
+    "en": "https://leetcode.com/problems/reconstruct-original-digits-from-english/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

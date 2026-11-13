@@ -1,0 +1,8 @@
+{
+  "id": 1655,
+  "summary": "Read an integer list nums and an order list quantity. nums has length n from 1 to 105, each entry is from 1 to 1000, and at most 50 different values occur. There are m orders, m is from 1 to 10, and each order requests from 1 to 105 copies. Decide whether the entries in nums can be handed out so that customer i receives exactly the count written in order i, every integer that customer receives is the same value, and every customer is included. Write true when such a handout exists, and write false otherwise.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

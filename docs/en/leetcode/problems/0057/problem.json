@@ -1,6 +1,6 @@
 {
   "id": 57,
-  "summary": "The public title of this exercise is Insert Interval. Read tokens in the same order as the method parameters from standard input and compute the result named by that title, using only those values. Print the result as a row count and then one line of integers per row. The sample below is a short input written for this playground so the printed line can be checked locally. It is not a copy of an example from the problem site. The input stays under one hundred elements so it finishes quickly in the browser.",
+  "summary": "Read a list of closed ranges already ordered by left ends. Those ranges neither cross nor touch. Then read one extra closed range and place it into the list. Join it with every existing range that overlaps it or meets it at an endpoint, using ends that cover every joined piece. Write the full list after the joins. Ranges that stay completely clear of the extra one remain as they were.",
   "notes": [
     "Compare after trimming trailing newlines. The input is tokens in the same order as the method parameters."
   ]

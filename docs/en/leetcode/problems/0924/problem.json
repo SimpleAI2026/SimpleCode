@@ -1,0 +1,8 @@
+{
+  "id": 924,
+  "summary": "Read an undirected graph as a square matrix whose side is greater than 1 and at most 300. The matrix is symmetric, an entry of 1 means the two nodes share a direct link, and every diagonal entry is 1. Also read a nonempty list of nodes that start infected. That list is shorter than the node count, and every id in it is valid. Infection crosses a direct link whenever at least one end is already infected, and this continues until it can spread no further. Let M be how many nodes are infected once it stops. Drop exactly one node from the starting list so that M becomes as small as possible. If several drops tie, write the smallest id. A dropped node may still become infected later through later spread.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

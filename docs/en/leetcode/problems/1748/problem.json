@@ -1,0 +1,8 @@
+{
+  "id": 1748,
+  "summary": "Read one column of integers. The column length is between 1 and 100, and every integer in it is also between 1 and 100. Call a value unique when it occurs exactly once in the whole column. Add every unique value and write the total. Leave out every value that occurs twice or more often.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

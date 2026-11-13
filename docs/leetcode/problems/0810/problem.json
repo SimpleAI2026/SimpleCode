@@ -1,0 +1,21 @@
+{
+  "id": 810,
+  "slug": "chalkboard-xor-game",
+  "summary": "读入黑板上的若干非负整数，个数介于1和1000之间，每个数不超过2的16次方。Alice先行动，双方轮流擦掉恰好一个数。若某次擦除使剩下所有数的按位异或变为0，执行这次擦除的人判负。只剩一个数时，异或结果就是该数本身；一个数都不剩时，异或结果视为0。轮到某人而当前异或已经是0，则该人直接获胜。假定双方每一步都选对自己最有利的做法，判断Alice是否必胜，必胜写出真，否则写出假。",
+  "samples": [
+    {
+      "stdin": "nums = [1, 1, 2]\n",
+      "stdout": "false\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/chalkboard-xor-game/",
+    "en": "https://leetcode.com/problems/chalkboard-xor-game/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

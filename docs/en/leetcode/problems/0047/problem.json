@@ -1,0 +1,7 @@
+{
+  "id": 47,
+  "summary": "Read a list of integers that may contain equal values. Write every ordering that looks different from the others. When two orderings agree from left to right, keep only one copy. Swapping two equal values leaves the ordering unchanged, so do not write that case again. In every kept ordering, each value must occur as many times as it does in the input. Write all of those orderings.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

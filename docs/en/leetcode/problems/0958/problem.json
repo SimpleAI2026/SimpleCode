@@ -1,0 +1,8 @@
+{
+  "id": 958,
+  "summary": "Read a binary tree that contains between 1 and 100 nodes. Every node stores an integer from 1 through 1000. Decide whether the tree is complete. Every level above the deepest one must hold as many nodes as that level can hold. On the deepest level, the nodes that exist must sit packed against the left side, with no gap between them, though that level need not be full. Write true when the tree meets this shape, and write false when it does not.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

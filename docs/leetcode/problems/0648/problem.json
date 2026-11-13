@@ -1,0 +1,21 @@
+{
+  "id": 648,
+  "slug": "replace-words",
+  "summary": "读入一组词根和一句英文，字符全部是小写字母。词根的个数以及句中单词的个数都在 1 到 1000，每条词根的长度在 1 到 100，句中每个单词的长度不超过 1000。如果某个单词的开头能对上词典里的词根，就把它换成匹配上的最短词根。写出替换之后的整句，单词之间仍用空格隔开。对不上任何词根的单词保持不变。",
+  "samples": [
+    {
+      "stdin": "dict = [\"cat\", \"bat\", \"rat\"]\nsentence = \"the cattle was rattled by the battery\"\n",
+      "stdout": "\"the cat was rat by the bat\"\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/replace-words/",
+    "en": "https://leetcode.com/problems/replace-words/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

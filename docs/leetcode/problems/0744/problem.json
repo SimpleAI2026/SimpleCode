@@ -1,0 +1,21 @@
+{
+  "id": 744,
+  "slug": "find-smallest-letter-greater-than-target",
+  "summary": "读入已经按字母顺序排好的小写字母数组letters，以及一个目标小写字母target。数组长度在2到10000之间，并且至少包含两个互不相同的字母。找出数组中严格大于target的最小字母。字母表按环形处理：如果没有任何字母大于target，就改选数组里最小的字母。把选中的字母写出来。",
+  "samples": [
+    {
+      "stdin": "letters = [\"c\", \"f\", \"j\"]\ntarget = \"a\"\n",
+      "stdout": "\"c\"\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/find-smallest-letter-greater-than-target/",
+    "en": "https://leetcode.com/problems/find-smallest-letter-greater-than-target/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

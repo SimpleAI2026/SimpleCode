@@ -1,0 +1,21 @@
+{
+  "id": 384,
+  "slug": "shuffle-an-array",
+  "summary": "用一串互不重复的整数建立对象。长度至多 200，每个数位于负 1000000 与正 1000000 之间。reset 把内部序列还原成建立时的次序并写出整串。shuffle 写出一种随机重排，要求全部排列出现的机会完全一样。这两项操作合计至多调用 5 乘 10000 次。",
+  "samples": [
+    {
+      "stdin": "[\"Solution\", \"shuffle\", \"reset\", \"shuffle\"]\n[[[1, 2, 3]], [], [], []]\n",
+      "stdout": "[null, [3, 1, 2], [1, 2, 3], [1, 3, 2]]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/shuffle-an-array/",
+    "en": "https://leetcode.com/problems/shuffle-an-array/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

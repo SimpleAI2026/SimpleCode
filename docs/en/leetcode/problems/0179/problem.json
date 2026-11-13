@@ -1,0 +1,8 @@
+{
+  "id": 179,
+  "summary": "Read several whole numbers that are zero or larger. Reorder them, then glue their decimal writings together in that order to form one numeral. Among every possible order, find the numeral that is largest and write it as text. The text may be far too long to fit in a fixed-width integer. If every gluing is nothing but zeros, write a single character 0. Inputs do not arrive with leading zeros on an individual integer, yet the glued text may still need a single zero when nothing else remains.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

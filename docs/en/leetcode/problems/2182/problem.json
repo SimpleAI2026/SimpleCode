@@ -1,0 +1,8 @@
+{
+  "id": 2182,
+  "summary": "Read a string made only of lowercase English letters and a positive integer cap. Both the length and the cap sit between 1 and 100000, and the cap is at most the length. Build a new string from those letters. You may skip some letters. In the new string, no letter may sit next to itself more times than the cap allows. Among every string that obeys the cap, write the one that is largest in dictionary order. Compare from the left: at the first mismatch, the letter later in the alphabet wins. If the shorter string is a prefix of the longer one, the longer string wins.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

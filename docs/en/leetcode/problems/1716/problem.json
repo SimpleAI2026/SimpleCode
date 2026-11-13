@@ -1,0 +1,8 @@
+{
+  "id": 1716,
+  "summary": "Read a day count n from 1 to 1000. Deposits start on a Monday with 1. From Tuesday through Sunday of that week, each day deposits one more than the day before. Every later Monday deposits one more than the Monday before it, and inside a week the amount still rises by one each day. Write the total saved when day n ends.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

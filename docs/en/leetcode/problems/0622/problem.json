@@ -1,0 +1,7 @@
+{
+  "id": 622,
+  "summary": "Implement a ring queue with capacity k. k is an integer from 1 to 1000, stored values lie from 0 to 1000, and all operations together are invoked at most 3000 times. Items depart in the order they arrived, and the tail wraps to the head so a freed slot can accept a later item. Support creating the queue from k, reading the head item and the tail item while writing -1 if nothing is stored, inserting a value with true on success and false when no slot remains, removing the head item with true on success and false when nothing is stored, and answering whether it is empty and whether it is full.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

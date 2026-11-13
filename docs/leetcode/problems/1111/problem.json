@@ -1,0 +1,26 @@
+{
+  "id": 1111,
+  "slug": "maximum-nesting-depth-of-two-valid-parentheses-strings",
+  "summary": "读入一条只含左右圆括号而且本身合法的字符串，长度从 1 到 10000。把每个字符分进甲组或乙组，两组都要各自成为合法的括号串，每个字符恰好进入一组，组内还要保持原有的相对次序。空片段的深度是 0。两段合法片段首尾相接时，深度取两边里较大的那个。在一段合法片段外包上一对匹配括号时，深度比内部多 1。让两组深度里较大的那个尽量小。写出与原串等长的数组，用 0 表示分到甲组，用 1 表示分到乙组。多种分法都可行时，写出任意一种。",
+  "samples": [
+    {
+      "stdin": "a VPS seq, split it into two disjoint subsequences A and B, such that A and B are VPS's (and A.length + B.length = seq.length).\n\nNow choose any such A and B such that max(depth(A), depth(B)) is the minimum possible value.\n",
+      "stdout": "an answer array (of length seq.length) that encodes such a choice of A and B: answer[i] = 0 if seq[i] is part of A, else answer[i] = 1. Note that even though multiple answers may exist, you may return any of them.\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "seq = \"(()())\"\n",
+      "stdout": "[0,1,1,1,1,0]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/maximum-nesting-depth-of-two-valid-parentheses-strings/",
+    "en": "https://leetcode.com/problems/maximum-nesting-depth-of-two-valid-parentheses-strings/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

@@ -1,0 +1,8 @@
+{
+  "id": 1763,
+  "summary": "Read a string of length between 1 and 100 made only of English capital letters and English small letters. A contiguous piece is nice when every letter that shows up in it shows up in both a capital form and a small form. Find the longest nice piece. When several pieces share that length, write the piece whose start sits farthest left. When the text has no nice piece, write an empty result.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

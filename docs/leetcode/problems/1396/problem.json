@@ -1,0 +1,26 @@
+{
+  "id": 1396,
+  "slug": "design-underground-system",
+  "summary": "实现一套地铁进出记录。乘客用整数编号，站名由字母或数字组成。进站记下编号、站名与时刻，同一乘客同时最多待在一站。出站记下编号、站名与更晚的时刻。查询给出起点站和终点站，把至今所有从起点不换乘直达终点的行程耗时取平均后写出来。只有至少走过一趟的路线才会被问到。进出按时间先后出现，出站时刻严格晚于对应进站。调用总次数不超过 20000，编号和时刻介于 1 与 106，站名长度介于 1 与 10。平均值与精确结果相差不超过 105 即算正确。",
+  "samples": [
+    {
+      "stdin": "[\"UndergroundSystem\",\"checkIn\",\"checkIn\",\"checkIn\",\"checkOut\",\"checkOut\",\"checkOut\",\"getAverageTime\",\"getAverageTime\",\"checkIn\",\"getAverageTime\",\"checkOut\",\"getAverageTime\"]\n[[],[45,\"Leyton\",3],[32,\"Paradise\",8],[27,\"Leyton\",10],[45,\"Waterloo\",15],[27,\"Waterloo\",20],[32,\"Cambridge\",22],[\"Paradise\",\"Cambridge\"],[\"Leyton\",\"Waterloo\"],[10,\"Leyton\",24],[\"Leyton\",\"Waterloo\"],[10,\"Waterloo\",38],[\"Leyton\",\"Waterloo\"]]\n",
+      "stdout": "[null,null,null,null,null,null,null,14.00000,11.00000,null,11.00000,null,12.00000]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "[\"UndergroundSystem\",\"checkIn\",\"checkOut\",\"getAverageTime\",\"checkIn\",\"checkOut\",\"getAverageTime\",\"checkIn\",\"checkOut\",\"getAverageTime\"]\n[[],[10,\"Leyton\",3],[10,\"Paradise\",8],[\"Leyton\",\"Paradise\"],[5,\"Leyton\",10],[5,\"Paradise\",16],[\"Leyton\",\"Paradise\"],[2,\"Leyton\",21],[2,\"Paradise\",30],[\"Leyton\",\"Paradise\"]]\n",
+      "stdout": "[null,null,null,5.00000,null,null,5.50000,null,null,6.66667]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/design-underground-system/",
+    "en": "https://leetcode.com/problems/design-underground-system/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

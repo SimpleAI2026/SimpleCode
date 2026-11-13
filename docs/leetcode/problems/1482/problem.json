@@ -1,0 +1,26 @@
+{
+  "id": 1482,
+  "slug": "minimum-number-of-days-to-make-m-bouquets",
+  "summary": "花园里有 n 朵花，第 i 朵在第 bloomDay[i] 天才会开放，而且每朵最多被用一次。要做成 m 束，每一束都必须用 k 朵当天已经开放、并且在园中位置彼此紧挨着的花。写出为了凑齐 m 束至少要等到的天数。如果无论等到哪一天都凑不齐，写出 -1。n 介于 1 与 100000，开放日介于 1 与 1000000000，m 介于 1 与 1000000，k 介于 1 与 n。",
+  "samples": [
+    {
+      "stdin": "bloomDay = [1,10,3,10,2], m = 3, k = 1\n",
+      "stdout": "3\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "bloomDay = [1,10,3,10,2], m = 3, k = 2\n",
+      "stdout": "-1\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/minimum-number-of-days-to-make-m-bouquets/",
+    "en": "https://leetcode.com/problems/minimum-number-of-days-to-make-m-bouquets/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

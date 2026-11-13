@@ -1,6 +1,6 @@
 {
   "id": 94,
-  "summary": "The public title of this exercise is Binary Tree Inorder Traversal. Read a level-order node count, using a dot for a missing child from standard input and compute the result named by that title, using only those values. Print the result as integers on one line, separated by spaces. The sample below is a short input written for this playground so the printed line can be checked locally. It is not a copy of an example from the problem site. The input stays under one hundred elements so it finishes quickly in the browser.",
+  "summary": "Read a binary tree in which each node keeps an integer and a missing child is an empty spot. Collect the integers in inorder: for any node, handle its entire left side first, record the node itself next, and handle its entire right side last. Write the collected integers in that sequence on one line. When the whole tree is empty, write an empty result. The input describes the shape by levels, and the output contains only node values. Leave the original tree unchanged.",
   "notes": [
     "Compare after trimming trailing newlines. The input is a level-order node count, using a dot for a missing child."
   ]

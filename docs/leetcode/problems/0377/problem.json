@@ -1,0 +1,26 @@
+{
+  "id": 377,
+  "slug": "combination-sum-iv",
+  "summary": "读入若干个互不相同的正整数，个数在 1 到 200 之间，每个整数在 1 到 1000 之间，另外读入目标值 target，范围同样是 1 到 1000。用这些整数组成序列，每个整数可重复使用，序列各项之和要恰好等于 target。顺序不同视为不同序列。答案保证能放进 32 位整数。把序列的种数写出来。",
+  "samples": [
+    {
+      "stdin": "nums = [1,2,3], target = 4\n",
+      "stdout": "7\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "nums = [9], target = 3\n",
+      "stdout": "0\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/combination-sum-iv/",
+    "en": "https://leetcode.com/problems/combination-sum-iv/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

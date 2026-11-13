@@ -1,0 +1,7 @@
+{
+  "id": 907,
+  "summary": "Read a sequence of positive integers named A. Both its length and every entry are at most 30000. From each contiguous span, take the smallest entry in that span. A span that holds only one entry still counts, and its smallest entry is that entry itself. Add those smallest entries over every span and write the sum modulo 10^9 + 7.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

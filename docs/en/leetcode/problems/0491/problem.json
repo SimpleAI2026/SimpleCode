@@ -1,0 +1,7 @@
+{
+  "id": 491,
+  "summary": "Read a list of integers. The length is at most 15, every integer lies from -100 through 100, and repeats are allowed. Pick several values while keeping their original relative order. Skipping values is allowed. Each picked sequence must contain at least 2 values and must never fall from left to right. Equal neighbors still qualify. Find every such sequence whose values differ from the others, and write them all. If several picks produce the same values in the same order, keep one copy. The order must come from the original list and must not be rearranged.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

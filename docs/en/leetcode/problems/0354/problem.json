@@ -1,0 +1,7 @@
+{
+  "id": 354,
+  "summary": "Read several envelopes. Each one is described by two positive integers, a width and a height. A smaller envelope fits in a larger one only when both its width and its height are strictly less than those of the larger one. Rotating an envelope by a right angle before comparing is forbidden. Find how many envelopes can be nested in one chain, each inside the next, and write that largest count.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

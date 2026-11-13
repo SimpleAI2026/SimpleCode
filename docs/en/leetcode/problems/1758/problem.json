@@ -1,0 +1,8 @@
+{
+  "id": 1758,
+  "summary": "Read a string whose length is between 1 and 104 and whose characters are only 0 and 1. One edit changes a single 0 into a 1, or a single 1 into a 0. Call the string alternating when every pair of neighboring characters differs. Find how few edits are enough to reach an alternating string, and write that count.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

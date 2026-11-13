@@ -1,0 +1,8 @@
+{
+  "id": 30,
+  "summary": "Read one source text and several words that all have the same length. Join those words in any order, using each word a single time and putting no extra characters between them. Find every place where a contiguous piece of the source matches such a join, and write the starting index of each place. Overlapping pieces and separate pieces all count. When no place matches, the written result is empty.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

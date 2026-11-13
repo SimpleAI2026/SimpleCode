@@ -1,0 +1,7 @@
+{
+  "id": 1145,
+  "summary": "Read a binary tree of n nodes and a value x already chosen by the first player. The count n is odd, node values are the distinct integers from 1 through n, and 1 <= x <= n <= 100. The first player has painted the node holding x. The second player must paint a different value. Players then alternate. A turn paints one unpainted neighbor of a node that player already owns, and a neighbor means the parent, the left child, or the right child. A player who cannot paint skips. When both must skip, whoever painted more nodes wins. Decide whether the second player has a first choice that forces a win. Write true or false.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

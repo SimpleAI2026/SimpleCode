@@ -1,0 +1,7 @@
+{
+  "id": 706,
+  "summary": "Make a table from integer keys to integer values on your own, and do not call a built-in hash table from the language. When put receives a key and a value, store the pair if the key appears for the first time, and change the stored value if a record already exists. When get receives a key, write the paired value if the table holds that key, and write -1 if it does not. When remove receives a key, delete the record if the table holds that key, and change nothing if it does not. Keys and values lie between 0 and 1000000. The combined number of operations lies between 1 and 10000.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "id": 2096,
+  "slug": "step-by-step-directions-from-a-binary-tree-node-to-another",
+  "summary": "读入一棵二叉树，节点个数 n 介于 2 和 105 之间。每个节点保存一个 1 到 n 之间的整数，这些整数互不相同。再读入起点的值与终点的值，两者不同，且都落在 1 到 n 之间。找出从起点节点走到终点节点的一条最短路线。每一步用一个大写字母表示：去左孩子写 L，去右孩子写 R，去父亲写 U。把这些字母按行走顺序连成字符串并写出来。",
+  "samples": [
+    {
+      "stdin": "root = [5,1,2,3,null,6,4], startValue = 3, destValue = 6\n",
+      "stdout": "\"UURL\"\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "root = [2,1], startValue = 2, destValue = 1\n",
+      "stdout": "\"L\"\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/step-by-step-directions-from-a-binary-tree-node-to-another/",
+    "en": "https://leetcode.com/problems/step-by-step-directions-from-a-binary-tree-node-to-another/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

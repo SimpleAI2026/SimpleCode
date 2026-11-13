@@ -1,0 +1,8 @@
+{
+  "id": 201,
+  "summary": "Read two integers m and n such that 0 is less than or equal to m, m is less than or equal to n, and n is less than or equal to 2147483647. Fold every integer from m through n, counting both ends, with bitwise AND, and write the folded result. When m and n are equal, the result is that integer itself. Each bit is handled on its own: a bit in the result is 1 only when that bit is 1 in every integer of the closed span.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

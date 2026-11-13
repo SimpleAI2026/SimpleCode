@@ -1,0 +1,26 @@
+{
+  "id": 1010,
+  "slug": "pairs-of-songs-with-total-durations-divisible-by-60",
+  "summary": "读入每首歌持续的秒数。要数的是下标对：前一个下标必须小于后一个下标，两首歌的秒数之和可以被 60 整除。把这样的下标对一共有多少写出来。歌曲条数不超过 6 乘以 104，每首歌的秒数是 1 到 500 之间的整数。同一首歌不能和自己配对，顺序不同的同一对只算一次。",
+  "samples": [
+    {
+      "stdin": "time = [30,20,150,100,40]\n",
+      "stdout": "3\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "time = [60,60,60]\n",
+      "stdout": "3\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/pairs-of-songs-with-total-durations-divisible-by-60/",
+    "en": "https://leetcode.com/problems/pairs-of-songs-with-total-durations-divisible-by-60/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

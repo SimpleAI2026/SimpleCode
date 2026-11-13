@@ -1,0 +1,8 @@
+{
+  "id": 710,
+  "summary": "Read a positive integer N and a list of distinct blacklist integers drawn from the half-open interval that begins at 0 and ends before N. Whenever a draw is requested, write an integer from that interval that is missing from the blacklist, with each allowed integer equally likely. The interval does not contain N itself. N is between 1 and 1000000000. The blacklist length is strictly smaller than the lesser of 100000 and N, and the length may be 0. On repeated draws, every permitted integer should have an equal chance.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

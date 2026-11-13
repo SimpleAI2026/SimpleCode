@@ -1,0 +1,7 @@
+{
+  "id": 851,
+  "summary": "Read N people labeled from 0 through N minus 1, with N from 1 to 500. Each person has a distinct quiet score, and that score is an integer from 0 to N minus 1. A list of pairs states that one person is certainly richer than another. The list has no repeated pairs, no pair joins a person to himself, and the comparisons do not contradict one another. Its length is at most N times N minus 1, divided by 2. For each person, look at everyone whose money is at least as large as his, including himself. Among them, pick the person whose quiet score is smallest. Write those chosen labels in order of the person being asked about.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "id": 264,
+  "slug": "ugly-number-ii",
+  "summary": "读入正整数 n，找出从小到大数起的第 n 个丑数，并把它写出来。丑数是正整数，它的质因数只能取自二、三、五，这三种可以缺某一种。一是序列里的第一个。n 的最小值是 1，最大值是 1690。写出的必须是第 n 个，而不是前 n 个的列表。",
+  "samples": [
+    {
+      "stdin": "n = 10\n",
+      "stdout": "12\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "n = 1\n",
+      "stdout": "1\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/ugly-number-ii/",
+    "en": "https://leetcode.com/problems/ugly-number-ii/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

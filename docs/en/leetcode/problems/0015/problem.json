@@ -1,6 +1,6 @@
 {
   "id": 15,
-  "summary": "The public title of this exercise is 3Sum. Read tokens in the same order as the method parameters from standard input and compute the result named by that title, using only those values. Print the result as a row count and then one line of integers per row. The sample below is a short input written for this playground so the printed line can be checked locally. It is not a copy of an example from the problem site. The input stays under one hundred elements so it finishes quickly in the browser.",
+  "summary": "Read a collection of integers. Choose three numbers from three different positions so that the three numbers add to 0. Find every such choice, but keep a choice only once when another choice holds the same numbers the same number of times, ignoring positions. Write each kept group of three numbers. The order among groups may vary, and the order inside a group may vary too.",
   "notes": [
     "Compare after trimming trailing newlines. The input is tokens in the same order as the method parameters."
   ]

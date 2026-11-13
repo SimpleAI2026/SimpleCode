@@ -1,0 +1,26 @@
+{
+  "id": 224,
+  "slug": "basic-calculator",
+  "summary": "读入一条算式。它只含加号、减号、圆括号、非负的整数以及空白，并且保证合法。括号中的部分先算，加法和减法按从左到右的次序进行。写出算得的整数。空白可以夹在数字与符号之间，看到后忽略即可。不要调用语言自带的整段算式求值功能。减号既可以表示减法，也可以表示一元负号。",
+  "samples": [
+    {
+      "stdin": "\"1 + 1\"\n",
+      "stdout": "2\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "\" 2-1 + 2 \"\n",
+      "stdout": "3\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/basic-calculator/",
+    "en": "https://leetcode.com/problems/basic-calculator/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

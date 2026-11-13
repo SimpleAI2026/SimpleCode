@@ -1,0 +1,7 @@
+{
+  "id": 59,
+  "summary": "Read one positive integer and use it as the side of a square. Build a square table of that side and fill the cells with the successive integers that begin at 1 and end at the square of the side. Start at the top-left cell, then move clockwise and inward so each cell receives exactly one integer. Write the finished table from the top row downward. When the side is 1, the table holds only the integer 1.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

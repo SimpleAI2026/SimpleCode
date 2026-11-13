@@ -1,0 +1,21 @@
+{
+  "id": 645,
+  "slug": "set-mismatch",
+  "summary": "原本从 1 到 n 的每个整数都应该出现一次。出错以后，其中一个数被改成了另一个本来就该出现的数，于是有一个数出现了两次，同时有一个数再也看不到。读入出错后的数组，它是乱序的，长度在 2 到 10000。先找出出现两次的数，再找出缺失的数，按这个次序写出两个数。",
+  "samples": [
+    {
+      "stdin": "nums = [1,2,2,4]\n",
+      "stdout": "[2,3]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/set-mismatch/",
+    "en": "https://leetcode.com/problems/set-mismatch/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

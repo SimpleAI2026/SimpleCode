@@ -1,0 +1,8 @@
+{
+  "id": 1679,
+  "summary": "Read a list of positive integers and a target k. The list length is from 1 to 105, and every entry as well as k lies between 1 and 109. In one step, choose two entries that add up to k and delete both of them. A single entry may be used only once. Find the largest number of such steps that can be carried out and write that count.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

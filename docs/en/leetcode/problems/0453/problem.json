@@ -1,0 +1,7 @@
+{
+  "id": 453,
+  "summary": "Read a nonempty integer array whose length is n. In one operation, choose any n minus 1 entries and add 1 to each chosen entry, leaving the remaining entry untouched. Find the fewest operations that make every entry the same integer, and write that operation count.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

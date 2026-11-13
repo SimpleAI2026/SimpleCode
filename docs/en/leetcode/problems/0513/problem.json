@@ -1,6 +1,6 @@
 {
   "id": 513,
-  "summary": "The public title of this exercise is Find Bottom Left Tree Value. Read a level-order node count, using a dot for a missing child from standard input and compute the result named by that title, using only those values. Print the result as one integer. The sample below is a short input written for this playground so the printed line can be checked locally. It is not a copy of an example from the problem site. The input stays under one hundred elements so it finishes quickly in the browser.",
+  "summary": "Read a binary tree that is not empty, so a root exists. Nodes on one level run from left to right, and the levels themselves run from top to bottom. Find the level whose depth is greatest, then take the value of the leftmost node on that level and write it. The root alone fills the top level. When the tree contains only the root, the answer is the value stored at the root. Do not switch to the rightmost node, and do not replace the leftmost node of the bottom level with a leaf that sits higher. Compare depth, not node values.",
   "notes": [
     "Compare after trimming trailing newlines. The input is a level-order node count, using a dot for a missing child."
   ]

@@ -1,0 +1,8 @@
+{
+  "id": 1734,
+  "summary": "Read an integer sequence that is one entry shorter than an odd count n. The count n is at least 3 and at most 100000. A hidden ordering contains each integer from 1 through n exactly once. Every entry of the sequence equals the bitwise exclusive or of two neighboring entries in that ordering. Write the hidden ordering from front to back. Only one ordering fits.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

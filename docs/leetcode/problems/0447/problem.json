@@ -1,0 +1,21 @@
+{
+  "id": 447,
+  "slug": "number-of-boomerangs",
+  "summary": "读入平面上 n 个互不相同的点。n 不超过 500，每个坐标都在 -10000 到 10000 之间，两端都包含。若点 i 到点 j 的距离等于点 i 到点 k 的距离，有序三元组 (i, j, k) 就算一个。顺序不同要分开计数。统计这样的三元组一共有多少个，并把这个数量写出来。",
+  "samples": [
+    {
+      "stdin": "[[0,0],[1,0],[2,0]]\n",
+      "stdout": "2\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/number-of-boomerangs/",
+    "en": "https://leetcode.com/problems/number-of-boomerangs/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

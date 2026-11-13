@@ -1,0 +1,26 @@
+{
+  "id": 559,
+  "slug": "maximum-depth-of-n-ary-tree",
+  "summary": "读入一棵可以有多个孩子的树。结点总数在 0 到 10000 之间，树高不超过 1000。这里的深度是从根走到最远一片叶子时，沿途结点的个数，根也算进去。没有任何结点时深度记为 0。找出最大深度并写出来。输入按一层一层给出，同一父亲的若干孩子之间用空记号隔开。",
+  "samples": [
+    {
+      "stdin": "root = [1,null,3,2,4,null,5,6]\n",
+      "stdout": "3\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "root = [1,null,2,3,4,5,null,null,6,7,null,8,null,9,10,null,null,11,null,12,null,13,null,null,14]\n",
+      "stdout": "5\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/maximum-depth-of-n-ary-tree/",
+    "en": "https://leetcode.com/problems/maximum-depth-of-n-ary-tree/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

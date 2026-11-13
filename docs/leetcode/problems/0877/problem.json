@@ -1,0 +1,21 @@
+{
+  "id": 877,
+  "slug": "stone-game",
+  "summary": "石子分成偶数堆并排成一条直线，堆数是 2 到 500 之间的偶数。每堆的石子数从 1 到 500，全部加起来是奇数，所以不可能分出平局。两人轮流行动，先手先拿。每一回合只能拿走当前最左端的一整堆，或者当前最右端的一整堆。双方都采取最优走法。若先手最终得到的石子严格更多，写出真；若后手更多，写出假。",
+  "samples": [
+    {
+      "stdin": "piles = [5,3,4,5]\n",
+      "stdout": "true\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/stone-game/",
+    "en": "https://leetcode.com/problems/stone-game/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

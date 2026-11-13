@@ -1,0 +1,26 @@
+{
+  "id": 474,
+  "slug": "ones-and-zeroes",
+  "summary": "读入两个上限 m 和 n，以及若干条只含字符 0 和 1 的字符串。m 和 n 都不超过 100，字符串的条数不超过 600。手里最多有 m 个 0 和 n 个 1，每一个数字最多只能用一次。找出最多能完整拼出多少条给定的字符串，并把这个条数写出来。",
+  "samples": [
+    {
+      "stdin": "Array = {\"10\", \"0001\", \"111001\", \"1\", \"0\"}, m = 5, n = 3\n",
+      "stdout": "4\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "Array = {\"10\", \"0\", \"1\"}, m = 1, n = 1\n",
+      "stdout": "2\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/ones-and-zeroes/",
+    "en": "https://leetcode.com/problems/ones-and-zeroes/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

@@ -1,0 +1,7 @@
+{
+  "id": 95,
+  "summary": "Read an integer that is at least one and treat it as the upper bound on node values. Using each integer from one through that bound exactly once, build every binary search tree whose shape differs from the others. The left side of any node may hold only smaller values, and the right side may hold only larger values. The same set of values may not drop or repeat a member. Write every shape in full so that parent and child links are visible. Cover every distinct shape, including ones that appear only after a rotation.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

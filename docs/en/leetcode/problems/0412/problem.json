@@ -1,0 +1,7 @@
+{
+  "id": 412,
+  "summary": "Read a positive integer n. Walk through each integer from 1 to n. When the integer is divisible by 15, write FizzBuzz. Otherwise, when it is divisible by 3, write Fizz. Otherwise, when it is divisible by 5, write Buzz. In every remaining case, write the decimal form of that integer. Put one result on each line and keep the increasing order.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

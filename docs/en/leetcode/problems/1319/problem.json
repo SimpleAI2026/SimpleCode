@@ -1,0 +1,8 @@
+{
+  "id": 1319,
+  "summary": "Read a computer count n and a list of cables. Computers are numbered from 0 through n minus 1. Each cable joins two different computers, and the same pair is never listed twice. One operation detaches a cable that already joins two computers and attaches it between two computers that are not directly joined. Find the fewest operations that let every computer reach every other computer, and write that count. If the cables are too few for that outcome, write -1. Both n and the cable count are at most 10^5.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "id": 500,
+  "summary": "Read words that contain only English letters. An American keyboard has three rows. The first row is qwertyuiop, the second row is asdfghjkl, and the third row is zxcvbnm. Treat uppercase and lowercase as the same letter. Find every word whose letters all sit on a single keyboard row, and write those words in their input order. A letter may show up more than once inside one word. Drop any word that needs two rows or three rows. If no word qualifies, write an empty list. Do not change the letter case stored in a word.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "id": 456,
+  "slug": "132-pattern",
+  "summary": "读入 n 个整数排成的序列，n 小于 15000。如果存在三个下标 i、j、k，满足 i 在 j 之前、j 在 k 之前，而且第 i 个数小于第 k 个数、第 k 个数又小于第 j 个数，就说明序列里出现了 132 形态。判断是否存在这样的三个下标。存在就写出真，不存在就写出假。",
+  "samples": [
+    {
+      "stdin": "[1, 2, 3, 4]\n",
+      "stdout": "False\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "[3, 1, 4, 2]\n",
+      "stdout": "True\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/132-pattern/",
+    "en": "https://leetcode.com/problems/132-pattern/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

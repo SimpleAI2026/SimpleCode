@@ -1,0 +1,26 @@
+{
+  "id": 2167,
+  "slug": "minimum-time-to-remove-all-cars-containing-illegal-goods",
+  "summary": "读入一串车厢，字符只含 0 和 1，长度介于 1 与 2 乘 10^5 之间，因此也不会超过 200000。字符 1 表示这节车厢装了违禁货物。可以反复拆除：拆掉当前最左一节花费 1，拆掉当前最右一节花费 1，从任意位置拆掉一节花费 2。标记为 0 的车厢可以留下，但每一节标记为 1 的车厢最终都要被拆掉。空串视为已经清理干净。写出完成清理的最少时间。",
+  "samples": [
+    {
+      "stdin": "s = \"1100101\"\n",
+      "stdout": "5\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "s = \"0010\"\n",
+      "stdout": "2\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/minimum-time-to-remove-all-cars-containing-illegal-goods/",
+    "en": "https://leetcode.com/problems/minimum-time-to-remove-all-cars-containing-illegal-goods/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

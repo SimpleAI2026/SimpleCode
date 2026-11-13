@@ -1,0 +1,8 @@
+{
+  "id": 1659,
+  "summary": "Read four integers: a row count m, a column count n, how many introverts are available, and how many extroverts are available. Both m and n are from 1 to 5, and each headcount is from 0 up to the smaller of m times n and 6. Some people may be left out of the grid. An introvert begins at 120 mood points and loses 30 for every occupied cell directly above, below, left, or right. An extrovert begins at 40 mood points and gains 20 for every such occupied neighbor. The grid score is the sum of mood points over people who were placed. Write the highest grid score that can be reached.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": 637,
+  "slug": "average-of-levels-in-binary-tree",
+  "summary": "读入一棵非空的二叉树，每个结点上的整数都在 32 位有符号整数的范围之内。从根开始一层一层往下看，计算同一层所有结点值的平均数。按照从顶层到底层的顺序，把每一层的平均数写出来。某一层只有一个结点时，平均数就是这个结点本身的值。",
+  "samples": [
+    {
+      "stdin": "3\n/ \\\n9 20\n/ \\\n15 7\n",
+      "stdout": "[3, 14.5, 11]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/average-of-levels-in-binary-tree/",
+    "en": "https://leetcode.com/problems/average-of-levels-in-binary-tree/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

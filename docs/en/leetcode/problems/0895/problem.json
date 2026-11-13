@@ -1,0 +1,7 @@
+{
+  "id": 895,
+  "summary": "Build a container named FreqStack. The operation push stores an integer x, and x lies between 0 and 10^9 inclusive. The operation pop removes the integer that currently occurs most often and writes it. When several integers share that highest count, pop removes the one stored most recently. pop is never asked for while the container is empty. Inside one test, push and pop each happen at most 10000 times. Across every test together, those two operations happen at most 150000 times.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

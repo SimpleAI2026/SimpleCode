@@ -1,0 +1,26 @@
+{
+  "id": 880,
+  "slug": "decoded-string-at-index",
+  "summary": "读入记号串 S 以及从一计起的位置 K。S 以小写字母开头，后面只会出现小写字母和从二到九的数字，总长度不超过 100。从左往右看：遇到字母就接到当前纸条末尾；遇到数字 d，就把当时整张纸条再复制 d 减一份。不要把超长纸条真正生成出来。写出展开之后落在位置 K 的字母。K 最大可以到 1000000000，展开后的字母总数保证少于二的 63 次方。",
+  "samples": [
+    {
+      "stdin": "S = \"leet2code3\", K = 10\n",
+      "stdout": "\"o\"\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "S = \"ha22\", K = 5\n",
+      "stdout": "\"h\"\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/decoded-string-at-index/",
+    "en": "https://leetcode.com/problems/decoded-string-at-index/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

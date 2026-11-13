@@ -1,0 +1,21 @@
+{
+  "id": 500,
+  "slug": "keyboard-row",
+  "summary": "读入若干单词，每个单词只含英文字母。美式键盘有三行，第一行是 qwertyuiop，第二行是 asdfghjkl，第三行是 zxcvbnm。大写和小写看成同一个字母。找出只用同一行里的字母就能打出的单词，并按输入里的先后顺序写出来。一个字母可以在同一个单词里出现多次。用到两行或者三行的单词不要留下。如果一个单词都不符合，就写出空列表。不要改写单词里的大小写。",
+  "samples": [
+    {
+      "stdin": "[\"Hello\", \"Alaska\", \"Dad\", \"Peace\"]\n",
+      "stdout": "[\"Alaska\", \"Dad\"]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/keyboard-row/",
+    "en": "https://leetcode.com/problems/keyboard-row/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

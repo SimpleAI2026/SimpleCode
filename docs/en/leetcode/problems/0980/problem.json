@@ -1,0 +1,8 @@
+{
+  "id": 980,
+  "summary": "Read a grid whose total number of cells is between 1 and 20. Cells use four marks: 1 is the single start, 2 is the single finish, 0 is an open cell that may be entered, and -1 is a blocked cell. From the start, each step moves one cell up, down, left, or right. A valid walk must reach the finish, enter every nonblocked cell exactly once, and never step on a blocked cell. The starting cell counts as entered. Count these walks and write how many there are.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

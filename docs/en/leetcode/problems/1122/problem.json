@@ -1,0 +1,7 @@
+{
+  "id": 1122,
+  "summary": "Read two integer arrays. Each array has length at most 1000, and every value lies between 0 and 1000. Values inside the second array are unique, and each of them occurs somewhere in the first array. Reorder the first array. Values that also occur in the second array must keep the same mutual order they have there. Values absent from the second array must be gathered at the tail and sorted from low to high. Write the reordered first array.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

@@ -1,6 +1,6 @@
 {
   "id": 435,
-  "summary": "The public title of this exercise is Non Overlapping Intervals. Read tokens in the same order as the method parameters from standard input and compute the result named by that title, using only those values. Print the result as one integer. The sample below is a short input written for this playground so the printed line can be checked locally. It is not a copy of an example from the problem site. The input stays under one hundred elements so it finishes quickly in the browser.",
+  "summary": "Read several closed ranges. The right endpoint of every range is strictly larger than its left endpoint. Two ranges that merely meet at a shared endpoint, such as one finishing at 2 and another opening at 2, still count as separate. Find the smallest count of ranges that must be deleted so the ranges that stay never cover a common interior point, and write that count.",
   "notes": [
     "Compare after trimming trailing newlines. The input is tokens in the same order as the method parameters."
   ]

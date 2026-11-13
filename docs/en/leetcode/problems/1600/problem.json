@@ -1,0 +1,7 @@
+{
+  "id": 1600,
+  "summary": "Implement a throne book. The constructor reads the king's name, and that person stands first in the succession. birth adds a child to a parent who is still alive, and the new child is younger than every child already recorded for that parent. death marks a person as no longer alive. A query writes the living names in family order: begin at the king, write a person when that person is still alive, then walk each child's full branch from oldest to youngest. Names use only lowercase letters and have length from 1 to 15. Together, birth and death are invoked at most 105 times. A name sent to death has already appeared, each birth names a living parent, and child names are distinct.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

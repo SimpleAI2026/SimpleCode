@@ -1,6 +1,6 @@
 {
   "id": 76,
-  "summary": "The public title of this exercise is Minimum Window Substring. Read tokens in the same order as the method parameters from standard input and compute the result named by that title, using only those values. Print the result as one line of text. The sample below is a short input written for this playground so the printed line can be checked locally. It is not a copy of an example from the problem site. The input stays under one hundred elements so it finishes quickly in the browser.",
+  "summary": "Read two texts, a source named S and a target named T. Inside S, find one contiguous stretch that covers T. Covering means every character occurs in the stretch at least as many times as it occurs in T. Characters absent from T may still sit inside the stretch. Among stretches that cover T, write the shortest one. If any covering stretch exists, only one stretch has that shortest length. If no stretch covers T, write an empty text. Uppercase letters and lowercase letters count as different characters.",
   "notes": [
     "Compare after trimming trailing newlines. The input is tokens in the same order as the method parameters."
   ]

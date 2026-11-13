@@ -1,6 +1,6 @@
 {
   "id": 12,
-  "summary": "The public title of this exercise is Integer to Roman. Read tokens in the same order as the method parameters from standard input and compute the result named by that title, using only those values. Print the result as one line of text. The sample below is a short input written for this playground so the printed line can be checked locally. It is not a copy of an example from the problem site. The input stays under one hundred elements so it finishes quickly in the browser.",
+  "summary": "Read an integer inside the closed span from 1 to 3999 and write it with Roman symbols. The basic symbols and their weights are I for 1, V for 5, X for 10, L for 50, C for 100, D for 500, and M for 1000. Normally place heavier weights to the left of lighter ones. Exactly six subtractive layouts are legal: I standing ahead of V or X means 4 or 9, X standing ahead of L or C means 40 or 90, and C standing ahead of D or M means 400 or 900. In every other case, do not put a lighter symbol ahead of a heavier one.",
   "notes": [
     "Compare after trimming trailing newlines. The input is tokens in the same order as the method parameters."
   ]

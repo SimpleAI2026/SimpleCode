@@ -1,0 +1,8 @@
+{
+  "id": 1003,
+  "summary": "Letters are limited to a, b, and c. The three-letter sequence abc counts as valid on its own. Cutting a valid sequence into a left part and a right part, either part allowed to be blank, then placing abc between the parts, produces another valid sequence. Placements like this may be nested. Read one sequence whose length is at most 20000 and decide whether it is valid. Write true when it is valid and write false when it is not. Every character is one of a, b, or c.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

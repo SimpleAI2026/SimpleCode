@@ -1,0 +1,8 @@
+{
+  "id": 1383,
+  "summary": "Read an engineer count n, a selection limit k, and two equal-length lists of speeds and efficiencies. Engineers are numbered from 1 through n, and the two lists give the matching speed and efficiency of each engineer. Choose at most k distinct engineers. A team's performance equals the sum of the chosen speeds multiplied by the smallest efficiency among the chosen engineers. Find the largest performance any allowed team can reach, reduce it modulo 109 plus 7, and write the remainder. n is at most 105, each speed is at most 105, and each efficiency is at most 108.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

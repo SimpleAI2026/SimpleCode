@@ -1,0 +1,8 @@
+{
+  "id": 904,
+  "summary": "Read a row of trees, where an integer names the fruit variety on each tree. You carry two baskets, and one basket may hold only a single variety. Begin at any tree you choose, take one fruit from the current tree into the baskets, then step only to the tree immediately on the right. Stop when another fruit would introduce a third variety, or when no tree remains on the right. Write the largest number of fruits gathered on one such rightward trip. There are at most 40000 trees, and each variety index is at least 0 and strictly below the tree count.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

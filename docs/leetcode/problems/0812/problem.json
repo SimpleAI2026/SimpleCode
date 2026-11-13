@@ -1,0 +1,21 @@
+{
+  "id": 812,
+  "slug": "largest-triangle-area",
+  "summary": "读入平面上3到50个互不重合的点，每个点的横纵坐标都是负50到50之间的整数。任意挑选三个点，当它们不共线时计算所围三角形的面积。在所有能围成的三角形里找出面积最大的一个，并把这个面积写出来。写出的数值与精确值相差不超过10的负6次方即算正确。",
+  "samples": [
+    {
+      "stdin": "points = [[0,0],[0,1],[1,0],[0,2],[2,0]]\n",
+      "stdout": "2\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/largest-triangle-area/",
+    "en": "https://leetcode.com/problems/largest-triangle-area/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

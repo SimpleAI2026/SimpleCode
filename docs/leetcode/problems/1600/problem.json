@@ -1,0 +1,21 @@
+{
+  "id": 1600,
+  "slug": "throne-inheritance",
+  "summary": "实现一本王位继承簿。构造时读入国王的名字，他在继承次序里排第一。birth 给一位仍在世的父母追加一个孩子，这个孩子比该父母已经登记的子女都更年幼。death 把某人标成已去世。查询时按家族次序写出仍在世的名字：从国王开始，本人若还在世就先写出，再按从年长到年幼处理每一个孩子的整支后代。名字只含小写字母，长度介于 1 与 15。birth 与 death 合计至多调用 105 次。交给 death 的名字一定已经出现过，每次出生时父母都还活着，孩子的名字互不相同。",
+  "samples": [
+    {
+      "stdin": "[\"ThroneInheritance\", \"birth\", \"birth\", \"birth\", \"birth\", \"birth\", \"birth\", \"getInheritanceOrder\", \"death\", \"getInheritanceOrder\"]\n[[\"king\"], [\"king\", \"andy\"], [\"king\", \"bob\"], [\"king\", \"catherine\"], [\"andy\", \"matthew\"], [\"bob\", \"alex\"], [\"bob\", \"asha\"], [null], [\"bob\"], [null]]\n",
+      "stdout": "[null, null, null, null, null, null, null, [\"king\", \"andy\", \"matthew\", \"bob\", \"alex\", \"asha\", \"catherine\"], null, [\"king\", \"andy\", \"matthew\", \"alex\", \"asha\", \"catherine\"]]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/throne-inheritance/",
+    "en": "https://leetcode.com/problems/throne-inheritance/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

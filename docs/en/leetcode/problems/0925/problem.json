@@ -1,0 +1,8 @@
+{
+  "id": 925,
+  "summary": "Read two strings made only of lowercase letters. The first is a person's name and the second is what the keyboard actually produced. Each string contains at most 1000 characters. While typing, a finger may rest on one key, so that letter can show up several times in a row. The sequence of distinct letters must still follow the name exactly: nothing may be skipped and no foreign letter may be inserted. Decide whether the typed text can be produced from the name under this repeated-key rule. Write true if it can, and write false if it cannot.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "id": 13,
+  "slug": "roman-to-integer",
+  "summary": "读入一条罗马数字，它对应的整数落在 1 到 3999。把它换算成十进制整数并写出。各符号面值是 I 代表 1、V 代表 5、X 代表 10、L 代表 50、C 代表 100、D 代表 500、M 代表 1000。由左至右查看相邻符号：当前面值大于等于右边时加上当前面值，当前面值小于右边时改为减去当前面值。扫描结束后的累计值就是所求整数。",
+  "samples": [
+    {
+      "stdin": "\"III\"\n",
+      "stdout": "3\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "\"IV\"\n",
+      "stdout": "4\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/roman-to-integer/",
+    "en": "https://leetcode.com/problems/roman-to-integer/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

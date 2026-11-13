@@ -1,0 +1,7 @@
+{
+  "id": 448,
+  "summary": "Read an integer array whose length is n. Every stored value lies between 1 and n, inclusive. Some values show up two times and the other values show up a single time. Find every integer from 1 through n that is absent from the array, and write all of those missing integers.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

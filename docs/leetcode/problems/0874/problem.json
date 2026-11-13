@@ -1,0 +1,26 @@
+{
+  "id": 874,
+  "slug": "walking-robot-simulation",
+  "summary": "机器人从原点出发，最初面朝北，活动范围是无限的平面。北是纵轴正方向，东是横轴正方向，南是纵轴负方向，西是横轴负方向。命令里的负二表示向左转 90 度，负一表示向右转 90 度，1 到 9 表示沿当前朝向前进对应的格数。若干格点被挡住。若下一步会进入被挡住的格点，机器人就留在当前格，随后的命令照常执行。在它停留过的全部整数格点中，写出到原点直线距离再平方之后的最大值。",
+  "samples": [
+    {
+      "stdin": "commands = [4,-1,3], obstacles = []\n",
+      "stdout": "25\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "commands = [4,-1,4,-2,4], obstacles = [[2,4]]\n",
+      "stdout": "65\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/walking-robot-simulation/",
+    "en": "https://leetcode.com/problems/walking-robot-simulation/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

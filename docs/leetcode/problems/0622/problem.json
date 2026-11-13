@@ -1,0 +1,21 @@
+{
+  "id": 622,
+  "slug": "design-circular-queue",
+  "summary": "实现一个容量为 k 的环形队列。k 在 1 到 1000，存入的值在 0 到 1000，各类操作加起来最多调用 3000 次。元素按进入的先后离开，尾端绕回首端，因此空出来的位置还能再放入新元素。要能用 k 创建队列；查看首端和尾端，里面没有元素时写出 -1；放入一个值，成功写 true，已满写 false；去掉首端元素，成功写 true，已空写 false；还要能回答当前是否为空以及是否已满。",
+  "samples": [
+    {
+      "stdin": "[\"MyCircularQueue\", \"enQueue\", \"enQueue\", \"enQueue\", \"enQueue\", \"Rear\", \"isFull\", \"deQueue\", \"enQueue\", \"Rear\"]\n[[3], [1], [2], [3], [4], [], [], [], [4], []]\n",
+      "stdout": "[null, true, true, true, false, 3, true, true, true, 4]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/design-circular-queue/",
+    "en": "https://leetcode.com/problems/design-circular-queue/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

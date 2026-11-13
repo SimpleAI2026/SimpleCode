@@ -1,0 +1,8 @@
+{
+  "id": 119,
+  "summary": "Read a row number that starts at zero. Its allowed range is the closed interval from zero through 33. Write only the single row of Pascal's triangle selected by this number, and do not output any row that sits above it. Both ends of that row are the digit one, and each inner entry equals the sum of one neighboring pair taken from the row above. When the row number is zero, the row holds only a lone digit one. Print every digit of this row from the left toward the right.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

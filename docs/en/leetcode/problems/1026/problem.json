@@ -1,0 +1,7 @@
+{
+  "id": 1026,
+  "summary": "Read a binary tree holding between 2 and 5000 nodes. Every node stores an integer from 0 through 100000. When one node lies on the chain that runs from another distinct node up toward the root, compute the absolute difference between the two stored integers. Search every such pair and write the greatest absolute difference. No node sits above the root on that chain. Differences are compared only for pairs that stand in this chain relation.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

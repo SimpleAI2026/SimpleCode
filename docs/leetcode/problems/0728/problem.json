@@ -1,0 +1,26 @@
+{
+  "id": 728,
+  "slug": "self-dividing-numbers",
+  "summary": "读入两个整数left和right，满足1小于等于left、left小于等于right、right小于等于10000。在这个闭区间里找出每个正整数，它的十进制写法里没有数字0，而且它可以被自己的每一位数字整除。按从小到大的顺序把这些整数全部写出来。",
+  "samples": [
+    {
+      "stdin": "left = 1, right = 22\n",
+      "stdout": "[1,2,3,4,5,6,7,8,9,11,12,15,22]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "left = 47, right = 85\n",
+      "stdout": "[48,55,66,77]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/self-dividing-numbers/",
+    "en": "https://leetcode.com/problems/self-dividing-numbers/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

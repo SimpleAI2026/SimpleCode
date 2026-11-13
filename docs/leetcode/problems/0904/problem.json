@@ -1,0 +1,26 @@
+{
+  "id": 904,
+  "slug": "fruit-into-baskets",
+  "summary": "读入一排树，每棵树上水果的品种用一个整数表示。你只有两个筐，一个筐只能装同一个品种。可以从任意一棵树开始，摘下当前这棵树的一枚水果放进筐里，然后只能走到紧挨着的右边那棵。若再摘就会出现第三个品种，或者右边已经没有树，就必须停下。写出一次这样向右连续采摘所能收集的最多水果数。树的棵数至多 40000，品种编号不小于 0，并且严格小于棵数。",
+  "samples": [
+    {
+      "stdin": "[1,2,1]\n",
+      "stdout": "3\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "[0,1,2,2]\n",
+      "stdout": "3\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/fruit-into-baskets/",
+    "en": "https://leetcode.com/problems/fruit-into-baskets/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

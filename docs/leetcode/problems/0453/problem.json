@@ -1,0 +1,21 @@
+{
+  "id": 453,
+  "slug": "minimum-moves-to-equal-array-elements",
+  "summary": "读入非空的一列整数，这一列的个数记为 n。每一次操作都要挑出其中 n 减 1 个数，把挑中的每个数加上 1，余下的那个数保持原样。找出最少要操作多少次，才能让这一列里的每个数都变成同一个整数，并把这个次数写出来。",
+  "samples": [
+    {
+      "stdin": "[1,2,3]\n",
+      "stdout": "3\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/minimum-moves-to-equal-array-elements/",
+    "en": "https://leetcode.com/problems/minimum-moves-to-equal-array-elements/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

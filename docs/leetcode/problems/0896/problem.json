@@ -1,0 +1,26 @@
+{
+  "id": 896,
+  "slug": "monotonic-array",
+  "summary": "读入整数序列 A。若任意靠前下标上的数都不大于靠后下标上的数，称它非降；若任意靠前的数都不小于靠后的数，称它非升。这两种情形只要有一种成立，就判定该序列单调，写出 true，否则写出 false。序列长度至多 50000，每个数都落在负 100000 到 100000 这个闭区间里。",
+  "samples": [
+    {
+      "stdin": "[1,2,2,3]\n",
+      "stdout": "true\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "[6,5,4,4]\n",
+      "stdout": "true\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/monotonic-array/",
+    "en": "https://leetcode.com/problems/monotonic-array/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

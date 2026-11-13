@@ -1,0 +1,26 @@
+{
+  "id": 306,
+  "slug": "additive-number",
+  "summary": "读入一个只含数字字符的字符串，字符范围是 0 到 9。判断能否把它切成至少 3 个整数，使得从第三个整数开始，每一个都等于紧挨着的前两个整数之和。切出来的整数不允许有前导零，所以像 1、2、03 以及 1、02、3 这样的切法都不合法。把是否能够这样切写出来。",
+  "samples": [
+    {
+      "stdin": "\"112358\"\n",
+      "stdout": "true\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "\"199100199\"\n",
+      "stdout": "true\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/additive-number/",
+    "en": "https://leetcode.com/problems/additive-number/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

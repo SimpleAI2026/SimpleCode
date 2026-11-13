@@ -1,0 +1,21 @@
+{
+  "id": 412,
+  "slug": "fizz-buzz",
+  "summary": "读入正整数 n。依次考察 1 到 n 的每个整数：能被 15 整除时写 FizzBuzz，否则能被 3 整除时写 Fizz，否则能被 5 整除时写 Buzz，剩下的情况写出该整数的十进制形式。一行一个，保持递增，不要夹杂其它说明文字。",
+  "samples": [
+    {
+      "stdin": "n = 15,\n",
+      "stdout": "[\n\"1\",\n\"2\",\n\"Fizz\",\n\"4\",\n\"Buzz\",\n\"Fizz\",\n\"7\",\n\"8\",\n\"Fizz\",\n\"Buzz\",\n\"11\",\n\"Fizz\",\n\"13\",\n\"14\",\n\"FizzBuzz\"\n]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/fizz-buzz/",
+    "en": "https://leetcode.com/problems/fizz-buzz/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

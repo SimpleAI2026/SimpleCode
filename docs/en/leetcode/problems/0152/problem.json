@@ -1,6 +1,6 @@
 {
   "id": 152,
-  "summary": "The public title of this exercise is Maximum Product Subarray. Read tokens in the same order as the method parameters from standard input and compute the result named by that title, using only those values. Print the result as one integer. The sample below is a short input written for this playground so the printed line can be checked locally. It is not a copy of an example from the problem site. The input stays under one hundred elements so it finishes quickly in the browser.",
+  "summary": "Read a list of integers that may contain negative numbers and zeros. Choose one contiguous span from the list. The span has to include at least one integer. Multiply the integers inside the span in order, find the span whose product is the largest any legal span can reach, and write that product. A zero makes the product of its span zero, and a negative number changes the sign. When the list contains only one integer, write that integer.",
   "notes": [
     "Compare after trimming trailing newlines. The input is tokens in the same order as the method parameters."
   ]

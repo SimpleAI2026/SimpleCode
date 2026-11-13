@@ -1,0 +1,21 @@
+{
+  "id": 715,
+  "slug": "range-module",
+  "summary": "做一个跟踪实数区间的模块，提供三个操作。addRange 给出左右端点，把半开区间中还没被跟踪的每个实数纳入跟踪。queryRange 仅当该半开区间里每个实数都正处于跟踪中时写出真，否则写出假。removeRange 让该半开区间里眼下仍被跟踪的每个实数停止跟踪。半开区间包含左端、不含右端，也就是满足左端小于等于 x 且 x 小于右端的全部实数。每次调用都有 0 小于左端、左端小于右端、右端小于 10^9。同一次测试中，addRange 和 removeRange 各自至多 1000 次，queryRange 至多 5000 次。",
+  "samples": [
+    {
+      "stdin": "addRange 10 20\nremoveRange 14 16\nqueryRange 10 14\nqueryRange 13 15\n",
+      "stdout": "null\nnull\ntrue\nfalse\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/range-module/",
+    "en": "https://leetcode.com/problems/range-module/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

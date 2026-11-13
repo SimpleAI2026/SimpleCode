@@ -1,0 +1,8 @@
+{
+  "id": 609,
+  "summary": "Read directory records, from 1 to 2 times 104 of them. Each record string has length at most 3000, and the lengths add up to at most 5 times 105. A record begins with a directory path and then names files there, each name followed by its text inside parentheses, with single spaces between parts. Names inside one directory stay unique. Cluster files whose text is identical. Every cluster needs at least two full paths. Write the clusters. Ordering among clusters and inside a cluster may be chosen freely.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

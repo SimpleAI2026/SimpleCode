@@ -1,0 +1,8 @@
+{
+  "id": 1642,
+  "summary": "Read the height of each building. There are from 1 to 100000 buildings, and each height is from 1 to 1000000. Also read a supply of bricks, at most 1000000000, and a supply of ladders, at most the building count. Start at index 0 and move only to the immediate next building. If the next building is not taller, the move costs nothing. If it is taller, spend either one ladder or a number of bricks equal to the height gap. Bricks and ladders may be spent in any pattern. Write the largest index that can still be reached.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

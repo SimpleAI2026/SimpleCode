@@ -1,0 +1,26 @@
+{
+  "id": 524,
+  "slug": "longest-word-in-dictionary-through-deleting",
+  "summary": "读入一条原文，再读入若干候选词。原文和候选词都只含小写英文字母。某个候选词算作可达，是指只从原文中删掉零个或多个字母、不改剩余字母的相对次序，就能得到它。在所有可达的候选词里找出最长的一条并写出来。若有多条同样长，写出字典顺序靠前的那条。一条都达不到就写空串。候选词的条数不超过 1000，原文以及每条候选词的字母数也不超过 1000。",
+  "samples": [
+    {
+      "stdin": "s = \"abpcplea\", d = [\"ale\",\"apple\",\"monkey\",\"plea\"]\n",
+      "stdout": "\"apple\"\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "s = \"abpcplea\", d = [\"a\",\"b\",\"c\"]\n",
+      "stdout": "\"a\"\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/longest-word-in-dictionary-through-deleting/",
+    "en": "https://leetcode.com/problems/longest-word-in-dictionary-through-deleting/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

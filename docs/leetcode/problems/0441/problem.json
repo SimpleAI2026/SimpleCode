@@ -1,0 +1,21 @@
+{
+  "id": 441,
+  "slug": "arranging-coins",
+  "summary": "读入一个非负整数 n，它落在 32 位有符号整数能够表示的范围里。要把 n 枚硬币摆成台阶，第 k 行必须恰好放上 k 枚。找出最多能摆满多少行，剩下的硬币如果不够再摆一整行，就不算进行数。把这个完整行数写出来。",
+  "samples": [
+    {
+      "stdin": "Given n, find the total number of full staircase rows that can be formed.\n",
+      "stdout": "2\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/arranging-coins/",
+    "en": "https://leetcode.com/problems/arranging-coins/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

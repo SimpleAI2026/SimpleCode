@@ -1,0 +1,26 @@
+{
+  "id": 1700,
+  "slug": "number-of-students-unable-to-eat-lunch",
+  "summary": "读入两个等长的 0 和 1 数组，长度在 1 到 100 之间。0 表示圆三明治，1 表示方三明治。students 从左到右是排队顺序，sandwiches 从左到右是栈顶到栈底。每一轮看队首：若他喜欢当前栈顶，就拿走并离队；否则他回到队尾，三明治不动。当队里剩下的人都不喜欢栈顶时停止。写出这时还没吃到的人数。",
+  "samples": [
+    {
+      "stdin": "students = [1,1,0,0], sandwiches = [0,1,0,1]\n",
+      "stdout": "0\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "students = [1,1,1,0,0,1], sandwiches = [1,0,0,0,1,1]\n",
+      "stdout": "3\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/number-of-students-unable-to-eat-lunch/",
+    "en": "https://leetcode.com/problems/number-of-students-unable-to-eat-lunch/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

@@ -1,0 +1,8 @@
+{
+  "id": 1020,
+  "summary": "Read a grid filled with 0 and 1. A 0 stands for water and a 1 stands for land. Standing on land, a step may move up, down, left, or right onto neighboring land, or a step may cross outside the outer rim. Count land cells for which no chain of steps can cross outside, and write the count. Both the number of rows and the number of columns lie between 1 and 500. All rows share one length, and every cell is either 0 or 1. Water cells cannot be used as footing.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "id": 1455,
+  "summary": "Read a sentence whose words are separated by one space, and read a search term. Both use lowercase English letters. The sentence length is from 1 to 100 and the term length is from 1 to 10. A word hits when its opening contiguous characters equal the term exactly. Write the 1-based position of the earliest hit. If several words hit, keep the leftmost one. If none hit, write -1.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

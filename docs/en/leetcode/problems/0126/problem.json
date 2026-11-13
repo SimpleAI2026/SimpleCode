@@ -1,0 +1,8 @@
+{
+  "id": 126,
+  "summary": "Read a starting word, a target word, and a dictionary list. Both words are non-empty and different from each other. Every word has the same length and uses only lowercase letters, and the list has no repeated entries. Each step replaces exactly one letter, and the word produced by that step must be found in the list. The starting word itself need not be listed. Write every shortest sequence of words that reaches the target. Write an empty list when none exists.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

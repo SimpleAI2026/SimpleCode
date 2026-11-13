@@ -1,0 +1,8 @@
+{
+  "id": 1296,
+  "summary": "Read a list of integers and a positive integer k. Decide whether those integers can be split into groups that each contain exactly k values, where ordering a group from small to large makes every neighboring pair differ by 1. Write true when every integer can be placed into such a group, and write false when some integers would remain outside every group. k is at least 1, the list length is at most 100000, and each integer lies between 1 and 1000000000. If a value is repeated, each copy must join a group on its own.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

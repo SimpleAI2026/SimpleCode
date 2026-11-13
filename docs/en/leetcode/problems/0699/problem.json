@@ -1,0 +1,8 @@
+{
+  "id": 699,
+  "summary": "On a horizontal axis that extends without end, drop squares in the listed sequence. Each square gives the horizontal coordinate of its left side and the length of a side. Its bottom stays parallel to the axis, and it falls from higher than every square that has already come to rest. Wait until the previous square has fully stopped before starting the next. Stickiness exists only on the bottom: it locks onto the axis or another square whenever the touching length is positive, while sides that merely meet do not lock early. After each drop, record the tallest height among squares now at rest. Write those heights in the same sequence as the drops. There are from 1 to 1000 squares, each left coordinate is from 1 to 10^8, and each side length is from 1 to 10^6.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

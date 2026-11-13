@@ -1,0 +1,26 @@
+{
+  "id": 1470,
+  "slug": "shuffle-the-array",
+  "summary": "读入长度恰好为 2n 的整数列。前一半依次叫 x1 到 xn，后一半依次叫 y1 到 yn。把它改写成 x1、y1、x2、y2 这样交错的次序，一直排到 xn、yn。把改写后的整列写出来。n 介于 1 与 500，列中每个数介于 1 与 1000。交错之后长度仍然是 2n，不增也不减。",
+  "samples": [
+    {
+      "stdin": "nums = [2,5,1,3,4,7], n = 3\n",
+      "stdout": "[2,3,5,4,1,7]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "nums = [1,2,3,4,4,3,2,1], n = 4\n",
+      "stdout": "[1,4,2,3,3,2,4,1]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/shuffle-the-array/",
+    "en": "https://leetcode.com/problems/shuffle-the-array/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

@@ -1,0 +1,21 @@
+{
+  "id": 907,
+  "slug": "sum-of-subarray-minimums",
+  "summary": "读入正整数序列 A。序列长度和每个元素都不超过 30000。每一段连续位置都取出自己的最小元素，只含一个位置的段也要计入，最小元素就是它自己。把所有连续段的最小元素加在一起，再对 10^9+7 取余，把余数写出来。",
+  "samples": [
+    {
+      "stdin": "[3,1,2,4]\n",
+      "stdout": "17\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/sum-of-subarray-minimums/",
+    "en": "https://leetcode.com/problems/sum-of-subarray-minimums/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

@@ -1,0 +1,8 @@
+{
+  "id": 887,
+  "summary": "Read an egg count K and a floor count N. Floors are numbered from 1 through N. Some unknown threshold F is an integer from 0 through N. An egg breaks when tossed from any floor above F, and stays whole when tossed from floor F or from any lower floor. A broken egg cannot be tossed again. One trial tosses a single whole egg from one chosen floor. Identify F for every allowed threshold, and write the fewest trials that still suffice in the worst case. K is at most 100 and N is at most 10000.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

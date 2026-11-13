@@ -1,0 +1,21 @@
+{
+  "id": 389,
+  "slug": "find-the-difference",
+  "summary": "读入两段只含小写英文字母的文本，分别叫 s 和 t。t 的来历是先把 s 中的字母次序打乱，再在某个地方多插进一个字母。那个多出来的字母恰好一个。把它找出来并单独写在一行上。",
+  "samples": [
+    {
+      "stdin": "s = \"abcd\"\nt = \"abcde\"\n",
+      "stdout": "e\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/find-the-difference/",
+    "en": "https://leetcode.com/problems/find-the-difference/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

@@ -1,0 +1,26 @@
+{
+  "id": 1576,
+  "slug": "replace-all-s-to-avoid-consecutive-repeating-characters",
+  "summary": "读入一条字符串，字符只包括小写字母和问号。每个问号都要换成某一个小写字母，其余字符一个都不许改。换完以后，任意紧邻的两位都不能相同。已知去掉问号之后，原文里本来就没有紧邻重复。任何一种符合要求的结果都可以，而且在这些限制之下结果一定存在。把换好的字符串写出来。整条长度介于 1 与 100。",
+  "samples": [
+    {
+      "stdin": "s = \"?zs\"\n",
+      "stdout": "\"azs\"\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "s = \"ubv?w\"\n",
+      "stdout": "\"ubvaw\"\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/replace-all-s-to-avoid-consecutive-repeating-characters/",
+    "en": "https://leetcode.com/problems/replace-all-s-to-avoid-consecutive-repeating-characters/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

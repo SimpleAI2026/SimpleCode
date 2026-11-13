@@ -1,0 +1,7 @@
+{
+  "id": 357,
+  "summary": "Read a nonnegative integer n. Count the integers x such that x is at least 0 and strictly less than ten to the power n, and such that all decimal digits of x are different from each other. The value zero counts as one such integer. Do not treat unwritten leading zeros as extra digits. Write that count.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

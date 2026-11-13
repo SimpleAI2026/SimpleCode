@@ -1,0 +1,7 @@
+{
+  "id": 52,
+  "summary": "Read one positive integer. It sets both the side of a square board and how many queens must be placed. Count the placements in which no two queens attack, meaning no two share a row, a column, or one diagonal. Write only that count. Do not print each board. The side is at least 1. Placements differ only when the sets of occupied cells differ.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

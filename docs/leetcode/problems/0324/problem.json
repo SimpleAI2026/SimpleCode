@@ -1,0 +1,26 @@
+{
+  "id": 324,
+  "slug": "wiggle-sort-ii",
+  "summary": "读入一个尚未排序的整数数组，把它重新排列成摆动形状。从下标 0 起，偶数下标上的数小于紧随其后的数，奇数下标上的数大于紧随其后的数，于是整体呈现小、大、小、大这样交替。输入保证至少存在一种满足该形状的排列。把重排之后的数组写出来。若有多种合法排列，写出任意一种即可。",
+  "samples": [
+    {
+      "stdin": "nums = [1, 5, 1, 1, 6, 4]\n",
+      "stdout": "One possible answer is [1, 4, 1, 5, 1, 6].\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "nums = [1, 3, 2, 2, 3, 1]\n",
+      "stdout": "One possible answer is [2, 3, 1, 3, 1, 2].\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/wiggle-sort-ii/",
+    "en": "https://leetcode.com/problems/wiggle-sort-ii/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

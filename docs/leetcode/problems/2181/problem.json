@@ -1,0 +1,26 @@
+{
+  "id": 2181,
+  "slug": "merge-nodes-in-between-zeros",
+  "summary": "读入一条链表。节点个数落在3到2乘100000之间，每个节点里的整数落在0到1000之间。链的第一格和最后一格都是0，并且任意两格相邻时不会同时为0。0把中间的非零整数切成若干段。对每一段，把段内整数相加，用一个新格子记下这个和。按原顺序把这些新格子串起来，新链里不再出现0。写出新链的起始格子。",
+  "samples": [
+    {
+      "stdin": "head = [0,3,1,0,4,5,2,0]\n",
+      "stdout": "[4,11]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "head = [0,1,0,3,0,2,2,0]\n",
+      "stdout": "[1,3,4]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/merge-nodes-in-between-zeros/",
+    "en": "https://leetcode.com/problems/merge-nodes-in-between-zeros/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

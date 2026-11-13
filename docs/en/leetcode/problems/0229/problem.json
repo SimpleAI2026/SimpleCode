@@ -1,0 +1,8 @@
+{
+  "id": 229,
+  "summary": "Read a list of n integers. Find every value whose number of occurrences is strictly greater than n divided by 3, with that quotient rounded down. Write each such value only once. Write an empty list when no value reaches the required count. Use rounding down for the threshold, and do not switch to rounding to the nearest integer. Here n is the count of integers in the list.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

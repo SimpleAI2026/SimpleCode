@@ -1,0 +1,7 @@
+{
+  "id": 668,
+  "summary": "Read three positive integers m, n, and k. Picture a table of m rows and n columns. The cell at row i and column j stores the product of i and j, and both indexes begin at 1. Line up every cell product from small to large, repeating a product once for each cell that holds it. Write the product sitting at place k. Both m and n are between 1 and 30000 inclusive, and k is between 1 and the product of m and n inclusive.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

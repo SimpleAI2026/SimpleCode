@@ -1,0 +1,8 @@
+{
+  "id": 820,
+  "summary": "Read from 1 to 2000 words made only of lowercase letters, each of length 1 to 7. An encoding pairs a reference string that ends in a hash mark with one index per word. For every word, the slice that starts at its index and stops before the next hash mark, not including the mark, must equal that word exactly. Find a shortest reference string that covers every word and write the length of that string.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

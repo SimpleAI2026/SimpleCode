@@ -1,0 +1,8 @@
+{
+  "id": 1725,
+  "summary": "Read a list of rectangles, each given as a length and a width. The list holds from 1 to 1000 rectangles, both edges lie between 1 and 10^9, and the two edges of a rectangle differ. A rectangle can be cut into a square of side k exactly when k does not exceed either edge. First find the largest square side that any rectangle can produce, then count how many rectangles can produce a square of that same side, and write the count.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

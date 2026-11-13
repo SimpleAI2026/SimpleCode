@@ -1,0 +1,26 @@
+{
+  "id": 397,
+  "slug": "integer-replacement",
+  "summary": "读入正整数 n。当它是偶数时，用它的一半替换它。当它是奇数时，可以加上 1 再替换，也可以减去 1 再替换。重复上述替换，直到数值变成 1。写出能够达成这一目标的最少替换步数，步数本身也是整数。",
+  "samples": [
+    {
+      "stdin": "8\n",
+      "stdout": "3\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "7\n",
+      "stdout": "4\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/integer-replacement/",
+    "en": "https://leetcode.com/problems/integer-replacement/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

@@ -1,0 +1,8 @@
+{
+  "id": 599,
+  "summary": "Two people each keep a list of preferred restaurant names. Both lists have length from 1 to 1000, and every name has from 1 to 30 characters. A name is never repeated inside one list, and indexes start at zero. Find names present on both lists whose indexes add to the smallest total. If several names share that total, write every one of them in any order. A shared name is guaranteed to exist.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "id": 275,
+  "summary": "Read citation counts for one researcher's papers, already arranged from small to large. Every count is a non-negative integer, and N is the paper total. Find the largest h such that at least h papers each reach h citations or more, and every leftover paper stays at or below h. Write that h. If more than one candidate works, keep the largest candidate.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

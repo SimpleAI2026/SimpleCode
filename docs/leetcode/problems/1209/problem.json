@@ -1,0 +1,26 @@
+{
+  "id": 1209,
+  "slug": "remove-all-adjacent-duplicates-in-string-ii",
+  "summary": "读入一条只含小写英文字母的字符串，长度在 1 到 100000 之间，再读入整数 k，满足 2 <= k <= 10000。每当有 k 个彼此相邻、而且字母完全一样的字符，就把这 k 个字符删除，并让删除处的左右文字重新相连。反复执行，直到再也找不到这样的一段。写出最后留下的字符串。最终结果只有一种。长度上界是 100000。",
+  "samples": [
+    {
+      "stdin": "s = \"abcd\", k = 2\n",
+      "stdout": "\"abcd\"\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "s = \"deeedbbcccbdaa\", k = 3\n",
+      "stdout": "\"aa\"\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/remove-all-adjacent-duplicates-in-string-ii/",
+    "en": "https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string-ii/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

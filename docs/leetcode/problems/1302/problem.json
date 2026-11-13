@@ -1,0 +1,21 @@
+{
+  "id": 1302,
+  "slug": "deepest-leaves-sum",
+  "summary": "读入一棵二叉树。没有左孩子也没有右孩子的结点是叶子。从根往下数深度，找出离根最远的全部叶子，把这些叶子上的数值相加，并把这个和写出来。树中结点个数介于 1 和 10^4 之间，每个结点的值介于 1 和 100 之间。若整棵树只有根，根自己就是最深的叶子，写出根的值。更靠近根的叶子不要加进这个和。",
+  "samples": [
+    {
+      "stdin": "root = [1,2,3,4,5,null,6,7,null,null,null,null,8]\n",
+      "stdout": "15\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/deepest-leaves-sum/",
+    "en": "https://leetcode.com/problems/deepest-leaves-sum/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

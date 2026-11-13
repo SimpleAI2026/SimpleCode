@@ -1,0 +1,26 @@
+{
+  "id": 1437,
+  "slug": "check-if-all-1s-are-at-least-length-k-places-away",
+  "summary": "读入一条只含 0 与 1 的数列 nums，以及整数 k。判断任意两个值为 1 的位置，中间严格隔开的下标个数是否都不少于 k。若全部满足，写出 true，否则写出 false。数列长度介于 1 与 100000，k 介于 0 与该长度之间，没有其它取值。",
+  "samples": [
+    {
+      "stdin": "nums = [1,0,0,0,1,0,0,1], k = 2\n",
+      "stdout": "true\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "nums = [1,0,0,1,0,1], k = 2\n",
+      "stdout": "false\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/check-if-all-1s-are-at-least-length-k-places-away/",
+    "en": "https://leetcode.com/problems/check-if-all-1s-are-at-least-length-k-places-away/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

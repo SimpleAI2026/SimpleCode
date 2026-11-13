@@ -1,0 +1,8 @@
+{
+  "id": 949,
+  "summary": "Read exactly four digits, each an integer from 0 through 9. Use every digit once and arrange them into a 24-hour clock time written as five characters with a colon in the middle. A legal time runs from 00:00 up to 23:59. A time counts as larger when more of the day has passed since midnight. Find the largest legal time these digits can form and write it. If no arrangement yields a legal time, write an empty string.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "id": 434,
+  "summary": "Read a string s whose length runs from 0 through 300. Each character is a lowercase or uppercase English letter, a digit, or one mark from the set !@#$%^&*()_+-=',.: and the only blank is an ordinary space. Treat every run of characters that are not spaces as one segment. Count how many such runs appear and write that count.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

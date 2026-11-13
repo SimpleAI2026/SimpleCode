@@ -1,0 +1,7 @@
+{
+  "id": 819,
+  "summary": "Read a paragraph of length 1 to 1000 and a banned list of at most 100 words. The paragraph contains only letters, spaces, and the marks exclamation, question, apostrophe, comma, and semicolon, with no hyphen. Each banned word has length 1 to 10, is already lowercase, and has no punctuation. Ignore case while counting. Find the word that occurs most often and is absent from the banned list. The task guarantees that this word exists and is unique. Write it entirely in lowercase.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

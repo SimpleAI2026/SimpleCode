@@ -1,0 +1,8 @@
+{
+  "id": 168,
+  "summary": "Read one positive integer and write the spreadsheet column label that names it. Labels contain only uppercase English letters. The integer 1 writes A, 26 writes Z, 27 writes AA, and 28 writes AB. Larger integers follow the same base-26 letter counting, and you write the resulting letters. The value 701 must be handled and writes ZY. Write the letters alone, with no extra symbols or commentary. The input is a positive integer, never zero and never negative.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

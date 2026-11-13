@@ -1,0 +1,8 @@
+{
+  "id": 451,
+  "summary": "Read one string. Count how many times each character occurs, then build a new string by placing characters so that a higher count comes before a lower count. Characters that share one count may stand in any relative order. Write the rearranged string. When the input itself is empty, the written result stays empty as well.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "id": 69,
+  "slug": "sqrtx",
+  "summary": "读入一个不小于零的整数 x。找出最大的整数 r，使 r 与 r 的乘积仍然不超过 x，并把 r 写出来。当 x 开方后带有小数时，把小数直接丢掉，不要四舍五入到更大的整数。x 等于 0 时，写出的结果也是 0。只写这一个整数，不要附加单位或解释。r 本身也必须是不小于零的整数。",
+  "samples": [
+    {
+      "stdin": "4\n",
+      "stdout": "2\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "8\n",
+      "stdout": "2\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/sqrtx/",
+    "en": "https://leetcode.com/problems/sqrtx/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

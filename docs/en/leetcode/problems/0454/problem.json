@@ -1,0 +1,7 @@
+{
+  "id": 454,
+  "summary": "Read four integer arrays A, B, C, and D that share one common length N, where N runs from 0 through 500. Every stored integer lies between negative two to the twenty-eighth power and one less than two to the twenty-eighth power. Count the index tuples (i, j, k, l) for which the sum of the value from A at i, from B at j, from C at k, and from D at l equals zero. That count fits in a signed 32-bit integer and is at most one less than two to the thirty-first power. Write the count.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

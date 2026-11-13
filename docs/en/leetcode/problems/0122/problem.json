@@ -1,6 +1,6 @@
 {
   "id": 122,
-  "summary": "The public title of this exercise is Best Time to Buy And Sell Stock II. Read tokens in the same order as the method parameters from standard input and compute the result named by that title, using only those values. Print the result as one integer. The sample below is a short input written for this playground so the printed line can be checked locally. It is not a copy of an example from the problem site. The input stays under one hundred elements so it finishes quickly in the browser.",
+  "summary": "Read one price for each day, listed from earlier days to later days. You may buy and sell as many times as you wish, but you can hold only one share at a time, so a new purchase waits until the previous sale has finished. Add up each sale price minus its matching buy price. Write the largest total you can obtain. Write zero when the prices never rise.",
   "notes": [
     "Compare after trimming trailing newlines. The input is tokens in the same order as the method parameters."
   ]

@@ -1,0 +1,8 @@
+{
+  "id": 961,
+  "summary": "Read an even-length list of integers. The length is at least 4 and at most 10000, and every entry is a nonnegative integer below 10000. If the length is twice N, the list contains exactly N plus 1 different values, and exactly one of those values appears N times while each of the others appears once. Find the value that appears N times and write it.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

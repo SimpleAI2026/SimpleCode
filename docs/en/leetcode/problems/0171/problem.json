@@ -1,0 +1,8 @@
+{
+  "id": 171,
+  "summary": "Read a spreadsheet column label made only of uppercase English letters. Convert that label into its positive integer and write the integer. A stands for 1, B stands for 2, and so on through Z for 26. AA stands for 27 and AB stands for 28. The same base-26 letter counting applies to longer labels. The label ZY must produce 701. An empty label never arrives. Write only the integer. Letters run from high place to low place, left to right.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

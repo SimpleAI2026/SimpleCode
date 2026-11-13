@@ -1,0 +1,26 @@
+{
+  "id": 1268,
+  "slug": "search-suggestions-system",
+  "summary": "读入若干互不重复的商品名称，以及顾客正在键入的检索词。名称和检索词都只含小写英文字母。检索词每多出现一个字母，就按当时已经出现的词头，从名称里挑出以该词头开头的那些。同一时刻最多写出三个名称；符合的名称若多于三个，只保留字典序更靠前的三个。按字母出现的先后，把每一轮的名单依次写出来。名称条数和检索词长度都不超过 1000。",
+  "samples": [
+    {
+      "stdin": "products = [\"mobile\",\"mouse\",\"moneypot\",\"monitor\",\"mousepad\"], searchWord = \"mouse\"\n",
+      "stdout": "[\n[\"mobile\",\"moneypot\",\"monitor\"],\n[\"mobile\",\"moneypot\",\"monitor\"],\n[\"mouse\",\"mousepad\"],\n[\"mouse\",\"mousepad\"],\n[\"mouse\",\"mousepad\"]\n]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "products = [\"havana\"], searchWord = \"havana\"\n",
+      "stdout": "[[\"havana\"],[\"havana\"],[\"havana\"],[\"havana\"],[\"havana\"],[\"havana\"]]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/search-suggestions-system/",
+    "en": "https://leetcode.com/problems/search-suggestions-system/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

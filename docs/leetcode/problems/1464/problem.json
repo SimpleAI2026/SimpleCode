@@ -1,0 +1,26 @@
+{
+  "id": 1464,
+  "slug": "maximum-product-of-two-elements-in-an-array",
+  "summary": "读入整数列 nums。从中挑出两个不同的位置，把每个位置上的数各自减一，再把这两个差相乘。在所有不同位置的挑法里面，把这个乘积的最大值写出来。列长介于 2 与 500，每个数介于 1 与 1000。",
+  "samples": [
+    {
+      "stdin": "nums = [3,4,5,2]\n",
+      "stdout": "12\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "nums = [1,5,4,5]\n",
+      "stdout": "16\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/maximum-product-of-two-elements-in-an-array/",
+    "en": "https://leetcode.com/problems/maximum-product-of-two-elements-in-an-array/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

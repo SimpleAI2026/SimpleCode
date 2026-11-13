@@ -1,0 +1,8 @@
+{
+  "id": 1022,
+  "summary": "Read a binary tree that stores only 0 or 1 in each node. The node count is between 1 and 1000. Each walk from the root down to a leaf builds a binary integer: the bit at the root is the highest place and the bit at the leaf is the lowest place. Add the binary integers of every leaf and write that total. The supplied cases keep the total inside a 32-bit integer. Only walks that reach a leaf are included, so a node in the middle does not form a number by itself.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": 729,
+  "slug": "my-calendar-i",
+  "summary": "实现一个日程本，它提供book操作。每次读入整数start和end，两者都在0到10^9 之间，表示包含左端点、不含右端点的时段。若该时段与任何已保存时段有公共时间，就拒绝本次，写出false，并且不要保存它。若没有任何重叠，就保存它并写出true。同一组测试里book最多被调用1000次。",
+  "samples": [
+    {
+      "stdin": "MyCalendar.book(start, end)\nMyCalendar.book(10, 20)\nMyCalendar.book(15, 25)\nMyCalendar.book(20, 30)\n",
+      "stdout": "true\nfalse\ntrue\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/my-calendar-i/",
+    "en": "https://leetcode.com/problems/my-calendar-i/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

@@ -1,0 +1,26 @@
+{
+  "id": 756,
+  "slug": "pyramid-transition-matrix",
+  "summary": "用单个字母表示的方块从下往上垒一座金字塔。读入底层字符串bottom，长度在2到8之间，以及允许规则列表allowed，长度在0到200之间。每条规则是长度为3的字符串，其中字母只来自A到G。规则ABC表示左下方为A、右下方为B时，可以在二者正上方放上C。往上一层就比下一层少一块，直到顶端只剩一块。判断能否垒到这个顶端。能则写出true，不能则写出false。",
+  "samples": [
+    {
+      "stdin": "bottom = \"BCD\", allowed = [\"BCG\", \"CDE\", \"GEA\", \"FFF\"]\n",
+      "stdout": "true\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "bottom = \"AABA\", allowed = [\"AAA\", \"AAB\", \"ABA\", \"ABB\", \"BAC\"]\n",
+      "stdout": "false\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/pyramid-transition-matrix/",
+    "en": "https://leetcode.com/problems/pyramid-transition-matrix/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

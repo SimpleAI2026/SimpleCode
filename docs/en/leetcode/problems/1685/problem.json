@@ -1,0 +1,8 @@
+{
+  "id": 1685,
+  "summary": "Read an integer list that is already arranged in non-decreasing order. Its length is from 2 to 105, every value is from 1 to 104, and each value is less than or equal to the next one. For each index i, subtract that entry from every other entry, take the absolute value of each difference, and add those amounts. Write the sums in the original index order.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

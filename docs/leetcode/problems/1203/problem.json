@@ -1,0 +1,26 @@
+{
+  "id": 1203,
+  "slug": "sort-items-by-groups-respecting-dependencies",
+  "summary": "共有 n 件任务，它们属于至多 m 个小组，限制为 1 <= m <= n <= 3 * 104。读入 group，其中 group[i] 表示第 i 件任务的小组编号，没有小组时记为 -1。任务和小组都从 0 编号，有的小组可以一件任务都没有。再读入 beforeItems，beforeItems[i] 列出必须出现在第 i 件任务左边的任务，且不会指向自己。写出一种顺序，让同组任务连成一段，并满足全部先后约束。多种顺序都可以时写出任意一种；无法安排时写出空列表。",
+  "samples": [
+    {
+      "stdin": "n = 8, m = 2, group = [-1,-1,1,0,0,1,0,-1], beforeItems = [[],[6],[5],[6],[3,6],[],[],[]]\n",
+      "stdout": "[6,3,4,1,5,2,0,7]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "n = 8, m = 2, group = [-1,-1,1,0,0,1,0,-1], beforeItems = [[],[6],[5],[6],[3],[],[4],[]]\n",
+      "stdout": "[]\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/sort-items-by-groups-respecting-dependencies/",
+    "en": "https://leetcode.com/problems/sort-items-by-groups-respecting-dependencies/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

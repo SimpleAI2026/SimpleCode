@@ -1,0 +1,26 @@
+{
+  "id": 1675,
+  "slug": "minimize-deviation-in-array",
+  "summary": "读入 n 个正整数，n 介于 2 和 105，每个数介于 1 和 10^9。对任意元素可以反复做两种改动：偶数可以整除以 2，奇数可以乘上 2。偏移量指当前所有元素里最大值与最小值的差。在允许任意次改动之后，找出能够达到的最小偏移量并写出来。",
+  "samples": [
+    {
+      "stdin": "nums = [1,2,3,4]\n",
+      "stdout": "1\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "nums = [4,1,5,20,3]\n",
+      "stdout": "3\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/minimize-deviation-in-array/",
+    "en": "https://leetcode.com/problems/minimize-deviation-in-array/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

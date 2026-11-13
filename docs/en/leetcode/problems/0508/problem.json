@@ -1,0 +1,7 @@
+{
+  "id": 508,
+  "summary": "Read the root of a binary tree. The subtree total of a node equals the sum of every node value in the part rooted there, counting that node's own value as well. A missing child contributes 0. Count how many times each subtree total appears, then find the totals that appear most often and write them. If several totals share the highest count, write every one of them, in any order. Do not keep only one of a tie. Every subtree total fits in a signed 32 bit integer. A missing child is not an extra item.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

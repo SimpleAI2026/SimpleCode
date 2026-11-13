@@ -1,0 +1,26 @@
+{
+  "id": 1710,
+  "slug": "maximum-units-on-a-truck",
+  "summary": "读入若干种箱子和一个容量 truckSize。种类数在 1 到 1000 之间。每种给出箱子个数以及每箱装载的单元数，这两个数都在 1 到 1000 之间。truckSize 是车上最多能放的箱子个数，范围是 1 到 10^6。在箱子总数不超出 truckSize 的前提下，可以任意挑选。找出车上单元总数的最大值并写出来。",
+  "samples": [
+    {
+      "stdin": "boxTypes = [[1,3],[2,2],[3,1]], truckSize = 4\n",
+      "stdout": "8\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "boxTypes = [[5,10],[2,5],[4,7],[3,9]], truckSize = 10\n",
+      "stdout": "91\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/maximum-units-on-a-truck/",
+    "en": "https://leetcode.com/problems/maximum-units-on-a-truck/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

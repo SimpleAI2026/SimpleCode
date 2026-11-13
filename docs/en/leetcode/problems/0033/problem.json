@@ -1,6 +1,6 @@
 {
   "id": 33,
-  "summary": "The public title of this exercise is Search In Rotated Sorted Array. Read a count, that many integers, and one target integer from standard input and compute the result named by that title, using only those values. Print the result as one integer. The sample below is a short input written for this playground so the printed line can be checked locally. It is not a copy of an example from the problem site. The input stays under one hundred elements so it finishes quickly in the browser.",
+  "summary": "Read a list of distinct integers and one number to look up. The list was once ordered from small to large, then turned once around a pivot that is not announced ahead of time, so a tail section now sits in front of the former head. Decide whether the looked up number occurs. Write its index when it occurs, and write -1 when it does not. Indexes start at 0.",
   "notes": [
     "Compare after trimming trailing newlines. The input is a count, that many integers, and one target integer."
   ]

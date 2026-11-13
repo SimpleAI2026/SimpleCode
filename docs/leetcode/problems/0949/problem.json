@@ -1,0 +1,26 @@
+{
+  "id": 949,
+  "slug": "largest-time-for-given-digits",
+  "summary": "读入恰好四个数字，每个数字是 0 到 9 的整数。用这四个数字各一次，排成一个二十四小时制的时刻，写成五位文本，中间用冒号隔开。合法时刻从 00:00 到 23:59。离午夜过去得越久，时刻越大。在所有能排出来的合法时刻里找出最大的一个并写出来。如果四个数字怎样排列都得不到合法时刻，就写出空文本。",
+  "samples": [
+    {
+      "stdin": "[1,2,3,4]\n",
+      "stdout": "\"23:41\"\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "[5,5,5,5]\n",
+      "stdout": "\"\"\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/largest-time-for-given-digits/",
+    "en": "https://leetcode.com/problems/largest-time-for-given-digits/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

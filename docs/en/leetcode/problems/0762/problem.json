@@ -1,0 +1,8 @@
+{
+  "id": 762,
+  "summary": "Read two integers L and R such that 1 is less than or equal to L, L is less than or equal to R, both values are at most 10^6, and R minus L is at most 10000. For every integer in that closed interval, count how many bits equal 1 in its binary writing. Keep the integer when that count is a prime number. Remember that the number 1 is not prime. Write how many integers are kept.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

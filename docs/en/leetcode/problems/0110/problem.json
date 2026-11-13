@@ -1,6 +1,6 @@
 {
   "id": 110,
-  "summary": "The public title of this exercise is Balanced Binary Tree. Read a level-order node count, using a dot for a missing child from standard input and compute the result named by that title, using only those values. Print the result as the word true or false. The sample below is a short input written for this playground so the printed line can be checked locally. It is not a copy of an example from the problem site. The input stays under one hundred elements so it finishes quickly in the browser.",
+  "summary": "Read a binary tree. Decide whether every node satisfies the following condition: the height of its left subtree and the height of its right subtree differ by at most one. If even one node breaks the condition, the whole tree is unbalanced. An empty tree counts as balanced. Height is defined as the number of nodes counted while walking from the current node toward its farthest descendant, and a leaf has height one. Write yes or no. The value 20 may appear among node values, and this decision ignores node values completely.",
   "notes": [
     "Compare after trimming trailing newlines. The input is a level-order node count, using a dot for a missing child."
   ]

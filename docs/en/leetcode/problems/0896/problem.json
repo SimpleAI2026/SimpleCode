@@ -1,0 +1,8 @@
+{
+  "id": 896,
+  "summary": "Read a sequence of integers named A. Call it nondecreasing when every earlier index holds a value less than or equal to every later index. Call it nonincreasing when every earlier index holds a value greater than or equal to every later index. Judge the sequence monotonic when at least one of those two descriptions fits, and write true; otherwise write false. The length is at most 50000, and each value lies on the closed span from -100000 to 100000.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

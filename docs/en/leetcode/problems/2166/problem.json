@@ -1,0 +1,7 @@
+{
+  "id": 2166,
+  "summary": "Implement a bit collection whose length size is between 1 and 100000. Every bit starts as 0, and indexes run from 0 through size minus 1. Support setting one index to 1, setting one index to 0, inverting all bits at once, asking whether every bit is 1, asking whether at least one bit is 1, counting how many bits equal 1, and joining the bits from left to right into a string of characters 0 and 1. The combined call count is at most 100000, and the joined string is requested at most 5 times. Write each answer and each joined string in call order.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

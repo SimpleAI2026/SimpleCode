@@ -1,0 +1,8 @@
+{
+  "id": 172,
+  "summary": "Read a non-negative integer n. By definition, n factorial is the product of every integer from 1 through n, and 0 factorial is 1. Write how many zeros sit together at the very end of that product when it is shown in base 10. Zeros that appear only in the middle do not count. The amount of work should grow like the logarithm of n, so do not expand the full product digit by digit and then count. n may be large enough that the full product would overflow a fixed integer.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

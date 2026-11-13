@@ -1,0 +1,8 @@
+{
+  "id": 1482,
+  "summary": "A garden has n flowers. Flower i opens on day bloomDay[i] and may be used in only one bunch. Assemble m bunches, where each bunch needs k flowers that are already open on that day and sit next to one another in the garden. Write the earliest day on which those m bunches can be assembled. Write -1 when no day is late enough for that to happen. n is from 1 to 100000, each bloom day is from 1 to 1000000000, m is from 1 to 1000000, and k is from 1 to n.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "id": 1688,
+  "slug": "count-of-matches-in-tournament",
+  "summary": "读入队伍总数 n，范围是 1 到 200。比赛一轮轮进行，直到只剩一支队伍。若眼下参与的数量为双数，则两两捉对，进行一半场数，一半队伍留下。若眼下是单数，则随机让一支队伍直接留下，其余两两捉对，场数是减一之后再除以二，留下的队伍数是该场数再加一。把直到冠军出现为止一共进行的场数写出来。",
+  "samples": [
+    {
+      "stdin": "n = 7\n",
+      "stdout": "6\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "n = 14\n",
+      "stdout": "13\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/count-of-matches-in-tournament/",
+    "en": "https://leetcode.com/problems/count-of-matches-in-tournament/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

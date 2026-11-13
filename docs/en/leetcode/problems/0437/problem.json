@@ -1,0 +1,8 @@
+{
+  "id": 437,
+  "summary": "Read a binary tree and one target sum. The tree holds anywhere from 0 to 1000 nodes. A path must travel from a parent toward its children, may begin at any node, and may stop at any descendant. Count how many such paths have node values adding up exactly to the target, and write that count.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

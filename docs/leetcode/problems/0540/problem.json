@@ -1,0 +1,26 @@
+{
+  "id": 540,
+  "slug": "single-element-in-a-sorted-array",
+  "summary": "读入一个已经按升序排好的整数数组。除了一个数值只出现一次以外，其余每个数值都恰好出现两次。找出那个只出现一次的数值并写出来。数组长度在 1 到 100000 之间，每个元素在 0 到 100000 之间。完成查找时花费的时间应当保持在长度的对数级别，额外占用的空间应当保持为常数。",
+  "samples": [
+    {
+      "stdin": "nums = [1,1,2,3,3,4,4,8,8]\n",
+      "stdout": "2\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "nums = [3,3,7,7,10,11,11]\n",
+      "stdout": "10\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/single-element-in-a-sorted-array/",
+    "en": "https://leetcode.com/problems/single-element-in-a-sorted-array/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

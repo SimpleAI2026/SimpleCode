@@ -1,0 +1,26 @@
+{
+  "id": 219,
+  "slug": "contains-duplicate-ii",
+  "summary": "读入一串整数以及一个非负整数 k。判断是否存在两个不同的位置，上面的数值相等，而且这两个位置编号相减后的绝对值不大于 k。若存在，写出 true，否则写出 false。数值相等但相距超过 k 的位置不算。k 可以为 0，此时没有任何一对位置能满足距离要求。",
+  "samples": [
+    {
+      "stdin": "nums = [1,2,3,1], k = 3\n",
+      "stdout": "true\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "nums = [1,0,1,1], k = 1\n",
+      "stdout": "true\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/contains-duplicate-ii/",
+    "en": "https://leetcode.com/problems/contains-duplicate-ii/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

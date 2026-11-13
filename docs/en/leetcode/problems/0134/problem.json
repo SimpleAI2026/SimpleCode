@@ -1,6 +1,6 @@
 {
   "id": 134,
-  "summary": "The public title of this exercise is Gas Station. Read tokens in the same order as the method parameters from standard input and compute the result named by that title, using only those values. Print the result as one integer. The sample below is a short input written for this playground so the printed line can be checked locally. It is not a copy of an example from the problem site. The input stays under one hundred elements so it finishes quickly in the browser.",
+  "summary": "Read two integer arrays that share a length n, where n runs from 1 to 10^5. Index i stores gas units at that station, and driving onward to the following station consumes cost units. Each of those amounts lies between 0 and 10^4. The stations form a loop, the tank begins empty with no capacity limit, and the car drives in one direction only. Find a start index that keeps the fuel from falling below zero before the car returns. The start is unique when it exists. Write -1 when it does not.",
   "notes": [
     "Compare after trimming trailing newlines. The input is tokens in the same order as the method parameters."
   ]

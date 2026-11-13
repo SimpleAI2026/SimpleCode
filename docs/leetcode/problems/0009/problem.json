@@ -1,0 +1,26 @@
+{
+  "id": 9,
+  "slug": "palindrome-number",
+  "summary": "读入一个整数，判断它的十进制写法是否左右对称，也就是从高位读到低位与从低位读到高位得到的数字序列完全一致。带负号的数缺少这种对称，应判为否。写出布尔结果，对称为真，否则为假。整数 121 的各位左右对称，应当写成真。",
+  "samples": [
+    {
+      "stdin": "121\n",
+      "stdout": "true\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "-121\n",
+      "stdout": "false\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/palindrome-number/",
+    "en": "https://leetcode.com/problems/palindrome-number/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

@@ -1,0 +1,26 @@
+{
+  "id": 151,
+  "slug": "reverse-words-in-a-string",
+  "summary": "读入一行文字，行首、行尾或单词之间都可能有空白。连续的非空白字符构成单词。把单词的先后整个颠倒，使原来排在最后的单词变成排在最前，单词内部的字符保持原样。结果的两端不能留白，相邻单词之间只留一个空格。把这一行写出来。若一个单词都没有，写出空行。",
+  "samples": [
+    {
+      "stdin": "\"the sky is blue\"\n",
+      "stdout": "\"blue is sky the\"\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    },
+    {
+      "stdin": "\" hello world! \"\n",
+      "stdout": "\"world! hello\"\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/reverse-words-in-a-string/",
+    "en": "https://leetcode.com/problems/reverse-words-in-a-string/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

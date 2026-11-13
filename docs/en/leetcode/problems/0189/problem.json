@@ -1,6 +1,6 @@
 {
   "id": 189,
-  "summary": "The public title of this exercise is Rotate Array. Read a count, that many integers, and one target integer from standard input and compute the result named by that title, using only those values. Print the result as the input value after the method updates it. The sample below is a short input written for this playground so the printed line can be checked locally. It is not a copy of an example from the problem site. The input stays under one hundred elements so it finishes quickly in the browser.",
+  "summary": "Read a list of integers and a step count k. Rotate the whole list toward the right by k places. Values that leave the right end come back at the left end and keep their relative order. Write the list after that rotation. The length n satisfies 1 <= n <= 2 * 10^4. Each integer lies between -2^31 and 2^31 - 1, including both ends. The step count satisfies 0 <= k <= 10^5. k may be larger than n. Any method is fine as long as the written order matches a right rotation by k places.",
   "notes": [
     "Compare after trimming trailing newlines. The input is a count, that many integers, and one target integer."
   ]

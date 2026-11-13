@@ -1,0 +1,21 @@
+{
+  "id": 690,
+  "slug": "employee-importance",
+  "summary": "每名员工有唯一编号、一份重要度，以及零个或多个直属下级编号。读入公司里全部员工的这些资料，再读入某一名员工的编号。把该员工本人的重要度，与顺着直属下级关系能够层层到达的所有人的重要度，全部加在一起并写出。隔了一层的下级也要计入。每人至多一名直属上司，可以带领多名下级。员工总数不超过 2000。",
+  "samples": [
+    {
+      "stdin": "[[1, 5, [2, 3]], [2, 3, []], [3, 3, []]], 1\n",
+      "stdout": "11\n",
+      "note": "左侧是这一则的输入文本，右侧是程序应该打印的文本。对照时去掉末尾连续换行。"
+    }
+  ],
+  "links": {
+    "cn": "https://leetcode.cn/problems/employee-importance/",
+    "en": "https://leetcode.com/problems/employee-importance/"
+  },
+  "io": {
+    "kind": "example-text",
+    "out": "example-text"
+  },
+  "solutions": {}
+}

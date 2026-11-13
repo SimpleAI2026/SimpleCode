@@ -1,0 +1,8 @@
+{
+  "id": 1189,
+  "summary": "Read one string whose length is between 1 and 10000. It contains lowercase English letters only. Use those letters to build the greatest count of balloon spellings, and use each letter at most once. Every copy consumes one b, one a, two l letters, two o letters, and one n. Write the largest number of copies that can be built. After a needed letter is exhausted, no extra copy can be built. The length bound is 10000.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

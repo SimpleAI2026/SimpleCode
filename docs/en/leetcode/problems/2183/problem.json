@@ -1,0 +1,8 @@
+{
+  "id": 2183,
+  "summary": "Read a list of positive integers whose length is at most 10^5, plus a positive divisor that is also at most 10^5. Every stored value is at least 1 and at most 10^5, and the length is at least 1. Choose two distinct indexes, with the left index strictly smaller than the right index. Multiply the two values. Count the choice when the product is a multiple of the divisor. Write the total number of such choices. Indexes start at zero.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines.",
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}

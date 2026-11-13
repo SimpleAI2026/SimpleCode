@@ -1,0 +1,7 @@
+{
+  "id": 441,
+  "summary": "Read a nonnegative integer n that fits inside a signed 32-bit integer. Arrange those n coins into rows so that row number k holds exactly k coins. Find how many rows can be filled before the coins that remain are too few for another whole row, and write that row count.",
+  "notes": [
+    "The left column is this sample's input text and the right column is the text the program should print. Comparison ignores trailing newlines."
+  ]
+}
