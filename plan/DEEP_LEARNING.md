@@ -1,6 +1,6 @@
 # SimpleCode 深度学习（Deep Learning）入口调研（v2，含实测）
 
-> 状态：第 0–10 节是调研 v2，原文保留。第 11 节是本仓库的实现计划，并按此落地。v1：2026-10-20 09:0x；v2：2026-10-20 09:1x–09:4x（UTC+8）。
+> 状态：第 0–10 节是运行时调研，原文保留。第 11 节是已经落地的短课（Pyodide、`minitorch.py`、现有 16 章）。课程范围改由 [D2L_AND_LEETCODE_SCOPE.md](D2L_AND_LEETCODE_SCOPE.md) 接替：同一套浏览器运行时，目录改成《动手学深度学习》的顺序，正文仍自己写。v1：2026-10-20 09:0x；v2：2026-10-20 09:1x–09:4x（UTC+8）。
 > v2 的版本号、Star 和日期取自 GitHub API、npm registry、PyPI 和 Pyodide lock 文件；体积是**实际下载后**测得；耗时是本机实测。
 > 原始日志：`measurements/`（同目录）。没测到的标 **未知/未测**。
 
