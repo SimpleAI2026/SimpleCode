@@ -245,6 +245,7 @@
 ### 11.3 内容
 
 - `docs/numpy/` 与 `docs/en/numpy/`：概览加 10 章（数组、dtype、下标、切片、广播、向量化、线性代数、随机数、形状、副本）。
+- 扁平的 `docs/dl/*.md` 短课已在 [D2L_AND_LEETCODE_SCOPE.md](D2L_AND_LEETCODE_SCOPE.md) 阶段 2 删掉。目录改走 `chapter_*`，顺序见 `scripts/docs/dl-toc.ts`。阶段 2 只落地前言、安装、记号、引言四节只读正文。下面这一条是短课落地时的记录，不再表示抽屉里的章。
 - `docs/dl/` 与 `docs/en/dl/`：概览加 10 章（线性回归、梯度下降、自动求导、XOR、螺旋、softmax / 交叉熵、Fashion-MNIST 子集、优化器、卷积一眼、注意力一眼）。
 - 每章至少三个 `###`、两个带 `expect` 的 `numpy` 围栏。程序只用 ASCII，注释随中英文更换。训练示例的初值写死或用下标公式生成，不依赖 `np.random.seed`。Fashion 一章的 `expect` 只要求输出里出现 `acc`，避免把某一版 NumPy 的末位准确率写死。
 - `docs/sources.yaml` 增加 `numpy-manual`（BSD-3-Clause，不改编原文）和 `fashion-mnist`（MIT）。

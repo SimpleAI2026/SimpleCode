@@ -1,8 +1,9 @@
 #!/usr/bin/env node
 // Run every runnable docs fence in the preview app and check exit status + expect.
 import { spawn } from "node:child_process";
-import { existsSync, readdirSync, readFileSync } from "node:fs";
+import { existsSync, readFileSync } from "node:fs";
 import { join } from "node:path";
+import { listBookMarkdown } from "../scripts/docs/book-files.mjs";
 import matter from "gray-matter";
 import { chromium } from "playwright";
 import { parseFenceInfo } from "../src/docs/fence.ts";
@@ -44,7 +45,7 @@ function collect() {
     for (const edition of ["zh", "en"]) {
       const dir = edition === "en" ? join("docs", "en", book) : join("docs", book);
       if (!existsSync(dir)) continue;
-      for (const file of readdirSync(dir).filter((name) => name.endsWith(".md")).sort()) {
+      for (const file of listBookMarkdown(dir)) {
         const raw = readFileSync(join(dir, file), "utf8");
         const body = matter(raw).content;
         const re = /```([^\n]*)\n([\s\S]*?)```/g;

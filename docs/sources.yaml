@@ -325,10 +325,29 @@ nn-zero-to-hero:
   url: https://github.com/karpathy/nn-zero-to-hero
   license: MIT
   adapt: true
-d2l-zh:
+# Text is link-only. d2l-zh e6b18ccea71451a55fcd861d7b96fddf2587b09a (release 2.0.0)
+# and d2l-en 23d7a5aecceee57d1292c56e90cce307f183bb0a are CC-BY-SA-4.0 for prose.
+# Do not copy sentences. The removed id d2l-zh (Apache-2.0, adapt: true) was wrong:
+# the Chinese repo's root LICENSE is Apache-2.0, but the book text is the CC BY-SA translation.
+d2l-zh-text:
+  title: 动手学深度学习
+  url: https://zh.d2l.ai/
+  license: CC-BY-SA-4.0
+  adapt: false
+d2l-en-text:
   title: Dive into Deep Learning
+  url: https://d2l.ai/
+  license: CC-BY-SA-4.0
+  adapt: false
+d2l-code:
+  title: d2l library and PyTorch notebook code
   url: https://github.com/d2l-ai/d2l-zh
-  license: Apache-2.0
+  license: MIT-0
+  adapt: true
+d2l-en-sample-code:
+  title: Dive into Deep Learning English notebook sample code
+  url: https://github.com/d2l-ai/d2l-en
+  license: Amazon-modified-MIT-2019
   adapt: true
 gopl:
   title: The Go Programming Language
