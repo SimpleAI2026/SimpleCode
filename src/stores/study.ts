@@ -1,6 +1,8 @@
 import { defineStore } from "pinia";
-import { ref } from "vue";
+import { ref, watch } from "vue";
+import { isLeetCodeRuntime } from "@/docs/leetcode";
 import { useDocsStore } from "./docs";
+import { useLanguageStore } from "./language";
 import { useLeetCodeStore } from "./leetcode";
 
 const MODE_KEY = "simplecode:study-mode";
@@ -20,6 +22,7 @@ function loadJson<T>(key: string, fallback: T): T {
 
 export const useStudyStore = defineStore("study", () => {
   const docs = useDocsStore();
+  const langs = useLanguageStore();
   const stored = localStorage.getItem(MODE_KEY);
   const mode = ref<StudyMode>(stored === "leetcode" ? "leetcode" : "learn");
   const revealed = ref<string[]>(loadJson(REVEALED_KEY, []));
@@ -28,11 +31,29 @@ export const useStudyStore = defineStore("study", () => {
   function persistMode() {
     localStorage.setItem(MODE_KEY, mode.value);
   }
+  function leetcodeHere() {
+    return isLeetCodeRuntime(langs.selectedId);
+  }
+  function retreatToLearn() {
+    if (leetcodeHere() || mode.value !== "leetcode") return;
+    mode.value = "learn";
+    persistMode();
+    if (docs.open) docs.show();
+  }
   function openLeet() {
+    if (!leetcodeHere()) return;
     docs.open = true;
     useLeetCodeStore().align();
   }
   function openForMode() {
+    if (!leetcodeHere()) {
+      if (mode.value !== "learn") {
+        mode.value = "learn";
+        persistMode();
+      }
+      docs.show();
+      return;
+    }
     if (mode.value === "learn") docs.show();
     else openLeet();
   }
@@ -50,6 +71,7 @@ export const useStudyStore = defineStore("study", () => {
     docs.show();
   }
   function pickLeet() {
+    if (!leetcodeHere()) return;
     if (mode.value === "leetcode") {
       toggleDrawer();
       return;
@@ -58,6 +80,7 @@ export const useStudyStore = defineStore("study", () => {
     persistMode();
     openLeet();
   }
+  watch(() => langs.selectedId, retreatToLearn, { immediate: true, flush: "sync" });
   function revealKey(id: number, runtimeId: string) {
     return `${id}:${runtimeId}`;
   }

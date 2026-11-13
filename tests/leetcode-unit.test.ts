@@ -86,6 +86,17 @@ function english(id: number) {
 }
 
 describe("leetcode catalog", () => {
+  it("keeps LeetCode on the nine runtimes that can run the samples", () => {
+    const source = readFileSync("src/docs/leetcode.ts", "utf8");
+    const match = source.match(/export const LEETCODE_RUNTIMES = \[([^\]]+)\]/);
+    assert.ok(match, "LEETCODE_RUNTIMES");
+    const ids = [...match[1].matchAll(/"([^"]+)"/g)].map((item) => item[1]);
+    assert.deepEqual(ids, ["python", "ruby", "quickjs", "clang", "clangpp", "lua", "go", "rust", "java"]);
+    for (const hidden of ["sqlite", "php-cgi", "shell", "linux", "numpy"]) {
+      assert.equal(ids.includes(hidden), false, hidden);
+    }
+  });
+
   it("lists the same problems in Chinese and English", () => {
     const ids = zh.map((row) => row.id);
     assert.equal(new Set(ids).size, ids.length);

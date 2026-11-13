@@ -85,7 +85,12 @@ export const leetcodeIndexEn = indexEn as ProblemIndexEntry[];
 export const leetcodeTagsZh = tagsZh as Record<string, string>;
 export const leetcodeTagsEn = tagsEn as Record<string, string>;
 
+// Language capsules and the toolbar LeetCode button both use this list.
 export const LEETCODE_RUNTIMES = ["python", "ruby", "quickjs", "clang", "clangpp", "lua", "go", "rust", "java"] as const;
+
+export function isLeetCodeRuntime(id: string) {
+  return (LEETCODE_RUNTIMES as readonly string[]).includes(id);
+}
 
 export const DIFFICULTIES: Difficulty[] = ["easy", "medium", "hard"];
 

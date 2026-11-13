@@ -1,12 +1,17 @@
 <script setup lang="ts">
+import { computed } from "vue";
 import { BookOpen, ListChecks } from "lucide-vue-next";
 import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
+import { isLeetCodeRuntime } from "@/docs/leetcode";
 import { t } from "@/i18n";
 import { useDocsStore } from "@/stores/docs";
+import { useLanguageStore } from "@/stores/language";
 import { useStudyStore } from "@/stores/study";
 
 const docs = useDocsStore();
 const study = useStudyStore();
+const langs = useLanguageStore();
+const showLeetCode = computed(() => isLeetCodeRuntime(langs.selectedId));
 
 function learn() {
   study.pickLearn();
@@ -41,7 +46,7 @@ function leetcode() {
       </TooltipTrigger>
       <TooltipContent side="bottom">{{ t("openQuickStartShort") }}</TooltipContent>
     </Tooltip>
-    <Tooltip>
+    <Tooltip v-if="showLeetCode">
       <TooltipTrigger as-child>
         <button
           type="button"
