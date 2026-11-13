@@ -136,7 +136,32 @@ Digests are also in `scripts/sources.lock.json` and `wasm/rust/SOURCES.md`. The 
 - [Pyodide](https://pyodide.org/) 314.0.7 — Mozilla Public License 2.0. CPython 3.14.2 and the Pyodide runtime (`pyodide.asm.wasm`, `pyodide.asm.mjs`, `pyodide.mjs`, `python_stdlib.zip`). Vendored under `wasm/pyodide/` by `./build.sh vendor --pyodide`. The page loads those same-origin files only. The upstream `pyodide.mjs` default `packageBaseUrl` points at jsDelivr; the vendored copy removes that default.
 - [NumPy](https://numpy.org/) 2.4.6 — BSD-3-Clause. Wheel `numpy-2.4.6-cp314-cp314-pyemscripten_2026_0_wasm32.whl`, loaded with `loadPackage("numpy")` from the same directory.
 - [Fashion-MNIST](https://github.com/zalandoresearch/fashion-mnist) — MIT, Copyright (c) 2017 Zalando SE. `wasm/pyodide/fashion-mnist.bin` is the first 5,000 training images and the first 1,000 test images (28×28 uint8) plus labels. Attribution is also written to `/data/FASHION.txt` in the Pyodide filesystem.
-- `src/pyodide/minitorch.py` is original teaching code in this repository (MIT). It is not an upstream package.
+- `src/pyodide/minitorch.py` is original teaching code in this repository (MIT). It is not an upstream package. No function body from `d2l` has been copied into it.
+
+## Dive into Deep Learning (text and code, separate)
+
+Checked 2026-11-13 against `d2l-ai/d2l-zh` commit `e6b18ccea71451a55fcd861d7b96fddf2587b09a` (`config.ini` release 2.0.0) and `d2l-ai/d2l-en` commit `23d7a5aecceee57d1292c56e90cce307f183bb0a`.
+
+The book text is not vendored. `docs/dl/` and `docs/en/dl/` are original writing. They do not contain a CC BY-SA `LICENSE` or `NOTICE`. `docs/sources.yaml` records the books as link-only:
+
+| id | What it covers | License | adapt |
+|---|---|---|---|
+| `d2l-zh-text` | Chinese book, further-reading links only | CC-BY-SA-4.0 | false |
+| `d2l-en-text` | English book, further-reading links only | CC-BY-SA-4.0 | false |
+| `d2l-code` | Functions adapted from `d2l-zh` `d2l/*.py` or a PyTorch notebook cell | MIT-0 | true |
+| `d2l-en-sample-code` | Functions adapted from an English notebook rather than from `d2l-zh` | Amazon modified MIT, 2019 | true |
+
+`d2l-zh` `config.ini` says the book is "Licensed under CC-BY-SA-4.0 and MIT-0." The root `LICENSE` in that repository is Apache-2.0, and `setup.py` declares `license='MIT-0'`. The English book's root `LICENSE` is CC BY-SA 4.0; notebook sample code is `LICENSE-SAMPLECODE` (Copyright 2019 Amazon.com, Inc. or its affiliates). The Apache-2.0 file is not the license for prose or for adapted functions. The old source id `d2l-zh` (Apache-2.0, `adapt: true`) was removed for that reason.
+
+The short-course chapters that cited `d2l-zh` (`11-dropout.md`, `12-batchnorm.md`, `13-rnn.md`, `14-attn.md`, `15-train.md`, Chinese and English) were audited before deletion. Stripping code fences, no 20-character Han run from those files appeared in the 139 chapter markdown files at the commit above. The prose was original. `11-dropout.md` still said the upstream code was Apache-2.0, which is the mistake this registration replaces. The flat 16-chapter course was removed so the drawer follows the d2l section paths. Phase 2 writes only the four read-only openers (preface, installation, notation, introduction).
+
+Code may be adapted later, with attribution, and only under its own license:
+
+- A function taken from `d2l-zh` `d2l/*.py` or a PyTorch cell is MIT-0. The SPDX text is `LICENSES/MIT-0.txt`. The file header names MIT-0, the upstream path, and commit `e6b18ccea71451a55fcd861d7b96fddf2587b09a`. The same line is added here when the first function is copied. Do not keep `http://d2l-data.s3-accelerate.amazonaws.com/` in a runnable block.
+- A function taken from a `d2l-en` notebook, and not from `d2l-zh`, keeps the Amazon notice in `LICENSES/d2l-en-LICENSE-SAMPLECODE.txt` (Copyright 2019 Amazon.com, Inc. or its affiliates) and commit `23d7a5aecceee57d1292c56e90cce307f183bb0a`. Cite source id `d2l-en-sample-code` only in that case.
+- A rewrite that does not copy an upstream function body stays under this repository's MIT license and is not labeled as d2l code.
+
+No adapted function is in the tree yet, so no source file carries those headers. Sample data stays on the tiny slices in `plan/D2L_AND_LEETCODE_SCOPE.md` section 6. Together they must stay within 256 KiB. This phase does not add or replace sample files. The Fashion-MNIST subset described above is unchanged until that later replacement.
 
 ## Java (TeaVM)
 

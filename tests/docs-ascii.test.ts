@@ -1,6 +1,7 @@
 import assert from "node:assert/strict";
-import { readdirSync, readFileSync } from "node:fs";
+import { readFileSync } from "node:fs";
 import { describe, it } from "node:test";
+import { listBookMarkdown } from "../scripts/docs/book-files.mjs";
 import { codeOutsideComments, isProgrammingLang, splitCode } from "../src/docs/code-text.ts";
 
 const BOOKS = ["python", "ruby", "js", "sqlite", "c", "cpp", "php", "lua", "go", "shell", "rust", "java", "linux", "numpy", "dl"];
@@ -9,8 +10,8 @@ const NON_ASCII = /[^\x00-\x7F]/;
 function chapters(root: string) {
   const files: string[] = [];
   for (const book of BOOKS) {
-    for (const name of readdirSync(`${root}/${book}`)) {
-      if (name.endsWith(".md")) files.push(`${root}/${book}/${name}`);
+    for (const name of listBookMarkdown(`${root}/${book}`)) {
+      files.push(`${root}/${book}/${name}`);
     }
   }
   return files;

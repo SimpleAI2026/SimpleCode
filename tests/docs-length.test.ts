@@ -1,6 +1,8 @@
 import assert from "node:assert/strict";
-import { existsSync, readdirSync, readFileSync } from "node:fs";
+import { existsSync, readFileSync } from "node:fs";
 import { describe, it } from "node:test";
+import { listBookMarkdown } from "../scripts/docs/book-files.mjs";
+import { DL_TOC } from "../scripts/docs/dl-toc.ts";
 import { codeOutsideComments, isProgrammingLang } from "../src/docs/code-text.ts";
 
 /** Body character counts before the essay rewrite. Acceptance stays 3× until that book moves to ESSAY. */
@@ -60,6 +62,24 @@ function runnableCount(body: string) {
   return n;
 }
 
+function norunCount(body: string) {
+  return body.match(/```[^\n]*\bnorun\b/g)?.length ?? 0;
+}
+
+function dlTier(name: string) {
+  return DL_TOC.find((section) => section.path === name)?.tier;
+}
+
+/** Read-only DeepLearning sections use norun fences. Other chapters still need two runnable blocks. */
+function assertBlocks(body: string, tier: string | undefined) {
+  if (tier === "readonly") {
+    assert.equal(runnableCount(body), 0, "readonly run fences");
+    assert.ok(norunCount(body) >= 2, `readonly fences ${norunCount(body)}`);
+    return;
+  }
+  assert.ok(runnableCount(body) >= 2, `runnable ${runnableCount(body)}`);
+}
+
 describe("chapter length", () => {
   for (const [file, before] of Object.entries(BASE)) {
     it(file, () => {
@@ -80,7 +100,7 @@ describe("chapter length", () => {
   }
 
   for (const book of ABSOLUTE) {
-    const files = readdirSync(`docs/${book}`).filter((name) => name.endsWith(".md")).sort();
+    const files = listBookMarkdown(`docs/${book}`);
     for (const name of files) {
       const file = `${book}/${name}`;
       it(file, () => {
@@ -102,7 +122,7 @@ describe("chapter length", () => {
   }
 
   for (const book of [...TUTORIAL, ...PYODIDE]) {
-    const files = readdirSync(`docs/${book}`).filter((name) => name.endsWith(".md")).sort();
+    const files = listBookMarkdown(`docs/${book}`);
     if (TUTORIAL.includes(book)) assert.ok(files.length >= 20, `${book} chapters ${files.length}`);
     for (const name of files) {
       const file = `${book}/${name}`;
@@ -119,7 +139,7 @@ describe("chapter length", () => {
           const han = hanCount(part);
           assert.ok(han > 0 && han <= 400, `section han ${han}`);
         }
-        assert.ok(runnableCount(body) >= 2, `runnable ${runnableCount(body)}`);
+        assertBlocks(body, book === "dl" ? dlTier(name) : undefined);
         assert.ok(!body.includes("## 常见错误") && !body.includes("## 最佳实践"), "template headings");
       });
     }
@@ -128,7 +148,7 @@ describe("chapter length", () => {
   it("chapters do not share a 60-character run", () => {
     const seen = new Map<string, string>();
     for (const book of [...TUTORIAL, ...PYODIDE]) {
-      const files = readdirSync(`docs/${book}`).filter((name) => name.endsWith(".md"));
+      const files = listBookMarkdown(`docs/${book}`);
       for (const name of files) {
         const file = `${book}/${name}`;
         const han = proseOf(bodyOf(readFileSync(`docs/${file}`, "utf8"))).replace(/[^\p{Script=Han}]/gu, "");
@@ -147,9 +167,9 @@ describe("english chapters", () => {
   for (const book of [...TUTORIAL, ...PYODIDE]) {
     const dir = `docs/en/${book}`;
     if (!existsSync(dir)) continue;
-    const files = readdirSync(dir).filter((name) => name.endsWith(".md")).sort();
+    const files = listBookMarkdown(dir);
     it(`${book} uses the same chapter files`, () => {
-      const zh = readdirSync(`docs/${book}`).filter((name) => name.endsWith(".md")).sort();
+      const zh = listBookMarkdown(`docs/${book}`);
       assert.deepEqual(files, zh);
     });
     for (const name of files) {
@@ -167,7 +187,7 @@ describe("english chapters", () => {
           const n = words(part).length;
           assert.ok(n >= 1 && n <= 280, `section words ${n}`);
         }
-        assert.ok(runnableCount(body) >= 2, `runnable ${runnableCount(body)}`);
+        assertBlocks(body, book === "dl" ? dlTier(name) : undefined);
         assert.ok(!body.includes("## Common mistakes") && !body.includes("## 常见错误"), "template headings");
       });
     }
@@ -178,7 +198,7 @@ describe("english chapters", () => {
     for (const book of [...TUTORIAL, ...PYODIDE]) {
       const dir = `docs/en/${book}`;
       if (!existsSync(dir)) continue;
-      for (const name of readdirSync(dir).filter((file) => file.endsWith(".md"))) {
+      for (const name of listBookMarkdown(dir)) {
         const file = `en/${book}/${name}`;
         const list = words(proseOf(bodyOf(readFileSync(`docs/${file}`, "utf8"))).toLowerCase());
         for (let i = 0; i + 16 <= list.length; i++) {

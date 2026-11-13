@@ -46,6 +46,9 @@ describe("english edition", () => {
     assert.equal(englishGap({ edition: "en", slugs: ["index", "03-strings"], slug: "03-strings", viewingChapter: true }), null);
     assert.equal(chapterId("python", "index", "en"), "en/python/index");
     assert.equal(chapterSlug("en/python/01-hello"), "01-hello");
+    assert.equal(chapterSlug("dl/chapter_preface/index"), "chapter_preface/index");
+    assert.equal(chapterSlug("en/dl/chapter_preface/index"), "chapter_preface/index");
+    assert.equal(chapterId("dl", "chapter_preface/index", "en"), "en/dl/chapter_preface/index");
   });
 });
 

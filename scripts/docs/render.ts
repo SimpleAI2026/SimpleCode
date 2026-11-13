@@ -1,4 +1,4 @@
-import { readdirSync, readFileSync, statSync } from "node:fs";
+import { existsSync, readdirSync, readFileSync, statSync } from "node:fs";
 import { join, relative } from "node:path";
 import matter from "gray-matter";
 import MarkdownIt from "markdown-it";
@@ -6,6 +6,8 @@ import type { Token as MdToken } from "markdown-it";
 import { createHighlighter, type Highlighter } from "shiki";
 import { parseFenceInfo } from "../../src/docs/fence.ts";
 import { BOOKS, SHIPPED_BOOKS, type BookId } from "../../src/docs/runtime.ts";
+import { listBookMarkdown } from "./book-files.mjs";
+import { DL_LANDED_PHASE, DL_TOC, dlChapterNumber } from "./dl-toc.ts";
 import { isKnownDocsDir } from "./tree.ts";
 import { collapseShikiLines, escapeHtml } from "../../src/docs/text.ts";
 import type { BookIndex, ChapterDoc, ChapterMeta, CodeBlockData, SearchDoc, Segment } from "../../src/docs/types";
@@ -303,7 +305,41 @@ function str(v: unknown): string | undefined {
   return typeof v === "string" && v.trim() ? v.trim() : undefined;
 }
 
-function validateMeta(file: string, book: BookId, data: Record<string, unknown>, errors: string[]): ChapterMeta | undefined {
+function isShareAlikeNotice(name: string): boolean {
+  const base = name.toLowerCase();
+  return base === "license" || base.startsWith("license.") || base === "notice" || base.startsWith("notice.");
+}
+
+/** Reject CC BY-SA LICENSE/NOTICE files and directories that are not chapter_*. */
+function scanBookTree(dir: string, label: string, errors: string[]) {
+  let names: string[] = [];
+  try {
+    names = readdirSync(dir);
+  } catch {
+    return;
+  }
+  for (const name of names) {
+    const full = join(dir, name);
+    const st = statSync(full);
+    if (st.isFile()) {
+      if (isShareAlikeNotice(name)) errors.push(`${label}: 不允许 ${name}`);
+      continue;
+    }
+    if (!st.isDirectory()) continue;
+    if (!name.startsWith("chapter_")) {
+      errors.push(`${label}: 未知子目录 ${name}`);
+      continue;
+    }
+    for (const child of readdirSync(full)) {
+      const childPath = join(full, child);
+      const childSt = statSync(childPath);
+      if (childSt.isDirectory()) errors.push(`${label}/${name}: 目录只到一层`);
+      else if (isShareAlikeNotice(child)) errors.push(`${label}/${name}: 不允许 ${child}`);
+    }
+  }
+}
+
+function validateMeta(file: string, book: BookId, data: Record<string, unknown>, slug: string, errors: string[]): ChapterMeta | undefined {
   const where = relative(process.cwd(), file);
   const fail = (msg: string) => errors.push(`${where}: ${msg}`);
   const language = str(data.language);
@@ -312,6 +348,7 @@ function validateMeta(file: string, book: BookId, data: Record<string, unknown>,
   const title = str(data.title);
   if (!title) fail("缺少 title");
   const chapter = typeof data.chapter === "number" ? data.chapter : -1;
+  if (slug === "index" && chapter !== 0) fail("只有 chapter 0 能使用文件名 index.md");
   if (chapter > 0 && !LEVELS.has(String(data.level))) fail("level 必须是 beginner | intermediate | advanced");
   if (chapter === 0 && data.level !== undefined && !LEVELS.has(String(data.level))) fail("概览的 level 不合法");
   if (typeof data.minutes !== "number" || data.minutes <= 0) fail("minutes 必须是正数");
@@ -319,7 +356,6 @@ function validateMeta(file: string, book: BookId, data: Record<string, unknown>,
   if (!str(data.updated)) fail("缺少 updated");
   if (data.sources !== undefined && (!Array.isArray(data.sources) || data.sources.some((s) => typeof s !== "string"))) fail("sources 必须是字符串列表");
   if (errors.some((e) => e.startsWith(where + ":"))) return undefined;
-  const slug = file.split(/[/\\]/).pop()!.replace(/\.md$/, "");
   return {
     id: `${book}/${slug}`,
     book,
@@ -401,7 +437,7 @@ export async function renderDocs(root: string): Promise<RenderedDocs> {
     const label = edition === "en" ? `en/${book}` : book;
     let files: string[] = [];
     try {
-      files = readdirSync(dir).filter((f) => f.endsWith(".md"));
+      files = listBookMarkdown(dir);
     } catch {
       if (edition === "zh" && (only.length || shipped.has(book))) errors.push(`缺少 docs/${book}/`);
       return;
@@ -410,6 +446,7 @@ export async function renderDocs(root: string): Promise<RenderedDocs> {
       if (edition === "zh" && (only.length || shipped.has(book))) errors.push(`缺少 docs/${book}/`);
       return;
     }
+    if (book === "dl") scanBookTree(dir, label, errors);
     const metas: ChapterMeta[] = [];
     const seen = new Set<number>();
     const intoBooks = edition === "en" ? booksEn : books;
@@ -418,7 +455,13 @@ export async function renderDocs(root: string): Promise<RenderedDocs> {
       const full = join(dir, file);
       const raw = readFileSync(full, "utf8");
       const parsed = matter(raw);
-      const meta = validateMeta(full, book, parsed.data, errors);
+      const slug = file.replace(/\.md$/, "");
+      const meta = validateMeta(full, book, parsed.data, slug, errors);
+      if (book === "dl") {
+        const expected = dlChapterNumber(file);
+        if (expected === undefined) errors.push(`${relative(process.cwd(), full)}: 不在深度学习目录表里`);
+        else if (meta && meta.chapter !== expected) errors.push(`${relative(process.cwd(), full)}: chapter 应为 ${expected}`);
+      }
       if (!meta) continue;
       if (edition === "en") meta.id = `en/${meta.id}`;
       if (seen.has(meta.chapter)) errors.push(`${label}: chapter ${meta.chapter} 重复`);
@@ -442,7 +485,18 @@ export async function renderDocs(root: string): Promise<RenderedDocs> {
     metas.sort((a, b) => a.chapter - b.chapter);
     const contentCount = metas.filter((m) => m.chapter > 0).length;
     if (!metas.some((m) => m.chapter === 0)) errors.push(`${label}: 缺少 chapter 0 概览`);
-    if (contentCount < 10) errors.push(`${label}: 只有 ${contentCount} 章，至少需要 10 章（不含概览）`);
+    // DeepLearning lands across phases 2–8. Chapter numbers are TOC indexes,
+    // so a partial book stays ordered without the ten-chapter floor.
+    const floor = book === "dl" ? 1 : 10;
+    if (contentCount < floor) errors.push(`${label}: 只有 ${contentCount} 章，至少需要 ${floor} 章（不含概览）`);
+    if (book === "dl") {
+      for (const section of DL_TOC) {
+        if (section.phase > DL_LANDED_PHASE) continue;
+        if (!files.includes(section.path) || !existsSync(join(dir, section.path))) {
+          errors.push(`${label}: 缺少 ${section.path}`);
+        }
+      }
+    }
     intoBooks.push({ id: book, chapters: metas });
   }
 

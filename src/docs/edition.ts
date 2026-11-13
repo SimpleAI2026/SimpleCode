@@ -8,7 +8,9 @@ export function chapterId(book: string, slug: string, edition: DocEdition): stri
 
 export function chapterSlug(id: string): string {
   const parts = id.split("/");
-  return parts[parts.length - 1] ?? id;
+  // en/<book>/<slug...> or <book>/<slug...>. DeepLearning slugs include chapter_*/file.
+  const rest = parts[0] === "en" ? parts.slice(2) : parts.slice(1);
+  return rest.join("/") || id;
 }
 
 /** Which English placeholder to show. A full English book hides it. */
