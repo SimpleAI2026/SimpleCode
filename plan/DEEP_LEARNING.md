@@ -231,8 +231,8 @@
 - 语言 id 是 `numpy`，不是第二份 `python`。`compiler` 为 `pyodide`。`RunSession` 在这条分支上不创建 `WASIWorkerHost`。
 - Worker 是 `src/pyodide/worker.ts`。它动态导入同源 `wasm/pyodide/pyodide.mjs`，`loadPyodide({ indexURL, packageBaseUrl })` 两个地址都是同源目录。`fetch` 被补丁成按文件名返回已下载的 wasm、zip、lock 和 wheel，所以 `loadPackage("numpy")` 不再访问网络。
 - 标准输出和标准错误用 `setStdout` / `setStderr` 的 `batched` 回调送到 xterm。标准输入用一块 `SharedArrayBuffer`：偏移 0 的 `Int32` 是控制字（0 等待，正数是字节长度，-1 是 EOF），偏移 4 起是载荷，容量 65536。Worker 里 `Atomics.wait`，主线程 `Atomics.notify`。读出字节时先 `slice` 再交给 `TextDecoder`，因为它拒绝共享内存上的视图。页面原有的 COOP/COEP 和 `coi-serviceworker.js` 不变。
-- `src/pyodide/minitorch.py` 随 Worker 以原始文本写入 `/opt/simplecode/minitorch.py`，执行前插入 `sys.path`。提供 `Tensor`（`backward` 只接受标量）、`nn.Linear`、`nn.ReLU`、`nn.Sequential`、`softmax`、`cross_entropy`、`optim.SGD`、`optim.Adam`，以及 `datasets.fashion_mnist`。
-- Fashion-MNIST 子集写成 `/data/fashion-mnist.bin`。小端魔数 `0x314E4D46`，随后两个 uint32 是训练张数 5000 和测试张数 1000，然后是图像和标签。归因在 `/data/FASHION.txt`。
+- `src/pyodide/minitorch.py` 随 Worker 以原始文本写入 `/opt/simplecode/minitorch.py`，执行前插入 `sys.path`。提供 `Tensor`（`backward` 只接受标量，另有索引、`exp`、`log`）、`nn.Linear`、`nn.ReLU`、`nn.Dropout`（掩码由调用方传入）、`nn.Sequential`、`train` / `eval`、`softmax`、`cross_entropy`、`accuracy`、`optim.SGD`（可带权重衰减）、`Momentum`、`AdaGrad`、`RMSProp`、`Adadelta`、`Adam`、`StepLR`，以及 `datasets.fashion_mnist`、`scale_batch`、`house_prices`、`airfoil`。
+- Fashion-MNIST 子集写成 `/data/fashion-mnist.bin`。小端魔数 `0x314E4D46`，随后两个 uint32 是训练张数 32 和测试张数 8，然后是图像和标签。像素保持 uint8，按批再除以 255。归因在 `/data/FASHION.txt`。合成房价和机翼表写到 `/data/house-tiny.csv` 与 `/data/airfoil-tiny.csv`。
 - 围栏语言 `numpy` 和 `np` 映射到这个运行时。写成 `python` 的围栏仍走 WASI CPython，文档里不用它来导入 NumPy。
 
 ### 11.2 界面
@@ -253,14 +253,14 @@
 ### 11.4 打包
 
 - `./build.sh vendor --pyodide` 按 `scripts/sources.lock.json` 的 `pyodide` 下载并校验。上游 `pyodide.mjs` 里的 jsDelivr 默认地址会删掉，锁的是删过之后的 17883 字节。
-- 七个文件都在 `wasm/pyodide/`，合计 **21,201,739** 字节。侧栏 `formatMB` 显示 **20.2 MB**。单文件都低于 GitHub 的 100 MB 限制。
+- 阶段 3 把 Fashion-MNIST 换成训练 32 张、测试 8 张（31,412 字节），并加入合成房价表 `house-tiny.csv`（8,598 字节）和合成机翼表 `airfoil-tiny.csv`（1,956 字节）。九个文件都在 `wasm/pyodide/`，合计 **16,533,693** 字节。侧栏 `formatMB` 显示 **15.8 MB**。单文件都低于 GitHub 的 100 MB 限制。原先七个文件含 5000/1000 子集时是 21,201,739 字节、侧栏 20.2 MB。
 - 这些文件登记为 `kind: "bin"` 资产，因此进入 `wasm/manifest.json`（仍不提交，由 `write-manifest.mjs` 生成），也进入 `vendor/prebuilt` 的 runtime 包。`./build.sh vendor` 失败时解开这份包，Vercel 继续走这条退路。`--pyodide` 自己失败时同样退回 runtime 包。
 - 运行时不请求 CDN。锁文件和 `scripts/vendor-pyodide.mjs` 里可以保留构建期 URL。
 
 ### 11.5 测试
 
 - `tests/minitorch.test.mjs` 在本机 CPython 上跑数值梯度。
-- `tests/pyodide-no-remote.test.ts` 扫描 `src/`、`public/` 和已存在的 `wasm/pyodide` 文本，禁止 `cdn.jsdelivr.net` 和 `cdn.pyodide.org`。
+- `tests/pyodide-no-remote.test.ts` 扫描 `src/`、`public/` 和已存在的 `wasm/pyodide` 文本，禁止 `cdn.jsdelivr.net`、`cdn.pyodide.org` 和 `d2l-data.s3-accelerate.amazonaws.com`。
 - `tests/docs-ascii.test.ts`、`tests/docs-length.test.ts` 把 `numpy` 和 `dl` 算进去。20 章下限仍只约束原来的十三本。
 - `tests/docs-smoke.mjs` 默认执行这两本书。
 - `tests/numpy-ui.spec.mjs` 检查侧栏文案、按钮底边进度条、换语言清终端，以及中英抽屉切换。

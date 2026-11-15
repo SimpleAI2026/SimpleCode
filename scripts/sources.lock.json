@@ -185,7 +185,7 @@
     }
   },
   "pyodide": {
-    "note": "Pyodide 314.0.7 and NumPy 2.4.6. The browser loads only wasm/pyodide/. vendor --pyodide downloads the pins. pyodide.mjs is rewritten to drop the jsDelivr default before it is saved; upstreamSha256 is the file before that rewrite. Fashion-MNIST subset is the first 5000 train rows and 1000 test rows, MIT, Zalando Research.",
+    "note": "Pyodide 314.0.7 and NumPy 2.4.6. The browser loads only wasm/pyodide/. vendor --pyodide downloads the pins. pyodide.mjs is rewritten to drop the jsDelivr default before it is saved; upstreamSha256 is the file before that rewrite. Fashion-MNIST subset is the first 32 train rows and 8 test rows, MIT, Zalando Research. house-tiny.csv and airfoil-tiny.csv are synthetic tables generated in vendor-pyodide.mjs, not the Kaggle house CSV or the UCI airfoil file.",
     "version": "314.0.7",
     "numpy": "2.4.6",
     "python": "3.14.2",
@@ -234,11 +234,11 @@
         "upstreamSha256": "a292c1f5d7d8a2208cd5e94fc467604c131cabcd2fc14fed6eefde121e7fabdf"
       },
       "fashion-mnist.bin": {
-        "bytes": 4710012,
-        "sha256": "84e3d972cfd3c3dcd7d72e58055e5084366d32d6acf3482d635be2f63e5001de",
+        "bytes": 31412,
+        "sha256": "c21131fd07df97e38bf030fd0310b3d71e52fa13f3c436f1a7af0c3822d70d70",
         "fashion": {
-          "train": 5000,
-          "test": 1000,
+          "train": 32,
+          "test": 8,
           "sources": [
             {
               "name": "train-images-idx3-ubyte.gz",
@@ -266,6 +266,16 @@
             }
           ]
         }
+      },
+      "house-tiny.csv": {
+        "bytes": 8598,
+        "sha256": "88501bf242aad53f6e7eee7b03e432807624a28ffea41c6448693f73629f7683",
+        "synthetic": "house"
+      },
+      "airfoil-tiny.csv": {
+        "bytes": 1956,
+        "sha256": "0edccb72f6f1bf601077c041c0b3e57d8bd9b1f0dcd3cc34f5cadb829fb892f8",
+        "synthetic": "airfoil"
       }
     }
   }

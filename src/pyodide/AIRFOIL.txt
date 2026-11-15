@@ -1,0 +1,6 @@
+Synthetic airfoil rows for SimpleCode.
+
+These 32 rows are not copied from the UCI airfoil self-noise file.
+That upstream file is not downloaded.
+Each row has five inputs and one sound-level column: freq, angle, chord, velocity, thickness, sound.
+Values come from a fixed generator in scripts/vendor-pyodide.mjs.

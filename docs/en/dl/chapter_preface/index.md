@@ -13,11 +13,11 @@ sources:
 updated: "2026-11-13"
 ---
 
-The DeepLearning notes in the sidebar are rearranged from this page onward, following a public table of contents. The full list has one hundred thirty-nine sections. This phase writes only the four opening sections. Sentences, strings, and comments are new.
+The DeepLearning notes in the sidebar are rearranged from this page onward, following a public table of contents. The full list has one hundred thirty-nine sections. After the four openers, preliminaries, linear models, multilayer perceptrons, and optimization are written. Sentences, strings, and comments are new.
 
 ### How the contents are ordered
 
-The renderer numbers each section from the table of contents, not from the spelling of the file name. The preface is chapter 0. Installation, notation, and the introduction follow as chapters 1, 2, and 3. Later topics stay on the same table and wait for their own phase, instead of keeping a second short course beside them.
+The renderer numbers each section from the table of contents, not from the spelling of the file name. The preface is chapter 0. Installation, notation, and the introduction follow as chapters 1, 2, and 3. Convolution, sequences, and the appendix stay on that table until a later phase, instead of keeping a second short course beside them.
 
 ### Where the sentences come from
 

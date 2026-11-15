@@ -54,7 +54,7 @@ Once a runtime is cached, the open tab can run that language with no further dow
 - Fourteen languages. Runtimes load lazily. The progress bar is `inset-x-0 bottom-0 h-0.5`, the full width of the button. The DeepLearning row is labeled Python (NumPy) and is not the WASI Python runtime.
 - Monaco. Body text is 14px; comments are 13px. An untouched sample switches only its comments when you toggle 中 / EN.
 - An xterm terminal. The toolbar and the documentation code blocks share one Run button.
-- Quick Starts: Chinese in `docs/<book>/`, English in `docs/en/<book>/`, same filenames. This build reports 1,042 chapters (521 each) and 3,218 runnable blocks (1,609 each). NumPy has 17 chapters and DeepLearning has 16. Their fences use the `numpy` language so they run on Pyodide.
+- Quick Starts: Chinese in `docs/<book>/`, English in `docs/en/<book>/`, same filenames. This build reports 1,096 chapters (548 each) and 3,270 runnable blocks (1,635 each). NumPy has 17 chapters and DeepLearning has 43. Their fences use the `numpy` language so they run on Pyodide.
 - LeetCode mode shares the drawer with Quick Start and does not cover Run. 820 problems: 270 Easy, 444 Medium, 106 Hard. Titles and statements exist in both languages. Each statement is rewritten from the public problem's title, difficulty, examples, and limits. Upstream wording is not stored. Problems without a solution still show the statement, and the sample can be run.
 - Solutions stay collapsed until 查看题解. The checked-in solutions are Python. Another downloaded language that can run problems shows “No solution for this language yet.” You can run the sample, or load a solution into the editor and run it.
 - JS and TS share one wasmedge-quickjs module. Sucrase loads only when TypeScript runs, strips types, and does not type-check.
@@ -78,7 +78,7 @@ Sizes match the sidebar. `formatMB` is bytes ÷ 1048576, one decimal. Byte count
 | Shell | wasi-sh | 0.1 MB (55,023) | Builtins and pipes. Use Linux for `ls` and `cd` |
 | Rust | weblings rustc (Cranelift) | 151.8 MB (159,184,722) | Same-origin files in `wasm/rust/`; the page does not fetch a remote compiler |
 | Java | TeaVM 0.16.0 javac | 6.6 MB (6,896,057) | Needs Wasm GC. Not OpenJDK. The only public class must be `Main` |
-| DeepLearning | Pyodide 314.0.7 + NumPy 2.4.6 | 20.2 MB (21,201,739) | Sidebar name is DeepLearning in both locales, version line Python (NumPy). Separate from WASI CPython. Includes a 4,710,012-byte Fashion-MNIST subset |
+| DeepLearning | Pyodide 314.0.7 + NumPy 2.4.6 | 15.8 MB (16,533,693) | Sidebar name is DeepLearning in both locales, version line Python (NumPy). Separate from WASI CPython. Fashion-MNIST is 32+8 images (31,412 bytes), plus synthetic house and airfoil tables |
 | Linux | v86 0.5.471, kernel 6.8.12, BusyBox 1.36.1 | 29.4 MB (30,804,135) | 64 MiB RAM. Includes the prebuilt `linux-state.zst` (18,201,083 bytes). A new snapshot changes that number |
 
 The Rust pair is `rustc.wasm` at 87,871,387 bytes and `sysroot-wasip1.bundle` at 71,313,335 bytes. The four Java files add up to 6,896,057 bytes.

@@ -1,5 +1,7 @@
 import minitorchSource from "./minitorch.py?raw";
 import fashionNote from "./FASHION.txt?raw";
+import houseNote from "./HOUSE.txt?raw";
+import airfoilNote from "./AIRFOIL.txt?raw";
 
 interface InitFile {
   name: string;
@@ -112,6 +114,14 @@ async function boot(message: InitMessage) {
   if (!fashion) throw new Error("fashion-mnist.bin missing");
   py.FS.writeFile("/data/fashion-mnist.bin", fashion);
   py.FS.writeFile("/data/FASHION.txt", fashionNote);
+  const house = files.get("house-tiny.csv");
+  if (!house) throw new Error("house-tiny.csv missing");
+  py.FS.writeFile("/data/house-tiny.csv", house);
+  py.FS.writeFile("/data/HOUSE.txt", houseNote);
+  const airfoil = files.get("airfoil-tiny.csv");
+  if (!airfoil) throw new Error("airfoil-tiny.csv missing");
+  py.FS.writeFile("/data/airfoil-tiny.csv", airfoil);
+  py.FS.writeFile("/data/AIRFOIL.txt", airfoilNote);
   postMessage({ type: "ready" });
 }
 

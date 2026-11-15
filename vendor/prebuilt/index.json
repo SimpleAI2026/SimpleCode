@@ -10,12 +10,12 @@
         {
           "name": "wasm-vendor-1.tar.gz.part-00",
           "bytes": 89000000,
-          "sha256": "706320ea8fe6abc3d8aa48cc9d409e720ae1ca8d3fee256f2a45939f6fcb0eec"
+          "sha256": "efef35a7f2a932280647371e0842384f547d6554ea6ba9a12167a476bc71096d"
         },
         {
           "name": "wasm-vendor-1.tar.gz.part-01",
-          "bytes": 7353466,
-          "sha256": "8e0b4e3137076a4ca2d12f438047335bb99186ae4cd30f3e93adc8adf020b465"
+          "bytes": 4753971,
+          "sha256": "c02b3fce74870883ee2f8e9269b1b2970d4cd885ce8a0baae463cc9f63b9f204"
         }
       ],
       "files": [
@@ -55,9 +55,19 @@
           "sha256": "68c96239a9b8095f21dd80af1714e5f270e4e08ef516821d90290da72d829a0e"
         },
         {
+          "path": "pyodide/airfoil-tiny.csv",
+          "bytes": 1956,
+          "sha256": "0edccb72f6f1bf601077c041c0b3e57d8bd9b1f0dcd3cc34f5cadb829fb892f8"
+        },
+        {
           "path": "pyodide/fashion-mnist.bin",
-          "bytes": 4710012,
-          "sha256": "84e3d972cfd3c3dcd7d72e58055e5084366d32d6acf3482d635be2f63e5001de"
+          "bytes": 31412,
+          "sha256": "c21131fd07df97e38bf030fd0310b3d71e52fa13f3c436f1a7af0c3822d70d70"
+        },
+        {
+          "path": "pyodide/house-tiny.csv",
+          "bytes": 8598,
+          "sha256": "88501bf242aad53f6e7eee7b03e432807624a28ffea41c6448693f73629f7683"
         },
         {
           "path": "pyodide/numpy-2.4.6-cp314-cp314-pyemscripten_2026_0_wasm32.whl",
