@@ -76,7 +76,12 @@ describe("d2l table of contents", () => {
     assert.equal(dlChapterNumber("chapter_preface/index.md"), 0);
     assert.equal(dlChapterNumber("chapter_introduction/index.md"), 3);
     assert.equal(dlChapterNumber("chapter_appendix-tools-for-deep-learning/d2l.md"), 138);
-    assert.equal(DL_LANDED_PHASE, 3);
+    assert.equal(DL_LANDED_PHASE, 4);
+    const phase4 = DL_TOC.filter((section) => section.phase === 4);
+    assert.equal(phase4.length, 22);
+    assert.equal(phase4.filter((section) => section.path.startsWith("chapter_convolutional-neural-networks/")).length, 7);
+    assert.equal(phase4.filter((section) => section.path.startsWith("chapter_convolutional-modern/")).length, 8);
+    assert.equal(phase4.filter((section) => section.path.startsWith("chapter_deep-learning-computation/")).length, 7);
     assert.equal(DL_SAMPLE_BUDGET_BYTES, 256 * 1024);
     const phase3 = DL_TOC.filter((section) => section.phase === 3);
     assert.equal(phase3.length, 39);
@@ -154,6 +159,25 @@ describe("d2l table of contents", () => {
       "chapter_optimization/lr-scheduler.md",
     ]);
     for (const path of DL_TOC.filter((section) => section.phase === 3).map((section) => section.path)) {
+      const text = readFileSync(join("docs/dl", path), "utf8");
+      const widths = [...text.matchAll(/\brange\((\d+)\)/g)].map((match) => Number(match[1]));
+      assert.ok(widths.every((width) => width <= 4), `${path} ${widths.join(",")}`);
+      if (train.has(path)) assert.ok(widths.includes(4), path);
+    }
+  });
+
+  it("keeps phase 4 training loops at four steps", () => {
+    const train = new Set([
+      "chapter_convolutional-neural-networks/lenet.md",
+      "chapter_convolutional-modern/alexnet.md",
+      "chapter_convolutional-modern/vgg.md",
+      "chapter_convolutional-modern/nin.md",
+      "chapter_convolutional-modern/googlenet.md",
+      "chapter_convolutional-modern/batch-norm.md",
+      "chapter_convolutional-modern/resnet.md",
+      "chapter_convolutional-modern/densenet.md",
+    ]);
+    for (const path of DL_TOC.filter((section) => section.phase === 4).map((section) => section.path)) {
       const text = readFileSync(join("docs/dl", path), "utf8");
       const widths = [...text.matchAll(/\brange\((\d+)\)/g)].map((match) => Number(match[1]));
       assert.ok(widths.every((width) => width <= 4), `${path} ${widths.join(",")}`);

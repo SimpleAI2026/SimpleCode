@@ -212,6 +212,121 @@ def test_fashion_steps():
     print(f"acc {acc:.3f}")
 
 
+def finite_map(value, apply):
+    base = value.data.copy()
+    analytic = None
+    eps = 1e-5
+    numeric = np.zeros_like(base)
+    for index in np.ndindex(base.shape):
+        value.data[index] = base[index] + eps
+        plus = apply()
+        value.data[index] = base[index] - eps
+        minus = apply()
+        value.data[index] = base[index]
+        numeric[index] = (plus - minus) / (2 * eps)
+    return numeric
+
+
+def test_conv_pool_norm():
+    x = mt.tensor(np.arange(9, dtype=np.float64).reshape(1, 1, 3, 3), requires_grad=True)
+    weight = mt.tensor(np.array([[[[0.0, 1.0], [2.0, 3.0]]]]), requires_grad=True)
+    bias = mt.tensor([0.0], requires_grad=True)
+    out = mt.conv2d(x, weight, bias)
+    check("corr", out.data.reshape(2, 2), [[19, 25], [37, 43]])
+    out.sum().backward()
+    numeric = finite_map(x, lambda: mt.conv2d(x, weight, bias).data.sum())
+    check("conv x", x.grad, numeric, tol=1e-4)
+    x.grad = None
+    weight.grad = None
+    bias.grad = None
+    again = mt.conv2d(x, weight, bias)
+    again.sum().backward()
+    numeric_w = finite_map(weight, lambda: mt.conv2d(x, weight, bias).data.sum())
+    check("conv w", weight.grad, numeric_w, tol=1e-4)
+    numeric_b = finite_map(bias, lambda: mt.conv2d(x, weight, bias).data.sum())
+    check("conv b", bias.grad, numeric_b, tol=1e-4)
+
+    padded = mt.nn.Conv2d(1, 1, 3, padding=1, stride=2, bias=False)
+    padded.weight.data[:] = 0
+    padded.weight.data[0, 0, 1, 1] = 1
+    image = mt.tensor(np.arange(16, dtype=np.float64).reshape(1, 1, 4, 4))
+    pooled = padded(image)
+    if pooled.shape != (1, 1, 2, 2):
+        raise SystemExit(f"stride shape {pooled.shape}")
+
+    grid = mt.tensor(np.arange(16, dtype=np.float64).reshape(1, 1, 4, 4), requires_grad=True)
+    pooled = mt.nn.MaxPool2d(2, stride=2)(grid)
+    check("maxpool", pooled.data.reshape(2, 2), [[5, 7], [13, 15]])
+    pooled.sum().backward()
+    numeric = finite_map(grid, lambda: mt.nn.MaxPool2d(2, stride=2)(grid).data.sum())
+    check("maxpool grad", grid.grad, numeric, tol=1e-4)
+
+    grid.grad = None
+    averaged = mt.nn.AvgPool2d(2, stride=2)(grid)
+    check("avgpool", averaged.data.reshape(2, 2), [[2.5, 4.5], [10.5, 12.5]])
+    averaged.sum().backward()
+    numeric = finite_map(grid, lambda: mt.nn.AvgPool2d(2, stride=2)(grid).data.sum())
+    check("avgpool grad", grid.grad, numeric, tol=1e-4)
+
+    raw = mt.tensor([[1.0, 2.0], [3.0, 4.0]], requires_grad=True)
+    norm = mt.nn.BatchNorm(2)
+    normed = norm(raw)
+    check("bn", normed.data, [[-1.0, -1.0], [1.0, 1.0]], tol=1e-4)
+    normed.sum().backward()
+    numeric = finite_map(raw, lambda: mt.nn.BatchNorm(2)(raw).data.sum())
+    # A fresh BatchNorm has gamma 1 and beta 0, matching the module after one forward's gamma.
+    check("bn x", raw.grad, numeric, tol=1e-4)
+
+    sig = mt.tensor([-2.0, 0.0, 2.0], requires_grad=True)
+    sig.sigmoid().sum().backward()
+    numeric = finite_map(sig, lambda: sig.sigmoid().data.sum())
+    check("sigmoid", sig.grad, numeric, tol=1e-4)
+
+    left = mt.tensor([[1.0, 2.0]], requires_grad=True)
+    right = mt.tensor([[3.0]], requires_grad=True)
+    joined = mt.cat([left, right], axis=1)
+    check("cat", joined.data, [[1.0, 2.0, 3.0]])
+    joined.sum().backward()
+    check("cat left", left.grad, [[1.0, 1.0]])
+    check("cat right", right.grad, [[1.0]])
+
+
+def test_lenet_seconds():
+    import time
+
+    np.random.seed(0)
+    root = Path(__file__).resolve().parents[1] / "wasm" / "pyodide"
+    images, labels, _, _ = mt.datasets.fashion_mnist(32, 8, path=str(root / "fashion-mnist.bin"))
+    net = mt.nn.Sequential(
+        mt.nn.Conv2d(1, 6, 5, padding=2),
+        mt.nn.Sigmoid(),
+        mt.nn.AvgPool2d(2, stride=2),
+        mt.nn.Conv2d(6, 16, 5),
+        mt.nn.Sigmoid(),
+        mt.nn.AvgPool2d(2, stride=2),
+        mt.nn.Flatten(),
+        mt.nn.Linear(400, 120),
+        mt.nn.Sigmoid(),
+        mt.nn.Linear(120, 84),
+        mt.nn.Sigmoid(),
+        mt.nn.Linear(84, 10),
+    )
+    opt = mt.optim.SGD(net.parameters(), lr=0.1)
+    started = time.perf_counter()
+    last = 0.0
+    for step in range(4):
+        opt.zero_grad()
+        batch = mt.datasets.scale_batch(images[step * 4 : (step + 1) * 4]).reshape(4, 1, 28, 28)
+        loss = cross_entropy(net(mt.tensor(batch)), labels[step * 4 : (step + 1) * 4])
+        loss.backward()
+        opt.step()
+        last = float(loss.data)
+    elapsed = time.perf_counter() - started
+    if not np.isfinite(last):
+        raise SystemExit("lenet loss is not finite")
+    print(f"lenet loss {last:.4f} seconds {elapsed:.3f}")
+
+
 if __name__ == "__main__":
     test_square()
     test_bias_broadcast()
@@ -222,4 +337,6 @@ if __name__ == "__main__":
     test_dropout_mask()
     test_optimizers()
     test_fashion_steps()
+    test_conv_pool_norm()
+    test_lenet_seconds()
     print("minitorch ok")
