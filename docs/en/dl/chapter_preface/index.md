@@ -13,11 +13,11 @@ sources:
 updated: "2026-11-16"
 ---
 
-The DeepLearning notes in the sidebar follow a public table of contents from this page onward. The full list has one hundred thirty-nine sections. After the four openers, preliminaries, linear models, multilayer perceptrons, optimization, computation, convolution, sequences, attention, computer vision, and language pretraining are written. Sentences and examples are new.
+The DeepLearning notes in the sidebar follow a public table of contents from this page onward. All one hundred thirty-nine sections are written, from the openers through performance and the appendix. Sentences and examples are new.
 
 ### How the contents are ordered
 
-The renderer numbers each section from the table of contents, not from the spelling of the file name. The preface is chapter 0. Installation, notation, and the introduction follow as chapters 1, 2, and 3. Computation, convolution, sequences, attention, computer vision, and language pretraining now have pages. The appendix stays for a later phase.
+The renderer numbers each section from the table of contents, not from the spelling of the file name. The preface is chapter 0. Installation, notation, and the introduction follow as chapters 1, 2, and 3. Computational performance and the appendix now have pages, so the public list has no empty slot.
 
 ### Where the sentences come from
 

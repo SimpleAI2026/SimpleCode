@@ -116,7 +116,11 @@ describe("d2l table of contents", () => {
     assert.equal(dlChapterNumber("chapter_preface/index.md"), 0);
     assert.equal(dlChapterNumber("chapter_introduction/index.md"), 3);
     assert.equal(dlChapterNumber("chapter_appendix-tools-for-deep-learning/d2l.md"), 138);
-    assert.equal(DL_LANDED_PHASE, 7);
+    assert.equal(DL_LANDED_PHASE, 8);
+    const phase8 = DL_TOC.filter((section) => section.phase === 8);
+    assert.equal(phase8.length, 15);
+    assert.equal(phase8.filter((section) => section.path.startsWith("chapter_computational-performance/")).length, 8);
+    assert.equal(phase8.filter((section) => section.path.startsWith("chapter_appendix-tools-for-deep-learning/")).length, 7);
     const phase7 = DL_TOC.filter((section) => section.phase === 7);
     assert.equal(phase7.length, 19);
     assert.equal(phase7.filter((section) => section.path.startsWith("chapter_natural-language-processing-pretraining/")).length, 11);
@@ -292,6 +296,15 @@ describe("d2l table of contents", () => {
       const widths = [...text.matchAll(/\brange\((\d+)\)/g)].map((match) => Number(match[1]));
       assert.ok(widths.every((width) => width <= 4), `${path} ${widths.join(",")}`);
       if (train.has(path)) assert.ok(widths.includes(4), path);
+    }
+  });
+
+  it("keeps phase 8 pages read-only", () => {
+    for (const path of DL_TOC.filter((section) => section.phase === 8).map((section) => section.path)) {
+      const text = readFileSync(join("docs/dl", path), "utf8");
+      assert.equal(text.includes("```numpy run"), false, path);
+      assert.ok((text.match(/```numpy norun/g) ?? []).length >= 2, path);
+      assert.equal(text.includes("range("), false, path);
     }
   });
 });
