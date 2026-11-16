@@ -116,7 +116,11 @@ describe("d2l table of contents", () => {
     assert.equal(dlChapterNumber("chapter_preface/index.md"), 0);
     assert.equal(dlChapterNumber("chapter_introduction/index.md"), 3);
     assert.equal(dlChapterNumber("chapter_appendix-tools-for-deep-learning/d2l.md"), 138);
-    assert.equal(DL_LANDED_PHASE, 6);
+    assert.equal(DL_LANDED_PHASE, 7);
+    const phase7 = DL_TOC.filter((section) => section.phase === 7);
+    assert.equal(phase7.length, 19);
+    assert.equal(phase7.filter((section) => section.path.startsWith("chapter_natural-language-processing-pretraining/")).length, 11);
+    assert.equal(phase7.filter((section) => section.path.startsWith("chapter_natural-language-processing-applications/")).length, 8);
     const phase6 = DL_TOC.filter((section) => section.phase === 6);
     assert.equal(phase6.length, 15);
     assert.equal(phase6.filter((section) => section.path.startsWith("chapter_computer-vision/")).length, 15);
@@ -264,6 +268,26 @@ describe("d2l table of contents", () => {
       "chapter_computer-vision/kaggle-dog.md",
     ]);
     for (const path of DL_TOC.filter((section) => section.phase === 6).map((section) => section.path)) {
+      const text = readFileSync(join("docs/dl", path), "utf8");
+      const widths = [...text.matchAll(/\brange\((\d+)\)/g)].map((match) => Number(match[1]));
+      assert.ok(widths.every((width) => width <= 4), `${path} ${widths.join(",")}`);
+      if (train.has(path)) assert.ok(widths.includes(4), path);
+    }
+  });
+
+  it("keeps phase 7 training loops at four steps", () => {
+    const train = new Set([
+      "chapter_natural-language-processing-pretraining/word2vec-pretraining.md",
+      "chapter_natural-language-processing-pretraining/glove.md",
+      "chapter_natural-language-processing-pretraining/similarity-analogy.md",
+      "chapter_natural-language-processing-pretraining/bert-pretraining.md",
+      "chapter_natural-language-processing-applications/sentiment-analysis-rnn.md",
+      "chapter_natural-language-processing-applications/sentiment-analysis-cnn.md",
+      "chapter_natural-language-processing-applications/natural-language-inference-attention.md",
+      "chapter_natural-language-processing-applications/finetuning-bert.md",
+      "chapter_natural-language-processing-applications/natural-language-inference-bert.md",
+    ]);
+    for (const path of DL_TOC.filter((section) => section.phase === 7).map((section) => section.path)) {
       const text = readFileSync(join("docs/dl", path), "utf8");
       const widths = [...text.matchAll(/\brange\((\d+)\)/g)].map((match) => Number(match[1]));
       assert.ok(widths.every((width) => width <= 4), `${path} ${widths.join(",")}`);
