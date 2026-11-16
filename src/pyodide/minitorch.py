@@ -485,6 +485,8 @@ def conv2d(x, weight, bias, stride=(1, 1), padding=(0, 0)):
     out = Tensor(np.transpose(out_nhwc, (0, 3, 1, 2)), need, prev)
 
     def backward():
+        if out.grad is None:
+            return
         grad_nhwc = np.transpose(out.grad, (0, 2, 3, 1))
         if weight.requires_grad:
             dw = grad_nhwc.reshape(-1, cout).T @ cols.reshape(-1, cols.shape[-1])
@@ -581,6 +583,244 @@ class AvgPool2d(Module):
 
     def forward(self, x):
         return _pool2d(x, self.kernel, self.stride, self.padding, "avg")
+
+
+def conv_transpose2d(x, weight, bias, stride=(1, 1), padding=(0, 0)):
+    """Paint each input pixel with a kernel. Weight is (in, out, kH, kW)."""
+    x = _as_tensor(x)
+    weight = _as_tensor(weight)
+    bias_t = None if bias is None else _as_tensor(bias)
+    sh, sw = int(stride[0]), int(stride[1])
+    ph, pw = int(padding[0]), int(padding[1])
+    n, cin, height, width = x.data.shape
+    cin_w, cout, kh, kw = weight.data.shape
+    if cin_w != cin:
+        raise ValueError("transpose conv channel mismatch")
+    out_h = (height - 1) * sh + kh - 2 * ph
+    out_w = (width - 1) * sw + kw - 2 * pw
+    if out_h < 1 or out_w < 1:
+        raise ValueError("transpose convolution output is empty")
+    full_h = out_h + 2 * ph
+    full_w = out_w + 2 * pw
+    acc = np.zeros((n, cout, full_h, full_w), dtype=np.float64)
+    for ky in range(kh):
+        for kx in range(kw):
+            patch = np.einsum("nchw,co->nohw", x.data, weight.data[:, :, ky, kx])
+            ys = ky + np.arange(height) * sh
+            xs = kx + np.arange(width) * sw
+            for row, y in enumerate(ys):
+                acc[:, :, y, xs] += patch[:, :, row, :]
+    out_data = acc[:, :, ph : ph + out_h, pw : pw + out_w]
+    if bias_t is not None:
+        out_data = out_data + bias_t.data.reshape(1, -1, 1, 1)
+    need = x.requires_grad or weight.requires_grad or (bias_t is not None and bias_t.requires_grad)
+    prev = (x, weight) if bias_t is None else (x, weight, bias_t)
+    out = Tensor(out_data, need, prev)
+
+    def backward():
+        if out.grad is None:
+            return
+        dout = np.zeros((n, cout, full_h, full_w), dtype=np.float64)
+        dout[:, :, ph : ph + out_h, pw : pw + out_w] = out.grad
+        if x.requires_grad:
+            dx = np.zeros_like(x.data)
+        else:
+            dx = None
+        if weight.requires_grad:
+            dw = np.zeros_like(weight.data)
+        else:
+            dw = None
+        for ky in range(kh):
+            for kx in range(kw):
+                gathered = np.zeros((n, cout, height, width), dtype=np.float64)
+                ys = ky + np.arange(height) * sh
+                xs = kx + np.arange(width) * sw
+                for row, y in enumerate(ys):
+                    gathered[:, :, row, :] = dout[:, :, y, xs]
+                if dx is not None:
+                    dx += np.einsum("nohw,co->nchw", gathered, weight.data[:, :, ky, kx])
+                if dw is not None:
+                    dw[:, :, ky, kx] += np.einsum("nchw,nohw->co", x.data, gathered)
+        if dx is not None:
+            x.grad = _acc(x.grad, dx)
+        if dw is not None:
+            weight.grad = _acc(weight.grad, dw)
+        if bias_t is not None and bias_t.requires_grad:
+            bias_t.grad = _acc(bias_t.grad, out.grad.sum(axis=(0, 2, 3)))
+
+    out._backward = backward
+    return out
+
+
+class ConvTranspose2d(Module):
+    def __init__(self, in_channels, out_channels, kernel_size, stride=1, padding=0, bias=True):
+        self.stride = _pair(stride)
+        self.padding = _pair(padding)
+        kh, kw = _pair(kernel_size)
+        limit = 1.0 / np.sqrt(in_channels * kh * kw)
+        self.weight = Tensor(
+            np.random.uniform(-limit, limit, (in_channels, out_channels, kh, kw)),
+            requires_grad=True,
+        )
+        self.bias = Tensor(np.zeros(out_channels), requires_grad=True) if bias else None
+
+    def forward(self, x):
+        return conv_transpose2d(x, self.weight, self.bias, self.stride, self.padding)
+
+
+def upsample_bilinear(x, size):
+    """Resize NCHW with bilinear weights. size is (out_h, out_w)."""
+    x = _as_tensor(x)
+    n, channels, height, width = x.data.shape
+    out_h, out_w = int(size[0]), int(size[1])
+    y = (np.arange(out_h, dtype=np.float64) + 0.5) * (height / float(out_h)) - 0.5
+    xcoord = (np.arange(out_w, dtype=np.float64) + 0.5) * (width / float(out_w)) - 0.5
+    y0 = np.floor(y).astype(np.int64)
+    x0 = np.floor(xcoord).astype(np.int64)
+    y1 = y0 + 1
+    x1 = x0 + 1
+
+    def inside(idx, limit):
+        return (idx >= 0) & (idx < limit)
+
+    y0c = np.clip(y0, 0, height - 1)
+    y1c = np.clip(y1, 0, height - 1)
+    x0c = np.clip(x0, 0, width - 1)
+    x1c = np.clip(x1, 0, width - 1)
+    wy1 = (y - y0) * inside(y1, height)
+    wy0 = (1.0 - (y - y0)) * inside(y0, height)
+    wx1 = (xcoord - x0) * inside(x1, width)
+    wx0 = (1.0 - (xcoord - x0)) * inside(x0, width)
+    src = x.data
+    top = src[:, :, y0c, :]
+    bot = src[:, :, y1c, :]
+    Ia = top[:, :, :, x0c]
+    Ib = top[:, :, :, x1c]
+    Ic = bot[:, :, :, x0c]
+    Id = bot[:, :, :, x1c]
+    wa = wy0[:, None] * wx0[None, :]
+    wb = wy0[:, None] * wx1[None, :]
+    wc = wy1[:, None] * wx0[None, :]
+    wd = wy1[:, None] * wx1[None, :]
+    out = Tensor(Ia * wa + Ib * wb + Ic * wc + Id * wd, x.requires_grad, (x,))
+
+    def backward():
+        if out.grad is None or not x.requires_grad:
+            return
+        grad = np.zeros_like(src)
+        g = out.grad
+        np.add.at(grad, (slice(None), slice(None), y0c[:, None], x0c[None, :]), g * wa)
+        np.add.at(grad, (slice(None), slice(None), y0c[:, None], x1c[None, :]), g * wb)
+        np.add.at(grad, (slice(None), slice(None), y1c[:, None], x0c[None, :]), g * wc)
+        np.add.at(grad, (slice(None), slice(None), y1c[:, None], x1c[None, :]), g * wd)
+        x.grad = _acc(x.grad, grad)
+
+    out._backward = backward
+    return out
+
+
+def roi_pool(features, boxes, output_size=2):
+    """Max-pool each box into a fixed grid. boxes are (index, x1, y1, x2, y2)."""
+    features = _as_tensor(features)
+    boxes = np.asarray(boxes, dtype=np.float64)
+    oh, ow = _pair(output_size)
+    n, channels, height, width = features.data.shape
+    count = int(boxes.shape[0])
+    out_data = np.zeros((count, channels, oh, ow), dtype=np.float64)
+    pick_y = np.zeros((count, channels, oh, ow), dtype=np.int64)
+    pick_x = np.zeros((count, channels, oh, ow), dtype=np.int64)
+    pick_b = np.zeros(count, dtype=np.int64)
+    data = features.data
+    for i in range(count):
+        batch = int(boxes[i, 0])
+        pick_b[i] = batch
+        x1 = float(np.clip(boxes[i, 1], 0, width - 1))
+        y1 = float(np.clip(boxes[i, 2], 0, height - 1))
+        x2 = float(np.clip(boxes[i, 3], x1 + 1.0, width))
+        y2 = float(np.clip(boxes[i, 4], y1 + 1.0, height))
+        bin_w = max(x2 - x1, 1.0) / float(ow)
+        bin_h = max(y2 - y1, 1.0) / float(oh)
+        for by in range(oh):
+            y_start = max(0, int(np.floor(y1 + by * bin_h)))
+            y_end = min(height, max(y_start + 1, int(np.ceil(y1 + (by + 1) * bin_h))))
+            for bx in range(ow):
+                x_start = max(0, int(np.floor(x1 + bx * bin_w)))
+                x_end = min(width, max(x_start + 1, int(np.ceil(x1 + (bx + 1) * bin_w))))
+                patch = data[batch, :, y_start:y_end, x_start:x_end]
+                local_w = x_end - x_start
+                flat = patch.reshape(channels, -1)
+                choice = flat.argmax(axis=1)
+                out_data[i, :, by, bx] = flat[np.arange(channels), choice]
+                pick_y[i, :, by, bx] = y_start + choice // local_w
+                pick_x[i, :, by, bx] = x_start + choice % local_w
+    out = Tensor(out_data, features.requires_grad, (features,))
+
+    def backward():
+        if out.grad is None or not features.requires_grad:
+            return
+        grad = np.zeros_like(data)
+        channels = data.shape[1]
+        channel = np.arange(channels)
+        for i in range(count):
+            for by in range(oh):
+                for bx in range(ow):
+                    grad[pick_b[i], channel, pick_y[i, :, by, bx], pick_x[i, :, by, bx]] += out.grad[i, :, by, bx]
+        features.grad = _acc(features.grad, grad)
+
+    out._backward = backward
+    return out
+
+
+def box_iou(boxes_a, boxes_b):
+    """Intersection over union. Each box is x1, y1, x2, y2."""
+    left = np.asarray(boxes_a, dtype=np.float64).reshape(-1, 4)
+    right = np.asarray(boxes_b, dtype=np.float64).reshape(-1, 4)
+    tl = np.maximum(left[:, None, :2], right[None, :, :2])
+    br = np.minimum(left[:, None, 2:], right[None, :, 2:])
+    wh = np.maximum(br - tl, 0.0)
+    inter = wh[:, :, 0] * wh[:, :, 1]
+    area_l = np.maximum(left[:, 2] - left[:, 0], 0.0) * np.maximum(left[:, 3] - left[:, 1], 0.0)
+    area_r = np.maximum(right[:, 2] - right[:, 0], 0.0) * np.maximum(right[:, 3] - right[:, 1], 0.0)
+    union = area_l[:, None] + area_r[None, :] - inter
+    return inter / np.maximum(union, 1e-12)
+
+
+def multibox_prior(height, width, sizes, ratios):
+    """One anchor list in unit coordinates. size 0 pairs with every ratio."""
+    sizes = [float(item) for item in sizes]
+    ratios = [float(item) for item in ratios]
+    pairs = [(sizes[0], ratio) for ratio in ratios]
+    for size in sizes[1:]:
+        pairs.append((size, 1.0))
+    cy = (np.arange(int(height), dtype=np.float64) + 0.5) / float(height)
+    cx = (np.arange(int(width), dtype=np.float64) + 0.5) / float(width)
+    anchors = np.empty((height * width * len(pairs), 4), dtype=np.float64)
+    cursor = 0
+    for y in cy:
+        for x in cx:
+            for size, ratio in pairs:
+                bw = size * np.sqrt(ratio)
+                bh = size / np.sqrt(ratio)
+                anchors[cursor] = (x - bw / 2.0, y - bh / 2.0, x + bw / 2.0, y + bh / 2.0)
+                cursor += 1
+    return anchors
+
+
+def nms(boxes, scores, threshold):
+    """Greedy suppression. Returns kept indexes, highest score first."""
+    boxes = np.asarray(boxes, dtype=np.float64).reshape(-1, 4)
+    scores = np.asarray(scores, dtype=np.float64).reshape(-1)
+    order = scores.argsort()[::-1]
+    kept = []
+    while order.size:
+        current = int(order[0])
+        kept.append(current)
+        if order.size == 1:
+            break
+        rest = order[1:]
+        overlap = box_iou(boxes[current : current + 1], boxes[rest]).reshape(-1)
+        order = rest[overlap <= float(threshold)]
+    return np.asarray(kept, dtype=np.int64)
 
 
 class Flatten(Module):
@@ -1086,6 +1326,7 @@ class _NN:
     Conv2d = Conv2d
     MaxPool2d = MaxPool2d
     AvgPool2d = AvgPool2d
+    ConvTranspose2d = ConvTranspose2d
     Flatten = Flatten
     BatchNorm = BatchNorm
     Embedding = Embedding
@@ -1197,6 +1438,53 @@ def translation_pairs(path="/data/fra-eng.txt"):
     return rows[:16], rows[16:24]
 
 
+def _toy_images(count, size, channels, seed):
+    rng = np.random.RandomState(int(seed))
+    return rng.randint(0, 256, size=(int(count), int(channels), int(size), int(size))).astype(np.uint8)
+
+
+def finetune_images():
+    """8 synthetic 32x32 images, two classes, 4 train and 4 check. Not hotdog.zip."""
+    images = _toy_images(8, 32, 1, 20261116)
+    labels = np.array([0, 0, 0, 0, 1, 1, 1, 1], dtype=np.int64)
+    return images[:4], labels[:4], images[4:], labels[4:]
+
+
+def detect_images():
+    """8 train and 2 check images, each with one box. Not the banana archive."""
+    images = _toy_images(10, 32, 1, 20261117)
+    boxes = np.zeros((10, 4), dtype=np.float64)
+    labels = np.zeros(10, dtype=np.int64)
+    for i in range(10):
+        x1 = 4 + (i % 5)
+        y1 = 6
+        boxes[i] = (x1, y1, x1 + 12, y1 + 10)
+        labels[i] = i % 2
+    return images[:8], boxes[:8], labels[:8], images[8:], boxes[8:], labels[8:]
+
+
+def segment_images():
+    """4 images and matching label maps. Not Pascal VOC."""
+    images = _toy_images(4, 32, 1, 20261118)
+    masks = np.zeros((4, 32, 32), dtype=np.int64)
+    masks[:, 8:24, 8:24] = 1
+    return images, masks
+
+
+def cifar_images():
+    """16 train and 4 check RGB images, 4 labels. Not the CIFAR zip."""
+    images = _toy_images(20, 32, 3, 20261119)
+    labels = np.arange(20, dtype=np.int64) % 4
+    return images[:16], labels[:16], images[16:], labels[16:]
+
+
+def dog_images():
+    """8 train and 2 check RGB images, 2 breeds. Not the breed archive."""
+    images = _toy_images(10, 32, 3, 20261120)
+    labels = np.arange(10, dtype=np.int64) % 2
+    return images[:8], labels[:8], images[8:], labels[8:]
+
+
 class _Datasets:
     fashion_mnist = staticmethod(fashion_mnist)
     scale_batch = staticmethod(scale_batch)
@@ -1204,6 +1492,11 @@ class _Datasets:
     airfoil = staticmethod(airfoil)
     time_machine = staticmethod(time_machine)
     translation_pairs = staticmethod(translation_pairs)
+    finetune_images = staticmethod(finetune_images)
+    detect_images = staticmethod(detect_images)
+    segment_images = staticmethod(segment_images)
+    cifar_images = staticmethod(cifar_images)
+    dog_images = staticmethod(dog_images)
 
 
 nn = _NN()

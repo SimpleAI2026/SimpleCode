@@ -366,6 +366,49 @@ def test_text_samples():
             raise SystemExit(f"pair width {eng} | {fra}")
 
 
+def test_vision_ops():
+    np.random.seed(0)
+    x = Tensor(np.random.randn(2, 1, 3, 3), requires_grad=True)
+    layer = mt.nn.ConvTranspose2d(1, 2, 2, stride=1, padding=0)
+    finite("deconv x", lambda: layer(x).sum(), [x])
+    finite("deconv w", lambda: layer(x).sum(), [layer.weight, layer.bias])
+    y = layer(x)
+    check("deconv shape", np.array(y.shape), np.array([2, 2, 4, 4]))
+
+    small = Tensor(np.arange(8, dtype=np.float64).reshape(1, 1, 2, 4), requires_grad=True)
+    finite("bilinear", lambda: mt.upsample_bilinear(small, (4, 8)).sum(), [small])
+
+    feat = Tensor(np.random.randn(1, 2, 6, 6), requires_grad=True)
+    boxes = np.array([[0, 0, 0, 4, 4], [0, 2, 1, 6, 5]], dtype=np.float64)
+    finite("roi", lambda: mt.roi_pool(feat, boxes, 2).sum(), [feat])
+
+    iou = mt.box_iou([[0, 0, 2, 2]], [[0, 0, 2, 2], [1, 1, 3, 3]])
+    check("iou self", iou[0, 0], 1.0)
+    check("iou overlap", iou[0, 1], 1.0 / 7.0, tol=1e-8)
+    anchors = mt.multibox_prior(2, 2, [0.5], [1.0, 2.0])
+    check("anchor count", np.array([anchors.shape[0]]), np.array([8]))
+    kept = mt.nms([[0, 0, 2, 2], [0.1, 0.1, 2.1, 2.1], [5, 5, 6, 6]], [0.2, 0.9, 0.4], 0.5)
+    check("nms", kept, np.array([1, 2]))
+
+    train_x, train_y, val_x, val_y = mt.datasets.finetune_images()
+    if train_x.shape != (4, 1, 32, 32) or val_x.shape[0] != 4:
+        raise SystemExit(f"finetune {train_x.shape}")
+    det_x, det_box, _, _, _, _ = mt.datasets.detect_images()
+    if det_x.shape != (8, 1, 32, 32) or det_box.shape != (8, 4):
+        raise SystemExit("detect shape")
+    seg_x, seg_y = mt.datasets.segment_images()
+    if seg_x.shape != (4, 1, 32, 32) or seg_y.shape != (4, 32, 32):
+        raise SystemExit("segment shape")
+    cifar_x, cifar_y, cifar_vx, _ = mt.datasets.cifar_images()
+    if cifar_x.shape != (16, 3, 32, 32) or cifar_vx.shape[0] != 4:
+        raise SystemExit("cifar shape")
+    dog_x, dog_y, dog_vx, _ = mt.datasets.dog_images()
+    if dog_x.shape != (8, 3, 32, 32) or dog_vx.shape[0] != 2:
+        raise SystemExit("dog shape")
+    if int(train_y.sum() + val_y.sum() + cifar_y.sum() + dog_y.sum()) < 0:
+        raise SystemExit("labels")
+
+
 def test_lenet_seconds():
     import time
 
@@ -415,5 +458,6 @@ if __name__ == "__main__":
     test_conv_pool_norm()
     test_sequence_attention()
     test_text_samples()
+    test_vision_ops()
     test_lenet_seconds()
     print("minitorch ok")

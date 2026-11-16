@@ -116,7 +116,10 @@ describe("d2l table of contents", () => {
     assert.equal(dlChapterNumber("chapter_preface/index.md"), 0);
     assert.equal(dlChapterNumber("chapter_introduction/index.md"), 3);
     assert.equal(dlChapterNumber("chapter_appendix-tools-for-deep-learning/d2l.md"), 138);
-    assert.equal(DL_LANDED_PHASE, 5);
+    assert.equal(DL_LANDED_PHASE, 6);
+    const phase6 = DL_TOC.filter((section) => section.phase === 6);
+    assert.equal(phase6.length, 15);
+    assert.equal(phase6.filter((section) => section.path.startsWith("chapter_computer-vision/")).length, 15);
     const phase5 = DL_TOC.filter((section) => section.phase === 5);
     assert.equal(phase5.length, 25);
     assert.equal(phase5.filter((section) => section.path.startsWith("chapter_recurrent-neural-networks/")).length, 8);
@@ -243,6 +246,24 @@ describe("d2l table of contents", () => {
       "chapter_attention-mechanisms/transformer.md",
     ]);
     for (const path of DL_TOC.filter((section) => section.phase === 5).map((section) => section.path)) {
+      const text = readFileSync(join("docs/dl", path), "utf8");
+      const widths = [...text.matchAll(/\brange\((\d+)\)/g)].map((match) => Number(match[1]));
+      assert.ok(widths.every((width) => width <= 4), `${path} ${widths.join(",")}`);
+      if (train.has(path)) assert.ok(widths.includes(4), path);
+    }
+  });
+
+  it("keeps phase 6 training loops at four steps", () => {
+    const train = new Set([
+      "chapter_computer-vision/fine-tuning.md",
+      "chapter_computer-vision/ssd.md",
+      "chapter_computer-vision/rcnn.md",
+      "chapter_computer-vision/fcn.md",
+      "chapter_computer-vision/neural-style.md",
+      "chapter_computer-vision/kaggle-cifar10.md",
+      "chapter_computer-vision/kaggle-dog.md",
+    ]);
+    for (const path of DL_TOC.filter((section) => section.phase === 6).map((section) => section.path)) {
       const text = readFileSync(join("docs/dl", path), "utf8");
       const widths = [...text.matchAll(/\brange\((\d+)\)/g)].map((match) => Number(match[1]));
       assert.ok(widths.every((width) => width <= 4), `${path} ${widths.join(",")}`);
