@@ -562,6 +562,8 @@ docs/en/dl/chapter_linear-networks/linear-regression-scratch.md
 
 阶段 3 换掉大的 Fashion 子集之后，侧栏停在约 16.0 MB。后面各阶段加起来不超过 256 KB 数据，不再把这一行推回 20 MB 以上。
 
+阶段 8 落地后 `DL_LANDED_PHASE` 为 8。计算性能八节和附录七节都是只读，抽屉里是这 139 节。没有新的 wasm 文件，侧栏体积仍是 15.8 MB。
+
 ---
 
 ## 10. 风险与验收
