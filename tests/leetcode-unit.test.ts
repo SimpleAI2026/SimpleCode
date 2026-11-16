@@ -92,7 +92,7 @@ describe("leetcode catalog", () => {
     assert.ok(match, "LEETCODE_RUNTIMES");
     const ids = [...match[1].matchAll(/"([^"]+)"/g)].map((item) => item[1]);
     assert.deepEqual(ids, ["python", "ruby", "quickjs", "clang", "clangpp", "lua", "go", "rust", "java"]);
-    for (const hidden of ["sqlite", "php-cgi", "shell", "linux", "numpy"]) {
+    for (const hidden of ["sqlite", "php-cgi", "shell", "linux", "numpy", "np"]) {
       assert.equal(ids.includes(hidden), false, hidden);
     }
   });

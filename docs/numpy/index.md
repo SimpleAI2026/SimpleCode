@@ -12,7 +12,7 @@ sources:
 updated: "2026-10-20"
 ---
 
-这一册讲数组，不重复语法入门。侧栏里的深度学习用的是 Pyodide 里的 CPython 3.14 加 NumPy，和另一行 WASI 版 Python 不是同一个解释器。点 Run 只执行眼前这一段。
+这一册讲数组，不重复语法入门。侧栏 NumPy 用 Pyodide 里的 CPython 3.14 加 NumPy，和旁边的 DeepLearning 共用 Worker 与缓存，并和 WASI 版 Python 分开。点 Run 只执行眼前这一段。
 
 ### 先做一个数组
 
@@ -41,7 +41,7 @@ print(n * 4)
 
 ### 和另一门 Python 分开
 
-WASI 那份 CPython 没有装 NumPy，导入会失败。写数组示例时留在这一行，不要切回普通 Python。教学库 minitorch 也只预装在这里。
+WASI 那份 CPython 没有装 NumPy，导入会失败。写数组示例时留在 NumPy 这一行。minitorch 写在共享的 Pyodide 文件系统里，DeepLearning 用的也是这一份。
 ### 第 11 章以后
 
 通用函数、布尔索引、花式索引、排序查找、einsum、结构化数组和向量化接在副本这一章后面。计时会抖动，所以向量化一章只核对结果，不比速度。

@@ -1,4 +1,4 @@
-export type RuntimeId = "python" | "ruby" | "quickjs" | "sqlite" | "clang" | "clangpp" | "php-cgi" | "lua" | "go" | "shell" | "rust" | "java" | "linux" | "numpy";
+export type RuntimeId = "python" | "ruby" | "quickjs" | "sqlite" | "clang" | "clangpp" | "php-cgi" | "lua" | "go" | "shell" | "rust" | "java" | "linux" | "numpy" | "np";
 
 export type DocLang =
   | "python"
@@ -76,6 +76,7 @@ export const RUNTIME_TO_BOOK: Record<RuntimeId, BookId> = {
   java: "java",
   linux: "linux",
   numpy: "dl",
+  np: "numpy",
 };
 
 export const BOOK_TO_RUNTIME: Record<BookId, RuntimeId> = {
@@ -92,14 +93,36 @@ export const BOOK_TO_RUNTIME: Record<BookId, RuntimeId> = {
   rust: "rust",
   java: "java",
   linux: "linux",
-  numpy: "numpy",
+  numpy: "np",
   dl: "numpy",
 };
 
-/** The Pyodide runtime hosts two Quick Starts. The sidebar opens the deep learning book. */
+/** One book per Pyodide sidebar row. The drawer does not switch between them. */
 export const RUNTIME_BOOKS: Partial<Record<RuntimeId, readonly BookId[]>> = {
-  numpy: ["dl", "numpy"],
+  numpy: ["dl"],
+  np: ["numpy"],
 };
+
+const PYODIDE_RUNTIMES = new Set<RuntimeId>(["numpy", "np"]);
+
+export function isPyodideRuntime(id: string): id is "numpy" | "np" {
+  return PYODIDE_RUNTIMES.has(id as RuntimeId);
+}
+
+/**
+ * Fence language `numpy` / `np` names the Pyodide engine. A tutorial block runs
+ * on the sidebar row that owns its book, so NumPy stays on `np` and d2l stays
+ * on `numpy`. Without a book, the fence still selects the DeepLearning row.
+ */
+export function runtimeForFence(lang: string, book?: string): RuntimeId | undefined {
+  const fromFence = resolveRuntime(lang);
+  if (!fromFence) return undefined;
+  if (book && isBookId(book)) {
+    const fromBook = BOOK_TO_RUNTIME[book];
+    if (isPyodideRuntime(fromFence) && isPyodideRuntime(fromBook)) return fromBook;
+  }
+  return fromFence;
+}
 
 export const BOOK_LABEL: Record<BookId, string> = {
   python: "Python",
@@ -140,6 +163,7 @@ const RUNTIME_LABEL: Record<RuntimeId, string> = {
   java: "Java",
   linux: "Linux",
   numpy: "Python (NumPy)",
+  np: "NumPy",
 };
 
 export function resolveRuntime(lang: string): RuntimeId | undefined {

@@ -111,11 +111,19 @@ export const useLanguageStore = defineStore("language", () => {
     if (selected.value) void ensure(selected.value.id);
   }
 
-  function releaseRuntime(prev: string) {
+  function compilerOf(id: string) {
+    return manifest.value?.languages.find((lang) => lang.id === id)?.compiler;
+  }
+
+  function releaseRuntime(prev: string, next = "") {
+    const sharePyodide = compilerOf(prev) === "pyodide" && compilerOf(next) === "pyodide";
     useRunStore().abandon();
     cancelRustCompile();
     cancelJavaRun();
-    cancelPyodide();
+    // DeepLearning and NumPy share one worker. An in-flight run still kills it
+    // inside abandon(), because runPython cannot be interrupted. An idle switch
+    // keeps the booted engine and the Cache API entries.
+    if (!sharePyodide) cancelPyodide();
     for (const [cid, ctrl] of [...controllers]) {
       invalidate(cid);
       ctrl.abort();
@@ -132,7 +140,7 @@ export const useLanguageStore = defineStore("language", () => {
 
   async function select(id: string, origin: "user" | "doc" = "user") {
     const prev = selectedId.value;
-    if (prev !== id) releaseRuntime(prev);
+    if (prev !== id) releaseRuntime(prev, id);
     selectionOrigin.value = origin;
     selectedId.value = id;
     localStorage.setItem(SELECTED_KEY, id);

@@ -214,14 +214,18 @@ printf '%s\\n' first second | grep second
   ),
 };
 
+function sampleRecord(id: string) {
+  return sampleLocales[id] ?? (id === "np" ? sampleLocales.numpy : undefined);
+}
+
 export function sampleFor(id: string, locale: "zh" | "en"): string {
-  const sample = sampleLocales[id];
+  const sample = sampleRecord(id);
   if (!sample) return "";
   return locale === "en" ? sample.en : sample.zh;
 }
 
 export function isUntouchedSample(id: string, code: string): boolean {
-  const sample = sampleLocales[id];
+  const sample = sampleRecord(id);
   if (!sample) return false;
   return code === sample.zh || code === sample.en;
 }

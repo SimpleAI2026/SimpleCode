@@ -272,3 +272,15 @@
 2. 锁版本、vendor、Worker、侧栏和 `minitorch.py`。
 3. 中英两本书、README 体积、许可证和预构建包。
 4. 单测、文档冒烟、无远端检查、UI 检查，以及 Playwright 静态截图（侧栏进度、NumPy 教程、训练输出、英文界面）。截图放在构建产物目录，不放进 `docs/`。
+
+## 12. 侧栏拆出 NumPy
+
+第 11.2 节把 NumPy 书和 d2l 书放在同一行的抽屉里切换。这一节把 NumPy 拆成旁边的另一行。书的文件不搬，Pyodide 不复制。
+
+- 新语言 id 是 `np`，短标签 `Np`，中英文界面都写 `NumPy`。它紧挨原来的 DeepLearning（id 仍是 `numpy`，短标签 `DL`，版本行仍是 `Python (NumPy)`）。
+- `docs/numpy/` 与 `docs/en/numpy/` 保持原文件名。`RUNTIME_TO_BOOK.np` 是 `numpy`，`RUNTIME_TO_BOOK.numpy` 是 `dl`。`RUNTIME_BOOKS` 每行只有一本，抽屉里不再有 `docs-book-dl` / `docs-book-numpy`。DeepLearning 只打开 d2l。
+- 两行的 `assets` 指向同一份 `pyodideAssets`。磁盘、`wasm/manifest.json` 和 Cache API `simplecode-wasm-v1` 都没有第二份 Pyodide，也没有新的下载。冷缓存时两行都显示 15.8 MB（阶段 5 之后是 16,536,901 字节）。任一行下完，另一行的资产已经在内存里，状态变成已就绪。
+- Worker 仍是 `src/pyodide/run.ts` 的单例。两行互相切换时，如果没有正在执行的程序，就不调用 `cancelPyodide()`。正在跑的程序仍会停掉 Worker，因为 `runPython` 不能中途打断。minitorch 和三份小数据集继续在这份 Worker 启动时写入：NumPy 教程用不到它们，但拆成两套启动会让先打开 NumPy、再打开 DeepLearning 时缺文件。所以保持一次启动装齐。
+- 围栏语言 `numpy` / `np` 在没有书上下文时仍解析到运行时 `numpy`，文档冒烟因此继续选 DeepLearning 那一行。抽屉里的 Run 走 `runtimeForFence`：NumPy 书选 `np`，d2l 书选 `numpy`。
+- `np` 不进入 `LEETCODE_RUNTIMES`。这一行没有 LeetCode 按钮，和 SQLite、Linux 一样。
+- 相对拆分前，站点要下载的字节数不变。

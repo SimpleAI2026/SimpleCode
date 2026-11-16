@@ -4,7 +4,7 @@ import { createHighlighter } from "shiki";
 import { shouldBackup } from "../src/docs/backup.ts";
 import { chapterId, chapterSlug, englishGap } from "../src/docs/edition.ts";
 import { parseFenceInfo } from "../src/docs/fence.ts";
-import { DOC_LANG_TO_RUNTIME, resolveRuntime } from "../src/docs/runtime.ts";
+import { DOC_LANG_TO_RUNTIME, resolveRuntime, runtimeForFence } from "../src/docs/runtime.ts";
 import { collapseShikiLines } from "../src/docs/text.ts";
 import { highlight } from "../scripts/docs/render.ts";
 import { darkTheme, lightTheme } from "../scripts/docs/themes.ts";
@@ -86,6 +86,9 @@ describe("resolveRuntime", () => {
     assert.equal(resolveRuntime("zig"), undefined);
     assert.equal(resolveRuntime(""), undefined);
     assert.equal(Object.keys(DOC_LANG_TO_RUNTIME).length, cases.length);
+    assert.equal(runtimeForFence("numpy", "numpy"), "np");
+    assert.equal(runtimeForFence("numpy", "dl"), "numpy");
+    assert.equal(runtimeForFence("python", "numpy"), "python");
   });
 });
 

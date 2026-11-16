@@ -38,4 +38,10 @@ describe("default samples", () => {
       assert.equal(isUntouchedSample(id, `${zh}\nprint("edited")`), false);
     });
   }
+
+  it("reuses the NumPy sample on the NumPy sidebar row", () => {
+    assert.equal(sampleFor("np", "zh"), sampleFor("numpy", "zh"));
+    assert.equal(sampleFor("np", "en"), sampleFor("numpy", "en"));
+    assert.equal(isUntouchedSample("np", sampleFor("np", "en")), true);
+  });
 });

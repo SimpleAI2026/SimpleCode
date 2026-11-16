@@ -37,9 +37,10 @@ function fill(template: string, vars?: Record<string, string | number>) {
   return out;
 }
 
-/** Sidebar name for the Pyodide entry. Other languages keep the manifest label. */
+/** Sidebar names for the two Pyodide rows. Other languages keep the manifest label. */
 export function runtimeName(id: string, fallback: string): string {
   if (id === "numpy") return t("langNumpy");
+  if (id === "np") return t("langNp");
   return fallback;
 }
 

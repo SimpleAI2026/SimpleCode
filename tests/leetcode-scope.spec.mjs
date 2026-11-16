@@ -5,7 +5,7 @@ import { chromium } from "playwright";
 
 const PORT = Number(process.env.LEETCODE_SCOPE_PORT ?? 4329);
 const BASE = `http://127.0.0.1:${PORT}`;
-const HIDDEN = ["sqlite", "php-cgi", "shell", "linux", "numpy"];
+const HIDDEN = ["sqlite", "php-cgi", "shell", "linux", "numpy", "np"];
 
 const server = spawn("yarn", ["vite", "preview", "--host", "127.0.0.1", "--port", String(PORT), "--strictPort"], {
   stdio: ["ignore", "pipe", "pipe"],
@@ -127,6 +127,10 @@ try {
   const again = await scoped.getByTestId("docs-drawer").getAttribute("data-mode");
   const still = await scoped.locator('[data-testid^="lang-"][aria-current="true"]').getAttribute("data-testid");
   check(again === "learn" && still === "lang-numpy", `reload shortcut stays on the tutorial (${still}, ${again})`);
+  await scoped.getByTestId("lang-np").click();
+  await scoped.waitForFunction(() => document.querySelector('[data-testid="lang-np"]')?.getAttribute("aria-current") === "true");
+  check((await leetCount(scoped)) === 0, "NumPy entry hides LeetCode");
+  check((await scoped.getByTestId("study-mode-learn").count()) === 1, "NumPy keeps Quick Start");
   await scoped.close();
   await stored.close();
 } finally {

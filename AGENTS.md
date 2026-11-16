@@ -6,7 +6,7 @@
 
 浏览器里的多语言练习场：左边选语言，中间 Monaco 编辑，下面 xterm 看输出，工具栏 Run 在本机执行。Python、Ruby、JS/TS、SQLite、C、C++、PHP、Lua、Go、Shell 的运行时是 WASI preview1 命令模块，由 `@runno/wasi` 的 `WASIWorkerHost` 在 Web Worker 里跑。标准输入走 `SharedArrayBuffer`，所以页面必须跨源隔离。Rust 的编译器是 weblings 的 Cranelift rustc，在另一个 Worker 里编译；编出来的 wasm 再交给同一个 `WASIWorkerHost`。Java 的编译和运行都在 TeaVM 自己的 Worker 里（Wasm GC），产物不交给 `WASIWorkerHost`。Linux 是 v86 客户机，跑在主线程，串口接到同一份 xterm。
 
-教学抽屉叫「{语言} 快速入门」。Markdown 在构建时预渲染。十五本书都已按菜鸟教程的短节写成，内部 id 不变。Linux 的书在 `docs/linux/`，Rust 的书在 `docs/rust/`，Java 的书在 `docs/java/`。NumPy 在 `docs/numpy/`，深度学习在 `docs/dl/chapter_*/`（顺序见 `scripts/docs/dl-toc.ts`，阶段 2 先落地前言、安装、记号、引言），两本都由侧栏 DeepLearning 打开（运行时 id `numpy`，Pyodide）。细节见 `plan/LANGUAGES.md` §10、§11 和 §12，`plan/DEEP_LEARNING.md`，以及 `plan/LEARN.md` §20 和 §23。
+教学抽屉叫「{语言} 快速入门」。Markdown 在构建时预渲染。十五本书都已按菜鸟教程的短节写成，内部 id 不变。Linux 的书在 `docs/linux/`，Rust 的书在 `docs/rust/`，Java 的书在 `docs/java/`。NumPy 在 `docs/numpy/`，深度学习在 `docs/dl/chapter_*/`（顺序见 `scripts/docs/dl-toc.ts`，阶段 2 先落地前言、安装、记号、引言）。侧栏 NumPy（id `np`）只打开 NumPy 书，侧栏 DeepLearning（id `numpy`）只打开 d2l。两行共用同一份 Pyodide 资产和同一个 Worker，不重复下载。细节见 `plan/LANGUAGES.md` §10、§11 和 §12，`plan/DEEP_LEARNING.md` §12，以及 `plan/LEARN.md` §20 和 §23。
 
 ## 架构
 
@@ -21,6 +21,7 @@
        ├─ WASIWorkerHost（WASI 语言，Web Worker；Rust 的产物也走这里）
        ├─ weblings rustc（rust，单独 Worker，只编译）
        ├─ TeaVM javac（java，单独 Worker，编译并运行）
+       ├─ Pyodide（DeepLearning 与 NumPy 共用一个 Worker，src/pyodide/）
        └─ LinuxMachine（linux，主线程 v86，src/core/linux.ts）
 终端 src/core/terminal.ts（xterm；Linux 期间按键原样送进串口）
 文档 DocsDrawer
@@ -32,7 +33,7 @@
 
 资源在 `wasm/`。`scripts/languages.config.mjs` 列出资产和语言。`scripts/write-manifest.mjs` 按磁盘文件生成 `wasm/manifest.json`（`size`、`sha256`）。该文件 gitignore，不提交。`src/core/wasmLoader.ts` 用 Cache API（`simplecode-wasm-v1`）缓存，并用清单里的 `size` 核对。
 
-语言 id：`python`、`ruby`、`quickjs`（界面文案 JS/TS）、`sqlite`、`clang`、`clangpp`、`php-cgi`、`lua`、`go`、`shell`、`rust`、`java`、`linux`（界面文案 Linux，短标签 `Lx`；Java 短标签 `Jv`）。Rust 的 `rustc.wasm` 和 `sysroot-wasip1.bundle` 提交在 `wasm/rust/`，不写进 `wasm/manifest.json`。页面只从同源读这两份，Cache API 名是 `simplecode-rustc-v1`。`./build.sh vendor --rust` 在文件与 pin 一致时跳过；`--refresh` 再从 GitHub Release 的 zstd 校验并覆盖。GitHub Release 资产在 COEP 页面里没有 CORS，不能当浏览器下载地址。Java 同样不进默认 vendor 和清单。`./build.sh vendor --java` 校验 pin 后把四份 TeaVM 文件放到 `wasm/java/`。页面只读这四份同源文件，Cache API 名是 `simplecode-teavm-v1`。`teavm.org` 没有 CORS，不能当浏览器下载地址。同源钉住的文件请求带 `?v=`（sha256 前 12 位），先 `cache: "no-cache"`，不对再 `cache: "reload"` 一次。空正文或短正文也走这次重试。dev 和 preview 里缺失的 `/wasm/**` 是 404，不是首页；存在的文件响应是 `Cache-Control: no-cache`。
+语言 id：`python`、`ruby`、`quickjs`（界面文案 JS/TS）、`sqlite`、`clang`、`clangpp`、`php-cgi`、`lua`、`go`、`shell`、`rust`、`java`、`linux`（界面文案 Linux，短标签 `Lx`；Java 短标签 `Jv`）、`numpy`（界面文案 DeepLearning，短标签 `DL`）、`np`（界面文案 NumPy，短标签 `Np`）。`numpy` 与 `np` 的资产列表是同一份，Cache API 只存一份 Pyodide。Rust 的 `rustc.wasm` 和 `sysroot-wasip1.bundle` 提交在 `wasm/rust/`，不写进 `wasm/manifest.json`。页面只从同源读这两份，Cache API 名是 `simplecode-rustc-v1`。`./build.sh vendor --rust` 在文件与 pin 一致时跳过；`--refresh` 再从 GitHub Release 的 zstd 校验并覆盖。GitHub Release 资产在 COEP 页面里没有 CORS，不能当浏览器下载地址。Java 同样不进默认 vendor 和清单。`./build.sh vendor --java` 校验 pin 后把四份 TeaVM 文件放到 `wasm/java/`。页面只读这四份同源文件，Cache API 名是 `simplecode-teavm-v1`。`teavm.org` 没有 CORS，不能当浏览器下载地址。同源钉住的文件请求带 `?v=`（sha256 前 12 位），先 `cache: "no-cache"`，不对再 `cache: "reload"` 一次。空正文或短正文也走这次重试。dev 和 preview 里缺失的 `/wasm/**` 是 404，不是首页；存在的文件响应是 `Cache-Control: no-cache`。
 
 ## 技术栈和命令
 

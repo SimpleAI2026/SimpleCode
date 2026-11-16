@@ -12,7 +12,7 @@ sources:
 updated: "2026-10-20"
 ---
 
-This book is about arrays. The Deep Learning row runs CPython 3.14 plus NumPy inside Pyodide. That interpreter is separate from the WASI Python row. Run executes only the snippet in front of you.
+This book is about arrays. The NumPy sidebar row runs CPython 3.14 plus NumPy inside Pyodide and shares that worker and cache with the DeepLearning row beside it. It is not the WASI Python interpreter. Run executes only the snippet in front of you.
 
 ### Make one array
 
@@ -41,7 +41,7 @@ The printed product is 12.
 
 ### Separate from the other Python
 
-The WASI CPython build does not ship NumPy, so that import fails there. Keep array examples on this row. The teaching package minitorch is preinstalled only in this filesystem.
+The WASI CPython build does not ship NumPy, so that import fails there. Keep array examples on the NumPy row. minitorch is written into the shared Pyodide filesystem, which the DeepLearning row uses as well.
 ### After chapter 11
 
 ufuncs, boolean indexes, fancy indexes, sort and search, einsum, structured arrays, and vectorization follow the copy chapter. Timings jitter, so the vectorization chapter checks results and does not compare speed.

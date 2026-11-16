@@ -67,10 +67,16 @@ describe("i18n catalog", () => {
     assert.match(en.aboutLanguages, /, C,/);
     assert.match(zh.aboutWasm, /Cache API/);
     assert.match(en.aboutEditor, /Monaco/);
+    assert.match(zh.aboutLanguages, /十五种语言/);
+    assert.match(en.aboutLanguages, /Fifteen languages/);
+    assert.match(zh.aboutLanguages, /NumPy/);
+    assert.match(en.aboutLanguages, /NumPy/);
     assert.match(zh.aboutLanguages, /DeepLearning/);
     assert.match(en.aboutLanguages, /DeepLearning/);
     assert.equal(zh.langNumpy, "DeepLearning");
     assert.equal(en.langNumpy, "DeepLearning");
+    assert.equal(zh.langNp, "NumPy");
+    assert.equal(en.langNp, "NumPy");
     assert.equal(zh.bookDl, "DeepLearning");
     assert.equal(en.bookDl, "DeepLearning");
     assert.match(zh.aboutBooks, /快速入门/);

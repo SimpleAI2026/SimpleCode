@@ -71,8 +71,9 @@ try {
   await app.goto(BASE);
   await app.evaluate((id) => globalThis.__simplecodeSelect(id), "numpy");
   await app.waitForSelector('[data-testid="lang-numpy"][data-status="ready"]', { timeout: 180000 });
+  await app.evaluate((id) => globalThis.__simplecodeSelect(id), "np");
+  await app.waitForSelector('[data-testid="lang-np"][data-status="ready"]', { timeout: 180000 });
   await app.getByTestId("study-mode-learn").click();
-  await app.getByTestId("docs-book-numpy").click();
   await app.getByTestId("chapter-link").nth(1).click();
   await app.locator('[data-testid="docs-chapter"] [data-testid="doc-code-block"]').first().waitFor();
   await app.screenshot({ path: `${OUT}/numpy-tutorial.png` });

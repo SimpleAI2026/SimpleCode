@@ -6,6 +6,7 @@ import type { Token as MdToken } from "markdown-it";
 import { createHighlighter, type Highlighter } from "shiki";
 import { parseFenceInfo } from "../../src/docs/fence.ts";
 import { BOOKS, SHIPPED_BOOKS, type BookId } from "../../src/docs/runtime.ts";
+import { pyodideBookErrors } from "./pyodide-books.ts";
 import { listBookMarkdown } from "./book-files.mjs";
 import { DL_LANDED_PHASE, DL_TOC, dlChapterNumber } from "./dl-toc.ts";
 import { isKnownDocsDir } from "./tree.ts";
@@ -391,6 +392,7 @@ function checkBlocks(file: string, segs: Segment[], errors: string[]) {
 
 export async function renderDocs(root: string): Promise<RenderedDocs> {
   const errors: string[] = [];
+  errors.push(...pyodideBookErrors());
   const docsDir = join(root, "docs");
   const sourcesPath = join(docsDir, "sources.yaml");
   let sources: Record<string, { adapt?: boolean }> = {};

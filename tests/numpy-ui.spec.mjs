@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// DeepLearning sidebar row: label, progress bar on the button edge, book switcher, terminal reset.
+// DeepLearning sidebar row: label, progress bar on the button edge, its own drawer, terminal reset.
 import { spawn } from "node:child_process";
 import { chromium } from "playwright";
 
@@ -120,24 +120,36 @@ try {
   check(true, "switching away from DeepLearning clears the terminal");
 
   await page2.getByTestId("lang-numpy").click();
-  check((await page2.getByTestId("study-mode-leetcode").count()) === 0, "DeepLearning hides LeetCode while the book switcher is used");
+  check((await page2.getByTestId("study-mode-leetcode").count()) === 0, "DeepLearning hides LeetCode");
   await page2.getByTestId("study-mode-learn").click();
-  await page2.getByTestId("docs-books").waitFor();
-  const books = await page2.getByTestId("docs-books").innerText();
-  check(books.includes("DeepLearning") && books.includes("NumPy"), `book switcher ${JSON.stringify(books)}`);
-  await page2.getByTestId("docs-book-numpy").click();
   await page2.getByTestId("docs-drawer").waitFor();
-  const toc = await page2.getByTestId("docs-drawer").innerText();
-  check(toc.includes("NumPy"), "NumPy quick start opens from the switcher");
-  await page2.getByTestId("docs-book-dl").click();
-  await page2.waitForFunction(() => document.querySelector('[data-testid="docs-book-dl"]')?.getAttribute("aria-pressed") === "true");
-  check((await page2.getByTestId("study-mode-leetcode").count()) === 0, "switching DeepLearning books keeps LeetCode hidden");
+  await page2.waitForFunction(() => (document.querySelector('[data-testid="docs-drawer"]')?.textContent ?? "").includes("安装"));
+  check((await page2.getByTestId("docs-books").count()) === 0, "DeepLearning has no book switcher");
+  const dlToc = await page2.getByTestId("docs-drawer").innerText();
+  check(dlToc.includes("安装") && !dlToc.includes("创建数组") && !dlToc.includes("NumPy einsum"), `DeepLearning drawer ${JSON.stringify(dlToc.slice(0, 180))}`);
+  check((await page2.getByTestId("study-mode-leetcode").count()) === 0, "DeepLearning drawer keeps LeetCode hidden");
+
+  await page2.getByTestId("lang-np").click();
+  const npLabel = await page2.getByTestId("lang-np").innerText();
+  check(npLabel.includes("NumPy") && !npLabel.includes("DeepLearning"), `NumPy label ${JSON.stringify(npLabel)}`);
+  check((await page2.getByTestId("study-mode-leetcode").count()) === 0, "NumPy hides LeetCode");
+  await page2.waitForFunction(() => (document.querySelector('[data-testid="docs-drawer"]')?.textContent ?? "").includes("创建数组"));
+  const npToc = await page2.getByTestId("docs-drawer").innerText();
+  check(npToc.includes("NumPy") && npToc.includes("创建数组") && !npToc.includes("安装"), `NumPy drawer ${JSON.stringify(npToc.slice(0, 180))}`);
+  check((await page2.getByTestId("docs-books").count()) === 0, "NumPy has no book switcher");
 
   await page2.getByTestId("locale-en").click();
-  const enLabel = await page2.getByTestId("lang-numpy").innerText();
-  check(enLabel.includes("DeepLearning") && enLabel.includes("Python (NumPy)"), `English label ${JSON.stringify(enLabel)}`);
-  const enBooks = await page2.getByTestId("docs-books").innerText();
-  check(enBooks.includes("DeepLearning") && enBooks.includes("NumPy"), `English books ${JSON.stringify(enBooks)}`);
+  await page2.waitForFunction(() => (document.querySelector('[data-testid="docs-drawer"]')?.textContent ?? "").includes("Creating arrays"));
+  const enLabel = await page2.getByTestId("lang-np").innerText();
+  check(enLabel.includes("NumPy") && !enLabel.includes("DeepLearning"), `English NumPy label ${JSON.stringify(enLabel)}`);
+  const enNp = await page2.getByTestId("docs-drawer").innerText();
+  check(enNp.includes("Creating arrays") && !enNp.includes("Installation"), `English NumPy drawer ${JSON.stringify(enNp.slice(0, 180))}`);
+  await page2.getByTestId("lang-numpy").click();
+  await page2.waitForFunction(() => (document.querySelector('[data-testid="docs-drawer"]')?.textContent ?? "").includes("Installation"));
+  const enDlLabel = await page2.getByTestId("lang-numpy").innerText();
+  check(enDlLabel.includes("DeepLearning") && enDlLabel.includes("Python (NumPy)"), `English DeepLearning label ${JSON.stringify(enDlLabel)}`);
+  const enDl = await page2.getByTestId("docs-drawer").innerText();
+  check(enDl.includes("Installation") && !enDl.includes("Creating arrays"), `English DeepLearning drawer ${JSON.stringify(enDl.slice(0, 180))}`);
   await page2.getByTestId("lang-ruby").click();
   await page2.waitForFunction(() => document.querySelector('[data-testid="lang-ruby"]')?.getAttribute("aria-current") === "true");
   check((await page2.getByTestId("study-mode-leetcode").count()) === 1, "LeetCode button returns on Ruby");
