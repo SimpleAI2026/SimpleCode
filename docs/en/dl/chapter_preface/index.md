@@ -10,14 +10,14 @@ goals:
 sources:
   - d2l-zh-text
   - d2l-en-text
-updated: "2026-11-13"
+updated: "2026-11-16"
 ---
 
-The DeepLearning notes in the sidebar follow a public table of contents from this page onward. The full list has one hundred thirty-nine sections. After the four openers, preliminaries, linear models, multilayer perceptrons, optimization, deep-learning computation, and convolution are written. Sentences and examples are new.
+The DeepLearning notes in the sidebar follow a public table of contents from this page onward. The full list has one hundred thirty-nine sections. After the four openers, preliminaries, linear models, multilayer perceptrons, optimization, computation, convolution, sequences, and attention are written. Sentences and examples are new.
 
 ### How the contents are ordered
 
-The renderer numbers each section from the table of contents, not from the spelling of the file name. The preface is chapter 0. Installation, notation, and the introduction follow as chapters 1, 2, and 3. Computation and the two convolution groups now have pages. Sequences, vision applications, language, and the appendix stay for later phases.
+The renderer numbers each section from the table of contents, not from the spelling of the file name. The preface is chapter 0. Installation, notation, and the introduction follow as chapters 1, 2, and 3. Computation, convolution, sequences, and attention now have pages. Vision applications, language pretraining, and the appendix stay for later phases.
 
 ### Where the sentences come from
 

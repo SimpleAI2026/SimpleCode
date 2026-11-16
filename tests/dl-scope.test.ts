@@ -76,7 +76,12 @@ describe("d2l table of contents", () => {
     assert.equal(dlChapterNumber("chapter_preface/index.md"), 0);
     assert.equal(dlChapterNumber("chapter_introduction/index.md"), 3);
     assert.equal(dlChapterNumber("chapter_appendix-tools-for-deep-learning/d2l.md"), 138);
-    assert.equal(DL_LANDED_PHASE, 4);
+    assert.equal(DL_LANDED_PHASE, 5);
+    const phase5 = DL_TOC.filter((section) => section.phase === 5);
+    assert.equal(phase5.length, 25);
+    assert.equal(phase5.filter((section) => section.path.startsWith("chapter_recurrent-neural-networks/")).length, 8);
+    assert.equal(phase5.filter((section) => section.path.startsWith("chapter_recurrent-modern/")).length, 9);
+    assert.equal(phase5.filter((section) => section.path.startsWith("chapter_attention-mechanisms/")).length, 8);
     const phase4 = DL_TOC.filter((section) => section.phase === 4);
     assert.equal(phase4.length, 22);
     assert.equal(phase4.filter((section) => section.path.startsWith("chapter_convolutional-neural-networks/")).length, 7);
@@ -121,7 +126,7 @@ describe("d2l table of contents", () => {
 
   it("keeps phase 3 samples inside the 256 KiB budget", () => {
     const lock = JSON.parse(readFileSync("scripts/sources.lock.json", "utf8")).pyodide.files;
-    const names = ["fashion-mnist.bin", "house-tiny.csv", "airfoil-tiny.csv"] as const;
+    const names = ["fashion-mnist.bin", "house-tiny.csv", "airfoil-tiny.csv", "timemachine.txt", "fra-eng.txt"] as const;
     let total = 0;
     for (const name of names) {
       const pin = lock[name];
@@ -178,6 +183,26 @@ describe("d2l table of contents", () => {
       "chapter_convolutional-modern/densenet.md",
     ]);
     for (const path of DL_TOC.filter((section) => section.phase === 4).map((section) => section.path)) {
+      const text = readFileSync(join("docs/dl", path), "utf8");
+      const widths = [...text.matchAll(/\brange\((\d+)\)/g)].map((match) => Number(match[1]));
+      assert.ok(widths.every((width) => width <= 4), `${path} ${widths.join(",")}`);
+      if (train.has(path)) assert.ok(widths.includes(4), path);
+    }
+  });
+
+  it("keeps phase 5 training loops at four steps", () => {
+    const train = new Set([
+      "chapter_recurrent-neural-networks/rnn-scratch.md",
+      "chapter_recurrent-neural-networks/rnn-concise.md",
+      "chapter_recurrent-modern/gru.md",
+      "chapter_recurrent-modern/lstm.md",
+      "chapter_recurrent-modern/deep-rnn.md",
+      "chapter_recurrent-modern/bi-rnn.md",
+      "chapter_recurrent-modern/seq2seq.md",
+      "chapter_attention-mechanisms/bahdanau-attention.md",
+      "chapter_attention-mechanisms/transformer.md",
+    ]);
+    for (const path of DL_TOC.filter((section) => section.phase === 5).map((section) => section.path)) {
       const text = readFileSync(join("docs/dl", path), "utf8");
       const widths = [...text.matchAll(/\brange\((\d+)\)/g)].map((match) => Number(match[1]));
       assert.ok(widths.every((width) => width <= 4), `${path} ${widths.join(",")}`);
