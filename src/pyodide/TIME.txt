@@ -1,0 +1,5 @@
+Synthetic sequence text for SimpleCode.
+
+This file is not an excerpt of The Time Machine and not a download of timemachine.txt.
+The sentences are built by a fixed generator in scripts/vendor-pyodide.mjs.
+Chapters use it only to show tokens, a vocabulary, and a short batch.

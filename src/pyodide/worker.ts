@@ -2,6 +2,8 @@ import minitorchSource from "./minitorch.py?raw";
 import fashionNote from "./FASHION.txt?raw";
 import houseNote from "./HOUSE.txt?raw";
 import airfoilNote from "./AIRFOIL.txt?raw";
+import timeNote from "./TIME.txt?raw";
+import fraNote from "./FRA.txt?raw";
 
 interface InitFile {
   name: string;
@@ -122,6 +124,14 @@ async function boot(message: InitMessage) {
   if (!airfoil) throw new Error("airfoil-tiny.csv missing");
   py.FS.writeFile("/data/airfoil-tiny.csv", airfoil);
   py.FS.writeFile("/data/AIRFOIL.txt", airfoilNote);
+  const story = files.get("timemachine.txt");
+  if (!story) throw new Error("timemachine.txt missing");
+  py.FS.writeFile("/data/timemachine.txt", story);
+  py.FS.writeFile("/data/TIME.txt", timeNote);
+  const pairs = files.get("fra-eng.txt");
+  if (!pairs) throw new Error("fra-eng.txt missing");
+  py.FS.writeFile("/data/fra-eng.txt", pairs);
+  py.FS.writeFile("/data/FRA.txt", fraNote);
   postMessage({ type: "ready" });
 }
 

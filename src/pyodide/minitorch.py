@@ -107,15 +107,33 @@ class Tensor:
     def __rmul__(self, other):
         return self.__mul__(other)
 
+    def __truediv__(self, other):
+        other = _as_tensor(other)
+        out = Tensor(self.data / other.data, self.requires_grad or other.requires_grad, (self, other))
+
+        def backward():
+            if self.requires_grad:
+                self.grad = _acc(self.grad, _unbroadcast(out.grad / other.data, self.data.shape))
+            if other.requires_grad:
+                other.grad = _acc(other.grad, _unbroadcast(-out.grad * self.data / (other.data * other.data), other.data.shape))
+
+        out._backward = backward
+        return out
+
+    def __rtruediv__(self, other):
+        return _as_tensor(other).__truediv__(self)
+
     def __matmul__(self, other):
         other = _as_tensor(other)
         out = Tensor(self.data @ other.data, self.requires_grad or other.requires_grad, (self, other))
 
         def backward():
             if self.requires_grad:
-                self.grad = _acc(self.grad, out.grad @ np.swapaxes(other.data, -1, -2))
+                grad = out.grad @ np.swapaxes(other.data, -1, -2)
+                self.grad = _acc(self.grad, _unbroadcast(grad, self.data.shape))
             if other.requires_grad:
-                other.grad = _acc(other.grad, np.swapaxes(self.data, -1, -2) @ out.grad)
+                grad = np.swapaxes(self.data, -1, -2) @ out.grad
+                other.grad = _acc(other.grad, _unbroadcast(grad, other.data.shape))
 
         out._backward = backward
         return out
@@ -232,6 +250,42 @@ class Tensor:
         def backward():
             if self.requires_grad:
                 self.grad = _acc(self.grad, out.grad * out.data * (1.0 - out.data))
+
+        out._backward = backward
+        return out
+
+    def tanh(self):
+        value = np.tanh(self.data)
+        out = Tensor(value, self.requires_grad, (self,))
+
+        def backward():
+            if self.requires_grad:
+                self.grad = _acc(self.grad, out.grad * (1.0 - value * value))
+
+        out._backward = backward
+        return out
+
+    def sqrt(self):
+        value = np.sqrt(self.data)
+        out = Tensor(value, self.requires_grad, (self,))
+
+        def backward():
+            if self.requires_grad:
+                self.grad = _acc(self.grad, out.grad * (0.5 / value))
+
+        out._backward = backward
+        return out
+
+    def permute(self, *axes):
+        if len(axes) == 1 and isinstance(axes[0], (tuple, list)):
+            axes = tuple(axes[0])
+        axes = tuple(int(axis) for axis in axes)
+        out = Tensor(np.transpose(self.data, axes), self.requires_grad, (self,))
+
+        def backward():
+            if self.requires_grad:
+                inverse = np.argsort(axes)
+                self.grad = _acc(self.grad, np.transpose(out.grad, inverse))
 
         out._backward = backward
         return out
@@ -618,6 +672,180 @@ class BatchNorm(Module):
         )
 
 
+class Embedding(Module):
+    """Row lookup. The backward pass scatters into the selected rows."""
+
+    def __init__(self, num_embeddings, embed_dim):
+        scale = 1.0 / np.sqrt(float(embed_dim))
+        self.weight = Tensor(
+            np.random.uniform(-scale, scale, (int(num_embeddings), int(embed_dim))),
+            requires_grad=True,
+        )
+
+    def forward(self, indices):
+        idx = np.asarray(indices.data if isinstance(indices, Tensor) else indices, dtype=np.int64)
+        out = Tensor(self.weight.data[idx], self.weight.requires_grad, (self.weight,))
+
+        def backward():
+            if not self.weight.requires_grad:
+                return
+            grad = np.zeros_like(self.weight.data)
+            np.add.at(grad, idx, out.grad)
+            self.weight.grad = _acc(self.weight.grad, grad)
+
+        out._backward = backward
+        return out
+
+
+def _recurrent_weight(rows, cols, scale):
+    return Tensor(np.random.uniform(-scale, scale, (rows, cols)), requires_grad=True)
+
+
+class RNN(Module):
+    """One tanh cell, batch on the outside: input (N, T, I), output (N, T, H)."""
+
+    def __init__(self, input_size, hidden_size):
+        self.hidden_size = int(hidden_size)
+        scale = 1.0 / np.sqrt(float(hidden_size))
+        self.weight_ih = _recurrent_weight(self.hidden_size, int(input_size), scale)
+        self.weight_hh = _recurrent_weight(self.hidden_size, self.hidden_size, scale)
+        self.bias = Tensor(np.zeros(self.hidden_size), requires_grad=True)
+
+    def forward(self, x, state=None):
+        x = _as_tensor(x)
+        batch, steps, _ = x.shape
+        h = _as_tensor(state) if state is not None else Tensor(np.zeros((batch, self.hidden_size)))
+        outputs = []
+        for t in range(int(steps)):
+            xt = x[:, t, :]
+            h = (xt @ self.weight_ih.T + h @ self.weight_hh.T + self.bias).tanh()
+            outputs.append(h.reshape(batch, 1, self.hidden_size))
+        return cat(outputs, axis=1), h
+
+
+class GRU(Module):
+    """Reset and update gates. Same (N, T, I) layout as RNN."""
+
+    def __init__(self, input_size, hidden_size):
+        self.hidden_size = int(hidden_size)
+        scale = 1.0 / np.sqrt(float(hidden_size))
+        i = int(input_size)
+        h = self.hidden_size
+        self.weight_ir = _recurrent_weight(h, i, scale)
+        self.weight_hr = _recurrent_weight(h, h, scale)
+        self.bias_r = Tensor(np.zeros(h), requires_grad=True)
+        self.weight_iz = _recurrent_weight(h, i, scale)
+        self.weight_hz = _recurrent_weight(h, h, scale)
+        self.bias_z = Tensor(np.zeros(h), requires_grad=True)
+        self.weight_in = _recurrent_weight(h, i, scale)
+        self.weight_hn = _recurrent_weight(h, h, scale)
+        self.bias_n = Tensor(np.zeros(h), requires_grad=True)
+
+    def forward(self, x, state=None):
+        x = _as_tensor(x)
+        batch, steps, _ = x.shape
+        h = _as_tensor(state) if state is not None else Tensor(np.zeros((batch, self.hidden_size)))
+        outputs = []
+        for t in range(int(steps)):
+            xt = x[:, t, :]
+            reset = (xt @ self.weight_ir.T + h @ self.weight_hr.T + self.bias_r).sigmoid()
+            update = (xt @ self.weight_iz.T + h @ self.weight_hz.T + self.bias_z).sigmoid()
+            candidate = (xt @ self.weight_in.T + (reset * h) @ self.weight_hn.T + self.bias_n).tanh()
+            h = (1.0 - update) * candidate + update * h
+            outputs.append(h.reshape(batch, 1, self.hidden_size))
+        return cat(outputs, axis=1), h
+
+
+class LSTM(Module):
+    """Input, forget, cell, and output gates. state is (hidden, cell)."""
+
+    def __init__(self, input_size, hidden_size):
+        self.hidden_size = int(hidden_size)
+        scale = 1.0 / np.sqrt(float(hidden_size))
+        i = int(input_size)
+        h = self.hidden_size
+        self.weight_ii = _recurrent_weight(h, i, scale)
+        self.weight_hi = _recurrent_weight(h, h, scale)
+        self.bias_i = Tensor(np.zeros(h), requires_grad=True)
+        self.weight_if = _recurrent_weight(h, i, scale)
+        self.weight_hf = _recurrent_weight(h, h, scale)
+        self.bias_f = Tensor(np.zeros(h), requires_grad=True)
+        self.weight_ig = _recurrent_weight(h, i, scale)
+        self.weight_hg = _recurrent_weight(h, h, scale)
+        self.bias_g = Tensor(np.zeros(h), requires_grad=True)
+        self.weight_io = _recurrent_weight(h, i, scale)
+        self.weight_ho = _recurrent_weight(h, h, scale)
+        self.bias_o = Tensor(np.zeros(h), requires_grad=True)
+
+    def forward(self, x, state=None):
+        x = _as_tensor(x)
+        batch, steps, _ = x.shape
+        if state is None:
+            h = Tensor(np.zeros((batch, self.hidden_size)))
+            c = Tensor(np.zeros((batch, self.hidden_size)))
+        else:
+            h, c = state
+            h = _as_tensor(h)
+            c = _as_tensor(c)
+        outputs = []
+        for t in range(int(steps)):
+            xt = x[:, t, :]
+            gate_i = (xt @ self.weight_ii.T + h @ self.weight_hi.T + self.bias_i).sigmoid()
+            gate_f = (xt @ self.weight_if.T + h @ self.weight_hf.T + self.bias_f).sigmoid()
+            gate_g = (xt @ self.weight_ig.T + h @ self.weight_hg.T + self.bias_g).tanh()
+            gate_o = (xt @ self.weight_io.T + h @ self.weight_ho.T + self.bias_o).sigmoid()
+            c = gate_f * c + gate_i * gate_g
+            h = gate_o * c.tanh()
+            outputs.append(h.reshape(batch, 1, self.hidden_size))
+        return cat(outputs, axis=1), (h, c)
+
+
+class LayerNorm(Module):
+    """Normalize the last axis, then apply a learned scale and shift."""
+
+    def __init__(self, dim, eps=1e-5):
+        self.eps = float(eps)
+        self.weight = Tensor(np.ones(int(dim)), requires_grad=True)
+        self.bias = Tensor(np.zeros(int(dim)), requires_grad=True)
+
+    def forward(self, x):
+        x = _as_tensor(x)
+        mean = x.mean(axis=-1, keepdims=True)
+        centered = x - mean
+        var = (centered * centered).mean(axis=-1, keepdims=True)
+        hat = centered / (var + self.eps).sqrt()
+        return hat * self.weight + self.bias
+
+
+class MultiHeadAttention(Module):
+    """Project, split heads, scaled dot-product attention, then a final linear map."""
+
+    def __init__(self, d_model, num_heads):
+        self.d_model = int(d_model)
+        self.num_heads = int(num_heads)
+        if self.d_model % self.num_heads != 0:
+            raise ValueError("d_model must divide into heads")
+        self.depth = self.d_model // self.num_heads
+        self.w_q = Linear(self.d_model, self.d_model)
+        self.w_k = Linear(self.d_model, self.d_model)
+        self.w_v = Linear(self.d_model, self.d_model)
+        self.w_o = Linear(self.d_model, self.d_model)
+
+    def _split(self, x):
+        n, t, _ = x.shape
+        return x.reshape(n, t, self.num_heads, self.depth).permute(0, 2, 1, 3)
+
+    def forward(self, query, key, value):
+        query = _as_tensor(query)
+        n, t, _ = query.shape
+        q = self._split(self.w_q(query))
+        k = self._split(self.w_k(_as_tensor(key)))
+        v = self._split(self.w_v(_as_tensor(value)))
+        context, _weights = dot_attention(q, k, v)
+        merged = context.permute(0, 2, 1, 3).reshape(n, t, self.d_model)
+        return self.w_o(merged)
+
+
 def cat(tensors, axis=1):
     parts = [_as_tensor(item) for item in tensors]
     data = np.concatenate([item.data for item in parts], axis=axis)
@@ -645,6 +873,60 @@ def save_npz(path, arrays):
 def load_npz(path):
     with np.load(path) as data:
         return {key: np.array(data[key]) for key in data.files}
+
+
+def clip_grad(params, max_norm):
+    """Scale every gradient in place when the global L2 norm exceeds max_norm."""
+    listed = list(params)
+    total = 0.0
+    for param in listed:
+        if param.grad is None:
+            continue
+        total += float(np.sum(param.grad * param.grad))
+    norm = float(np.sqrt(total))
+    cap = float(max_norm)
+    if norm > cap and norm > 0.0:
+        scale = cap / (norm + 1e-12)
+        for param in listed:
+            if param.grad is not None:
+                param.grad *= scale
+    return norm
+
+
+def softmax_last(logits):
+    """Softmax over the last axis, kept as a tensor so the graph stays intact."""
+    logits = _as_tensor(logits)
+    shift = logits.data.max(axis=-1, keepdims=True)
+    ex = (logits - shift).exp()
+    return ex / ex.sum(axis=-1, keepdims=True)
+
+
+def dot_attention(query, key, value):
+    """Scaled dot-product attention. Returns context and the weight tensor."""
+    query = _as_tensor(query)
+    key = _as_tensor(key)
+    value = _as_tensor(value)
+    scale = float(np.sqrt(query.shape[-1]))
+    weights = softmax_last((query @ key.transpose()) / scale)
+    return weights @ value, weights
+
+
+def positional_encoding(length, d_model):
+    """Sine and cosine positions. A constant, not a parameter."""
+    length = int(length)
+    width = int(d_model)
+    pos = np.arange(length, dtype=np.float64)[:, None]
+    index = np.arange(width, dtype=np.float64)[None, :]
+    angle = pos / np.power(10000.0, (2.0 * np.floor(index / 2.0)) / float(width))
+    even = index % 2.0 == 0.0
+    return np.where(even, np.sin(angle), np.cos(angle)).astype(np.float64)
+
+
+def flip_time(x):
+    """Reverse the time axis of an (N, T, D) tensor. Used by a backward RNN."""
+    x = _as_tensor(x)
+    index = np.arange(x.shape[1] - 1, -1, -1)
+    return x[:, index, :]
 
 
 class SGD:
@@ -806,6 +1088,12 @@ class _NN:
     AvgPool2d = AvgPool2d
     Flatten = Flatten
     BatchNorm = BatchNorm
+    Embedding = Embedding
+    RNN = RNN
+    GRU = GRU
+    LSTM = LSTM
+    LayerNorm = LayerNorm
+    MultiHeadAttention = MultiHeadAttention
 
 
 class _Optim:
@@ -885,11 +1173,37 @@ def airfoil(path="/data/airfoil-tiny.csv"):
     return data[:, :-1], data[:, -1]
 
 
+def time_machine(path="/data/timemachine.txt"):
+    """Short synthetic prose used as a stand-in for a public-domain excerpt."""
+    with open(path, "r", encoding="utf-8") as handle:
+        text = handle.read()
+    if len(text) < 256:
+        raise ValueError("time-machine sample is too short")
+    return text
+
+
+def translation_pairs(path="/data/fra-eng.txt"):
+    """16 train pairs and 8 validation pairs. Synthetic, not a Tatoeba extract."""
+    rows = []
+    with open(path, "r", encoding="utf-8") as handle:
+        for line in handle:
+            line = line.strip()
+            if not line or line.startswith("#"):
+                continue
+            english, french = line.split("\t")
+            rows.append((english, french))
+    if len(rows) < 24:
+        raise ValueError("translation sample needs 16 train pairs and 8 validation pairs")
+    return rows[:16], rows[16:24]
+
+
 class _Datasets:
     fashion_mnist = staticmethod(fashion_mnist)
     scale_batch = staticmethod(scale_batch)
     house_prices = staticmethod(house_prices)
     airfoil = staticmethod(airfoil)
+    time_machine = staticmethod(time_machine)
+    translation_pairs = staticmethod(translation_pairs)
 
 
 nn = _NN()

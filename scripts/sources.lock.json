@@ -185,7 +185,7 @@
     }
   },
   "pyodide": {
-    "note": "Pyodide 314.0.7 and NumPy 2.4.6. The browser loads only wasm/pyodide/. vendor --pyodide downloads the pins. pyodide.mjs is rewritten to drop the jsDelivr default before it is saved; upstreamSha256 is the file before that rewrite. Fashion-MNIST subset is the first 32 train rows and 8 test rows, MIT, Zalando Research. house-tiny.csv and airfoil-tiny.csv are synthetic tables generated in vendor-pyodide.mjs, not the Kaggle house CSV or the UCI airfoil file.",
+    "note": "Pyodide 314.0.7 and NumPy 2.4.6. The browser loads only wasm/pyodide/. vendor --pyodide downloads the pins. pyodide.mjs is rewritten to drop the jsDelivr default before it is saved; upstreamSha256 is the file before that rewrite. Fashion-MNIST subset is the first 32 train rows and 8 test rows, MIT, Zalando Research. house-tiny.csv and airfoil-tiny.csv are synthetic tables generated in vendor-pyodide.mjs, not the Kaggle house CSV or the UCI airfoil file. timemachine.txt and fra-eng.txt are synthetic text from the same script, not a book excerpt and not Tatoeba.",
     "version": "314.0.7",
     "numpy": "2.4.6",
     "python": "3.14.2",
@@ -276,6 +276,16 @@
         "bytes": 1956,
         "sha256": "0edccb72f6f1bf601077c041c0b3e57d8bd9b1f0dcd3cc34f5cadb829fb892f8",
         "synthetic": "airfoil"
+      },
+      "timemachine.txt": {
+        "bytes": 2058,
+        "sha256": "c69281a689d991efdef48e00887a30cf13468bfacdad7e9732f4d81c85c79de8",
+        "synthetic": "timemachine"
+      },
+      "fra-eng.txt": {
+        "bytes": 1150,
+        "sha256": "fec2eebb46774a0e2e4e40fd94178aa2ad39f6943a7a508ed23b6a711057bcb5",
+        "synthetic": "fra-eng"
       }
     }
   }

@@ -1,0 +1,6 @@
+Synthetic translation pairs for SimpleCode.
+
+These 24 lines are not copied from Tatoeba and not taken from fra-eng.zip.
+That archive was not downloaded.
+The first 16 lines are the training pairs and the last 8 lines are the validation pairs.
+Each side has four tokens. The generator lives in scripts/vendor-pyodide.mjs.
