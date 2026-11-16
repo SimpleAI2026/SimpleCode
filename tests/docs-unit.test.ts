@@ -4,7 +4,7 @@ import { createHighlighter } from "shiki";
 import { shouldBackup } from "../src/docs/backup.ts";
 import { chapterId, chapterSlug, englishGap } from "../src/docs/edition.ts";
 import { parseFenceInfo } from "../src/docs/fence.ts";
-import { DOC_LANG_TO_RUNTIME, resolveRuntime, runtimeForFence } from "../src/docs/runtime.ts";
+import { canonicalRuntime, DOC_LANG_TO_RUNTIME, resolveRuntime, runtimeForFence, runtimeFromHash } from "../src/docs/runtime.ts";
 import { collapseShikiLines } from "../src/docs/text.ts";
 import { highlight } from "../scripts/docs/render.ts";
 import { darkTheme, lightTheme } from "../scripts/docs/themes.ts";
@@ -78,8 +78,8 @@ describe("resolveRuntime", () => {
       ["rs", "rust"],
       ["java", "java"],
       ["linux", "linux"],
-      ["numpy", "numpy"],
-      ["np", "numpy"],
+      ["numpy", "dl"],
+      ["np", "dl"],
     ];
     for (const [alias, runtime] of cases) assert.equal(resolveRuntime(alias), runtime);
     assert.equal(resolveRuntime("Py"), "python");
@@ -87,8 +87,16 @@ describe("resolveRuntime", () => {
     assert.equal(resolveRuntime(""), undefined);
     assert.equal(Object.keys(DOC_LANG_TO_RUNTIME).length, cases.length);
     assert.equal(runtimeForFence("numpy", "numpy"), "np");
-    assert.equal(runtimeForFence("numpy", "dl"), "numpy");
+    assert.equal(runtimeForFence("numpy", "dl"), "dl");
+    assert.equal(runtimeForFence("numpy"), "dl");
     assert.equal(runtimeForFence("python", "numpy"), "python");
+    assert.equal(canonicalRuntime("numpy"), "dl");
+    assert.equal(canonicalRuntime(" DL "), "dl");
+    assert.equal(runtimeFromHash("#numpy"), "dl");
+    assert.equal(runtimeFromHash("#dl"), "dl");
+    assert.equal(runtimeFromHash("#np"), "np");
+    assert.equal(runtimeFromHash("#not-a-runtime"), undefined);
+    assert.equal(runtimeFromHash(""), undefined);
   });
 });
 

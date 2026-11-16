@@ -7,6 +7,7 @@ import { clearRustCache, ensureRustToolchain, rustCacheBytes, rustDownloadBytes,
 import { cancelJavaRun } from "@/teavm/run";
 import { cancelPyodide } from "@/pyodide/run";
 import { runtimeName } from "@/i18n";
+import { canonicalRuntime, runtimeFromHash } from "@/docs/runtime";
 import { clearJavaCache, ensureJavaToolchain, javaCacheBytes, javaDownloadBytes, javaIsCached, javaReady } from "@/teavm/toolchain";
 import { cacheUsage, clearCache as clearWasmCache, ensureAsset, getLoaded, isCached, pruneCache } from "@/core/wasmLoader";
 import { terminal } from "@/core/terminal";
@@ -26,10 +27,26 @@ export interface LangState {
 
 const SELECTED_KEY = "simplecode:language";
 
+function readStoredLanguage(): string {
+  try {
+    const raw = localStorage.getItem(SELECTED_KEY) || "python";
+    const id = canonicalRuntime(raw);
+    if (id !== raw) localStorage.setItem(SELECTED_KEY, id);
+    return id;
+  } catch {
+    return "python";
+  }
+}
+
+function readInitialLanguage(): string {
+  const fromHash = typeof location !== "undefined" ? runtimeFromHash(location.hash) : undefined;
+  return fromHash ?? readStoredLanguage();
+}
+
 export const useLanguageStore = defineStore("language", () => {
   const manifest = ref<Manifest>();
   const manifestError = ref<string>();
-  const selectedId = ref<string>(localStorage.getItem(SELECTED_KEY) || "python");
+  const selectedId = ref<string>(readInitialLanguage());
   const states = reactive<Record<string, LangState>>({});
   const usage = ref(0);
   const selectionOrigin = ref<"user" | "doc">("user");
@@ -103,7 +120,14 @@ export const useLanguageStore = defineStore("language", () => {
       manifestError.value = (e as Error).message;
       return;
     }
-    if (!languages.value.some((l) => l.id === selectedId.value)) selectedId.value = languages.value[0]?.id;
+    const stored = canonicalRuntime(selectedId.value);
+    selectedId.value = languages.value.some((l) => l.id === stored) ? stored : (languages.value[0]?.id ?? stored);
+    try {
+      if (selectedId.value) localStorage.setItem(SELECTED_KEY, selectedId.value);
+    } catch {
+      /* private mode */
+    }
+    writeLanguageHash(selectedId.value);
     await pruneCache(Object.values(manifest.value.assets)).catch(() => {});
     await refreshStatuses();
     void refreshUsage();
@@ -138,12 +162,26 @@ export const useLanguageStore = defineStore("language", () => {
     terminal.clear();
   }
 
+  function writeLanguageHash(id: string) {
+    if (typeof location === "undefined" || typeof history === "undefined") return;
+    if (!runtimeFromHash(location.hash)) return;
+    const next = `#${id}`;
+    if (location.hash === next) return;
+    history.replaceState(history.state, "", `${location.pathname}${location.search}${next}`);
+  }
+
   async function select(id: string, origin: "user" | "doc" = "user") {
+    id = canonicalRuntime(id);
     const prev = selectedId.value;
     if (prev !== id) releaseRuntime(prev, id);
     selectionOrigin.value = origin;
     selectedId.value = id;
-    localStorage.setItem(SELECTED_KEY, id);
+    try {
+      localStorage.setItem(SELECTED_KEY, id);
+    } catch {
+      /* private mode */
+    }
+    writeLanguageHash(id);
     try {
       return await ensure(id);
     } catch (e) {
@@ -302,6 +340,15 @@ export const useLanguageStore = defineStore("language", () => {
     await clearJavaCache();
     for (const s of Object.values(states)) if (s.status !== "downloading") s.status = "idle";
     await refreshUsage();
+  }
+
+  if (typeof window !== "undefined") {
+    window.addEventListener("hashchange", () => {
+      const id = runtimeFromHash(location.hash);
+      if (!id) return;
+      if (id !== selectedId.value) void select(id);
+      else writeLanguageHash(id);
+    });
   }
 
   return { manifest, manifestError, languages, selectedId, selected, selectedState, states, usage, selectionOrigin, init, select, ensure, cancel, clearCache, sizeOf };

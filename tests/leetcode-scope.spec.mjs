@@ -5,7 +5,7 @@ import { chromium } from "playwright";
 
 const PORT = Number(process.env.LEETCODE_SCOPE_PORT ?? 4329);
 const BASE = `http://127.0.0.1:${PORT}`;
-const HIDDEN = ["sqlite", "php-cgi", "shell", "linux", "numpy", "np"];
+const HIDDEN = ["sqlite", "php-cgi", "shell", "linux", "dl", "np"];
 
 const server = spawn("yarn", ["vite", "preview", "--host", "127.0.0.1", "--port", String(PORT), "--strictPort"], {
   stdio: ["ignore", "pipe", "pipe"],
@@ -102,9 +102,9 @@ try {
   await scoped.goto(BASE);
   await scoped.waitForSelector('[data-testid="lang-python"][data-status="ready"]', { timeout: 180_000 });
   check((await leetCount(scoped)) === 1, "stored LeetCode mode still shows the button on Python");
-  await scoped.getByTestId("lang-numpy").click();
+  await scoped.getByTestId("lang-dl").click();
   await scoped.waitForFunction(() => {
-    const el = document.querySelector('[data-testid="lang-numpy"]');
+    const el = document.querySelector('[data-testid="lang-dl"]');
     const status = el?.getAttribute("data-status");
     return el?.getAttribute("aria-current") === "true" && status && status !== "downloading";
   });
@@ -115,18 +115,18 @@ try {
   const saved = await scoped.evaluate(() => localStorage.getItem("simplecode:study-mode"));
   const pressed = await scoped.getByTestId("study-mode-learn").getAttribute("aria-pressed");
   check(
-    current === "lang-numpy" && mode === "learn" && saved === "learn" && pressed === "true" && (await leetCount(scoped)) === 0,
+    current === "lang-dl" && mode === "learn" && saved === "learn" && pressed === "true" && (await leetCount(scoped)) === 0,
     `numpy stays put and the drawer falls back to learn (${current}, ${mode}, ${saved})`,
   );
   check((await scoped.getByTestId("leetcode-list").count()) === 0, "DeepLearning does not open the problem list");
   await scoped.reload();
-  await scoped.waitForSelector('[data-testid="lang-numpy"][aria-current="true"]');
+  await scoped.waitForSelector('[data-testid="lang-dl"][aria-current="true"]');
   check((await leetCount(scoped)) === 0, "reloading DeepLearning keeps LeetCode hidden");
   await scoped.keyboard.press("Control+j");
   await scoped.getByTestId("docs-drawer").waitFor();
   const again = await scoped.getByTestId("docs-drawer").getAttribute("data-mode");
   const still = await scoped.locator('[data-testid^="lang-"][aria-current="true"]').getAttribute("data-testid");
-  check(again === "learn" && still === "lang-numpy", `reload shortcut stays on the tutorial (${still}, ${again})`);
+  check(again === "learn" && still === "lang-dl", `reload shortcut stays on the tutorial (${still}, ${again})`);
   await scoped.getByTestId("lang-np").click();
   await scoped.waitForFunction(() => document.querySelector('[data-testid="lang-np"]')?.getAttribute("aria-current") === "true");
   check((await leetCount(scoped)) === 0, "NumPy entry hides LeetCode");

@@ -191,7 +191,7 @@ for n in 1 2 3 4 5; do
 done
 `,
   ),
-  numpy: pair(
+  dl: pair(
     "# 用 NumPy 做点积，并读入一个乘数",
     "# Dot product with NumPy, then read a multiplier",
     `import numpy as np
@@ -215,7 +215,8 @@ printf '%s\\n' first second | grep second
 };
 
 function sampleRecord(id: string) {
-  return sampleLocales[id] ?? (id === "np" ? sampleLocales.numpy : undefined);
+  const key = id === "np" || id === "numpy" ? "dl" : id;
+  return sampleLocales[key];
 }
 
 export function sampleFor(id: string, locale: "zh" | "en"): string {

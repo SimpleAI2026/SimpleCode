@@ -90,7 +90,7 @@ try {
   const order = await page.evaluate(() =>
     [...document.querySelectorAll("[data-testid^=lang-]")].map((el) => el.getAttribute("data-testid")),
   );
-  const dlAt = order.indexOf("lang-numpy");
+  const dlAt = order.indexOf("lang-dl");
   const npAt = order.indexOf("lang-np");
   check(dlAt >= 0 && npAt >= 0 && Math.abs(dlAt - npAt) === 1, `NumPy sits beside DeepLearning (${order.join(",")})`);
   check((await page.getByTestId("study-mode-leetcode").count()) === 0, "NumPy has no LeetCode button");
@@ -104,8 +104,8 @@ try {
   await page.screenshot({ path: `${SHOTS}/numpy-zh-run.png` });
 
   await page.evaluate(() => performance.clearResourceTimings());
-  await page.getByTestId("lang-numpy").click();
-  await page.waitForSelector('[data-testid="lang-numpy"][data-status="ready"]', { timeout: 15000 });
+  await page.getByTestId("lang-dl").click();
+  await page.waitForSelector('[data-testid="lang-dl"][data-status="ready"]', { timeout: 15000 });
   const refetched = await page.evaluate(() =>
     performance
       .getEntriesByType("resource")
@@ -120,14 +120,14 @@ try {
     "DeepLearning drawer has no NumPy chapters",
   );
   check((await page.getByTestId("study-mode-leetcode").count()) === 0, "DeepLearning still hides LeetCode");
-  await page.getByTestId("lang-numpy").scrollIntoViewIfNeeded();
+  await page.getByTestId("lang-dl").scrollIntoViewIfNeeded();
   await page.screenshot({ path: `${SHOTS}/numpy-zh-dl.png` });
 
   await page.getByTestId("locale-en").click();
   await page.waitForFunction(() => (document.querySelector('[data-testid="docs-drawer"]')?.textContent ?? "").includes("Installation"));
   const enDl = await page.getByTestId("docs-drawer").innerText();
   check(enDl.includes("Installation") && !enDl.includes("Creating arrays"), "English DeepLearning drawer has no NumPy chapters");
-  await page.getByTestId("lang-numpy").scrollIntoViewIfNeeded();
+  await page.getByTestId("lang-dl").scrollIntoViewIfNeeded();
   await page.screenshot({ path: `${SHOTS}/numpy-en-dl.png` });
 
   await page.evaluate(() => performance.clearResourceTimings());

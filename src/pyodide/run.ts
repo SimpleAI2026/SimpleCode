@@ -22,7 +22,7 @@ interface DoneMessage {
   exit: number;
 }
 
-// One worker for both sidebar rows (DeepLearning `numpy` and NumPy `np`).
+// One worker for both sidebar rows (DeepLearning `dl` and NumPy `np`).
 // The language store keeps it across those two switches when nothing is running.
 let worker: Worker | undefined;
 let ready: Promise<void> | undefined;

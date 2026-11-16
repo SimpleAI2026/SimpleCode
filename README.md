@@ -51,7 +51,7 @@
 
 ## 功能
 
-- 十五门语言，运行时懒加载。侧栏进度条是 `inset-x-0 bottom-0 h-0.5`，和按钮同宽。NumPy 与 DeepLearning 各占一行，共用 Pyodide，不重复下载。DeepLearning 这一行标明 Python (NumPy)，只打开 d2l。NumPy 这一行没有 LeetCode。
+- 十五门语言，运行时懒加载。侧栏进度条是 `inset-x-0 bottom-0 h-0.5`，和按钮同宽。NumPy（id `np`）与 DeepLearning（id `dl`）各占一行，共用 Pyodide，不重复下载。DeepLearning 这一行标明 Python (NumPy)，只打开 d2l。旧的 `#numpy` 和已保存的 `numpy` 仍打开 DeepLearning。NumPy 这一行没有 LeetCode。
 - Monaco 编辑。正文字号 14px，注释 13px。未改过的示例在「中 / EN」切换时只换注释。
 - xterm 终端。Run 在工具栏和文档代码块里是同一个按钮。
 - 快速入门：中文 `docs/<book>/`，英文 `docs/en/<book>/`，同一文件名。这次构建是 1190 章（中英各 595）、3426 个可运行块（中英各 1713）。NumPy 17 章，DeepLearning 90 章，围栏语言是 `numpy`。两本书各有自己的侧栏入口和抽屉，执行都走同一份 Pyodide。
@@ -79,7 +79,7 @@
 | Rust | weblings rustc（Cranelift） | 151.8 MB（159,184,722） | `wasm/rust/` 同源文件，页面不向远端要编译器 |
 | Java | TeaVM 0.16.0 的 javac | 6.6 MB（6,896,057） | 要 Wasm GC。不是 OpenJDK，`Main` 必须是唯一的 public 类 |
 | NumPy | Pyodide 314.0.7 + NumPy 2.4.6 | 同一份 15.8 MB（16,536,901），不重复下载 | 侧栏中英文都是 NumPy。没有 LeetCode。Worker 和 Cache API 与 DeepLearning 共用 |
-| DeepLearning | Pyodide 314.0.7 + NumPy 2.4.6 | 15.8 MB（16,536,901） | 侧栏文案中英都是 DeepLearning，版本行是 Python (NumPy)。只打开 d2l。和 WASI CPython 分开。Fashion-MNIST 为 32+8 张（31,412 字节），另有合成房价表、机翼表、短文本和 24 对翻译句 |
+| DeepLearning | Pyodide 314.0.7 + NumPy 2.4.6 | 15.8 MB（16,536,901） | 侧栏 id 是 `dl`。文案中英都是 DeepLearning，版本行是 Python (NumPy)。只打开 d2l。`#numpy` 仍打开这一行。和 WASI CPython 分开。Fashion-MNIST 为 32+8 张（31,412 字节），另有合成房价表、机翼表、短文本和 24 对翻译句 |
 | Linux | v86 0.5.471，内核 6.8.12，BusyBox 1.36.1 | 29.4 MB（30,804,135） | 64 MiB 内存。29.4 MB 含预构建包里那份 `linux-state.zst`（18,201,083 字节）；重新生成快照后这个数会变 |
 
 Rust 两份文件是 `rustc.wasm` 87,871,387 字节和 `sysroot-wasip1.bundle` 71,313,335 字节。Java 四份文件合计 6,896,057 字节。

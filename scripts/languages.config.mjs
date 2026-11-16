@@ -170,7 +170,7 @@ export const languages = [
     run: { binaryName: "sh", args: [] },
   },
   {
-    id: "numpy",
+    id: "dl",
     label: "DeepLearning",
     short: "DL",
     version: "Python (NumPy)",

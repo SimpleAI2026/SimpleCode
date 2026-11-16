@@ -6,7 +6,7 @@
 
 浏览器里的多语言练习场：左边选语言，中间 Monaco 编辑，下面 xterm 看输出，工具栏 Run 在本机执行。Python、Ruby、JS/TS、SQLite、C、C++、PHP、Lua、Go、Shell 的运行时是 WASI preview1 命令模块，由 `@runno/wasi` 的 `WASIWorkerHost` 在 Web Worker 里跑。标准输入走 `SharedArrayBuffer`，所以页面必须跨源隔离。Rust 的编译器是 weblings 的 Cranelift rustc，在另一个 Worker 里编译；编出来的 wasm 再交给同一个 `WASIWorkerHost`。Java 的编译和运行都在 TeaVM 自己的 Worker 里（Wasm GC），产物不交给 `WASIWorkerHost`。Linux 是 v86 客户机，跑在主线程，串口接到同一份 xterm。
 
-教学抽屉叫「{语言} 快速入门」。Markdown 在构建时预渲染。十五本书都已按菜鸟教程的短节写成，内部 id 不变。Linux 的书在 `docs/linux/`，Rust 的书在 `docs/rust/`，Java 的书在 `docs/java/`。NumPy 在 `docs/numpy/`，深度学习在 `docs/dl/chapter_*/`（顺序见 `scripts/docs/dl-toc.ts`，阶段 2 先落地前言、安装、记号、引言）。侧栏 NumPy（id `np`）只打开 NumPy 书，侧栏 DeepLearning（id `numpy`）只打开 d2l。两行共用同一份 Pyodide 资产和同一个 Worker，不重复下载。细节见 `plan/LANGUAGES.md` §10、§11 和 §12，`plan/DEEP_LEARNING.md` §12，以及 `plan/LEARN.md` §20 和 §23。
+教学抽屉叫「{语言} 快速入门」。Markdown 在构建时预渲染。十五本书都已按菜鸟教程的短节写成，内部 id 不变。Linux 的书在 `docs/linux/`，Rust 的书在 `docs/rust/`，Java 的书在 `docs/java/`。NumPy 在 `docs/numpy/`，深度学习在 `docs/dl/chapter_*/`（顺序见 `scripts/docs/dl-toc.ts`，阶段 2 先落地前言、安装、记号、引言）。侧栏 NumPy（id `np`）只打开 NumPy 书，侧栏 DeepLearning（id `dl`）只打开 d2l。旧运行时 id `numpy`、地址栏 `#numpy` 和 `localStorage` 里的 `numpy` 仍打开 DeepLearning，并改写成 `dl`。两行共用同一份 Pyodide 资产和同一个 Worker，不重复下载。细节见 `plan/LANGUAGES.md` §10、§11 和 §12，`plan/DEEP_LEARNING.md` §12，以及 `plan/LEARN.md` §20 和 §23。
 
 ## 架构
 
@@ -33,7 +33,7 @@
 
 资源在 `wasm/`。`scripts/languages.config.mjs` 列出资产和语言。`scripts/write-manifest.mjs` 按磁盘文件生成 `wasm/manifest.json`（`size`、`sha256`）。该文件 gitignore，不提交。`src/core/wasmLoader.ts` 用 Cache API（`simplecode-wasm-v1`）缓存，并用清单里的 `size` 核对。
 
-语言 id：`python`、`ruby`、`quickjs`（界面文案 JS/TS）、`sqlite`、`clang`、`clangpp`、`php-cgi`、`lua`、`go`、`shell`、`rust`、`java`、`linux`（界面文案 Linux，短标签 `Lx`；Java 短标签 `Jv`）、`numpy`（界面文案 DeepLearning，短标签 `DL`）、`np`（界面文案 NumPy，短标签 `Np`）。`numpy` 与 `np` 的资产列表是同一份，Cache API 只存一份 Pyodide。Rust 的 `rustc.wasm` 和 `sysroot-wasip1.bundle` 提交在 `wasm/rust/`，不写进 `wasm/manifest.json`。页面只从同源读这两份，Cache API 名是 `simplecode-rustc-v1`。`./build.sh vendor --rust` 在文件与 pin 一致时跳过；`--refresh` 再从 GitHub Release 的 zstd 校验并覆盖。GitHub Release 资产在 COEP 页面里没有 CORS，不能当浏览器下载地址。Java 同样不进默认 vendor 和清单。`./build.sh vendor --java` 校验 pin 后把四份 TeaVM 文件放到 `wasm/java/`。页面只读这四份同源文件，Cache API 名是 `simplecode-teavm-v1`。`teavm.org` 没有 CORS，不能当浏览器下载地址。同源钉住的文件请求带 `?v=`（sha256 前 12 位），先 `cache: "no-cache"`，不对再 `cache: "reload"` 一次。空正文或短正文也走这次重试。dev 和 preview 里缺失的 `/wasm/**` 是 404，不是首页；存在的文件响应是 `Cache-Control: no-cache`。
+语言 id：`python`、`ruby`、`quickjs`（界面文案 JS/TS）、`sqlite`、`clang`、`clangpp`、`php-cgi`、`lua`、`go`、`shell`、`rust`、`java`、`linux`（界面文案 Linux，短标签 `Lx`；Java 短标签 `Jv`）、`dl`（界面文案 DeepLearning，短标签 `DL`）、`np`（界面文案 NumPy，短标签 `Np`）。`dl` 与 `np` 的资产列表是同一份，Cache API 只存一份 Pyodide。`numpy` 只作为 DeepLearning 的旧 id 保留。Rust 的 `rustc.wasm` 和 `sysroot-wasip1.bundle` 提交在 `wasm/rust/`，不写进 `wasm/manifest.json`。页面只从同源读这两份，Cache API 名是 `simplecode-rustc-v1`。`./build.sh vendor --rust` 在文件与 pin 一致时跳过；`--refresh` 再从 GitHub Release 的 zstd 校验并覆盖。GitHub Release 资产在 COEP 页面里没有 CORS，不能当浏览器下载地址。Java 同样不进默认 vendor 和清单。`./build.sh vendor --java` 校验 pin 后把四份 TeaVM 文件放到 `wasm/java/`。页面只读这四份同源文件，Cache API 名是 `simplecode-teavm-v1`。`teavm.org` 没有 CORS，不能当浏览器下载地址。同源钉住的文件请求带 `?v=`（sha256 前 12 位），先 `cache: "no-cache"`，不对再 `cache: "reload"` 一次。空正文或短正文也走这次重试。dev 和 preview 里缺失的 `/wasm/**` 是 404，不是首页；存在的文件响应是 `Cache-Control: no-cache`。
 
 ## 技术栈和命令
 
@@ -88,7 +88,7 @@ WASI 命令模块必须导出 `_start`，导入只有 `wasi_snapshot_preview1`�
 - 十五本书一起检查连续 60 个汉字不重复。NumPy 和深度学习不套用「至少 20 章」那一档，但仍走同一套节长、可运行块和跨书去重。
 - 围栏属性见 `src/docs/fence.ts`：`run`、`norun`、`stdin`、`expect`、`title`、`smoke`、`exit`。`stdin=""` 表示立刻 EOF。
 
-现在的书（章数，中英各一套）：Python 40、JavaScript 42、Ruby 31、SQL 35、C 35、C++ 51、PHP 42、Lua 30、Go 37、Shell 29、Linux 38、Rust 38、Java 40、NumPy 17、深度学习 90。中英各 595 章。`./build.sh build` 打出 `docs: 1190 chapters, 3426 runnable blocks`（中英各 1713 个可运行块）。其中一个 Python `while True` 是 `smoke=skip`。英文在 `docs/en/<book>/`。`SHIPPED_BOOKS` 在 `src/docs/runtime.ts`。NumPy 和深度学习的围栏语言是 `numpy`，`docs-smoke` 默认会跑，走 Pyodide 而不是 WASI CPython。Rust 的 `docs-smoke` 默认不跑（工具链约 152 MB）。`SIMPLECODE_RUST_DOCS=1` 才执行书里的块，中英都会跑。Java 的 `docs-smoke` 同样默认不跑（每块都要在浏览器里编 wasm）。`SIMPLECODE_JAVA_DOCS=1` 才执行。默认文档冒烟不含 Rust 和 Java，也不跑 Python 那个 `smoke=skip`。`tests/smoke.mjs` 仍会编一条 Rust hello、一条编译错误，并试标准输入和写文件；Java 同样有 hello、标准输入、编译错误和 `Thread.sleep`。Linux 的文档冒烟会启动客户机，英文块复用同一份快照。
+现在的书（章数，中英各一套）：Python 40、JavaScript 42、Ruby 31、SQL 35、C 35、C++ 51、PHP 42、Lua 30、Go 37、Shell 29、Linux 38、Rust 38、Java 40、NumPy 17、深度学习 90。中英各 595 章。`./build.sh build` 打出 `docs: 1190 chapters, 3426 runnable blocks`（中英各 1713 个可运行块）。其中一个 Python `while True` 是 `smoke=skip`。英文在 `docs/en/<book>/`。`SHIPPED_BOOKS` 在 `src/docs/runtime.ts`。NumPy 和深度学习的围栏语言是 `numpy`。没有书上下文时 `resolveRuntime` 选运行时 `dl`，`docs-smoke` 默认会跑，走 Pyodide 而不是 WASI CPython。Rust 的 `docs-smoke` 默认不跑（工具链约 152 MB）。`SIMPLECODE_RUST_DOCS=1` 才执行书里的块，中英都会跑。Java 的 `docs-smoke` 同样默认不跑（每块都要在浏览器里编 wasm）。`SIMPLECODE_JAVA_DOCS=1` 才执行。默认文档冒烟不含 Rust 和 Java，也不跑 Python 那个 `smoke=skip`。`tests/smoke.mjs` 仍会编一条 Rust hello、一条编译错误，并试标准输入和写文件；Java 同样有 hello、标准输入、编译错误和 `Thread.sleep`。Linux 的文档冒烟会启动客户机，英文块复用同一份快照。
 
 ### 运行时限制（可运行块里避开）
 

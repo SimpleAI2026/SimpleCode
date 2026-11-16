@@ -67,11 +67,11 @@ try {
     await route.continue();
   });
   await page.goto(BASE);
-  await page.getByTestId("lang-numpy").click();
+  await page.getByTestId("lang-dl").click();
   check((await page.getByTestId("study-mode-leetcode").count()) === 0, "DeepLearning hides the LeetCode button");
   check((await page.getByTestId("study-mode").count()) === 1, "study mode group stays");
   check((await page.getByTestId("study-mode-learn").count()) === 1, "DeepLearning keeps Quick Start");
-  const button = page.getByTestId("lang-numpy");
+  const button = page.getByTestId("lang-dl");
   await button.waitFor();
   const label = await button.innerText();
   check(label.includes("DeepLearning") && label.includes("Python (NumPy)"), `sidebar label ${JSON.stringify(label)}`);
@@ -107,7 +107,7 @@ try {
 
   const page2 = await (await browser.newContext({ viewport: { width: 1280, height: 800 } })).newPage();
   await page2.goto(BASE);
-  await page2.getByTestId("lang-numpy").click();
+  await page2.getByTestId("lang-dl").click();
   await page2.waitForFunction(() => {
     const text = globalThis.__simplecodeTerminal?.transcript ?? "";
     return text.includes("DeepLearning");
@@ -119,7 +119,7 @@ try {
   });
   check(true, "switching away from DeepLearning clears the terminal");
 
-  await page2.getByTestId("lang-numpy").click();
+  await page2.getByTestId("lang-dl").click();
   check((await page2.getByTestId("study-mode-leetcode").count()) === 0, "DeepLearning hides LeetCode");
   await page2.getByTestId("study-mode-learn").click();
   await page2.getByTestId("docs-drawer").waitFor();
@@ -144,9 +144,9 @@ try {
   check(enLabel.includes("NumPy") && !enLabel.includes("DeepLearning"), `English NumPy label ${JSON.stringify(enLabel)}`);
   const enNp = await page2.getByTestId("docs-drawer").innerText();
   check(enNp.includes("Creating arrays") && !enNp.includes("Installation"), `English NumPy drawer ${JSON.stringify(enNp.slice(0, 180))}`);
-  await page2.getByTestId("lang-numpy").click();
+  await page2.getByTestId("lang-dl").click();
   await page2.waitForFunction(() => (document.querySelector('[data-testid="docs-drawer"]')?.textContent ?? "").includes("Installation"));
-  const enDlLabel = await page2.getByTestId("lang-numpy").innerText();
+  const enDlLabel = await page2.getByTestId("lang-dl").innerText();
   check(enDlLabel.includes("DeepLearning") && enDlLabel.includes("Python (NumPy)"), `English DeepLearning label ${JSON.stringify(enDlLabel)}`);
   const enDl = await page2.getByTestId("docs-drawer").innerText();
   check(enDl.includes("Installation") && !enDl.includes("Creating arrays"), `English DeepLearning drawer ${JSON.stringify(enDl.slice(0, 180))}`);
@@ -154,6 +154,28 @@ try {
   await page2.waitForFunction(() => document.querySelector('[data-testid="lang-ruby"]')?.getAttribute("aria-current") === "true");
   check((await page2.getByTestId("study-mode-leetcode").count()) === 1, "LeetCode button returns on Ruby");
   await page2.close();
+
+  const aliasContext = await browser.newContext({ viewport: { width: 1280, height: 800 } });
+  await aliasContext.addInitScript(() => {
+    localStorage.setItem("simplecode:language", "numpy");
+    localStorage.setItem("simplecode:code:numpy", "print('kept')\n");
+  });
+  const alias = await aliasContext.newPage();
+  await alias.goto(`${BASE}/#numpy`);
+  await alias.waitForSelector('[data-testid="lang-dl"][aria-current="true"]', { timeout: 30000 });
+  await alias.waitForFunction(() => localStorage.getItem("simplecode:code:dl") === "print('kept')\n");
+  const stored = await alias.evaluate(() => ({
+    language: localStorage.getItem("simplecode:language"),
+    legacy: localStorage.getItem("simplecode:code:numpy"),
+    hash: location.hash,
+    numpyButton: document.querySelector('[data-testid="lang-numpy"]') ? 1 : 0,
+  }));
+  check(
+    stored.language === "dl" && stored.legacy === null && stored.hash === "#dl" && stored.numpyButton === 0,
+    `old numpy link opens DeepLearning ${JSON.stringify(stored)}`,
+  );
+  await alias.close();
+  await aliasContext.close();
 } finally {
   await browser.close().catch(() => {});
   stop();

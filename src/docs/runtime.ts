@@ -1,4 +1,4 @@
-export type RuntimeId = "python" | "ruby" | "quickjs" | "sqlite" | "clang" | "clangpp" | "php-cgi" | "lua" | "go" | "shell" | "rust" | "java" | "linux" | "numpy" | "np";
+export type RuntimeId = "python" | "ruby" | "quickjs" | "sqlite" | "clang" | "clangpp" | "php-cgi" | "lua" | "go" | "shell" | "rust" | "java" | "linux" | "dl" | "np";
 
 export type DocLang =
   | "python"
@@ -51,8 +51,8 @@ export const DOC_LANG_TO_RUNTIME: Record<DocLang, RuntimeId> = {
   rs: "rust",
   java: "java",
   linux: "linux",
-  numpy: "numpy",
-  np: "numpy",
+  numpy: "dl",
+  np: "dl",
 };
 
 export const BOOKS = ["python", "ruby", "js", "sqlite", "c", "cpp", "php", "lua", "go", "shell", "rust", "java", "linux", "numpy", "dl"] as const;
@@ -75,7 +75,7 @@ export const RUNTIME_TO_BOOK: Record<RuntimeId, BookId> = {
   rust: "rust",
   java: "java",
   linux: "linux",
-  numpy: "dl",
+  dl: "dl",
   np: "numpy",
 };
 
@@ -94,25 +94,77 @@ export const BOOK_TO_RUNTIME: Record<BookId, RuntimeId> = {
   java: "java",
   linux: "linux",
   numpy: "np",
-  dl: "numpy",
+  dl: "dl",
 };
 
 /** One book per Pyodide sidebar row. The drawer does not switch between them. */
 export const RUNTIME_BOOKS: Partial<Record<RuntimeId, readonly BookId[]>> = {
-  numpy: ["dl"],
+  dl: ["dl"],
   np: ["numpy"],
 };
 
-const PYODIDE_RUNTIMES = new Set<RuntimeId>(["numpy", "np"]);
+const PYODIDE_RUNTIMES = new Set<RuntimeId>(["dl", "np"]);
 
-export function isPyodideRuntime(id: string): id is "numpy" | "np" {
+export function isPyodideRuntime(id: string): id is "dl" | "np" {
   return PYODIDE_RUNTIMES.has(id as RuntimeId);
+}
+
+/** Previous DeepLearning runtime id. Hash, localStorage, and select() still accept it. */
+const RUNTIME_ALIASES: Record<string, RuntimeId> = {
+  numpy: "dl",
+};
+
+const RUNTIME_ID_SET: Record<RuntimeId, true> = {
+  python: true,
+  ruby: true,
+  quickjs: true,
+  sqlite: true,
+  clang: true,
+  clangpp: true,
+  "php-cgi": true,
+  lua: true,
+  go: true,
+  shell: true,
+  rust: true,
+  java: true,
+  linux: true,
+  dl: true,
+  np: true,
+};
+
+export function isRuntimeId(id: string): id is RuntimeId {
+  return Object.prototype.hasOwnProperty.call(RUNTIME_ID_SET, id);
+}
+
+/** Map a sidebar id onto the current runtime. `numpy` is DeepLearning. */
+export function canonicalRuntime(id: string): string {
+  const key = id.trim().toLowerCase();
+  return RUNTIME_ALIASES[key] ?? key;
+}
+
+/**
+ * A location hash that names a sidebar row. `#numpy` opens DeepLearning (`dl`).
+ * Fragments that are not a runtime id are left alone.
+ */
+export function runtimeFromHash(hash: string): RuntimeId | undefined {
+  const raw = hash.trim();
+  if (!raw) return undefined;
+  const body = raw.startsWith("#") ? raw.slice(1) : raw;
+  if (!body || /[/?&=]/.test(body)) return undefined;
+  let decoded = body;
+  try {
+    decoded = decodeURIComponent(body);
+  } catch {
+    return undefined;
+  }
+  const id = canonicalRuntime(decoded);
+  return isRuntimeId(id) ? id : undefined;
 }
 
 /**
  * Fence language `numpy` / `np` names the Pyodide engine. A tutorial block runs
  * on the sidebar row that owns its book, so NumPy stays on `np` and d2l stays
- * on `numpy`. Without a book, the fence still selects the DeepLearning row.
+ * on `dl`. Without a book, the fence still selects the DeepLearning row.
  */
 export function runtimeForFence(lang: string, book?: string): RuntimeId | undefined {
   const fromFence = resolveRuntime(lang);
@@ -162,7 +214,7 @@ const RUNTIME_LABEL: Record<RuntimeId, string> = {
   rust: "Rust",
   java: "Java",
   linux: "Linux",
-  numpy: "Python (NumPy)",
+  dl: "Python (NumPy)",
   np: "NumPy",
 };
 

@@ -18,7 +18,7 @@ const LANG: Record<string, string> = {
   java: "java",
   shell: "sh",
   linux: "linux",
-  numpy: "numpy",
+  dl: "numpy",
 };
 
 const NON_ASCII = /[^\x00-\x7F]/;
@@ -40,8 +40,10 @@ describe("default samples", () => {
   }
 
   it("reuses the NumPy sample on the NumPy sidebar row", () => {
-    assert.equal(sampleFor("np", "zh"), sampleFor("numpy", "zh"));
-    assert.equal(sampleFor("np", "en"), sampleFor("numpy", "en"));
+    assert.equal(sampleFor("np", "zh"), sampleFor("dl", "zh"));
+    assert.equal(sampleFor("np", "en"), sampleFor("dl", "en"));
+    assert.equal(sampleFor("numpy", "zh"), sampleFor("dl", "zh"));
+    assert.equal(sampleFor("numpy", "en"), sampleFor("dl", "en"));
     assert.equal(isUntouchedSample("np", sampleFor("np", "en")), true);
   });
 });
