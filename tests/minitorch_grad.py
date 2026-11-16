@@ -409,6 +409,33 @@ def test_vision_ops():
         raise SystemExit("labels")
 
 
+def test_nlp_ops():
+    np.random.seed(0)
+    logits = Tensor(np.array([0.2, -0.4, 1.1, 0.0]), requires_grad=True)
+    finite("bce", lambda: mt.bce_with_logits(logits, np.array([1.0, 0.0, 1.0, 0.0])), [logits])
+    x = Tensor(np.random.randn(2, 3, 8), requires_grad=True)
+    block = mt.nn.EncoderBlock(8, 2, 16)
+    finite("encoder x", lambda: block(x).sum(), [x])
+    finite("encoder ff", lambda: block(x).sum(), [block.ff1.weight, block.ff2.bias])
+    train, val = mt.embed_lines()
+    if len(train) != 32 or len(val) != 8:
+        raise SystemExit("embed lines")
+    excerpt = mt.bpe_excerpt()
+    merges, _words = mt.bpe_merges(excerpt, 4)
+    if len(excerpt.encode("utf-8")) != 1852 or len(merges) != 4 or merges[0] != ("e", "</w>"):
+        raise SystemExit(f"bpe {len(excerpt.encode())} {merges[:1]}")
+    if len(mt.bert_segments()) != 4:
+        raise SystemExit("bert segments")
+    texts, labels, held, held_y = mt.sentiment_reviews()
+    if len(texts) != 8 or len(held) != 4 or int(labels.sum()) != 4:
+        raise SystemExit("sentiment")
+    left, _right, y, vleft, _vright, _vy = mt.nli_pairs()
+    if len(left) != 8 or len(vleft) != 4 or int(y[0]) != 0:
+        raise SystemExit("nli")
+    if held_y.shape[0] != 4:
+        raise SystemExit("held")
+
+
 def test_lenet_seconds():
     import time
 
@@ -459,5 +486,6 @@ if __name__ == "__main__":
     test_sequence_attention()
     test_text_samples()
     test_vision_ops()
+    test_nlp_ops()
     test_lenet_seconds()
     print("minitorch ok")

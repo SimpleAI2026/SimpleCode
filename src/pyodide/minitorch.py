@@ -320,6 +320,29 @@ def cross_entropy(logits, targets):
     return out
 
 
+def bce_with_logits(logits, targets):
+    """Mean binary cross-entropy. targets are 0 or 1 and are not differentiated."""
+    logits = _as_tensor(logits)
+    labels = np.asarray(targets.data if isinstance(targets, Tensor) else targets, dtype=np.float64).reshape(logits.data.shape)
+    z = logits.data
+    loss = np.maximum(z, 0.0) - z * labels + np.log1p(np.exp(-np.abs(z)))
+    out = Tensor(loss.mean(), logits.requires_grad, (logits,))
+
+    def backward():
+        if not logits.requires_grad:
+            return
+        pos = z >= 0
+        sig = np.empty_like(z)
+        sig[pos] = 1.0 / (1.0 + np.exp(-z[pos]))
+        neg = np.exp(z[~pos])
+        sig[~pos] = neg / (1.0 + neg)
+        grad = (sig - labels) / float(labels.size)
+        logits.grad = _acc(logits.grad, grad * float(out.grad.reshape(-1)[0]))
+
+    out._backward = backward
+    return out
+
+
 def softmax(logits):
     data = logits.data if isinstance(logits, Tensor) else np.asarray(logits, dtype=np.float64)
     shifted = data - data.max(axis=-1, keepdims=True)
@@ -1086,6 +1109,22 @@ class MultiHeadAttention(Module):
         return self.w_o(merged)
 
 
+class EncoderBlock(Module):
+    """One attention block with a two-layer feed-forward network. Width stays small."""
+
+    def __init__(self, d_model, num_heads, hidden):
+        self.attn = MultiHeadAttention(d_model, num_heads)
+        self.norm1 = LayerNorm(d_model)
+        self.ff1 = Linear(d_model, hidden)
+        self.ff2 = Linear(hidden, d_model)
+        self.norm2 = LayerNorm(d_model)
+
+    def forward(self, x):
+        x = _as_tensor(x)
+        hidden = self.norm1(x + self.attn(x, x, x))
+        return self.norm2(hidden + self.ff2(self.ff1(hidden).relu()))
+
+
 def cat(tensors, axis=1):
     parts = [_as_tensor(item) for item in tensors]
     data = np.concatenate([item.data for item in parts], axis=axis)
@@ -1335,6 +1374,7 @@ class _NN:
     LSTM = LSTM
     LayerNorm = LayerNorm
     MultiHeadAttention = MultiHeadAttention
+    EncoderBlock = EncoderBlock
 
 
 class _Optim:
@@ -1478,6 +1518,132 @@ def cifar_images():
     return images[:16], labels[:16], images[16:], labels[16:]
 
 
+_TOY_WORDS = (
+    "cat",
+    "dog",
+    "bird",
+    "mouse",
+    "sits",
+    "runs",
+    "near",
+    "under",
+    "red",
+    "blue",
+    "mat",
+    "tree",
+)
+
+
+def _toy_lines(count, seed):
+    rng = np.random.RandomState(int(seed))
+    lines = []
+    for _ in range(int(count)):
+        pick = rng.randint(0, len(_TOY_WORDS), size=6)
+        lines.append(" ".join(_TOY_WORDS[int(i)] for i in pick))
+    return lines
+
+
+def embed_lines():
+    """32 training lines and 8 check lines. Not the Penn Treebank."""
+    rows = _toy_lines(40, 20261121)
+    return rows[:32], rows[32:]
+
+
+def bpe_excerpt():
+    """Synthetic token text of about two kilobytes. Not a fastText dump."""
+    return "\n".join(_toy_lines(64, 20261122))
+
+
+def bpe_merges(text, steps):
+    """Learn a few pair merges. Each word ends with a boundary mark."""
+    words = [list(word) + ["</w>"] for word in str(text).split()]
+    merges = []
+    for _ in range(int(steps)):
+        counts = {}
+        for word in words:
+            for left, right in zip(word, word[1:]):
+                key = (left, right)
+                counts[key] = counts.get(key, 0) + 1
+        if not counts:
+            break
+        pair = min(counts, key=lambda item: (-counts[item], item[0], item[1]))
+        merges.append(pair)
+        joined = pair[0] + pair[1]
+        nxt = []
+        for word in words:
+            out = []
+            index = 0
+            while index < len(word):
+                if index + 1 < len(word) and (word[index], word[index + 1]) == pair:
+                    out.append(joined)
+                    index += 2
+                else:
+                    out.append(word[index])
+                    index += 1
+            nxt.append(out)
+        words = nxt
+    return merges, words
+
+
+def bert_segments():
+    """Four short lines for masked-token and next-line targets. Not WikiText."""
+    return _toy_lines(4, 20261123)
+
+
+def sentiment_reviews():
+    """8 training reviews and 4 check reviews. Not the IMDB archive."""
+    text = [
+        "the soup is hot and good",
+        "a warm meal and a kind cook",
+        "fresh bread with a sweet taste",
+        "the park is quiet and bright",
+        "cold soup and a rude cook",
+        "stale bread with a sour taste",
+        "the room is loud and dark",
+        "a late bus and a long wait",
+        "kind staff and a clean table",
+        "bright sun and a calm walk",
+        "rude staff and a dirty table",
+        "hard rain and a lost path",
+    ]
+    labels = np.array([1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0], dtype=np.int64)
+    return text[:8], labels[:8], text[8:], labels[8:]
+
+
+def nli_pairs():
+    """8 training pairs and 4 check pairs. Not SNLI. Labels are entail, contradict, neutral."""
+    left = [
+        "a cat sits on a red mat",
+        "a dog runs near a tree",
+        "the soup is hot",
+        "birds sit under a tree",
+        "a mouse runs near a mat",
+        "the room is dark",
+        "bread is fresh",
+        "a bus is late",
+        "the sun is bright",
+        "rain is hard",
+        "staff are kind",
+        "the path is lost",
+    ]
+    right = [
+        "a cat is on a mat",
+        "a dog is near a tree",
+        "the soup is cold",
+        "a bird is by a tree",
+        "a mouse is near a mat",
+        "the room is bright",
+        "bread is stale",
+        "someone waits",
+        "the day is bright",
+        "the sky is dry",
+        "people are kind",
+        "a map is open",
+    ]
+    labels = np.array([0, 0, 1, 2, 0, 1, 1, 2, 0, 1, 2, 2], dtype=np.int64)
+    return left[:8], right[:8], labels[:8], left[8:], right[8:], labels[8:]
+
+
 def dog_images():
     """8 train and 2 check RGB images, 2 breeds. Not the breed archive."""
     images = _toy_images(10, 32, 3, 20261120)
@@ -1497,6 +1663,11 @@ class _Datasets:
     segment_images = staticmethod(segment_images)
     cifar_images = staticmethod(cifar_images)
     dog_images = staticmethod(dog_images)
+    embed_lines = staticmethod(embed_lines)
+    bpe_excerpt = staticmethod(bpe_excerpt)
+    bert_segments = staticmethod(bert_segments)
+    sentiment_reviews = staticmethod(sentiment_reviews)
+    nli_pairs = staticmethod(nli_pairs)
 
 
 nn = _NN()
