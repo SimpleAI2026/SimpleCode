@@ -135,7 +135,14 @@ class Tensor:
         return out
 
     def mean(self, axis=None, keepdims=False):
-        denom = self.data.size if axis is None else self.data.shape[axis]
+        if axis is None:
+            denom = self.data.size
+        elif isinstance(axis, tuple):
+            denom = 1
+            for item in axis:
+                denom *= self.data.shape[item]
+        else:
+            denom = self.data.shape[axis]
         return self.sum(axis=axis, keepdims=keepdims) * (1.0 / denom)
 
     def relu(self):
@@ -210,6 +217,21 @@ class Tensor:
         def backward():
             if self.requires_grad:
                 self.grad = _acc(self.grad, out.grad / self.data)
+
+        out._backward = backward
+        return out
+
+    def sigmoid(self):
+        pos = self.data >= 0
+        out_data = np.empty_like(self.data)
+        out_data[pos] = 1.0 / (1.0 + np.exp(-self.data[pos]))
+        neg = np.exp(self.data[~pos])
+        out_data[~pos] = neg / (1.0 + neg)
+        out = Tensor(out_data, self.requires_grad, (self,))
+
+        def backward():
+            if self.requires_grad:
+                self.grad = _acc(self.grad, out.grad * out.data * (1.0 - out.data))
 
         out._backward = backward
         return out
@@ -317,18 +339,23 @@ class ReLU(Module):
 
 
 class Dropout(Module):
-    """Inverted dropout. The caller supplies the 0/1 keep mask so a block can use its own Generator."""
+    """Inverted dropout. Pass a 0/1 mask, or a seed so Sequential can draw one per forward."""
 
-    def __init__(self, p=0.5):
+    def __init__(self, p=0.5, seed=None):
         self.p = float(p)
+        self.seed = None if seed is None else int(seed)
+        self._rng = None if seed is None else np.random.default_rng(int(seed))
 
     def forward(self, x, mask=None):
         x = _as_tensor(x)
         if not getattr(self, "training", True):
             return x
         if mask is None:
-            raise RuntimeError("dropout needs a mask from the caller")
-        keep = _as_tensor(mask)
+            if self._rng is None:
+                raise RuntimeError("dropout needs a mask from the caller")
+            keep = _as_tensor((self._rng.random(x.data.shape) >= self.p).astype(np.float64))
+        else:
+            keep = _as_tensor(mask)
         if self.p >= 1.0:
             return x * keep * 0.0
         return x * keep * (1.0 / (1.0 - self.p))
@@ -342,6 +369,282 @@ class Sequential(Module):
         for layer in self.layers:
             x = layer(x)
         return x
+
+
+def _pair(value):
+    if isinstance(value, (tuple, list)):
+        return int(value[0]), int(value[1])
+    return int(value), int(value)
+
+
+def _im2col(src, kh, kw, sh, sw):
+    n, channels, height, width = src.shape
+    out_h = (height - kh) // sh + 1
+    out_w = (width - kw) // sw + 1
+    stride = src.strides
+    view = np.lib.stride_tricks.as_strided(
+        src,
+        shape=(n, channels, out_h, out_w, kh, kw),
+        strides=(stride[0], stride[1], sh * stride[2], sw * stride[3], stride[2], stride[3]),
+    )
+    cols = np.transpose(view, (0, 2, 3, 1, 4, 5)).reshape(n, out_h, out_w, channels * kh * kw)
+    return np.ascontiguousarray(cols)
+
+
+def _col2im(grad, height, width, kh, kw, sh, sw):
+    n, out_h, out_w, channels, _, _ = grad.shape
+    out = np.zeros((n, channels, height, width), dtype=np.float64)
+    for ky in range(kh):
+        for kx in range(kw):
+            patch = np.transpose(grad[:, :, :, :, ky, kx], (0, 3, 1, 2))
+            ys = ky + np.arange(out_h) * sh
+            xs = kx + np.arange(out_w) * sw
+            for row, y in enumerate(ys):
+                out[:, :, y, xs] += patch[:, :, row, :]
+    return out
+
+
+def conv2d(x, weight, bias, stride=(1, 1), padding=(0, 0)):
+    """Cross-correlation. im2col, then one matrix product. NCHW in and out."""
+    x = _as_tensor(x)
+    weight = _as_tensor(weight)
+    bias_t = None if bias is None else _as_tensor(bias)
+    sh, sw = stride
+    ph, pw = padding
+    kh, kw = int(weight.data.shape[2]), int(weight.data.shape[3])
+    src = x.data
+    if ph or pw:
+        src = np.pad(src, ((0, 0), (0, 0), (ph, ph), (pw, pw)))
+    n, cin, height, width = src.shape
+    cout = int(weight.data.shape[0])
+    out_h = (height - kh) // sh + 1
+    out_w = (width - kw) // sw + 1
+    if out_h < 1 or out_w < 1:
+        raise ValueError("convolution output is empty")
+    cols = _im2col(src, kh, kw, sh, sw)
+    flat_w = weight.data.reshape(cout, -1)
+    out_nhwc = cols @ flat_w.T
+    if bias_t is not None:
+        out_nhwc = out_nhwc + bias_t.data.reshape(1, 1, 1, -1)
+    need = x.requires_grad or weight.requires_grad or (bias_t is not None and bias_t.requires_grad)
+    prev = (x, weight) if bias_t is None else (x, weight, bias_t)
+    out = Tensor(np.transpose(out_nhwc, (0, 3, 1, 2)), need, prev)
+
+    def backward():
+        grad_nhwc = np.transpose(out.grad, (0, 2, 3, 1))
+        if weight.requires_grad:
+            dw = grad_nhwc.reshape(-1, cout).T @ cols.reshape(-1, cols.shape[-1])
+            weight.grad = _acc(weight.grad, dw.reshape(weight.data.shape))
+        if bias_t is not None and bias_t.requires_grad:
+            bias_t.grad = _acc(bias_t.grad, grad_nhwc.sum(axis=(0, 1, 2)))
+        if x.requires_grad:
+            dcols = (grad_nhwc @ flat_w).reshape(n, out_h, out_w, cin, kh, kw)
+            padded = _col2im(dcols, height, width, kh, kw, sh, sw)
+            if ph or pw:
+                padded = padded[:, :, ph : height - ph, pw : width - pw]
+            x.grad = _acc(x.grad, padded)
+
+    out._backward = backward
+    return out
+
+
+class Conv2d(Module):
+    def __init__(self, in_channels, out_channels, kernel_size, stride=1, padding=0, bias=True):
+        self.stride = _pair(stride)
+        self.padding = _pair(padding)
+        kh, kw = _pair(kernel_size)
+        limit = 1.0 / np.sqrt(in_channels * kh * kw)
+        self.weight = Tensor(
+            np.random.uniform(-limit, limit, (out_channels, in_channels, kh, kw)),
+            requires_grad=True,
+        )
+        self.bias = Tensor(np.zeros(out_channels), requires_grad=True) if bias else None
+
+    def forward(self, x):
+        return conv2d(x, self.weight, self.bias, self.stride, self.padding)
+
+
+def _pool2d(x, kernel, stride, padding, kind):
+    x = _as_tensor(x)
+    kh, kw = kernel
+    sh, sw = stride
+    ph, pw = padding
+    src = x.data
+    if ph or pw:
+        fill = -np.inf if kind == "max" else 0.0
+        src = np.pad(src, ((0, 0), (0, 0), (ph, ph), (pw, pw)), constant_values=fill)
+    n, channels, height, width = src.shape
+    out_h = (height - kh) // sh + 1
+    out_w = (width - kw) // sw + 1
+    if out_h < 1 or out_w < 1:
+        raise ValueError("pooling output is empty")
+    windows = _im2col(src, kh, kw, sh, sw).reshape(n, out_h, out_w, channels, kh, kw)
+    windows = np.transpose(windows, (0, 3, 1, 2, 4, 5))
+    if kind == "max":
+        flat = windows.reshape(n, channels, out_h, out_w, kh * kw)
+        index = np.argmax(flat, axis=-1)
+        out_data = np.take_along_axis(flat, index[..., None], axis=-1)[..., 0]
+    else:
+        index = None
+        out_data = windows.mean(axis=(-2, -1))
+    out = Tensor(out_data, x.requires_grad, (x,))
+
+    def backward():
+        if not x.requires_grad:
+            return
+        if kind == "max":
+            grad_flat = np.zeros((n, channels, out_h, out_w, kh * kw), dtype=np.float64)
+            np.put_along_axis(grad_flat, index[..., None], out.grad[..., None], axis=-1)
+            spread = grad_flat.reshape(n, channels, out_h, out_w, kh, kw)
+        else:
+            spread = np.empty((n, channels, out_h, out_w, kh, kw), dtype=np.float64)
+            spread[...] = out.grad[:, :, :, :, None, None] / float(kh * kw)
+        grad = np.transpose(spread, (0, 2, 3, 1, 4, 5))
+        padded = _col2im(grad, height, width, kh, kw, sh, sw)
+        if ph or pw:
+            padded = padded[:, :, ph : height - ph, pw : width - pw]
+        x.grad = _acc(x.grad, padded)
+
+    out._backward = backward
+    return out
+
+
+class MaxPool2d(Module):
+    def __init__(self, kernel_size, stride=None, padding=0):
+        self.kernel = _pair(kernel_size)
+        self.stride = _pair(kernel_size if stride is None else stride)
+        self.padding = _pair(padding)
+
+    def forward(self, x):
+        return _pool2d(x, self.kernel, self.stride, self.padding, "max")
+
+
+class AvgPool2d(Module):
+    def __init__(self, kernel_size, stride=None, padding=0):
+        self.kernel = _pair(kernel_size)
+        self.stride = _pair(kernel_size if stride is None else stride)
+        self.padding = _pair(padding)
+
+    def forward(self, x):
+        return _pool2d(x, self.kernel, self.stride, self.padding, "avg")
+
+
+class Flatten(Module):
+    def forward(self, x):
+        x = _as_tensor(x)
+        return x.reshape(x.shape[0], -1)
+
+
+class Sigmoid(Module):
+    def forward(self, x):
+        return _as_tensor(x).sigmoid()
+
+
+def _bn_view(data):
+    if data.ndim == 2:
+        return (0,), (1, -1)
+    if data.ndim == 4:
+        return (0, 2, 3), (1, -1, 1, 1)
+    raise ValueError("batch norm expects shape NC or NCHW")
+
+
+def batch_norm(x, gamma, beta, running_mean, running_var, training, eps, momentum):
+    x = _as_tensor(x)
+    gamma = _as_tensor(gamma)
+    beta = _as_tensor(beta)
+    axes, view = _bn_view(x.data)
+    if training:
+        mean = x.data.mean(axis=axes)
+        centered = x.data - mean.reshape(view)
+        var = (centered * centered).mean(axis=axes)
+        inv = 1.0 / np.sqrt(var + eps)
+        xhat = centered * inv.reshape(view)
+        count = x.data.size / x.data.shape[1]
+        unbiased = var if count <= 1 else var * (count / (count - 1.0))
+        running_mean *= 1.0 - momentum
+        running_mean += momentum * mean
+        running_var *= 1.0 - momentum
+        running_var += momentum * unbiased
+    else:
+        mean = running_mean
+        var = running_var
+        inv = 1.0 / np.sqrt(var + eps)
+        xhat = (x.data - mean.reshape(view)) * inv.reshape(view)
+    out_data = xhat * gamma.data.reshape(view) + beta.data.reshape(view)
+    need = x.requires_grad or gamma.requires_grad or beta.requires_grad
+    out = Tensor(out_data, need, (x, gamma, beta))
+
+    def backward():
+        grad = out.grad
+        if gamma.requires_grad:
+            gamma.grad = _acc(gamma.grad, (grad * xhat).sum(axis=axes))
+        if beta.requires_grad:
+            beta.grad = _acc(beta.grad, grad.sum(axis=axes))
+        if not x.requires_grad:
+            return
+        dxhat = grad * gamma.data.reshape(view)
+        if training:
+            count = x.data.size / x.data.shape[1]
+            summed = dxhat.sum(axis=axes).reshape(view)
+            dotted = (dxhat * xhat).sum(axis=axes).reshape(view)
+            dx = inv.reshape(view) * (dxhat - summed / count - xhat * dotted / count)
+        else:
+            dx = dxhat * inv.reshape(view)
+        x.grad = _acc(x.grad, dx)
+
+    out._backward = backward
+    return out
+
+
+class BatchNorm(Module):
+    def __init__(self, num_features, eps=1e-5, momentum=0.1):
+        self.eps = float(eps)
+        self.momentum = float(momentum)
+        self.weight = Tensor(np.ones(num_features), requires_grad=True)
+        self.bias = Tensor(np.zeros(num_features), requires_grad=True)
+        self.running_mean = np.zeros(num_features, dtype=np.float64)
+        self.running_var = np.ones(num_features, dtype=np.float64)
+
+    def forward(self, x):
+        return batch_norm(
+            x,
+            self.weight,
+            self.bias,
+            self.running_mean,
+            self.running_var,
+            getattr(self, "training", True),
+            self.eps,
+            self.momentum,
+        )
+
+
+def cat(tensors, axis=1):
+    parts = [_as_tensor(item) for item in tensors]
+    data = np.concatenate([item.data for item in parts], axis=axis)
+    out = Tensor(data, any(item.requires_grad for item in parts), tuple(parts))
+
+    def backward():
+        sizes = [item.data.shape[axis] for item in parts]
+        splits = np.cumsum(sizes)[:-1]
+        grads = np.split(out.grad, splits, axis=axis) if splits.size else [out.grad]
+        for item, grad in zip(parts, grads):
+            if item.requires_grad:
+                item.grad = _acc(item.grad, grad)
+
+    out._backward = backward
+    return out
+
+
+def save_npz(path, arrays):
+    payload = {}
+    for key, value in arrays.items():
+        payload[str(key)] = value.data if isinstance(value, Tensor) else np.asarray(value, dtype=np.float64)
+    np.savez(path, **payload)
+
+
+def load_npz(path):
+    with np.load(path) as data:
+        return {key: np.array(data[key]) for key in data.files}
 
 
 class SGD:
@@ -495,8 +798,14 @@ class _NN:
     Module = Module
     Linear = Linear
     ReLU = ReLU
+    Sigmoid = Sigmoid
     Dropout = Dropout
     Sequential = Sequential
+    Conv2d = Conv2d
+    MaxPool2d = MaxPool2d
+    AvgPool2d = AvgPool2d
+    Flatten = Flatten
+    BatchNorm = BatchNorm
 
 
 class _Optim:
