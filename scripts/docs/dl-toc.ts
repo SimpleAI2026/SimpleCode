@@ -11,13 +11,14 @@
 // Phase 5 adds synthetic timemachine.txt and fra-eng.txt.
 // Phase 6 draws vision images in memory and adds no sample file.
 // Phase 7 draws synthetic text in memory and adds no sample file.
+// Phase 8 adds no sample file. Performance and the appendix are read-only.
 // Together they stay within DL_SAMPLE_BUDGET_BYTES.
 
 export const DL_ZH_COMMIT = "e6b18ccea71451a55fcd861d7b96fddf2587b09a";
 export const DL_EN_COMMIT = "23d7a5aecceee57d1292c56e90cce307f183bb0a";
 
 /** Last curriculum phase whose chapters are required on disk. */
-export const DL_LANDED_PHASE = 7;
+export const DL_LANDED_PHASE = 8;
 
 /** Combined cap for tiny DeepLearning samples. Not a download of upstream archives. */
 export const DL_SAMPLE_BUDGET_BYTES = 256 * 1024;

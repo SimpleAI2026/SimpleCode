@@ -54,7 +54,7 @@
 - 十五门语言，运行时懒加载。侧栏进度条是 `inset-x-0 bottom-0 h-0.5`，和按钮同宽。NumPy（id `np`）与 DeepLearning（id `dl`）各占一行，共用 Pyodide，不重复下载。DeepLearning 这一行标明 Python (NumPy)，只打开 d2l。旧的 `#numpy` 和已保存的 `numpy` 仍打开 DeepLearning。NumPy 这一行没有 LeetCode。
 - Monaco 编辑。正文字号 14px，注释 13px。未改过的示例在「中 / EN」切换时只换注释。
 - xterm 终端。Run 在工具栏和文档代码块里是同一个按钮。
-- 快速入门：中文 `docs/<book>/`，英文 `docs/en/<book>/`，同一文件名。这次构建是 1258 章（中英各 629）、3550 个可运行块（中英各 1775）。NumPy 17 章，DeepLearning 124 章，围栏语言是 `numpy`。两本书各有自己的侧栏入口和抽屉，执行都走同一份 Pyodide。
+- 快速入门：中文 `docs/<book>/`，英文 `docs/en/<book>/`，同一文件名。这次构建是 1288 章（中英各 644）、3550 个可运行块（中英各 1775）。NumPy 17 章，DeepLearning 139 章，围栏语言是 `numpy`。两本书各有自己的侧栏入口和抽屉，执行都走同一份 Pyodide。
 - LeetCode 模式和快速入门共用一扇抽屉，不盖住 Run。820 题：简单 270、中等 444、困难 106。中英题名和自写题面都有。题面按公开题号、难度、样例和限制重写，不收录上游原文。没有题解的题目仍显示题面，并可以运行样例。
 - 「查看题解」才展开代码。现在入库的题解是 Python。其他已下载、可刷题的语言会显示「这门语言还没有题解」。可以「运行样例」，也可以把题解放进编辑器再跑。
 - JS/TS 共用一份 wasmedge-quickjs。跑 TypeScript 时才加载 Sucrase，去掉类型后再执行，不做类型检查。
