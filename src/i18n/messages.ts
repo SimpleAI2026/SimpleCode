@@ -30,8 +30,9 @@ export const zh = {
 
   aboutTitle: "关于 SimpleCode",
   aboutLead: "SimpleCode 是浏览器里的多语言练习场。代码在这台电脑上运行，不会上传。",
-  aboutLanguages: "十四种语言：Python、Ruby、JS/TS、SQLite、C、C++、PHP、Lua、Go、Shell、Rust、Java、Linux，以及 DeepLearning（Python / NumPy，Pyodide）。",
+  aboutLanguages: "十五种语言：Python、Ruby、JS/TS、SQLite、C、C++、PHP、Lua、Go、Shell、Rust、Java、Linux、NumPy，以及 DeepLearning（与 NumPy 共用 Pyodide）。",
   langNumpy: "DeepLearning",
+  langNp: "NumPy",
   bookNumpy: "NumPy",
   bookDl: "DeepLearning",
   pyodideMissing: "找不到 {file}。请运行 ./build.sh vendor --pyodide。若页面来自 dist，还要再运行 ./build.sh build，然后刷新。",
@@ -252,8 +253,9 @@ export const en: { [K in MessageKey]: string } = {
   aboutTitle: "About SimpleCode",
   aboutLead: "SimpleCode is an in-browser playground for several languages. Your code runs on this computer and is not uploaded.",
   aboutLanguages:
-    "Fourteen languages: Python, Ruby, JS/TS, SQLite, C, C++, PHP, Lua, Go, Shell, Rust, Java, Linux, and DeepLearning (Python / NumPy, Pyodide).",
+    "Fifteen languages: Python, Ruby, JS/TS, SQLite, C, C++, PHP, Lua, Go, Shell, Rust, Java, Linux, NumPy, and DeepLearning (Pyodide, shared with NumPy).",
   langNumpy: "DeepLearning",
+  langNp: "NumPy",
   bookNumpy: "NumPy",
   bookDl: "DeepLearning",
   pyodideMissing: "{file} was not found. Run ./build.sh vendor --pyodide. If this page is served from dist, run ./build.sh build and reload.",

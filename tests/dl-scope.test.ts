@@ -5,7 +5,10 @@ import { describe, it } from "node:test";
 import { listBookMarkdown } from "../scripts/docs/book-files.mjs";
 import { createHash } from "node:crypto";
 import { DL_EN_COMMIT, DL_LANDED_PHASE, DL_SAMPLE_BUDGET_BYTES, DL_TOC, DL_ZH_COMMIT, dlChapterNumber } from "../scripts/docs/dl-toc.ts";
+import { pyodideBookErrors } from "../scripts/docs/pyodide-books.ts";
+import { languages } from "../scripts/languages.config.mjs";
 import { chapterSlug } from "../src/docs/edition.ts";
+import { canonicalRuntime, resolveRuntime, runtimeForFence, runtimeFromHash } from "../src/docs/runtime.ts";
 
 const PHASE2 = [
   "chapter_preface/index.md",
@@ -43,6 +46,43 @@ function walkNames(dir: string, out: string[] = []): string[] {
   }
   return out;
 }
+
+describe("numpy sidebar split", () => {
+  it("keeps each Pyodide book in its own drawer", () => {
+    assert.deepEqual(pyodideBookErrors(), []);
+    assert.equal(runtimeForFence("numpy", "numpy"), "np");
+    assert.equal(runtimeForFence("np", "numpy"), "np");
+    assert.equal(runtimeForFence("numpy", "dl"), "dl");
+    assert.equal(runtimeForFence("numpy"), "dl");
+    assert.equal(resolveRuntime("numpy"), "dl");
+    assert.equal(canonicalRuntime("numpy"), "dl");
+    assert.equal(runtimeFromHash("#numpy"), "dl");
+    const leet = readFileSync("src/docs/leetcode.ts", "utf8");
+    const match = leet.match(/export const LEETCODE_RUNTIMES = \[([^\]]+)\]/);
+    assert.ok(match);
+    const ids = [...match[1].matchAll(/"([^"]+)"/g)].map((item) => item[1]);
+    assert.equal(ids.includes("np"), false);
+    assert.equal(ids.includes("dl"), false);
+    assert.equal(ids.includes("numpy"), false);
+  });
+
+  it("shares one Pyodide asset list and does not nest the books", () => {
+    const dl = languages.find((lang) => lang.id === "dl");
+    assert.equal(languages.some((lang) => lang.id === "numpy"), false);
+    const np = languages.find((lang) => lang.id === "np");
+    assert.ok(dl && np);
+    assert.equal(dl.compiler, "pyodide");
+    assert.equal(np.compiler, "pyodide");
+    assert.equal(dl.label, "DeepLearning");
+    assert.equal(np.label, "NumPy");
+    assert.deepEqual(np.assets, dl.assets);
+    assert.equal(new Set(np.assets).size, dl.assets.length);
+    const numpyNames = listBookMarkdown("docs/numpy");
+    const dlNames = listBookMarkdown("docs/dl");
+    for (const name of numpyNames) assert.equal(dlNames.includes(name), false, name);
+    for (const name of dlNames) assert.equal(name.startsWith("chapter_"), true, name);
+  });
+});
 
 describe("d2l source registration", () => {
   const sources = sourceMap(readFileSync("docs/sources.yaml", "utf8"));

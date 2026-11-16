@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import RunButton from "@/components/RunButton.vue";
 import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
 import { useRunFromDoc } from "@/composables/useRunFromDoc";
-import { BOOK_TO_RUNTIME, resolveRuntime, runtimeLabel, type BookId, type RuntimeId } from "@/docs/runtime";
+import { BOOK_TO_RUNTIME, runtimeForFence, runtimeLabel, type BookId, type RuntimeId } from "@/docs/runtime";
 import { stripAnsi } from "@/docs/text";
 import type { CodeBlockData } from "@/docs/types";
 import { formatMB, type LanguageSpec } from "@/core/manifest";
@@ -35,7 +35,7 @@ const codeEl = ref<HTMLElement>();
 const live = ref("");
 const isolated = typeof window !== "undefined" && window.crossOriginIsolated === true;
 
-const runtimeId = computed(() => resolveRuntime(props.block.lang));
+const runtimeId = computed(() => runtimeForFence(props.block.lang, props.book));
 const bookRuntime = computed(() => BOOK_TO_RUNTIME[props.book as BookId]);
 const spec = computed(() => langs.languages.find((l) => l.id === runtimeId.value));
 const langState = computed(() => (runtimeId.value ? langs.states[runtimeId.value] : undefined));
@@ -119,6 +119,7 @@ async function onRun() {
   transpileError.value = "";
   const result = await runner.runFromDoc(props.block.code, props.block.lang, {
     blockId: props.block.id,
+    book: props.book,
     stdin: props.block.stdin,
     useStdin: useStdin.value && props.block.stdin != null,
     stdinEOF: props.block.eof,

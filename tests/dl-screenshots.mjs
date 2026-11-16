@@ -58,8 +58,8 @@ try {
     await route.continue();
   });
   await page.goto(BASE);
-  await page.getByTestId("lang-numpy").click();
-  await page.getByTestId("lang-numpy").getByTestId("wasm-progress").waitFor({ state: "visible", timeout: 15000 });
+  await page.getByTestId("lang-dl").click();
+  await page.getByTestId("lang-dl").getByTestId("wasm-progress").waitFor({ state: "visible", timeout: 15000 });
   await page.waitForTimeout(600);
   await page.screenshot({ path: `${OUT}/dl-sidebar-progress.png` });
   release();
@@ -70,9 +70,10 @@ try {
   const app = await main.newPage();
   await app.goto(BASE);
   await app.evaluate((id) => globalThis.__simplecodeSelect(id), "numpy");
-  await app.waitForSelector('[data-testid="lang-numpy"][data-status="ready"]', { timeout: 180000 });
+  await app.waitForSelector('[data-testid="lang-dl"][data-status="ready"]', { timeout: 180000 });
+  await app.evaluate((id) => globalThis.__simplecodeSelect(id), "np");
+  await app.waitForSelector('[data-testid="lang-np"][data-status="ready"]', { timeout: 180000 });
   await app.getByTestId("study-mode-learn").click();
-  await app.getByTestId("docs-book-numpy").click();
   await app.getByTestId("chapter-link").nth(1).click();
   await app.locator('[data-testid="docs-chapter"] [data-testid="doc-code-block"]').first().waitFor();
   await app.screenshot({ path: `${OUT}/numpy-tutorial.png` });
@@ -112,8 +113,8 @@ for epoch in range(3):
   await app.screenshot({ path: `${OUT}/dl-training.png` });
 
   await app.getByTestId("locale-en").click();
-  await app.getByTestId("lang-numpy").waitFor();
-  await app.waitForFunction(() => (document.querySelector('[data-testid="lang-numpy"]')?.textContent ?? "").includes("DeepLearning"));
+  await app.getByTestId("lang-dl").waitFor();
+  await app.waitForFunction(() => (document.querySelector('[data-testid="lang-dl"]')?.textContent ?? "").includes("DeepLearning"));
   await app.screenshot({ path: `${OUT}/dl-english-ui.png` });
   await app.close();
   await main.close();

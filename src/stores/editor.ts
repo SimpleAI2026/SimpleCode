@@ -6,6 +6,7 @@ import { isUntouchedSample, sampleFor } from "@/samples";
 const key = (id: string) => `simplecode:code:${id}`;
 const DIALECT_KEY = "simplecode:quickjs:dialect";
 const LEGACY_QUICKJS = "simplecode:code:quickjs";
+const LEGACY_DL = "simplecode:code:numpy";
 
 export type JsDialect = "js" | "ts";
 
@@ -55,6 +56,18 @@ export const useEditorStore = defineStore("editor", () => {
   function get(id: string) {
     if (!(id in codes)) {
       let saved = localStorage.getItem(key(id));
+      if (saved === null && id === "dl") {
+        const legacy = localStorage.getItem(LEGACY_DL);
+        if (legacy !== null) {
+          saved = legacy;
+          try {
+            localStorage.setItem(key(id), legacy);
+            localStorage.removeItem(LEGACY_DL);
+          } catch {
+            /* private mode */
+          }
+        }
+      }
       if (saved === null && id === "quickjs:js") {
         const legacy = localStorage.getItem(LEGACY_QUICKJS);
         if (legacy !== null) {

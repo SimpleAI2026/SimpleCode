@@ -18,7 +18,7 @@ const sizeLabel = computed(() => formatMB(props.size).replace(".0", ""));
 const label = computed(() => runtimeName(props.lang.id, props.lang.label));
 const tip = computed(() => {
   const s = props.state;
-  const shown = props.lang.id === "numpy" && props.lang.version ? `${label.value} · ${props.lang.version}` : label.value;
+  const shown = props.lang.id === "dl" && props.lang.version ? `${label.value} · ${props.lang.version}` : label.value;
   if (status.value === "downloading" && s?.detail === "boot") return t("bootingDetail", { label: shown });
   if (status.value === "downloading" && s) {
     return t("downloadingDetail", { label: shown, pct: pct.value, loaded: formatMB(s.loaded), total: formatMB(s.total) });
@@ -50,7 +50,7 @@ const tip = computed(() => {
         <LanguageIcon :short="lang.short" :status="status" :selected="selected" :progress="pct" />
         <template v-if="!collapsed">
           <span class="sidebar-expanded-only min-w-0 flex-1 truncate">
-            {{ label }}<span v-if="lang.id === 'numpy'" class="font-normal text-muted-foreground"> · {{ lang.version }}</span>
+            {{ label }}<span v-if="lang.id === 'dl'" class="font-normal text-muted-foreground"> · {{ lang.version }}</span>
           </span>
           <span
             v-if="status === 'downloading'"

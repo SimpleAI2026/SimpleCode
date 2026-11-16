@@ -80,7 +80,7 @@ try {
   await openAbout(page);
   const en = await page.getByTestId("about-dialog").innerText();
   check(
-    en.includes("Fourteen languages") && en.includes("DeepLearning") && en.includes("Linux") && en.includes("Rust") && en.includes("Java") && en.includes("Monaco") && en.includes("Quick Start"),
+    en.includes("Fifteen languages") && en.includes("NumPy") && en.includes("DeepLearning") && en.includes("Linux") && en.includes("Rust") && en.includes("Java") && en.includes("Monaco") && en.includes("Quick Start"),
     "about dialog in English",
   );
   await checkRepoLink(page, "GitHub repository");

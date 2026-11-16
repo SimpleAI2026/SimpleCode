@@ -40,6 +40,22 @@ export const assets = {
   "pyodide-fra-eng": { file: "pyodide/fra-eng.txt", kind: "bin", download: "pyodide" },
 };
 
+// One asset list. DeepLearning and NumPy both reference it, so the manifest
+// and Cache API keep a single copy of Pyodide.
+const pyodideAssets = [
+  "pyodide-mjs",
+  "pyodide-asm-mjs",
+  "pyodide-wasm",
+  "pyodide-stdlib",
+  "pyodide-lock",
+  "pyodide-numpy",
+  "pyodide-fashion",
+  "pyodide-house",
+  "pyodide-airfoil",
+  "pyodide-timemachine",
+  "pyodide-fra-eng",
+];
+
 const clangLink = (extra) => ({
   step: "link",
   asset: "wasm-ld",
@@ -154,7 +170,7 @@ export const languages = [
     run: { binaryName: "sh", args: [] },
   },
   {
-    id: "numpy",
+    id: "dl",
     label: "DeepLearning",
     short: "DL",
     version: "Python (NumPy)",
@@ -163,20 +179,22 @@ export const languages = [
     license: "MPL-2.0",
     homepage: "https://pyodide.org/",
     compiler: "pyodide",
-    assets: [
-      "pyodide-mjs",
-      "pyodide-asm-mjs",
-      "pyodide-wasm",
-      "pyodide-stdlib",
-      "pyodide-lock",
-      "pyodide-numpy",
-      "pyodide-fashion",
-      "pyodide-house",
-      "pyodide-airfoil",
-      "pyodide-timemachine",
-      "pyodide-fra-eng",
-    ],
+    assets: pyodideAssets,
     // CPython 3.14 plus NumPy, in a worker. Not the WASI CPython used by Python.
+    // The NumPy row below uses this same worker and these same files.
+    run: { binaryName: "python", args: [] },
+  },
+  {
+    id: "np",
+    label: "NumPy",
+    short: "Np",
+    version: "2.4.6",
+    syntax: "python",
+    fileName: "main.py",
+    license: "MPL-2.0",
+    homepage: "https://pyodide.org/",
+    compiler: "pyodide",
+    assets: pyodideAssets,
     run: { binaryName: "python", args: [] },
   },
 ];

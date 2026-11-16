@@ -1,7 +1,7 @@
 import { computed } from "vue";
 import { terminal } from "@/core/terminal";
 import { TranspileError, transpileTypeScript } from "@/core/transpile";
-import { resolveRuntime, runtimeLabel, type RuntimeId } from "@/docs/runtime";
+import { runtimeForFence, runtimeLabel, type RuntimeId } from "@/docs/runtime";
 import { shouldBackup } from "@/docs/backup";
 import { stripAnsi } from "@/docs/text";
 import { useDocsStore } from "@/stores/docs";
@@ -13,6 +13,8 @@ import { t } from "@/i18n";
 
 export interface RunFromDocOptions {
   blockId: string;
+  /** Book that owns the fence, so a Pyodide block stays on that book's sidebar row. */
+  book?: string;
   stdin?: string;
   useStdin?: boolean;
   stdinEOF?: boolean;
@@ -67,7 +69,7 @@ export function useRunFromDoc() {
   });
 
   async function runFromDoc(code: string, lang: string, opts: RunFromDocOptions): Promise<RunFromDocResult> {
-    const runtimeId = resolveRuntime(lang);
+    const runtimeId = runtimeForFence(lang, opts.book);
     if (!runtimeId) return { type: "unsupported", lang };
 
     if (run.running) {
