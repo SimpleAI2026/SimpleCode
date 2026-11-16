@@ -253,7 +253,7 @@
 ### 11.4 打包
 
 - `./build.sh vendor --pyodide` 按 `scripts/sources.lock.json` 的 `pyodide` 下载并校验。上游 `pyodide.mjs` 里的 jsDelivr 默认地址会删掉，锁的是删过之后的 17883 字节。
-- 阶段 3 把 Fashion-MNIST 换成训练 32 张、测试 8 张（31,412 字节），并加入合成房价表 `house-tiny.csv`（8,598 字节）和合成机翼表 `airfoil-tiny.csv`（1,956 字节）。九个文件都在 `wasm/pyodide/`，合计 **16,533,693** 字节。侧栏 `formatMB` 显示 **15.8 MB**。单文件都低于 GitHub 的 100 MB 限制。原先七个文件含 5000/1000 子集时是 21,201,739 字节、侧栏 20.2 MB。阶段 4 不增加样本文件，侧栏体积不变。`minitorch.py` 增加 `Conv2d`（im2col）、`MaxPool2d`、`AvgPool2d`、`Flatten`、`Sigmoid`、`BatchNorm`、`cat` 和 npz 读写。
+- 阶段 3 把 Fashion-MNIST 换成训练 32 张、测试 8 张（31,412 字节），并加入合成房价表 `house-tiny.csv`（8,598 字节）和合成机翼表 `airfoil-tiny.csv`（1,956 字节）。九个文件都在 `wasm/pyodide/`，合计 **16,533,693** 字节。侧栏 `formatMB` 显示 **15.8 MB**。单文件都低于 GitHub 的 100 MB 限制。原先七个文件含 5000/1000 子集时是 21,201,739 字节、侧栏 20.2 MB。阶段 4 不增加样本文件，侧栏体积不变。`minitorch.py` 增加 `Conv2d`（im2col）、`MaxPool2d`、`AvgPool2d`、`Flatten`、`Sigmoid`、`BatchNorm`、`cat` 和 npz 读写。阶段 5 增加合成 `timemachine.txt`（2,058 字节）和 `fra-eng.txt`（1,150 字节，16 对训练、8 对验证）。五个样本合计 45,174 字节。十一个 Pyodide 文件合计 **16,536,901** 字节，侧栏仍是 **15.8 MB**。`minitorch.py` 再增加 `Embedding`、`RNN`、`GRU`、`LSTM`、`LayerNorm`、`MultiHeadAttention`、`clip_grad`、缩放点积注意力和正弦位置编码。
 - 这些文件登记为 `kind: "bin"` 资产，因此进入 `wasm/manifest.json`（仍不提交，由 `write-manifest.mjs` 生成），也进入 `vendor/prebuilt` 的 runtime 包。`./build.sh vendor` 失败时解开这份包，Vercel 继续走这条退路。`--pyodide` 自己失败时同样退回 runtime 包。
 - 运行时不请求 CDN。锁文件和 `scripts/vendor-pyodide.mjs` 里可以保留构建期 URL。
 

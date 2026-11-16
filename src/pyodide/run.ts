@@ -12,6 +12,8 @@ const FILE_ASSETS = [
   ["pyodide-fashion", "fashion-mnist.bin"],
   ["pyodide-house", "house-tiny.csv"],
   ["pyodide-airfoil", "airfoil-tiny.csv"],
+  ["pyodide-timemachine", "timemachine.txt"],
+  ["pyodide-fra-eng", "fra-eng.txt"],
 ] as const;
 
 interface DoneMessage {

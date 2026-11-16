@@ -291,6 +291,81 @@ def test_conv_pool_norm():
     check("cat right", right.grad, [[1.0]])
 
 
+def test_sequence_attention():
+    np.random.seed(2)
+    x = Tensor(np.random.randn(2, 3), requires_grad=True)
+    finite("tanh", lambda: x.tanh().sum(), [x])
+    finite("div", lambda: (x / 2.0).sum(), [x])
+    denom = Tensor(np.array([2.0, 4.0]), requires_grad=True)
+    finite("rdiv", lambda: (8.0 / denom).sum(), [denom])
+
+    np.random.seed(3)
+    emb = mt.nn.Embedding(5, 3)
+    idx = np.array([[0, 1], [0, 4]])
+    finite("embed", lambda: emb(idx).sum(), [emb.weight])
+
+    np.random.seed(4)
+    rnn = mt.nn.RNN(3, 4)
+    seq = Tensor(np.random.randn(2, 3, 3))
+    finite("rnn ih", lambda: rnn(seq)[0].sum(), [rnn.weight_ih])
+    finite("rnn hh", lambda: rnn(seq)[0].sum(), [rnn.weight_hh, rnn.bias])
+
+    np.random.seed(5)
+    gru = mt.nn.GRU(3, 2)
+    gseq = Tensor(np.random.randn(2, 2, 3))
+    finite("gru", lambda: gru(gseq)[0].sum(), [gru.weight_hn, gru.bias_z])
+
+    np.random.seed(6)
+    lstm = mt.nn.LSTM(3, 2)
+    lseq = Tensor(np.random.randn(2, 2, 3))
+    finite("lstm", lambda: lstm(lseq)[0].sum(), [lstm.weight_if, lstm.bias_o])
+
+    q = Tensor(np.random.randn(2, 3, 4), requires_grad=True)
+    k = Tensor(np.random.randn(2, 3, 4), requires_grad=True)
+    v = Tensor(np.random.randn(2, 3, 4), requires_grad=True)
+    finite("attn q", lambda: mt.dot_attention(q, k, v)[0].sum(), [q])
+    finite("attn v", lambda: mt.dot_attention(q, k, v)[0].sum(), [v])
+
+    np.random.seed(7)
+    mha = mt.nn.MultiHeadAttention(8, 2)
+    src = Tensor(np.random.randn(2, 3, 8))
+    finite("mha", lambda: mha(src, src, src).sum(), [mha.w_q.weight, mha.w_o.bias])
+
+    np.random.seed(8)
+    norm = mt.nn.LayerNorm(4)
+    nx = Tensor(np.random.randn(2, 3, 4))
+    finite("ln", lambda: norm(nx).sum(), [norm.weight, norm.bias])
+
+    pe = mt.positional_encoding(4, 6)
+    check("pe00", pe[0, 0], 0.0, tol=1e-8)
+    check("pe01", pe[0, 1], 1.0, tol=1e-8)
+
+    big = Tensor(np.ones(4), requires_grad=True)
+    (big * big).sum().backward()
+    norm_out = mt.clip_grad([big], 2.0)
+    if abs(norm_out - 4.0) > 1e-6:
+        raise SystemExit(f"clip norm {norm_out}")
+    check("clip", big.grad, np.ones(4), tol=1e-5)
+
+    timed = Tensor(np.arange(6, dtype=np.float64).reshape(1, 3, 2), requires_grad=True)
+    finite("flip", lambda: mt.flip_time(timed).sum(), [timed])
+    weights = mt.softmax_last(Tensor([[1.0, 1.0, 1.0]]))
+    check("softmax row", weights.data.sum(), 1.0, tol=1e-8)
+
+
+def test_text_samples():
+    root = Path(__file__).resolve().parents[1] / "wasm" / "pyodide"
+    text = mt.datasets.time_machine(path=str(root / "timemachine.txt"))
+    if not (256 <= len(text) <= 8192):
+        raise SystemExit(f"time machine bytes {len(text)}")
+    train, val = mt.datasets.translation_pairs(path=str(root / "fra-eng.txt"))
+    if len(train) != 16 or len(val) != 8:
+        raise SystemExit("pair counts")
+    for eng, fra in train + val:
+        if len(eng.split()) != 4 or len(fra.split()) != 4:
+            raise SystemExit(f"pair width {eng} | {fra}")
+
+
 def test_lenet_seconds():
     import time
 
@@ -338,5 +413,7 @@ if __name__ == "__main__":
     test_optimizers()
     test_fashion_steps()
     test_conv_pool_norm()
+    test_sequence_attention()
+    test_text_samples()
     test_lenet_seconds()
     print("minitorch ok")

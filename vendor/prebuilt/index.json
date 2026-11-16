@@ -10,12 +10,12 @@
         {
           "name": "wasm-vendor-1.tar.gz.part-00",
           "bytes": 89000000,
-          "sha256": "efef35a7f2a932280647371e0842384f547d6554ea6ba9a12167a476bc71096d"
+          "sha256": "84397ee83ffb77776955cee4551922f32e53b137403db7aae1beac95cf30286f"
         },
         {
           "name": "wasm-vendor-1.tar.gz.part-01",
-          "bytes": 4753971,
-          "sha256": "c02b3fce74870883ee2f8e9269b1b2970d4cd885ce8a0baae463cc9f63b9f204"
+          "bytes": 4752003,
+          "sha256": "6d44720a6fe90627b45494e872ccca0e963edef0f17feaf7efbc57e86e03a600"
         }
       ],
       "files": [
@@ -65,6 +65,11 @@
           "sha256": "c21131fd07df97e38bf030fd0310b3d71e52fa13f3c436f1a7af0c3822d70d70"
         },
         {
+          "path": "pyodide/fra-eng.txt",
+          "bytes": 1150,
+          "sha256": "fec2eebb46774a0e2e4e40fd94178aa2ad39f6943a7a508ed23b6a711057bcb5"
+        },
+        {
           "path": "pyodide/house-tiny.csv",
           "bytes": 8598,
           "sha256": "88501bf242aad53f6e7eee7b03e432807624a28ffea41c6448693f73629f7683"
@@ -98,6 +103,11 @@
           "path": "pyodide/python_stdlib.zip",
           "bytes": 2545637,
           "sha256": "fa1957e5777068fc4f7437f96d860ae2fbe9c19732ba06c84e004ec16dd7dd7a"
+        },
+        {
+          "path": "pyodide/timemachine.txt",
+          "bytes": 2058,
+          "sha256": "c69281a689d991efdef48e00887a30cf13468bfacdad7e9732f4d81c85c79de8"
         },
         {
           "path": "python-3.11.3.tar.gz",

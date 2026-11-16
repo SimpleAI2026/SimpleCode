@@ -107,6 +107,59 @@ export function syntheticCsv(kind) {
   fail(`unknown synthetic table ${kind}`);
 }
 
+const TRAVEL_WHO = ["traveler", "guide", "child", "keeper"];
+const TRAVEL_VERB = ["opens", "watches", "turns", "carries", "counts", "follows"];
+const TRAVEL_NOUN = ["lever", "lamp", "garden", "bridge", "clock", "river", "gate", "map"];
+const TRAVEL_WHERE = ["at dawn", "by the river", "under the lamp", "near the gate", "after the rain"];
+
+const FRA_ENG_PAIRS = [
+  ["cat sits near door", "chat assis pres porte"],
+  ["dog runs down road", "chien court dans rue"],
+  ["bird flies over lake", "oiseau vole sur lac"],
+  ["child reads one book", "enfant lit un livre"],
+  ["man opens the gate", "homme ouvre la porte"],
+  ["woman holds a lamp", "femme tient une lampe"],
+  ["boy counts red stars", "garcon compte etoiles rouges"],
+  ["girl draws blue maps", "fille dessine cartes bleues"],
+  ["fish swims under bridge", "poisson nage sous pont"],
+  ["horse walks along path", "cheval marche le long"],
+  ["rain falls on roof", "pluie tombe sur toit"],
+  ["sun warms the garden", "soleil chauffe le jardin"],
+  ["wind moves tall trees", "vent bouge grands arbres"],
+  ["train leaves the station", "train quitte la gare"],
+  ["boat crosses calm water", "bateau traverse eau calme"],
+  ["chef cooks fresh bread", "cuisinier cuit pain frais"],
+  ["pilot starts the engine", "pilote demarre le moteur"],
+  ["nurse checks one chart", "infirmiere verifie un tableau"],
+  ["artist paints small houses", "artiste peint petites maisons"],
+  ["student solves two problems", "etudiant resout deux problemes"],
+  ["driver stops near market", "conducteur arrete pres marche"],
+  ["singer learns new songs", "chanteur apprend nouvelles chansons"],
+  ["farmer plants young seeds", "fermier plante jeunes graines"],
+  ["writer ends this page", "ecrivain finit cette page"],
+];
+
+/** Fixed synthetic prose and sentence pairs. Not a book excerpt and not Tatoeba. */
+export function syntheticText(kind) {
+  if (kind === "timemachine") {
+    const rand = lcg(20261116);
+    const pick = (list) => list[Math.floor(rand() * list.length)];
+    const lines = [];
+    let size = 0;
+    while (size < 2048) {
+      const sentence = `the ${pick(TRAVEL_WHO)} ${pick(TRAVEL_VERB)} the ${pick(TRAVEL_NOUN)} ${pick(TRAVEL_WHERE)}.`;
+      lines.push(sentence);
+      size += sentence.length + 1;
+    }
+    return Buffer.from(`${lines.join(" ")}\n`, "utf8");
+  }
+  if (kind === "fra-eng") {
+    const lines = FRA_ENG_PAIRS.map(([english, french]) => `${english}\t${french}`);
+    return Buffer.from(`${lines.join("\n")}\n`, "utf8");
+  }
+  fail(`unknown synthetic text ${kind}`);
+}
+
 async function buildFashion(pin) {
   const parts = [];
   for (const source of pin.sources) {
@@ -145,6 +198,8 @@ for (const [name, pin] of Object.entries(lock.files)) {
   let buf;
   if (pin.fashion) {
     buf = await buildFashion(pin.fashion);
+  } else if (pin.synthetic === "timemachine" || pin.synthetic === "fra-eng") {
+    buf = syntheticText(pin.synthetic);
   } else if (pin.synthetic) {
     buf = syntheticCsv(pin.synthetic);
   } else {

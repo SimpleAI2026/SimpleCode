@@ -36,6 +36,8 @@ export const assets = {
   "pyodide-fashion": { file: "pyodide/fashion-mnist.bin", kind: "bin", download: "pyodide" },
   "pyodide-house": { file: "pyodide/house-tiny.csv", kind: "bin", download: "pyodide" },
   "pyodide-airfoil": { file: "pyodide/airfoil-tiny.csv", kind: "bin", download: "pyodide" },
+  "pyodide-timemachine": { file: "pyodide/timemachine.txt", kind: "bin", download: "pyodide" },
+  "pyodide-fra-eng": { file: "pyodide/fra-eng.txt", kind: "bin", download: "pyodide" },
 };
 
 const clangLink = (extra) => ({
@@ -171,6 +173,8 @@ export const languages = [
       "pyodide-fashion",
       "pyodide-house",
       "pyodide-airfoil",
+      "pyodide-timemachine",
+      "pyodide-fra-eng",
     ],
     // CPython 3.14 plus NumPy, in a worker. Not the WASI CPython used by Python.
     run: { binaryName: "python", args: [] },
